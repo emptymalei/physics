@@ -1,1 +1,3 @@
-### This is a notebook for myself. I have to write down those important points I have learned.
+### This is a notebook for myself.
+
+Writing down and organizing is really good for me.
