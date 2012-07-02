@@ -1,0 +1,50 @@
+
+\section{Dimension}
+
+How to find the relationship between two quantities? For example, what is the dimensional relationship between length and mass.
+\begin{quotation}
+Plank constant: $\hbar \sim [Energy]\cdot [Time] \sim [Mass]\cdot [Length]^2 \cdot [Time]^{-1}$ 
+
+Speed of light in vacuum: $c\sim [Length]\cdot [Time]^{-1}$
+
+Gravitational constant: $G \sim [Length]^3\cdot [Mass]^{-1} \cdot [Time]^{-2}$
+\end{quotation}
+
+Then it is easy to find that a combination of $c/\hbar$ cancels the dimension of mass and leaves the inverse of length. That is
+\begin{equation}
+[Length]^2 = \frac{\hbar G}{c^3}
+\end{equation}
+
+
+
+\section{Equations That Should Never Be Forgotten}
+
+\subsection{Electrodynamics}
+
+\subsubsection{Maxwell Equations}
+\begin{eqnarray}
+\nabla\times\vec E&=&-\partial_t \vec B \\
+\nabla\times\vec H&=&\vec J+\partial_t \vec D \\
+\nabla\cdot \vec D&=&\rho \\
+\nabla\cdot \vec B&=&0
+\end{eqnarray}
+
+For linear meterials, \begin{eqnarray}
+\vec D&=&\epsilon \vec E \\
+\vec B&=&\mu \vec H \\
+\vec J&=& \sigma \vec E
+\end{eqnarray}
+
+
+Hamilton conanical equations
+
+\begin{eqnarray}
+\dot q_i &=& \frac{\partial H}{\partial p_i}  \\
+\dot p_i &=& - \frac{\partial H}{\partial q_i}
+\end{eqnarray}
+
+
+Liouville's Law
+\begin{eqnarray}
+\frac{\mathrm d \rho}{\mathrm d t}\equiv \frac{\partial \rho}{\partial t} + \sum_i \left[ \frac{\partial \rho}{\partial q_i}\dot q_i + \frac{\partial \rho}{\partial p_i}\dot p_i \right] = 0
+\end{eqnarray}

@@ -1,0 +1,41 @@
+\contentsline {chapter}{Preface}{iii}
+\contentsline {part}{I\hspace {1em}Fundamental Physics}{1}
+\contentsline {chapter}{\numberline {1}Basic}{3}
+\contentsline {section}{\numberline {1.1}Dimension}{4}
+\contentsline {section}{\numberline {1.2}Equations That Should Never Be Forgotten}{4}
+\contentsline {subsection}{\numberline {1.2.1}Electrodynamics}{4}
+\contentsline {subsubsection}{Maxwell Equations}{4}
+\contentsline {part}{II\hspace {1em}Advanced Physics}{5}
+\contentsline {chapter}{\numberline {2}Relativy}{7}
+\contentsline {part}{III\hspace {1em}Tools}{9}
+\contentsline {chapter}{\numberline {3}Mathematics}{11}
+\contentsline {section}{\numberline {3.1}Differential Geometry}{12}
+\contentsline {subsection}{\numberline {3.1.1}Metric}{12}
+\contentsline {subsubsection}{Definations}{12}
+\contentsline {subsubsection}{How to calculate the metric}{12}
+\contentsline {subsection}{\numberline {3.1.2}Connection}{13}
+\contentsline {subsection}{\numberline {3.1.3}Gradient, Curl, Divergence, etc}{13}
+\contentsline {paragraph}{Gradient}{13}
+\contentsline {paragraph}{Curl}{13}
+\contentsline {paragraph}{Divergence}{13}
+\contentsline {subparagraph}{Annotation}{14}
+\contentsline {section}{\numberline {3.2}Linear Algebra}{14}
+\contentsline {subsection}{\numberline {3.2.1}Basic Concepts}{14}
+\contentsline {paragraph}{Trace}{14}
+\contentsline {section}{\numberline {3.3}Differential Equations}{14}
+\contentsline {subsection}{\numberline {3.3.1}Standard Procedure}{14}
+\contentsline {subsection}{\numberline {3.3.2}Tricky}{14}
+\contentsline {paragraph}{WKB Approximation}{14}
+\contentsline {chapter}{\numberline {4}Cosmology}{15}
+\contentsline {section}{\numberline {4.1}What's in the begining}{16}
+\contentsline {section}{\numberline {4.2}Constants And Physical Quantities}{16}
+\contentsline {subsection}{\numberline {4.2.1}Cosmographic Parameters}{16}
+\contentsline {subsubsection}{Redshifts and Distances}{17}
+\contentsline {section}{\numberline {4.3}The Homogeneous and Isotropic Universe}{19}
+\contentsline {paragraph}{Homogeneous}{19}
+\contentsline {section}{\numberline {4.4}Quantities}{19}
+\contentsline {subsection}{\numberline {4.4.1}Energy-momentum Tensor}{19}
+\contentsline {subsection}{\numberline {4.4.2}Friedmann Universe}{21}
+\contentsline {paragraph}{Cosmological Principle}{21}
+\contentsline {paragraph}{Robertson-Walker Metric}{21}
+\contentsline {paragraph}{Evolution of Scale Factor}{21}
