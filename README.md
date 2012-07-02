@@ -1,1 +1,1 @@
-﻿# A notebook for myself.
+### This is a notebook for myself. I have to write down those important points I have learned.
