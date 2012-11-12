@@ -1,0 +1,734 @@
+% !TEX program = xelatex
+
+%This document had would had been used on Ways to Singularity, which is a website that supports MathJax. So some html elements may occur in this document. DELETE THIS when publishing. (If you are not very clear on the grammar I used here, read the academic publication called Time Traveller's Handbook of 1001 Tense Formations by Dr Dan Streetmentioner, which had would had been publish in year 220010 of Gregorian Calendar.)
+
+\documentclass[12pt,a4paper]{book}
+
+\usepackage{amsthm,amsfonts,amssymb,bm}
+\usepackage[fleqn]{amsmath}
+
+% Page settings
+\addtolength{\textheight}{2.0cm}
+\addtolength{\voffset}{-2cm}
+\addtolength{\hoffset}{-1.0cm}
+\addtolength{\textwidth}{2.0cm}
+
+%\allowdisplaybreaks
+
+%\usepackage{subeqnarray}
+\usepackage{mathrsfs}
+%\usepackage{color}
+%\usepackage{url}
+%\usepackage{ulem}
+\usepackage{indentfirst}   % Indent first line of a paragraph
+%\usepackage{textcomp}
+
+\usepackage{enumerate}
+
+
+%%Here is the configuration for chinese. setmainfont is the default font of the text.
+\usepackage[cm-default]{fontspec}
+\usepackage{xunicode}
+%\usepackage{xltxtra}
+\setmainfont{Arial}
+%\setsansfont[BoldFont=Arial]{KaiTi_GB2312}
+%\setmonofont{NSimSun}
+
+
+
+
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt
+
+% Figure, Diagram, Caption settings
+%\usepackage{tikz}
+%\usetikzlibrary{mindmap,trees}
+\usepackage{graphicx}
+%\usepackage{graphics}
+%\usepackage[hang,small,bf]{caption}
+%\setlength{\captionmargin}{50pt}
+
+% Redefine some fonts.
+%\newfontfamily\heiti{"黑体"}
+%\newfontfamily\fs{"仿宋"}
+%\newfontfamily\yahei{"微软雅黑"}
+
+
+%includeonly{}
+
+
+\graphicspath{{Figures/}{Figures/Chap1/}{Figures/Chap2/}{Figures/Chap3/}}
+
+
+\begin{document}
+\title{Research Survival Handbook \\ (\textbf{Unfinished})}
+\author{{\bf MA} Lei  \\
+@ Interplanetary Immigration Agency \\
+{\small\em \copyright \ Draft date \today}}
+\date{}
+%\begin{document}
+\maketitle
+
+% Redefine some math commands and environments.
+
+\newcommand{\dd}{\mathrm d}
+%\newcommand{\HH}{\mathcal H}
+%\newcommand{\CN}{{\it Cosmologia Notebook}}
+\newenvironment{eqnset}
+{\begin{equation}\left \bracevert \begin{array}{l}}
+{\end{array} \right. \end{equation}}
+
+\newenvironment{eqn}
+{\begin{equation}\left \bracevert \begin{array}{l}}
+{\end{array} \right. \end{equation}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{General Tips}
+\begin{itemize}
+\item Pick moderate statembents. Extreme statements are usually wrong.
+\item Use Taylor expansion to deal with extreme cases, e.g. $h\nu\ll kT$,
+$e^{h\nu/kT}\approx1+\frac{h\nu}{kT}$.
+\item When knowing $L^{2}$ value, be careful to calculate $l$ from $\hbar^{2}l(l+1)$,
+two solutions.
+\item Conservation of momentum (including angular momentum) should be checked
+before conservation of energy.
+\item Be careful about dimension of the problem, e.g. in 3D, radial wave,
+$P=\int|\psi|^{2}d\vec{r}=\int|\psi|^{2}4\pi r^{2}dr$
+\item Read underlined words carefully.
+\item Calculate $T^{4}$ carefully.
+\item Don't think too hard, the questions are easy enough to be solved in
+2 minutes.
+\item Use method of elimination.
+\item Dimensional analysis is always useful.
+\item Usually order of magnitude calculation is good enough.
+\item In general, $F=-\nabla(\text{potential energy})$, but in E\&M notice
+$V$ stands for potential, not potential energy, so $F=-\nabla(q\cdot\text{potential})$
+\item Usually it is convenient to set $h=\hbar=c=\cdots=1$, but if ans
+differs from choices, that's a signal we need to keep them.
+\item When you get stuck, take limits
+\item If some experimenter is involved in the question, it is usually a
+failed experiment.
+\item \textbf{Things to work on}
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\section{Thermodynamics and Statistical Mechanics}
+\begin{itemize}
+\item $PV$ diagram plots change in pressure wrt to volume for some process.
+The work done by the gas is the area \textbf{under the curve.}
+\item If the cyclic process moves clockwise around the loop, then $W$ will
+be positive, and it represents a heat engine. If it moves counterclockwise,
+then $W$ will be negative, and it represents a heat pump.
+\item The most basic definition of entropy is \[
+dS\geq\frac{dQ}{T}\]
+
+\item Heat transfer
+
+\begin{itemize}
+\item Conduction: rate\[
+H=\frac{\Delta Q}{\Delta t}=-kA\frac{T_{2}-T_{1}}{L},\qquad\frac{dQ}{dt}=-kA\frac{dT}{dx}\]
+where $A$ is area, $k$ is a constant.
+\item Convection (probably not in GRE),\[
+H=\frac{\Delta Q}{\Delta T}=hA(T_{s}-T_{\infty})\]
+where $T_{s}$ is the surface temperature, $h=$convective heat-transfer
+coefficient. There are both natural and forced convections.
+\end{itemize}
+\item Radiation\[
+\text{Power}=\epsilon\sigma AT^{4}\]
+$\epsilon=$emissivity, $\epsilon\in[0,1]$. Net loss$=\epsilon\sigma A(T_{\text{emission}}^{4}-T_{\text{absorption}}^{4})$
+\item Wien's displacement law: The absolute temperature of a blackbody and
+the peak wavelength of its radiation are inversely proportional:\[
+\lambda_{\text{max}}T=2.898\times10^{-3}\ \text{m\ensuremath{\cdot}K}\]
+
+\item Ideal gas law\[
+PV=nRT=NkT\]
+
+\item Kinetic theory of gas\[
+P=\frac{1}{3}\rho v_{\text{rms}}^{2}\qquad v_{\text{rms}}=\sqrt{\frac{3kT}{m}},\qquad\bar{v}=\sqrt{\frac{8kT}{\pi m}},\qquad v_{\text{most probable}}=v_{m}=\sqrt{\frac{2kT}{m}}\]
+
+\item Maxwell-Boltzmann distribution (less likely to be in GRE), number
+of molecules with energy between $E$ and $E+dE$\[
+N(E)dE=\frac{2N}{\sqrt{\pi}(kT)^{3/2}}\sqrt{E}e^{-E/kT}dE\]
+\[
+f(v)d^{3}v=\left(\frac{m}{2\pi kT}\right)^{3/2}e^{-mv^{2}/2kT}d^{3}v\]
+\[
+P(v)=\sqrt{\frac{2}{\pi}}\left(\frac{m}{kT}\right)^{3/2}v^{2}e^{-mv^{2}/2kT}\]
+(from which we can derive $v_{m}$)
+\item Mean free path of a gas molecule of radius $b$\[
+l=\frac{1}{4\pi Tb^{2}(N/V)}\]
+
+\item Van der Waals equation of state\[
+(P+an^{2}/V^{2})(V-bn)=nRT\]
+\[
+(P+aN^{2}/V^{2})(V-Nb)=NkT\]
+
+\item Adiabatic process\[
+PV^{\gamma}=\text{const}\]
+For an ideal gas to expand adiabatically from $(P_{1},V_{1})\to(P_{2},V_{2})$,
+work done by the gas is\[
+W=\frac{P_{1}V_{1}-P_{2}V_{2}}{\gamma-1}\]
+derived from $W=\int_{V_{1}}^{V_{2}}PdV$.
+\item The greatest possible thermal efficiency of an engine operating between
+two heat reservoirs is that of a Carnot engine, one that operates
+in the Carnot cycle. Max efficiency is\[
+y^{\star}=1-\frac{T_{\text{cold}}}{T_{\text{hot}}}\]
+For the case of the refrigerator\[
+\kappa=\frac{Q_{\text{cold}}}{W}\qquad\kappa_{\text{Carnot}}=\left(\frac{T_{\text{hot}}}{T_{\text{cold}}}-1\right)^{-1}\]
+Carnot=adiabatic+isothermal, $dS=0$. Otto=adiabatic+isobaric\[
+y=1-\frac{T_{d}-T_{a}}{T_{c}-T_{b}}\]
+
+\item Dalton's Law\[
+P=P_{1}+P_{2}=(n_{1}+n_{2})\frac{RT}{V}\]
+
+\item The critical isotherm is the line that just touches the critical liquid-vapor
+region\[
+\left(\frac{dP}{dV}\right)_{c}=0\qquad\left(\frac{d^{2}P}{dV^{2}}\right)_{c}=0\]
+with $c$ the critical point. Equilibrium region is where pressure
+and chemical potential for the two states of matter equal, usually
+a pressure constant region in the $P-V$ diagram.
+\item In the Dulong-Petit law,\[
+C_{V}=\frac{dE}{dT}=3R\]
+
+\item Laws of thermodynamics
+
+\begin{itemize}
+\item 0th: If two thermodynamic systems are each in thermal equilibrium
+with a third, then they are in thermal equilibrium with each other.
+\item 1st: $\Delta U=Q-W$ (conservation of energy)
+\item 2nd: Entropy increases/heat flows from hot to cold/heat cannot be
+completely converted into work.
+\item 3rd: As $T\to0,$ $S\to$constant minimum.
+\end{itemize}
+\item Change in entropy for a system where specific heat and temperature
+are constant;\[
+\Delta S=Nk\ln\frac{V}{V_{0}}\]
+
+\item Change in energy for an ideal gas:\[
+\Delta U=C_{V}\Delta T\]
+
+\item Work done by ideal gas:\[
+W=\int PdV=\begin{cases}
+\begin{array}{c}
+NkT\ln\frac{V_{2}}{V_{1}}\\
+P\Delta V\end{array} & \begin{array}{c}
+\text{Isothermal}\\
+\text{Ideal gas, constant Pressure}\end{array}\end{cases}\]
+
+\item Partition function:\[
+Z=\sum_{i}e^{-\beta E_{i}}=\int dE\:\Omega(E)e^{-\beta E}=\int dE\, e^{-\beta A(E)}\]
+where $A(E)$ is the Helmholtz free energy and $\Omega(E)$ is the
+degeneracy.\[
+P(E_{i})=\frac{e^{-\beta E_{i}}}{Z}\]
+\[
+S=k\ln\Omega=-k\sum_{i}P_{i}\ln P_{i}\]
+
+\item Equipartition Theorem: (1) Classical canonical and (2) quadratic dependence:
+each particle has energy $\frac{1}{2}kT$ for each quadratic canonical
+degree of freedom.
+\item Internal energy\[
+dU=TdS-PdV\]
+Enthalpy\[
+H=U+PV\qquad dH=TdS+VdP\qquad\text{isobaric}\]
+Helmholtz\[
+F=U-TS,\qquad dF=-SdT-PdV\qquad\text{isothermal}\]
+Gibbs free energy\[
+G=U-TS+PV,\qquad dG=-SdT+VdP\]
+
+\item Heat capacities:\[
+C_{V}=\left(\frac{\partial U}{\partial T}\right)_{V}=T\left(\frac{\partial S}{\partial T}\right)_{V}\]
+\[
+C_{P}=\left(\frac{\partial U}{\partial T}\right)_{P}+P\left(\frac{\partial V}{\partial T}\right)_{P}=T\left(\frac{\partial S}{\partial T}\right)_{P}=\left(\frac{\partial H}{\partial T}\right)_{P}\]
+
+\item Fun stuff:\[
+\langle E\rangle=-\frac{\partial}{\partial\beta}\ln Z,\qquad F=-kT\ln Z\]
+\[
+S=k\ln Z+\langle E\rangle/T,\qquad dS=\int\frac{dQ}{T}\]
+Gibbs-Helmholtz equation.\[
+U=F+TS=F-T\left(\frac{\partial F}{\partial T}\right)_{V}=-T^{2}\left(\frac{\partial}{\partial T}\right)_{V}\left(\frac{F}{T}\right)\]
+
+\item Availability of system\[
+A=U+P_{0}V-T_{0}S\]
+In natural change, $A$ cannot increase.
+\item Diatomic gas\[
+U=\frac{5}{2}kT\]
+
+\item Maxwell Relations\[
+\left(\frac{\partial T}{\partial V}\right)_{S}=-\left(\frac{\partial P}{\partial S}\right)_{V}=\frac{\partial^{2}U}{\partial S\partial V}\]
+\[
+\left(\frac{\partial T}{\partial P}\right)_{S}=\left(\frac{\partial V}{\partial S}\right)_{P}=\frac{\partial^{2}H}{\partial S\partial P}\]
+\[
+\left(\frac{\partial S}{\partial V}\right)_{T}=\left(\frac{\partial P}{\partial T}\right)_{V}=-\frac{\partial^{2}A}{\partial T\partial V}\]
+\[
+-\left(\frac{\partial S}{\partial P}\right)_{T}=\left(\frac{\partial V}{\partial T}\right)_{P}=\frac{\partial^{2}G}{\partial T\partial P}\]
+
+\item For ideal gas in adiabatic process, $W=\Delta U=\frac{3}{2}Nk\Delta T$
+\item Clockwise enclosed area in a $P-V$ diagram is the work done \underbar{by
+}the gas in a cycle.
+\item Chemical potential\[
+\mu(T,V,N)=\left(\frac{\partial F}{\partial N}\right)_{T,V}\]
+At equilibrium $\mu$ is uniform, $F$ achieves minimum.
+\item $P_{\text{boson}}\propto T^{5/2}$, $P_{\text{classical}}\propto T$,
+$P_{\text{fermion}}\propto T_{F}$ (very big). $T_{\text{classical}}\gg T_{\text{boson}}$
+\item A thermodynamic system in maximal probability state is stable.
+\item Both Debye and Einstein assume $3N$ independent Harmonic oscillators
+for lattice. Einstein took a constant frequency
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Quantum Mechanics}
+\begin{itemize}
+\item Uncertainty principle\[
+\Delta x\Delta p\geq\frac{\hbar}{2},\qquad\Delta E\Delta t\geq\frac{\hbar}{2}\]
+
+\item Schrodinger equation\[
+i\hbar\frac{\partial\Psi}{\partial t}=-\frac{\hbar^{2}}{2m}\nabla^{2}\Psi+V\Psi\]
+
+\item Commutator relation:\[
+[AB,C]=ABC-CAB=ABC-ACB+ACB-CAB=A[B,C]+[A,C]B\]
+
+\item De Broglie\[
+\lambda=\frac{h}{p}=\frac{hc}{E}=\frac{h}{\sqrt{2mkT}}\]
+(The last equality is thermal)
+\item A one-dimensional problem has no degenerate states.
+\item Heisenberg's uncertainty principle generalized:\[
+\Delta A\Delta B\geq\frac{1}{2}|\langle[A,B]\rangle|\]
+
+\item Infinite square well\[
+\psi_{n}=\sqrt{\frac{2}{a}}\sin\frac{n\pi x}{a},\qquad E_{n}=\frac{n^{2}\pi^{2}\hbar^{2}}{2ma^{2}},\qquad n\geq1\]
+Delta-function well $V=-\alpha\delta(x)$. Only one bound state, many
+scattering states.\[
+\psi(x)=\sqrt{\frac{m\alpha}{\hbar}}e^{-m\alpha|x|/\pi^{2}},\qquad E=-\frac{m\alpha^{2}}{2\hbar^{2}}\]
+Shallow, narrow well, there is always at least one bound state.
+\item Selection rule\[
+\Delta l=\pm1,\qquad\Delta m_{l}=\pm1\text{ or}\ 0,\qquad\Delta j=\pm1\ \text{or }0\]
+Electric dipole radiation $\Leftrightarrow\Delta l=0$. Magnetic dipole
+or electric quadrupole transitions are {}``forbidden'' but do occur
+occasionally.
+\item Stimulated and spontaneous emission rate $\propto|p|^{2}$ where\[
+p\equiv q\langle\psi_{b}|z|\psi_{a}\rangle\]
+The lifetime of an excited state is $\tau=\left(\sum A_{i}\right)^{-1}$
+where $A_{i}$ are spontaneous emission rates.
+\item Time-independent first order perturbation\[
+E_{n}^{1}=E_{n}^{0}+\langle\psi_{n}^{0}|H'|\psi_{n}^{0}\rangle,\qquad\psi_{n}^{1}=\psi_{n}^{0}+\sum_{m\neq n}\frac{\langle\psi_{m}^{0}|H'|\psi_{n}^{0}\rangle}{E_{n}^{0}-E_{m}^{0}}\psi_{m}^{0}\]
+
+\item Quantum approximation of rotational energy\[
+E_{\text{rot}}=\frac{\hbar^{2}l(l+1)}{2I}\]
+
+\item Fermi energy\[
+E_{F}=kT_{F}\simeq\frac{1}{2}mv^{2}\]
+
+\item Differential cross-section\[
+\frac{d\sigma}{d\Omega}=\frac{\text{scattered flux/unit of solid angle}}{\text{incident flux/unit of surface}}\]
+
+\item Intrinsic magnetic moment \[
+\vec{\mu}=\gamma\vec{S},\qquad\gamma=\frac{eg}{2m}\]
+where $g$ is the Lande $g$-factor. If $m$ points up, $\vec{\mu}$points
+down.
+\item Total cross section\[
+\sigma=\int D(\theta)d\Omega,\qquad D(\theta)=\frac{d\sigma}{d\Omega}\]
+
+\item Stark effect is the electrical analog to the Zeeman effect.
+\item Born-Oppenheimer approximation: the assumption that the electronic
+motion and the nuclear motion in molecules can be separated, i.e.\[
+\psi_{\text{molecule}}=\psi_{e}\psi_{\text{nuclei}}\]
+
+\item In Stern-Gerlach experiment, a beam of neutral silver atoms are sent
+through an inhomogeneous magnetic field. Classically, nothing happens
+as the atoms are neutral with Larmor precession, the beam would be
+deflected into a smear. But it actually deflects into $2s+1$ beams,
+thus corroborating with the fact electrons are at spin $\frac{1}{2}$
+\item Know the basic spherical harmonics\[
+Y_{0}^{0}=\sqrt{\frac{1}{4\pi}},\qquad Y_{1}^{\pm1}=\mp\sqrt{\frac{3}{8\pi}}\sin\theta e^{\pm i\phi},\qquad Y_{1}^{0}=\sqrt{\frac{3}{4\pi}}\cos\theta\]
+
+\item Probability density current\[
+\vec{J}=\frac{\hbar}{2mi}(\psi^{*}\nabla\psi-\psi\nabla\psi^{*})=\Re\left(\psi^{*}\frac{\hbar}{im}\nabla\psi\right)\]
+
+\item Laser operates by going from lower state to high state (population
+inversion), then falls back on a metastable state in between (not
+all the way down due to selection rule).
+\item Neat identities:\[
+\langle\mathcal{O}\rangle=\int\Psi^{*}\mathcal{O}\Psi dx,\qquad[f(x),p]=i\hbar\frac{\partial f}{\partial x},\qquad p=-i\hbar\nabla\]
+
+\item Ehrenfest's Theorem: expectation values obey classical laws.\[
+m\frac{d^{2}\langle x\rangle}{dt^{2}}=\frac{d\langle p\rangle}{dt}=\left\langle -\frac{\partial V}{\partial x}\right\rangle \]
+
+\item If $V(x)$ is even, $\psi(x)$ can always be taken to be even or odd.
+\item More identities:\[
+\langle H\rangle=\sum_{n=1}^{\infty}|c_{n}|^{2}E_{n},\qquad\delta(x)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{ikx}dk\]
+
+\item Tunneling shows exponential decay.
+\item The ground state of even potential is even and has no nodes.
+\item In stationary states, all expectation values are independent of $t$.
+\item Harmonic oscillators:\[
+H=\hbar\omega(a_{-}a_{+}-\tfrac{1}{2})=\hbar\omega(a_{+}a_{-}+\tfrac{1}{2}),\qquad a_{\pm}=\frac{1}{\sqrt{2\hbar m\omega}}(m\omega x\mp ip)\]
+\[
+[a_{-}a_{+}]=1,\qquad N\equiv a_{+}a_{-},\qquad N\psi_{n}=n\psi_{n}\]
+\[
+a_{+}\psi_{n}=\sqrt{n+1}\psi_{n+1},\qquad a_{-}\psi_{n}=\sqrt{n}\psi_{n-1}\]
+\[
+\psi_{n}=\frac{1}{\sqrt{n!}}(a_{+})^{n}\psi_{0},\qquad x=\sqrt{\frac{\hbar}{2m\omega}}(a_{+}+a_{-}),\qquad p=i\sqrt{\frac{\hbar m\omega}{2}}(a_{+}-a_{-})\]
+
+\item Fourier transforms:\[
+\Phi(p,t)=\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}e^{-px/\hbar}\Psi(x,t)dx\]
+\[
+\Psi(x,t)=\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}e^{ipx/\hbar}\Phi(p,t)dp\]
+
+\item Operators changing in time:\[
+\frac{d\langle Q\rangle}{dt}=\frac{i}{\hbar}\langle[H,Q]\rangle+\left\langle \frac{\partial Q}{\partial t}\right\rangle \]
+
+\item Virial theorem, in stationary state\[
+2\langle T\rangle=\left\langle x\frac{dV}{dx}\right\rangle \]
+
+\item Hydrogen atom revisited:\begin{align*}
+E_{n} & \propto\text{reduced mass}\\
+ & \propto Z^{2}\\
+ & \propto1/n^{2}\\
+ & =-\left[\frac{m}{2\hbar^{2}}\left(\frac{e^{2}}{2\pi\epsilon_{0}}\right)^{2}\right]\frac{1}{n^{2}}=\frac{E_{1}}{n^{2}}\\
+E_{n}(Z) & =Z^{2}E_{n}\\
+a(Z) & =\frac{a}{Z}\\
+R(Z) & =Z^{2}R\end{align*}
+Bohr radius $a=4\pi\epsilon_{0}\hbar^{2}/me^{2}=0.528\times10^{-10}$
+meters.\[
+\psi_{100}(r,\theta,\phi)=\frac{1}{\sqrt{\pi a^{3}}}e^{-r/a}\]
+
+\item Angular momentum\[
+[L_{i},L_{j}]=i\hbar L_{k}\epsilon_{ijk}\]
+where $\epsilon_{ijk}=1$ for even permutations, -1 for odd permutations,
+zero otherwise.\[
+L_{\pm}=L_{x}\pm iL_{y},\qquad[L^{2},L_{i}]=0\]
+\[
+L^{2}f_{l}^{m}=\hbar^{2}l(l+1),\qquad L_{z}f_{l}^{m}=\hbar mf_{l}^{m}\]
+\[
+L_{\pm}f_{l}^{m}=\hbar\sqrt{(l\mp m)(l\pm m+1)}f_{l}^{m}=\hbar\sqrt{l(l+1)-m(m\pm1)}f_{l}^{m}\]
+\[
+[L_{z},x]=i\hbar y,\qquad[L_{z},p_{x}]=i\hbar p_{y},\qquad[L_{z},y]=-i\hbar x,\qquad[L_{z},p_{y}]=-i\hbar p_{x}\]
+\[
+L_{z}=\frac{\hbar}{i}\frac{\partial}{\partial\phi}\]
+
+\item Spin, \[
+S^{2}=\frac{3}{4}\hbar^{2}\left(\begin{array}{cc}
+1 & 0\\
+0 & 1\end{array}\right)\]
+\[
+\sigma_{x}=\left(\begin{array}{cc}
+0 & 1\\
+1 & 0\end{array}\right),\qquad\sigma_{y}=\left(\begin{array}{cc}
+0 & -1\\
+1 & 0\end{array}\right),\qquad\sigma_{z}=\left(\begin{array}{cc}
+1 & 0\\
+0 & -1\end{array}\right)\]
+\[
+\vec{S}=\frac{\hbar}{2}\vec{\sigma}\]
+\[
+\chi_{+}^{(x)}=\left(\begin{array}{c}
+1/\sqrt{2}\\
+1/\sqrt{2}\end{array}\right),\qquad\chi_{-}^{(x)}=\left(\begin{array}{c}
+1/\sqrt{2}\\
+-1/\sqrt{2}\end{array}\right)\]
+\[
+\langle S_{x}^{2}\rangle=\langle S_{y}^{2}\rangle=\langle S_{z}^{2}\rangle=\frac{\hbar^{2}}{4}\]
+
+\item Clebsch-Gorden coefficients\[
+|sm\rangle=\sum_{m_{1}+m_{2}=m}C_{m_{1}m_{2}m}^{s_{1}s_{2}s}|s_{1}m_{1}\rangle|s_{2}m_{2}\rangle\]
+\[
+|s_{1}m_{1}\rangle|s_{2}m_{2}\rangle=\sum_{s}C_{m_{1}m_{2}m}^{s_{1}s_{2}s}|sm\rangle\]
+
+\item Continuity equation\[
+\nabla\cdot\vec{J}=-\frac{\partial}{\partial t}|\psi|^{2}\]
+\[
+\int_{S}\vec{J}\cdot d\vec{a}=-\frac{d}{dt}\int_{V}|\psi|^{2}d^{3}\vec{r}\]
+
+\item Representation of angular momentum.\[
+^{2s+1}\mathcal{L}_{J}\]
+where $s=$spin, $\mathcal{L}=$orbital, $J=$total. Hund's rule:
+(1) State with highest spin will have lowest energy given Pauli principle
+satisfied; (2) For given spin and anti-symmetrization highest $\mathcal{L}$
+have lowest energy; (3) Lowest level has $J=|L-S|,$ if more than
+half-filled $J=L+S$.
+\item Fermi gas\[
+k_{F}=(3\rho\pi^{2})^{1/3},\qquad\rho=Nq/V,\qquad v_{F}=\sqrt{2E_{F}/m}\]
+Degeneracy pressure\[
+P\propto\rho^{5/3}m_{e}^{-1}m_{p}^{-5/3}\]
+
+\item Particle distributions\[
+n(\epsilon)=\begin{cases}
+\begin{array}{c}
+e^{-\beta(\epsilon-\mu)}\\
+(e^{\beta(\epsilon-\mu)}+1)^{-1}\\
+(e^{\beta(\epsilon-\mu)}-1)^{-1}\end{array} & \begin{array}{c}
+\text{Maxwell-Boltzmann}\\
+\text{Fermi-Dirac}\\
+\text{Bose-Einstein}\end{array}\end{cases}\]
+Blackbody density\[
+\rho(\omega)=\frac{\hbar\omega^{3}}{\pi^{2}c^{3}(e^{\hbar\omega/kT}-1)}\]
+
+\item Fine structure$\to$spin-orbit coupling. Relativistic correction $\alpha=1/137.056$.
+Then Lamb shift is from the electric field, then Hyperfine structure
+due to magnetic interaction between electrons and protons, then spin-spin
+coupling (21 cm line)
+\item Fine structure breaks degeneracy in $l$ but still have $j$
+\item Fermi's golden rule is a way to calculate the transition rate (probability
+of transition per unit time) from one energy eigenstate of a quantum
+system into a continuum of energy eigenstates, due to a perturbation.
+\item Full shell and close to a full shell configuration are more difficult
+to ionize.
+\item Larmor precession:\[
+\vec{\Gamma}=\vec{\mu}\times\vec{B}=\gamma\vec{J}\times\vec{B}\]
+and we get $\omega=\gamma B$, where $\Gamma$ is the torque, $\mu$
+is the magnetic moment, and $J$ is total angular momentum.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\section{Atomic Physics}
+\begin{itemize}
+\item $\Delta E=hf=\hbar\omega=hc/\lambda$. $hc=12.4\ \text{keV\ensuremath{\cdot}\AA}=1240\ \text{eV\ensuremath{\cdot}nm}$,
+de Broglie wavelength $\lambda=h/p$.
+\item Emission due to transition from level $n$ to level $m$\[
+\frac{1}{\lambda}=R\left(\frac{1}{m^{2}}-\frac{1}{n^{2}}\right)\]
+$m=1$ Lyman series, $m=2$ Balmer series.\[
+R=1.097\times10^{7}\text{m}^{-1},\qquad E_{n}=-\frac{13.6\ \text{eV}}{n^{2}}\]
+
+\item Hydrogen model extended, $Z=$number of protons, quantities scale
+as \[
+E\sim Z^{2},\qquad\lambda\sim\frac{1}{Z^{2}}\]
+Reduced-mass correction to emission formula is \[
+\frac{1}{\lambda}=\frac{RZ^{2}}{1+m/M}\left(\frac{1}{n_{f}^{2}}-\frac{1}{n_{i}^{2}}\right)\]
+where $m$ is the mass of electron, $M$ is the mass of the proton,
+$m/M=1/1836$.
+\item Bohr postulate $L=mvr=n\hbar$
+\item Zeeman effect: splitting of a spectral line into several components
+in the presence of a static magnetic field.
+\item $k$ series refers to the innermost shell ($K$, $L$, $M$, $N$)
+so transition to innermost shell.\[
+E=-13.6(Z-1)^{2}\left(1-\frac{1}{n_{i}^{2}}\right)\ \text{eV}\]
+where the $(Z-1)^{2}$ is a shielding approximation.
+\item Frank-Hertz Experiment: Electrons of a certain energy range can be
+scattered inelastically, and the energy lost by electrons is discrete.
+\item Spectroscopic notation is a standard way to write down the angular
+momentum quantum number of a state, \[
+^{2s+1}L_{j}\]
+where $s$ is the total spin quantum number, $2s+1$ is the number
+of spin states, $L$ refers to the orbital angular momentum quantum
+number $\ell$ but is written as $S,P,D,F,\ldots$ for $\ell=0,1,2,3,\ldots$
+and $j$ is the total angular momentum quantum number. So for hydrogen
+we could have things like\[
+^{2}P_{\frac{3}{2}},^{2}P_{\frac{1}{2}}\]
+(since $s=1/2$ and $\ell=1$, spin up versus spin down).
+\end{itemize}
+
+\section{Special Relativity}
+\begin{itemize}
+\item Energy:\[
+E^{2}=(pc)^{2}+(mc^{2})^{2}\]
+For massless particles, $E=pc=h\nu$
+\item Relativistic Doppler Effect\[
+\lambda=\sqrt{\frac{1\pm\beta}{1\mp\beta}}\lambda_{0}\]
+$\beta=v/c$. Sign is determined by whether source is moving away
+or closer.
+\item Space-time interval\[
+\Delta s^{2}=c^{2}\Delta t^{2}-\Delta x^{2}-\Delta y^{2}-\Delta z^{2}\]
+
+\item Lorentz transformation\[
+\left(\begin{array}{c}
+ct'\\
+x'\\
+y'\\
+z'\end{array}\right)=\left(\begin{array}{cccc}
+\gamma & -\beta\gamma & 0 & 0\\
+-\beta\gamma & \gamma & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\end{array}\right)\left(\begin{array}{c}
+ct\\
+x\\
+y\\
+z\end{array}\right)\]
+
+\item Relativistic addition of velocities\[
+u_{x}'=\frac{u_{x}+v}{1+u_{x}v/c^{2}},\qquad u_{y}'=\frac{u_{y}}{\gamma(1+u_{x}v/c^{2})},\qquad u_{z}'=\frac{u_{z}}{\gamma(1+u_{x}v/c^{2})},\qquad\gamma\equiv\frac{1}{\sqrt{1-\beta^{2}}}\]
+
+\item Lorentz-Transformation of EM, parallel and perpendicular to direction
+o motion.\[
+\vec{E}_{\parallel}'=\vec{E}_{\parallel},\qquad\vec{E}'_{\perp}=\gamma(\vec{E}_{\perp}+\vec{v}\times\vec{B}_{\perp})\]
+\[
+\vec{B}'_{\parallel}=\vec{B}_{\parallel},\qquad\vec{B}'_{\perp}=\gamma(\vec{B}_{\perp}-\vec{v}\times\vec{E}_{\perp}/c^{2})\]
+
+\item Relativistic energy/momentum\[
+E=\gamma mc^{2},\qquad p=\gamma mv\]
+
+\item In every closed system, the total relativistic energy and momentum
+are conserved.
+\item Spacelike separation means two events can happen at the same time,
+which requires \[
+\Delta s^{2}=c^{2}\Delta t^{2}-\Delta x^{2}<0\]
+
+\item Transverse Doppler shift:\[
+f=\frac{f'}{\sqrt{1-\beta^{2}}}\text{ or }f=f'\sqrt{1-\beta^{2}}\]
+
+\item Four-vectors can be useful. We can define\[
+\mathbf{P}=\left(\frac{E}{c},\mathbf{p}\right)\]
+and the dot product\[
+\mathbf{P}^{2}=\frac{E^{2}}{c^{2}}-p^{2}=m^{2}c^{2}\]
+to get \[
+E^{2}=m^{2}+p^{2}.\]
+Remember, this mass is invariant, so we can equate the $\mathbf{P}$
+vector at different times.
+\end{itemize}
+
+\section{Laboratory Methods}
+\begin{itemize}
+\item If measurements are independent (or intervals in a Poisson process
+are independent) both expected value and variance increase linearly
+with time, so longer time can improve uncertainty, which is usually
+defined as \[
+\frac{\sigma}{R}\propto\frac{1}{\sqrt{t}}\]
+
+\item In Poisson distribution, $\sigma=\sqrt{\bar{x}}$.
+\item Error analysis, estimating uncertainties. If you are sure the value
+is closer to 26 than to 25 or 27, then record best estimate $26\pm0.5$.
+\item Propagation of uncertainties for sum of random and independent variables\[
+\delta x=\sqrt{\sum_{i}(\delta x_{i})^{2}}\]
+If multiplication or divisions are involved, use fractional uncertainty:\[
+\frac{\delta q}{|q|}=\sqrt{\sum_{i}\left(\frac{\delta x_{i}}{x_{i}}\right)^{2}}\]
+
+\item Experimental uncertainties can be revealed by repeating the measurements
+are called random errors; those that cannot be revealed in this way
+are called systematic errors.
+\item If the the uncertainties are different for different measurements,
+we have\[
+\bar{x}=\frac{\sum(x_{i}/\sigma_{i}^{2})}{\sum_{i}(1/\sigma_{i})^{2}}\qquad\sigma_{\bar{x}}^{2}=\frac{1}{\sum_{i}(1/\sigma_{i}^{2})}\]
+
+\end{itemize}
+
+\section{Specialized Topics}
+\begin{itemize}
+\item Photoelectric effect.\[
+E_{\text{photon}}=\phi+K_{\text{max}}\]
+(or the sum of the work function and the kinetic energy).
+\item Compton scattering: \[
+\lambda'-\lambda=\frac{h}{m_{e}c}(1-\cos\theta)\]
+where $m_{e}$ is the mass of the atom: $h/m_{e}c$ is the Compton
+wavelength of the electron, and $\lambda'$ is the new wavelength.
+\item X-ray Bragg reflection \[
+n\lambda=2d\sin\theta\]
+(compare to \textbf{diffraction grating} $n\lambda=d\sin\theta$)
+\item $1.602\times10^{-19}$J$=e(1\ \text{V})=1$ eV.
+\item In solid-state physics, effective mass is \[
+m^{*}=\frac{\hbar^{2}}{d^{2}E/dk^{2}}\]
+
+\item Electronic filters: high pass means $\omega\to\infty$, $V_{\text{in}}=V_{\text{out}}$.
+Usually look at $I=V_{\text{in}}/Z$, $Z=R+i(X_{L}-X_{C})$, $X_{L}=\omega L,$
+$X_{C}=1/\omega C$.
+\item Band spectra is a term that refers to using EM waves to probe molecules.
+\item Solid state: \[
+\text{primitive cell}=\frac{\text{unit cell}}{\text{\# of lattice points in a Bravais lattice}}\]
+Simple cubic $\to$ 1 point, body-centered $\to$ 2 points, face-centered
+$\to$ 4 points.
+\item Resistivity of undoped semiconductor varies as $1/T$.
+\item Nuclear physics: binding energy is a form of potential energy, convention
+is to take it as positive. It's the energy needed to separate into
+different constituents. It is usually subtracted for other energy
+to tally total energy.
+\item Pair production refers to the creation of an elementary particle and
+its antiparticle. Usually need high energy (at least the total mass).
+\item At low energies, photoelectric-effect dominates Compton scattering.
+\item Radioactivity: Beta decay\[
+X_{Z}^{A}\to X_{Z+1}^{'A}+\beta_{-1}^{0}+\nu\]
+Alpha:\[
+X_{Z}^{A}\to X_{Z-2}^{\prime A-4}+\text{He}_{2}^{4}\]
+Gamma\[
+X_{Z}^{A}\to X_{Z}^{A}+\gamma\]
+Deuteron decay (not natural)\[
+X_{Z}^{A}\to X_{Z-1}^{A-2}+\text{H}_{1}^{2}\]
+Radioactivity usually follows Poisson distribution.
+\item Coaxial cable terminated at an end with characteristic impedance in
+order to avoid reflection of signals from the terminated end of cable.
+\item Human eyes can only see things in motion up to $\sim25$ Hz.
+\item In magnetic field, $e$ are more likely to be emitted in a direction
+opposite to the spin direction of the decaying atom.
+\item Op-amp (operational amplifiers): if you only have two days to prepare
+for the GRE, this is not worth the effort, maximum one question on
+this. Read {}``The Art of Electronics'' to check this out.
+\item The specific heat of a superconductor jumps to a lower value at the
+critical temperature (resistivity jumps too)
+\item Elementary particles: review the quarks, leptons, force carriers,
+generations, hadrons.
+
+\begin{itemize}
+\item Family number conserved
+\item Lepton number conserved
+\item Strangeness is conserved (except for weak interactions)
+\item Baryon number is conserved
+\end{itemize}
+\item Internal conversion is a radioactive decay where an excited nucleus
+interacts with an electron in one of the lower electron shells, causing
+the electron to be emitted from the atom. It is not beta decay.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
