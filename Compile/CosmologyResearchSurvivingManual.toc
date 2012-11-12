@@ -29,6 +29,9 @@
 \contentsline {subsection}{\numberline {11.4.1}Killing Vector Related}{45}
 \contentsline {section}{\numberline {11.5}Topics}{45}
 \contentsline {subsection}{\numberline {11.5.1}Redshift}{45}
+\contentsline {subsection}{\numberline {11.5.2}Stationary vs Static}{46}
+\contentsline {paragraph}{Stationay}{46}
+\contentsline {paragraph}{Static}{46}
 \contentsline {part}{III\hspace {1em}Tools}{47}
 \contentsline {chapter}{\numberline {12}Mathematics}{49}
 \contentsline {section}{\numberline {12.1}Differential Geometry}{50}

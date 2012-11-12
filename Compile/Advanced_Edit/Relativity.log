@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.1415926-2.2-0.9995.2 (Web2C 2009) (format=xelatex 2009.11.12)  11 NOV 2012 20:43
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (Web2C 2009) (format=xelatex 2009.11.12)  11 NOV 2012 20:41
 entering extended mode
  %&-line parsing enabled.
-**CosmologyResearchSurvivingManual.tex
-(./CosmologyResearchSurvivingManual.tex
+**Relativity.tex
+(./Relativity.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, pinyin, loaded.
@@ -118,10 +118,6 @@ LaTeX Info: Redefining \] on input line 2667.
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup9
 )
-(c:/TeXLive/current/texmf-dist/tex/latex/ltxmisc/url.sty
-\Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-)
 (c:/TeXLive/current/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
@@ -199,13 +195,8 @@ File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
-(./CosmologyResearchSurvivingManual.aux (./Preface.aux) (./Basic.aux)
-(./AdvancedPhysics.aux) (./Relativity.aux) (./Mathematics.aux) (./Cosmology.aux
-
-LaTeX Warning: Label `eq-co-dis-scale_factor' multiply defined.
-
-))
-\openout1 = `CosmologyResearchSurvivingManual.aux'.
+(./Relativity.aux)
+\openout1 = `Relativity.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -295,163 +286,26 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ]
 LaTeX Font Info:    Font shape `U/Arial(0)/m/sl' in size <12> not available
-(Font)              Font shape `U/Arial(0)/m/it' tried instead on input line 88
-.
- [2
-
-]
-(./CosmologyResearchSurvivingManual.toc [1
-
-])
-\tf@toc=\write3
-\openout3 = `CosmologyResearchSurvivingManual.toc'.
-
+(Font)              Font shape `U/Arial(0)/m/it' tried instead on input line 16
+0.
  [2]
-\openout2 = `Preface.aux'.
-
- (./Preface.tex
-LaTeX Font Info:    Try loading font information for U+cmtt on input line 5.
-
-(c:/TeXLive/current/texmf-dist/tex/latex/base/ucmtt.fd
-File: ucmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (42.7534pt too wide) in paragraph at lines 13--15
-\U/cmtt/m/n/12 ~physics / ?q = node / 13$\U/Arial(0)/m/n/12 ;$\U/cmtt/m/n/12 ht
-tp : / / www . hcs . harvard . edu / ~physics / files / GRE \ %20notes .
- []
-
-) [3
-
-
-] [4
-
-
-] [1
-
-] [2]
-Chapter 1.
-[3
-
-]
-\openout2 = `Basic.aux'.
-
- (./Basic.tex [4
-
-]
-Chapter 2.
-[5
-
-] [6] [7] [8
-
-]
-Chapter 3.
-[9] [10] [11] [12]
-Overfull \hbox (34.07991pt too wide) in paragraph at lines 342--346
-\OT1/cmr/m/n/12 10[]$\U/Arial(0)/m/n/12 ; Infrared $\OT1/cmr/m/n/12 10[]$\U/Ari
-al(0)/m/n/12 ; visible 700-900 nm ($\OT1/cmr/m/n/12 10[]$\U/Arial(0)/m/n/12 ); 
-UV $\OT1/cmr/m/n/12 10[]$\U/Arial(0)/m/n/12 (molecules); X-ray $\OT1/cmr/m/n/12
- 10[]$\U/Arial(0)/m/n/12 (atoms);
- []
-
-[13] [14]
-Chapter 4.
-[15
-
-] [16] [17]) [18] [19
-
-
-] [20]
-\openout2 = `AdvancedPhysics.aux'.
-
- (./AdvancedPhysics.tex
-Chapter 5.
-[21
-
-
-] [22] [23] [24] [25] [26
-
-]
-Chapter 6.
-[27] [28] [29] [30] [31] [32]
-Chapter 7.
-[33
-
-] [34]
-Chapter 8.
-[35
-
-] [36]
-Chapter 9.
-[37
-
-] [38
-
-]
-Chapter 10.
-[39] [40]) [41] [42
-
-
-]
-Chapter 11.
-[43]
-\openout2 = `Relativity.aux'.
-
- (./Relativity.tex [44
-
-]
 \c@theorem=\count110
 
-Overfull \hbox (16.83366pt too wide) in paragraph at lines 80--81
-\U/Arial(0)/bx/n/12 11.1. $\OML/cmm/m/it/12 ^^X[]$ \U/Arial(0)/m/it/12 is Killi
-ng vector field, $\OML/cmm/m/it/12 T[]$ \U/Arial(0)/m/it/12 is the tangent vect
-or of geodesic line. Then $\OML/cmm/m/it/12 T[]\OMS/cmsy/m/n/12 r[]\OT1/cmr/m/n
-/12 (\OML/cmm/m/it/12 T[]^^X[]\OT1/cmr/m/n/12 ) =
+Overfull \hbox (10.82195pt too wide) in paragraph at lines 189--190
+\U/Arial(0)/bx/n/12 0.1. $\OML/cmm/m/it/12 ^^X[]$ \U/Arial(0)/m/it/12 is Killin
+g vector field, $\OML/cmm/m/it/12 T[]$ \U/Arial(0)/m/it/12 is the tangent vecto
+r of geodesic line. Then $\OML/cmm/m/it/12 T[]\OMS/cmsy/m/n/12 r[]\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 T[]^^X[]\OT1/cmr/m/n/12 ) =
  []
 
-[45]) [46] [47
-
-
-] [48]
-Chapter 12.
-[49
-
-]
-\openout2 = `Mathematics.aux'.
-
- (./Mathematics.tex [50
-
-] [51]) [52] [53] [54
-
-
-] [55] [56]
-Chapter 13.
-[57
-
-]
-\openout2 = `Cosmology.aux'.
-
- (./Cosmology.tex [58
-
-] [59] [60]
-Overfull \hbox (5.56981pt too wide) in paragraph at lines 214--216
-\U/Arial(0)/m/n/12 quences. The two consequences are isotropic and homogeneous.
- Isotropic
- []
-
-[61] [62] [63]) [64] (./CosmologyResearchSurvivingManual.aux (./Preface.aux)
-(./Basic.aux) (./AdvancedPhysics.aux) (./Relativity.aux) (./Mathematics.aux)
-(./Cosmology.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[3] [4] (./Relativity.aux) ) 
 Here is how much of TeX's memory you used:
- 5924 strings out of 495713
- 89308 string characters out of 3188646
- 173954 words of memory out of 3000000
- 8931 multiletter control sequences out of 15000+200000
- 19498 words of font info for 100 fonts, out of 3000000 for 9000
+ 5763 strings out of 495713
+ 86897 string characters out of 3188646
+ 165909 words of memory out of 3000000
+ 8830 multiletter control sequences out of 15000+200000
+ 19273 words of font info for 92 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,16n,27p,464b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,9n,27p,442b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on CosmologyResearchSurvivingManual.pdf (70 pages).
+Output written on Relativity.pdf (4 pages).
