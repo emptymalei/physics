@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.2-0.9995.2 (Web2C 2009) (format=xelatex 2009.11.12)  11 NOV 2012 20:43
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (Web2C 2009) (format=xelatex 2009.11.12)  15 NOV 2012 22:31
 entering extended mode
  %&-line parsing enabled.
 **CosmologyResearchSurvivingManual.tex
@@ -337,108 +337,122 @@ Chapter 1.
 
  (./Basic.tex [4
 
+] [5] [6
+
 ]
 Chapter 2.
-[5
-
-] [6] [7] [8
+[7] [8] [9] [10
 
 ]
 Chapter 3.
-[9] [10] [11] [12]
-Overfull \hbox (34.07991pt too wide) in paragraph at lines 342--346
+[11] [12] [13] [14]
+Overfull \hbox (34.07991pt too wide) in paragraph at lines 336--340
 \OT1/cmr/m/n/12 10[]$\U/Arial(0)/m/n/12 ; Infrared $\OT1/cmr/m/n/12 10[]$\U/Ari
 al(0)/m/n/12 ; visible 700-900 nm ($\OT1/cmr/m/n/12 10[]$\U/Arial(0)/m/n/12 ); 
 UV $\OT1/cmr/m/n/12 10[]$\U/Arial(0)/m/n/12 (molecules); X-ray $\OT1/cmr/m/n/12
  10[]$\U/Arial(0)/m/n/12 (atoms);
  []
 
-[13] [14]
+[15] [16]
 Chapter 4.
-[15
+[17
 
-] [16] [17]) [18] [19
+] [18] [19]) [20] [21
 
 
-] [20]
+] [22]
 \openout2 = `AdvancedPhysics.aux'.
 
  (./AdvancedPhysics.tex
 Chapter 5.
-[21
+[23
 
 
-] [22] [23] [24] [25] [26
+] [24] [25] [26] [27] [28
 
 ]
 Chapter 6.
-[27] [28] [29] [30] [31] [32]
+[29] [30] [31] [32] [33] [34]
 Chapter 7.
-[33
-
-] [34]
-Chapter 8.
 [35
 
 ] [36]
-Chapter 9.
+Chapter 8.
 [37
 
-] [38
+] [38]
+Chapter 9.
+[39
+
+] [40
 
 ]
 Chapter 10.
-[39] [40]) [41] [42
-
-
-]
-Chapter 11.
-[43]
+[41] [42]) [43]
 \openout2 = `Relativity.aux'.
 
  (./Relativity.tex [44
 
+
+
 ]
+Chapter 11.
+[45] [46]
+Chapter 12.
+
+Overfull \hbox (1.16512pt too wide) in paragraph at lines 88--88
+[]\U/Arial(0)/bx/n/17.28 Description of Space-time Manifold - Coordinates 
+ []
+
+[47
+
+]
+Overfull \hbox (2.54765pt too wide) in paragraph at lines 174--175
+ \U/Arial(0)/bx/n/12 Fully orthogonally projected covariant derivative ($[]$)[]
+ \U/Arial(0)/m/n/12 This derivative is the project
+ []
+
+[48] [49]
 \c@theorem=\count110
 
-Overfull \hbox (16.83366pt too wide) in paragraph at lines 80--81
-\U/Arial(0)/bx/n/12 11.1. $\OML/cmm/m/it/12 ^^X[]$ \U/Arial(0)/m/it/12 is Killi
+Overfull \hbox (17.49577pt too wide) in paragraph at lines 264--265
+\U/Arial(0)/bx/n/12 12.1. $\OML/cmm/m/it/12 ^^X[]$ \U/Arial(0)/m/it/12 is Killi
 ng vector field, $\OML/cmm/m/it/12 T[]$ \U/Arial(0)/m/it/12 is the tangent vect
 or of geodesic line. Then $\OML/cmm/m/it/12 T[]\OMS/cmsy/m/n/12 r[]\OT1/cmr/m/n
 /12 (\OML/cmm/m/it/12 T[]^^X[]\OT1/cmr/m/n/12 ) =
  []
 
-[45]) [46] [47
+) [50] [51
 
 
-] [48]
-Chapter 12.
-[49
+] [52]
+Chapter 13.
+[53
 
 ]
 \openout2 = `Mathematics.aux'.
 
- (./Mathematics.tex [50
+ (./Mathematics.tex [54
 
-] [51]) [52] [53] [54
+] [55]) [56] [57] [58
 
 
-] [55] [56]
-Chapter 13.
-[57
+] [59] [60]
+Chapter 14.
+[61
 
 ]
 \openout2 = `Cosmology.aux'.
 
- (./Cosmology.tex [58
+ (./Cosmology.tex [62
 
-] [59] [60]
+] [63] [64]
 Overfull \hbox (5.56981pt too wide) in paragraph at lines 214--216
 \U/Arial(0)/m/n/12 quences. The two consequences are isotropic and homogeneous.
  Isotropic
  []
 
-[61] [62] [63]) [64] (./CosmologyResearchSurvivingManual.aux (./Preface.aux)
+[65] [66] [67]) [68] (./CosmologyResearchSurvivingManual.aux (./Preface.aux)
 (./Basic.aux) (./AdvancedPhysics.aux) (./Relativity.aux) (./Mathematics.aux)
 (./Cosmology.aux))
 
@@ -454,4 +468,4 @@ Here is how much of TeX's memory you used:
  28 hyphenation exceptions out of 8191
  27i,16n,27p,464b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on CosmologyResearchSurvivingManual.pdf (70 pages).
+Output written on CosmologyResearchSurvivingManual.pdf (74 pages).
