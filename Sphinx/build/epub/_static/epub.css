@@ -1,8 +1,8 @@
 /*
- * basic.css
- * ~~~~~~~~~
+ * epub.css_t
+ * ~~~~~~~~~~
  *
- * Sphinx stylesheet -- basic theme.
+ * Sphinx stylesheet -- epub theme.
  *
  * :copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
  * :license: BSD, see LICENSE for details.
@@ -15,10 +15,21 @@ div.clearer {
     clear: both;
 }
 
+a:link, a:visited {
+    color: #3333ff;
+    text-decoration: underline;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
 /* -- relbar ---------------------------------------------------------------- */
 
 div.related {
     width: 100%;
+    font-family: sans-serif;
     font-size: 90%;
 }
 
@@ -49,7 +60,7 @@ div.sphinxsidebarwrapper {
 
 div.sphinxsidebar {
     float: left;
-    width: 200px;
+    width: 230px;
     margin-left: -100%;
     font-size: 90%;
 }
@@ -76,15 +87,7 @@ div.sphinxsidebar form {
 div.sphinxsidebar input {
     border: 1px solid #98dbcc;
     font-family: sans-serif;
-    font-size: 1em;
-}
-
-div.sphinxsidebar #searchbox input[type="text"] {
-    width: 170px;
-}
-
-div.sphinxsidebar #searchbox input[type="submit"] {
-    width: 30px;
+    font-size: 100%;
 }
 
 img {
@@ -130,7 +133,7 @@ table.contentstable p.biglink {
 }
 
 a.biglink {
-    font-size: 1.3em;
+    font-size: 130%;
 }
 
 span.linkdescr {
@@ -140,10 +143,6 @@ span.linkdescr {
 }
 
 /* -- general index --------------------------------------------------------- */
-
-table.indextable {
-    width: 100%;
-}
 
 table.indextable td {
     text-align: left;
@@ -170,34 +169,10 @@ img.toggler {
     cursor: pointer;
 }
 
-div.modindex-jumpbox {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 1em 0 1em 0;
-    padding: 0.4em;
-}
-
-div.genindex-jumpbox {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 1em 0 1em 0;
-    padding: 0.4em;
-}
-
 /* -- general body styles --------------------------------------------------- */
 
 a.headerlink {
     visibility: hidden;
-}
-
-h1:hover > a.headerlink,
-h2:hover > a.headerlink,
-h3:hover > a.headerlink,
-h4:hover > a.headerlink,
-h5:hover > a.headerlink,
-h6:hover > a.headerlink,
-dt:hover > a.headerlink {
-    visibility: visible;
 }
 
 div.body p.caption {
@@ -209,7 +184,7 @@ div.body td {
 }
 
 .field-list ul {
-    padding-left: 1em;
+    padding-left: 100%;
 }
 
 .first {
@@ -219,36 +194,6 @@ div.body td {
 p.rubric {
     margin-top: 30px;
     font-weight: bold;
-}
-
-img.align-left, .figure.align-left, object.align-left {
-    clear: left;
-    float: left;
-    margin-right: 1em;
-}
-
-img.align-right, .figure.align-right, object.align-right {
-    clear: right;
-    float: right;
-    margin-left: 1em;
-}
-
-img.align-center, .figure.align-center, object.align-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.align-right {
-    text-align: right;
 }
 
 /* -- sidebars -------------------------------------------------------------- */
@@ -275,7 +220,7 @@ div.topic {
 }
 
 p.topic-title {
-    font-size: 1.1em;
+    font-size: 110%;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -334,36 +279,7 @@ th {
     padding-right: 5px;
 }
 
-table.citation {
-    border-left: solid 1px gray;
-    margin-left: 1px;
-}
-
-table.citation td {
-    border-bottom: none;
-}
-
 /* -- other body styles ----------------------------------------------------- */
-
-ol.arabic {
-    list-style: decimal;
-}
-
-ol.loweralpha {
-    list-style: lower-alpha;
-}
-
-ol.upperalpha {
-    list-style: upper-alpha;
-}
-
-ol.lowerroman {
-    list-style: lower-roman;
-}
-
-ol.upperroman {
-    list-style: upper-roman;
-}
 
 dl {
     margin-bottom: 15px;
@@ -384,12 +300,12 @@ dd {
 }
 
 dt:target, .highlighted {
-    background-color: #fbe54e;
+    background-color: #ddd;
 }
 
 dl.glossary dt {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 110%;
 }
 
 .field-list ul {
@@ -406,7 +322,7 @@ dl.glossary dt {
 }
 
 .optional {
-    font-size: 1.3em;
+    font-size: 130%;
 }
 
 .versionmodified {
@@ -420,43 +336,15 @@ dl.glossary dt {
 }
 
 .footnote:target  {
-    background-color: #ffa;
-}
-
-.line-block {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.line-block .line-block {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 1.5em;
-}
-
-.guilabel, .menuselection {
-    font-family: sans-serif;
-}
-
-.accelerator {
-    text-decoration: underline;
-}
-
-.classifier {
-    font-style: oblique;
-}
-
-abbr, acronym {
-    border-bottom: dotted 1px;
-    cursor: help;
+    background-color: #dddddd;
 }
 
 /* -- code displays --------------------------------------------------------- */
 
 pre {
+    font-family: "LiberationNarrow", monospace;
     overflow: auto;
-    overflow-y: hidden;  /* fixes display issues on Chrome browsers */
+    overflow-y: hidden;
 }
 
 td.linenos pre {
@@ -472,6 +360,10 @@ table.highlighttable {
 
 table.highlighttable td {
     padding: 0 0.5em 0 0.5em;
+}
+
+tt {
+    font-family: "LiberationNarrow", monospace;
 }
 
 tt.descname {
@@ -493,20 +385,6 @@ h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
     background-color: transparent;
 }
 
-.viewcode-link {
-    float: right;
-}
-
-.viewcode-back {
-    float: right;
-    font-family: sans-serif;
-}
-
-div.viewcode-block:target {
-    margin: -1px -10px;
-    padding: 0 10px;
-}
-
 /* -- math display ---------------------------------------------------------- */
 
 img.math {
@@ -521,20 +399,68 @@ span.eqno {
     float: right;
 }
 
-/* -- printout stylesheet --------------------------------------------------- */
+/* -- special divs  --------------------------------------------------------- */
 
-@media print {
-    div.document,
-    div.documentwrapper,
-    div.bodywrapper {
-        margin: 0 !important;
-        width: 100%;
-    }
-
-    div.sphinxsidebar,
-    div.related,
-    div.footer,
-    #top-link {
-        display: none;
-    }
+div.quotebar {
+    background-color: #e3eff1;
+    max-width: 250px;
+    float: right;
+    font-family: sans-serif;
+    padding: 7px 7px;
+    border: 1px solid #ccc;
 }
+div.footer {
+    background-color: #e3eff1;
+    padding: 3px 8px 3px 0;
+    clear: both;
+    font-family: sans-serif;
+    font-size: 80%;
+    text-align: right;
+}
+
+div.footer a {
+    text-decoration: underline;
+}
+
+/* -- link-target ----------------------------------------------------------- */
+
+.link-target {
+    font-size: 80%;
+}
+
+table .link-target {
+    /* Do not show links in tables, there is not enough space */
+    display: none;
+}
+
+/* -- font-face ------------------------------------------------------------- */
+
+@font-face {
+    font-family: "LiberationNarrow";
+    font-style: normal;
+    font-weight: normal;
+    src: url("res:///Data/fonts/LiberationNarrow-Regular.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "LiberationNarrow";
+    font-style: oblique, italic;
+    font-weight: normal;
+    src: url("res:///Data/fonts/LiberationNarrow-Italic.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "LiberationNarrow";
+    font-style: normal;
+    font-weight: bold;
+    src: url("res:///Data/fonts/LiberationNarrow-Bold.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "LiberationNarrow";
+    font-style: oblique, italic;
+    font-weight: bold;
+    src: url("res:///Data/fonts/LiberationNarrow-BoldItalic.otf")
+        format("opentype");
+}
+
