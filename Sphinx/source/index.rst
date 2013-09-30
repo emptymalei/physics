@@ -13,6 +13,8 @@ Contents:
 
    preface.rst
    Basic.rst
+   SpecialRelativity.rst
+   GeneralRelativity.rst
 
 Indices and tables
 ==================

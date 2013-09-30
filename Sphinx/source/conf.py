@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Physics Research Surviving Manual'
+project = u'Physics Research Survival Manual'
 copyright = u'2013, Cosmology TF'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -108,12 +108,12 @@ html_theme = 'sphinx-bootstrap'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'analytics_code': 'UA-44466929-1',
+  #  'analytics_code': 'UA-44466929-1',
     'github_user': 'CosmologyTaskForce',
-    'github_repo': 'CosmologyResearchSurvivingManual',
+    'github_repo': 'PhysicsResearchSurvivalManual',
     'twitter_username': 'emptymalei',
-    'home_url': 'http://multiverse.lamost.org',
-    'disqus_shortname': 'researchsurvivalmanual',
+    'home_url': 'http://iastro.lamost.org',
+  #  'disqus_shortname': 'researchsurvivalmanual',
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme
