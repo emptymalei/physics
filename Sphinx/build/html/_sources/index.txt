@@ -15,6 +15,7 @@ Contents:
    Basic.rst
    SpecialRelativity.rst
    GeneralRelativity.rst
+   Cosmology/Cosmology.rst
 
 Indices and tables
 ==================
