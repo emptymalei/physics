@@ -3,13 +3,8 @@ Preface
 ========
 
 
-I have a bad memory that I can hardly remember anything.
+This is only a draft handbook for myself. However, I think it might be helpful for some people working on similiar things.
 
-To get rid of it, I tried many ways to help myself memorizing things and pushing myself to the frontier of physics. Finally, I decided to collect some of my notes together and established this project on github.\url{http://cosmologytaskforce.github.com/CosmologyResearchSurvivingManual}
+I started this manual when I just started my graduate study in China. At that time, I learned how to use LaTeX and I was so exciting. So I think I should start write something using LaTeX since it's so beautiful.
 
-This is only a draft handbook for myself. However, I believe everyone need a handbook of his/her area and my version of handbook might be helpful for some people working on similiar things with mine.
-
-This book can never be delivered formally because I borrowed many resources in this book. Here I list the most important of them here. I am grateful to the authors of the resources.
-
-
-* In the part of physics, I take the source file of some notes on GRE Physics subject test written by Lin Cong and typeset by Duncan Watts. I just rearranged the sections and make modifications based on it http://www.hcs.harvard.edu/~physics/?q=node/13 , http://www.hcs.harvard.edu/~physics/files/GRE\%20notes.tex .The author said in his notes everyone is welcome to typeset and improve his notes but if you are going to use this document commercially you need to contact him first.
+Finally I decided to write down my notes on some specific topics. Later, I just started establishing my own framwork of Physics. As long as I decided to cover more topics, I changed the name of my project to Research Survival Manual.
