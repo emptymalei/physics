@@ -1,6 +1,3 @@
-*********************
-Cosmology Trace Back
-*********************
 
 
 ======================
@@ -36,22 +33,34 @@ This quantity is related to how much energy was emitted at the star, how far we 
 
 This schematic picture shows that energy spread out on a surface because the total energy is conserved. Isotropic energy flux through the same solid angle at different radius must be the same.
 
-<a title="Borb [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0-2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AInverse_square_law.svg"><img width="400" alt="Inverse square law" src="http://upload.wikimedia.org/wikipedia/commons/2/28/Inverse_square_law.svg"/></a>
+.. image:: Fig/InverseSquareLaw.png
+   :alt: From Wikipedia: Inverse equare law, CC.
+   :align: center
+
 
 Through a very simple calculation, it is as simple as
-$$ L_0 = \frac{ L }{ 4\pi r^2 } .$$
+
+.. math::
+    L_0 = \frac{ L }{ 4\pi r^2 } .
 
 We are dealing with Cosmology now. The space-time manifold should be a great concern. The luminosity turns out to be
-$$ L_0 = \frac{L_\mathrm{abs} }{4\pi d^2} \frac{1}{1+z} \frac{1}{1+z} .$$
+
+.. math::
+   L_0 = \frac{L_\mathrm{abs} }{4\pi d^2} \frac{1}{1+z} \frac{1}{1+z} .
 
 Here d is the physical distance between the star and the observer. L is the absolute luminosity of the star, which stands for the power of the star. z is the redshift of the star.
 
-The first $$\frac{1}{1+z}$$ term comes from the fact that the energy of each photon decrease due to expansion of the universe, while the second is the result that the rate of photons arrived at the observer is less.
+The first :math:`\frac{1}{1+z}` term comes from the fact that the energy of each photon decrease due to expansion of the universe, while the second is the result that the rate of photons arrived at the observer is less.
 
 We are happy to define
-$$ d_L = d (1+z) ,$$
+
+.. math::
+   d_L = d (1+z) ,
+   
 then the luminosity becomes simpler,
-$$ L_0 = \frac{L_{\mathrm {abs}}}{4\pi d_L^2} .$$
+
+.. math::
+   L_0 = \frac{L_{\mathrm {abs}}}{4\pi d_L^2} .
 
 
 Now we come back to have a look at this luminosity.
@@ -61,103 +70,147 @@ Now we come back to have a look at this luminosity.
 * The $$$d_L = d (1+z)$$$ is only valid for a flat universe, with curvature term $$$K=0$$$ in Friedmann equation.
 
 Then we can find out this so called luminosity distance
-$$ d_L = \frac{  L_{\mathrm {abs}} }{ 4\pi L_0 } $$
+
+.. math::
+   d_L = \frac{  L_{\mathrm {abs}} }{ 4\pi L_0 }
+
 from some data.
 
-#### Luminosity Distance from Theory
+Luminosity Distance from Theory
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 We don't just do the observation for the luminosity distance itself.
 We observe to test theories.
 
 What is this distance in theory?
 
-$$ d_L = d (1+z) $$
+.. math::
+   d_L = d (1+z)
 
 Wait, didn't we just mention that this is only valid for a flat universe? So we just do some extension.
 
-$$ d_L = R(d) (1+z) $$
+.. math::
+   d_L = R(d) (1+z)
+
 where R(d) is a function of d and can be determined through geometry,
 
-* Spherical: $$ 4\pi \sin^2 d ,$$
-* Flat: $$ 4\pi d ,$$
-* Hyperbolic: $$ 4\pi \sinh^2 d .$$
+* Spherical: :math:`4\pi \sin^2 d` ,
+* Flat: :math:`4\pi d` ,
+* Hyperbolic: :math:`4\pi \sinh^2 d` .
 
-##### Nearby Objects
+
+Nearby Objects
+^^^^^^^^^^^^^^^^^^^^
 
 For nearby objects, we can always use flat geometry and use Taylor expansion at current time for a(t).
 
 Luminosity distance is
-$$ d_L = d (1+z) = r a(t) (1+z) ,$$
+
+.. math::
+   d_L = d (1+z) = r a(t) (1+z) ,
+
 where r is the comoving distance and a(t) is the scale factor at time t.
 
 We know
-$$ r = \int_t^{t_0} \frac{1}{a(t')} \mathrm d t'  .$$
+
+.. math::
+   r = \int_t^{t_0} \frac{1}{a(t')} \mathrm d t' .
 
 So we are happy to use Taylor expansion around $$$t_0$$$ for $$$a(t)$$$, and keep only up to the second order of time. And do some substitution with
-$$ H_0 = \dot a(t_0)/a(t_0) $$
-$$ q_0 = \ddot a(t_0)/a(t_0) .$$
+
+
+.. math::
+   H_0 = \dot a(t_0)/a(t_0)
+
+   q_0 = \ddot a(t_0)/a(t_0) .
 
 We then do the same thing on redshift
-$$ z=a(t_0)/a(t) - 1 .$$
 
-Finally, we can find out the relation $$$ r(z) $$$, which leads us to the result we need, $$ d_L(z) = H_0^{-1} (z - \frac12 (1+q_0) z^2) .$$
+.. math::
+   z=a(t_0)/a(t) - 1 .
+
+Finally, we can find out the relation :math:`r(z)`, which leads us to the result we need, :math:`d_L(z) = H_0^{-1} (z - \frac12 (1+q_0) z^2)`.
 
 * For very near objects (not as near as our sun of course), 
-	$$ d_L = H_0^{-1}z .$$
+
+  .. math::	
+     d_L = H_0^{-1}z .
 
 
 
 **This is a model independent observation and derivation. We can draw a line to represent the case when deceleration parameter is zero, lines higher than this stands for a accelerating universe while lower region show a decelerating universe.**
-	![Luminosity Distance VS Redshift](LuminosityDistanceVSRedshift.png)
+
+.. image:: Fig/LuminosityDistanceVSRedshift.png
+   :alt: Luminosity Distance VS Redshift
 
 We can show that for a vacuum energy dominated universe, the line would go up and for a matter dominated universe, it would below the zero deceleration line.
 
-#### Comment
-
-In this model independent method, the only two parameters occur are Hubble constant $$$H_0$$$ and deceleration parameter $$$ q_0 $$$.
 
 
-### Angular Diameter Distance
+Comment
+^^^^^^^^^^
+
+In this model independent method, the only two parameters occur are Hubble constant $$$H_0$$$ and deceleration parameter :math:`q_0` .
 
 
-#### Observation
+
+Angular Diameter Distance
+"""""""""""""""""""""""""""
+
+
+Observation
+^^^^^^^^^^^^^
+
 
 Angular diameter distance is really useful if we have some standard ruler. Now assume we have a ruler d, we can find out the angle between the two ends of the ruler, by some kind of measurement.
 
-![Angular Diameter Diatance](http://upload.wikimedia.org/wikipedia/commons/4/49/Angular_dia_formula.JPG)
+.. image:: Fig/AngularDiaFormula.jpg
+   :alt: Angular Diameter Diatance
 
 At the same time, we can use magic of math
-$$ \theta = d/D .$$
 
-Now as we already find out what $$$\theta$$$ is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance $$$D$$$, which is the distance between us and the standard ruler.
+.. math::
+   \theta = d/D .
+
+Now as we already find out what $$$\theta$$$ is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance :math:`D`, which is the distance between us and the standard ruler.
 
 
-#### Theory
+Theory
+^^^^^^^^
 
-We can find out this kind of distance, which we will denote it as $$$d_A$$$ from now on. What is it for?
+We can find out this kind of distance, which we will denote it as :math:`d_A` from now on. What is it for?
 
 A angular diameter distance is the physical distance between us and the standard ruler,
-$$ d_A = a(t)r .$$
+
+.. math::
+   d_A = a(t)r .
 
 We can use the same trick we used in luminosity distance calculations, and it is easy to find that
 
-$$ d_A = H_0^{-1} (z - \frac{1}{2} (3 + q_0)z^2 ) .$$
+.. math::
+   d_A = H_0^{-1} (z - \frac{1}{2} (3 + q_0)z^2 ) .
 
-Again, the observation is related to only two parameters, Hubble constant $$$H_0$$$ and deceleration parameter $$$q_0$$$.
+Again, the observation is related to only two parameters, Hubble constant $$$H_0$$$ and deceleration parameter :math:`q_0`.
 
-#### Standard Rulers
+
+
+Standard Rulers
+^^^^^^^^^^^^^^^^^
 
 It is hard to imagine that we really have some standard rulers. In fact, we do. They are
 
-* [Baryon Acoustic Oscillation](http://en.wikipedia.org/wiki/Baryon_acoustic_oscillations)
+* `Baryon Acoustic Oscillation <http://www.python.org/>`_
 * Sound Horizon at Recombination
 
 
-### Galaxy Number Count
+Galaxy Number Count
+""""""""""""""""""""""
 
 Now we can see anything that is only (simply) related to physical or comoving distance can be determined by this trick. The result is that only two cosmological parameters would come in our equation as long as we keep only upper to order two of redshift.
 
 Here another example is the galaxy number count.
 
-$$ \frac{\mathrm d N_g}{\mathrm d z \mathrm d\Omega} = z^2 \frac{n_0}{H_0^3}  (1-2(1+q_0) z) .$$
+.. math::
+   \frac{\mathrm d N_g}{\mathrm d z \mathrm d\Omega} = z^2 \frac{n_0}{H_0^3}  (1-2(1+q_0) z) .
 
