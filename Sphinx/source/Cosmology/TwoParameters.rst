@@ -67,7 +67,7 @@ Now we come back to have a look at this luminosity.
 
 * We can measure how much energy is passing through a unit area at a unit time, which means **we can determine this luminosity directly from observations**.
 * We can **predict the absolute luminosity** from a star evolution model.
-* The $$$d_L = d (1+z)$$$ is only valid for a flat universe, with curvature term $$$K=0$$$ in Friedmann equation.
+* The :math:`d_L = d (1+z)` is only valid for a flat universe, with curvature term :math:`K=0` in Friedmann equation.
 
 Then we can find out this so called luminosity distance
 
@@ -117,13 +117,13 @@ We know
 .. math::
    r = \int_t^{t_0} \frac{1}{a(t')} \mathrm d t' .
 
-So we are happy to use Taylor expansion around $$$t_0$$$ for $$$a(t)$$$, and keep only up to the second order of time. And do some substitution with
-
+So we are happy to use Taylor expansion around :math:`t_0` for :math:`a(t)`, and keep only up to the second order of time. And do some substitution with
 
 .. math::
+
    H_0 = \dot a(t_0)/a(t_0)
 
-   q_0 = \ddot a(t_0)/a(t_0) .
+   q_0=\ddot a (t_0) / a(t_0)
 
 We then do the same thing on redshift
 
@@ -151,7 +151,7 @@ We can show that for a vacuum energy dominated universe, the line would go up an
 Comment
 ^^^^^^^^^^
 
-In this model independent method, the only two parameters occur are Hubble constant $$$H_0$$$ and deceleration parameter :math:`q_0` .
+In this model independent method, the only two parameters occur are Hubble constant :math:`H_0` and deceleration parameter :math:`q_0` .
 
 
 
@@ -173,7 +173,7 @@ At the same time, we can use magic of math
 .. math::
    \theta = d/D .
 
-Now as we already find out what $$$\theta$$$ is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance :math:`D`, which is the distance between us and the standard ruler.
+Now as we already find out what :math:`\theta` is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance :math:`D`, which is the distance between us and the standard ruler.
 
 
 Theory
@@ -191,7 +191,7 @@ We can use the same trick we used in luminosity distance calculations, and it is
 .. math::
    d_A = H_0^{-1} (z - \frac{1}{2} (3 + q_0)z^2 ) .
 
-Again, the observation is related to only two parameters, Hubble constant $$$H_0$$$ and deceleration parameter :math:`q_0`.
+Again, the observation is related to only two parameters, Hubble constant :math:`H_0` and deceleration parameter :math:`q_0`.
 
 
 
