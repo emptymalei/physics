@@ -16,6 +16,7 @@ Contents:
    SpecialRelativity.rst
    GeneralRelativity.rst
    Cosmology/Cosmology.rst
+   Cosmology/TwoParameters.rst
 
 Indices and tables
 ==================
@@ -24,3 +25,15 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+
+License
+========
+
+This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_.
+
+.. image:: img/CCBYNCSA.png
+    :align: center
+    :height: 373px
+    :width: 1576px
+    :scale: 5% 
+    :alt: Creative Commons License
