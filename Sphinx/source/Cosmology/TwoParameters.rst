@@ -200,7 +200,7 @@ Standard Rulers
 
 It is hard to imagine that we really have some standard rulers. In fact, we do. They are
 
-* `Baryon Acoustic Oscillation <http://www.python.org/>`_
+* `Baryon Acoustic Oscillation <https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations>`_
 * Sound Horizon at Recombination
 
 
