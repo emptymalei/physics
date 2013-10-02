@@ -24,6 +24,7 @@ Degree of Freedom of Elementary Particles
 
 .. image:: Fig/Standard_Model_of_Elementary_Particles.png
 
+IMG Source: https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
 
 The orange numbers at the right bottom of each particle is the degrees of freedom it has. Here are some comments.
 
