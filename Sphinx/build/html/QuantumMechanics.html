@@ -1,0 +1,410 @@
+<!DOCTYPE html><html>
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8"/>
+    
+        <title>Quantum Mechanics &mdash; Physics Research Survival Manual 1.0.5 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="_static/sphinx-bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css"/>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script type="text/javascript">
+            var DOCUMENTATION_OPTIONS = {
+                URL_ROOT:'./',
+                VERSION:'1.0.5',
+                COLLAPSE_INDEX:false,
+                FILE_SUFFIX:'.html',
+                HAS_SOURCE:  true
+            };
+        </script>
+            <script type="text/javascript" src="_static/jquery.js"></script>
+            <script type="text/javascript" src="_static/underscore.js"></script>
+            <script type="text/javascript" src="_static/doctools.js"></script>
+            <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+            <script type="text/javascript" src="_static/bootstrap-dropdown.js"></script>
+        <link rel="top" title="Physics Research Survival Manual 1.0.5 documentation" href="index.html"/>
+            <link rel="next" title="Special Relativity" href="SpecialRelativity.html"/>
+            <link rel="prev" title="Classical Mechanics" href="ClassicalMechanics.html"/> 
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    
+</head>
+<body>
+
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+
+    <div class="related">
+        <ul class="nav">
+                <li class=""><a class="brand" href="index.html">Physics Research Survival Manual</a></li>
+                <li>
+                    <a href="genindex.html"
+                       title="General Index" accesskey="I">index</a>
+                </li>
+                <li>
+                    <a href="SpecialRelativity.html"
+                       title="Special Relativity" accesskey="N">next</a>
+                </li>
+                <li>
+                    <a href="ClassicalMechanics.html"
+                       title="Classical Mechanics" accesskey="P">previous</a>
+                </li> 
+        </ul>
+    </div>
+                <div class="pull-right">
+                    
+        <form class="navbar-search" action="search.html"
+              method="get">
+            <input type="text" name="q" placeholder="search"/>
+            <input type="hidden" name="check_keywords" value="yes"/>
+            <input type="hidden" name="area" value="default"/>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<ul class="quick-links">
+    <li><strong>Quick links</strong></li>
+    <li>
+        <a href="https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual/">GitHub</a>
+    </li>
+    <li>
+        <a href="https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual/issues?state=open">Issues</a>
+    </li>
+    <li class="divider">&middot;</li>
+    <li>
+        <iframe class="github-btn"
+                src="http://ghbtns.com/github-btn.html?user=CosmologyTaskForce&repo=PhysicsResearchSurvivalManual&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0"
+                width="110px" height="20px"></iframe>
+    </li>
+    <li>
+        <iframe class="github-btn"
+                src="http://ghbtns.com/github-btn.html?user=CosmologyTaskForce&repo=PhysicsResearchSurvivalManual&type=fork&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0"
+                width="94px" height="20px"></iframe>
+    </li>
+
+    <li class="divider">&middot;</li>
+    <li class="follow-btn">
+        <a href="https://twitter.com/emptymalei"
+           class="twitter-follow-button" data-width="145px"
+           data-link-color="#0069D6" data-show-count="false">Follow
+            @emptymalei</a>
+    </li>
+    <li class="tweet-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://iastro.lamost.org" data-count="horizontal"
+           data-via="twbootstrap"
+           data-related="emptymalei:Creator of Physics Research Survival Manual">Tweet</a>
+    </li>
+    <li class="plusone-container">
+        <g:plusone size="medium"></g:plusone>
+    </li>
+</ul>  
+    <div class="container">
+        <div class="content row">
+                <div class="span9">
+                    
+  <div class="section" id="quantum-mechanics">
+<h1>Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quantum-mechanics-framework">
+<h2>Quantum Mechanics Framework<a class="headerlink" href="#quantum-mechanics-framework" title="Permalink to this headline">¶</a></h2>
+<div class="math">
+\[\newcommand{\ud}[1]{{#1^{\dagger}}}
+\newcommand{\bra}[1]{\left\langle #1\right|}
+\newcommand{\ket}[1]{\left| #1\right\rangle}
+\newcommand\Tr{\mathrm{Tr}}
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
+\newcommand\d{\mathrm{d}}
+\newcommand\I{\mathbb{I}}\]</div>
+<div class="section" id="what-re-the-most-important-tricks-in-qm-calculations">
+<h3>What&#8217;re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Remember what basis we are working in</strong></li>
+<li><strong>Identity</strong></li>
+</ul>
+</div>
+<div class="section" id="first-three-postulates">
+<h3>First Three Postulates<a class="headerlink" href="#first-three-postulates" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Physical state is described by kets in a Hilbert space. We need to specify a complete basis {:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>ket{i}`å} to do calculations.</p>
+<div class="math">
+\[\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}\]</div>
+</li>
+<li><p class="first">Operators are given by Hermitian operators; A measurement of the variable <span class="math">\(\hat \Omega\)</span> will yield one of the eigenvalues <span class="math">\(\omega\)</span> with the probability</p>
+<div class="math">
+\[\left|\braket{\omega}{\psi}\right|^2 .\]</div>
+<p>And the state of the system will change to <span class="math">\(\ket{\omega}\)</span>.</p>
+</li>
+<li><p class="first">THe state vector obeys the Schrödinger equation,</p>
+<div class="math">
+\[i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} ,\]</div>
+<p>where <span class="math">\(\hat H\)</span> is the Hamiltonian operator.</p>
+</li>
+</ul>
+<blockquote>
+<div>Later we will need the relation between position and momentum, which becomes the fourth postulate.</div></blockquote>
+<hr class="docutils" />
+<ul>
+<li><dl class="first docutils">
+<dt>How to solve the evolution of a system?</dt>
+<dd><p class="first">We just define a magical operator, propagator
+$$ hat U ket{psi(t_0)} = ket{psi(t)}  .$$
+This operator just gives us the evolution of state vector! Wait, can we write down the explicit expression of it?</p>
+<p class="last">Let&#8217;s find out. The only thing we know about the evolution of a state vector is the third postulate up there.
+begin{eqnarray}
+ihbar frac{d }{d t}ket{psi(t)} &amp;=&amp; hat H ket{psi(t)} \\
+ihbar frac{d }{d t}hat U ket{psi(t_0)} &amp;=&amp; hat H hat U ket{psi(t_0)} \\
+ihbar frac{d }{d t}hat U &amp;=&amp; hat H hat U
+end{eqnarray}</p>
+</dd>
+</dl>
+</li>
+</ul>
+<blockquote>
+<div><p>Looks familiar? This just gives us a exponential result, <strong>if the Hamiltonian is time independent</strong>.
+$$ hat U = e^{- i hat H (t-t_0)/hbar} $$</p>
+<blockquote>
+<div><p><strong>We can prove that this operator is Unitary because $$$hat H$$$ is Hermitian.</strong></p>
+<p>This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, {$$$ket{epsilon_i}$$$},
+begin{eqnarray}
+hat U ket{phi} &amp;=&amp; e^{- i hat H (t-t_0)/hbar} ket{psi}   \\
+hat U ket{phi} &amp;=&amp; sum_i e^{- i hat H (t-t_0)/hbar} ket{epsilon_i}bra{epsilon_i}  ket{psi}  \\</p>
+<blockquote>
+<div>hat U ket{phi} &amp;=&amp; sum_i e^{- i epsilon_i (t-t_0)/hbar} ket{epsilon_i}bra{epsilon_i}  ket{psi}</div></blockquote>
+<p>end{eqnarray}</p>
+<p>And we are going to use $$ hat U = sum_i e^{- i epsilon_i (t-t_0)/hbar} ket{epsilon_i}bra{epsilon_i} $$ from now on. (Well, only on discrete eigenvalues ones.)</p>
+<p><strong>(See that? Identity does the work again.)</strong></p>
+</div></blockquote>
+</div></blockquote>
+<p>## Position and Momentum Space</p>
+<p>Summarize here.</p>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li>Define $$$hat x$$$ operator.</li>
+<li>Find wave function in this basis.</li>
+<li>Find measurement.</li>
+</ol>
+</div></blockquote>
+<ul>
+<li><dl class="first docutils">
+<dt>Evolution</dt>
+<dd><ol class="first last arabic simple">
+<li>Need propagator $$$hat U$$$.</li>
+<li>Propagator needs the solution of Hamiltonian eigensystem.</li>
+<li>(Free particles) Hamiltonian needs the solution of momentum eigensystem.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Momentum</dt>
+<dd><ol class="first last arabic simple">
+<li>Before we define some arbitrary momentum space, we should check the relation between momentum and position. And it turns out to be related by a commutator.(Postulate IV)</li>
+<li>Use the postulate to momentum operator.</li>
+<li>Find eigenstates.</li>
+<li>()Calculate the propagator.)</li>
+</ol>
+</dd>
+</dl>
+</li>
+</ul>
+<hr class="docutils" />
+<p>### Position Space</p>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Define $$$ket{x} $$$ basis.</dt>
+<dd><ul class="first last simple">
+<li>Orthonormal: $$ braket{x}{x&#8217;}=delta(x-x&#8217;)$$</li>
+<li>Complete: $$ int braket{x&#8217;}{x&#8217;} d x&#8217; = mathbb{I}   $$</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Define position operator.</dt>
+<dd><p class="first">$$ hat x ket{x} = x ket{x} $$
+And in {$$$ket{x}$$$} basis, this operator becomes a function, which is</p>
+<blockquote class="last">
+<div><p>begin{eqnarray}
+&amp;&amp;bra{x}hat x ket{x&#8217;}  \\
+&amp;=&amp; left(bra{x}hat xright)ket{x&#8217;} \\
+&amp;=&amp; x braket{x}{x&#8217;} \\
+&amp;=&amp; x delta(x-x&#8217;)
+end{eqnarray}</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Find state vector in $$$ {ket{x}} $$$ basis.</dt>
+<dd><p class="first last">$$ psi(t,x) = braket{x}{psi(t)}  $$
+* Normalized: $$ int left| psi(t,x) right|^2 d x = 1 .$$ And we are interpreting $$$ left| psi(t, x)right|^2 $$$ as probability density.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Calculate probability of a measurement. Taking $$$ hat x $$$ as an example.</dt>
+<dd><p class="first last">begin{eqnarray}
+&amp;&amp;bra{psi} hat x ket{psi} \\
+&amp;=&amp; iint braket{psi}{x}bra{x} hat x ket{x&#8217;} braket{x&#8217;}{psi}  d x d x&#8217; \\
+&amp;=&amp; iint  psi^ * (t,x) xdelta(x-x&#8217;) psi(t,x&#8217;)  d x d x&#8217;  \\
+&amp;=&amp; int left| psi(t,x) right|^2 x d x
+end{eqnarray}</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>### Momentum Space</p>
+<p>To find the momentum operator, we need to check the relation between momentum and position before we just randomly define one. Truth is, we have a fourth postulate states the relation between them.</p>
+<p>#### Postulate IV
+The commutator of $$$hat x$$$, $$$hat p$$$ is
+$$ left[ hat x, hat p right] = i hbar $$</p>
+<p>Two comments:
+* Why i? Eigenvalue of Anti-Hermitian operator.
+* Why $$$hbar$$$? Because people define the dimensions of position and momentum differently before they know this commutator. We would like to assign them the same dimension if we already know this relation.</p>
+<p>#### Momentum Space</p>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Find momentum operator in position basis $$$ {ket{x}} $$$.</dt>
+<dd><p class="first">$$ bra{x} left[ hat x, hat pright] ket{x&#8217;} = ihbar delta(x-x&#8217;) $$
+And write out the commutator and use the relation of delta function $$$ xdelta&#8217;(x) = -delta(x) $$$, we find out the momentum operator in {$$$ket{x}$$$} basis,
+$$ bra{x}hat p ket{x&#8217;} = -ihbar frac{d }{d t} delta(x-x&#8217;) $$
+<strong>Let&#8217;s talk physics.</strong> What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {$$$ket{x}$$$} basis.
+begin{eqnarray}
+&amp;&amp;bra{x} hat p ket{psi} \\
+&amp;=&amp; iint braket{x}{x&#8217;} bra{x&#8217;} hat p ket{x&#8217;&#8216;}braket{x&#8217;&#8216;}{psi} d x&#8217; d x&#8217;&#8217;  \\
+&amp;=&amp; int bra{x}hat p ket{x&#8217;&#8216;}psi(t,x&#8217;&#8216;) d x&#8217;&#8217; \\
+&amp;=&amp; int left( -ihbar frac{d}{d x} delta(x-x&#8217;) psi(t,x&#8217;) right) d x&#8217; \\
+&amp;=&amp; int left( -ihbar frac{d}{d x&#8217;} delta(x&#8217;-x) psi(t,x&#8217;) right) d x&#8217;
+end{eqnarray}</p>
+<p class="last"><strong>Integrate by parts, we will find the expression.</strong> (I am having a problem finding the right answer.)
+$$ bra{x} hat p ket{psi} = - ihbar frac{d }{d x}psi(x) .$$</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Eigenfunction for momentum.</dt>
+<dd><p class="first last">$$ hat p ket{p} = p ket{p} .$$
+Again, we are going to project it on the {$$$ket{x}$$$} basis,
+$$ bra{x}hat pket{p} = bra{x} p ket{p} ,$$
+where $$$braket{x}{p}$$$ is the eigenstates in {$$$ket{x}$$$} basis, we call it $$$phi_p(x)$$$.
+begin{eqnarray}
+bra{x}hat pket{p} &amp;=&amp; p phi_p(x)    \\
+int bra{x}hat p ket{x&#8217;}braket{x&#8217;}{p}d x&#8217; &amp;=&amp; p phi_p(x)    \\
+-ihbar frac{d }{d x} phi_p(x) &amp;=&amp; p phi_p(x)
+end{eqnarray}
+The solution is
+$$ phi_p(x) = mathrm{C} e^{i p x/hbar}  $$
+This constant C is found by the normalization condition,
+$$ braket{p}{p&#8217;}=int phi_p^*(x)phi_{p&#8217;}(x)d x = delta(p-p&#8217;) $$
+<strong>The final results should be</strong>
+$$ phi_p(x)=frac{1}{sqrt{2pi hbar}} exp{(i p x/hbar)}  $$</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Find the dynamics of free particles in quantum mechanics.</dt>
+<dd><p class="first last"><strong>Find the propagator and everything solves.</strong>
+The hamiltonian for a free particle is
+$$ hat H = frac{hat p^2}{2m} .$$
+We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are $$$p^2/2m$$$. So the propagator is
+$$ hat U = int e^{-i p^2 t/2mhbar} ket{p}bra{p} d p $$
+But that is too abstract to use, we can find the expression in {$$$ket{x}$$$} basis.
+begin{eqnarray}
+bra{x}hat Uket{x} &amp;=&amp; int e^{-i p^2 t/2 m hbar} braket{x}{p}braket{p}{x} d p    \\
+&amp;=&amp; int e^{-i p^2 t/2 m hbar} left| phi_p right|^2 d p
+end{eqnarray}</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+                    
+                </div>
+                <div class="span3">
+                    
+        <div class="sphinxsidebar">
+            <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Quantum Mechanics</a><ul>
+<li><a class="reference internal" href="#quantum-mechanics-framework">Quantum Mechanics Framework</a><ul>
+<li><a class="reference internal" href="#what-re-the-most-important-tricks-in-qm-calculations">What&#8217;re the most important tricks in QM calculations?</a></li>
+<li><a class="reference internal" href="#first-three-postulates">First Three Postulates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ClassicalMechanics.html"
+                        title="previous chapter">Classical Mechanics</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="SpecialRelativity.html"
+                        title="next chapter">Special Relativity</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/QuantumMechanics.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+            </div>
+        </div>
+                </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div class="container">
+                    &copy;
+                        Copyright 2013, Cosmology TF.
+                Created using <a
+                        href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b2
+                    .
+                Theme <a href="https://github.com/scotch/sphinx-bootstrap">Sphinx-Bootstrap</a>
+                adapted from
+                <a href="http://twitter.github.com/bootstrap/">Twitter's
+                    Bootstrap</a> by <a href="http://www.scotchmedia.com">Scotch
+                Media</a>
+        </div>
+    </div>
+
+
+
+<script type="text/javascript">
+    $('.nav .active').on('click', function () {
+        e.preventDefault()
+        $(this).siblings().toggle()
+    });
+</script>
+
+<!-- plusone -->
+<script type="text/javascript">
+    (function () {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+</script>
+
+<!-- twitter -->
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -13,6 +13,8 @@ Contents:
 
    preface.rst
    Basic.rst
+   ClassicalMechanics.rst
+   QuantumMechanics.rst
    SpecialRelativity.rst
    GeneralRelativity.rst 
    math.rst
