@@ -109,7 +109,7 @@ html_theme = 'sphinx-bootstrap'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-  #  'analytics_code': 'UA-44466929-1',
+    'analytics_code': 'UA-44466929-1',
     'github_user': 'CosmologyTaskForce',
     'github_repo': 'PhysicsResearchSurvivalManual',
     'twitter_username': 'emptymalei',
