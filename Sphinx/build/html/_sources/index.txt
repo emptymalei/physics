@@ -14,7 +14,8 @@ Contents:
    preface.rst
    Basic.rst
    SpecialRelativity.rst
-   GeneralRelativity.rst
+   GeneralRelativity.rst 
+   math.rst
    Cosmology/cosmoIndex.rst
 
 Indices and tables

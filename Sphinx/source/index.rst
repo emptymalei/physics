@@ -13,8 +13,11 @@ Contents:
 
    preface.rst
    Basic.rst
+   ClassicalMechanics.rst
+   QuantumMechanics.rst
    SpecialRelativity.rst
-   GeneralRelativity.rst
+   GeneralRelativity.rst 
+   math.rst
    Cosmology/cosmoIndex.rst
 
 Indices and tables
