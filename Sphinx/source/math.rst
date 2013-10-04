@@ -2,6 +2,8 @@
 Mathematics
 ******************
 
+.. sectnum::
+   :prefix: 2.
 
 
 Differential Geometry

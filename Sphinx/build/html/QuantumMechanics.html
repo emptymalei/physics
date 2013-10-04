@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type"
           content="text/html; charset=utf-8"/>
     
-        <title>Quantum Mechanics &mdash; Physics Research Survival Manual 1.0.5 documentation</title>
+        <title>4.1   Quantum Mechanics &mdash; Physics Research Survival Manual 1.0.5 documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="_static/sphinx-bootstrap.css" type="text/css"/>
@@ -27,9 +27,26 @@
             <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
             <script type="text/javascript" src="_static/bootstrap-dropdown.js"></script>
         <link rel="top" title="Physics Research Survival Manual 1.0.5 documentation" href="index.html"/>
-            <link rel="next" title="Special Relativity" href="SpecialRelativity.html"/>
-            <link rel="prev" title="Classical Mechanics" href="ClassicalMechanics.html"/> 
+            <link rel="next" title="5.1   Special Relativity" href="SpecialRelativity.html"/>
+            <link rel="prev" title="3.1   Classical Mechanics" href="ClassicalMechanics.html"/> 
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    
+        <!-- analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-44466929-1']);
+            
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     
 </head>
 <body>
@@ -47,11 +64,11 @@
                 </li>
                 <li>
                     <a href="SpecialRelativity.html"
-                       title="Special Relativity" accesskey="N">next</a>
+                       title="5.1   Special Relativity" accesskey="N">next</a>
                 </li>
                 <li>
                     <a href="ClassicalMechanics.html"
-                       title="Classical Mechanics" accesskey="P">previous</a>
+                       title="3.1   Classical Mechanics" accesskey="P">previous</a>
                 </li> 
         </ul>
     </div>
@@ -113,9 +130,9 @@
                 <div class="span9">
                     
   <div class="section" id="quantum-mechanics">
-<h1>Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
+<h1>4.1&nbsp;&nbsp;&nbsp;Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="quantum-mechanics-framework">
-<h2>Quantum Mechanics Framework<a class="headerlink" href="#quantum-mechanics-framework" title="Permalink to this headline">¶</a></h2>
+<h2>4.1.1&nbsp;&nbsp;&nbsp;Quantum Mechanics Framework<a class="headerlink" href="#quantum-mechanics-framework" title="Permalink to this headline">¶</a></h2>
 <div class="math">
 \[\newcommand{\ud}[1]{{#1^{\dagger}}}
 \newcommand{\bra}[1]{\left\langle #1\right|}
@@ -125,16 +142,16 @@
 \newcommand\d{\mathrm{d}}
 \newcommand\I{\mathbb{I}}\]</div>
 <div class="section" id="what-re-the-most-important-tricks-in-qm-calculations">
-<h3>What&#8217;re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h3>
+<h3>4.1.1.1&nbsp;&nbsp;&nbsp;What&#8217;re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><strong>Remember what basis we are working in</strong></li>
 <li><strong>Identity</strong></li>
 </ul>
 </div>
 <div class="section" id="first-three-postulates">
-<h3>First Three Postulates<a class="headerlink" href="#first-three-postulates" title="Permalink to this headline">¶</a></h3>
+<h3>4.1.1.2&nbsp;&nbsp;&nbsp;First Three Postulates<a class="headerlink" href="#first-three-postulates" title="Permalink to this headline">¶</a></h3>
 <ul>
-<li><p class="first">Physical state is described by kets in a Hilbert space. We need to specify a complete basis {:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>ket{i}`å} to do calculations.</p>
+<li><p class="first">Physical state is described by kets in a Hilbert space. We need to specify a complete basis {<span class="math">\(\ket{i}\)</span>} to do calculations.</p>
 <div class="math">
 \[\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}\]</div>
 </li>
@@ -143,61 +160,66 @@
 \[\left|\braket{\omega}{\psi}\right|^2 .\]</div>
 <p>And the state of the system will change to <span class="math">\(\ket{\omega}\)</span>.</p>
 </li>
-<li><p class="first">THe state vector obeys the Schrödinger equation,</p>
+<li><p class="first">The state vector obeys the Schrödinger equation,</p>
 <div class="math">
 \[i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} ,\]</div>
 <p>where <span class="math">\(\hat H\)</span> is the Hamiltonian operator.</p>
+<blockquote>
+<div><p>The logic here is that we first find the way to describe a system, then think about how to find out the information we need from the state vector and also find the evolution of the state vector. Then we need the operator and Schrodinger equation. Finally, we would like to relate the theory to experiments, and it comes the measurement postulate.</p>
+<p>Later we will need the relation between position and momentum, which becomes the fourth postulate.</p>
+</div></blockquote>
+</li>
+<li><p class="first">How to solve the evolution of a system?
+We just define a magical operator, propagator</p>
+<div class="math">
+\[\hat U \ket{\psi(t_0)} = \ket{\psi(t)} .\]</div>
+<p>This operator just gives us the evolution of state vector! Wait, can we write down the explicit expression of it?</p>
+<p>Let&#8217;s find out. The only thing we know about the evolution of a state vector is the third postulate up there.</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+i\hbar \frac{\d }{\d t}\ket{\psi(t)} &amp;=&amp; \hat H \ket{\psi(t)} \\\\
+i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\psi(t_0)} \\\\
+    i\hbar \frac{\d }{\d t}\hat U &amp;=&amp; \hat H \hat U
+    \end{eqnarray}\end{split}\]</div>
+<p>Looks familiar? This just gives us a exponential result, <strong>if the Hamiltonian is time independent</strong>.</p>
+<div class="math">
+\[\hat U = e^{- i \hat H (t-t_0)/\hbar}\]</div>
+<p><strong>We can prove that this operator is Unitary because</strong> <span class="math">\(\hat H\)</span> <strong>is Hermitian.</strong></p>
+<p>This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, { <span class="math">\(\ket{\epsilon_i}\)</span> },</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+    \hat U \ket{\phi} &amp;=&amp; e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   \\\\
+\hat U \ket{\phi} &amp;=&amp; \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}  \\\\
+    \hat U \ket{\phi} &amp;=&amp; \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}
+\end{eqnarray}\end{split}\]</div>
+<p>And we are going to use</p>
+<div class="math">
+\[\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}\]</div>
+<p>from now on. (Well, only on discrete eigenvalues ones.)</p>
+<p><strong>(See that? Identity does the work again.)</strong></p>
 </li>
 </ul>
-<blockquote>
-<div>Later we will need the relation between position and momentum, which becomes the fourth postulate.</div></blockquote>
+</div>
+<div class="section" id="position-and-momentum-space">
+<h3>4.1.1.3&nbsp;&nbsp;&nbsp;Position and Momentum Space<a class="headerlink" href="#position-and-momentum-space" title="Permalink to this headline">¶</a></h3>
+<p>Summarize here.</p>
 <hr class="docutils" />
 <ul>
 <li><dl class="first docutils">
-<dt>How to solve the evolution of a system?</dt>
-<dd><p class="first">We just define a magical operator, propagator
-$$ hat U ket{psi(t_0)} = ket{psi(t)}  .$$
-This operator just gives us the evolution of state vector! Wait, can we write down the explicit expression of it?</p>
-<p class="last">Let&#8217;s find out. The only thing we know about the evolution of a state vector is the third postulate up there.
-begin{eqnarray}
-ihbar frac{d }{d t}ket{psi(t)} &amp;=&amp; hat H ket{psi(t)} \\
-ihbar frac{d }{d t}hat U ket{psi(t_0)} &amp;=&amp; hat H hat U ket{psi(t_0)} \\
-ihbar frac{d }{d t}hat U &amp;=&amp; hat H hat U
-end{eqnarray}</p>
-</dd>
-</dl>
-</li>
-</ul>
-<blockquote>
-<div><p>Looks familiar? This just gives us a exponential result, <strong>if the Hamiltonian is time independent</strong>.
-$$ hat U = e^{- i hat H (t-t_0)/hbar} $$</p>
-<blockquote>
-<div><p><strong>We can prove that this operator is Unitary because $$$hat H$$$ is Hermitian.</strong></p>
-<p>This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, {$$$ket{epsilon_i}$$$},
-begin{eqnarray}
-hat U ket{phi} &amp;=&amp; e^{- i hat H (t-t_0)/hbar} ket{psi}   \\
-hat U ket{phi} &amp;=&amp; sum_i e^{- i hat H (t-t_0)/hbar} ket{epsilon_i}bra{epsilon_i}  ket{psi}  \\</p>
-<blockquote>
-<div>hat U ket{phi} &amp;=&amp; sum_i e^{- i epsilon_i (t-t_0)/hbar} ket{epsilon_i}bra{epsilon_i}  ket{psi}</div></blockquote>
-<p>end{eqnarray}</p>
-<p>And we are going to use $$ hat U = sum_i e^{- i epsilon_i (t-t_0)/hbar} ket{epsilon_i}bra{epsilon_i} $$ from now on. (Well, only on discrete eigenvalues ones.)</p>
-<p><strong>(See that? Identity does the work again.)</strong></p>
-</div></blockquote>
-</div></blockquote>
-<p>## Position and Momentum Space</p>
-<p>Summarize here.</p>
-<blockquote>
-<div><ol class="arabic simple" start="2">
-<li>Define $$$hat x$$$ operator.</li>
+<dt>Position</dt>
+<dd><ol class="first last arabic simple">
+<li>Define {<span class="math">\(\ket{x}\)</span>} basis.</li>
+<li>Define <span class="math">\(\hat x\)</span> operator.</li>
 <li>Find wave function in this basis.</li>
 <li>Find measurement.</li>
 </ol>
-</div></blockquote>
-<ul>
+</dd>
+</dl>
+</li>
 <li><dl class="first docutils">
 <dt>Evolution</dt>
 <dd><ol class="first last arabic simple">
-<li>Need propagator $$$hat U$$$.</li>
+<li>Need propagator <span class="math">\(\hat U\)</span>.</li>
 <li>Propagator needs the solution of Hamiltonian eigensystem.</li>
 <li>(Free particles) Hamiltonian needs the solution of momentum eigensystem.</li>
 </ol>
@@ -210,122 +232,549 @@ hat U ket{phi} &amp;=&amp; sum_i e^{- i hat H (t-t_0)/hbar} ket{epsilon_i}bra{ep
 <li>Before we define some arbitrary momentum space, we should check the relation between momentum and position. And it turns out to be related by a commutator.(Postulate IV)</li>
 <li>Use the postulate to momentum operator.</li>
 <li>Find eigenstates.</li>
-<li>()Calculate the propagator.)</li>
+<li>(Calculate the propagator.)</li>
 </ol>
 </dd>
 </dl>
 </li>
 </ul>
 <hr class="docutils" />
-<p>### Position Space</p>
+<div class="section" id="position-space">
+<h4>4.1.1.3.1&nbsp;&nbsp;&nbsp;Position Space<a class="headerlink" href="#position-space" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
-<li><dl class="first docutils">
-<dt>Define $$$ket{x} $$$ basis.</dt>
+<li><p class="first">Define <span class="math">\(\ket{x}\)</span> basis.</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Orthonormal:</p>
+<div class="math">
+\[\braket{x}{x'}=\delta(x-x')\]</div>
+</li>
+<li><p class="first">Complete:</p>
+<div class="math">
+\[\int \braket{x'}{x'} \d x' = \mathbb{I}\]</div>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Define position operator.</p>
+<div class="math">
+\[\hat x \ket{x} = x \ket{x}\]</div>
+<p>And in {<span class="math">\(\ket{x}\)</span>} basis, this operator becomes a function, which is</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+&amp;&amp;\bra{x}\hat x \ket{x'}  \\\\
+&amp;=&amp; \left(\bra{x}\hat x\right)\ket{x'} \\\\
+&amp;=&amp; x \braket{x}{x'} \\\\
+&amp;=&amp; x \delta(x-x')
+\end{eqnarray}\end{split}\]</div>
+</li>
+<li><p class="first">Find state vector in {<span class="math">\(\ket{x}\)</span>} basis.</p>
+<div class="math">
+\[\psi(t,x) = \braket{x}{\psi(t)}\]</div>
+<ul class="simple">
+<li>Normalized:</li>
+</ul>
+<div class="math">
+\[\int \left| \psi(t,x) \right|^2 \d x = 1.\]</div>
+<p>And we are interpreting <span class="math">\(\left| \psi(t, x)\right|^2\)</span> as probability density.</p>
+</li>
+<li><p class="first">Calculate probability of a measurement. Taking <span class="math">\(\hat x\)</span> as an example.</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+&amp;&amp;\bra{\psi} \hat x \ket{\psi} \\\\
+&amp;=&amp; \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\\\
+&amp;=&amp; \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\\\
+&amp;=&amp; \int \left| \psi(t,x) \right|^2 x \d x
+\end{eqnarray}\end{split}\]</div>
+</li>
+</ol>
+</div>
+<div class="section" id="momentum-space">
+<h4>4.1.1.3.2&nbsp;&nbsp;&nbsp;Momentum Space<a class="headerlink" href="#momentum-space" title="Permalink to this headline">¶</a></h4>
+<p>To find the momentum operator, we need to check the relation between momentum and position before we just randomly define one. Truth is, we have a fourth postulate states the relation between them.</p>
+<div class="section" id="postulate-iv">
+<h5>4.1.1.3.2.1&nbsp;&nbsp;&nbsp;Postulate IV<a class="headerlink" href="#postulate-iv" title="Permalink to this headline">¶</a></h5>
+<p>The commutator of <span class="math">\(\hat x\)</span>, <span class="math">\(\hat p\)</span> is</p>
+<div class="math">
+\[\left[ \hat x, \hat p \right] = i \hbar\]</div>
+<dl class="docutils">
+<dt>Two comments:</dt>
 <dd><ul class="first last simple">
-<li>Orthonormal: $$ braket{x}{x&#8217;}=delta(x-x&#8217;)$$</li>
-<li>Complete: $$ int braket{x&#8217;}{x&#8217;} d x&#8217; = mathbb{I}   $$</li>
+<li>Why i ? Eigenvalue of Anti-Hermitian operator.</li>
+<li>Why <span class="math">\(\hbar\)</span>? Because people define the dimensions of position and momentum differently before they know this commutator. We would like to assign them the same dimension if we already know this relation.</li>
 </ul>
 </dd>
 </dl>
-</li>
-<li><dl class="first docutils">
-<dt>Define position operator.</dt>
-<dd><p class="first">$$ hat x ket{x} = x ket{x} $$
-And in {$$$ket{x}$$$} basis, this operator becomes a function, which is</p>
-<blockquote class="last">
-<div><p>begin{eqnarray}
-&amp;&amp;bra{x}hat x ket{x&#8217;}  \\
-&amp;=&amp; left(bra{x}hat xright)ket{x&#8217;} \\
-&amp;=&amp; x braket{x}{x&#8217;} \\
-&amp;=&amp; x delta(x-x&#8217;)
-end{eqnarray}</p>
-</div></blockquote>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Find state vector in $$$ {ket{x}} $$$ basis.</dt>
-<dd><p class="first last">$$ psi(t,x) = braket{x}{psi(t)}  $$
-* Normalized: $$ int left| psi(t,x) right|^2 d x = 1 .$$ And we are interpreting $$$ left| psi(t, x)right|^2 $$$ as probability density.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Calculate probability of a measurement. Taking $$$ hat x $$$ as an example.</dt>
-<dd><p class="first last">begin{eqnarray}
-&amp;&amp;bra{psi} hat x ket{psi} \\
-&amp;=&amp; iint braket{psi}{x}bra{x} hat x ket{x&#8217;} braket{x&#8217;}{psi}  d x d x&#8217; \\
-&amp;=&amp; iint  psi^ * (t,x) xdelta(x-x&#8217;) psi(t,x&#8217;)  d x d x&#8217;  \\
-&amp;=&amp; int left| psi(t,x) right|^2 x d x
-end{eqnarray}</p>
-</dd>
-</dl>
-</li>
-</ol>
-<p>### Momentum Space</p>
-<p>To find the momentum operator, we need to check the relation between momentum and position before we just randomly define one. Truth is, we have a fourth postulate states the relation between them.</p>
-<p>#### Postulate IV
-The commutator of $$$hat x$$$, $$$hat p$$$ is
-$$ left[ hat x, hat p right] = i hbar $$</p>
-<p>Two comments:
-* Why i? Eigenvalue of Anti-Hermitian operator.
-* Why $$$hbar$$$? Because people define the dimensions of position and momentum differently before they know this commutator. We would like to assign them the same dimension if we already know this relation.</p>
-<p>#### Momentum Space</p>
+</div>
+<div class="section" id="id1">
+<h5>4.1.1.3.2.2&nbsp;&nbsp;&nbsp;Momentum Space<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic">
-<li><dl class="first docutils">
-<dt>Find momentum operator in position basis $$$ {ket{x}} $$$.</dt>
-<dd><p class="first">$$ bra{x} left[ hat x, hat pright] ket{x&#8217;} = ihbar delta(x-x&#8217;) $$
-And write out the commutator and use the relation of delta function $$$ xdelta&#8217;(x) = -delta(x) $$$, we find out the momentum operator in {$$$ket{x}$$$} basis,
-$$ bra{x}hat p ket{x&#8217;} = -ihbar frac{d }{d t} delta(x-x&#8217;) $$
-<strong>Let&#8217;s talk physics.</strong> What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {$$$ket{x}$$$} basis.
-begin{eqnarray}
-&amp;&amp;bra{x} hat p ket{psi} \\
-&amp;=&amp; iint braket{x}{x&#8217;} bra{x&#8217;} hat p ket{x&#8217;&#8216;}braket{x&#8217;&#8216;}{psi} d x&#8217; d x&#8217;&#8217;  \\
-&amp;=&amp; int bra{x}hat p ket{x&#8217;&#8216;}psi(t,x&#8217;&#8216;) d x&#8217;&#8217; \\
-&amp;=&amp; int left( -ihbar frac{d}{d x} delta(x-x&#8217;) psi(t,x&#8217;) right) d x&#8217; \\
-&amp;=&amp; int left( -ihbar frac{d}{d x&#8217;} delta(x&#8217;-x) psi(t,x&#8217;) right) d x&#8217;
-end{eqnarray}</p>
-<p class="last"><strong>Integrate by parts, we will find the expression.</strong> (I am having a problem finding the right answer.)
-$$ bra{x} hat p ket{psi} = - ihbar frac{d }{d x}psi(x) .$$</p>
-</dd>
-</dl>
+<li><p class="first">Find momentum operator in position basis {<span class="math">\(\ket{x}\)</span>}.</p>
+<div class="math">
+\[\bra{x} \left[ \hat x, \hat p\right] \ket{x'} = i\hbar \delta(x-x')\]</div>
+<p>And write out the commutator and use the relation of delta function <span class="math">\(x\delta'(x) = -\delta(x)\)</span>, we find out the momentum operator in {<span class="math">\(\ket{x}\)</span>} basis,</p>
+<div class="math">
+\[\bra{x}\hat p \ket{x'} = -i\hbar \frac{\d }{\d t} \delta(x-x')\]</div>
+<p><strong>Let&#8217;s talk physics.</strong> What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {<span class="math">\(\ket{x}\)</span>} basis.</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+&amp;&amp;\bra{x} \hat p \ket{\psi} \\\\
+&amp;=&amp; \iint \braket{x}{x'} \bra{x'} \hat p \ket{x''}\braket{x''}{\psi} \d x' \d x''  \\\\
+&amp;=&amp; \int \bra{x}\hat p \ket{x''}\psi(t,x'') \d x'' \\\\
+&amp;=&amp; \int \left( -i\hbar \frac{\d}{\d x} \delta(x-x') \psi(t,x') \right) \d x' \\\\
+&amp;=&amp; \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x'
+\end{eqnarray}\end{split}\]</div>
+<p><strong>Integrate by parts, we will find the expression.</strong> (I am having a problem finding the right answer.)</p>
+<div class="math">
+\[\bra{x} \hat p \ket{\psi} = - i\hbar \frac{\d }{\d x}\psi(x) .\]</div>
 </li>
-<li><dl class="first docutils">
-<dt>Eigenfunction for momentum.</dt>
-<dd><p class="first last">$$ hat p ket{p} = p ket{p} .$$
-Again, we are going to project it on the {$$$ket{x}$$$} basis,
-$$ bra{x}hat pket{p} = bra{x} p ket{p} ,$$
-where $$$braket{x}{p}$$$ is the eigenstates in {$$$ket{x}$$$} basis, we call it $$$phi_p(x)$$$.
-begin{eqnarray}
-bra{x}hat pket{p} &amp;=&amp; p phi_p(x)    \\
-int bra{x}hat p ket{x&#8217;}braket{x&#8217;}{p}d x&#8217; &amp;=&amp; p phi_p(x)    \\
--ihbar frac{d }{d x} phi_p(x) &amp;=&amp; p phi_p(x)
-end{eqnarray}
-The solution is
-$$ phi_p(x) = mathrm{C} e^{i p x/hbar}  $$
-This constant C is found by the normalization condition,
-$$ braket{p}{p&#8217;}=int phi_p^*(x)phi_{p&#8217;}(x)d x = delta(p-p&#8217;) $$
-<strong>The final results should be</strong>
-$$ phi_p(x)=frac{1}{sqrt{2pi hbar}} exp{(i p x/hbar)}  $$</p>
-</dd>
-</dl>
+<li><p class="first">Eigenfunction for momentum.</p>
+<div class="math">
+\[\hat p \ket{p} = p \ket{p} .\]</div>
+<p>Again, we are going to project it on the {<span class="math">\(\ket{x}\)</span>} basis,</p>
+<div class="math">
+\[\bra{x}\hat p\ket{p} = \bra{x} p \ket{p} ,\]</div>
+<p>where <span class="math">\(\braket{x}{p}\)</span> is the eigenstates in {<span class="math">\(\ket{x}\)</span>} basis, we call it <span class="math">\(\phi_p(x)\)</span>.</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+\bra{x}\hat p\ket{p} &amp;=&amp; p \phi_p(x)    \\\\
+\int \bra{x}\hat p \ket{x'}\braket{x'}{p}\d x' &amp;=&amp; p \phi_p(x)    \\\\
+-i\hbar \frac{\d }{\d x} \phi_p(x) &amp;=&amp; p \phi_p(x)
+\end{eqnarray}\end{split}\]</div>
+<p>The solution is</p>
+<div class="math">
+\[\phi_p(x) = \mathrm{C} e^{i p x/\hbar}\]</div>
+<p>This constant C is found by the normalization condition,</p>
+<div class="math">
+\[\braket{p}{p'}=\int \phi_p^*(x)\phi_{p'}(x)\d x = \delta(p-p')\]</div>
+<p><strong>The final results should be</strong></p>
+<div class="math">
+\[\phi_p(x)=\frac{1}{\sqrt{2\pi \hbar}} \exp{(i p x/\hbar)}\]</div>
 </li>
-<li><dl class="first docutils">
-<dt>Find the dynamics of free particles in quantum mechanics.</dt>
-<dd><p class="first last"><strong>Find the propagator and everything solves.</strong>
-The hamiltonian for a free particle is
-$$ hat H = frac{hat p^2}{2m} .$$
-We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are $$$p^2/2m$$$. So the propagator is
-$$ hat U = int e^{-i p^2 t/2mhbar} ket{p}bra{p} d p $$
-But that is too abstract to use, we can find the expression in {$$$ket{x}$$$} basis.
-begin{eqnarray}
-bra{x}hat Uket{x} &amp;=&amp; int e^{-i p^2 t/2 m hbar} braket{x}{p}braket{p}{x} d p    \\
-&amp;=&amp; int e^{-i p^2 t/2 m hbar} left| phi_p right|^2 d p
-end{eqnarray}</p>
-</dd>
-</dl>
+<li><p class="first">Find the dynamics of free particles in quantum mechanics.
+<strong>Find the propagator and everything solves.</strong>
+The hamiltonian for a free particle is</p>
+<div class="math">
+\[\hat H = \frac{\hat p^2}{2m} .\]</div>
+<p>We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are <span class="math">\(p^2/2m\)</span>. So the propagator is</p>
+<div class="math">
+\[\hat U = \int e^{-i p^2 t/2m\hbar} \ket{p}\bra{p} \d p\]</div>
+<p>But that is too abstract to use, we can find the expression in {<span class="math">\(\ket{x}\)</span>} basis.</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+\bra{x}\hat U\ket{x} &amp;=&amp; \int e^{-i p^2 t/2 m \hbar} \braket{x}{p}\braket{p}{x} \d p    \\\\
+&amp;=&amp; \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p
+\end{eqnarray}\end{split}\]</div>
 </li>
 </ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="quantum-in-1d">
+<h2>4.1.2&nbsp;&nbsp;&nbsp;Quantum in 1D<a class="headerlink" href="#quantum-in-1d" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general">
+<h3>4.1.2.1&nbsp;&nbsp;&nbsp;General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<p>Always start with the propagator for time independent Hamiltonian.</p>
+<div class="math">
+\[\ket{\psi(t)} = \hat U \ket{\psi(0)}\]</div>
+<p>For cases that Hamiltonian with discrete eigenvalues,</p>
+<div class="math">
+\[\ket{\psi(t)} = \sum _ n e^{-i \epsilon _ n t/ \hbar } \ket{n}\braket{n}{\psi(0)}\]</div>
+<p>If the initial state is just one of the eigenstates of Hamiltonian, say the mth one (normalized),</p>
+<div class="math">
+\[\ket{\psi(t)} = e^{- i \epsilon _ m t/\hbar} \ket{ m }\]</div>
+<p>Well, that phase factor doesn&#8217;t have any effect for the topic we discuss. So our time evolution will stay on the same state forever.</p>
+<p>The same thing happens for continuous cases.</p>
+<p>So our task is simplified to solve the eigensystem of Hamiltonian, which is</p>
+<div class="math">
+\[\hat H \ket{\epsilon} = \epsilon \ket{\epsilon}\]</div>
+<div class="section" id="infinite-barriers">
+<h4>4.1.2.1.1&nbsp;&nbsp;&nbsp;Infinite Barriers<a class="headerlink" href="#infinite-barriers" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="math">
+<h5>4.1.2.1.1.1&nbsp;&nbsp;&nbsp;Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="setup">
+<h6>4.1.2.1.1.1.1&nbsp;&nbsp;&nbsp;Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h6>
+<ul>
+<li><p class="first">Potential in a box</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+V(x)=\cases{
+0, &amp; 0&lt; x &lt;L \\\\
+\infty, &amp; \text{Other}
+}
+\end{eqnarray}\end{split}\]</div>
+</li>
+</ul>
+</div>
+<div class="section" id="solve-the-problem">
+<h6>4.1.2.1.1.1.2&nbsp;&nbsp;&nbsp;Solve the Problem<a class="headerlink" href="#solve-the-problem" title="Permalink to this headline">¶</a></h6>
+<ul>
+<li><p class="first">Hamiltonian</p>
+<div class="math">
+\[\hat H = \frac{\hat p ^2}{2 m } + V(x)\]</div>
+</li>
+<li><p class="first">Dynamic equation</p>
+<div class="math">
+\[\hat H \ket{\psi(t)} = \epsilon \ket{\psi(t)}\]</div>
+<p>We are happy to work in {<span class="math">\(\ket{x})\)</span>} basis,</p>
+<div class="math">
+\[\bra{x} \hat H \ket{\psi(t)} = \bra{x} \epsilon \ket{\psi(t)} .\]</div>
+<p>Put the Hamiltonian in, and remember that in position basis</p>
+<div class="math">
+\[\bra{x} \hat p \ket{\psi} = - i \hbar\frac{\d}{\d x} \psi ,\]</div>
+<p>the equation of motion becomes</p>
+<div class="math">
+\[- \frac{\hbar ^2}{2 m} \frac{\d^2}{\d x^2} \psi(x,t) + V(x) \psi(x,t) = \epsilon \psi(x,t)\]</div>
+</li>
+<li><p class="first">Boundary conditions</p>
+<div class="math">
+\[\psi _ I(0,t) = \psi _ {II}(0,t)\]\[\psi _ {II}(L, t) = \psi _ {III}(L, t)\]</div>
+</li>
+<li><p class="first">Guess the Solutions</p>
+<div class="math">
+\[\psi_{II} = \psi = C \sin (k x) + D \cos(kx)\]</div>
+</li>
+<li><p class="first">Find the wavenumber k, by putting the assumed solutions into equation of motion</p>
+<div class="math">
+\[k = \pm \frac{2m \epsilon}{\hbar^2}\]</div>
+<p>Since we can always merge the negative into the constants, it is fine to use</p>
+<div class="math">
+\[k = \frac{2m \epsilon}{\hbar^2}\]</div>
+</li>
+<li><dl class="first docutils">
+<dt>Use Boundary Condition</dt>
+<dd><ol class="first last arabic">
+<li><p class="first">At x=0,</p>
+<div class="math">
+\[\psi(0,t)=0 .$$ This gives us $$ D = 0 .\]</div>
+</li>
+<li><p class="first">At <span class="math">\(x=L\)</span>,</p>
+<div class="math">
+\[\psi(L,t)=0 .\]</div>
+<p>This leads to</p>
+<div class="math">
+\[k L = n \pi .\]</div>
+<p>Since <span class="math">\(n=0\)</span> gives us a 0 wave function, we would just drop <span class="math">\(n=0\)</span>. For the same reason why we drop the negative values of k, we would drop all the negative values of n.
+This BC gives us the possible values of energy because wavenumber k is related to energy,</p>
+<div class="math">
+\[\epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,\]</div>
+<p>with</p>
+<div class="math">
+\[n=1,2,3, \cdots\]</div>
+</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">Normalization as the last constraint for the last undetermined parameter,</p>
+<div class="math">
+\[C=\sqrt{\frac{2}{L}}\]</div>
+</li>
+</ul>
+</div>
+<div class="section" id="physics">
+<h6>4.1.2.1.1.1.3&nbsp;&nbsp;&nbsp;Physics<a class="headerlink" href="#physics" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic">
+<li><p class="first">Estimation</p>
+<blockquote>
+<div><ul class="simple">
+<li>Find the expression for energy using dimensional analysis.</li>
+<li>Using uncertainty relation to estimate the expression for energy.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Comments</p>
+<blockquote>
+<div><ul>
+<li><dl class="first docutils">
+<dt>Why is the solution quantized?</dt>
+<dd><ol class="first last arabic simple">
+<li>Too many constraints. BCs + normalization.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Why do the n in the solution goes into the expression for energy?</dt>
+<dd><ol class="first last arabic simple">
+<li>Have a look at the kinetic energy term, the derivative does it.</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>What&#8217;s so weird?</dt>
+<dd><ol class="first last arabic simple">
+<li>For <span class="math">\(n=2\)</span>, no particles found at <span class="math">\(x=L/2\)</span>. And so on.</li>
+</ol>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="some-general-properties">
+<h6>4.1.2.1.1.1.4&nbsp;&nbsp;&nbsp;Some General Properties<a class="headerlink" href="#some-general-properties" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic simple">
+<li>1D bound states have no degeneracy.
+Prove it by assume that there is a degeneracy state.</li>
+<li>1D bound states&#8217; wave function can be chosen to be real. (if potential V is real.)</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="parity">
+<h2>4.1.3&nbsp;&nbsp;&nbsp;Parity<a class="headerlink" href="#parity" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="passive-and-active-transformations">
+<h3>4.1.3.1&nbsp;&nbsp;&nbsp;Passive and Active Transformations<a class="headerlink" href="#passive-and-active-transformations" title="Permalink to this headline">¶</a></h3>
+<p>Generally, there are two ways of interpreting a transformation.</p>
+<img alt="Transformations" src="_images/transformations.png" />
+<p>Here in QM, passive means transform the operator $$$ hat Omega $$$, while active means change the state <span class="math">\(\ket{\psi}\)</span>. Suppose we have a system <span class="math">\(\ket{\psi}\)</span>, an operator $$$ hat Omega $$$, a transformation <span class="math">\(\hat U\)</span>.</p>
+<p>Transformation <span class="math">\(\hat U \ket{\psi}\)</span> is identical to <span class="math">\(\hat U^\dagger \hat \Omega \hat U\)</span> because they give the same observation results. The first one is called active, while the second one is called passive.</p>
+</div>
+<div class="section" id="id2">
+<h3>4.1.3.2&nbsp;&nbsp;&nbsp;Parity<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="definition">
+<h4>4.1.3.2.1&nbsp;&nbsp;&nbsp;Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h4>
+<div class="math">
+\[\hat \Pi \ket{x}= \ket{-x}\]</div>
+</div>
+<div class="section" id="properties">
+<h4>4.1.3.2.2&nbsp;&nbsp;&nbsp;Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Act on momentum eigenvectors,</p>
+<div class="math">
+\[\hat \Pi \ket{p} = \ket{-p} .\]</div>
+</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">Physics: Parity changes the coordinate, so the direction of momentum is also changed.</p>
+</li>
+<li><p class="first">Math:</p>
+<div class="math">
+\[\hat \Pi \ket{p} = \int \hat \Pi \ket{x}\braket{x}{p}\d x= \int \ket{-x}\braket{x}{p}\d x\]</div>
+<p>Change coordinate from x to -x,</p>
+<div class="math">
+\[\hat \Pi \ket{p} = \int \ket{x}\braket{-x}{p}\d x = \int \ket{x}\braket{x}{-p}\d x  = \ket{-p}\]</div>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic" start="2">
+<li><p class="first">Hermitian,</p>
+<div class="math">
+\[\bra{x}\hat \Pi \ket{x'} = \delta(x+x')
+(\bra{x'}\hat \Pi \ket{x})^\dagger = \bra{x}\hat \Pi^\dagger \ket{x'} =\delta(x+x')\]</div>
+</li>
+<li><p class="first">Unitary</p>
+<div class="math">
+\[\bra{x}\hat \Pi^\dagger \hat \Pi \ket{x'}= \braket{-x}{-x'}=\delta(-x+x')=\delta(x-x')=\braket{x}{x'}\]</div>
+</li>
+<li><p class="first">Inverse of parity</p>
+<div class="math">
+\[\hat \Pi \hat \Pi = \hat \Pi \hat \Pi^\dagger = \hat I\]</div>
+</li>
+<li><p class="first">Eigensystem of parity.</p>
+<div class="math">
+\[\hat \Pi \ket{\pi}=\pi\ket{\pi}\]</div>
+<p>Apply another operator</p>
+<div class="math">
+\[\hat \Pi^2 \ket{\pi} = \pi^2 \ket{\pi}\]</div>
+<p>So,
+* Eigenvalues: 1, -1;
+* Eigenvactors: Even function, Odd function</p>
+</li>
+<li><p class="first">Parity applied to operators
+a. Apply to position operator,</p>
+<blockquote>
+<div><div class="math">
+\[\hat \Pi^\dagger \hat X \hat \Pi = -\hat X\]</div>
+<p>Proof:</p>
+<div class="math">
+\[\bra{x}\hat \Pi ^\dagger \hat X \hat \Pi \ket{x'} = \bra{-x}\hat X \ket{-x'}= -x'\delta(x-x') = \bra{x}(-\hat X)\ket{x'}\]</div>
+</div></blockquote>
+<ol class="loweralpha" start="2">
+<li><p class="first">Apply to momentum operator,</p>
+<div class="math">
+\[\hat \Pi^\dagger \hat p \hat \Pi = -\hat p\]</div>
+<p>Proof: Similar to the previous one, just change x basis to momentum basis.</p>
+</li>
+</ol>
+</li>
+<li><p class="first">Symmetry related to Hamiltonian.</p>
+<div class="math">
+\[\left[ \hat \Pi , \hat H  \right] = 0\]</div>
+<p>When this happens, parity of Hamiltonian won&#8217;t change the wave function. Or the wave function should have an specific parity for 1D problem.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="classical-limit-of-qm">
+<h2>4.1.4&nbsp;&nbsp;&nbsp;Classical Limit of QM<a class="headerlink" href="#classical-limit-of-qm" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ehrenfest-s-theorem">
+<h3>4.1.4.1&nbsp;&nbsp;&nbsp;Ehrenfest&#8217;s Theorem<a class="headerlink" href="#ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h3>
+<p>Schrödinger equation and its adjoint</p>
+<div class="math">
+\[i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}\]\[-i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H\]</div>
+<p>For any observable <span class="math">\(\hat \Omega\)</span>,</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+\frac{\d }{\d t}\left&lt;\hat \Omega \right &gt; &amp;=&amp; \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\\\
+&amp;=&amp; \frac{1}{i\hbar} \left ( - \bra{\psi(t)} \hat H \hat\Omega \ket{\psi(t)} +\bra{\psi(t)} \hat\Omega \hat H \ket{\psi(t)} \right) + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} \\\\
+&amp;=&amp; \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}
+\end{eqnarray}\end{split}\]</div>
+<p>This is called Ehrenfest&#8217;s Theorem.</p>
+<div class="section" id="simple-example-of-ehrenfest-s-theorem">
+<h4>4.1.4.1.1&nbsp;&nbsp;&nbsp;Simple Example of Ehrenfest&#8217;s Theorem<a class="headerlink" href="#simple-example-of-ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h4>
+<p>Suppose we have a system with Hamiltonian</p>
+<div class="math">
+\[\hat H = \frac{\hat p^2}{2m} + V(\hat x)\]</div>
+<p>We need to figure some commutators first.</p>
+<div class="math">
+\[2m \left[ \hat x, \hat H \right] =\left[\hat x, \hat p^2\right] = \hat x \hat p\hat p - \hat p \hat p \hat x = \hat x \hat p \hat p -\hat p \hat x \hat p + \hat p \hat x \hat p - \hat p \hat p \hat x  = \left[\hat x , \hat p\right]\hat p + \hat p \left[ \hat x,\hat p\right]  = 2 i \hbar \hat p\]</div>
+<div class="math">
+\[\left[\hat p, \hat H\right] = \left[\hat p, V(\hat x) \right] = \left[\hat p, \sum_0^\infty \frac{V^{(n)}}{n!}\hat x^n\right] =\cdots =-i\hbar V'(\hat x)\]</div>
+<ol class="arabic">
+<li><p class="first">Position average</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+\frac{\d }{\d t} \left&lt; \hat x \right&gt; &amp;=&amp; \frac{1}{i\hbar} \bra{\psi(t)} \left[ \hat x, \hat H \right]\ket{\psi(t)} \\\\
+&amp;=&amp;  \frac{\left&lt; \hat p \right&gt;}{m}
+\end{eqnarray}\end{split}\]</div>
+<p>We are familiar with this in classical mechanics.</p>
+</li>
+<li><p class="first">Momentum average</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+\frac{\d}{\d t} \left&lt;\hat p\right&gt; &amp;=&amp; \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\\\
+&amp;=&amp; \frac{1}{i\hbar} \bra{\psi(t)}  (-i\hbar V'(\hat x))  \ket{\psi(t)}  \\\\
+&amp;=&amp; -\left&lt; V'(\hat x) \right&gt;
+\end{eqnarray}\end{split}\]</div>
+<p>In classical mechanics, the derivative of potential is force. And the result is just like Newton&#8217;s 2n Law except the right hand side is not exactly like a force which should be $$$ -frac{d}{d x} left&lt; V(hat x) right&gt; $$$.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="what-does-mean">
+<h4>4.1.4.1.2&nbsp;&nbsp;&nbsp;What does <span class="math">\(-\left&lt; V'(\hat x)\right&gt;\)</span> mean<a class="headerlink" href="#what-does-mean" title="Permalink to this headline">¶</a></h4>
+<p>Suppose the potential area is fairly small and distributed around some coordinate <span class="math">\(x_0=\left&lt; \hat x \right&gt;\)</span>, we can do Taylor expansion around <span class="math">\(x_0\)</span>.</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+&lt; V(\hat x)&gt; &amp;=&amp; V(x_0)   +  V'(x_0) &lt; (x - x_0)&gt; + V''(x_0)&lt;(x-x_0)^2&gt; /2 + \cdots \\\\
+&amp;=&amp; V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots
+\end{eqnarray}\end{split}\]</div>
+<p>If the uncertainty is small enough, every term except the first one becomes small. So to the lowest order, average of potential is approximately the potential at <span class="math">\(x_0\)</span>.</p>
+<p>Similarly, the average of first derivative of potential <span class="math">\(&lt;V'(\hat x)&gt;\)</span> is approximately <span class="math">\(V'(x_0)\)</span>.</p>
+<p>These gives us a hint for the previous result we got for the time evolution of average momentum. The result reduces to classical mechanics one as long as we keep the lowest order of Taylor expansion. Those higher order terms show the quantum effect.</p>
+</div>
+</div>
+<div class="section" id="picture">
+<h3>4.1.4.2&nbsp;&nbsp;&nbsp;Picture<a class="headerlink" href="#picture" title="Permalink to this headline">¶</a></h3>
+<p>We can see deeper into Ehrenfest&#8217;s Theorem through Heisenberg Picture of quantum mechanics.</p>
+<div class="section" id="schrodinger-heisenberg-pictures">
+<h4>4.1.4.2.1&nbsp;&nbsp;&nbsp;Schrödinger &amp; Heisenberg Pictures<a class="headerlink" href="#schrodinger-heisenberg-pictures" title="Permalink to this headline">¶</a></h4>
+<p>Pictures are the ways we look at the evolution of systems.</p>
+<div class="section" id="schrodinger-picture">
+<h5>4.1.4.2.1.1&nbsp;&nbsp;&nbsp;Schrödinger Picture<a class="headerlink" href="#schrodinger-picture" title="Permalink to this headline">¶</a></h5>
+<p>In Schrödinger picture the states are evolving with time.</p>
+<div class="math">
+\[i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S\]</div>
+<p>And for time independent Hamiltonian,</p>
+<div class="math">
+\[\ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S\]</div>
+</div>
+<div class="section" id="heisenberg-picture">
+<h5>4.1.4.2.1.2&nbsp;&nbsp;&nbsp;Heisenberg Picture<a class="headerlink" href="#heisenberg-picture" title="Permalink to this headline">¶</a></h5>
+<p>In Heisenberg Picture, the states do not change with time.</p>
+<div class="math">
+\[\ket{\psi} _ H = \ket{\psi_0} _ H ,\]</div>
+<p>and of course the initial is the same with Schrödinger Picture,</p>
+<div class="math">
+\[\ket{\psi_0} _ H = \ket{\psi _ 0} _ S .\]</div>
+<p>How do we relate to Heisenberg Picture to Schrödinger Picture? Through investigation of observables. We should have the same observation results in both Pictures.</p>
+<div class="math">
+\[\begin{split}  \begin{eqnarray}
+  {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp;=&amp; {} _ S \bra{\psi} \hat \Omega _ S \ket{\psi} _ S \\\\
+  {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp;=&amp; {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\\\
+  \hat \Omega _ H &amp;=&amp; \hat U^\dagger \hat \Omega _ S \hat U
+  \end{eqnarray}\end{split}\]\[So the operators change with time in Heisenberg Picture.\]</div>
+</div>
+</div>
+<div class="section" id="ehrenfest-s-theorem-in-heisenberg-picture">
+<h4>4.1.4.2.2&nbsp;&nbsp;&nbsp;Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h4>
+<div class="math">
+\[\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\]</div>
+<p>This can be easily proved by throwing every definition need in to it. We also need the following equations.</p>
+<div class="math">
+\[\frac{\d }{\d t} \hat U = \frac{\d }{\d t} e^{-i\hat H t /\hbar} = \frac{\hat H}{i\hbar} \hat U\]</div>
+<p>And REMEMBER that propagator commute with time independent Hamiltonian, so</p>
+<div class="math">
+\[\hat H = \hat U^\dagger \hat U \hat H = \hat U^ \dagger \hat U \hat U \equiv \hat H _ H\]</div>
+<p>So this Ehrenfest&#8217;s Theorem can also be written as</p>
+<div class="math">
+\[\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H _ H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\]</div>
+<p>We can <strong>define</strong></p>
+<div class="math">
+\[\frac{\partial}{\partial t}\hat  \Omega _ H \equiv \hat U^\dagger  \frac{\partial }{\partial t}\hat  \Omega _ S \hat U  ,\]</div>
+<p>which is the time derivative of operator in Heisenberg Picture.</p>
+<p><strong>Reminder: The time derivative of an observable (average) depends not only the time derivative of itself, but also the commutator of the observable and Hamiltonian.</strong></p>
+<div class="section" id="example-of-ehrenfest-s-theorem-in-heisenberg-picture">
+<h5>4.1.4.2.2.1&nbsp;&nbsp;&nbsp;Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h5>
+<p>We will show why it is better to work in Heisenberg Picture to show the meanings of Ehrenfest&#8217;s Theorem.</p>
+<p>Suppose we have a Hamiltonian in Heisenberg Picture,</p>
+<div class="math">
+\[\hat H_H = \frac{\hat p _ H^2 }{2m} + V(\hat x _ H) .\]</div>
+<p>Time derivative of position operator</p>
+<div class="math">
+\[\frac{\d}{\d t} \hat x _ H = \frac{1}{i\hbar} \left[\hat x _ H, \hat H _ H \right ] = \frac{\hat p _ H}{m}\]</div>
+<p>Time derivative of momentum operator</p>
+<div class="math">
+\[\frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)\]</div>
+<p>So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That&#8217;s why we like it.</p>
+</div>
+</div>
+</div>
+<div class="section" id="conservation">
+<h3>4.1.4.3&nbsp;&nbsp;&nbsp;Conservation<a class="headerlink" href="#conservation" title="Permalink to this headline">¶</a></h3>
+<p>We say a observable is conserved if the corresponding operator commutes with Hamiltonian,</p>
+<div class="math">
+\[\left[ \hat \Omega, \hat H \right]=0\]</div>
+<p>1. Energy
+Hamiltonian always commutes with itself.</p>
+<div class="math">
+\[\begin{split}\frac{\d}{\d t} \left&lt;\epsilon \right&gt; = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}\end{split}\]</div>
+<p>If Hamiltonian is time independent, then energy is conserved. (If Hamiltonian is tide dependent, energy is not conserved. This is kind of obvious in classical mechanics.)</p>
+<div class="section" id="what-is-the-nature-of-time-dependence">
+<h4>4.1.4.3.1&nbsp;&nbsp;&nbsp;What is the nature of time dependence<a class="headerlink" href="#what-is-the-nature-of-time-dependence" title="Permalink to this headline">¶</a></h4>
+<p>We can see this by looking at a simple example.</p>
+<p>Assume we have a system with energy eigenstates <span class="math">\(\ket{\epsilon _ n}\)</span>, and initially,</p>
+<div class="math">
+\[\ket{\psi _ 0} = \sum_n C _ n \ket{\epsilon _ n} .\]</div>
+<p>So</p>
+<div class="math">
+\[\ket{\psi(t)} = \sum _ n C _ n e^{-i\epsilon _ n t/\hbar} \ket{\epsilon _ n} .\]</div>
+<p>We can calculate the expectation value of some operator <span class="math">\(\hat \Omega\)</span>,</p>
+<div class="math">
+\[\begin{split}\left&lt; \omega (t) \right&gt; =  \sum _ {n,m} \left( C _ n^ * e^{i\epsilon _ n t/\hbar } \bra{\epsilon _ n} \right)  \hat \Omega \left( C _ m e^{-i \epsilon _ m t/\hbar} \ket{\epsilon _ m} \right) = \sum _ {n,m} C _ n ^* C _ m e^{-i(\epsilon _ m - \epsilon _ n) t/\hbar} \bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m}\end{split}\]</div>
+<p>If <span class="math">\(\ket{\epsilon _ n}\)</span> are also the eigenvectors of <span class="math">\(\hat \Omega\)</span>, then</p>
+<div class="math">
+\[\bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m} = \omega _ m \delta _ {n,m}\]</div>
+<p>And the expectation value</p>
+<div class="math">
+\[\begin{split}\left&lt;  \omega (t) \right&gt; = \sum _ {n} C _ n^* C _ n \omega _ n\end{split}\]</div>
+<p><strong>The important thing is that the time dependence of this expectation value actually arise from this term</strong></p>
+<div class="math">
+\[e^{-i(\epsilon _ m - \epsilon _ n)t/\hbar} .\]</div>
+<p>As it is so important, we call</p>
+<div class="math">
+\[(\epsilon _ m - \epsilon _ n)/\hbar\]</div>
+<p><strong>Bohr frequency</strong>.</p>
+</div>
 </div>
 </div>
 </div>
@@ -339,10 +788,68 @@ end{eqnarray}</p>
             <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Quantum Mechanics</a><ul>
-<li><a class="reference internal" href="#quantum-mechanics-framework">Quantum Mechanics Framework</a><ul>
-<li><a class="reference internal" href="#what-re-the-most-important-tricks-in-qm-calculations">What&#8217;re the most important tricks in QM calculations?</a></li>
-<li><a class="reference internal" href="#first-three-postulates">First Three Postulates</a></li>
+<li><a class="reference internal" href="#">4.1&nbsp;&nbsp;&nbsp;Quantum Mechanics</a><ul>
+<li><a class="reference internal" href="#quantum-mechanics-framework">4.1.1&nbsp;&nbsp;&nbsp;Quantum Mechanics Framework</a><ul>
+<li><a class="reference internal" href="#what-re-the-most-important-tricks-in-qm-calculations">4.1.1.1&nbsp;&nbsp;&nbsp;What&#8217;re the most important tricks in QM calculations?</a></li>
+<li><a class="reference internal" href="#first-three-postulates">4.1.1.2&nbsp;&nbsp;&nbsp;First Three Postulates</a></li>
+<li><a class="reference internal" href="#position-and-momentum-space">4.1.1.3&nbsp;&nbsp;&nbsp;Position and Momentum Space</a><ul>
+<li><a class="reference internal" href="#position-space">4.1.1.3.1&nbsp;&nbsp;&nbsp;Position Space</a></li>
+<li><a class="reference internal" href="#momentum-space">4.1.1.3.2&nbsp;&nbsp;&nbsp;Momentum Space</a><ul>
+<li><a class="reference internal" href="#postulate-iv">4.1.1.3.2.1&nbsp;&nbsp;&nbsp;Postulate IV</a></li>
+<li><a class="reference internal" href="#id1">4.1.1.3.2.2&nbsp;&nbsp;&nbsp;Momentum Space</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quantum-in-1d">4.1.2&nbsp;&nbsp;&nbsp;Quantum in 1D</a><ul>
+<li><a class="reference internal" href="#general">4.1.2.1&nbsp;&nbsp;&nbsp;General</a><ul>
+<li><a class="reference internal" href="#infinite-barriers">4.1.2.1.1&nbsp;&nbsp;&nbsp;Infinite Barriers</a><ul>
+<li><a class="reference internal" href="#math">4.1.2.1.1.1&nbsp;&nbsp;&nbsp;Math</a><ul>
+<li><a class="reference internal" href="#setup">4.1.2.1.1.1.1&nbsp;&nbsp;&nbsp;Setup</a></li>
+<li><a class="reference internal" href="#solve-the-problem">4.1.2.1.1.1.2&nbsp;&nbsp;&nbsp;Solve the Problem</a></li>
+<li><a class="reference internal" href="#physics">4.1.2.1.1.1.3&nbsp;&nbsp;&nbsp;Physics</a></li>
+<li><a class="reference internal" href="#some-general-properties">4.1.2.1.1.1.4&nbsp;&nbsp;&nbsp;Some General Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#parity">4.1.3&nbsp;&nbsp;&nbsp;Parity</a><ul>
+<li><a class="reference internal" href="#passive-and-active-transformations">4.1.3.1&nbsp;&nbsp;&nbsp;Passive and Active Transformations</a></li>
+<li><a class="reference internal" href="#id2">4.1.3.2&nbsp;&nbsp;&nbsp;Parity</a><ul>
+<li><a class="reference internal" href="#definition">4.1.3.2.1&nbsp;&nbsp;&nbsp;Definition</a></li>
+<li><a class="reference internal" href="#properties">4.1.3.2.2&nbsp;&nbsp;&nbsp;Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#classical-limit-of-qm">4.1.4&nbsp;&nbsp;&nbsp;Classical Limit of QM</a><ul>
+<li><a class="reference internal" href="#ehrenfest-s-theorem">4.1.4.1&nbsp;&nbsp;&nbsp;Ehrenfest&#8217;s Theorem</a><ul>
+<li><a class="reference internal" href="#simple-example-of-ehrenfest-s-theorem">4.1.4.1.1&nbsp;&nbsp;&nbsp;Simple Example of Ehrenfest&#8217;s Theorem</a></li>
+<li><a class="reference internal" href="#what-does-mean">4.1.4.1.2&nbsp;&nbsp;&nbsp;What does <span class="math">\(-\left&lt; V'(\hat x)\right&gt;\)</span> mean</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#picture">4.1.4.2&nbsp;&nbsp;&nbsp;Picture</a><ul>
+<li><a class="reference internal" href="#schrodinger-heisenberg-pictures">4.1.4.2.1&nbsp;&nbsp;&nbsp;Schrödinger &amp; Heisenberg Pictures</a><ul>
+<li><a class="reference internal" href="#schrodinger-picture">4.1.4.2.1.1&nbsp;&nbsp;&nbsp;Schrödinger Picture</a></li>
+<li><a class="reference internal" href="#heisenberg-picture">4.1.4.2.1.2&nbsp;&nbsp;&nbsp;Heisenberg Picture</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ehrenfest-s-theorem-in-heisenberg-picture">4.1.4.2.2&nbsp;&nbsp;&nbsp;Ehrenfest&#8217;s Theorem in Heisenberg Picture</a><ul>
+<li><a class="reference internal" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture">4.1.4.2.2.1&nbsp;&nbsp;&nbsp;Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conservation">4.1.4.3&nbsp;&nbsp;&nbsp;Conservation</a><ul>
+<li><a class="reference internal" href="#what-is-the-nature-of-time-dependence">4.1.4.3.1&nbsp;&nbsp;&nbsp;What is the nature of time dependence</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -351,10 +858,10 @@ end{eqnarray}</p>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="ClassicalMechanics.html"
-                        title="previous chapter">Classical Mechanics</a></p>
+                        title="previous chapter">3.1&nbsp;&nbsp;&nbsp;Classical Mechanics</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="SpecialRelativity.html"
-                        title="next chapter">Special Relativity</a></p>
+                        title="next chapter">5.1&nbsp;&nbsp;&nbsp;Special Relativity</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/QuantumMechanics.txt"

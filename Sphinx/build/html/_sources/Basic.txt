@@ -2,6 +2,9 @@
 Basic
 ******
 
+.. sectnum::
+   :prefix: 1.
+
 =========
 Dimension
 =========

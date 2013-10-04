@@ -4,7 +4,8 @@
 General Relativity
 *******************
 
-
+.. sectnum::
+   :prefix: 6.
 
 
 

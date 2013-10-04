@@ -8,16 +8,18 @@ Welcome to Physics Research Survival Manual!
 
 Contents:
 
+
+
 .. toctree::
    :maxdepth: 2
 
    preface.rst
    Basic.rst
+   math.rst
    ClassicalMechanics.rst
    QuantumMechanics.rst
    SpecialRelativity.rst
    GeneralRelativity.rst 
-   math.rst
    Cosmology/cosmoIndex.rst
 
 Indices and tables
