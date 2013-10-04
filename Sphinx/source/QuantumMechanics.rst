@@ -370,7 +370,9 @@ Solve the Problem
 * Use Boundary Condition
     1. At x=0, 
 
-       .. math:: \psi(0,t)=0 .$$ This gives us $$ D = 0 .
+       .. math:: \psi(0,t)=0 .
+
+       This gives us :math:`D = 0` .
 
     2. At :math:`x=L`, 
 
@@ -434,7 +436,7 @@ Generally, there are two ways of interpreting a transformation.
 .. image:: QMFig/transformations.png
    :alt: Transformations
 
-Here in QM, passive means transform the operator $$$ \hat \Omega $$$, while active means change the state :math:`\ket{\psi}`. Suppose we have a system :math:`\ket{\psi}`, an operator $$$ \hat \Omega $$$, a transformation :math:`\hat U`.
+Here in QM, passive means transform the operator :math:`\hat \Omega`, while active means change the state :math:`\ket{\psi}`. Suppose we have a system :math:`\ket{\psi}`, an operator :math:`\hat \Omega`, a transformation :math:`\hat U`.
 
 Transformation :math:`\hat U \ket{\psi}` is identical to :math:`\hat U^\dagger \hat \Omega \hat U` because they give the same observation results. The first one is called active, while the second one is called passive.
 
@@ -586,7 +588,7 @@ We need to figure some commutators first.
       &=& -\left< V'(\hat x) \right>
       \end{eqnarray}
 
-   In classical mechanics, the derivative of potential is force. And the result is just like Newton's 2n Law except the right hand side is not exactly like a force which should be $$$ -\frac{\d}{\d x} \left< V(\hat x) \right> $$$.
+   In classical mechanics, the derivative of potential is force. And the result is just like Newton's 2n Law except the right hand side is not exactly like a force which should be :math:`-\frac{\d}{\d x} \left< V(\hat x) \right>`.
 
 
 What does :math:`-\left< V'(\hat x)\right>` mean
