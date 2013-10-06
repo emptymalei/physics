@@ -3,8 +3,7 @@ Mathematics
 ******************
 
 .. sectnum::
-   :prefix: 2.
-
+   :start: 2
 
 Differential Geometry
 =======================

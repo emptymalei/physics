@@ -4,7 +4,7 @@ Special Relativity
 
 
 .. sectnum::
-   :prefix: 5.
+   :start: 5
 
 
 ===============

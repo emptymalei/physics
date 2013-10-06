@@ -3,4 +3,4 @@ Classical Mechanics
 ****************************
 
 .. sectnum::
-   :prefix: 3.
+   :start: 3

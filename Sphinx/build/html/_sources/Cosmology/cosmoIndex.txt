@@ -3,7 +3,7 @@ Cosmology
 ************
 
 .. sectnum::
-   :prefix: 7.
+   :start: 7
 
 
 

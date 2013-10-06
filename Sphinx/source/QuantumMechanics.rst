@@ -3,7 +3,7 @@ Quantum Mechanics
 ***************************
 
 .. sectnum::
-   :prefix: 4.
+   :start: 4
 
 Quantum Mechanics Framework
 ==============================

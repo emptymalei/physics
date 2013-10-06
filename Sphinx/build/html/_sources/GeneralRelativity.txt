@@ -5,7 +5,7 @@ General Relativity
 *******************
 
 .. sectnum::
-   :prefix: 6.
+   :start: 6
 
 
 
