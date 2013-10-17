@@ -2,8 +2,8 @@
 Mathematics
 ******************
 
-.. sectnum::
-   :start: 2
+.. .. sectnum::
+      :start: 2
 
 Differential Geometry
 =======================

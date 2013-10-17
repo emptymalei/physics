@@ -3,8 +3,6 @@ Special Relativity
 ********************
 
 
-.. sectnum::
-   :start: 5
 
 
 ===============

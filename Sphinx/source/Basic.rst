@@ -2,8 +2,8 @@
 Basic
 ******
 
-.. sectnum::
-   :start: 1
+.. .. sectnum::
+      :start: 1
 
 =========
 Dimension

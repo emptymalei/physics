@@ -4,9 +4,6 @@
 General Relativity
 *******************
 
-.. sectnum::
-   :start: 6
-
 
 
 Description of Space-time Manifold
