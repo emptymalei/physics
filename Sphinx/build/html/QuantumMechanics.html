@@ -283,7 +283,7 @@ i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\ps
 \[\begin{split}\begin{eqnarray}
 &amp;&amp;\bra{\psi} \hat x \ket{\psi} \\\\
 &amp;=&amp; \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\\\
-&amp;=&amp; \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\\\
+&amp;=&amp; \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
 &amp;=&amp; \int \left| \psi(t,x) \right|^2 x \d x
 \end{eqnarray}\end{split}\]</div>
 </li>
@@ -778,6 +778,97 @@ Hamiltonian always commutes with itself.</p>
 </div>
 </div>
 </div>
+<div class="section" id="harmonic-oscillators">
+<h2>5.5. Harmonic Oscillators<a class="headerlink" href="#harmonic-oscillators" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="why-harmonic-oscillators">
+<h3>5.5.1. Why Harmonic Oscillators<a class="headerlink" href="#why-harmonic-oscillators" title="Permalink to this headline">¶</a></h3>
+<p>Many systems can reduce to it. Use Taylor expansion for the potential and redefine parameters we will find harmonic oscillators in the potential.</p>
+<p>Hamiltonian for 1D is</p>
+<div class="math">
+\[\hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2\]</div>
+</div>
+<div class="section" id="standard-solution">
+<h3>5.5.2. Standard Solution<a class="headerlink" href="#standard-solution" title="Permalink to this headline">¶</a></h3>
+<p>We can use polynomial expansion for part of the solution.</p>
+</div>
+<div class="section" id="tricky-solution">
+<h3>5.5.3. Tricky Solution<a class="headerlink" href="#tricky-solution" title="Permalink to this headline">¶</a></h3>
+<p>Find out the characteristic length and energy</p>
+<div class="math">
+\[\eta = \sqrt{\frac{\hbar }{m\omega }}
+\epsilon = \hbar \omega\]</div>
+<p>Rewrite the Hamiltonian</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+\hat H &amp;=&amp; \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\\\
+&amp;=&amp; \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\\\
+&amp;=&amp; \frac 1 2 \hbar \omega \left( \frac{\hat p}{\hbar/\eta} + i \frac{\hat x}{\eta} \right) \left( \frac{\hat p}{\hbar/\eta} - i \frac{\hat x}{\eta} \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
+&amp;=&amp; \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\\\
+&amp;=&amp; \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)
+\end{eqnarray}\end{split}\]</div>
+<p>Now we can define <span class="math">\(\hat a^\dagger \hat a = \hat N\)</span>, which is just like an operator for (energy) quanta numbers.</p>
+<p>An impoertan relation is</p>
+<div class="math">
+\[\left[\hat a, \hat a^\dagger\right] = 1
+\left[\hat a, \hat N\right] = \hat a\]</div>
+<p>The eigen equation for this weird energy quanta number operator is</p>
+<div class="math">
+\[\hat N \ket{n} = n \ket{n}\]</div>
+<p>To find out the eigen state of <span class="math">\(\hat a\)</span> and <span class="math">\(\hat a^\dagger\)</span>, we try this,</p>
+<div class="math">
+\[\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})
+\hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})\]</div>
+<p>This means <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are also eigen states of <span class="math">\(hat N\)</span>.</p>
+<p>The next step is very crucial. Since <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are eigen states of <span class="math">\(hat N\)</span>, we know that</p>
+<div class="math">
+\[\hat a \ket{n} = C1 \ket{n}
+\hat a^\dagger \ket{n} = C2 \ket{n}\]</div>
+<p>Then our next step is to find out what are <span class="math">\(C1\)</span> and <span class="math">\(C2\)</span> exactly.</p>
+<p>They way of finding them is to use invariant quantities, such as the inner product. Here we use average of <span class="math">\(\hat N\)</span> operator.</p>
+<div class="math">
+\[\hat a \ket{n} = \sqrt n \ket{n-1}
+\hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}\]</div>
+<p>Final step is to constrain on <span class="math">\(n\)</span>, which should be integrals. This is true because we need a cut off for the eigen equation of <span class="math">\(\hat N\)</span>, whose avarage is n and it should be non negative.</p>
+<div class="math">
+\[\bra{n}\hat N \ket{n} \ge 0\]</div>
+<p>leads to <span class="math">\(n\ge 0\)</span>. To get this proper cut off, <span class="math">\(n\)</span> should be integer because if it&#8217;s not, according to</p>
+<div class="math">
+\[\hat a \ket{n} = \sqrt n \ket{n-1}\]</div>
+<p>n can go to negative numbers. If n is positive integer,</p>
+<div class="math">
+\[\hat a \ket{1} = \ket{0}
+\hat a \ket{0} = 0 \ket{0}\]</div>
+<p>show an cut off at 0.</p>
+<p>We can even find out the wave functions of these <span class="math">\(\ket{n}\)</span> by finding the ground state first and apply <span class="math">\(\hat a^\dagger\)</span> to the ground state.</p>
+<p>Ground state in <span class="math">\({\ket{x}}\)</span> basis can be found by solving the differential equation,</p>
+<div class="math">
+\[\bra{x} \hat a \ket{0} = 0\]</div>
+<blockquote>
+<div><p>Very important:</p>
+<ul class="simple">
+<li>The Hermitian conjugate of <span class="math">\(\hat a \ket{n}\)</span> is <span class="math">\(\bra{n} \hat a^\dagger\)</span>.</li>
+<li>Hermitian conjugate of <span class="math">\(\hat a \hat a^\dagger\)</span> is <span class="math">\(\hat a \hat a^dagger\)</span>. This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="semiclassical">
+<h3>5.5.4. Semiclassical<a class="headerlink" href="#semiclassical" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="classical">
+<h4>5.5.4.1. Classical<a class="headerlink" href="#classical" title="Permalink to this headline">¶</a></h4>
+<p>In phase space, the trajectory of phase space points ( {<span class="math">\(x/\eta\)</span> and <span class="math">\(p/(\hbar/\eta)\)</span>} ) is on a circle of radius <span class="math">\(x_{max}/\eta\)</span>.</p>
+</div>
+<div class="section" id="quantum-semiclassical">
+<h4>5.5.4.2. Quantum semiclassical<a class="headerlink" href="#quantum-semiclassical" title="Permalink to this headline">¶</a></h4>
+<p>Key points:</p>
+<ol class="arabic simple">
+<li>What is the trajectory of <span class="math">\(\left&lt;\hat x/\eta\right&gt;\)</span> and <span class="math">\(\left&lt;\hat p/(\hbar/\eta)\right&gt;\)</span></li>
+<li>Can we make the trajectory just like the classical case by choosing some special conditions?</li>
+<li>What do these special cases mean?</li>
+</ol>
+<p>(To Be Finished...)</p>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -849,6 +940,17 @@ Hamiltonian always commutes with itself.</p>
 </li>
 <li><a class="reference internal" href="#conservation">5.4.3. Conservation</a><ul>
 <li><a class="reference internal" href="#what-is-the-nature-of-time-dependence">5.4.3.1. What is the nature of time dependence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#harmonic-oscillators">5.5. Harmonic Oscillators</a><ul>
+<li><a class="reference internal" href="#why-harmonic-oscillators">5.5.1. Why Harmonic Oscillators</a></li>
+<li><a class="reference internal" href="#standard-solution">5.5.2. Standard Solution</a></li>
+<li><a class="reference internal" href="#tricky-solution">5.5.3. Tricky Solution</a></li>
+<li><a class="reference internal" href="#semiclassical">5.5.4. Semiclassical</a><ul>
+<li><a class="reference internal" href="#classical">5.5.4.1. Classical</a></li>
+<li><a class="reference internal" href="#quantum-semiclassical">5.5.4.2. Quantum semiclassical</a></li>
 </ul>
 </li>
 </ul>

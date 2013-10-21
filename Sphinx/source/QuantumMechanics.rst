@@ -167,7 +167,7 @@ Position Space
       \begin{eqnarray}
       &&\bra{\psi} \hat x \ket{\psi} \\\\
       &=& \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\\\
-      &=& \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\\\
+      &=& \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
       &=& \int \left| \psi(t,x) \right|^2 x \d x
       \end{eqnarray}								
 	
@@ -756,3 +756,154 @@ As it is so important, we call
 .. math:: (\epsilon _ m - \epsilon _ n)/\hbar
 
 **Bohr frequency**.
+
+
+
+
+
+
+
+Harmonic Oscillators
+=====================
+
+
+Why Harmonic Oscillators
+--------------------------
+
+
+Many systems can reduce to it. Use Taylor expansion for the potential and redefine parameters we will find harmonic oscillators in the potential.
+
+
+Hamiltonian for 1D is
+
+.. math::
+   \hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2
+
+
+
+Standard Solution
+--------------------
+
+
+We can use polynomial expansion for part of the solution.
+
+
+
+
+Tricky Solution
+-----------------
+
+Find out the characteristic length and energy
+
+.. math::
+   \eta = \sqrt{\frac{\hbar }{m\omega }}
+   \epsilon = \hbar \omega
+
+
+Rewrite the Hamiltonian
+
+.. math::
+   \begin{eqnarray}
+   \hat H &=& \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\\\
+   &=& \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\\\
+   &=& \frac 1 2 \hbar \omega \left( \frac{\hat p}{\hbar/\eta} + i \frac{\hat x}{\eta} \right) \left( \frac{\hat p}{\hbar/\eta} - i \frac{\hat x}{\eta} \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
+   &=& \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\\\
+   &=& \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)
+   \end{eqnarray}
+
+Now we can define :math:`\hat a^\dagger \hat a = \hat N`, which is just like an operator for (energy) quanta numbers.
+
+
+An impoertan relation is 
+
+.. math::
+   \left[\hat a, \hat a^\dagger\right] = 1
+   \left[\hat a, \hat N\right] = \hat a
+
+The eigen equation for this weird energy quanta number operator is
+
+.. math::
+   \hat N \ket{n} = n \ket{n}
+
+To find out the eigen state of :math:`\hat a` and :math:`\hat a^\dagger`, we try this,
+
+.. math::
+   \hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})
+   \hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})
+
+This means :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are also eigen states of :math:`hat N`.
+
+The next step is very crucial. Since :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are eigen states of :math:`hat N`, we know that
+
+.. math::
+   \hat a \ket{n} = C1 \ket{n}
+   \hat a^\dagger \ket{n} = C2 \ket{n}
+
+
+Then our next step is to find out what are :math:`C1` and :math:`C2` exactly.
+
+They way of finding them is to use invariant quantities, such as the inner product. Here we use average of :math:`\hat N` operator.
+
+.. math::
+   \hat a \ket{n} = \sqrt n \ket{n-1}
+   \hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}
+
+Final step is to constrain on :math:`n`, which should be integrals. This is true because we need a cut off for the eigen equation of :math:`\hat N`, whose avarage is n and it should be non negative.
+
+.. math::
+   \bra{n}\hat N \ket{n} \ge 0
+
+leads to :math:`n\ge 0`. To get this proper cut off, :math:`n` should be integer because if it's not, according to
+
+.. math::
+   \hat a \ket{n} = \sqrt n \ket{n-1}
+
+n can go to negative numbers. If n is positive integer, 
+
+.. math::
+   \hat a \ket{1} = \ket{0}
+   \hat a \ket{0} = 0 \ket{0}
+
+show an cut off at 0.
+
+
+
+We can even find out the wave functions of these :math:`\ket{n}` by finding the ground state first and apply :math:`\hat a^\dagger` to the ground state.
+
+Ground state in :math:`{\ket{x}}` basis can be found by solving the differential equation,
+
+.. math::
+   \bra{x} \hat a \ket{0} = 0
+
+
+.. 
+
+  Very important:
+  
+  * The Hermitian conjugate of :math:`\hat a \ket{n}` is :math:`\bra{n} \hat a^\dagger`.
+  * Hermitian conjugate of :math:`\hat a \hat a^\dagger` is :math:`\hat a \hat a^dagger`. This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!
+
+
+
+Semiclassical
+-------------------
+
+
+Classical
+""""""""""""""""""""""
+
+
+In phase space, the trajectory of phase space points ( {:math:`x/\eta` and :math:`p/(\hbar/\eta)`} ) is on a circle of radius :math:`x_{max}/\eta`.
+
+
+Quantum semiclassical
+"""""""""""""""""""""""
+
+Key points:
+
+1. What is the trajectory of :math:`\left<\hat x/\eta\right>` and :math:`\left<\hat p/(\hbar/\eta)\right>`
+2. Can we make the trajectory just like the classical case by choosing some special conditions?
+3. What do these special cases mean?
+
+
+(To Be Finished...)
