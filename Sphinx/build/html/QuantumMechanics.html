@@ -134,13 +134,14 @@
 <div class="section" id="quantum-mechanics-framework">
 <h2>5.1. Quantum Mechanics Framework<a class="headerlink" href="#quantum-mechanics-framework" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-\[\newcommand{\ud}[1]{{#1^{\dagger}}}
+\[\begin{split}\newcommand{\ud}[1]{{#1^{\dagger}}}
 \newcommand{\bra}[1]{\left\langle #1\right|}
 \newcommand{\ket}[1]{\left| #1\right\rangle}
 \newcommand\Tr{\mathrm{Tr}}
 \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
 \newcommand\d{\mathrm{d}}
-\newcommand\I{\mathbb{I}}\]</div>
+\newcommand\I{\mathbb{I}}
+\newcommand{\avg}[1]{\left&lt; #1 \right&gt;} % for average\end{split}\]</div>
 <div class="section" id="what-re-the-most-important-tricks-in-qm-calculations">
 <h3>5.1.1. What&#8217;re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -795,39 +796,40 @@ Hamiltonian always commutes with itself.</p>
 <h3>5.5.3. Tricky Solution<a class="headerlink" href="#tricky-solution" title="Permalink to this headline">¶</a></h3>
 <p>Find out the characteristic length and energy</p>
 <div class="math">
-\[\eta = \sqrt{\frac{\hbar }{m\omega }}
-\epsilon = \hbar \omega\]</div>
+\[\begin{split}\eta = \sqrt{\frac{\hbar }{m\omega }} \\\\
+\epsilon = \hbar \omega \\\\
+\omega = \sqrt{\frac{k}{m}}\end{split}\]</div>
 <p>Rewrite the Hamiltonian</p>
 <div class="math">
 \[\begin{split}\begin{eqnarray}
 \hat H &amp;=&amp; \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\\\
 &amp;=&amp; \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\\\
-&amp;=&amp; \frac 1 2 \hbar \omega \left( \frac{\hat p}{\hbar/\eta} + i \frac{\hat x}{\eta} \right) \left( \frac{\hat p}{\hbar/\eta} - i \frac{\hat x}{\eta} \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
+&amp;=&amp; \frac 1 2 \hbar \omega \left( -i\frac{\hat p}{\hbar/\eta}  + \frac{\hat x}{\eta} \right) \left( i\frac{\hat p}{\hbar/\eta} + \frac{\hat x}{\eta} \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
 &amp;=&amp; \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\\\
 &amp;=&amp; \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)
 \end{eqnarray}\end{split}\]</div>
 <p>Now we can define <span class="math">\(\hat a^\dagger \hat a = \hat N\)</span>, which is just like an operator for (energy) quanta numbers.</p>
 <p>An impoertan relation is</p>
 <div class="math">
-\[\left[\hat a, \hat a^\dagger\right] = 1
-\left[\hat a, \hat N\right] = \hat a\]</div>
+\[\begin{split}\left[\hat a, \hat a^\dagger\right] = 1 \\\\
+\left[\hat a, \hat N\right] = \hat a\end{split}\]</div>
 <p>The eigen equation for this weird energy quanta number operator is</p>
 <div class="math">
 \[\hat N \ket{n} = n \ket{n}\]</div>
 <p>To find out the eigen state of <span class="math">\(\hat a\)</span> and <span class="math">\(\hat a^\dagger\)</span>, we try this,</p>
 <div class="math">
-\[\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})
-\hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})\]</div>
+\[\begin{split}\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\\\
+\hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})\end{split}\]</div>
 <p>This means <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are also eigen states of <span class="math">\(hat N\)</span>.</p>
 <p>The next step is very crucial. Since <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are eigen states of <span class="math">\(hat N\)</span>, we know that</p>
 <div class="math">
-\[\hat a \ket{n} = C1 \ket{n}
-\hat a^\dagger \ket{n} = C2 \ket{n}\]</div>
+\[\begin{split}\hat a \ket{n} = C1 \ket{n} \\\\
+\hat a^\dagger \ket{n} = C2 \ket{n}\end{split}\]</div>
 <p>Then our next step is to find out what are <span class="math">\(C1\)</span> and <span class="math">\(C2\)</span> exactly.</p>
 <p>They way of finding them is to use invariant quantities, such as the inner product. Here we use average of <span class="math">\(\hat N\)</span> operator.</p>
 <div class="math">
-\[\hat a \ket{n} = \sqrt n \ket{n-1}
-\hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}\]</div>
+\[\begin{split}\hat a \ket{n} = \sqrt n \ket{n-1}  \\\\
+\hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}\end{split}\]</div>
 <p>Final step is to constrain on <span class="math">\(n\)</span>, which should be integrals. This is true because we need a cut off for the eigen equation of <span class="math">\(\hat N\)</span>, whose avarage is n and it should be non negative.</p>
 <div class="math">
 \[\bra{n}\hat N \ket{n} \ge 0\]</div>
@@ -836,8 +838,8 @@ Hamiltonian always commutes with itself.</p>
 \[\hat a \ket{n} = \sqrt n \ket{n-1}\]</div>
 <p>n can go to negative numbers. If n is positive integer,</p>
 <div class="math">
-\[\hat a \ket{1} = \ket{0}
-\hat a \ket{0} = 0 \ket{0}\]</div>
+\[\begin{split}\hat a \ket{1} = \ket{0}  \\\\
+\hat a \ket{0} = 0 \ket{0}\end{split}\]</div>
 <p>show an cut off at 0.</p>
 <p>We can even find out the wave functions of these <span class="math">\(\ket{n}\)</span> by finding the ground state first and apply <span class="math">\(\hat a^\dagger\)</span> to the ground state.</p>
 <p>Ground state in <span class="math">\({\ket{x}}\)</span> basis can be found by solving the differential equation,</p>
@@ -865,6 +867,31 @@ Hamiltonian always commutes with itself.</p>
 <li>Can we make the trajectory just like the classical case by choosing some special conditions?</li>
 <li>What do these special cases mean?</li>
 </ol>
+<ul class="simple">
+<li>Expectation value of creation and annihilation operators</li>
+</ul>
+<p>Apply Ehrenfest theorem to annihilation operator,</p>
+<div class="math">
+\[i\hbar \frac{\mathrm d}{\mathrm d t} \avg{\hat a(t)} = \bra{\psi} \left[ \hat a(t), \hat H \right] \ket{\psi} = \hbar \omega \avg{\hat a(t)}\]</div>
+<p>Excellent. Now we can solve out <span class="math">\(\avg{\hat a(t)}\)</span>, which is</p>
+<div class="math">
+\[\avg{\hat a(t)} = \alpha_0 \exp(-i\omega t)\]</div>
+<p>Take the hermitian conjugate,</p>
+<div class="math">
+\[\avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)\]</div>
+<p>With these two operators, we can find out the average of <span class="math">\(\hat x\)</span> and <span class="math">\(\hat p\)</span> because</p>
+<div class="math">
+\[\begin{split}\hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\\\
+\hat p = \frac{\hbar}{\eta} i \frac{1}{\sqrt 2} \left(\hat a^\dagger - \hat a \right) ,\end{split}\]</div>
+<p>we have</p>
+<div class="math">
+\[\begin{split}\avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\\\
+\avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt} \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)\end{split}\]</div>
+<p>We can have a look at these two averages,</p>
+<div class="math">
+\[\begin{split}\frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\\\
+\frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]\end{split}\]</div>
+<p>It is obvious that the average reduces to classical case if <span class="math">\(\alpha_0 = \alpha_0^*\)</span>.</p>
 <p>(To Be Finished...)</p>
 </div>
 </div>

@@ -18,6 +18,7 @@ Quantum Mechanics Framework
    \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
    \newcommand\d{\mathrm{d}}
    \newcommand\I{\mathbb{I}}
+   \newcommand{\avg}[1]{\left< #1 \right>} % for average
 
 
 
@@ -796,8 +797,9 @@ Tricky Solution
 Find out the characteristic length and energy
 
 .. math::
-   \eta = \sqrt{\frac{\hbar }{m\omega }}
-   \epsilon = \hbar \omega
+   \eta = \sqrt{\frac{\hbar }{m\omega }} \\\\
+   \epsilon = \hbar \omega \\\\
+   \omega = \sqrt{\frac{k}{m}}
 
 
 Rewrite the Hamiltonian
@@ -806,7 +808,7 @@ Rewrite the Hamiltonian
    \begin{eqnarray}
    \hat H &=& \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\\\
    &=& \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\\\
-   &=& \frac 1 2 \hbar \omega \left( \frac{\hat p}{\hbar/\eta} + i \frac{\hat x}{\eta} \right) \left( \frac{\hat p}{\hbar/\eta} - i \frac{\hat x}{\eta} \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
+   &=& \frac 1 2 \hbar \omega \left( -i\frac{\hat p}{\hbar/\eta}  + \frac{\hat x}{\eta} \right) \left( i\frac{\hat p}{\hbar/\eta} + \frac{\hat x}{\eta} \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
    &=& \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\\\
    &=& \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)
    \end{eqnarray}
@@ -817,7 +819,7 @@ Now we can define :math:`\hat a^\dagger \hat a = \hat N`, which is just like an 
 An impoertan relation is 
 
 .. math::
-   \left[\hat a, \hat a^\dagger\right] = 1
+   \left[\hat a, \hat a^\dagger\right] = 1 \\\\
    \left[\hat a, \hat N\right] = \hat a
 
 The eigen equation for this weird energy quanta number operator is
@@ -828,7 +830,7 @@ The eigen equation for this weird energy quanta number operator is
 To find out the eigen state of :math:`\hat a` and :math:`\hat a^\dagger`, we try this,
 
 .. math::
-   \hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})
+   \hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\\\
    \hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})
 
 This means :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are also eigen states of :math:`hat N`.
@@ -836,7 +838,7 @@ This means :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are also ei
 The next step is very crucial. Since :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are eigen states of :math:`hat N`, we know that
 
 .. math::
-   \hat a \ket{n} = C1 \ket{n}
+   \hat a \ket{n} = C1 \ket{n} \\\\
    \hat a^\dagger \ket{n} = C2 \ket{n}
 
 
@@ -845,7 +847,7 @@ Then our next step is to find out what are :math:`C1` and :math:`C2` exactly.
 They way of finding them is to use invariant quantities, such as the inner product. Here we use average of :math:`\hat N` operator.
 
 .. math::
-   \hat a \ket{n} = \sqrt n \ket{n-1}
+   \hat a \ket{n} = \sqrt n \ket{n-1}  \\\\ 
    \hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}
 
 Final step is to constrain on :math:`n`, which should be integrals. This is true because we need a cut off for the eigen equation of :math:`\hat N`, whose avarage is n and it should be non negative.
@@ -861,7 +863,7 @@ leads to :math:`n\ge 0`. To get this proper cut off, :math:`n` should be integer
 n can go to negative numbers. If n is positive integer, 
 
 .. math::
-   \hat a \ket{1} = \ket{0}
+   \hat a \ket{1} = \ket{0}  \\\\
    \hat a \ket{0} = 0 \ket{0}
 
 show an cut off at 0.
@@ -904,6 +906,46 @@ Key points:
 1. What is the trajectory of :math:`\left<\hat x/\eta\right>` and :math:`\left<\hat p/(\hbar/\eta)\right>`
 2. Can we make the trajectory just like the classical case by choosing some special conditions?
 3. What do these special cases mean?
+
+
+
+* Expectation value of creation and annihilation operators
+
+Apply Ehrenfest theorem to annihilation operator,
+
+.. math::
+   i\hbar \frac{\mathrm d}{\mathrm d t} \avg{\hat a(t)} = \bra{\psi} \left[ \hat a(t), \hat H \right] \ket{\psi} = \hbar \omega \avg{\hat a(t)}
+
+Excellent. Now we can solve out :math:`\avg{\hat a(t)}`, which is
+
+.. math::
+   \avg{\hat a(t)} = \alpha_0 \exp(-i\omega t)
+
+Take the hermitian conjugate,
+
+.. math::
+   \avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)
+
+With these two operators, we can find out the average of :math:`\hat x` and :math:`\hat p` because
+
+.. math::
+   \hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\\\
+   \hat p = \frac{\hbar}{\eta} i \frac{1}{\sqrt 2} \left(\hat a^\dagger - \hat a \right) ,
+
+we have
+
+.. math::
+   \avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\\\
+   \avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt} \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)
+
+
+We can have a look at these two averages,
+
+.. math::
+   \frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\\\
+   \frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]
+
+It is obvious that the average reduces to classical case if :math:`\alpha_0 = \alpha_0^*`. 
 
 
 (To Be Finished...)
