@@ -6,8 +6,15 @@
 Welcome to Physics Research Survival Manual!
 =============================================================
 
-Contents:
 
+This is a notebook about physics. It's not done yet. (Maybe I'll never finish it because there are too many topics in physics.)
+
+Use the source. Keep the source open.
+
+
+
+Contents
+=========
 
 
 .. toctree::
