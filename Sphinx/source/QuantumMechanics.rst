@@ -800,6 +800,20 @@ Find out the characteristic length and energy
    \epsilon = \hbar \omega \\\\
    \omega = \sqrt{\frac{k}{m}}
 
+One way to get the intrinsic length without writing down the dimensions of each quantity is to use the following relation
+
+.. math::
+   \left[ E] = \left[ m \omega^2 \hat x^2 \right] \\\\
+   \hbar \omega = m \omega^2 \eta^2 \\\
+   \eta = \sqrt{ \frac{\hbar}{m\omega} }
+
+Or if we are given the Hamiltonian in terms of :math:`k`,
+
+.. math::
+   \left[ \frac{\hat p^2}{2m} \right] = \left[ k \hat x^2 \right] \\\\
+   \frac{\hbar^2 / \eta^2 }{m} = k\eta^2 \\\\
+   \eta = \sqrt{\hbar}{ \sqrt{m k} } = \sqrt{ \hbar }{ m \omega }
+
 
 Rewrite the Hamiltonian
 
@@ -925,6 +939,11 @@ Take the hermitian conjugate,
 .. math::
    \avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)
 
+
+
+* Expectation value of position and momentum
+
+
 With these two operators, we can find out the average of :math:`\hat x` and :math:`\hat p` because
 
 .. math::
@@ -935,7 +954,7 @@ we have
 
 .. math::
    \avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\\\
-   \avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt} \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)
+   \avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt {2} } \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)
 
 
 We can have a look at these two averages,
@@ -944,7 +963,56 @@ We can have a look at these two averages,
    \frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\\\
    \frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]
 
-It is obvious that the average reduces to classical case if :math:`\alpha_0 = \alpha_0^*`. 
+It is obvious that the average reduces to classical case if :math:`\alpha_0 = \alpha_0^*`. **But this is too strong for a semiclassical limit.**
+
+
+* Coherent state
+
+**Coherent state is the eigenstate of creation operator. Its wave package has the smallest spread allowed by quantum mechanics.**
+
+**The most special part about coherent state is that the system stays on coherent state if it start with coherent state.**
+
+.. math::
+   \hat a \ket{\alpha(t)} = \alpha(t) \ket{\alpha(t)}
+
+Take the hermitian conjugate,
+
+.. math::
+   \bra{\alpha(t)} \hat a^\dagger  = \bra{\alpha(t)}\alpha(t)^*
+
+
+At :math:`t=0`, we have
+
+.. math::
+   \bra{\psi(0)} N \ket{\psi(0)} = \vert \alpha_0 \vert ^2
+
+That is to say, energy should be
+
+.. math::
+   \bra{\psi(0)} \hat H \ket{\psi(0)} = \hbar \omega \left( \vert \alpha_0 \vert^2 + \frac{1}{2} \right)
+
+Initially, we also have
+
+.. math::
+   \bra{\psi(0)} (\hat a - \alpha_0)^\dagger (\hat a-\alpha_0) \ket{\psi(0)} = 0
+
+This means
+
+.. math::
+   \hat a \ket{\psi(0)} = \alpha_0 \ket{\psi(0)}
+
+
+
+* Coherent state expanded using energy eigenstates
+
+
+
+
+
+(This result)
+
+
+
 
 
 (To Be Finished...)

@@ -799,6 +799,16 @@ Hamiltonian always commutes with itself.</p>
 \[\begin{split}\eta = \sqrt{\frac{\hbar }{m\omega }} \\\\
 \epsilon = \hbar \omega \\\\
 \omega = \sqrt{\frac{k}{m}}\end{split}\]</div>
+<p>One way to get the intrinsic length without writing down the dimensions of each quantity is to use the following relation</p>
+<div class="math">
+\[\begin{split}\left[ E] = \left[ m \omega^2 \hat x^2 \right] \\\\
+\hbar \omega = m \omega^2 \eta^2 \\\
+\eta = \sqrt{ \frac{\hbar}{m\omega} }\end{split}\]</div>
+<p>Or if we are given the Hamiltonian in terms of <span class="math">\(k\)</span>,</p>
+<div class="math">
+\[\begin{split}\left[ \frac{\hat p^2}{2m} \right] = \left[ k \hat x^2 \right] \\\\
+\frac{\hbar^2 / \eta^2 }{m} = k\eta^2 \\\\
+\eta = \sqrt{\hbar}{ \sqrt{m k} } = \sqrt{ \hbar }{ m \omega }\end{split}\]</div>
 <p>Rewrite the Hamiltonian</p>
 <div class="math">
 \[\begin{split}\begin{eqnarray}
@@ -879,6 +889,9 @@ Hamiltonian always commutes with itself.</p>
 <p>Take the hermitian conjugate,</p>
 <div class="math">
 \[\avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)\]</div>
+<ul class="simple">
+<li>Expectation value of position and momentum</li>
+</ul>
 <p>With these two operators, we can find out the average of <span class="math">\(\hat x\)</span> and <span class="math">\(\hat p\)</span> because</p>
 <div class="math">
 \[\begin{split}\hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\\\
@@ -886,12 +899,38 @@ Hamiltonian always commutes with itself.</p>
 <p>we have</p>
 <div class="math">
 \[\begin{split}\avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\\\
-\avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt} \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)\end{split}\]</div>
+\avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt {2} } \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)\end{split}\]</div>
 <p>We can have a look at these two averages,</p>
 <div class="math">
 \[\begin{split}\frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\\\
 \frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]\end{split}\]</div>
-<p>It is obvious that the average reduces to classical case if <span class="math">\(\alpha_0 = \alpha_0^*\)</span>.</p>
+<p>It is obvious that the average reduces to classical case if <span class="math">\(\alpha_0 = \alpha_0^*\)</span>. <strong>But this is too strong for a semiclassical limit.</strong></p>
+<ul class="simple">
+<li>Coherent state</li>
+</ul>
+<p><strong>Coherent state is the eigenstate of creation operator. Its wave package has the smallest spread allowed by quantum mechanics.</strong></p>
+<p><strong>The most special part about coherent state is that the system stays on coherent state if it start with coherent state.</strong></p>
+<div class="math">
+\[\hat a \ket{\alpha(t)} = \alpha(t) \ket{\alpha(t)}\]</div>
+<p>Take the hermitian conjugate,</p>
+<div class="math">
+\[\bra{\alpha(t)} \hat a^\dagger  = \bra{\alpha(t)}\alpha(t)^*\]</div>
+<p>At <span class="math">\(t=0\)</span>, we have</p>
+<div class="math">
+\[\bra{\psi(0)} N \ket{\psi(0)} = \vert \alpha_0 \vert ^2\]</div>
+<p>That is to say, energy should be</p>
+<div class="math">
+\[\bra{\psi(0)} \hat H \ket{\psi(0)} = \hbar \omega \left( \vert \alpha_0 \vert^2 + \frac{1}{2} \right)\]</div>
+<p>Initially, we also have</p>
+<div class="math">
+\[\bra{\psi(0)} (\hat a - \alpha_0)^\dagger (\hat a-\alpha_0) \ket{\psi(0)} = 0\]</div>
+<p>This means</p>
+<div class="math">
+\[\hat a \ket{\psi(0)} = \alpha_0 \ket{\psi(0)}\]</div>
+<ul class="simple">
+<li>Coherent state expanded using energy eigenstates</li>
+</ul>
+<p>(This result)</p>
 <p>(To Be Finished...)</p>
 </div>
 </div>
