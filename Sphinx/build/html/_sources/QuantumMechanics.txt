@@ -18,7 +18,7 @@ Quantum Mechanics Framework
    \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
    \newcommand\d{\mathrm{d}}
    \newcommand\I{\mathbb{I}}
-   \newcommand{\avg}[1]{\left< #1 \right>} % for average
+   \newcommand{\avg}[1]{\left< #1 \right>}
 
 
 
@@ -67,12 +67,11 @@ First Three Postulates
   Let's find out. The only thing we know about the evolution of a state vector is the third postulate up there.
 	
   .. math::
-  
      \begin{eqnarray}
      i\hbar \frac{\d }{\d t}\ket{\psi(t)} &=& \hat H \ket{\psi(t)} \\\\
      i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &=& \hat H \hat U \ket{\psi(t_0)} \\\\
-	 i\hbar \frac{\d }{\d t}\hat U &=& \hat H \hat U
-	 \end{eqnarray}
+     i\hbar \frac{\d }{\d t}\hat U &=& \hat H \hat U
+     \end{eqnarray}
  
   
   Looks familiar? This just gives us a exponential result, **if the Hamiltonian is time independent**.

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2.1   Mathematics</title>
+    <title>3. Mathematics</title>
     
     <link rel="stylesheet" href="_static/epub.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
@@ -20,10 +20,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="ClassicalMechanics.html" title="3.1   Classical Mechanics"
+          <a href="ClassicalMechanics.html" title="4. Classical Mechanics"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Basic.html" title="1.1   Basic"
+          <a href="Basic.html" title="2. Basic"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Physics Research Survival Manual 1.0.5 documentation</a> &raquo;</li> 
       </ul>
@@ -34,13 +34,13 @@
           <div class="body">
             
   <div class="section" id="mathematics">
-<h1>2.1&nbsp;&nbsp;&nbsp;Mathematics</h1>
+<h1>3. Mathematics</h1>
 <div class="section" id="differential-geometry">
-<h2>2.1.1&nbsp;&nbsp;&nbsp;Differential Geometry</h2>
+<h2>3.1. Differential Geometry</h2>
 <div class="section" id="metric">
-<h3>2.1.1.1&nbsp;&nbsp;&nbsp;Metric</h3>
+<h3>3.1.1. Metric</h3>
 <div class="section" id="definitions">
-<h4>2.1.1.1.1&nbsp;&nbsp;&nbsp;Definitions</h4>
+<h4>3.1.1.1. Definitions</h4>
 <p>Denote the basis in use as <span class="math">\(\hat e_\mu\)</span>, then the metric can be written as</p>
 <div class="math">
 \[g_{\mu\nu}=\hat e_\mu \hat \cdot e_\nu\]</div>
@@ -50,7 +50,7 @@
 \[g_{\mu\lambda}g^{\lambda\nu}=\delta_\mu^\nu = g_\mu^\nu\]</div>
 </div>
 <div class="section" id="how-to-calculate-the-metric">
-<h4>2.1.1.1.2&nbsp;&nbsp;&nbsp;How to calculate the metric</h4>
+<h4>3.1.1.2. How to calculate the metric</h4>
 <p>Let&#8217;s check the definition of metric again.</p>
 <p>If we choose a basis <span class="math">\(\hat e_\mu\)</span>, then a vector (at one certain point) in this coordinate system is</p>
 <div class="math">
@@ -93,7 +93,7 @@
 </div>
 </div>
 <div class="section" id="connection">
-<h3>2.1.1.2&nbsp;&nbsp;&nbsp;Connection</h3>
+<h3>3.1.2. Connection</h3>
 <p>First class connection can be calculated</p>
 <div class="math">
 \[\Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}\]</div>
@@ -102,14 +102,14 @@
 \[[\mu\nu,\iota]=g_{\iota\mu}\Gamma^\mu_{\phantom{\mu}\nu\lambda}\]</div>
 </div>
 <div class="section" id="gradient-curl-divergence-etc">
-<h3>2.1.1.3&nbsp;&nbsp;&nbsp;Gradient, Curl, Divergence, etc</h3>
+<h3>3.1.3. Gradient, Curl, Divergence, etc</h3>
 <div class="section" id="gradient">
-<h4>2.1.1.3.1&nbsp;&nbsp;&nbsp;Gradient</h4>
+<h4>3.1.3.1. Gradient</h4>
 <div class="math">
 \[T^b_{\phantom bc;a}= \nabla_aT^b_{\phantom bc}=T^b_{\phantom bc,a}+\Gamma^b_{ad}T^d_{\phantom dc}-\Gamma^d_{ac}T^b_{\phantom bd}\]</div>
 </div>
 <div class="section" id="curl">
-<h4>2.1.1.3.2&nbsp;&nbsp;&nbsp;Curl</h4>
+<h4>3.1.3.2. Curl</h4>
 <p>For an anti-symmetric tensor, <span class="math">\(a_{\mu\nu}=-a_{\nu\mu}\)</span></p>
 <div class="math">
 \[\begin{split}\begin{eqnarray}
@@ -118,7 +118,7 @@
 \end{eqnarray}\end{split}\]</div>
 </div>
 <div class="section" id="divergence">
-<h4>2.1.1.3.3&nbsp;&nbsp;&nbsp;Divergence</h4>
+<h4>3.1.3.3. Divergence</h4>
 <div class="math">
 \[\begin{split}\begin{eqnarray}
  \mathrm{div}_\nu(a^{\mu\nu})&amp;\equiv&amp; a^{\mu\nu}_{\phantom{\mu\nu};\nu}=\frac{\partial a^{\mu\nu}}{\partial x^\nu}+\Gamma^\mu_{\nu\tau}a^{\tau\nu}+\Gamma^\nu_{\nu\tau}a^{\mu\tau} \\
@@ -143,11 +143,11 @@
 </div>
 </div>
 <div class="section" id="linear-algebra">
-<h2>2.1.2&nbsp;&nbsp;&nbsp;Linear Algebra</h2>
+<h2>3.2. Linear Algebra</h2>
 <div class="section" id="basic-concepts">
-<h3>2.1.2.1&nbsp;&nbsp;&nbsp;Basic Concepts</h3>
+<h3>3.2.1. Basic Concepts</h3>
 <div class="section" id="trace">
-<h4>2.1.2.1.1&nbsp;&nbsp;&nbsp;Trace</h4>
+<h4>3.2.1.1. Trace</h4>
 <p>Trace should be calculated using the metric. An example is the trace of Ricci tensor,</p>
 <div class="math">
 \[R=g^{ab}R_{ab}\]</div>
@@ -164,9 +164,9 @@ g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R&amp;=&amp;8\pi G g^{ab}T_{ab} \\
 </div>
 </div>
 <div class="section" id="technique">
-<h3>2.1.2.2&nbsp;&nbsp;&nbsp;Technique</h3>
+<h3>3.2.2. Technique</h3>
 <div class="section" id="inverse-of-a-matrix">
-<h4>2.1.2.2.1&nbsp;&nbsp;&nbsp;Inverse of a matrix</h4>
+<h4>3.2.2.1. Inverse of a matrix</h4>
 <p>Many methods to get the inverse of a matrix. Check wikipedia for Invertible matrix.</p>
 <p>Adjugate matrix method for example is here.</p>
 <div class="math">
@@ -176,14 +176,14 @@ g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R&amp;=&amp;8\pi G g^{ab}T_{ab} \\
 </div>
 </div>
 <div class="section" id="differential-equations">
-<h2>2.1.3&nbsp;&nbsp;&nbsp;Differential Equations</h2>
+<h2>3.3. Differential Equations</h2>
 <div class="section" id="standard-procedure">
-<h3>2.1.3.1&nbsp;&nbsp;&nbsp;Standard Procedure</h3>
+<h3>3.3.1. Standard Procedure</h3>
 </div>
 <div class="section" id="tricky">
-<h3>2.1.3.2&nbsp;&nbsp;&nbsp;Tricky</h3>
+<h3>3.3.2. Tricky</h3>
 <div class="section" id="wkb-approximation">
-<h4>2.1.3.2.1&nbsp;&nbsp;&nbsp;WKB Approximation</h4>
+<h4>3.3.2.1. WKB Approximation</h4>
 <p>When the highest derivative is multiplied by a small parameter, try this.</p>
 </div>
 </div>

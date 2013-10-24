@@ -19,7 +19,6 @@ How to find the relationship between two quantities? For example, what is the di
 Then it is easy to find that a combination of :math:`c/\hbar` cancels the dimension of mass and leaves the inverse of length. That is
 
 .. math::
-
    [ L ]^2 =\left[ \frac{\hbar G}{c^3} \right]
 
 
@@ -79,22 +78,29 @@ Maxwell Equations
 ^^^^^^^^^^^^^^^^^^
 
 .. math::
-
-   \nabla\times\vec E&=&-\partial_t \vec B \\
-   \nabla\times\vec H&=&\vec J+\partial_t \vec D \\
-   \nabla\cdot \vec D&=&\rho \\
-   \nabla\cdot \vec B&=&0
+   \nabla\times\vec E=-\partial_t \vec B 
+   
+.. math::
+   \nabla\times\vec H=\vec J+\partial_t \vec D 
+   
+.. math::
+   \nabla\cdot \vec D=\rho 
+   
+.. math::
+   \nabla\cdot \vec B=0
 
 
 For linear meterials, 
 
 .. math::
-   
-   \begin{eqnarray}
-      \vec D&=&\epsilon \vec E \\
-      \vec B&=&\mu \vec H \\
-      \vec J&=& \sigma \vec E
-   \end{eqnarray}
+   \vec D=\epsilon \vec E 
+
+.. math::
+   \vec B=\mu \vec H
+
+.. math::
+   \vec J= \sigma \vec E
+
 
 
 Dynamics
@@ -103,10 +109,10 @@ Dynamics
 Hamilton conanical equations
 
 .. math::
-   \begin{eqnarray}
-   \dot q_i &=& \frac{\partial H}{\partial p_i}  \\
-   \dot p_i &=& - \frac{\partial H}{\partial q_i}
-   \end{eqnarray}
+   \dot q_i = \frac{\partial H}{\partial p_i}  
+   
+.. math::
+   \dot p_i = - \frac{\partial H}{\partial q_i}
 
 
 Thermodynamics and Statistical Physics
@@ -115,10 +121,8 @@ Thermodynamics and Statistical Physics
 Liouville's Law
 
 .. math::
-   \begin{eqnarray}
    \frac{\mathrm d \rho}{\mathrm d t}\equiv \frac{\partial \rho}{\partial t} + \sum_i \left[ \frac{\partial \rho}{\partial q_i}\dot q_i + \frac{\partial \rho}{\partial p_i}\dot p_i \right] = 0
-   \end{eqnarray}
-
+   
 
 
 

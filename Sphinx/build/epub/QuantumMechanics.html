@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>4.1   Quantum Mechanics</title>
+    <title>5. Quantum Mechanics</title>
     
     <link rel="stylesheet" href="_static/epub.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
@@ -20,10 +20,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="SpecialRelativity.html" title="5.1   Special Relativity"
+          <a href="SpecialRelativity.html" title="6. Special Relativity"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="ClassicalMechanics.html" title="3.1   Classical Mechanics"
+          <a href="ClassicalMechanics.html" title="4. Classical Mechanics"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Physics Research Survival Manual 1.0.5 documentation</a> &raquo;</li> 
       </ul>
@@ -34,26 +34,27 @@
           <div class="body">
             
   <div class="section" id="quantum-mechanics">
-<h1>4.1&nbsp;&nbsp;&nbsp;Quantum Mechanics</h1>
+<h1>5. Quantum Mechanics</h1>
 <div class="section" id="quantum-mechanics-framework">
-<h2>4.1.1&nbsp;&nbsp;&nbsp;Quantum Mechanics Framework</h2>
+<h2>5.1. Quantum Mechanics Framework</h2>
 <div class="math">
-\[\newcommand{\ud}[1]{{#1^{\dagger}}}
+\[\begin{split}\newcommand{\ud}[1]{{#1^{\dagger}}}
 \newcommand{\bra}[1]{\left\langle #1\right|}
 \newcommand{\ket}[1]{\left| #1\right\rangle}
 \newcommand\Tr{\mathrm{Tr}}
 \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
 \newcommand\d{\mathrm{d}}
-\newcommand\I{\mathbb{I}}\]</div>
+\newcommand\I{\mathbb{I}}
+\newcommand{\avg}[1]{\left&lt; #1 \right&gt;}\end{split}\]</div>
 <div class="section" id="what-re-the-most-important-tricks-in-qm-calculations">
-<h3>4.1.1.1&nbsp;&nbsp;&nbsp;What&#8217;re the most important tricks in QM calculations?</h3>
+<h3>5.1.1. What&#8217;re the most important tricks in QM calculations?</h3>
 <ul class="simple">
 <li><strong>Remember what basis we are working in</strong></li>
 <li><strong>Identity</strong></li>
 </ul>
 </div>
 <div class="section" id="first-three-postulates">
-<h3>4.1.1.2&nbsp;&nbsp;&nbsp;First Three Postulates</h3>
+<h3>5.1.2. First Three Postulates</h3>
 <ul>
 <li><p class="first">Physical state is described by kets in a Hilbert space. We need to specify a complete basis {<span class="math">\(\ket{i}\)</span>} to do calculations.</p>
 <div class="math">
@@ -83,8 +84,8 @@ We just define a magical operator, propagator</p>
 \[\begin{split}\begin{eqnarray}
 i\hbar \frac{\d }{\d t}\ket{\psi(t)} &amp;=&amp; \hat H \ket{\psi(t)} \\\\
 i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\psi(t_0)} \\\\
-    i\hbar \frac{\d }{\d t}\hat U &amp;=&amp; \hat H \hat U
-    \end{eqnarray}\end{split}\]</div>
+i\hbar \frac{\d }{\d t}\hat U &amp;=&amp; \hat H \hat U
+\end{eqnarray}\end{split}\]</div>
 <p>Looks familiar? This just gives us a exponential result, <strong>if the Hamiltonian is time independent</strong>.</p>
 <div class="math">
 \[\hat U = e^{- i \hat H (t-t_0)/\hbar}\]</div>
@@ -105,7 +106,7 @@ i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\ps
 </ul>
 </div>
 <div class="section" id="position-and-momentum-space">
-<h3>4.1.1.3&nbsp;&nbsp;&nbsp;Position and Momentum Space</h3>
+<h3>5.1.3. Position and Momentum Space</h3>
 <p>Summarize here.</p>
 <hr class="docutils" />
 <ul>
@@ -144,7 +145,7 @@ i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\ps
 </ul>
 <hr class="docutils" />
 <div class="section" id="position-space">
-<h4>4.1.1.3.1&nbsp;&nbsp;&nbsp;Position Space</h4>
+<h4>5.1.3.1. Position Space</h4>
 <ol class="arabic">
 <li><p class="first">Define <span class="math">\(\ket{x}\)</span> basis.</p>
 <blockquote>
@@ -187,17 +188,17 @@ i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\ps
 \[\begin{split}\begin{eqnarray}
 &amp;&amp;\bra{\psi} \hat x \ket{\psi} \\\\
 &amp;=&amp; \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\\\
-&amp;=&amp; \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\\\
+&amp;=&amp; \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
 &amp;=&amp; \int \left| \psi(t,x) \right|^2 x \d x
 \end{eqnarray}\end{split}\]</div>
 </li>
 </ol>
 </div>
 <div class="section" id="momentum-space">
-<h4>4.1.1.3.2&nbsp;&nbsp;&nbsp;Momentum Space</h4>
+<h4>5.1.3.2. Momentum Space</h4>
 <p>To find the momentum operator, we need to check the relation between momentum and position before we just randomly define one. Truth is, we have a fourth postulate states the relation between them.</p>
 <div class="section" id="postulate-iv">
-<h5>4.1.1.3.2.1&nbsp;&nbsp;&nbsp;Postulate IV</h5>
+<h5>5.1.3.2.1. Postulate IV</h5>
 <p>The commutator of <span class="math">\(\hat x\)</span>, <span class="math">\(\hat p\)</span> is</p>
 <div class="math">
 \[\left[ \hat x, \hat p \right] = i \hbar\]</div>
@@ -211,7 +212,7 @@ i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\ps
 </dl>
 </div>
 <div class="section" id="id1">
-<h5>4.1.1.3.2.2&nbsp;&nbsp;&nbsp;Momentum Space</h5>
+<h5>5.1.3.2.2. Momentum Space</h5>
 <ol class="arabic">
 <li><p class="first">Find momentum operator in position basis {<span class="math">\(\ket{x}\)</span>}.</p>
 <div class="math">
@@ -276,9 +277,9 @@ The hamiltonian for a free particle is</p>
 </div>
 </div>
 <div class="section" id="quantum-in-1d">
-<h2>4.1.2&nbsp;&nbsp;&nbsp;Quantum in 1D</h2>
+<h2>5.2. Quantum in 1D</h2>
 <div class="section" id="general">
-<h3>4.1.2.1&nbsp;&nbsp;&nbsp;General</h3>
+<h3>5.2.1. General</h3>
 <p>Always start with the propagator for time independent Hamiltonian.</p>
 <div class="math">
 \[\ket{\psi(t)} = \hat U \ket{\psi(0)}\]</div>
@@ -294,11 +295,11 @@ The hamiltonian for a free particle is</p>
 <div class="math">
 \[\hat H \ket{\epsilon} = \epsilon \ket{\epsilon}\]</div>
 <div class="section" id="infinite-barriers">
-<h4>4.1.2.1.1&nbsp;&nbsp;&nbsp;Infinite Barriers</h4>
+<h4>5.2.1.1. Infinite Barriers</h4>
 <div class="section" id="math">
-<h5>4.1.2.1.1.1&nbsp;&nbsp;&nbsp;Math</h5>
+<h5>5.2.1.1.1. Math</h5>
 <div class="section" id="setup">
-<h6>4.1.2.1.1.1.1&nbsp;&nbsp;&nbsp;Setup</h6>
+<h6>5.2.1.1.1.1. Setup</h6>
 <ul>
 <li><p class="first">Potential in a box</p>
 <div class="math">
@@ -312,7 +313,7 @@ V(x)=\cases{
 </ul>
 </div>
 <div class="section" id="solve-the-problem">
-<h6>4.1.2.1.1.1.2&nbsp;&nbsp;&nbsp;Solve the Problem</h6>
+<h6>5.2.1.1.1.2. Solve the Problem</h6>
 <ul>
 <li><p class="first">Hamiltonian</p>
 <div class="math">
@@ -379,7 +380,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 </ul>
 </div>
 <div class="section" id="physics">
-<h6>4.1.2.1.1.1.3&nbsp;&nbsp;&nbsp;Physics</h6>
+<h6>5.2.1.1.1.3. Physics</h6>
 <ol class="arabic">
 <li><p class="first">Estimation</p>
 <blockquote>
@@ -422,7 +423,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 </ol>
 </div>
 <div class="section" id="some-general-properties">
-<h6>4.1.2.1.1.1.4&nbsp;&nbsp;&nbsp;Some General Properties</h6>
+<h6>5.2.1.1.1.4. Some General Properties</h6>
 <ol class="arabic simple">
 <li>1D bound states have no degeneracy.
 Prove it by assume that there is a degeneracy state.</li>
@@ -434,23 +435,23 @@ Prove it by assume that there is a degeneracy state.</li>
 </div>
 </div>
 <div class="section" id="parity">
-<h2>4.1.3&nbsp;&nbsp;&nbsp;Parity</h2>
+<h2>5.3. Parity</h2>
 <div class="section" id="passive-and-active-transformations">
-<h3>4.1.3.1&nbsp;&nbsp;&nbsp;Passive and Active Transformations</h3>
+<h3>5.3.1. Passive and Active Transformations</h3>
 <p>Generally, there are two ways of interpreting a transformation.</p>
 <img alt="Transformations" src="_images/transformations.png" />
 <p>Here in QM, passive means transform the operator <span class="math">\(\hat \Omega\)</span>, while active means change the state <span class="math">\(\ket{\psi}\)</span>. Suppose we have a system <span class="math">\(\ket{\psi}\)</span>, an operator <span class="math">\(\hat \Omega\)</span>, a transformation <span class="math">\(\hat U\)</span>.</p>
 <p>Transformation <span class="math">\(\hat U \ket{\psi}\)</span> is identical to <span class="math">\(\hat U^\dagger \hat \Omega \hat U\)</span> because they give the same observation results. The first one is called active, while the second one is called passive.</p>
 </div>
 <div class="section" id="id2">
-<h3>4.1.3.2&nbsp;&nbsp;&nbsp;Parity</h3>
+<h3>5.3.2. Parity</h3>
 <div class="section" id="definition">
-<h4>4.1.3.2.1&nbsp;&nbsp;&nbsp;Definition</h4>
+<h4>5.3.2.1. Definition</h4>
 <div class="math">
 \[\hat \Pi \ket{x}= \ket{-x}\]</div>
 </div>
 <div class="section" id="properties">
-<h4>4.1.3.2.2&nbsp;&nbsp;&nbsp;Properties</h4>
+<h4>5.3.2.2. Properties</h4>
 <ol class="arabic">
 <li><p class="first">Act on momentum eigenvectors,</p>
 <div class="math">
@@ -521,9 +522,9 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="classical-limit-of-qm">
-<h2>4.1.4&nbsp;&nbsp;&nbsp;Classical Limit of QM</h2>
+<h2>5.4. Classical Limit of QM</h2>
 <div class="section" id="ehrenfest-s-theorem">
-<h3>4.1.4.1&nbsp;&nbsp;&nbsp;Ehrenfest&#8217;s Theorem</h3>
+<h3>5.4.1. Ehrenfest&#8217;s Theorem</h3>
 <p>Schrödinger equation and its adjoint</p>
 <div class="math">
 \[i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}\]\[-i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H\]</div>
@@ -536,7 +537,7 @@ a. Apply to position operator,</p>
 \end{eqnarray}\end{split}\]</div>
 <p>This is called Ehrenfest&#8217;s Theorem.</p>
 <div class="section" id="simple-example-of-ehrenfest-s-theorem">
-<h4>4.1.4.1.1&nbsp;&nbsp;&nbsp;Simple Example of Ehrenfest&#8217;s Theorem</h4>
+<h4>5.4.1.1. Simple Example of Ehrenfest&#8217;s Theorem</h4>
 <p>Suppose we have a system with Hamiltonian</p>
 <div class="math">
 \[\hat H = \frac{\hat p^2}{2m} + V(\hat x)\]</div>
@@ -566,7 +567,7 @@ a. Apply to position operator,</p>
 </ol>
 </div>
 <div class="section" id="what-does-mean">
-<h4>4.1.4.1.2&nbsp;&nbsp;&nbsp;What does <span class="math">\(-\left&lt; V'(\hat x)\right&gt;\)</span> mean</h4>
+<h4>5.4.1.2. What does <span class="math">\(-\left&lt; V'(\hat x)\right&gt;\)</span> mean</h4>
 <p>Suppose the potential area is fairly small and distributed around some coordinate <span class="math">\(x_0=\left&lt; \hat x \right&gt;\)</span>, we can do Taylor expansion around <span class="math">\(x_0\)</span>.</p>
 <div class="math">
 \[\begin{split}\begin{eqnarray}
@@ -579,13 +580,13 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="picture">
-<h3>4.1.4.2&nbsp;&nbsp;&nbsp;Picture</h3>
+<h3>5.4.2. Picture</h3>
 <p>We can see deeper into Ehrenfest&#8217;s Theorem through Heisenberg Picture of quantum mechanics.</p>
 <div class="section" id="schrodinger-heisenberg-pictures">
-<h4>4.1.4.2.1&nbsp;&nbsp;&nbsp;Schrödinger &amp; Heisenberg Pictures</h4>
+<h4>5.4.2.1. Schrödinger &amp; Heisenberg Pictures</h4>
 <p>Pictures are the ways we look at the evolution of systems.</p>
 <div class="section" id="schrodinger-picture">
-<h5>4.1.4.2.1.1&nbsp;&nbsp;&nbsp;Schrödinger Picture</h5>
+<h5>5.4.2.1.1. Schrödinger Picture</h5>
 <p>In Schrödinger picture the states are evolving with time.</p>
 <div class="math">
 \[i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S\]</div>
@@ -594,7 +595,7 @@ a. Apply to position operator,</p>
 \[\ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S\]</div>
 </div>
 <div class="section" id="heisenberg-picture">
-<h5>4.1.4.2.1.2&nbsp;&nbsp;&nbsp;Heisenberg Picture</h5>
+<h5>5.4.2.1.2. Heisenberg Picture</h5>
 <p>In Heisenberg Picture, the states do not change with time.</p>
 <div class="math">
 \[\ket{\psi} _ H = \ket{\psi_0} _ H ,\]</div>
@@ -611,7 +612,7 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="ehrenfest-s-theorem-in-heisenberg-picture">
-<h4>4.1.4.2.2&nbsp;&nbsp;&nbsp;Ehrenfest&#8217;s Theorem in Heisenberg Picture</h4>
+<h4>5.4.2.2. Ehrenfest&#8217;s Theorem in Heisenberg Picture</h4>
 <div class="math">
 \[\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\]</div>
 <p>This can be easily proved by throwing every definition need in to it. We also need the following equations.</p>
@@ -629,7 +630,7 @@ a. Apply to position operator,</p>
 <p>which is the time derivative of operator in Heisenberg Picture.</p>
 <p><strong>Reminder: The time derivative of an observable (average) depends not only the time derivative of itself, but also the commutator of the observable and Hamiltonian.</strong></p>
 <div class="section" id="example-of-ehrenfest-s-theorem-in-heisenberg-picture">
-<h5>4.1.4.2.2.1&nbsp;&nbsp;&nbsp;Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture</h5>
+<h5>5.4.2.2.1. Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture</h5>
 <p>We will show why it is better to work in Heisenberg Picture to show the meanings of Ehrenfest&#8217;s Theorem.</p>
 <p>Suppose we have a Hamiltonian in Heisenberg Picture,</p>
 <div class="math">
@@ -645,7 +646,7 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="conservation">
-<h3>4.1.4.3&nbsp;&nbsp;&nbsp;Conservation</h3>
+<h3>5.4.3. Conservation</h3>
 <p>We say a observable is conserved if the corresponding operator commutes with Hamiltonian,</p>
 <div class="math">
 \[\left[ \hat \Omega, \hat H \right]=0\]</div>
@@ -655,7 +656,7 @@ Hamiltonian always commutes with itself.</p>
 \[\begin{split}\frac{\d}{\d t} \left&lt;\epsilon \right&gt; = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}\end{split}\]</div>
 <p>If Hamiltonian is time independent, then energy is conserved. (If Hamiltonian is tide dependent, energy is not conserved. This is kind of obvious in classical mechanics.)</p>
 <div class="section" id="what-is-the-nature-of-time-dependence">
-<h4>4.1.4.3.1&nbsp;&nbsp;&nbsp;What is the nature of time dependence</h4>
+<h4>5.4.3.1. What is the nature of time dependence</h4>
 <p>We can see this by looking at a simple example.</p>
 <p>Assume we have a system with energy eigenstates <span class="math">\(\ket{\epsilon _ n}\)</span>, and initially,</p>
 <div class="math">
@@ -679,6 +680,123 @@ Hamiltonian always commutes with itself.</p>
 <div class="math">
 \[(\epsilon _ m - \epsilon _ n)/\hbar\]</div>
 <p><strong>Bohr frequency</strong>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="harmonic-oscillators">
+<h2>5.5. Harmonic Oscillators</h2>
+<div class="section" id="why-harmonic-oscillators">
+<h3>5.5.1. Why Harmonic Oscillators</h3>
+<p>Many systems can reduce to it. Use Taylor expansion for the potential and redefine parameters we will find harmonic oscillators in the potential.</p>
+<p>Hamiltonian for 1D is</p>
+<div class="math">
+\[\hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2\]</div>
+</div>
+<div class="section" id="standard-solution">
+<h3>5.5.2. Standard Solution</h3>
+<p>We can use polynomial expansion for part of the solution.</p>
+</div>
+<div class="section" id="tricky-solution">
+<h3>5.5.3. Tricky Solution</h3>
+<p>Find out the characteristic length and energy</p>
+<div class="math">
+\[\begin{split}\eta = \sqrt{\frac{\hbar }{m\omega }} \\\\
+\epsilon = \hbar \omega \\\\
+\omega = \sqrt{\frac{k}{m}}\end{split}\]</div>
+<p>Rewrite the Hamiltonian</p>
+<div class="math">
+\[\begin{split}\begin{eqnarray}
+\hat H &amp;=&amp; \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\\\
+&amp;=&amp; \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\\\
+&amp;=&amp; \frac 1 2 \hbar \omega \left( -i\frac{\hat p}{\hbar/\eta}  + \frac{\hat x}{\eta} \right) \left( i\frac{\hat p}{\hbar/\eta} + \frac{\hat x}{\eta} \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
+&amp;=&amp; \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\\\
+&amp;=&amp; \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)
+\end{eqnarray}\end{split}\]</div>
+<p>Now we can define <span class="math">\(\hat a^\dagger \hat a = \hat N\)</span>, which is just like an operator for (energy) quanta numbers.</p>
+<p>An impoertan relation is</p>
+<div class="math">
+\[\begin{split}\left[\hat a, \hat a^\dagger\right] = 1 \\\\
+\left[\hat a, \hat N\right] = \hat a\end{split}\]</div>
+<p>The eigen equation for this weird energy quanta number operator is</p>
+<div class="math">
+\[\hat N \ket{n} = n \ket{n}\]</div>
+<p>To find out the eigen state of <span class="math">\(\hat a\)</span> and <span class="math">\(\hat a^\dagger\)</span>, we try this,</p>
+<div class="math">
+\[\begin{split}\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\\\
+\hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})\end{split}\]</div>
+<p>This means <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are also eigen states of <span class="math">\(hat N\)</span>.</p>
+<p>The next step is very crucial. Since <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are eigen states of <span class="math">\(hat N\)</span>, we know that</p>
+<div class="math">
+\[\begin{split}\hat a \ket{n} = C1 \ket{n} \\\\
+\hat a^\dagger \ket{n} = C2 \ket{n}\end{split}\]</div>
+<p>Then our next step is to find out what are <span class="math">\(C1\)</span> and <span class="math">\(C2\)</span> exactly.</p>
+<p>They way of finding them is to use invariant quantities, such as the inner product. Here we use average of <span class="math">\(\hat N\)</span> operator.</p>
+<div class="math">
+\[\begin{split}\hat a \ket{n} = \sqrt n \ket{n-1}  \\\\
+\hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}\end{split}\]</div>
+<p>Final step is to constrain on <span class="math">\(n\)</span>, which should be integrals. This is true because we need a cut off for the eigen equation of <span class="math">\(\hat N\)</span>, whose avarage is n and it should be non negative.</p>
+<div class="math">
+\[\bra{n}\hat N \ket{n} \ge 0\]</div>
+<p>leads to <span class="math">\(n\ge 0\)</span>. To get this proper cut off, <span class="math">\(n\)</span> should be integer because if it&#8217;s not, according to</p>
+<div class="math">
+\[\hat a \ket{n} = \sqrt n \ket{n-1}\]</div>
+<p>n can go to negative numbers. If n is positive integer,</p>
+<div class="math">
+\[\begin{split}\hat a \ket{1} = \ket{0}  \\\\
+\hat a \ket{0} = 0 \ket{0}\end{split}\]</div>
+<p>show an cut off at 0.</p>
+<p>We can even find out the wave functions of these <span class="math">\(\ket{n}\)</span> by finding the ground state first and apply <span class="math">\(\hat a^\dagger\)</span> to the ground state.</p>
+<p>Ground state in <span class="math">\({\ket{x}}\)</span> basis can be found by solving the differential equation,</p>
+<div class="math">
+\[\bra{x} \hat a \ket{0} = 0\]</div>
+<blockquote>
+<div><p>Very important:</p>
+<ul class="simple">
+<li>The Hermitian conjugate of <span class="math">\(\hat a \ket{n}\)</span> is <span class="math">\(\bra{n} \hat a^\dagger\)</span>.</li>
+<li>Hermitian conjugate of <span class="math">\(\hat a \hat a^\dagger\)</span> is <span class="math">\(\hat a \hat a^dagger\)</span>. This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="semiclassical">
+<h3>5.5.4. Semiclassical</h3>
+<div class="section" id="classical">
+<h4>5.5.4.1. Classical</h4>
+<p>In phase space, the trajectory of phase space points ( {<span class="math">\(x/\eta\)</span> and <span class="math">\(p/(\hbar/\eta)\)</span>} ) is on a circle of radius <span class="math">\(x_{max}/\eta\)</span>.</p>
+</div>
+<div class="section" id="quantum-semiclassical">
+<h4>5.5.4.2. Quantum semiclassical</h4>
+<p>Key points:</p>
+<ol class="arabic simple">
+<li>What is the trajectory of <span class="math">\(\left&lt;\hat x/\eta\right&gt;\)</span> and <span class="math">\(\left&lt;\hat p/(\hbar/\eta)\right&gt;\)</span></li>
+<li>Can we make the trajectory just like the classical case by choosing some special conditions?</li>
+<li>What do these special cases mean?</li>
+</ol>
+<ul class="simple">
+<li>Expectation value of creation and annihilation operators</li>
+</ul>
+<p>Apply Ehrenfest theorem to annihilation operator,</p>
+<div class="math">
+\[i\hbar \frac{\mathrm d}{\mathrm d t} \avg{\hat a(t)} = \bra{\psi} \left[ \hat a(t), \hat H \right] \ket{\psi} = \hbar \omega \avg{\hat a(t)}\]</div>
+<p>Excellent. Now we can solve out <span class="math">\(\avg{\hat a(t)}\)</span>, which is</p>
+<div class="math">
+\[\avg{\hat a(t)} = \alpha_0 \exp(-i\omega t)\]</div>
+<p>Take the hermitian conjugate,</p>
+<div class="math">
+\[\avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)\]</div>
+<p>With these two operators, we can find out the average of <span class="math">\(\hat x\)</span> and <span class="math">\(\hat p\)</span> because</p>
+<div class="math">
+\[\begin{split}\hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\\\
+\hat p = \frac{\hbar}{\eta} i \frac{1}{\sqrt 2} \left(\hat a^\dagger - \hat a \right) ,\end{split}\]</div>
+<p>we have</p>
+<div class="math">
+\[\begin{split}\avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\\\
+\avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt} \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)\end{split}\]</div>
+<p>We can have a look at these two averages,</p>
+<div class="math">
+\[\begin{split}\frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\\\
+\frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]\end{split}\]</div>
+<p>It is obvious that the average reduces to classical case if <span class="math">\(\alpha_0 = \alpha_0^*\)</span>.</p>
+<p>(To Be Finished...)</p>
 </div>
 </div>
 </div>

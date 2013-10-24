@@ -24,449 +24,509 @@
     </navPoint>
     <navPoint id="navPoint3" playOrder="3">
       <navLabel>
-        <text>1.1   Basic</text>
+        <text>Basic</text>
       </navLabel>
       <content src="Basic.html" />
       <navPoint id="navPoint4" playOrder="3">
         <navLabel>
-          <text>1.1   Basic</text>
+          <text>Basic</text>
         </navLabel>
         <content src="Basic.html" />
       </navPoint>
       <navPoint id="navPoint5" playOrder="4">
         <navLabel>
-          <text>1.1.1   Dimension</text>
+          <text>Dimension</text>
         </navLabel>
         <content src="Basic.html#dimension" />
         <navPoint id="navPoint6" playOrder="4">
           <navLabel>
-            <text>1.1.1   Dimension</text>
+            <text>Dimension</text>
           </navLabel>
           <content src="Basic.html#dimension" />
         </navPoint>
         <navPoint id="navPoint7" playOrder="5">
           <navLabel>
-            <text>1.1.1.1   Most Wonderful Equations That Should Never Be Forgotten</text>
+            <text>Planck Scales</text>
           </navLabel>
-          <content src="Basic.html#most-wonderful-equations-that-should-never-be-forgotten" />
+          <content src="Basic.html#planck-scales" />
+        </navPoint>
+        <navPoint id="navPoint8" playOrder="6">
+          <navLabel>
+            <text>Equations and Dimensions</text>
+          </navLabel>
+          <content src="Basic.html#equations-and-dimensions" />
+        </navPoint>
+        <navPoint id="navPoint9" playOrder="7">
+          <navLabel>
+            <text>Electrodynamics</text>
+          </navLabel>
+          <content src="Basic.html#electrodynamics" />
+        </navPoint>
+        <navPoint id="navPoint10" playOrder="8">
+          <navLabel>
+            <text>Dynamics</text>
+          </navLabel>
+          <content src="Basic.html#dynamics" />
+        </navPoint>
+        <navPoint id="navPoint11" playOrder="9">
+          <navLabel>
+            <text>Thermodynamics and Statistical Physics</text>
+          </navLabel>
+          <content src="Basic.html#thermodynamics-and-statistical-physics" />
         </navPoint>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint8" playOrder="6">
+    <navPoint id="navPoint12" playOrder="10">
       <navLabel>
-        <text>2.1   Mathematics</text>
+        <text>Mathematics</text>
       </navLabel>
       <content src="math.html" />
-      <navPoint id="navPoint9" playOrder="6">
+      <navPoint id="navPoint13" playOrder="10">
         <navLabel>
-          <text>2.1   Mathematics</text>
+          <text>Mathematics</text>
         </navLabel>
         <content src="math.html" />
       </navPoint>
-      <navPoint id="navPoint10" playOrder="7">
+      <navPoint id="navPoint14" playOrder="11">
         <navLabel>
-          <text>2.1.1   Differential Geometry</text>
+          <text>Differential Geometry</text>
         </navLabel>
         <content src="math.html#differential-geometry" />
-        <navPoint id="navPoint11" playOrder="7">
+        <navPoint id="navPoint15" playOrder="11">
           <navLabel>
-            <text>2.1.1   Differential Geometry</text>
+            <text>Differential Geometry</text>
           </navLabel>
           <content src="math.html#differential-geometry" />
         </navPoint>
-        <navPoint id="navPoint12" playOrder="8">
+        <navPoint id="navPoint16" playOrder="12">
           <navLabel>
-            <text>2.1.1.1   Metric</text>
+            <text>Metric</text>
           </navLabel>
           <content src="math.html#metric" />
         </navPoint>
-        <navPoint id="navPoint13" playOrder="9">
+        <navPoint id="navPoint17" playOrder="13">
           <navLabel>
-            <text>2.1.1.2   Connection</text>
+            <text>Connection</text>
           </navLabel>
           <content src="math.html#connection" />
         </navPoint>
-        <navPoint id="navPoint14" playOrder="10">
+        <navPoint id="navPoint18" playOrder="14">
           <navLabel>
-            <text>2.1.1.3   Gradient, Curl, Divergence, etc</text>
+            <text>Gradient, Curl, Divergence, etc</text>
           </navLabel>
           <content src="math.html#gradient-curl-divergence-etc" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint15" playOrder="11">
+      <navPoint id="navPoint19" playOrder="15">
         <navLabel>
-          <text>2.1.2   Linear Algebra</text>
+          <text>Linear Algebra</text>
         </navLabel>
         <content src="math.html#linear-algebra" />
-        <navPoint id="navPoint16" playOrder="11">
+        <navPoint id="navPoint20" playOrder="15">
           <navLabel>
-            <text>2.1.2   Linear Algebra</text>
+            <text>Linear Algebra</text>
           </navLabel>
           <content src="math.html#linear-algebra" />
         </navPoint>
-        <navPoint id="navPoint17" playOrder="12">
+        <navPoint id="navPoint21" playOrder="16">
           <navLabel>
-            <text>2.1.2.1   Basic Concepts</text>
+            <text>Basic Concepts</text>
           </navLabel>
           <content src="math.html#basic-concepts" />
         </navPoint>
-        <navPoint id="navPoint18" playOrder="13">
+        <navPoint id="navPoint22" playOrder="17">
           <navLabel>
-            <text>2.1.2.2   Technique</text>
+            <text>Technique</text>
           </navLabel>
           <content src="math.html#technique" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint19" playOrder="14">
+      <navPoint id="navPoint23" playOrder="18">
         <navLabel>
-          <text>2.1.3   Differential Equations</text>
+          <text>Differential Equations</text>
         </navLabel>
         <content src="math.html#differential-equations" />
-        <navPoint id="navPoint20" playOrder="14">
+        <navPoint id="navPoint24" playOrder="18">
           <navLabel>
-            <text>2.1.3   Differential Equations</text>
+            <text>Differential Equations</text>
           </navLabel>
           <content src="math.html#differential-equations" />
         </navPoint>
-        <navPoint id="navPoint21" playOrder="15">
+        <navPoint id="navPoint25" playOrder="19">
           <navLabel>
-            <text>2.1.3.1   Standard Procedure</text>
+            <text>Standard Procedure</text>
           </navLabel>
           <content src="math.html#standard-procedure" />
         </navPoint>
-        <navPoint id="navPoint22" playOrder="16">
+        <navPoint id="navPoint26" playOrder="20">
           <navLabel>
-            <text>2.1.3.2   Tricky</text>
+            <text>Tricky</text>
           </navLabel>
           <content src="math.html#tricky" />
         </navPoint>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint23" playOrder="17">
+    <navPoint id="navPoint27" playOrder="21">
       <navLabel>
-        <text>3.1   Classical Mechanics</text>
+        <text>Classical Mechanics</text>
       </navLabel>
       <content src="ClassicalMechanics.html" />
     </navPoint>
-    <navPoint id="navPoint24" playOrder="18">
+    <navPoint id="navPoint28" playOrder="22">
       <navLabel>
-        <text>4.1   Quantum Mechanics</text>
+        <text>Quantum Mechanics</text>
       </navLabel>
       <content src="QuantumMechanics.html" />
-      <navPoint id="navPoint25" playOrder="18">
+      <navPoint id="navPoint29" playOrder="22">
         <navLabel>
-          <text>4.1   Quantum Mechanics</text>
+          <text>Quantum Mechanics</text>
         </navLabel>
         <content src="QuantumMechanics.html" />
       </navPoint>
-      <navPoint id="navPoint26" playOrder="19">
+      <navPoint id="navPoint30" playOrder="23">
         <navLabel>
-          <text>4.1.1   Quantum Mechanics Framework</text>
+          <text>Quantum Mechanics Framework</text>
         </navLabel>
         <content src="QuantumMechanics.html#quantum-mechanics-framework" />
-        <navPoint id="navPoint27" playOrder="19">
+        <navPoint id="navPoint31" playOrder="23">
           <navLabel>
-            <text>4.1.1   Quantum Mechanics Framework</text>
+            <text>Quantum Mechanics Framework</text>
           </navLabel>
           <content src="QuantumMechanics.html#quantum-mechanics-framework" />
         </navPoint>
-        <navPoint id="navPoint28" playOrder="20">
+        <navPoint id="navPoint32" playOrder="24">
           <navLabel>
-            <text>4.1.1.1   What&#39;re the most important tricks in QM calculations?</text>
+            <text>What&#39;re the most important tricks in QM calculations?</text>
           </navLabel>
           <content src="QuantumMechanics.html#what-re-the-most-important-tricks-in-qm-calculations" />
         </navPoint>
-        <navPoint id="navPoint29" playOrder="21">
+        <navPoint id="navPoint33" playOrder="25">
           <navLabel>
-            <text>4.1.1.2   First Three Postulates</text>
+            <text>First Three Postulates</text>
           </navLabel>
           <content src="QuantumMechanics.html#first-three-postulates" />
         </navPoint>
-        <navPoint id="navPoint30" playOrder="22">
+        <navPoint id="navPoint34" playOrder="26">
           <navLabel>
-            <text>4.1.1.3   Position and Momentum Space</text>
+            <text>Position and Momentum Space</text>
           </navLabel>
           <content src="QuantumMechanics.html#position-and-momentum-space" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint31" playOrder="23">
+      <navPoint id="navPoint35" playOrder="27">
         <navLabel>
-          <text>4.1.2   Quantum in 1D</text>
+          <text>Quantum in 1D</text>
         </navLabel>
         <content src="QuantumMechanics.html#quantum-in-1d" />
-        <navPoint id="navPoint32" playOrder="23">
+        <navPoint id="navPoint36" playOrder="27">
           <navLabel>
-            <text>4.1.2   Quantum in 1D</text>
+            <text>Quantum in 1D</text>
           </navLabel>
           <content src="QuantumMechanics.html#quantum-in-1d" />
         </navPoint>
-        <navPoint id="navPoint33" playOrder="24">
+        <navPoint id="navPoint37" playOrder="28">
           <navLabel>
-            <text>4.1.2.1   General</text>
+            <text>General</text>
           </navLabel>
           <content src="QuantumMechanics.html#general" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint34" playOrder="25">
+      <navPoint id="navPoint38" playOrder="29">
         <navLabel>
-          <text>4.1.3   Parity</text>
+          <text>Parity</text>
         </navLabel>
         <content src="QuantumMechanics.html#parity" />
-        <navPoint id="navPoint35" playOrder="25">
+        <navPoint id="navPoint39" playOrder="29">
           <navLabel>
-            <text>4.1.3   Parity</text>
+            <text>Parity</text>
           </navLabel>
           <content src="QuantumMechanics.html#parity" />
         </navPoint>
-        <navPoint id="navPoint36" playOrder="26">
+        <navPoint id="navPoint40" playOrder="30">
           <navLabel>
-            <text>4.1.3.1   Passive and Active Transformations</text>
+            <text>Passive and Active Transformations</text>
           </navLabel>
           <content src="QuantumMechanics.html#passive-and-active-transformations" />
         </navPoint>
-        <navPoint id="navPoint37" playOrder="27">
+        <navPoint id="navPoint41" playOrder="31">
           <navLabel>
-            <text>4.1.3.2   Parity</text>
+            <text>Parity</text>
           </navLabel>
           <content src="QuantumMechanics.html#id2" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint38" playOrder="28">
+      <navPoint id="navPoint42" playOrder="32">
         <navLabel>
-          <text>4.1.4   Classical Limit of QM</text>
+          <text>Classical Limit of QM</text>
         </navLabel>
         <content src="QuantumMechanics.html#classical-limit-of-qm" />
-        <navPoint id="navPoint39" playOrder="28">
+        <navPoint id="navPoint43" playOrder="32">
           <navLabel>
-            <text>4.1.4   Classical Limit of QM</text>
+            <text>Classical Limit of QM</text>
           </navLabel>
           <content src="QuantumMechanics.html#classical-limit-of-qm" />
         </navPoint>
-        <navPoint id="navPoint40" playOrder="29">
+        <navPoint id="navPoint44" playOrder="33">
           <navLabel>
-            <text>4.1.4.1   Ehrenfest&#39;s Theorem</text>
+            <text>Ehrenfest&#39;s Theorem</text>
           </navLabel>
           <content src="QuantumMechanics.html#ehrenfest-s-theorem" />
         </navPoint>
-        <navPoint id="navPoint41" playOrder="30">
+        <navPoint id="navPoint45" playOrder="34">
           <navLabel>
-            <text>4.1.4.2   Picture</text>
+            <text>Picture</text>
           </navLabel>
           <content src="QuantumMechanics.html#picture" />
         </navPoint>
-        <navPoint id="navPoint42" playOrder="31">
+        <navPoint id="navPoint46" playOrder="35">
           <navLabel>
-            <text>4.1.4.3   Conservation</text>
+            <text>Conservation</text>
           </navLabel>
           <content src="QuantumMechanics.html#conservation" />
         </navPoint>
       </navPoint>
+      <navPoint id="navPoint47" playOrder="36">
+        <navLabel>
+          <text>Harmonic Oscillators</text>
+        </navLabel>
+        <content src="QuantumMechanics.html#harmonic-oscillators" />
+        <navPoint id="navPoint48" playOrder="36">
+          <navLabel>
+            <text>Harmonic Oscillators</text>
+          </navLabel>
+          <content src="QuantumMechanics.html#harmonic-oscillators" />
+        </navPoint>
+        <navPoint id="navPoint49" playOrder="37">
+          <navLabel>
+            <text>Why Harmonic Oscillators</text>
+          </navLabel>
+          <content src="QuantumMechanics.html#why-harmonic-oscillators" />
+        </navPoint>
+        <navPoint id="navPoint50" playOrder="38">
+          <navLabel>
+            <text>Standard Solution</text>
+          </navLabel>
+          <content src="QuantumMechanics.html#standard-solution" />
+        </navPoint>
+        <navPoint id="navPoint51" playOrder="39">
+          <navLabel>
+            <text>Tricky Solution</text>
+          </navLabel>
+          <content src="QuantumMechanics.html#tricky-solution" />
+        </navPoint>
+        <navPoint id="navPoint52" playOrder="40">
+          <navLabel>
+            <text>Semiclassical</text>
+          </navLabel>
+          <content src="QuantumMechanics.html#semiclassical" />
+        </navPoint>
+      </navPoint>
     </navPoint>
-    <navPoint id="navPoint43" playOrder="32">
+    <navPoint id="navPoint53" playOrder="41">
       <navLabel>
-        <text>5.1   Special Relativity</text>
+        <text>Special Relativity</text>
       </navLabel>
       <content src="SpecialRelativity.html" />
-      <navPoint id="navPoint44" playOrder="32">
+      <navPoint id="navPoint54" playOrder="41">
         <navLabel>
-          <text>5.1   Special Relativity</text>
+          <text>Special Relativity</text>
         </navLabel>
         <content src="SpecialRelativity.html" />
       </navPoint>
-      <navPoint id="navPoint45" playOrder="33">
+      <navPoint id="navPoint55" playOrder="42">
         <navLabel>
-          <text>5.1.1   Conventions</text>
+          <text>Conventions</text>
         </navLabel>
         <content src="SpecialRelativity.html#conventions" />
-        <navPoint id="navPoint46" playOrder="33">
+        <navPoint id="navPoint56" playOrder="42">
           <navLabel>
-            <text>5.1.1   Conventions</text>
+            <text>Conventions</text>
           </navLabel>
           <content src="SpecialRelativity.html#conventions" />
         </navPoint>
-        <navPoint id="navPoint47" playOrder="34">
+        <navPoint id="navPoint57" playOrder="43">
           <navLabel>
-            <text>5.1.1.1   Quantities and Operations</text>
+            <text>Quantities and Operations</text>
           </navLabel>
           <content src="SpecialRelativity.html#quantities-and-operations" />
         </navPoint>
-        <navPoint id="navPoint48" playOrder="35">
+        <navPoint id="navPoint58" playOrder="44">
           <navLabel>
-            <text>5.1.1.2   Footnotes</text>
+            <text>Footnotes</text>
           </navLabel>
           <content src="SpecialRelativity.html#footnotes" />
         </navPoint>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint49" playOrder="36">
+    <navPoint id="navPoint59" playOrder="45">
       <navLabel>
-        <text>6.1   General Relativity</text>
+        <text>General Relativity</text>
       </navLabel>
       <content src="GeneralRelativity.html" />
-      <navPoint id="navPoint50" playOrder="36">
+      <navPoint id="navPoint60" playOrder="45">
         <navLabel>
-          <text>6.1   General Relativity</text>
+          <text>General Relativity</text>
         </navLabel>
         <content src="GeneralRelativity.html" />
       </navPoint>
-      <navPoint id="navPoint51" playOrder="37">
+      <navPoint id="navPoint61" playOrder="46">
         <navLabel>
-          <text>6.1.1   Description of Space-time Manifold</text>
+          <text>Description of Space-time Manifold</text>
         </navLabel>
         <content src="GeneralRelativity.html#description-of-space-time-manifold" />
       </navPoint>
-      <navPoint id="navPoint52" playOrder="38">
+      <navPoint id="navPoint62" playOrder="47">
         <navLabel>
-          <text>6.1.2   Description of Space-time Manifold - Coordinates</text>
+          <text>Description of Space-time Manifold - Coordinates</text>
         </navLabel>
         <content src="GeneralRelativity.html#description-of-space-time-manifold-coordinates" />
       </navPoint>
-      <navPoint id="navPoint53" playOrder="39">
+      <navPoint id="navPoint63" playOrder="48">
         <navLabel>
-          <text>6.1.3   Description of Space-time Manifold - Tetrads</text>
+          <text>Description of Space-time Manifold - Tetrads</text>
         </navLabel>
         <content src="GeneralRelativity.html#description-of-space-time-manifold-tetrads" />
       </navPoint>
-      <navPoint id="navPoint54" playOrder="40">
+      <navPoint id="navPoint64" playOrder="49">
         <navLabel>
-          <text>6.1.4   Description of Space-time Manifold - 1+3 Covariant Description</text>
+          <text>Description of Space-time Manifold - 1+3 Covariant Description</text>
         </navLabel>
         <content src="GeneralRelativity.html#description-of-space-time-manifold-1-3-covariant-description" />
-        <navPoint id="navPoint55" playOrder="40">
+        <navPoint id="navPoint65" playOrder="49">
           <navLabel>
-            <text>6.1.4   Description of Space-time Manifold - 1+3 Covariant Description</text>
+            <text>Description of Space-time Manifold - 1+3 Covariant Description</text>
           </navLabel>
           <content src="GeneralRelativity.html#description-of-space-time-manifold-1-3-covariant-description" />
         </navPoint>
-        <navPoint id="navPoint56" playOrder="41">
+        <navPoint id="navPoint66" playOrder="50">
           <navLabel>
-            <text>6.1.4.1   Definations</text>
+            <text>Definations</text>
           </navLabel>
           <content src="GeneralRelativity.html#definations" />
         </navPoint>
-        <navPoint id="navPoint57" playOrder="42">
+        <navPoint id="navPoint67" playOrder="51">
           <navLabel>
-            <text>6.1.4.2   Properties</text>
+            <text>Properties</text>
           </navLabel>
           <content src="GeneralRelativity.html#properties" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint58" playOrder="43">
+      <navPoint id="navPoint68" playOrder="52">
         <navLabel>
-          <text>6.1.5   Fields and Particles</text>
+          <text>Fields and Particles</text>
         </navLabel>
         <content src="GeneralRelativity.html#fields-and-particles" />
-        <navPoint id="navPoint59" playOrder="43">
+        <navPoint id="navPoint69" playOrder="52">
           <navLabel>
-            <text>6.1.5   Fields and Particles</text>
+            <text>Fields and Particles</text>
           </navLabel>
           <content src="GeneralRelativity.html#fields-and-particles" />
         </navPoint>
-        <navPoint id="navPoint60" playOrder="44">
+        <navPoint id="navPoint70" playOrder="53">
           <navLabel>
-            <text>6.1.5.1   Energy-Momentum Tensor for Particles</text>
+            <text>Energy-Momentum Tensor for Particles</text>
           </navLabel>
           <content src="GeneralRelativity.html#energy-momentum-tensor-for-particles" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint61" playOrder="45">
+      <navPoint id="navPoint71" playOrder="54">
         <navLabel>
-          <text>6.1.6   Theorems</text>
+          <text>Theorems</text>
         </navLabel>
         <content src="GeneralRelativity.html#theorems" />
-        <navPoint id="navPoint62" playOrder="45">
+        <navPoint id="navPoint72" playOrder="54">
           <navLabel>
-            <text>6.1.6   Theorems</text>
+            <text>Theorems</text>
           </navLabel>
           <content src="GeneralRelativity.html#theorems" />
         </navPoint>
-        <navPoint id="navPoint63" playOrder="46">
+        <navPoint id="navPoint73" playOrder="55">
           <navLabel>
-            <text>6.1.6.1   Killing Vector Related</text>
+            <text>Killing Vector Related</text>
           </navLabel>
           <content src="GeneralRelativity.html#killing-vector-related" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint64" playOrder="47">
+      <navPoint id="navPoint74" playOrder="56">
         <navLabel>
-          <text>6.1.7   Specific Topics</text>
+          <text>Specific Topics</text>
         </navLabel>
         <content src="GeneralRelativity.html#specific-topics" />
-        <navPoint id="navPoint65" playOrder="47">
+        <navPoint id="navPoint75" playOrder="56">
           <navLabel>
-            <text>6.1.7   Specific Topics</text>
+            <text>Specific Topics</text>
           </navLabel>
           <content src="GeneralRelativity.html#specific-topics" />
         </navPoint>
-        <navPoint id="navPoint66" playOrder="48">
+        <navPoint id="navPoint76" playOrder="57">
           <navLabel>
-            <text>6.1.7.1   Redshift</text>
+            <text>Redshift</text>
           </navLabel>
           <content src="GeneralRelativity.html#redshift" />
         </navPoint>
-        <navPoint id="navPoint67" playOrder="49">
+        <navPoint id="navPoint77" playOrder="58">
           <navLabel>
-            <text>6.1.7.2   Stationary vs Static</text>
+            <text>Stationary vs Static</text>
           </navLabel>
           <content src="GeneralRelativity.html#stationary-vs-static" />
         </navPoint>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint68" playOrder="50">
+    <navPoint id="navPoint78" playOrder="59">
       <navLabel>
-        <text>7.1   Cosmology</text>
+        <text>Cosmology</text>
       </navLabel>
       <content src="Cosmology/cosmoIndex.html" />
-      <navPoint id="navPoint69" playOrder="50">
+      <navPoint id="navPoint79" playOrder="59">
         <navLabel>
-          <text>7.1   Cosmology</text>
+          <text>Cosmology</text>
         </navLabel>
         <content src="Cosmology/cosmoIndex.html" />
       </navPoint>
-      <navPoint id="navPoint70" playOrder="51">
+      <navPoint id="navPoint80" playOrder="60">
         <navLabel>
-          <text>7.1.1   Thermal History of The Universe</text>
+          <text>Thermal History of The Universe</text>
         </navLabel>
         <content src="Cosmology/cosmoIndex.html#thermal-history-of-the-universe" />
-        <navPoint id="navPoint71" playOrder="51">
+        <navPoint id="navPoint81" playOrder="60">
           <navLabel>
-            <text>7.1.1   Thermal History of The Universe</text>
+            <text>Thermal History of The Universe</text>
           </navLabel>
           <content src="Cosmology/cosmoIndex.html#thermal-history-of-the-universe" />
         </navPoint>
-        <navPoint id="navPoint72" playOrder="52">
+        <navPoint id="navPoint82" playOrder="61">
           <navLabel>
-            <text>7.1.1.1   Review of Standard Model for Particle Physics</text>
+            <text>Review of Standard Model for Particle Physics</text>
           </navLabel>
           <content src="Cosmology/cosmoIndex.html#review-of-standard-model-for-particle-physics" />
         </navPoint>
-        <navPoint id="navPoint73" playOrder="53">
+        <navPoint id="navPoint83" playOrder="62">
           <navLabel>
-            <text>7.1.1.2   Expansion and Temperature</text>
+            <text>Expansion and Temperature</text>
           </navLabel>
           <content src="Cosmology/cosmoIndex.html#expansion-and-temperature" />
         </navPoint>
-        <navPoint id="navPoint74" playOrder="54">
+        <navPoint id="navPoint84" playOrder="63">
           <navLabel>
-            <text>7.1.1.3   Decay Rate VS Expansion Rate</text>
+            <text>Decay Rate VS Expansion Rate</text>
           </navLabel>
           <content src="Cosmology/cosmoIndex.html#decay-rate-vs-expansion-rate" />
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint75" playOrder="55">
+      <navPoint id="navPoint85" playOrder="64">
         <navLabel>
-          <text>7.1.2   Two Parameters</text>
+          <text>Two Parameters</text>
         </navLabel>
         <content src="Cosmology/cosmoIndex.html#two-parameters" />
-        <navPoint id="navPoint76" playOrder="55">
+        <navPoint id="navPoint86" playOrder="64">
           <navLabel>
-            <text>7.1.2   Two Parameters</text>
+            <text>Two Parameters</text>
           </navLabel>
           <content src="Cosmology/cosmoIndex.html#two-parameters" />
         </navPoint>
-        <navPoint id="navPoint77" playOrder="56">
+        <navPoint id="navPoint87" playOrder="65">
           <navLabel>
-            <text>7.1.2.1   Observations</text>
+            <text>Observations</text>
           </navLabel>
           <content src="Cosmology/cosmoIndex.html#observations" />
         </navPoint>
