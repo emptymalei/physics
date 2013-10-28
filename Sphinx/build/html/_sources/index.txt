@@ -28,7 +28,9 @@ Contents
    QuantumMechanics.rst
    SpecialRelativity.rst
    GeneralRelativity.rst 
+   GeneralRelativityAdv.rst
    Cosmology/cosmoIndex.rst
+
 
 Indices and tables
 ==================
