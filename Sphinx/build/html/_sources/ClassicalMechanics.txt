@@ -82,12 +82,12 @@ Then transpose
    \tilde \xi = \tilde \eta T^{1/2}
 
 .. math::
-   \dot \tilde \xi \dot \xi = \dot \tilde \eta T \dot \eta
+   \dot{\tilde \xi} \dot \xi = \dot {\tilde \eta} T \dot \eta
 
 So we have the new Lagragian
 
 .. math::
-   L = \frac{1}{2} \dot \tilde \xi \dot \xi - \frac{1}{2} \tilde \xi T^{-1/2} V T^{-1/2} \xi
+   L = \frac{1}{2} \dot{\tilde \xi} \dot \xi - \frac{1}{2} \tilde \xi T^{-1/2} V T^{-1/2} \xi
 
 Define :math:`T^{-1/2} V T^{-1/2} \equiv V'`.
 
@@ -120,6 +120,11 @@ in which :math:`\lambda` is the eigen value of this function.
 
 
 
+
+Hamiltonian Dynamics
+=====================
+
+Phase space
 
 
 
