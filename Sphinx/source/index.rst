@@ -30,6 +30,7 @@ Contents
    GeneralRelativity.rst 
    GeneralRelativityAdv.rst
    Cosmology/cosmoIndex.rst
+   Quantum/QuantumOptics.rst
 
 
 Indices and tables
