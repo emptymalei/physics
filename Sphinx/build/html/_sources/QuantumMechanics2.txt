@@ -122,6 +122,6 @@ which is the spherical harmonic function.
 Then 
 
 .. math::
-   \ket{\psi} &= \sum _ {l,m} \int \mathrm d \psi _ {lm} Y_l^m(\theta,\phi) \Omega \ket{\theta',\phi'}  \\
+   \ket{\psi} &= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\
 
 So as long as we find out what :math:`\psi _ {lm}` is, any problem is done.
