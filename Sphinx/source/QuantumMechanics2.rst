@@ -24,6 +24,13 @@ Angular Momentum
 Angular Momentum
 -----------------
 
+For an new operator, we would like to know
+
+1. Commutation relation: with their own components, with other operators;
+2. Eigenvalues and their properties;
+3. Eigenstates and their properties;
+4. Expectation and classical limit.
+
 
 Definition of Angular Momentum
 """"""""""""""""""""""""""""""""
@@ -80,9 +87,9 @@ i.e., :math:`\hat J_{\pm}\ket{\lambda m}` is eigenstate of :math:`\hat J_z`.
 
 Follow the plan of finding out the bounds through these positive inner products, we can prove that
 
-.. math:: \hat J^2\ket{jm} = j(j+1)\ket{jm}
+.. math:: \hat J^2\ket{jm} = j(j+1)\hbar^2 \ket{jm}
 
-.. math:: \hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)}\ket{j,m\pm 1}
+.. math:: \hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}
 
 
 
@@ -91,5 +98,30 @@ Eigenstates of Angular Momentum
 """"""""""""""""""""""""""""""""
 
 
+As we have proposed, the eigenstates of both :math:`\hat J_z` and :math:`\hat{\vec J}^2` are :math:`\ket{j,m}`, where :math:`j=0,1,2,\cdots` and :math:`m=-j,-j+1,\cdots, j-1,j`.
 
+We can also find out the wave function in :math:`\{\ket{\theta,\phi\}` basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.
 
+.. math::
+   \int \mathrm d \Omega \braket{\theta',\phi'}{\theta,\phi} = \delta(\cos\theta'-\cos\theta,\phi'-\phi)
+   \int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} = 1
+
+Now we have an arbitary state :math:`\ket{\psi}`,
+
+.. math::
+   \ket{\psi} &= \sum _ {l,m} \psi _ {lm}\ket{l,m} \\
+              &= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} \psi _ {lm}\ket{l,m} \\
+              &= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'} (\braket{\theta,\phi}{l,m} ) \psi _ {lm} \\
+
+Then we define
+
+.. math:: \braket{\theta,\phi}{l,m}=Y_l^m(\theta,\phi)
+
+which is the spherical harmonic function.
+
+Then 
+
+.. math::
+   \ket{\psi} &= \sum _ {l,m} \int \mathrm d \psi _ {lm} Y_l^m(\theta,\phi) \Omega \ket{\theta',\phi'}  \\
+
+So as long as we find out what :math:`\psi _ {lm}` is, any problem is done.
