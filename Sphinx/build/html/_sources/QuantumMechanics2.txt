@@ -1,0 +1,95 @@
+***************************
+Quantum Mechanics 2
+***************************
+
+
+Angular Momentum
+==============================
+
+
+
+.. math::
+   \newcommand{\ud}[1]{{#1^{\dagger}}}
+   \newcommand{\bra}[1]{\left\langle #1\right|}
+   \newcommand{\ket}[1]{\left| #1\right\rangle}
+   \newcommand\Tr{\mathrm{Tr}}
+   \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
+   \newcommand\d{\mathrm{d}}
+   \newcommand\I{\mathbb{I}}
+   \newcommand{\avg}[1]{\left< #1 \right>}
+
+
+
+
+Angular Momentum
+-----------------
+
+
+Definition of Angular Momentum
+""""""""""""""""""""""""""""""""
+
+In classical mechanics, angular momentum is defined as
+
+.. math:: \vec L = \vec X \times \vec P .
+
+One way of defining operator is to change position and momentum into operators and check if the operator is working properly in QM. So we just define
+
+.. math:: \hat {\vec L} = \hat {\vec X}\times \hat{\vec P}.
+
+It is Hermitian. So it can be an operator. We also find
+
+.. math:: \hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}
+
+.. math:: \left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    .
+
+**More generally, we can define angular momentum as**
+
+.. math:: \left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k
+
+We can prove that
+
+.. math:: \left[ \hat J^2,\hat J_z \right] = 0.
+
+So they can have the same eigenstates
+
+.. math:: \hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}
+
+.. math:: \hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}
+
+To find the constraints on these eigenvalues, we can use positive definite condition of certain inner porducts, such as,
+
+.. math:: \bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0
+
+.. math:: \bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0
+
+where
+
+.. math:: \hat J_{\pm} = \hat J_x \pm i \hat J_y
+
+and we have
+
+.. math:: \left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z
+
+.. math:: \left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}.
+
+It's easy to find out that
+
+.. math:: \hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})
+
+i.e., :math:`\hat J_{\pm}\ket{\lambda m}` is eigenstate of :math:`\hat J_z`.
+
+Follow the plan of finding out the bounds through these positive inner products, we can prove that
+
+.. math:: \hat J^2\ket{jm} = j(j+1)\ket{jm}
+
+.. math:: \hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)}\ket{j,m\pm 1}
+
+
+
+
+Eigenstates of Angular Momentum
+""""""""""""""""""""""""""""""""
+
+
+
+

@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type"
           content="text/html; charset=utf-8"/>
     
-        <title>7. Special Relativity &mdash; Physics Research Survival Manual 1.0.5 documentation</title>
+        <title>6. Quantum Mechanics 2 &mdash; Physics Research Survival Manual 1.0.5 documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="_static/sphinx-bootstrap.css" type="text/css"/>
@@ -27,8 +27,8 @@
             <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
             <script type="text/javascript" src="_static/bootstrap-dropdown.js"></script>
         <link rel="top" title="Physics Research Survival Manual 1.0.5 documentation" href="index.html"/>
-            <link rel="next" title="8. General Relativity" href="GeneralRelativity.html"/>
-            <link rel="prev" title="6. Quantum Mechanics 2" href="QuantumMechanics2.html"/> 
+            <link rel="next" title="7. Special Relativity" href="SpecialRelativity.html"/>
+            <link rel="prev" title="5. Quantum Mechanics" href="QuantumMechanics.html"/> 
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
     
         <!-- analytics -->
@@ -63,12 +63,12 @@
                        title="General Index" accesskey="I">index</a>
                 </li>
                 <li>
-                    <a href="GeneralRelativity.html"
-                       title="8. General Relativity" accesskey="N">next</a>
+                    <a href="SpecialRelativity.html"
+                       title="7. Special Relativity" accesskey="N">next</a>
                 </li>
                 <li>
-                    <a href="QuantumMechanics2.html"
-                       title="6. Quantum Mechanics 2" accesskey="P">previous</a>
+                    <a href="QuantumMechanics.html"
+                       title="5. Quantum Mechanics" accesskey="P">previous</a>
                 </li> 
         </ul>
     </div>
@@ -129,60 +129,71 @@
         <div class="content row">
                 <div class="span9">
                     
-  <div class="section" id="special-relativity">
-<h1>7. Special Relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="conventions">
-<h2>7.1. Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
-<p>Metric in special relativity</p>
+  <div class="section" id="quantum-mechanics-2">
+<h1>6. Quantum Mechanics 2<a class="headerlink" href="#quantum-mechanics-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="angular-momentum">
+<h2>6.1. Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-\[\begin{split}\begin{equation}\eta_{\mu\nu}=\left(\begin{matrix}
-     -1 &amp; 0 &amp; 0 &amp; 0\\
-     0 &amp; 1 &amp; 0 &amp; 0\\
-     0 &amp; 0 &amp; 1 &amp; 0\\
-     0 &amp; 0 &amp; 0 &amp; 1\\
-\end{matrix}\right)\end{equation}\end{split}\]</div>
-<div class="section" id="quantities-and-operations">
-<h3>7.1.1. Quantities and Operations<a class="headerlink" href="#quantities-and-operations" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="d-alembertian">
-<h4>7.1.1.1. d&#8217;Alembertian<a class="headerlink" href="#d-alembertian" title="Permalink to this headline">¶</a></h4>
-<p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id3" id="id1">[1]</a></p>
+\[\begin{split}\newcommand{\ud}[1]{{#1^{\dagger}}}
+\newcommand{\bra}[1]{\left\langle #1\right|}
+\newcommand{\ket}[1]{\left| #1\right\rangle}
+\newcommand\Tr{\mathrm{Tr}}
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
+\newcommand\d{\mathrm{d}}
+\newcommand\I{\mathbb{I}}
+\newcommand{\avg}[1]{\left&lt; #1 \right&gt;}\end{split}\]</div>
+<div class="section" id="id1">
+<h3>6.1.1. Angular Momentum<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="definition-of-angular-momentum">
+<h4>6.1.1.1. Definition of Angular Momentum<a class="headerlink" href="#definition-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
+<p>In classical mechanics, angular momentum is defined as</p>
 <div class="math">
-\[\Box\equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu\]</div>
-<p>In the usual {t,x,y,z} natural orthonormal basis,</p>
+\[\vec L = \vec X \times \vec P .\]</div>
+<p>One way of defining operator is to change position and momentum into operators and check if the operator is working properly in QM. So we just define</p>
 <div class="math">
-\[\begin{split}\begin{eqnarray}
- \Box&amp;=&amp;-\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
- &amp;=&amp;-\partial_t^2+\Delta^2 \\
- &amp;=&amp;-\partial_t^2+\nabla
-\end{eqnarray}\end{split}\]</div>
-<dl class="docutils">
-<dt>On wiki <a class="footnote-reference" href="#id4" id="id2">[2]</a> , they give some applications to it.</dt>
-<dd><ul class="first last simple">
-<li>klein-Gordon equation
-<span class="math">\((\Box+m^2)\phi=0\)</span></li>
-<li>wave equation for electromagnetic field in vacuum:
-For the electromagnetic four-potential $Box A^mu=0$footnote{Gauge}</li>
-<li>wave equation for small vibrations
-<span class="math">\(\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0\)</span></li>
-</ul>
-</dd>
-</dl>
+\[\hat {\vec L} = \hat {\vec X}\times \hat{\vec P}.\]</div>
+<p>It is Hermitian. So it can be an operator. We also find</p>
+<div class="math">
+\[\hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}\]</div>
+<div class="math">
+\[\left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    .\]</div>
+<p><strong>More generally, we can define angular momentum as</strong></p>
+<div class="math">
+\[\left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k\]</div>
+<p>We can prove that</p>
+<div class="math">
+\[\left[ \hat J^2,\hat J_z \right] = 0.\]</div>
+<p>So they can have the same eigenstates</p>
+<div class="math">
+\[\hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}\]</div>
+<div class="math">
+\[\hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}\]</div>
+<p>To find the constraints on these eigenvalues, we can use positive definite condition of certain inner porducts, such as,</p>
+<div class="math">
+\[\bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0\]</div>
+<div class="math">
+\[\bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0\]</div>
+<p>where</p>
+<div class="math">
+\[\hat J_{\pm} = \hat J_x \pm i \hat J_y\]</div>
+<p>and we have</p>
+<div class="math">
+\[\left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z\]</div>
+<div class="math">
+\[\left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}.\]</div>
+<p>It&#8217;s easy to find out that</p>
+<div class="math">
+\[\hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})\]</div>
+<p>i.e., <span class="math">\(\hat J_{\pm}\ket{\lambda m}\)</span> is eigenstate of <span class="math">\(\hat J_z\)</span>.</p>
+<p>Follow the plan of finding out the bounds through these positive inner products, we can prove that</p>
+<div class="math">
+\[\hat J^2\ket{jm} = j(j+1)\ket{jm}\]</div>
+<div class="math">
+\[\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)}\ket{j,m\pm 1}\]</div>
 </div>
+<div class="section" id="eigenstates-of-angular-momentum">
+<h4>6.1.1.2. Eigenstates of Angular Momentum<a class="headerlink" href="#eigenstates-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
 </div>
-<div class="section" id="footnotes">
-<h3>7.1.2. Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
-<table class="docutils footnote" frame="void" id="id3" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Actually, there are more general definations for Lapacian, which includes this d&#8217;Alembertian of course.</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>wiki:D&#8217;Alembert_operator</td></tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
@@ -196,13 +207,13 @@ For the electromagnetic four-potential $Box A^mu=0$footnote{Gauge}</li>
             <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">7. Special Relativity</a><ul>
-<li><a class="reference internal" href="#conventions">7.1. Conventions</a><ul>
-<li><a class="reference internal" href="#quantities-and-operations">7.1.1. Quantities and Operations</a><ul>
-<li><a class="reference internal" href="#d-alembertian">7.1.1.1. d&#8217;Alembertian</a></li>
+<li><a class="reference internal" href="#">6. Quantum Mechanics 2</a><ul>
+<li><a class="reference internal" href="#angular-momentum">6.1. Angular Momentum</a><ul>
+<li><a class="reference internal" href="#id1">6.1.1. Angular Momentum</a><ul>
+<li><a class="reference internal" href="#definition-of-angular-momentum">6.1.1.1. Definition of Angular Momentum</a></li>
+<li><a class="reference internal" href="#eigenstates-of-angular-momentum">6.1.1.2. Eigenstates of Angular Momentum</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#footnotes">7.1.2. Footnotes</a></li>
 </ul>
 </li>
 </ul>
@@ -210,14 +221,14 @@ For the electromagnetic four-potential $Box A^mu=0$footnote{Gauge}</li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="QuantumMechanics2.html"
-                        title="previous chapter">6. Quantum Mechanics 2</a></p>
+  <p class="topless"><a href="QuantumMechanics.html"
+                        title="previous chapter">5. Quantum Mechanics</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="GeneralRelativity.html"
-                        title="next chapter">8. General Relativity</a></p>
+  <p class="topless"><a href="SpecialRelativity.html"
+                        title="next chapter">7. Special Relativity</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/SpecialRelativity.txt"
+    <li><a href="_sources/QuantumMechanics2.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
             </div>
