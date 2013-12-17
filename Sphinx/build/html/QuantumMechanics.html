@@ -791,6 +791,65 @@ Hamiltonian always commutes with itself.</p>
 <div class="section" id="standard-solution">
 <h3>5.5.2. Standard Solution<a class="headerlink" href="#standard-solution" title="Permalink to this headline">¶</a></h3>
 <p>We can use polynomial expansion for part of the solution.</p>
+<div class="section" id="dimension-schrodinger-equation">
+<h4>5.5.2.1. Dimension Schrodinger Equation<a class="headerlink" href="#dimension-schrodinger-equation" title="Permalink to this headline">¶</a></h4>
+<p>First step is always finding out the characteristic length scale and characteristic energy scale. Assume we have an characteristic length <span class="math">\(\eta\)</span> and characteristic energy scale <span class="math">\(\epsilon_0\)</span>. Through uncertainty principle we know only for dimensional analysis</p>
+<div class="math">
+\[\left[\hat p\right]=\frac{\hbar}{\eta}\]</div>
+<p>Kinetic energy and potential energy have the same dimension</p>
+<div class="math">
+\[\frac{\hbar^2}{\eta^2 m}=k \eta^2 ,\]</div>
+<p>so we have</p>
+<div class="math">
+\[\eta = \sqrt{\frac{\hbar}{m\omega}}\]</div>
+<p>with <span class="math">\(\omega^2=k/m\)</span>. A dimensional analysis shows that <span class="math">\(\epsilon_0=\hbar\omega\)</span>.</p>
+<p>Now we can define dimensionless variables,</p>
+<div class="math">
+\[z=x/\eta, e=\epsilon/\epsilon_0\]</div>
+<p>The time independent Schrodinger equation in position basis is</p>
+<div class="math">
+\[-\hbar^2 \frac{\mathrm d^2}{\mathrm dx^2}\psi'' /m + k x^2 = 2\epsilon \psi .\]</div>
+<p>Using those characteristic scales, we can rewrite this equation into a dimensionless one, which is</p>
+<div class="math">
+\[\psi''+(2e-z^2)\psi = 0\]</div>
+<p>in which <span class="math">\(\psi'=\frac{\mathrm d}{\mathrm dz}\psi\)</span>.</p>
+</div>
+<div class="section" id="take-limits">
+<h4>5.5.2.2. Take Limits<a class="headerlink" href="#take-limits" title="Permalink to this headline">¶</a></h4>
+<p>We need to look at the behavior of the solutions before we can guess a proper general solution.</p>
+<p><span class="math">\(z\rightarrow \infty\)</span>, we have <span class="math">\(\psi''-z^2\psi=0\)</span>. Solution to this equation is <span class="math">\(\psi(z)~ e^{-z^2/2}\)</span>.</p>
+<p>The solution of the the equation should be in the form</p>
+<div class="math">
+\[\psi(z) = u(z) e^{-z^2/2}  .\]</div>
+<p>Insert this to time independent Schrodinger equation, we can get the equation of <span class="math">\(u(z)\)</span>.</p>
+<div class="math">
+\[u'' - 2 z u' +(2e-1) u = 0\]</div>
+</div>
+<div class="section" id="polynomial-method">
+<h4>5.5.2.3. Polynomial Method<a class="headerlink" href="#polynomial-method" title="Permalink to this headline">¶</a></h4>
+<p>The simplest form of <span class="math">\(u(z)\)</span> is polynomial,</p>
+<div class="math">
+\[u(z) = \sum _ {n=0}^{\infty} u _ n z^n  .\]</div>
+<p>Put this back to equation of u, we can get the recursion relation,</p>
+<div class="math">
+\[(n + 2)(n+1) u _ {n+2} = \left[ 2n - (2e - 1) \right] u _ n   .\]</div>
+<p>If <span class="math">\(u_0\)</span> and <span class="math">\(u_1\)</span> are given, we can get the whole polynomial.</p>
+<p>Notice that we have definite parity here. So <span class="math">\(u _ 1\)</span> branch vanish because they are even.</p>
+<p><span class="math">\(u_0\)</span> is set by the normalization condition.</p>
+</div>
+<div class="section" id="terminate-the-series">
+<h4>5.5.2.4. Terminate The Series<a class="headerlink" href="#terminate-the-series" title="Permalink to this headline">¶</a></h4>
+<p>The series blow up if it doesn&#8217;t terminate. So we need to terminate the series using the following relation,</p>
+<div class="math">
+\[2e - 1 = 2n .\]</div>
+<p>Then we have the energy levels, which is <span class="math">\(e=n+1/2\)</span>.</p>
+</div>
+<div class="section" id="complete-series">
+<h4>5.5.2.5. Complete Series<a class="headerlink" href="#complete-series" title="Permalink to this headline">¶</a></h4>
+<p>By picking proper normalization factor, we can write down the energy levels and corresponding wave functions. In fact, this polynomial can be found in mathematical phyisics books.</p>
+<div class="math">
+\[H _ {n+1} = 2 z H _n -n H _ {n-1}\]</div>
+</div>
 </div>
 <div class="section" id="tricky-solution">
 <h3>5.5.3. Tricky Solution<a class="headerlink" href="#tricky-solution" title="Permalink to this headline">¶</a></h3>
@@ -801,7 +860,7 @@ Hamiltonian always commutes with itself.</p>
 \omega = \sqrt{\frac{k}{m}}\end{split}\]</div>
 <p>One way to get the intrinsic length without writing down the dimensions of each quantity is to use the following relation</p>
 <div class="math">
-\[\begin{split}\left[ E] = \left[ m \omega^2 \hat x^2 \right] \\\\
+\[\begin{split}\left[ E \right] = \left[ m \omega^2 \hat x^2 \right] \\\\
 \hbar \omega = m \omega^2 \eta^2 \\\
 \eta = \sqrt{ \frac{\hbar}{m\omega} }\end{split}\]</div>
 <p>Or if we are given the Hamiltonian in terms of <span class="math">\(k\)</span>,</p>
@@ -1012,7 +1071,14 @@ Hamiltonian always commutes with itself.</p>
 </li>
 <li><a class="reference internal" href="#harmonic-oscillators">5.5. Harmonic Oscillators</a><ul>
 <li><a class="reference internal" href="#why-harmonic-oscillators">5.5.1. Why Harmonic Oscillators</a></li>
-<li><a class="reference internal" href="#standard-solution">5.5.2. Standard Solution</a></li>
+<li><a class="reference internal" href="#standard-solution">5.5.2. Standard Solution</a><ul>
+<li><a class="reference internal" href="#dimension-schrodinger-equation">5.5.2.1. Dimension Schrodinger Equation</a></li>
+<li><a class="reference internal" href="#take-limits">5.5.2.2. Take Limits</a></li>
+<li><a class="reference internal" href="#polynomial-method">5.5.2.3. Polynomial Method</a></li>
+<li><a class="reference internal" href="#terminate-the-series">5.5.2.4. Terminate The Series</a></li>
+<li><a class="reference internal" href="#complete-series">5.5.2.5. Complete Series</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#tricky-solution">5.5.3. Tricky Solution</a></li>
 <li><a class="reference internal" href="#semiclassical">5.5.4. Semiclassical</a><ul>
 <li><a class="reference internal" href="#classical">5.5.4.1. Classical</a></li>

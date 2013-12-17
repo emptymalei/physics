@@ -785,7 +785,110 @@ Standard Solution
 --------------------
 
 
-We can use polynomial expansion for part of the solution.
+We can use polynomial expansion for part of the solution. 
+
+
+
+Dimension Schrodinger Equation
+""""""""""""""""""""""""""""""""
+
+First step is always finding out the characteristic length scale and characteristic energy scale. Assume we have an characteristic length :math:`\eta` and characteristic energy scale :math:`\epsilon_0`. Through uncertainty principle we know only for dimensional analysis
+
+.. math::
+   \left[\hat p\right]=\frac{\hbar}{\eta}
+
+Kinetic energy and potential energy have the same dimension
+
+.. math::
+   \frac{\hbar^2}{\eta^2 m}=k \eta^2 ,
+
+so we have
+
+.. math::
+   \eta = \sqrt{\frac{\hbar}{m\omega}}
+
+with :math:`\omega^2=k/m`. A dimensional analysis shows that :math:`\epsilon_0=\hbar\omega`.
+
+Now we can define dimensionless variables,
+
+.. math::
+   z=x/\eta, e=\epsilon/\epsilon_0
+
+The time independent Schrodinger equation in position basis is
+
+.. math::
+   -\hbar^2 \frac{\mathrm d^2}{\mathrm dx^2}\psi'' /m + k x^2 = 2\epsilon \psi .
+
+Using those characteristic scales, we can rewrite this equation into a dimensionless one, which is
+
+.. math::
+   \psi''+(2e-z^2)\psi = 0
+
+in which :math:`\psi'=\frac{\mathrm d}{\mathrm dz}\psi`.
+
+
+Take Limits
+""""""""""""""""""""
+
+We need to look at the behavior of the solutions before we can guess a proper general solution.
+
+:math:`z\rightarrow \infty`, we have :math:`\psi''-z^2\psi=0`. Solution to this equation is :math:`\psi(z)~ e^{-z^2/2}`.
+
+
+
+The solution of the the equation should be in the form
+
+.. math::
+   \psi(z) = u(z) e^{-z^2/2}  .
+
+Insert this to time independent Schrodinger equation, we can get the equation of :math:`u(z)`.
+
+.. math::
+   u'' - 2 z u' +(2e-1) u = 0
+
+
+
+Polynomial Method
+"""""""""""""""""""""
+
+The simplest form of :math:`u(z)` is polynomial,
+
+.. math::
+   u(z) = \sum _ {n=0}^{\infty} u _ n z^n  .
+
+Put this back to equation of u, we can get the recursion relation,
+
+.. math::
+   (n + 2)(n+1) u _ {n+2} = \left[ 2n - (2e - 1) \right] u _ n   .
+
+If :math:`u_0` and :math:`u_1` are given, we can get the whole polynomial.
+
+Notice that we have definite parity here. So :math:`u _ 1` branch vanish because they are even.
+
+:math:`u_0` is set by the normalization condition.
+
+
+Terminate The Series
+""""""""""""""""""""""
+
+The series blow up if it doesn't terminate. So we need to terminate the series using the following relation,
+
+.. math::
+   2e - 1 = 2n .
+
+Then we have the energy levels, which is :math:`e=n+1/2`.
+
+
+Complete Series
+""""""""""""""""
+
+By picking proper normalization factor, we can write down the energy levels and corresponding wave functions. In fact, this polynomial can be found in mathematical phyisics books.
+
+.. math::
+   H _ {n+1} = 2 z H _n -n H _ {n-1}
+
+
+
 
 
 
@@ -803,7 +906,7 @@ Find out the characteristic length and energy
 One way to get the intrinsic length without writing down the dimensions of each quantity is to use the following relation
 
 .. math::
-   \left[ E] = \left[ m \omega^2 \hat x^2 \right] \\\\
+   \left[ E \right] = \left[ m \omega^2 \hat x^2 \right] \\\\
    \hbar \omega = m \omega^2 \eta^2 \\\
    \eta = \sqrt{ \frac{\hbar}{m\omega} }
 
