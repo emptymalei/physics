@@ -5,6 +5,58 @@ Mathematics
 .. .. sectnum::
       :start: 2
 
+
+
+
+
+
+Linear Algebra
+====================
+
+
+
+.. _TensorProductSpace:
+
+Tensor Product Space
+-----------------------
+
+
+
+.. math::
+   \newcommand{\ud}[1]{{#1^{\dagger}}}
+   \newcommand{\bra}[1]{\left\langle #1\right|}
+   \newcommand{\ket}[1]{\left| #1\right\rangle}
+   \newcommand\Tr{\mathrm{Tr}}
+   \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
+   \newcommand\d{\mathrm{d}}
+   \newcommand\I{\mathbb{I}}
+   \newcommand{\avg}[1]{\left< #1 \right>}
+
+
+
+:math:`\ket{\phi}_1` and :math:`\ket{\phi}_2` are elements of Hilbert space :math:`H_1` and :math:`H_2`. **Tensor Product** of :math:`\ket{\phi}_1` and :math:`\ket{\phi}_2` is denoted as :math:`\ket{\phi}_1\otimes \ket{\phi}_2`. This operation is linear and distributive.
+
+**Tensor product space** :math:`H_1\otimes H_2` is composed of all the linear combinations of all possible tensor products of elements in :math:`H_1` and :math:`H_2`.
+
+
+Inner Product
+"""""""""""""""
+
+Inner product of two tensor products
+
+.. math::
+   (\bra{\phi}_1\otimes \bra{\phi}_2)(\ket{\psi}_1\otimes \ket{\psi}_2) = ( {} _ 1 \braket{\phi}{\psi}_1)({}_2\braket{\phi}{\psi}_2)
+
+
+Operators Applied to Tensor Product
+""""""""""""""""""""""""""""""""""""
+
+Two operators :math:`\hat O_1` and :math:`\hat O_2` works on :math:`H_1` and :math:`H_2` respectively applied to tensor product
+
+.. math::
+   (\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)
+
+
 Differential Geometry
 =======================
 
