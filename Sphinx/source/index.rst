@@ -24,6 +24,7 @@ Contents
    preface.rst
    Basic.rst
    math.rst
+   Statistics/statistics.rst
    ClassicalMechanics.rst
    QuantumMechanics.rst
    QuantumMechanics2.rst
