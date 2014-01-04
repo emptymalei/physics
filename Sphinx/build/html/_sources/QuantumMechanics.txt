@@ -361,11 +361,11 @@ Solve the Problem
 
 * Find the wavenumber k, by putting the assumed solutions into equation of motion
   
-  .. math:: k = \pm \frac{2m \epsilon}{\hbar^2}
+  .. math:: k = \pm \sqrt{\frac{2m \epsilon}{\hbar^2} }
 
   Since we can always merge the negative into the constants, it is fine to use 
   
-  .. math:: k = \frac{2m \epsilon}{\hbar^2}
+  .. math:: k = \sqrt{\frac{2m \epsilon}{\hbar^2} }
 
 * Use Boundary Condition
     1. At x=0, 
