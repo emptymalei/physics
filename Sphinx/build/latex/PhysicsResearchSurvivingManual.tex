@@ -14,7 +14,7 @@
 
 
 \title{Physics Research Surviving Manual Documentation}
-\date{January 21, 2014}
+\date{January 22, 2014}
 \release{1.0.5}
 \author{Cosmology TF}
 \newcommand{\sphinxlogo}{}
@@ -1797,6 +1797,38 @@ Then
 \begin{split}\ket{\psi} &= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\\end{split}\notag\\\begin{split}\end{split}\notag
 \end{gather}
 So as long as we find out what $\psi _ {lm}$ is, any problem is done.
+
+
+\section{Quantum Mechanics 3}
+\label{QuantumMechanics3:quantum-mechanics-3}\label{QuantumMechanics3::doc}
+
+\subsection{Approximations}
+\label{QuantumMechanics3:approximations}\begin{gather}
+\begin{split}\newcommand{\ud}[1]{{#1^{\dagger}}}
+\newcommand{\bra}[1]{\left\langle #1\right|}
+\newcommand{\ket}[1]{\left| #1\right\rangle}
+\newcommand\Tr{\mathrm{Tr}}
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
+\newcommand\d{\mathrm{d}}
+\newcommand\I{\mathbb{I}}
+\newcommand{\avg}[1]{\left< #1 \right>}\end{split}\notag\\\begin{split}\end{split}\notag
+\end{gather}
+
+\subsubsection{Variational Method}
+\label{QuantumMechanics3:variational-method}
+The idea comes from that
+\begin{gather}
+\begin{split}\avg{E} = \frac{\bra{\psi}\hat H\ket{\psi}}{\bracket{\psi}{\psi}} = \frac{\sum_n \left| \bracket{n}{\psi}  \right|^2}{\sum_n \left| \bracket{n}{\psi} \right|^2} \geq E_n\end{split}\notag\\\begin{split}\end{split}\notag
+\end{gather}
+if $\ket{\psi}$ is composed only with $\ket{i}$ ($i\geq n$).
+
+
+\subsubsection{WKB Approximation}
+\label{QuantumMechanics3:wkb-approximation}
+
+\section{Statistical Physics}
+\label{StatisticalPhysics::doc}\label{StatisticalPhysics:statistical-physics}
+This part has been moved to \href{http://emptymalei.github.io/StatisticalPhysics/}{here} .
 
 
 \section{Special Relativity}

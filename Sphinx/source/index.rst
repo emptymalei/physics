@@ -28,6 +28,8 @@ Contents
    ClassicalMechanics.rst
    QuantumMechanics.rst
    QuantumMechanics2.rst
+   QuantumMechanics3.rst
+   StatisticalPhysics.rst
    SpecialRelativity.rst
    GeneralRelativity.rst 
    GeneralRelativityAdv.rst
