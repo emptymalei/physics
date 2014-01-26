@@ -117,7 +117,7 @@ html_theme_options = {
     'github_user': 'CosmologyTaskForce',
     'github_repo': 'PhysicsResearchSurvivalManual',
     'twitter_username': 'emptymalei',
-    'home_url': 'http://iastro.lamost.org',
+    'home_url': 'http://cosmologytaskforce.github.io/PhysicsResearchSurvivalManual/',
   #  'disqus_shortname': 'researchsurvivalmanual',
 }
 
