@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>7. Quantum Mechanics 2 &mdash; Statistical Mechanics Notes</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="Statistical Mechanics Notes" href="index.html" />
+    <link rel="next" title="8. Quantum Mechanics 3" href="QuantumMechanics3.html" />
+    <link rel="prev" title="6. Quantum Mechanics" href="QuantumMechanics.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>Statistical Mechanics Notes</span></a></h1>
+        <h2 class="heading"><span>7. Quantum Mechanics 2</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="QuantumMechanics.html">6. Quantum Mechanics</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="QuantumMechanics3.html">8. Quantum Mechanics 3</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="quantum-mechanics-2">
+<h1>7. Quantum Mechanics 2<a class="headerlink" href="#quantum-mechanics-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tensor-product-space">
+<h2>7.1. Tensor Product Space<a class="headerlink" href="#tensor-product-space" title="Permalink to this headline">¶</a></h2>
+<p>This part has been moved to <a class="reference internal" href="math.html#tensorproductspace"><em>Tensor Product Space</em></a></p>
+</div>
+<div class="section" id="density-matrix">
+<h2>7.2. Density Matrix<a class="headerlink" href="#density-matrix" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="angular-momentum">
+<h2>7.3. Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>7.3.1. Angular Momentum<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>For an new operator, we would like to know</p>
+<ol class="arabic simple">
+<li>Commutation relation: with their own components, with other operators;</li>
+<li>Eigenvalues and their properties;</li>
+<li>Eigenstates and their properties;</li>
+<li>Expectation and classical limit.</li>
+</ol>
+<div class="section" id="definition-of-angular-momentum">
+<h4>7.3.1.1. Definition of Angular Momentum<a class="headerlink" href="#definition-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
+<p>In classical mechanics, angular momentum is defined as</p>
+<div class="math">
+<p><img src="_images/math/f14ae36f746beb664422f77c446554ca1d2cc901.png" alt="\vec L = \vec X \times \vec P ."/></p>
+</div><p>One way of defining operator is to change position and momentum into operators and check if the operator is working properly in QM. So we just define</p>
+<div class="math">
+<p><img src="_images/math/cb5df629defaaea779acd1728d7c60ce4f1d6df3.png" alt="\hat {\vec L} = \hat {\vec X}\times \hat{\vec P}."/></p>
+</div><p>It is Hermitian. So it can be an operator. We also find</p>
+<div class="math">
+<p><img src="_images/math/36b848e0f409694f84c856988e52c329b18a1b0b.png" alt="\hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}"/></p>
+</div><div class="math">
+<p><img src="_images/math/6994b5019e656eaed0fb1cb69597a88de959ae56.png" alt="\left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    ."/></p>
+</div><p><strong>More generally, we can define angular momentum as</strong></p>
+<div class="math">
+<p><img src="_images/math/d4793e84199d0e6645833319debbc43b3e20edbf.png" alt="\left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k"/></p>
+</div><p>We can prove that</p>
+<div class="math">
+<p><img src="_images/math/28cb2895a3b440a34011982a0c3140fb5b2e6e9f.png" alt="\left[ \hat J^2,\hat J_z \right] = 0."/></p>
+</div><p>So they can have the same eigenstates</p>
+<div class="math">
+<p><img src="_images/math/a774a6a4decb1c7adac66144e4662df10b97b447.png" alt="\hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}"/></p>
+</div><div class="math">
+<p><img src="_images/math/8f188df6ab72ad4a0d9b63c6485c0881ad149399.png" alt="\hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}"/></p>
+</div><p>To find the constraints on these eigenvalues, we can use positive definite condition of certain inner porducts, such as,</p>
+<div class="math">
+<p><img src="_images/math/695702530946d9efef7ef3ff3236bdf71c4e1424.png" alt="\bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0"/></p>
+</div><div class="math">
+<p><img src="_images/math/1586482d597fa397a38f14cfeb60892d3fbb7aa8.png" alt="\bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0"/></p>
+</div><p>where</p>
+<div class="math">
+<p><img src="_images/math/1862b2f39387efb8bc2f000f5d516e5de6f72979.png" alt="\hat J_{\pm} = \hat J_x \pm i \hat J_y"/></p>
+</div><p>and we have</p>
+<div class="math">
+<p><img src="_images/math/a812d96c771dfeaaf83d5b55783c2aa202bf6c40.png" alt="\left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z"/></p>
+</div><div class="math">
+<p><img src="_images/math/c1b877b656b93ccba29bbf44fd72073151bcd4da.png" alt="\left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}."/></p>
+</div><p>It&#8217;s easy to find out that</p>
+<div class="math">
+<p><img src="_images/math/eaa106b087aea65d6bbb2541e2bc1c653a3fec9d.png" alt="\hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})"/></p>
+</div><p>i.e., <img class="math" src="_images/math/fff60fb8e87c6b2933e71974e822e8f258a6da62.png" alt="\hat J_{\pm}\ket{\lambda m}"/> is eigenstate of <img class="math" src="_images/math/e29057f2bd283f69d91971699dc578376789067f.png" alt="\hat J_z"/>.</p>
+<p>Follow the plan of finding out the bounds through these positive inner products, we can prove that</p>
+<div class="math">
+<p><img src="_images/math/21e78a2f097585b0423d2ab0ac3626b593994ced.png" alt="\hat J^2\ket{jm} = j(j+1)\hbar^2 \ket{jm}"/></p>
+</div><div class="math">
+<p><img src="_images/math/43556ff77313f89613416f96dac55e34ac38937a.png" alt="\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}"/></p>
+</div></div>
+<div class="section" id="eigenstates-of-angular-momentum">
+<h4>7.3.1.2. Eigenstates of Angular Momentum<a class="headerlink" href="#eigenstates-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
+<p>As we have proposed, the eigenstates of both <img class="math" src="_images/math/e29057f2bd283f69d91971699dc578376789067f.png" alt="\hat J_z"/> and <img class="math" src="_images/math/a3ec6abf366331b7ae7517ef1d539c384005b150.png" alt="\hat{\vec J}^2"/> are <img class="math" src="_images/math/0753dbae892286d06362eb1f5b635a7fc359b48c.png" alt="\ket{j,m}"/>, where <img class="math" src="_images/math/4d229976676f40f37a7a1c69c195fbbe3ab1a2a2.png" alt="j=0,1,2,\cdots"/> and <img class="math" src="_images/math/73edd361a7d28502db5a933318fc4191cc16586e.png" alt="m=-j,-j+1,\cdots, j-1,j"/>.</p>
+<p>We can also find out the wave function in <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\{\ket{\theta,\phi\}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2011/06/27&gt;
+Babel &lt;3.9f&gt; and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/utf8x.def))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucs.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-global.def))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?&#8217; option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/preview/preview.sty) (./math.aux)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucsencs.def)
+Preview: Fontsize 12pt
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+l.14 $\{\ket
+            {\theta,\phi\}$
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.14 $\{\ket{\theta,\phi\}$
+                           
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 236 bytes).
+Transcript written on math.log.
+</div>
+ basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.</p>
+<div class="math">
+<p><img src="_images/math/f8964dbfff706f6ae738878e2d14fb7cd5f64df0.png" alt="\int \mathrm d \Omega \braket{\theta',\phi'}{\theta,\phi} = \delta(\cos\theta'-\cos\theta,\phi'-\phi)
+\int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} = 1"/></p>
+</div><p>Now we have an arbitary state <img class="math" src="_images/math/74278dfad8580edbb58308d239ac08d4959d067a.png" alt="\ket{\psi}"/>,</p>
+<div class="math">
+<p><img src="_images/math/2dcd6d4e182733baa9256049c5c20e726e39bfd0.png" alt="\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm}\ket{l,m} \\
+           &amp;= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} \psi _ {lm}\ket{l,m} \\
+           &amp;= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'} (\braket{\theta,\phi}{l,m} ) \psi _ {lm} \\"/></p>
+</div><p>Then we define</p>
+<div class="math">
+<p><img src="_images/math/cdba71717ba1141f96f770a6fda30f59c956bf03.png" alt="\braket{\theta,\phi}{l,m}=Y_l^m(\theta,\phi)"/></p>
+</div><p>which is the spherical harmonic function.</p>
+<p>Then</p>
+<div class="math">
+<p><img src="_images/math/04d0a52d596a0635622c6957d525029dcafbf35b.png" alt="\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\"/></p>
+</div><p>So as long as we find out what <img class="math" src="_images/math/71a9c4e2c083ce4f533d48cb1fd7e7cfbddba010.png" alt="\psi _ {lm}"/> is, any problem is done.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="QuantumMechanics.html">6. Quantum Mechanics</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="QuantumMechanics3.html">8. Quantum Mechanics 3</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, Cosmology TF.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
+    </div>
+  </body>
+</html>

@@ -158,8 +158,14 @@ latex_preamble = r"""
 \def\atan{\hbox{atan}}
 """
 
+
 pngmath_latex_preamble = latex_preamble
 latex_elements = {"preamble": latex_preamble}
+
+# math alignment support
+pngmath_latex_preamble=r'\usepackage[active]{preview}' # + other custom stuff for inline math, such as non-default math fonts etc.
+pngmath_use_preview=True
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

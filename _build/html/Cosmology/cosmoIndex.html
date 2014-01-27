@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>13. Cosmology &mdash; Statistical Mechanics Notes</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="Statistical Mechanics Notes" href="../index.html" />
+    <link rel="next" title="14. Quantum Optics" href="../Quantum/QuantumOptics.html" />
+    <link rel="prev" title="12. General Relativity Revisited" href="../GeneralRelativityAdv.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>Statistical Mechanics Notes</span></a></h1>
+        <h2 class="heading"><span>13. Cosmology</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../GeneralRelativityAdv.html">12. General Relativity Revisited</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../Quantum/QuantumOptics.html">14. Quantum Optics</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="cosmology">
+<h1>13. Cosmology<a class="headerlink" href="#cosmology" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="thermal-history-of-the-universe">
+<h2>13.1. Thermal History of The Universe<a class="headerlink" href="#thermal-history-of-the-universe" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="review-of-standard-model-for-particle-physics">
+<h3>13.1.1. Review of Standard Model for Particle Physics<a class="headerlink" href="#review-of-standard-model-for-particle-physics" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>SM of particle physics</dt>
+<dd><ol class="first last arabic simple">
+<li>describes elementary particles and their interactions.</li>
+<li>is well test with experiments.</li>
+</ol>
+</dd>
+</dl>
+<div class="section" id="degree-of-freedom-of-elementary-particles">
+<h4>13.1.1.1. Degree of Freedom of Elementary Particles<a class="headerlink" href="#degree-of-freedom-of-elementary-particles" title="Permalink to this headline">¶</a></h4>
+<img alt="../_images/Standard_Model_of_Elementary_Particles.png" src="../_images/Standard_Model_of_Elementary_Particles.png" />
+<p>IMG Source: <a class="reference external" href="https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg">https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg</a></p>
+<p>The orange numbers at the right bottom of each particle is the degrees of freedom it has. Here are some comments.</p>
+<ol class="arabic simple">
+<li>Photons have only two DoF because it is mass 0. Same reason can apply to gluon. But according to symmetry, there are 8 kinds of gluons.</li>
+<li>W bosons carry charges. This is where the 2 come from.</li>
+<li>Electrons and quarks have antiparticles. So there DoF will be doubled after counting the spin.</li>
+<li>Each quark have 3 different colors and this gives us the 3 when calculating there DoF.</li>
+</ol>
+<p>Finally, we can make this table.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Partilces</th>
+<th class="head">Higgs</th>
+<th class="head">Messengers</th>
+<th class="head">Quarks</th>
+<th class="head">Leptons</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>DoF</td>
+<td>1</td>
+<td>27</td>
+<td>72</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="expansion-and-temperature">
+<h3>13.1.2. Expansion and Temperature<a class="headerlink" href="#expansion-and-temperature" title="Permalink to this headline">¶</a></h3>
+<p>We can see that the heaviest particle is top quark with a mass of <img class="math" src="../_images/math/9705db4efd3b9ce143d5b25db6a7764caed48329.png" alt="m_t = 170 \mathrm{GeV}"/>.</p>
+<div class="section" id="temperature-greater-than-mass-of-top-quark">
+<h4>13.1.2.1. Temperature Greater Than Mass of Top Quark<a class="headerlink" href="#temperature-greater-than-mass-of-top-quark" title="Permalink to this headline">¶</a></h4>
+<p>If temperature of the universe <img class="math" src="../_images/math/c9f2a5ca10f75d906982f001e0cb16297deea40e.png" alt="T \gg m_t"/>, all particles should be in relativistic regime and the decay (annihilation) and inverse decay (inverse annihilation) are in equilibrium so all particles contribute to the thermal quantities in a relativistic way.</p>
+<div class="math">
+<p><img src="../_images/math/01f4625feb8a798a8f483173ca511961490a9ac9.png" alt="g_B = 28
+
+g_F = 90"/></p>
+</div><p>Then</p>
+<div class="math">
+<p><img src="../_images/math/ce60280cc368a3a6f742a26c32c49298b8c36cfe.png" alt="g _ * = g_B + \frac{7}{8} g _ F = 106.75"/></p>
+</div><p>For convinience, define the following reduced Planck mass</p>
+<div class="math">
+<p><img src="../_images/math/3ae76503893c942c09349f3d837a7fa57f6f32bf.png" alt="8\pi G = \frac{1}{M _ p ^2}"/></p>
+</div><p>And it&#8217;s good to know its value, which is <img class="math" src="../_images/math/04942411b71d8a6a66511671ec9c9c55d9a0c653.png" alt="2.4\times 10^{18} \mathrm{GeV}"/>.</p>
+<p>We would like to know the relation between expansion and temperature. We already know that the energy density is</p>
+<div class="math">
+<p><img src="../_images/math/f4a3be1d02db08a5721936fe2dea8301b6a60ebf.png" alt="\rho = g _ * \frac{\pi^2}{30} T^4"/></p>
+</div><p>So the expansion is</p>
+<div class="math">
+<p><img src="../_images/math/79aed69e51f2f5e6e9b66bbc5fa22a7d70dc0623.png" alt="H^2 = \frac{8\pi G}{3}\rho = 106.75 \times \frac{\pi^2}{30} \frac{T^4}{3 M_p^2}"/></p>
+</div><p>So Hubble function is</p>
+<div class="math">
+<p><img src="../_images/math/ce8517ec06c84c348678c71f6f8fc182ee982c63.png" alt="H \approx 3 \frac{T^2}{M_p}"/></p>
+</div></div>
+<div class="section" id="temperature-down-to-mass-of-a-particle">
+<h4>13.1.2.2. Temperature Down to Mass of A Particle<a class="headerlink" href="#temperature-down-to-mass-of-a-particle" title="Permalink to this headline">¶</a></h4>
+<p>As temperature drops down, particle dacay (annihilation) will be greater than its inverse which is suppressed by Boltzmann factor <img class="math" src="../_images/math/6c09a9ede8ad8597ecb15a519c40c18b25fa0519.png" alt="\exp (-m/T)"/>. The decay rate is so quick that the particle will almost dispear before the universe expand a lot.</p>
+<p>So when the temperature drops below the mass of a particle, it won&#8217;t contribute to the energy density. Their DoF will just dispear.</p>
+<p>For example, if <img class="math" src="../_images/math/b0defae26a527f632135afba225360c13428fef6.png" alt="T~\mathrm{MeV}"/>, Higgs and W and Z will decay and quarks are combined with gluons. So we only have <strong>photons, electrons, neutrinos</strong> as elementary particles, that is <img class="math" src="../_images/math/e24869525649424eb8d7195b83394d4bf4861d93.png" alt="g_* = 10.75"/>.</p>
+<p>The Hubble function,</p>
+<div class="math">
+<p><img src="../_images/math/38a2245998c6b580d47de11c72bfe7e7b15bf247.png" alt="H \approx \frac{T^2}{M _ p ^2}"/></p>
+</div></div>
+</div>
+<div class="section" id="decay-rate-vs-expansion-rate">
+<h3>13.1.3. Decay Rate VS Expansion Rate<a class="headerlink" href="#decay-rate-vs-expansion-rate" title="Permalink to this headline">¶</a></h3>
+<p>We can generally prove that decay rate is much faster than the expansion rate. ............... To be added.</p>
+</div>
+</div>
+<div class="section" id="two-parameters">
+<h2>13.2. Two Parameters<a class="headerlink" href="#two-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Why is Cosmology Dedicated to Finding Two Parameters Before 90&#8217;s</p>
+<p>Basically, the cosmology before the 90&#8217;s have only two tasks. The first one is to find out the Hubble constant, while the second one is looking for the deceleration parameter.</p>
+<p>We don&#8217;t rush to define what Hubble constant and deceleration parameter are, but have a look at what observations do at that time.</p>
+<div class="section" id="observations">
+<h3>13.2.1. Observations<a class="headerlink" href="#observations" title="Permalink to this headline">¶</a></h3>
+<p>Astronomers are really good at measuring distances. They have infinite tricky ways to find out some distance.</p>
+<div class="section" id="luminosity-distance">
+<h4>13.2.1.1. Luminosity Distance<a class="headerlink" href="#luminosity-distance" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="luminosity-distance-from-observation">
+<h5>13.2.1.1.1. Luminosity Distance from Observation<a class="headerlink" href="#luminosity-distance-from-observation" title="Permalink to this headline">¶</a></h5>
+<p>We can find out how bright a star is by observation. One way to represent the brightness is to use the energy crossed per unit area per unit time at the observer, because this is what our eyes do.</p>
+<p>This quantity is related to how much energy was emitted at the star, how far we are from the star. The more energy the star emitted, the brighter it look like. The nearer the star is, the brighter it is. Just like what we feel like with a candle.</p>
+<p>This schematic picture shows that energy spread out on a surface because the total energy is conserved. Isotropic energy flux through the same solid angle at different radius must be the same.</p>
+<img alt="From Wikipedia: Inverse equare law, CC." class="align-center" src="../_images/InverseSquareLaw.png" />
+<p>Through a very simple calculation, it is as simple as</p>
+<div class="math">
+<p><img src="../_images/math/0abfa7744d667cff3f33b05ba204586b5a44edb7.png" alt="L_0 = \frac{ L }{ 4\pi r^2 } ."/></p>
+</div><p>We are dealing with Cosmology now. The space-time manifold should be a great concern. The luminosity turns out to be</p>
+<div class="math">
+<p><img src="../_images/math/4b1d1a3bae1068e090fcc25bcce8d7a484c9953f.png" alt="L_0 = \frac{L_\mathrm{abs} }{4\pi d^2} \frac{1}{1+z} \frac{1}{1+z} ."/></p>
+</div><p>Here d is the physical distance between the star and the observer. L is the absolute luminosity of the star, which stands for the power of the star. z is the redshift of the star.</p>
+<p>The first <img class="math" src="../_images/math/1207e26ddfa16f680c1ecbfdaac42729e78d35f1.png" alt="\frac{1}{1+z}"/> term comes from the fact that the energy of each photon decrease due to expansion of the universe, while the second is the result that the rate of photons arrived at the observer is less.</p>
+<p>We are happy to define</p>
+<div class="math">
+<p><img src="../_images/math/92e1d8b1f855c5af0775f4a3b7e1f681ef9bf8b3.png" alt="d_L = d (1+z) ,"/></p>
+</div><p>then the luminosity becomes simpler,</p>
+<div class="math">
+<p><img src="../_images/math/754ea84954166876c2471116de12602c379abed7.png" alt="L_0 = \frac{L_{\mathrm {abs}}}{4\pi d_L^2} ."/></p>
+</div><p>Now we come back to have a look at this luminosity.</p>
+<ul class="simple">
+<li>We can measure how much energy is passing through a unit area at a unit time, which means <strong>we can determine this luminosity directly from observations</strong>.</li>
+<li>We can <strong>predict the absolute luminosity</strong> from a star evolution model.</li>
+<li>The <img class="math" src="../_images/math/ce2f9dfb5137250cea2e464c270562d8014a762c.png" alt="d_L = d (1+z)"/> is only valid for a flat universe, with curvature term <img class="math" src="../_images/math/1ef32f667131f22b1534bebff300b9d27b7d7574.png" alt="K=0"/> in Friedmann equation.</li>
+</ul>
+<p>Then we can find out this so called luminosity distance</p>
+<div class="math">
+<p><img src="../_images/math/0b7f65a67800c8153a88a2aff3aafcb2080849f1.png" alt="d_L = \frac{  L_{\mathrm {abs}} }{ 4\pi L_0 }"/></p>
+</div><p>from some data.</p>
+</div>
+<div class="section" id="luminosity-distance-from-theory">
+<h5>13.2.1.1.2. Luminosity Distance from Theory<a class="headerlink" href="#luminosity-distance-from-theory" title="Permalink to this headline">¶</a></h5>
+<p>We don&#8217;t just do the observation for the luminosity distance itself.
+We observe to test theories.</p>
+<p>What is this distance in theory?</p>
+<div class="math">
+<p><img src="../_images/math/557bf73d6d8a018106792e26dcce1316574de80b.png" alt="d_L = d (1+z)"/></p>
+</div><p>Wait, didn&#8217;t we just mention that this is only valid for a flat universe? So we just do some extension.</p>
+<div class="math">
+<p><img src="../_images/math/193ca8c823083ce68b8aeb785142404fcd6fa576.png" alt="d_L = R(d) (1+z)"/></p>
+</div><p>where R(d) is a function of d and can be determined through geometry,</p>
+<ul class="simple">
+<li>Spherical: <img class="math" src="../_images/math/729aab76926bae12467eaa3b5690c11ad0ccfd4c.png" alt="4\pi \sin^2 d"/> ,</li>
+<li>Flat: <img class="math" src="../_images/math/8920e5a2efa27aa63a021cc71d2525a3a1d4ed20.png" alt="4\pi d"/> ,</li>
+<li>Hyperbolic: <img class="math" src="../_images/math/9531f2a4d93229e920c9ecf09907356677264ada.png" alt="4\pi \sinh^2 d"/> .</li>
+</ul>
+</div>
+<div class="section" id="nearby-objects">
+<h5>13.2.1.1.3. Nearby Objects<a class="headerlink" href="#nearby-objects" title="Permalink to this headline">¶</a></h5>
+<p>For nearby objects, we can always use flat geometry and use Taylor expansion at current time for a(t).</p>
+<p>Luminosity distance is</p>
+<div class="math">
+<p><img src="../_images/math/12abeb1cc1a35ba72ab73485ca5eb8d1735b3d2a.png" alt="d_L = d (1+z) = r a(t) (1+z) ,"/></p>
+</div><p>where r is the comoving distance and a(t) is the scale factor at time t.</p>
+<p>We know</p>
+<div class="math">
+<p><img src="../_images/math/fdf68a6c3b7850ca486f844b06e5661ae1e35234.png" alt="r = \int_t^{t_0} \frac{1}{a(t')} \mathrm d t' ."/></p>
+</div><p>So we are happy to use Taylor expansion around <img class="math" src="../_images/math/10fde25257f32317828fde97047bbe76438b6305.png" alt="t_0"/> for <img class="math" src="../_images/math/ebb82c5b9195713ee629c0c9eb68aa6f6c40af4f.png" alt="a(t)"/>, and keep only up to the second order of time. And do some substitution with</p>
+<div class="math">
+<p><img src="../_images/math/0702833454d138ba46a6cf3dcb83573325e398d3.png" alt="H_0 = \dot a(t_0)/a(t_0)
+
+q_0=\ddot a (t_0) / a(t_0)"/></p>
+</div><p>We then do the same thing on redshift</p>
+<div class="math">
+<p><img src="../_images/math/92cddfc9292e844458a6772bb64b3e8255e7244d.png" alt="z=a(t_0)/a(t) - 1 ."/></p>
+</div><p>Finally, we can find out the relation <img class="math" src="../_images/math/75a25e517600b929f7c7bad8539a00fe752eee5f.png" alt="r(z)"/>, which leads us to the result we need, <img class="math" src="../_images/math/00781079529402f94ad7fbca825d8f28e989ca92.png" alt="d_L(z) = H_0^{-1} (z - \frac12 (1+q_0) z^2)"/>.</p>
+<ul>
+<li><p class="first">For very near objects (not as near as our sun of course),</p>
+<div class="math">
+<p><img src="../_images/math/fc770e2bca5e849c9d858140ec93138d71c5de21.png" alt="d_L = H_0^{-1}z ."/></p>
+</div></li>
+</ul>
+<p><strong>This is a model independent observation and derivation. We can draw a line to represent the case when deceleration parameter is zero, lines higher than this stands for a accelerating universe while lower region show a decelerating universe.</strong></p>
+<img alt="Luminosity Distance VS Redshift" src="../_images/LuminosityDistanceVSRedshift.png" />
+<p>We can show that for a vacuum energy dominated universe, the line would go up and for a matter dominated universe, it would below the zero deceleration line.</p>
+</div>
+<div class="section" id="comment">
+<h5>13.2.1.1.4. Comment<a class="headerlink" href="#comment" title="Permalink to this headline">¶</a></h5>
+<p>In this model independent method, the only two parameters occur are Hubble constant <img class="math" src="../_images/math/f40c8273f0be47dee3d2671012eef83efae27516.png" alt="H_0"/> and deceleration parameter <img class="math" src="../_images/math/aa5fcb209117ce838a60606e8575439a2029bfca.png" alt="q_0"/> .</p>
+</div>
+</div>
+<div class="section" id="angular-diameter-distance">
+<h4>13.2.1.2. Angular Diameter Distance<a class="headerlink" href="#angular-diameter-distance" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="observation">
+<h5>13.2.1.2.1. Observation<a class="headerlink" href="#observation" title="Permalink to this headline">¶</a></h5>
+<p>Angular diameter distance is really useful if we have some standard ruler. Now assume we have a ruler d, we can find out the angle between the two ends of the ruler, by some kind of measurement.</p>
+<img alt="Angular Diameter Diatance" src="../_images/AngularDiaFormula.jpg" />
+<p>At the same time, we can use magic of math</p>
+<div class="math">
+<p><img src="../_images/math/5537ca8db776a31ef694fad11db7ef2767e3a62d.png" alt="\theta = d/D ."/></p>
+</div><p>Now as we already find out what <img class="math" src="../_images/math/52e8ed7a3ba22130ad3984eb2cd413406475a689.png" alt="\theta"/> is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance <img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/>, which is the distance between us and the standard ruler.</p>
+</div>
+<div class="section" id="theory">
+<h5>13.2.1.2.2. Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h5>
+<p>We can find out this kind of distance, which we will denote it as <img class="math" src="../_images/math/613a836750580b2351ee95da2c6de6e16d991537.png" alt="d_A"/> from now on. What is it for?</p>
+<p>A angular diameter distance is the physical distance between us and the standard ruler,</p>
+<div class="math">
+<p><img src="../_images/math/f871844123b934fa69398e70f5cabaa568f84f47.png" alt="d_A = a(t)r ."/></p>
+</div><p>We can use the same trick we used in luminosity distance calculations, and it is easy to find that</p>
+<div class="math">
+<p><img src="../_images/math/525f25422682f9659e67fc6f76011662664145d7.png" alt="d_A = H_0^{-1} (z - \frac{1}{2} (3 + q_0)z^2 ) ."/></p>
+</div><p>Again, the observation is related to only two parameters, Hubble constant <img class="math" src="../_images/math/f40c8273f0be47dee3d2671012eef83efae27516.png" alt="H_0"/> and deceleration parameter <img class="math" src="../_images/math/aa5fcb209117ce838a60606e8575439a2029bfca.png" alt="q_0"/>.</p>
+</div>
+<div class="section" id="standard-rulers">
+<h5>13.2.1.2.3. Standard Rulers<a class="headerlink" href="#standard-rulers" title="Permalink to this headline">¶</a></h5>
+<p>It is hard to imagine that we really have some standard rulers. In fact, we do. They are</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations">Baryon Acoustic Oscillation</a></li>
+<li>Sound Horizon at Recombination</li>
+</ul>
+</div>
+</div>
+<div class="section" id="galaxy-number-count">
+<h4>13.2.1.3. Galaxy Number Count<a class="headerlink" href="#galaxy-number-count" title="Permalink to this headline">¶</a></h4>
+<p>Now we can see anything that is only (simply) related to physical or comoving distance can be determined by this trick. The result is that only two cosmological parameters would come in our equation as long as we keep only upper to order two of redshift.</p>
+<p>Here another example is the galaxy number count.</p>
+<div class="math">
+<p><img src="../_images/math/7591b624e6fb366393d0f01a0f3e3c48ae582819.png" alt="\frac{\mathrm d N_g}{\mathrm d z \mathrm d\Omega} = z^2 \frac{n_0}{H_0^3}  (1-2(1+q_0) z) ."/></p>
+</div></div>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../GeneralRelativityAdv.html">12. General Relativity Revisited</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../Quantum/QuantumOptics.html">14. Quantum Optics</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, Cosmology TF.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
+    </div>
+  </body>
+</html>
