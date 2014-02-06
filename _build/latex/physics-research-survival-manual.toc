@@ -1,0 +1,99 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Preface}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Whatever}{5}{section.2.1}
+\contentsline {chapter}{\numberline {3}Vocabulary}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Basic}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Dimension}{7}{subsection.3.1.1}
+\contentsline {subsubsection}{Planck Scales}{7}{subsubsection*.3}
+\contentsline {subsubsection}{Equations and Dimensions}{8}{subsubsection*.4}
+\contentsline {paragraph}{Most Wonderful Equations That Should Never Be Forgotten}{8}{paragraph*.5}
+\contentsline {subsubsection}{Electrodynamics}{8}{subsubsection*.6}
+\contentsline {subsubsection}{Dynamics}{9}{subsubsection*.7}
+\contentsline {subsubsection}{Thermodynamics and Statistical Physics}{9}{subsubsection*.8}
+\contentsline {chapter}{\numberline {4}Mathematics}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Mathematics}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Linear Algebra}{11}{subsection.4.1.1}
+\contentsline {subsubsection}{Tensor Product Space}{11}{subsubsection*.9}
+\contentsline {paragraph}{Inner Product}{11}{paragraph*.10}
+\contentsline {paragraph}{Operators Applied to Tensor Product}{11}{paragraph*.11}
+\contentsline {subsection}{\numberline {4.1.2}Differential Geometry}{11}{subsection.4.1.2}
+\contentsline {subsubsection}{Metric}{11}{subsubsection*.12}
+\contentsline {paragraph}{Definitions}{11}{paragraph*.13}
+\contentsline {paragraph}{How to calculate the metric}{12}{paragraph*.14}
+\contentsline {subsubsection}{Connection}{13}{subsubsection*.16}
+\contentsline {subsubsection}{Gradient, Curl, Divergence, etc}{13}{subsubsection*.17}
+\contentsline {paragraph}{Gradient}{13}{paragraph*.18}
+\contentsline {paragraph}{Curl}{13}{paragraph*.19}
+\contentsline {paragraph}{Divergence}{13}{paragraph*.20}
+\contentsline {subsection}{\numberline {4.1.3}Linear Algebra}{14}{subsection.4.1.3}
+\contentsline {subsubsection}{Basic Concepts}{14}{subsubsection*.21}
+\contentsline {paragraph}{Trace}{14}{paragraph*.22}
+\contentsline {subsubsection}{Technique}{14}{subsubsection*.23}
+\contentsline {paragraph}{Inverse of a matrix}{14}{paragraph*.24}
+\contentsline {subsection}{\numberline {4.1.4}Differential Equations}{15}{subsection.4.1.4}
+\contentsline {subsubsection}{Standard Procedure}{15}{subsubsection*.25}
+\contentsline {subsubsection}{Tricky}{15}{subsubsection*.26}
+\contentsline {paragraph}{WKB Approximation}{15}{paragraph*.27}
+\contentsline {section}{\numberline {4.2}Statistics}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Famous Distributions}{15}{subsection.4.2.1}
+\contentsline {chapter}{\numberline {5}Fundamental Physics}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Classical Mechanics}{17}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Oscillators}{17}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Hamiltonian Dynamics}{19}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Quantum Mechanics}{19}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Quantum Mechanics Framework}{19}{subsection.5.2.1}
+\contentsline {subsubsection}{What're the most important tricks in QM calculations?}{19}{subsubsection*.28}
+\contentsline {subsubsection}{First Three Postulates}{19}{subsubsection*.29}
+\contentsline {subsubsection}{Position and Momentum Space}{20}{subsubsection*.30}
+\contentsline {paragraph}{Position Space}{21}{paragraph*.31}
+\contentsline {paragraph}{Momentum Space}{22}{paragraph*.32}
+\contentsline {subparagraph}{Postulate IV}{22}{subparagraph*.33}
+\contentsline {subparagraph}{Momentum Space}{22}{subparagraph*.34}
+\contentsline {subsection}{\numberline {5.2.2}Quantum in 1D}{24}{subsection.5.2.2}
+\contentsline {subsubsection}{General}{24}{subsubsection*.35}
+\contentsline {paragraph}{Infinite Barriers}{24}{paragraph*.36}
+\contentsline {subparagraph}{Math}{24}{subparagraph*.37}
+\contentsline {subparagraph}{Setup}{25}{subparagraph*.38}
+\contentsline {subparagraph}{Solve the Problem}{25}{subparagraph*.39}
+\contentsline {subparagraph}{Physics}{26}{subparagraph*.40}
+\contentsline {subparagraph}{Some General Properties}{27}{subparagraph*.41}
+\contentsline {subsection}{\numberline {5.2.3}Parity}{27}{subsection.5.2.3}
+\contentsline {subsubsection}{Passive and Active Transformations}{27}{subsubsection*.42}
+\contentsline {subsubsection}{Parity}{28}{subsubsection*.43}
+\contentsline {paragraph}{Definition}{28}{paragraph*.44}
+\contentsline {paragraph}{Properties}{28}{paragraph*.45}
+\contentsline {subsection}{\numberline {5.2.4}Classical Limit of QM}{29}{subsection.5.2.4}
+\contentsline {subsubsection}{Ehrenfest's Theorem}{29}{subsubsection*.46}
+\contentsline {paragraph}{Simple Example of Ehrenfest's Theorem}{29}{paragraph*.47}
+\contentsline {paragraph}{What does $-\left < V'(\mathaccentV {hat}05Ex)\right >$ mean}{30}{paragraph*.48}
+\contentsline {subsubsection}{Picture}{30}{subsubsection*.49}
+\contentsline {paragraph}{Schr\IeC {\"o}dinger \& Heisenberg Pictures}{31}{paragraph*.50}
+\contentsline {subparagraph}{Schr\IeC {\"o}dinger Picture}{31}{subparagraph*.51}
+\contentsline {subparagraph}{Heisenberg Picture}{31}{subparagraph*.52}
+\contentsline {paragraph}{Ehrenfest's Theorem in Heisenberg Picture}{31}{paragraph*.53}
+\contentsline {subparagraph}{Example of Ehrenfest's Theorem in Heisenberg Picture}{32}{subparagraph*.54}
+\contentsline {subsubsection}{Conservation}{32}{subsubsection*.55}
+\contentsline {paragraph}{What is the nature of time dependence}{33}{paragraph*.56}
+\contentsline {subsection}{\numberline {5.2.5}Harmonic Oscillators}{33}{subsection.5.2.5}
+\contentsline {subsubsection}{Why Harmonic Oscillators}{33}{subsubsection*.57}
+\contentsline {subsubsection}{Standard Solution}{34}{subsubsection*.58}
+\contentsline {paragraph}{Dimension Schrodinger Equation}{34}{paragraph*.59}
+\contentsline {paragraph}{Take Limits}{34}{paragraph*.60}
+\contentsline {paragraph}{Polynomial Method}{35}{paragraph*.61}
+\contentsline {paragraph}{Terminate The Series}{35}{paragraph*.62}
+\contentsline {paragraph}{Complete Series}{35}{paragraph*.63}
+\contentsline {subsubsection}{Tricky Solution}{35}{subsubsection*.64}
+\contentsline {subsubsection}{Semiclassical}{37}{subsubsection*.65}
+\contentsline {paragraph}{Classical}{37}{paragraph*.66}
+\contentsline {paragraph}{Quantum semiclassical}{38}{paragraph*.67}
+\contentsline {section}{\numberline {5.3}Quantum Mechanics 2}{39}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Tensor Product Space}{39}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Density Matrix}{39}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Angular Momentum}{39}{subsection.5.3.3}
+\contentsline {subsubsection}{Angular Momentum}{39}{subsubsection*.68}
+\contentsline {paragraph}{Definition of Angular Momentum}{40}{paragraph*.69}
+\contentsline {paragraph}{Eigenstates of Angular Momentum}{41}{paragraph*.70}
+\contentsline {section}{\numberline {5.4}Quantum Mechanics 3}{42}{section.5.4}
+\contentsline {section}{\numberline {5.5}Statistical Physics}{42}{section.5.5}
+\contentsline {chapter}{\numberline {6}License}{43}{chapter.6}

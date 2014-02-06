@@ -126,21 +126,22 @@ etc. Then collect the terms in formula :eq:`EQrelativityMetricPoint` is we get :
 Once we reach here, the component (:math:`e_r ,e_\theta, e_\phi`) of the point under the spherical coordinates system basis (:math:`\hat e_r, \hat e_\theta, \hat e_\phi`) at this point are clear, i.e.,
 
 .. math::
-   \begin{eqnarray}
-    \mathrm d\vec x&=&\hat e_r\mathrm d r+\hat e_\theta r\mathrm d \theta+\hat e_\phi r\sin\theta \mathrm d\phi \\
-    &=&e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi
-   \end{eqnarray}
+    \mathrm d\vec x = \hat e_r\mathrm d r+\hat e_\theta r\mathrm d \theta+\hat e_\phi r\sin\theta \mathrm d\phi \\
+     = e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi
+
 
 In this way, the metric tensor for spherical coordinates is 
 
+
+
+
+
 .. math::
-   \begin{equation}
-    g_{\mu\nu}=(e_\mu\cdot e_\nu)=\left(\begin{matrix}
-    1 &0&0 \\
-    0& r^2&0 \\
-    0&0& r^2\sin^2\theta \\
-    \end{matrix}\right)
-   \end{equation}
+   g_{\mu\nu}=(e_\mu\cdot e_\nu) = \begin{pmatrix}
+   1 & 0 & 0 \\
+   0 & r^2 &  0 \\
+   0 & 0 & r^2 \sin^2\theta \end{pmatrix}
+
 
 
 
@@ -180,20 +181,19 @@ Curl
 For an anti-symmetric tensor, :math:`a_{\mu\nu}=-a_{\nu\mu}`
 
 .. math::
-   \begin{eqnarray}
-      \mathrm{Curl}_{\mu\nu\tau}(a_{\mu\nu})&\equiv& a_{\mu\nu;\tau}+a_{\nu\tau;\mu}+a_{\tau\mu;\nu} \\
-      &=&a_{\mu\nu,\tau}+a_{\nu\tau,\mu}+a_{\tau\mu,\nu}
-   \end{eqnarray}
+      \mathrm{Curl}_{\mu\nu\tau}(a_{\mu\nu})  \equiv  a_{\mu\nu;\tau}+a_{\nu\tau;\mu}+a_{\tau\mu;\nu} \\
+       = a_{\mu\nu,\tau}+a_{\nu\tau,\mu}+a_{\tau\mu,\nu}
+
 
 
 Divergence
 """""""""""""
 
 .. math::
-   \begin{eqnarray}
-    \mathrm{div}_\nu(a^{\mu\nu})&\equiv& a^{\mu\nu}_{\phantom{\mu\nu};\nu}=\frac{\partial a^{\mu\nu}}{\partial x^\nu}+\Gamma^\mu_{\nu\tau}a^{\tau\nu}+\Gamma^\nu_{\nu\tau}a^{\mu\tau} \\
-    &=&\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})+\Gamma^\mu_{\nu\lambda}a^{\nu\lambda}
-   \end{eqnarray}
+    \mathrm{div}_\nu(a^{\mu\nu})&\equiv   a^{\mu\nu}_{\phantom{\mu\nu};\nu} \\
+    & = \frac{\partial a^{\mu\nu}}{\partial x^\nu}+\Gamma^\mu_{\nu\tau}a^{\tau\nu}+\Gamma^\nu_{\nu\tau}a^{\mu\tau} \\
+    & = \frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})+\Gamma^\mu_{\nu\lambda}a^{\nu\lambda}
+
 
 For an anti-symmetric tensor
 
@@ -243,11 +243,10 @@ Einstein equation is
 The trace is 
 
 .. math::
-   \begin{eqnarray}
-   g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R&=&8\pi G g^{ab}T_{ab} \\
-   \Rightarrow R-\frac{1}{2} 4 R &=& 8\pi G T \\
-   \Rightarrow -R&=&8\pi GT
-   \end{eqnarray}
+   g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R &= 8\pi G g^{ab}T_{ab} \\
+   \Rightarrow R-\frac{1}{2} 4 R  &=  8\pi G T \\
+   \Rightarrow -R &= 8\pi GT
+
 
 
 Technique

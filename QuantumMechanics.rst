@@ -57,11 +57,10 @@ First Three Postulates
   Let's find out. The only thing we know about the evolution of a state vector is the third postulate up there.
 	
   .. math::
-     \begin{eqnarray}
-     i\hbar \frac{\d }{\d t}\ket{\psi(t)} &=& \hat H \ket{\psi(t)} \\\\
-     i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &=& \hat H \hat U \ket{\psi(t_0)} \\\\
-     i\hbar \frac{\d }{\d t}\hat U &=& \hat H \hat U
-     \end{eqnarray}
+     i\hbar \frac{\d }{\d t}\ket{\psi(t)} & =  \hat H \ket{\psi(t)} \\
+     i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} & =  \hat H \hat U \ket{\psi(t_0)} \\
+     i\hbar \frac{\d }{\d t}\hat U & =  \hat H \hat U
+
  
   
   Looks familiar? This just gives us a exponential result, **if the Hamiltonian is time independent**.
@@ -73,11 +72,10 @@ First Three Postulates
   This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, { :math:`\ket{\epsilon_i}` },
 
   .. math::
-     \begin{eqnarray}
- 	 \hat U \ket{\phi} &=& e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   \\\\
-     \hat U \ket{\phi} &=& \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}  \\\\
-	 \hat U \ket{\phi} &=& \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}
-     \end{eqnarray}
+ 	   \hat U \ket{\phi} & =  e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   \\
+     \hat U \ket{\phi} & =  \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}  \\
+	   \hat U \ket{\phi} & =  \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}
+
  	
   And we are going to use 
 
@@ -122,25 +120,27 @@ Position Space
 
 	* Orthonormal: 
 	  
-	  .. math:: \braket{x}{x'}=\delta(x-x')
+	  .. math::
+       \braket{x}{x'}=\delta(x-x')
 
 	* Complete: 
 
-	  .. math:: \int \braket{x'}{x'} \d x' = \mathbb{I} 
+	  .. math::
+       \int \braket{x'}{x'} \d x' = \mathbb{I} 
 
 2. Define position operator.
 	
-   .. math:: \hat x \ket{x} = x \ket{x} 
+   .. math::
+      \hat x \ket{x} = x \ket{x} 
 
    And in {:math:`\ket{x}`} basis, this operator becomes a function, which is
 	 
    .. math::
-      \begin{eqnarray}
-      &&\bra{x}\hat x \ket{x'}  \\\\
-      &=& \left(\bra{x}\hat x\right)\ket{x'} \\\\
-      &=& x \braket{x}{x'} \\\\
-      &=& x \delta(x-x')
-      \end{eqnarray}
+      &\bra{x}\hat x \ket{x'}  \\
+      &= \left(\bra{x}\hat x\right)\ket{x'} \\
+      &= x \braket{x}{x'} \\
+      &= x \delta(x-x')
+
 
 3. Find state vector in {:math:`\ket{x}`} basis.
    
@@ -154,12 +154,11 @@ Position Space
 4. Calculate probability of a measurement. Taking :math:`\hat x` as an example.
    
    .. math::
-      \begin{eqnarray}
-      &&\bra{\psi} \hat x \ket{\psi} \\\\
-      &=& \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\\\
-      &=& \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
-      &=& \int \left| \psi(t,x) \right|^2 x \d x
-      \end{eqnarray}								
+      &\bra{\psi} \hat x \ket{\psi} \\
+      &= \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\
+      &= \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
+      &= \int \left| \psi(t,x) \right|^2 x \d x
+
 	
 
 
@@ -196,14 +195,12 @@ Momentum Space
    **Let's talk physics.** What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {:math:`\ket{x}`} basis.
 
    .. math::
+      &\bra{x} \hat p \ket{\psi} \\
+      & =  \iint \braket{x}{x'} \bra{x'} \hat p \ket{x''}\braket{x''}{\psi} \d x' \d x''  \\
+      & =  \int \bra{x}\hat p \ket{x''}\psi(t,x'') \d x'' \\
+      & =  \int \left( -i\hbar \frac{\d}{\d x} \delta(x-x') \psi(t,x') \right) \d x' \\
+      & =  \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x' 
 
-      \begin{eqnarray}
-      &&\bra{x} \hat p \ket{\psi} \\\\
-      &=& \iint \braket{x}{x'} \bra{x'} \hat p \ket{x''}\braket{x''}{\psi} \d x' \d x''  \\\\
-      &=& \int \bra{x}\hat p \ket{x''}\psi(t,x'') \d x'' \\\\
-      &=& \int \left( -i\hbar \frac{\d}{\d x} \delta(x-x') \psi(t,x') \right) \d x' \\\\
-      &=& \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x' 
-      \end{eqnarray}
 	
    **Integrate by parts, we will find the expression.** (I am having a problem finding the right answer.)
 	
@@ -222,11 +219,10 @@ Momentum Space
    where :math:`\braket{x}{p}` is the eigenstates in {:math:`\ket{x}`} basis, we call it :math:`\phi_p(x)`.
 
    .. math::
-      \begin{eqnarray}
-      \bra{x}\hat p\ket{p} &=& p \phi_p(x)    \\\\
-      \int \bra{x}\hat p \ket{x'}\braket{x'}{p}\d x' &=& p \phi_p(x)    \\\\
-      -i\hbar \frac{\d }{\d x} \phi_p(x) &=& p \phi_p(x)
-      \end{eqnarray}
+      \bra{x}\hat p\ket{p} & =  p \phi_p(x)    \\
+      \int \bra{x}\hat p \ket{x'}\braket{x'}{p}\d x' & =  p \phi_p(x)    \\
+      -i\hbar \frac{\d }{\d x} \phi_p(x) & =  p \phi_p(x)
+
 	
    The solution is
    
@@ -253,10 +249,9 @@ Momentum Space
    But that is too abstract to use, we can find the expression in {:math:`\ket{x}`} basis.
    
    .. math::
-      \begin{eqnarray}
-      \bra{x}\hat U\ket{x} &=& \int e^{-i p^2 t/2 m \hbar} \braket{x}{p}\braket{p}{x} \d p    \\\\
-      &=& \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p    
-      \end{eqnarray}
+      \bra{x}\hat U\ket{x} & =  \int e^{-i p^2 t/2 m \hbar} \braket{x}{p}\braket{p}{x} \d p    \\
+      & =  \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p    
+
 
 
 
@@ -307,12 +302,10 @@ Setup
 * Potential in a box
 
   .. math::
-     \begin{eqnarray}
-     V(x)=\cases{
-     0, & 0< x <L \\\\
-     \infty, & \text{Other}
-     }
-     \end{eqnarray}
+     V(x) = & 0,  0< x <L \\
+      & \infty, \text{Other} 
+     
+
 
 Solve the Problem
 ~~~~~~~~~~~~~~~~~~~
@@ -423,7 +416,7 @@ Passive and Active Transformations
 
 Generally, there are two ways of interpreting a transformation.
 
-.. image:: QMFig/transformations.png
+.. image:: qmimg/transformations.png
    :alt: Transformations
 
 Here in QM, passive means transform the operator :math:`\hat \Omega`, while active means change the state :math:`\ket{\psi}`. Suppose we have a system :math:`\ket{\psi}`, an operator :math:`\hat \Omega`, a transformation :math:`\hat U`.
@@ -536,12 +529,10 @@ Schrödinger equation and its adjoint
 For any observable :math:`\hat \Omega`,
 
 .. math::
+   \frac{\d }{\d t}\left<\hat \Omega \right > & =  \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\
+   & =  \frac{1}{i\hbar} \left ( - \bra{\psi(t)} \hat H \hat\Omega \ket{\psi(t)} +\bra{\psi(t)} \hat\Omega \hat H \ket{\psi(t)} \right) + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} \\
+   & =  \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}
 
-   \begin{eqnarray}
-   \frac{\d }{\d t}\left<\hat \Omega \right > &=& \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\\\
-   &=& \frac{1}{i\hbar} \left ( - \bra{\psi(t)} \hat H \hat\Omega \ket{\psi(t)} +\bra{\psi(t)} \hat\Omega \hat H \ket{\psi(t)} \right) + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} \\\\
-   &=& \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}
-   \end{eqnarray}
 
 This is called Ehrenfest's Theorem.
 
@@ -563,20 +554,18 @@ We need to figure some commutators first.
 1. Position average
 
    .. math::
-      \begin{eqnarray}
-      \frac{\d }{\d t} \left< \hat x \right> &=& \frac{1}{i\hbar} \bra{\psi(t)} \left[ \hat x, \hat H \right]\ket{\psi(t)} \\\\
-      &=&  \frac{\left< \hat p \right>}{m}
-      \end{eqnarray}
+      \frac{\d }{\d t} \left< \hat x \right> & =  \frac{1}{i\hbar} \bra{\psi(t)} \left[ \hat x, \hat H \right]\ket{\psi(t)} \\
+      & =   \frac{\left< \hat p \right>}{m}
+
    
    We are familiar with this in classical mechanics.
 2. Momentum average
    
    .. math::
-      \begin{eqnarray}
-      \frac{\d}{\d t} \left<\hat p\right> &=& \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\\\
-      &=& \frac{1}{i\hbar} \bra{\psi(t)}  (-i\hbar V'(\hat x))  \ket{\psi(t)}  \\\\
-      &=& -\left< V'(\hat x) \right>
-      \end{eqnarray}
+      \frac{\d}{\d t} \left<\hat p\right> & =  \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\
+      & =  \frac{1}{i\hbar} \bra{\psi(t)}  (-i\hbar V'(\hat x))  \ket{\psi(t)}  \\
+      & =  -\left< V'(\hat x) \right>
+
 
    In classical mechanics, the derivative of potential is force. And the result is just like Newton's 2n Law except the right hand side is not exactly like a force which should be :math:`-\frac{\d}{\d x} \left< V(\hat x) \right>`.
 
@@ -587,10 +576,9 @@ What does :math:`-\left< V'(\hat x)\right>` mean
 Suppose the potential area is fairly small and distributed around some coordinate :math:`x_0=\left< \hat x \right>`, we can do Taylor expansion around :math:`x_0`.
 
 .. math::
-   \begin{eqnarray}
-   < V(\hat x)> &=& V(x_0)   +  V'(x_0) < (x - x_0)> + V''(x_0)<(x-x_0)^2> /2 + \cdots \\\\
-   &=& V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots 
-   \end{eqnarray}
+   < V(\hat x)> & =  V(x_0)   +  V'(x_0) < (x - x_0)> + V''(x_0)<(x-x_0)^2> /2 + \cdots \\
+   & =  V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots 
+
 
 If the uncertainty is small enough, every term except the first one becomes small. So to the lowest order, average of potential is approximately the potential at :math:`x_0`.
 
@@ -637,12 +625,10 @@ and of course the initial is the same with Schrödinger Picture,
 How do we relate to Heisenberg Picture to Schrödinger Picture? Through investigation of observables. We should have the same observation results in both Pictures.
 
 .. math::
-   
-   \begin{eqnarray}
-   {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &=& {} _ S \bra{\psi} \hat \Omega _ S \ket{\psi} _ S \\\\
-   {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &=& {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\\\ 
-   \hat \Omega _ H &=& \hat U^\dagger \hat \Omega _ S \hat U
-   \end{eqnarray}
+   {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H & =  {} _ S \bra{\psi} \hat \Omega _ S \ket{\psi} _ S \\
+   {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H & =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\ 
+   \hat \Omega _ H & =  \hat U^\dagger \hat \Omega _ S \hat U
+
  
  So the operators change with time in Heisenberg Picture.
  
@@ -889,35 +875,34 @@ Tricky Solution
 Find out the characteristic length and energy
 
 .. math::
-   \eta = \sqrt{\frac{\hbar }{m\omega }} \\\\
-   \epsilon = \hbar \omega \\\\
+   \eta = \sqrt{\frac{\hbar }{m\omega }} \\
+   \epsilon = \hbar \omega \\
    \omega = \sqrt{\frac{k}{m}}
 
 One way to get the intrinsic length without writing down the dimensions of each quantity is to use the following relation
 
 .. math::
-   \left[ E \right] = \left[ m \omega^2 \hat x^2 \right] \\\\
+   \left[ E \right] = \left[ m \omega^2 \hat x^2 \right] \\
    \hbar \omega = m \omega^2 \eta^2 \\\
    \eta = \sqrt{ \frac{\hbar}{m\omega} }
 
 Or if we are given the Hamiltonian in terms of :math:`k`,
 
 .. math::
-   \left[ \frac{\hat p^2}{2m} \right] = \left[ k \hat x^2 \right] \\\\
-   \frac{\hbar^2 / \eta^2 }{m} = k\eta^2 \\\\
+   \left[ \frac{\hat p^2}{2m} \right] = \left[ k \hat x^2 \right] \\
+   \frac{\hbar^2 / \eta^2 }{m} = k\eta^2 \\
    \eta = \sqrt{\hbar}{ \sqrt{m k} } = \sqrt{ \hbar }{ m \omega }
 
 
 Rewrite the Hamiltonian
 
 .. math::
-   \begin{eqnarray}
-   \hat H &=& \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\\\
-   &=& \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\\\
-   &=& \frac 1 2 \hbar \omega \left( \frac{\hat x}{\eta} - i \frac{\hat p}{\hbar/\eta}   \right) \left( \frac{\hat x}{\eta} + i\frac{\hat p}{\hbar/\eta}  \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\\\
-   &=& \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\\\
-   &=& \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)
-   \end{eqnarray}
+   \hat H & =  \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\
+   & =  \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\
+   & =  \frac 1 2 \hbar \omega \left( \frac{\hat x}{\eta} - i \frac{\hat p}{\hbar/\eta}   \right) \left( \frac{\hat x}{\eta} + i\frac{\hat p}{\hbar/\eta}  \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\
+   & =  \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\
+   & =  \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)
+
 
 Now we can define :math:`\hat a^\dagger \hat a = \hat N`, which is just like an operator for (energy) quanta numbers.
 
@@ -925,7 +910,7 @@ Now we can define :math:`\hat a^\dagger \hat a = \hat N`, which is just like an 
 An impoertan relation is 
 
 .. math::
-   \left[\hat a, \hat a^\dagger\right] = 1 \\\\
+   \left[\hat a, \hat a^\dagger\right] = 1 \\
    \left[\hat a, \hat N\right] = \hat a
 
 The eigen equation for this weird energy quanta number operator is
@@ -936,7 +921,7 @@ The eigen equation for this weird energy quanta number operator is
 To find out the eigen state of :math:`\hat a` and :math:`\hat a^\dagger`, we try this,
 
 .. math::
-   \hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\\\
+   \hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\
    \hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})
 
 This means :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are also eigen states of :math:`hat N`.
@@ -944,7 +929,7 @@ This means :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are also ei
 The next step is very crucial. Since :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are eigen states of :math:`hat N`, we know that
 
 .. math::
-   \hat a \ket{n} = C1 \ket{n} \\\\
+   \hat a \ket{n} = C1 \ket{n} \\
    \hat a^\dagger \ket{n} = C2 \ket{n}
 
 
@@ -953,7 +938,7 @@ Then our next step is to find out what are :math:`C1` and :math:`C2` exactly.
 They way of finding them is to use invariant quantities, such as the inner product. Here we use average of :math:`\hat N` operator.
 
 .. math::
-   \hat a \ket{n} = \sqrt n \ket{n-1}  \\\\ 
+   \hat a \ket{n} = \sqrt n \ket{n-1}  \\ 
    \hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}
 
 Final step is to constrain on :math:`n`, which should be integrals. This is true because we need a cut off for the eigen equation of :math:`\hat N`, whose avarage is n and it should be non negative.
@@ -969,7 +954,7 @@ leads to :math:`n\ge 0`. To get this proper cut off, :math:`n` should be integer
 n can go to negative numbers. If n is positive integer, 
 
 .. math::
-   \hat a \ket{1} = \ket{0}  \\\\
+   \hat a \ket{1} = \ket{0}  \\
    \hat a \ket{0} = 0 \ket{0}
 
 show an cut off at 0.
@@ -1040,20 +1025,20 @@ Take the hermitian conjugate,
 With these two operators, we can find out the average of :math:`\hat x` and :math:`\hat p` because
 
 .. math::
-   \hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\\\
+   \hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\
    \hat p = \frac{\hbar}{\eta} i \frac{1}{\sqrt 2} \left(\hat a^\dagger - \hat a \right) ,
 
 we have
 
 .. math::
-   \avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\\\
+   \avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\
    \avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt {2} } \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)
 
 
 We can have a look at these two averages,
 
 .. math::
-   \frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\\\
+   \frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\
    \frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]
 
 It is obvious that the average reduces to classical case if :math:`\alpha_0 = \alpha_0^*`. **But this is too strong for a semiclassical limit.**

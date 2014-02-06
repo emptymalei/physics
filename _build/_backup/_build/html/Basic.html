@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2. Basic &mdash; Statistical Mechanics Notes</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="Statistical Mechanics Notes" href="index.html" />
+    <link rel="next" title="3. Mathematics" href="math.html" />
+    <link rel="prev" title="1. Whatever" href="preface.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>Statistical Mechanics Notes</span></a></h1>
+        <h2 class="heading"><span>2. Basic</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="preface.html">1. Whatever</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="math.html">3. Mathematics</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="basic">
+<h1>2. Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dimension">
+<h2>2.1. Dimension<a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h2>
+<p>How to find the relationship between two quantities? For example, what is the dimensional relationship between length and mass.</p>
+<div class="line-block">
+<div class="line">* Plank constant: <img class="math" src="_images/math/b054f60857458840f72b787b98f85664a39dd972.png" alt="\mathrm{ \hbar \sim [Energy]\cdot [Time] \sim [Mass]\cdot [Length]^2 \cdot [Time]^{-1} }"/></div>
+<div class="line">* Speed of light in vacuum: <img class="math" src="_images/math/6bcb2352b06914bd91dd7cba8f26af037a745352.png" alt="\mathrm{ c\sim [Length]\cdot [Time]^{-1} }"/></div>
+<div class="line">* Gravitational constant: <img class="math" src="_images/math/11f6cfd9b043b9cb40703f8759d3928a9b284cd7.png" alt="\mathrm{  G \sim [Length]^3\cdot [Mass]^{-1} \cdot [Time]^{-2} }"/></div>
+</div>
+<p>Then it is easy to find that a combination of <img class="math" src="_images/math/37a62513f6f41ce134b7191a4da070ca24a2dd78.png" alt="c/\hbar"/> cancels the dimension of mass and leaves the inverse of length. That is</p>
+<div class="math">
+<p><img src="_images/math/ed08b080ce802ce6614870806487c089009c0eb8.png" alt="[ L ]^2 =\left[ \frac{\hbar G}{c^3} \right]"/></p>
+</div><div class="math">
+<p><img src="_images/math/0133483a6add1e36a474a8198327b915da8b8e6d.png" alt="[ M ]^2 = \left [ \frac{\hbar c}{ G } \right]"/></p>
+</div><div class="math">
+<p><img src="_images/math/d7cdb0df438d0d60edcb20ffd907ea72b2cfdbe6.png" alt="[T]^2 = \left[ \frac{ \hbar G }{ c^5 }  \right]"/></p>
+</div><p>As we can see, it is possible to use <img class="math" src="_images/math/ea3b5ebc3c494fa1d2d3c98f095214c07c1ebafb.png" alt="c=1, \hbar = 1, G =1"/> because we can always restore the units in a deterministic way. <img class="math" src="_images/math/6d6e6550901bd228ecd50641c2f1091776574e26.png" alt="c, \hbar, G"/> are function of mass, length, time, and with <img class="math" src="_images/math/e2c59f8a73f6e16bd6ffe8e48e833a41a83e3ea6.png" alt="c = \hbar = G=1"/> give us only one solution of mass, length and time: three equations + three variables.</p>
+<div class="section" id="planck-scales">
+<h3>2.1.1. Planck Scales<a class="headerlink" href="#planck-scales" title="Permalink to this headline">¶</a></h3>
+<p>As we have seen, the three constant can make up a length scale, a mass scale, a time scale. Then what are they?</p>
+<p>Planck length:</p>
+<div class="math">
+<p><img src="_images/math/222a69dd56085eda27a7fdf8140b18f3fcf7892f.png" alt="l_P = \sqrt{ \frac{ \hbar G }{ c^3 } }"/></p>
+</div><p>Planck mass:</p>
+<div class="math">
+<p><img src="_images/math/a03407e057320f275af169590e6f92f09b49c992.png" alt="m_P = \sqrt{ \frac{ \hbar c }{ G } }"/></p>
+</div><p>Planck time:</p>
+<div class="math">
+<p><img src="_images/math/44e8630f91429435644a2423307d1d4a624a73de.png" alt="t_P = \sqrt{ \frac{\hbar G}{ c^5 } }"/></p>
+</div></div>
+<div class="section" id="equations-and-dimensions">
+<h3>2.1.2. Equations and Dimensions<a class="headerlink" href="#equations-and-dimensions" title="Permalink to this headline">¶</a></h3>
+<p>Before solving equations, it is good to reform them in to dimensionless ones.</p>
+<p>To make the equation dimensionless doesn&#8217;t mean we can just divide arbitary terms on both sides. We need to find out the characteristic quantity of the system. For example, we can divide by <img class="math" src="_images/math/7d7346844a1730bb42e45c0d874a01932aa923d9.png" alt="\hbar\omega"/> on both sides of Schrodinger equation for Harmonic Oscillators. This is a good step because <img class="math" src="_images/math/7d7346844a1730bb42e45c0d874a01932aa923d9.png" alt="\hbar\omega"/> is the characteristic energy scale of system. At the same time, we can make the length terms dimensionless using the characteristic length. DO NOT use an arbitary length!</p>
+<div class="section" id="most-wonderful-equations-that-should-never-be-forgotten">
+<h4>2.1.2.1. Most Wonderful Equations That Should Never Be Forgotten<a class="headerlink" href="#most-wonderful-equations-that-should-never-be-forgotten" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="electrodynamics">
+<h3>2.1.3. Electrodynamics<a class="headerlink" href="#electrodynamics" title="Permalink to this headline">¶</a></h3>
+<div class="math">
+<p><img src="_images/math/88d9ba7631927eab4b9823e0edb32e3508433ae9.png" alt="\nabla\times\vec E=-\partial_t \vec B"/></p>
+</div><div class="math">
+<p><img src="_images/math/58be4a03c27e12d3b7cd261de605c830aa0c3b0f.png" alt="\nabla\times\vec H=\vec J+\partial_t \vec D"/></p>
+</div><div class="math">
+<p><img src="_images/math/e56fbdd01dd602d176bb471a3ce1f012ef45c64e.png" alt="\nabla\cdot \vec D=\rho"/></p>
+</div><div class="math">
+<p><img src="_images/math/b4a4824f25ba6a64381fa5afdeea675930b43071.png" alt="\nabla\cdot \vec B=0"/></p>
+</div><p>For linear meterials,</p>
+<div class="math">
+<p><img src="_images/math/a6a67be89859cc7d09404b431ff4f4f4c5991de3.png" alt="\vec D=\epsilon \vec E"/></p>
+</div><div class="math">
+<p><img src="_images/math/a2ccf7e3544ad959c644074cff3516d21281e411.png" alt="\vec B=\mu \vec H"/></p>
+</div><div class="math">
+<p><img src="_images/math/b7f89c7f890e6b68a69155c520c20c02287f12ae.png" alt="\vec J= \sigma \vec E"/></p>
+</div></div>
+<div class="section" id="dynamics">
+<h3>2.1.4. Dynamics<a class="headerlink" href="#dynamics" title="Permalink to this headline">¶</a></h3>
+<p>Hamilton conanical equations</p>
+<div class="math">
+<p><img src="_images/math/3059189a9ae4ea7739b96da996cda9b276afbe70.png" alt="\dot q_i = \frac{\partial H}{\partial p_i}"/></p>
+</div><div class="math">
+<p><img src="_images/math/649b85bd4a70f4e25470018c529c7ec66bdb2851.png" alt="\dot p_i = - \frac{\partial H}{\partial q_i}"/></p>
+</div></div>
+<div class="section" id="thermodynamics-and-statistical-physics">
+<h3>2.1.5. Thermodynamics and Statistical Physics<a class="headerlink" href="#thermodynamics-and-statistical-physics" title="Permalink to this headline">¶</a></h3>
+<p>Liouville&#8217;s Law</p>
+<div class="math">
+<p><img src="_images/math/8b584b571847cee351b8719c297dddcfad62fd58.png" alt="\frac{\mathrm d \rho}{\mathrm d t}\equiv \frac{\partial \rho}{\partial t} + \sum_i \left[ \frac{\partial \rho}{\partial q_i}\dot q_i + \frac{\partial \rho}{\partial p_i}\dot p_i \right] = 0"/></p>
+</div></div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="preface.html">1. Whatever</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="math.html">3. Mathematics</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, Cosmology TF.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
+    </div>
+  </body>
+</html>

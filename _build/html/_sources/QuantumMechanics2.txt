@@ -110,7 +110,7 @@ Eigenstates of Angular Momentum
 
 As we have proposed, the eigenstates of both :math:`\hat J_z` and :math:`\hat{\vec J}^2` are :math:`\ket{j,m}`, where :math:`j=0,1,2,\cdots` and :math:`m=-j,-j+1,\cdots, j-1,j`.
 
-We can also find out the wave function in :math:`\{\ket{\theta,\phi\}` basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.
+We can also find out the wave function in :math:`{\ket{\theta,\phi } }` basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.
 
 .. math::
    \int \mathrm d \Omega \braket{\theta',\phi'}{\theta,\phi} = \delta(\cos\theta'-\cos\theta,\phi'-\phi)

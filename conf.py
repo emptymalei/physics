@@ -25,9 +25,10 @@ sys.path.append(os.path.abspath('exts'))
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.pngmath', "math_dollar"]
 
+# extensions = ['sphinx.ext.mathjax', "math_dollar"]
+
 latex_preamble = r"""
 \usepackage{dsfont}
-\usepackage{braket}
 \usepackage{slashed}
 \usepackage{yfonts}
 \usepackage{mathrsfs}
@@ -60,6 +61,10 @@ latex_preamble = r"""
 \newcommand{\bfg}{\mbox{\boldmath $g$}}
 \newcommand{\bfc}{\mbox{\boldmath $c$}}
 \newcommand{\bfxi}{\mbox{\boldmath $\xi$}}
+\newcommand{\bra}[1]{\left\langle #1\right|}
+\newcommand{\ket}[1]{\left| #1\right\rangle}
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
+\newcommand{\avg}[1]{\left< #1 \right>}
 
 
 %\def\back{\!\!\!\!\!\!\!\!\!\!}
@@ -158,14 +163,8 @@ latex_preamble = r"""
 \def\atan{\hbox{atan}}
 """
 
-
 pngmath_latex_preamble = latex_preamble
 latex_elements = {"preamble": latex_preamble}
-
-# math alignment support
-pngmath_latex_preamble=r'\usepackage[active]{preview}' # + other custom stuff for inline math, such as non-default math fonts etc.
-pngmath_use_preview=True
-
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -181,7 +180,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Physics Research Survival Manual'
-copyright = u'2014, Cosmology TF'
+copyright = u'2014, Lei Ma'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -247,7 +246,7 @@ html_theme = 'haiku'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Statistical Mechanics Notes'
+html_title = 'Research Survival Manual'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -322,7 +321,7 @@ htmlhelp_basename = 'statistical-physics'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'physics-reserach-survival-manual.tex', u'Physics Research Survival Manual',
+  ('index', 'physics-research-survival-manual.tex', u'Physics Research Survival Manual',
    u'Cosmology TF', 'manual'),
 ]
 

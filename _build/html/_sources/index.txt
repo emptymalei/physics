@@ -12,47 +12,99 @@ This is a notebook about physics. It's not done yet. (Maybe I'll never finish it
 Use the source. Keep the source open.
 
 
+Introduction
+============
 
-Contents
-=========
+Some notes continued from the full theoretical physics notes are `here <http://cosmologytaskforce.github.io/PhysicsResearchSurvivalManual/>`_.
+
+
+
+Preface
+==================================
 
 
 .. toctree::
-   :maxdepth: 2
-   :numbered:
+    :maxdepth: 3
 
-   preface.rst
-   Basic.rst
-   math.rst
-   Statistics/statistics.rst
-   ClassicalMechanics.rst
-   QuantumMechanics.rst
-   QuantumMechanics2.rst
-   QuantumMechanics3.rst
-   StatisticalPhysics.rst
-   SpecialRelativity.rst
-   GeneralRelativity.rst 
-   GeneralRelativityAdv.rst
-   Cosmology/cosmoIndex.rst
-   Quantum/QuantumOptics.rst
+    preface.rst
 
 
-Indices and tables
-==================
+Vocabulary
+=====================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+    :maxdepth: 3
 
+    Basic.rst
+
+
+
+Mathematics
+=====================
+
+.. toctree::
+    :maxdepth: 3
+
+    math.rst
+    statistics/statistics.rst
+
+
+
+
+Fundamental Physics
+=====================
+
+.. toctree::
+    :maxdepth: 3
+
+    ClassicalMechanics.rst
+    QuantumMechanics.rst
+    QuantumMechanics2.rst
+    QuantumMechanics3.rst
+    statmech/StatisticalPhysics.rst
+
+
+
+Advanced Physics
+=====================
+
+.. toctree::
+    :maxdepth: 3
+
+    relativity/SpecialRelativity.rst
+    relativity/GeneralRelativity.rst 
+
+
+
+
+
+
+------
 
 License
 ========
 
 This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_.
 
-.. image:: img/CCBYNCSA.png
-    :align: center
-    :height: 373px
-    :width: 1576px
-    :scale: 5% 
-    :alt: Creative Commons License
+
+.. figure:: _static/images/cc_byncsa.png
+   :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+
+
+
+
+
+
+
+
+
+-----
+
+This open source project is hosted on GitHub: `Physics Research Manual <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual>`_ .
+
+`Latest PDF here <https://raw.github.com/emptymalei/quantum/master/Notes/_build/latex/quantum.pdf>`_.
+
+
+
+
+
