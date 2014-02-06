@@ -35,8 +35,6 @@
 \contentsline {subsubsection}{Standard Procedure}{15}{subsubsection*.25}
 \contentsline {subsubsection}{Tricky}{15}{subsubsection*.26}
 \contentsline {paragraph}{WKB Approximation}{15}{paragraph*.27}
-\contentsline {section}{\numberline {4.2}Statistics}{15}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Famous Distributions}{15}{subsection.4.2.1}
 \contentsline {chapter}{\numberline {5}Fundamental Physics}{17}{chapter.5}
 \contentsline {section}{\numberline {5.1}Classical Mechanics}{17}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Oscillators}{17}{subsection.5.1.1}
