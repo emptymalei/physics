@@ -1,5 +1,5 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {chapter}{\numberline {1}At The Begining of The Universe}{3}{chapter.1}
 \contentsline {chapter}{\numberline {2}Preface}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Whatever}{5}{section.2.1}
 \contentsline {chapter}{\numberline {3}Vocabulary}{7}{chapter.3}
@@ -96,4 +96,65 @@
 \contentsline {paragraph}{Eigenstates of Angular Momentum}{41}{paragraph*.70}
 \contentsline {section}{\numberline {5.4}Quantum Mechanics 3}{42}{section.5.4}
 \contentsline {section}{\numberline {5.5}Statistical Physics}{42}{section.5.5}
-\contentsline {chapter}{\numberline {6}License}{43}{chapter.6}
+\contentsline {chapter}{\numberline {6}Advanced Physics}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Special Relativity}{43}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Conventions}{43}{subsection.6.1.1}
+\contentsline {subsubsection}{Quantities and Operations}{43}{subsubsection*.71}
+\contentsline {paragraph}{d'Alembertian}{43}{paragraph*.72}
+\contentsline {subsubsection}{Footnotes}{44}{subsubsection*.73}
+\contentsline {section}{\numberline {6.2}General Relativity}{44}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Description of Space-time Manifold}{44}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Description of Space-time Manifold - Coordinates}{44}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Description of Space-time Manifold - Tetrads}{44}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Description of Space-time Manifold - 1+3 Covariant Description}{44}{subsection.6.2.4}
+\contentsline {subsubsection}{Definations}{44}{subsubsection*.74}
+\contentsline {paragraph}{Volume}{44}{paragraph*.75}
+\contentsline {paragraph}{4-velocity}{45}{paragraph*.76}
+\contentsline {paragraph}{Projection Tensors}{45}{paragraph*.77}
+\contentsline {paragraph}{Covariant time derivative ($\mathaccentV {dot}05F\hskip 1em\relax $)}{45}{paragraph*.78}
+\contentsline {paragraph}{Fully orthogonally projected covariant derivative ($\mathaccentV {tilde}07E\nabla $)}{45}{paragraph*.79}
+\contentsline {paragraph}{Orthogonal projections of vectors}{46}{paragraph*.80}
+\contentsline {paragraph}{Othogonal projected covariant time derivatives along $u^a$}{46}{paragraph*.81}
+\contentsline {subsubsection}{Properties}{46}{subsubsection*.82}
+\contentsline {subsection}{\numberline {6.2.5}Fields and Particles}{46}{subsection.6.2.5}
+\contentsline {subsubsection}{Energy-Momentum Tensor for Particles}{46}{subsubsection*.83}
+\contentsline {subsection}{\numberline {6.2.6}Theorems}{47}{subsection.6.2.6}
+\contentsline {subsubsection}{Killing Vector Related}{47}{subsubsection*.84}
+\contentsline {subsection}{\numberline {6.2.7}Specific Topics}{47}{subsection.6.2.7}
+\contentsline {subsubsection}{Redshift}{47}{subsubsection*.85}
+\contentsline {subsubsection}{Stationary vs Static}{47}{subsubsection*.86}
+\contentsline {paragraph}{Stationay}{47}{paragraph*.87}
+\contentsline {paragraph}{Static}{47}{paragraph*.88}
+\contentsline {chapter}{\numberline {7}Cutting Edge Physics}{49}{chapter.7}
+\contentsline {section}{\numberline {7.1}General Relativity Revisited}{49}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Hyperthesis}{49}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Experiments}{49}{subsection.7.1.2}
+\contentsline {subsubsection}{Eotvos Torsion Balance}{49}{subsubsection*.89}
+\contentsline {paragraph}{How}{49}{paragraph*.90}
+\contentsline {paragraph}{Results}{50}{paragraph*.91}
+\contentsline {subsubsection}{Hughes-Drevershiy Experiment, etc}{50}{subsubsection*.92}
+\contentsline {subsubsection}{Radio Signal}{50}{subsubsection*.93}
+\contentsline {subsection}{\numberline {7.1.3}Summary Table}{50}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Cosmology}{50}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Thermal History of The Universe}{50}{subsection.7.2.1}
+\contentsline {subsubsection}{Review of Standard Model for Particle Physics}{50}{subsubsection*.94}
+\contentsline {paragraph}{Degree of Freedom of Elementary Particles}{51}{paragraph*.95}
+\contentsline {subsubsection}{Expansion and Temperature}{51}{subsubsection*.96}
+\contentsline {paragraph}{Temperature Greater Than Mass of Top Quark}{52}{paragraph*.97}
+\contentsline {paragraph}{Temperature Down to Mass of A Particle}{52}{paragraph*.98}
+\contentsline {subsubsection}{Decay Rate VS Expansion Rate}{53}{subsubsection*.99}
+\contentsline {subsection}{\numberline {7.2.2}Two Parameters}{53}{subsection.7.2.2}
+\contentsline {subsubsection}{Observations}{53}{subsubsection*.100}
+\contentsline {paragraph}{Luminosity Distance}{53}{paragraph*.101}
+\contentsline {subparagraph}{Luminosity Distance from Observation}{53}{subparagraph*.102}
+\contentsline {subparagraph}{Luminosity Distance from Theory}{55}{subparagraph*.103}
+\contentsline {subparagraph}{Nearby Objects}{55}{subparagraph*.104}
+\contentsline {subparagraph}{Comment}{56}{subparagraph*.105}
+\contentsline {paragraph}{Angular Diameter Distance}{56}{paragraph*.106}
+\contentsline {subparagraph}{Observation}{56}{subparagraph*.107}
+\contentsline {subparagraph}{Theory}{57}{subparagraph*.108}
+\contentsline {subparagraph}{Standard Rulers}{57}{subparagraph*.109}
+\contentsline {paragraph}{Galaxy Number Count}{57}{paragraph*.110}
+\contentsline {section}{\numberline {7.3}Quantum Optics}{58}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Quantum Optics Framework}{58}{subsection.7.3.1}
+\contentsline {chapter}{\numberline {8}License}{61}{chapter.8}

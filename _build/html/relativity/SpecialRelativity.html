@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Special Relativity &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="next" title="General Relativity" href="GeneralRelativity.html" />
+    <link rel="prev" title="Statistical Physics" href="../statmech/StatisticalPhysics.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>Research Survival Manual</span></a></h1>
+        <h2 class="heading"><span>Special Relativity</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../statmech/StatisticalPhysics.html">Statistical Physics</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="GeneralRelativity.html">General Relativity</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="special-relativity">
+<h1>Special Relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="conventions">
+<h2>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
+<p>Metric in special relativity</p>
+<div class="math">
+<p><img src="../_images/math/ce6cea03d823697caa1e7f24821693a9075e6ba0.png" alt="\eta_{\mu\nu}=\begin{pmatrix}
+     -1 &amp; 0 &amp; 0 &amp; 0\\
+     0 &amp; 1 &amp; 0 &amp; 0\\
+     0 &amp; 0 &amp; 1 &amp; 0\\
+     0 &amp; 0 &amp; 0 &amp; 1\\
+\end{pmatrix}"/></p>
+</div><div class="section" id="quantities-and-operations">
+<h3>Quantities and Operations<a class="headerlink" href="#quantities-and-operations" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="d-alembertian">
+<h4>d&#8217;Alembertian<a class="headerlink" href="#d-alembertian" title="Permalink to this headline">¶</a></h4>
+<p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id3" id="id1">[1]</a></p>
+<div class="math">
+<p><img src="../_images/math/c017a6f0ba8de512e91e0ad4e0c7292ad5fc58a7.png" alt="\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu"/></p>
+</div><p>In the usual {t,x,y,z} natural orthonormal basis,</p>
+<div class="math">
+<p><img src="../_images/math/e4b452ccc4db37c398f9eb86c0c4d261534d37f7.png" alt="\Box &amp; = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
+&amp; = -\partial_t^2+\Delta^2 \\
+&amp; = -\partial_t^2+\nabla"/></p>
+</div><dl class="docutils">
+<dt>On wiki <a class="footnote-reference" href="#id4" id="id2">[2]</a> , they give some applications to it.</dt>
+<dd><ul class="first last simple">
+<li>klein-Gordon equation
+<img class="math" src="../_images/math/ad28e4cc9083e580c2b07823af396cb67eb04a54.png" alt="(\Box+m^2)\phi=0"/></li>
+<li>wave equation for electromagnetic field in vacuum:
+For the electromagnetic four-potential <img class="math" src="../_images/math/f6ff9d6afa09c099911e42e6dd3590d3816d0a8d.png" alt="\Box A^\mu=0"/>footnote{Gauge}</li>
+<li>wave equation for small vibrations
+<img class="math" src="../_images/math/4d70b24f593f000fb1e7f23438ee02684f1549d9.png" alt="\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0"/></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="footnotes">
+<h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Actually, there are more general definations for Lapacian, which includes this d&#8217;Alembertian of course.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>wiki:D&#8217;Alembert_operator</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../statmech/StatisticalPhysics.html">Statistical Physics</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="GeneralRelativity.html">General Relativity</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, Lei Ma.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
+    </div>
+  </body>
+</html>

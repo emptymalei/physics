@@ -26,6 +26,7 @@ Degree of Freedom of Elementary Particles
 """""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: Fig/Standard_Model_of_Elementary_Particles.png
+   :width: 100%
 
 IMG Source: https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
 
