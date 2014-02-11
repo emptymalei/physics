@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,9 +7,11 @@
     
     <title>General Relativity &mdash; Research Survival Manual</title>
     
-    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -24,7 +25,10 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Research Survival Manual" href="../index.html" />
     <link rel="next" title="General Relativity Revisited" href="GeneralRelativityAdv.html" />
     <link rel="prev" title="Special Relativity" href="SpecialRelativity.html" />
@@ -41,28 +45,155 @@
       })();
 
     </script>
-     
+    
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
 
   </head>
   <body>
-      <div class="header"><h1 class="heading"><a href="../index.html">
-          <span>Research Survival Manual</span></a></h1>
-        <h2 class="heading"><span>General Relativity</span></h2>
-      </div>
-      <div class="topnav">
-      
-        <p>
-        «&#160;&#160;<a href="SpecialRelativity.html">Special Relativity</a>
-        &#160;&#160;::&#160;&#160;
-        <a class="uplink" href="../index.html">Contents</a>
-        &#160;&#160;::&#160;&#160;
-        <a href="GeneralRelativityAdv.html">General Relativity Revisited</a>&#160;&#160;»
-        </p>
 
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
       </div>
-      <div class="content">
-        
-        
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ClassicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumOptics.html">Quantum Optics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">General Relativity</a><ul>
+<li><a class="reference internal" href="#description-of-space-time-manifold">Description of Space-time Manifold</a></li>
+<li><a class="reference internal" href="#description-of-space-time-manifold-coordinates">Description of Space-time Manifold - Coordinates</a></li>
+<li><a class="reference internal" href="#description-of-space-time-manifold-tetrads">Description of Space-time Manifold - Tetrads</a></li>
+<li><a class="reference internal" href="#description-of-space-time-manifold-1-3-covariant-description">Description of Space-time Manifold - 1+3 Covariant Description</a><ul>
+<li><a class="reference internal" href="#definations">Definations</a><ul>
+<li><a class="reference internal" href="#volume">Volume</a></li>
+<li><a class="reference internal" href="#velocity">4-velocity</a></li>
+<li><a class="reference internal" href="#projection-tensors">Projection Tensors</a></li>
+<li><a class="reference internal" href="#covariant-time-derivative">Covariant time derivative (<img class="math" src="../_images/math/acab176201f3a6241d792302a4408fddd9bdde4c.png" alt="\dot \quad"/>)</a></li>
+<li><a class="reference internal" href="#fully-orthogonally-projected-covariant-derivative">Fully orthogonally projected covariant derivative (<img class="math" src="../_images/math/d62109aa222cfab66dd2be824972317fb2ff4032.png" alt="\tilde \nabla"/>)</a></li>
+<li><a class="reference internal" href="#orthogonal-projections-of-vectors">Orthogonal projections of vectors</a></li>
+<li><a class="reference internal" href="#othogonal-projected-covariant-time-derivatives-along">Othogonal projected covariant time derivatives along <img class="math" src="../_images/math/2d0a08f5690f55403a9f8b8f7232a7e691ea28fe.png" alt="u^a"/></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fields-and-particles">Fields and Particles</a><ul>
+<li><a class="reference internal" href="#energy-momentum-tensor-for-particles">Energy-Momentum Tensor for Particles</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#theorems">Theorems</a><ul>
+<li><a class="reference internal" href="#killing-vector-related">Killing Vector Related</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#specific-topics">Specific Topics</a><ul>
+<li><a class="reference internal" href="#redshift">Redshift</a></li>
+<li><a class="reference internal" href="#stationary-vs-static">Stationary vs Static</a><ul>
+<li><a class="reference internal" href="#stationay">Stationay</a></li>
+<li><a class="reference internal" href="#static">Static</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="SpecialRelativity.html" title="Previous Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Special Relativi...</span>
+    </a>
+  </li>
+  <li>
+    <a href="GeneralRelativityAdv.html" title="Next Chapter: General Relativity Revisited"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">General Relativi... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/relativity/GeneralRelativity.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
   <div class="section" id="general-relativity">
 <h1>General Relativity<a class="headerlink" href="#general-relativity" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description-of-space-time-manifold">
@@ -217,22 +348,21 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}"/></p
 </div>
 
 
-      </div>
-      <div class="bottomnav">
-      
-        <p>
-        «&#160;&#160;<a href="SpecialRelativity.html">Special Relativity</a>
-        &#160;&#160;::&#160;&#160;
-        <a class="uplink" href="../index.html">Contents</a>
-        &#160;&#160;::&#160;&#160;
-        <a href="GeneralRelativityAdv.html">General Relativity Revisited</a>&#160;&#160;»
-        </p>
-
-      </div>
-
-    <div class="footer">
-        &copy; Copyright 2014, Lei Ma.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
     </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b2.<br/>
+    </p>
+  </div>
+</footer>
   </body>
 </html>
