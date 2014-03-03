@@ -1,0 +1,72 @@
+
+/* Remove the grey background image */
+
+html {
+background: none !important;
+}
+
+div.header {
+margin-bottom: 20px;
+}
+
+/* Top Nav color */
+
+div.topnav {
+border-bottom: solid 2px !important;
+border-top: solid 2px !important;
+padding: 10px !important;
+}
+
+/*  For messange box */
+
+div.note {
+padding: 10px 15px 10px 50px !important;
+border: solid 2px lightgrey !important;
+border-radius: 4px !important;
+background: none !important;
+}
+
+div.important {
+border: solid 2px #4183c4 !important;
+border-radius: 4px !important;
+padding: 10px 15px 10px 50px !important;
+background: none !important;
+}
+
+div.warning {
+padding: 10px 15px 10px 50px !important;
+border: solid 2px orange !important;
+border-radius: 4px !important;
+background: none !important;
+}
+
+div.hint {
+padding: 10px 15px 10px 50px !important;
+border: solid 2px #37D612 !important;
+border-radius: 4px !important;
+}
+
+div.admonition-laws {
+padding: 10px 15px 10px 50px !important;
+border: solid 2px #28344C !important;
+border-radius: 4px !important;
+background: none !important;
+}
+
+div.math {
+text-align:center;
+}
+
+#sourcelink {
+padding-top:15px;padding-bottom:15px;
+float:left;
+color:#777777;
+}
+#sourcelink>a {
+color:#777777;
+text-decoration:none;
+}
+
+.dropdown-menu {
+min-width: 260px !important;
+}

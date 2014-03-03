@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  12 FEB 2014 16:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  3 MAR 2014 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,7 +1093,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2808.
 Here is how much of TeX's memory you used:
  9904 strings out of 493315
  141606 string characters out of 6137904
- 242629 words of memory out of 5000000
+ 242626 words of memory out of 5000000
  12710 multiletter control sequences out of 15000+600000
  80877 words of font info for 107 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
@@ -1124,7 +1124,7 @@ urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/he
 lvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on physics-research-survival-manual.pdf (65 pages, 837081 bytes)
+Output written on physics-research-survival-manual.pdf (65 pages, 833969 bytes)
 .
 PDF statistics:
  811 PDF objects out of 1000 (max. 8388607)
