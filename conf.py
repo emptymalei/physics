@@ -1,5 +1,5 @@
 # Only for bootstrap theme. comment it when using other themes
-import sphinx_bootstrap_theme
+# import sphinx_bootstrap_theme
 
 # -*- coding: utf-8 -*-
 #
