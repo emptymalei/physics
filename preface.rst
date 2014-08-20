@@ -3,9 +3,9 @@ Whatever
 ========
 
 
-I alway believe that making things open to everyone is one of the most powerful things that drive the world forward. So I DO think open source and open data, even open education are reforming the world. 
+I alway believe that making things open to everyone is one of the most powerful things that drive the world forward. So I DO think open source and open data, even open education are reforming the world.
 
-This was a draft handbook for myself when I was studying in Fudan University. At that time, I learned how to use LaTeX and I was so exciting. So I thought I should start writing something using LaTeX since it's so beautiful. Well, the bad thing is, I just randomly wrote down my notes on some specific topics. 
+This was a draft handbook for myself when I was studying at Fudan University. At that time, I learned how to use LaTeX and I was so exciting. So I thought I should start writing something using LaTeX since it's so beautiful. Well, the bad thing is, I just randomly wrote down my notes on some specific topics. 
 
 I was so greedy back then. I was trying to build up my own framework of physics by writing notes here. It never did the work by the way. Then I realized a framework should be somethng organized much better than this one. (I should draw a map of physics.)
 
