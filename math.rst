@@ -93,9 +93,9 @@ Then we can construct the expression of metric of this point under this coordina
    g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu
 
 
-For example, in spherical coordinate system, 
+For example, in spherical coordinate system,
 
-.. math:: \vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z 
+.. math:: \vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z
    :label: EQrelativityMetricPoint
 
 
@@ -111,15 +111,15 @@ etc. Then collect the terms in formula :eq:`EQrelativityMetricPoint` is we get :
 .. math::
      \mathrm d\vec x =  \hat e_x (\mathrm dr \sin\theta\cos\phi+r\cos\theta\cos\phi\mathrm d\theta-r\sin\theta\sin\phi\mathrm d\phi)
 
-     \hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi) 
+     \hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi)
 
-     \hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta) 
+     \hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta)
 
-      = \mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)  
+      = \mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)
 
-     \mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi - \hat e_z \sin\theta)r 
+     \mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi - \hat e_z \sin\theta)r
 
-     \mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta  
+     \mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta
 
      =\hat e_r\mathrm dr+\hat e_\theta r\mathrm d\theta +\hat e_\phi r\sin\theta\mathrm d \phi
 
@@ -130,7 +130,7 @@ Once we reach here, the component (:math:`e_r ,e_\theta, e_\phi`) of the point u
      = e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi
 
 
-In this way, the metric tensor for spherical coordinates is 
+In this way, the metric tensor for spherical coordinates is
 
 
 
@@ -148,7 +148,7 @@ In this way, the metric tensor for spherical coordinates is
 Connection
 -----------
 
-First class connection can be calculated 
+First class connection can be calculated
 
 .. math::
    \Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}
@@ -235,12 +235,12 @@ Trace should be calculated using the metric. An example is the trace of Ricci te
    R=g^{ab}R_{ab}
 
 
-Einstein equation is 
+Einstein equation is
 
 .. math::
    R_{ab}-\frac{1}{2}g_{ab}R=8\pi G T_{ab}
 
-The trace is 
+The trace is
 
 .. math::
    g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R &= 8\pi G g^{ab}T_{ab} \\
@@ -280,3 +280,48 @@ WKB Approximation
 """"""""""""""""""""
 
 When the highest derivative is multiplied by a small parameter, try this.
+
+
+
+
+Complex Analysis
+=======================
+
+Some useful concepts: [1]_
+
+* Representation of a complex number and its conjugate
+* Complex functions
+* curves, closed curves, simple curves
+* Ininity point
+* Analytic functions: depends only on z not its complex conjugate
+* Entire function: single-valued analytic all over C
+* Liouville theorem
+* Pole
+* Singularity, Essential Singularity
+* Meromorphic function
+
+For multi-valued functions,
+
+* A branch of a function
+* Analyticity of multi-valued function
+* Branch point
+* Cut
+
+
+Operations
+
+* Contour integral of a continuous function arround some simple curve
+* Cauchy's Integral Theorem
+
+
+
+
+
+
+
+
+
+Refs & Notes
+============
+
+..  [1] `A handout note by Finly <http://physics.unm.edu/Courses/Finley/p466F2014/Homework/hw1.pdf>`_
