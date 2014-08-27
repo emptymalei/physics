@@ -277,7 +277,7 @@ Tricky
 ------------
 
 WKB Approximation
-""""""""""""""""""""
+"""""""""""""""""""""""""
 
 When the highest derivative is multiplied by a small parameter, try this.
 
