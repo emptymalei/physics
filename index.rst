@@ -15,8 +15,7 @@ Use the source. Keep the source open.
 At The Begining of The Universe
 ================================
 
-Some notes continued from the full theoretical physics notes are `here <http://cosmologytaskforce.github.io/PhysicsResearchSurvivalManual/>`_.
-
+I am not a good physicist so don't trust the notes written here.
 
 
 Preface
