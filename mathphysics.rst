@@ -12,8 +12,8 @@ Cauchy-Riemann Equation
 A function :math:`f(z) = u(z) + i v(z)` is a function of a complex variable :math:`z=x+i y`.
 
 .. math::
-   \frac{\partial}{partial x} u &= \frac{\partial}{partial y} v \\
-   \frac{\partial}{partial x} v & = -\frac{\partial}{partial y} u
+   \frac{\partial}{\partial x} u &= \frac{\partial}{\partial y} v \\
+   \frac{\partial}{\partial x} v & = -\frac{\partial}{\partial y} u
 
 
 
