@@ -6,6 +6,16 @@ Math Basics
 Complex Analysis
 --------------------------
 
+Cauchy-Riemann Equation
+~~~~~~~~~~~~~~~~~~~~~
+
+A function :math:`f(z) = u(z) + i v(z)` is a function of a complex variable :math:`z=x+i y`.
+
+.. math::
+   \frac{\partial}{partial x} u &= \frac{\partial}{partial y} v \\
+   \frac{\partial}{partial x} v & = -\frac{\partial}{partial y} u
+
+
 
 Singularities
 ~~~~~~~~~~~~~~~~~~
@@ -28,7 +38,7 @@ The residue at a simple pole is given by
 Meanwhile, the residue at a pole of nth order is
 
 .. math::
-   \text{Residue}(f(z_0)) =  \frac{1}{n!}\frac{\mathrm d ^ {n-1}}{\mathrm d z^{n-1}} \lim_{z\to z_0} \left( (z-z_0)^n f(z) \right).
+   \text{Residue}(f(z_0)) =  \frac{1}{(n-1)!} \lim_{z\to z_0} \frac{\mathrm d ^ {n-1}}{\mathrm d z^{n-1}}  \left( (z-z_0)^n f(z) \right).
 
 
 Branch points are points when we go around it in circles the values of our function would change. Examples of such points are :math:`z=0` for :math:`f(z)=ln(z)` and :math:`z=1` for :math:`f(z)=(z-1)^{1/2}`.
@@ -82,8 +92,8 @@ The application of GF to ODE follows the precedure,
 
 1. Find the general form of GF for operator :math:`L_x`;
 2. Apply BC to GF;
-3. Continuity at :math:`x=z`, i.e., :math:`G(x,z)\vert_{x<z} = G(x,z)\vert_{x>z}` at :math:`x=z`;
-4. Discontinuity of the first order derivative at :math:`x=z`, i.e., :math:`G'(x,z)\vert_{x>z} - G'(x,z)\vert_{x<z} = 1` at point :math:`x=z`;
+3. Continuity at :math:`n-2` order of derivatives at point :math:`x=z`, i.e., :math:`G^{(n-2)}(x,z)\vert_{x<z} = G^{(n-2)}(x,z)\vert_{x>z}` at :math:`x=z`;
+4. Discontinuity of the first order derivative at :math:`x=z`, i.e., :math:`G^{(n-1)}(x,z)\vert_{x>z} - G^{(n-1)}(x,z)\vert_{x<z} = 1` at point :math:`x=z`;
 5. Solve the coefficients.
 
 
@@ -98,14 +108,15 @@ A second order ODE,
 Wronskian of this is
 
 .. math::
-   W(x) = \left\vert\begin{matrix} y_1 & y_2 \\ y_1' & y_2' \end{matrix} \right\vert,
+   W(x) = \begin{vmatrix} y_1 & y_2 \\ y_1' & y_2' \end{vmatrix},
 
 where :math:`y_1` and :math:`y_2` are linearly independent solutions, i.e., :math:`c_1 y_1 + c_2 y_2=0` is only satisfied when :math:`c_1=c_2=0`. **Wronskian is NOT zero if they are linearly independent.**
 
 Singularities of an ODE is are defined when :math:`p(x)` or :math:`q(x)` or both of them have singular points. For example, Legendre equation
 
 .. math::
-   (1−z^2)y′′ −2z y′ +l(l+1)y = 0
+   (1-z^2) y'' - 2 z y' + l(l+1) y = 0
+
 
 has three singular points which are :math:`z=\pm 1, \infty` while :math:`z=0` is an ordinary point.
 
@@ -128,7 +139,7 @@ Solution at Regular Singular Points
 Frobenius series of the solution
 
 .. math::
-   y(z) = z^\singla \sum_{n=0}^{\infty} a_n z^n.
+   y(z) = z^\sigma \sum_{n=0}^{\infty} a_n z^n.
 
 The next task is to find the indicial equation.
 
@@ -140,12 +151,12 @@ If the roots differ by an integer, on the other side, we can only plug in the **
 **Wronskian method** requires two expression of Wronskian, which are
 
 .. math::
-   W(x) = \left\vert\begin{matrix} y_1 & y_2 \\ y_1' & y_2' \end{matrix} \right\vert,
+   W(x) = \begin{vmatrix} y_1 & y_2 \\ y_1' & y_2' \end{vmatrix} ,
 
 and
 
 .. math::
-   W(z) = C e^{-int^z p(u) \mathrm du}.
+   W(z) = C e^{-\int^z p(u) \mathrm du}.
 
 From the first expression, we have
 
@@ -155,14 +166,15 @@ From the first expression, we have
 However, we don't know :math:`W(z)` at this point. We should apply the second expression of Wronskian,
 
 .. math::
-   y_2(z) = y_1(z) \int^z \frac{C e^{-int^z p(u) \mathrm du}}{y_1(u)^2} \mathrm d u,
+   y_2(z) = y_1(z) \int^z \frac{C e^{-\int^z p(u) \mathrm du}}{y_1(u)^2} \mathrm d u,
 
 where the constant :math:`C` can be set to 1 as one wish.
 
 
 .. admonition:: TO DO
    :class: warning
-   [The **derivative method** is on my to do list.]
+
+   The **derivative method** is on my to do list.
 
 
 
