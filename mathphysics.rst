@@ -1,4 +1,4 @@
-Math Basics
+Math in Physics
 =============
 
 
@@ -94,7 +94,13 @@ The application of GF to ODE follows the precedure,
 2. Apply BC to GF;
 3. Continuity at :math:`n-2` order of derivatives at point :math:`x=z`, i.e., :math:`G^{(n-2)}(x,z)\vert_{x<z} = G^{(n-2)}(x,z)\vert_{x>z}` at :math:`x=z`;
 4. Discontinuity of the first order derivative at :math:`x=z`, i.e., :math:`G^{(n-1)}(x,z)\vert_{x>z} - G^{(n-1)}(x,z)\vert_{x<z} = 1` at point :math:`x=z`;
-5. Solve the coefficients.
+5. Solve the coefficients to get the GF;
+6. The solution to an inhomogeneous ODE :math:`L_x y(x) = f(x)` is given immediately by
+
+   .. math::
+      y(x) = \int_{Lower}^{Upper} G(x,z) f(z) dz
+
+
 
 
 Series Solution
