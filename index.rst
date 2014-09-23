@@ -46,6 +46,7 @@ Mathematics
     :maxdepth: 3
 
     math.rst
+    math/basic.rst
     statistics/statistics.rst
 
 
