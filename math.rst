@@ -79,8 +79,27 @@ Meanwhile, the residue at a pole of nth order is
 Branch points are points when we go around it in circles the values of our function would change. Examples of such points are :math:`z=0` for :math:`f(z)=ln(z)` and :math:`z=1` for :math:`f(z)=(z-1)^{1/2}`.
 
 
-Integrals
+Calculus
 ============
+
+
+
+.. figure:: math/assets/DifferentialANDIntegralOnOnePage.png
+   :align: center
+
+   LaTeX source of this image is `here <math/assets/DifferentialANDIntegralOnOnePage.tex>`_ .
+
+
+
+
+Differential of Functions
+-------------------------------
+
+
+
+
+Integrals
+--------------
 
 Sometimes a integral on Real plane can be very hard, one of the techniques is to work on Complex plane and use contour integral.
 
