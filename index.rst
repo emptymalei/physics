@@ -58,9 +58,9 @@ Fundamental Physics
     :maxdepth: 3
 
     ClassicalMechanics.rst
-    QuantumMechanics.rst
-    QuantumMechanics2.rst
-    QuantumMechanics3.rst
+    Quantum/QuantumMechanics.rst
+    Quantum/QuantumMechanics2.rst
+    Quantum/QuantumMechanics3.rst
     statmech/StatisticalPhysics.rst
 
 
