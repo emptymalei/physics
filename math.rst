@@ -310,36 +310,69 @@ where :math:`y\equiv y(x)`, we can write down the solutions immediately,
 
 in which :math:`\mathscr {Z}_p` is the solution to Bessel equation, i.e., is one kind of Bessel function with index :math:`p`.
 
-As an example, let's consider the case of length changing pendulum,
 
-.. math::
-   \frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.
+.. admonition:: A Pendulum With A Uniformly Chaning String Length
+   :class: note
 
-Notice that l is a function of time and 
+    As an example, let's consider the case of length changing pendulum,
 
-.. math::
-   l = l_0 + v t.
+    .. math::
+       \frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.
 
-Then the equation can be rewritten as
+    Notice that l is a function of time and 
 
-.. math::
-   \frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0.
+    .. math::
+       l = l_0 + v t.
 
-Comparing with the general form, we have one of the possible solutions
+    Then the equation can be rewritten as
 
-.. math::
-   a & = -1/2, \\
-   pc & = 1/2, \\
-   c & = 1/2, \\
-   p & = 1, \\
-   b & = 2\sqrt{g}/v.
+    .. math::
+       \frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0.
 
-This solution should be
+    Comparing with the general form, we have one of the possible solutions
 
-.. math::
-   \theta  &=  l^a \mathscr{Z}_p(b l^c) \\
-   & = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).
+    .. math::
+       a & = -1/2, \\
+       pc & = 1/2, \\
+       c & = 1/2, \\
+       p & = 1, \\
+       b & = 2\sqrt{g}/v.
 
+    This solution should be
+
+    .. math::
+       \theta  &=  l^a \mathscr{Z}_p(b l^c) \\
+       & = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).
+
+
+
+.. admonition:: Airy Equatioin
+   :class: note
+
+
+    Time-independent Schrödinger equation with a simple potential,
+
+    .. math::
+       \ddot{\Psi} + \alpha x \Psi  = 0.
+
+    Comparing it with general form, we should set
+
+    .. math::
+       a & = 1/2, \\
+       \lvert p c \rvert & = 1/2, \\
+       c & = 3/2, \\
+       b^2 c^2 & = \alpha^2.
+
+    So the two possible solutions are 
+
+    .. math::
+       \Psi_1(x) & = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
+       \Psi_2(x) & = \sqrt{x} \mathscr{Z}_{-1/3}(2/3 \alpha x^{3/2}).
+
+    The general solution is
+
+    .. math::
+       \Psi(x) = a \Psi_1(x) + b \Psi_2(x).
 
 
 
