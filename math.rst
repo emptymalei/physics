@@ -293,6 +293,58 @@ where the constant :math:`C` can be set to 1 as one wish.
 
 
 
+
+
+Comparing With A General Form
+------------------------------------
+
+For equation that take the following form,
+
+.. math::
+   y'' + \frac{1 - 2a}{x} y' + \left( (b c x^{c-1})^2 + \frac{a^2 - p^2 c^2}{x^2} \right) y = 0,
+
+where :math:`y\equiv y(x)`, we can write down the solutions immediately,
+
+.. math::
+   y(x) = x^a \mathscr {Z}_p (b x^c),
+
+in which :math:`\mathscr {Z}_p` is the solution to Bessel equation, i.e., is one kind of Bessel function with index :math:`p`.
+
+As an example, let's consider the case of length changing pendulum,
+
+.. math::
+   \frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.
+
+Notice that l is a function of time and 
+
+.. math::
+   l = l_0 + v t.
+
+Then the equation can be rewritten as
+
+.. math::
+   \frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0.
+
+Comparing with the general form, we have one of the possible solutions
+
+.. math::
+   a & = -1/2, \\
+   pc & = 1/2, \\
+   c & = 1/2, \\
+   p & = 1, \\
+   b & = 2\sqrt{g}/v.
+
+This solution should be
+
+.. math::
+   \theta  &=  l^a \mathscr{Z}_p(b l^c) \\
+   & = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).
+
+
+
+
+
+
 Tricks
 ------------
 
