@@ -47,6 +47,7 @@ Mathematics
     math.rst
     mathphysics.rst
     statistics/statistics.rst
+    special-functions.rst
 
 
 
