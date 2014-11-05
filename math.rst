@@ -7,6 +7,30 @@ Mathematics
 
 
 
+
+
+
+
+Kindergarten
+=================
+
+
+
+
+
+**Binominal theorem**
+
+.. math::
+   (1+x)^n = \sum_{k=0}^{n} C_n^k x^k .
+
+
+
+
+
+
+
+
+
 Complex Analysis
 ================
 
@@ -153,6 +177,21 @@ Two operators :math:`\hat O_1` and :math:`\hat O_2` works on :math:`H_1` and :ma
 
 .. math::
    (\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)
+
+
+
+
+
+Solving Linear Equations
+------------------------------
+
+First of all, write down the augmented matrix for the equation set.
+
+Elementary row operations are allowed on the augmented matrix. Operate on the matrix until one can read out the solutions.
+
+
+
+
 
 
 
