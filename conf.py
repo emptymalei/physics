@@ -167,8 +167,8 @@ latex_preamble = r"""
 \def\Arg{\hbox{Arg}}
 \def\atan{\hbox{atan}}
 
-% For augmented matrix
-\newenvironment{amatrix}[1]{%\left(\begin{array}{@{}*{#1}{c}|c@{}}}{%\end{array}\right)}
+%For augmented matrix
+\newenvironment{amatrix}[1]{\left(\begin{array}{@{}*{#1}{c}|c@{}}}{\end{array}\right)}
 """
 
 pngmath_latex_preamble = latex_preamble
