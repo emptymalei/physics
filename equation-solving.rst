@@ -281,7 +281,7 @@ With the help of Hilbert space, one can alway write down the vector form of some
 .. math::
    \hat L u(x) = f(x),
 
-where :math:`\hat L=\hat I + \hat M`. So the solution is so simple,
+where :math:`\hat L=\hat I + \hat M`. So the solution is simply
 
 .. math::
    u(x) &= {\hat L}^{-1} f(x)\\
@@ -307,6 +307,44 @@ As an example, we can solve this equation
 
 We define :math:`\hat M = \ket{t}\bra{\lambda}` and check the convergence condition for :math:`\lambda`.
 
+Step one is always checking condition of convergence.
+
+Step two is to write down the series and zeroth order. Then we reach the key point. The iteration relation is
+
+.. math::
+   u_n(t) + \int_0^1 ds su_{n-1}(s) = 0.
+
+One can write down :math:`u_1` imediately
+
+.. math::
+   u_1(t) = -\int_0^1 ds s u_0(s).
+
+Keep on going.
+
+
+
+Using Dyads in Vector Space
+-----------------------------
+
+
+For the same example,
+
+.. math::
+   \hat L u(x) = f(x),
+
+where :math:`\hat L=\hat I + \hat M`, we can solve it using vector space because if operator is linear.
+
+Suppose we have a :math:`\hat M=\ket{a}\bra{b}`, the equation, in some Hilbert space, is
+
+.. math::
+   \ket{u} + \ket{a}\braket{b}{u} = \ket{f}.
+
+Multiplying through by :math:`\bra{b}`, we have
+
+.. math::
+   \braket{b}{u} + \braket{b}{a}\braket{b}{u} = \braket{b}{f},
+
+which reduces to a linear equation. We only need to solve out :math:`\braket{b}{u}` then plug it back into the original equation.
 
 
 
