@@ -107,9 +107,11 @@ This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http:/
 .. figure:: _static/images/cc_byncsa.png
    :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/
 
+DOI
+==============
 
-
-
+.. image:: https://zenodo.org/badge/7726/CosmologyTaskForce/PhysicsResearchSurvivalManual.svg   
+   :target: http://dx.doi.org/10.5281/zenodo.13216
 
 
 
