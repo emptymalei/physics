@@ -292,7 +292,7 @@ However, it's not a solution until we find the inverse. A most general approach 
 .. math::
    \| \hat M u \| < \gamma \| u \|,
 
-where :math:`\gamam\in (0,1)` and should be independent of :math:`x`.
+where :math:`\gamma\in (0,1)` and should be independent of :math:`x`.
 
 As long as this is satisfied, the equation can be solved using Neumann series, which is an iteration method with
 
