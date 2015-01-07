@@ -64,6 +64,7 @@ Fundamental Physics
     Quantum/QuantumMechanics2.rst
     Quantum/QuantumMechanics3.rst
     statmech/StatisticalPhysics.rst
+    electrodynamics.rst
 
 
 
@@ -110,7 +111,7 @@ This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http:/
 DOI
 ==============
 
-.. image:: https://zenodo.org/badge/7726/CosmologyTaskForce/PhysicsResearchSurvivalManual.svg   
+.. image:: https://zenodo.org/badge/7726/CosmologyTaskForce/PhysicsResearchSurvivalManual.svg
    :target: http://dx.doi.org/10.5281/zenodo.13216
 
 
