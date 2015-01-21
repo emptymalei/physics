@@ -2,6 +2,10 @@
 Electrodynamics
 **********************************
 
+
+At this moment, the update will be done here `Electrodynamics <http://electrodynamics.readthedocs.org/>`_ as a subproject and will be merged to this to this project when it is done.
+
+
 Basics
 =======================
 

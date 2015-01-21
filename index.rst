@@ -28,6 +28,16 @@ Preface
     preface.rst
 
 
+
+Fun
+===========================
+
+.. toctree::
+   :maxdepth: 3
+
+   fun.rst
+
+
 Vocabulary
 =====================
 
