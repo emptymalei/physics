@@ -128,7 +128,7 @@ They all satisfy these recurrence relations,
 
 
 Bessel Function of the first kind
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use notation :math:`J_n(x)` for the first kind.
 
@@ -180,7 +180,7 @@ They are very useful when integrating by part.
 
 
 Graphics and Properties
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: math/assets/BesselZeros.png
    :align: center
@@ -206,13 +206,13 @@ Graphics and Properties
 .. figure:: math/assets/sphbesselZerosListPlt.png
    :align: center
 
-    Spherical Bessel function zeros.
+   Spherical Bessel function zeros.
 
 
 .. figure:: math/assets/besselZerosDifferencePlt.png
    :align: center
 
-    The difference between zeros of Bessel functions. They are almost the same, which a around Pi.
+   The difference between zeros of Bessel functions. They are almost the same, which a around Pi.
 
 
 
