@@ -44,7 +44,9 @@ Vocabulary
 .. toctree::
     :maxdepth: 3
 
+    voc/vocabulary.rst
     Basic.rst
+
 
 
 
