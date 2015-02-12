@@ -134,4 +134,3 @@ DOI
 
 This open source project is hosted on GitHub: `Physics Research Manual <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual>`_ .
 
-`Latest PDF here <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual/raw/master/_build/latex/physics-research-survival-manual.pdf>`_.

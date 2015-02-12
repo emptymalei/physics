@@ -4,7 +4,7 @@ Vocabulary
 Functional Derivative
 ==============================
 
-By definition, [#physmath]_ functionan derivative of a functional :math:`G[f]` with respect to :math:`f` along the 'direction' of :math:`h` is
+By definition, [#physmath]_ functional derivative of a functional :math:`G[f]` with respect to :math:`f` along the 'direction' of :math:`h` is
 
 .. math::
    \delta G[f][h] = \frac{d}{d\epsilon} G[f+\epsilon h]\vert_{\epsilon=0}.
@@ -20,7 +20,7 @@ Now the problem appears. We have an unknown function :math:`h` which makes sense
 For a physicist, the savior of integral is Dirac delta. So we use delta distribution as the direction in the functional derivative of action which is an integral,
 
 .. math::
-   \frac{delta G[f]}{\delta f(y)} = \delta G[f][\delta_y].
+   \frac{\delta G[f]}{\delta f(y)} = \delta G[f][\delta_y].
 
 It can be ambiguous to just write down :math:`\delta_y` without an example. Here is the previous example continued,
 
