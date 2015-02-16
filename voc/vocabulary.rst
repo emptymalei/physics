@@ -48,8 +48,27 @@ which is not that straightforward to understand from function derivatives.
 
 
 
+Vector Analysis
+==========================
 
 
+The ultimate trick is to use component form.
+
+.. math::
+   &\vec a \times (\vec b \times \vec c)
+   = & \hat e_i \epsilon_{ijk} a_j (\epsilon_{kmn} b_m c_n ) \\
+   = & \hat e_i \epsilon_{kij}\epsilon_{kmn} a_j b_m c_n \\
+   = & \hat e_i ( \delta_{im}\delta_{jn} - \delta_{in}\delta_{jm} )a_j b_m c_n \\
+   = & \hat e_i \delta_{im}\delta_{jn} a_j b_m c_n -  \hat e_i \delta_{in}\delta_{jm} a_j b_m c_n \\
+   = & \hat e_i a_j b_i c_j - \hat e_i a_j b_j c_i \\
+   = & \vec b (\vec a\cdot \vec c) - \vec c (\vec a \cdot \vec b) .
+
+One should be able to find the component forms of gradient :math:`\vec \nabla \cdot`, divergence :math:`\vec \nabla \times`, Laplace operator, in **spherical coordinates, cylindrical coordinates and cartisian coordinates**.
+
+
+
+   
+==========================
 
 
 
