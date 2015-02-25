@@ -2,6 +2,8 @@ Equation Solving
 *******************
 
 
+
+
 There are so many methods and techniques to solve an equation. Here we will review only some of them.
 
 
@@ -60,10 +62,12 @@ The application of GF to ODE follows the precedure,
    :class: note
    :name: greenFunctionExample
 
-   Solving equation
+   Solve equation
 
    .. math::
       y'' + \frac{1}{4}y = f(x).
+
+   {\bf Green's Function }
 
    The operator is :math:`\hat L = \partial^2 + 1/4` with boundary condition :math:`y(0)=y(\pi)=0` .
 
@@ -73,6 +77,51 @@ The application of GF to ODE follows the precedure,
       \hat L G(x,x') = \delta(x-x'),
 
    where :math:`\hat L` only operates on :math:`x` not :math:`x'`.
+
+   The general solutions for :math:`\hat L G(x,x')=0` is
+
+   .. math::
+      G(x,x') = A\cos(x/2) + B \sin(x/2).
+
+   Applying the BC, we reach a step function expression for :math:`G(x,x')`,
+
+   .. math::
+      G(x,x') = \begin{cases}  B\sin(x/2) & 0\leq x \lt x' , \\
+       A\cos(x/2) & x'\lt x \leq \pi . \end{cases}
+
+
+   {\bf Continuity and Discontinuity }
+
+   It is required by the equation for Green's function that,
+
+   .. math::
+      G(x',x') = A \sin(x'/2) = B \cos(x'/2),
+
+   and
+
+   .. math::
+      \frac{d G}{d x}\vert_{x'+} - \frac{dG}{dx}\vert_{x'-} = 1 .
+
+   Put the expressions for Green's function in, we can solve the coefficients,
+
+   .. math::
+      G(x,x') = \begin{cases} -2 \cos(x'/2)\sin(x/2) & 0\leq x \lt x' ,\\ -2 \sin(x'/2)\cos(x/2) & x' \lt x \leq \pi . \end{cases}
+
+
+   In one line this can be written as,
+
+   .. math::
+      G(x,x') = -2 \sin(x_</2)\cos(x_>/2) .
+
+   The final step is to find the solution to original equaion, which is straightforward.
+
+
+
+
+
+
+
+
 
 
 
