@@ -56,6 +56,27 @@ The application of GF to ODE follows the precedure,
       y(x) = \int_{Lower}^{Upper} G(x,z) f(z) dz
 
 
+.. admonition:: An Example
+   :class: note
+   :name: greenFunctionExample
+
+   Solving equation
+
+   .. math::
+      y'' + \frac{1}{4}y = f(x).
+
+   The operator is :math:`\hat L = \partial^2 + 1/4` with boundary condition :math:`y(0)=y(\pi)=0` .
+
+   First step is to find the Green's function of this operator, which is defined as the solution to
+
+   .. math::
+      \hat L G(x,x') = \delta(x-x'),
+
+   where :math:`\hat L` only operates on :math:`x` not :math:`x'`.
+
+
+
+
 
 
 Series Solution
