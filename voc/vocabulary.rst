@@ -47,6 +47,43 @@ which is not that straightforward to understand from function derivatives.
 .. [#physmath] Chapter 15 of `Physical Mathematics <http://www.amazon.com/Physical-Mathematics-Kevin-Cahill/dp/1107005213>`_
 
 
+Legendre Transformation
+==========================
+
+
+Legendre transformation is NOT just some algebra. Given :math:`f(x)` as a function of :math:`x`, which is shown in blue, we could find the distance between a line :math:`y=px_i` and the function value :math:`f(x_i)`.
+
+.. figure:: assets/legendreTransformation.png
+   :align: center
+
+   Meaning of Legendre transformation
+
+
+However, as we didn't fix :math:`x`, this means that the distance
+
+.. math::
+   F(p,x) = p x - f(x) 
+
+varies according to :math:`x`. This is a transformation that maps a function :math:`f(x)` to some other function :math:`F(p,x)` which depends on the parameter :math:`p`.
+
+To have a Legendre transformation, let's choose a relation between :math:`x` and :math:`p`. One choice is to make sure we have a maximum distance given :math:`p`, which means the :math:`x` we choose is the point that makes the slope of :math:`f(x)` the same as the line :math:`y=px`. In the language of math, the condition we require is
+
+.. math::
+   0 = \frac{\partial F(p,x)}{\partial x} \equiv f'(x) - p,
+
+which indeed shows that the slope of function and slope of the straight line match eath other at the specified point. Thus we have a relation between :math:`x` and :math:`p`.
+
+Substitute :math:`x(p)` back into :math:`F(p,x)`, we will get the Legendre transformation :math:`F(p,x(p))` of :math:`f(x)`.
+
+
+
+
+
+
+
+
+
+
 
 Vector Analysis
 ==========================
@@ -68,7 +105,7 @@ One should be able to find the component forms of gradient :math:`\vec \nabla \c
 
 
    
-==========================
+
 
 
 
