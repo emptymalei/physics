@@ -64,7 +64,10 @@ However, as we didn't fix :math:`x`, this means that the distance
 .. math::
    F(p,x) = p x - f(x) 
 
-varies according to :math:`x`. This is a transformation that maps a function :math:`f(x)` to some other function :math:`F(p,x)` which depends on the parameter :math:`p`.
+varies according to :math:`x`. This is a transformation that maps a function :math:`f(x)` to some other function :math:`F(p,x)` which depends on the parameter :math:`p`. A more pedagogical way of writing this is
+
+.. math::
+   px = F(x,p) + f(x).
 
 To have a Legendre transformation, let's choose a relation between :math:`x` and :math:`p`. One choice is to make sure we have a maximum distance given :math:`p`, which means the :math:`x` we choose is the point that makes the slope of :math:`f(x)` the same as the line :math:`y=px`. In the language of math, the condition we require is
 
@@ -76,6 +79,38 @@ which indeed shows that the slope of function and slope of the straight line mat
 Substitute :math:`x(p)` back into :math:`F(p,x)`, we will get the Legendre transformation :math:`F(p,x(p))` of :math:`f(x)`.
 
 
+Back to the math we learned in undergrad study. A Legendre transformation transforms a function of :math:`x` to another function with variable :math:`\frac{f(x)}{x}`. Using :math:`f(x)` and its Legendre transformation :math:`F(p = p x - f(x(p))` as an example, we can show that the slope of :math:`F(p)` is :math:`x`,
+
+.. math::
+   \frac{d F(p)}{d p} = x,
+
+which is intriging because the slope of :math:`f(x)` is :math:`p` in our requirement. We removed the dependence of :math:`x` in :math:`F(p)` because we have this extra constrain.
+
+
+
+
+.. admonition:: Let's Move to Another Level
+   :class: note
+
+   We require the function :math:`f(x)` is convex (second order derivative is not negative ). This is required because otherwise we would NOT have a one on one mapping of :math:`x` and :math:`p`.
+
+
+   .. figure:: assets/legendreTransformation2.png
+      :align: center
+
+      This graph shows the Legendre transformation and triangles in which G is actually the F we used before and F in the graph corresponds to f.
+
+      One imediately notices the symmety of Legendre transformation on interchanging of F and f.
+
+      This graph is taken from this paper `Making Sense of the Legendre Transform <http://arxiv.org/abs/0806.1147>`_ .
+
+
+   This is the triangle that represents the Legendre transformation.
+
+   If we have a slope that vanishes, which means :math:`f(x)` is at minimium, then we have the relation
+
+   .. math
+      f(x)\vert_{minimium}  + F(0) = 0.
 
 
 
@@ -92,7 +127,7 @@ Vector Analysis
 The ultimate trick is to use component form.
 
 .. math::
-   &\vec a \times (\vec b \times \vec c)
+   &\vec a \times (\vec b \times \vec c) \\
    = & \hat e_i \epsilon_{ijk} a_j (\epsilon_{kmn} b_m c_n ) \\
    = & \hat e_i \epsilon_{kij}\epsilon_{kmn} a_j b_m c_n \\
    = & \hat e_i ( \delta_{im}\delta_{jn} - \delta_{in}\delta_{jm} )a_j b_m c_n \\
