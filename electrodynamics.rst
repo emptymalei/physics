@@ -19,7 +19,7 @@ The ability to keep storage of charge is called capacitance, which is straight f
 .. math::
    C = \frac{q}{U},
 
-   where :math:`U` is the electric potential (not the potential energy).
+where :math:`U` is the electric potential (not the potential energy).
 
 
 Maxwell's equations are
