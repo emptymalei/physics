@@ -86,8 +86,8 @@ The application of GF to ODE follows the precedure,
    Applying the BC, we reach a step function expression for :math:`G(x,x')`,
 
    .. math::
-      G(x,x') = \begin{cases}  B\sin(x/2) & 0\leq x \lt x' , \\
-       A\cos(x/2) & x'\lt x \leq \pi . \end{cases}
+      G(x,x') =   &B\sin(x/2) , \text{if} 0\leq x \lt x' , \\
+      &A\cos(x/2) , \text{if} x'\lt x \leq \pi . 
 
 
    {\bf Continuity and Discontinuity }
@@ -105,7 +105,7 @@ The application of GF to ODE follows the precedure,
    Put the expressions for Green's function in, we can solve the coefficients,
 
    .. math::
-      G(x,x') = \begin{cases} -2 \cos(x'/2)\sin(x/2) & 0\leq x \lt x' ,\\ -2 \sin(x'/2)\cos(x/2) & x' \lt x \leq \pi . \end{cases}
+      G(x,x') = & -2 \cos(x'/2)\sin(x/2) , \text{if} 0\leq x \lt x' ,\\ & -2 \sin(x'/2)\cos(x/2) , \text{if} x' \lt x \leq \pi . 
 
 
    In one line this can be written as,
