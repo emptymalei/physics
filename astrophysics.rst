@@ -163,6 +163,41 @@ To have more understanding on this formula, I ploted :math:`\sigma_{K-N}` in ter
 
 
 
+Asteroseismology
+---------------------
+
+
+The stars do shake, from inside out. 
+
+Long period variable such as Cepheids pulsate in the luminosity. This is because of the radial oscillation mode with a approximate period of
+
+.. math::
+   P_{dynamical} \approx \left( \frac{R^3}{GM} \right)^{1/2} \approx (G\bar \rho)^{-1/2},
+
+in which we have the radius of the star as :math:`R`, mass of the star as :math:`M` and mean density :math:`\bar \rho`. **The good thing of this oscillation immediately shows us the mean density of the star, even without any furthure inspectation.**
+
+
+
+There are double mode Cepheids, whose modes provides information about mass and radius.
+
+Our sun, up to now we have identified thousands of individual modes. And more modes as many as :math:`10^{6}` modes can be determined accurately.[^helioosc]_
+
+
+
+
+.. [^helioosc] `Jørgen Christensen-Dalsgaard's Lecture Notes <http://users-phys.au.dk/jcd/oscilnotes/chap-1.pdf>`_
+
+
+Papers, Researches and More
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Double mode Cepheids, J. Otzen Petersen, 1973, 1974, 1978.
+2. An introduction of seismology applied to stars. http://ap.smu.ca/~guenther/seismology/seismology.html
+
+
+
+
+
 
 
 
