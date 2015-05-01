@@ -11,9 +11,6 @@ This is a notebook about physics. It's not done yet. (Maybe I'll never finish it
 
 Use the source. Keep the source open.
 
-**DOI**
-
-.. image:: https://zenodo.org/badge/7726/CosmologyTaskForce/PhysicsResearchSurvivalManual.svg   :target: http://dx.doi.org/10.5281/zenodo.13216
 
 
 At The Begining of The Universe

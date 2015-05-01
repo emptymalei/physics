@@ -26,6 +26,15 @@ border-radius: 4px !important;
 background: none !important;
 }
 
+
+.alert-info {
+color: black !important;
+}
+
+.alert {
+color: black !important;
+}
+
 div.important {
 border: solid 2px #4183c4 !important;
 border-radius: 4px !important;
@@ -57,6 +66,40 @@ div.math {
 text-align:center;
 }
 
+
+.figure>p.caption {
+color: grey;
+border-left: 5px solid grey;
+border-right: 5px solid grey;
+background: #E2DFDF;
+padding: 10px;
+margin: 10px;
+}
+
+
+
+.highlit {
+padding: 2px 4px;
+/*font-size: 90%;*/
+/*font-weight: bold;*/
+color: #4B648C;
+background-color: #EDFFF0;
+white-space: nowrap;
+border-radius: 4px;
+}
+
+
+
+/* For disqus thread*/
+
+#disqus_thread {
+max-width:1170px;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
 #sourcelink {
 padding-top:15px;padding-bottom:15px;
 float:left;
@@ -71,6 +114,3 @@ text-decoration:none;
 min-width: 260px !important;
 }
 
-.alert-info {
-color: black !important;
-}
