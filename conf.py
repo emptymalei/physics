@@ -37,10 +37,6 @@ latex_preamble = r"""
 \usepackage{mathrsfs}
 \usepackage{latexsym}
 \usepackage{graphicx}
-\usepackage{epstopdf}
-\epstopdfDeclareGraphicsRule
-  {.gif}{png}{.png}{convert gif:\SourceFile.\SourceExt png:\OutputFile}
-\AppendGraphicsExtensions{.gif}
 \def\degrees{^\circ}
 \def\d{{\rm d}}
 
