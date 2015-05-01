@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Research Survival Manual" href="../index.html" />
     <link rel="next" title="General Relativity" href="GeneralRelativity.html" />
-    <link rel="prev" title="Statistical Physics" href="../statmech/StatisticalPhysics.html" />
+    <link rel="prev" title="Electrodynamics" href="../electrodynamics.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -51,10 +51,9 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
-
-
+ 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -84,26 +83,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Basic.html">Basic</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../ClassicalMechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics2.html">Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics.html">Electrodynamics</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GeneralRelativity.html">General Relativity</a></li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GeneralRelativityAdv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Cosmology/cosmoIndex.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
 </ul>
 </ul>
 </li>
@@ -131,7 +139,7 @@
               
                 
   <li>
-    <a href="../statmech/StatisticalPhysics.html" title="Previous Chapter: Statistical Physics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Statistical Phys...</span>
+    <a href="../electrodynamics.html" title="Previous Chapter: Electrodynamics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Electrodynamics</span>
     </a>
   </li>
   <li>
@@ -175,7 +183,7 @@
 <h2>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
 <p>Metric in special relativity</p>
 <div class="math">
-<p><img src="../_images/math/ce6cea03d823697caa1e7f24821693a9075e6ba0.png" alt="\eta_{\mu\nu}=\begin{pmatrix}
+<p><img src="../_images/math/cfe9f1dbb4c9fade954218435bcef0d11ee3da70.png" alt="\eta_{\mu\nu}=\begin{pmatrix}
      -1 &amp; 0 &amp; 0 &amp; 0\\
      0 &amp; 1 &amp; 0 &amp; 0\\
      0 &amp; 0 &amp; 1 &amp; 0\\
@@ -187,21 +195,21 @@
 <h4>d&#8217;Alembertian<a class="headerlink" href="#d-alembertian" title="Permalink to this headline">¶</a></h4>
 <p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id3" id="id1">[1]</a></p>
 <div class="math">
-<p><img src="../_images/math/c017a6f0ba8de512e91e0ad4e0c7292ad5fc58a7.png" alt="\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu"/></p>
+<p><img src="../_images/math/09b6d4bada1a49b2850013ca18aecd7dafb5506d.png" alt="\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu"/></p>
 </div><p>In the usual {t,x,y,z} natural orthonormal basis,</p>
 <div class="math">
-<p><img src="../_images/math/e4b452ccc4db37c398f9eb86c0c4d261534d37f7.png" alt="\Box &amp; = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
+<p><img src="../_images/math/1ce7446dd8bedce6d9c28fb4a1465069349aabc1.png" alt="\Box &amp; = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
 &amp; = -\partial_t^2+\Delta^2 \\
 &amp; = -\partial_t^2+\nabla"/></p>
 </div><dl class="docutils">
 <dt>On wiki <a class="footnote-reference" href="#id4" id="id2">[2]</a> , they give some applications to it.</dt>
 <dd><ul class="first last simple">
 <li>klein-Gordon equation
-<img class="math" src="../_images/math/ad28e4cc9083e580c2b07823af396cb67eb04a54.png" alt="(\Box+m^2)\phi=0"/></li>
+<img class="math" src="../_images/math/635a2ae02574f68ed1b9290f4db3360bd393cb45.png" alt="(\Box+m^2)\phi=0"/></li>
 <li>wave equation for electromagnetic field in vacuum:
-For the electromagnetic four-potential <img class="math" src="../_images/math/f6ff9d6afa09c099911e42e6dd3590d3816d0a8d.png" alt="\Box A^\mu=0"/>footnote{Gauge}</li>
+For the electromagnetic four-potential <img class="math" src="../_images/math/977ceea5a92367666b91f61b81ecd09d5acd8dfd.png" alt="\Box A^\mu=0"/>footnote{Gauge}</li>
 <li>wave equation for small vibrations
-<img class="math" src="../_images/math/4d70b24f593f000fb1e7f23438ee02684f1549d9.png" alt="\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0"/></li>
+<img class="math" src="../_images/math/e547db4a11106419d3db54eb7a11ad765c29817a.png" alt="\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0"/></li>
 </ul>
 </dd>
 </dl>
@@ -230,6 +238,30 @@ For the electromagnetic four-potential <img class="math" src="../_images/math/f6
       
   </div>
 </div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
@@ -238,9 +270,10 @@ For the electromagnetic four-potential <img class="math" src="../_images/math/f6
     </p>
     <p>
         &copy; Copyright 2014, Lei Ma.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b2.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
-</footer>
+</footer> 
+
   </body>
 </html>

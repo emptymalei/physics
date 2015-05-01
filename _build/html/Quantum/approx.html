@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Quantum Approximation Methods &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="up" title="Quantum Mechanics 3" href="QuantumMechanics3.html" />
+    <link rel="next" title="Symmetries in QM" href="symmetries.html" />
+    <link rel="prev" title="Quantum Questions" href="questions.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClassicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics.html">Electrodynamics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Quantum Approximation Methods</a><ul>
+<li><a class="reference internal" href="#variational-method">Variational Method</a><ul>
+<li><a class="reference internal" href="#trial-functions">Trial functions</a></li>
+<li><a class="reference internal" href="#procedure">Procedure</a></li>
+<li><a class="reference internal" href="#why-not-general-viriational-method">Why Not General Viriational Method</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#variational-method-and-virial-theorem">Variational Method and Virial Theorem</a></li>
+<li><a class="reference internal" href="#wkb">WKB</a><ul>
+<li><a class="reference internal" href="#how-does-it-work">How does it work</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="questions.html" title="Previous Chapter: Quantum Questions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Quantum Question...</span>
+    </a>
+  </li>
+  <li>
+    <a href="symmetries.html" title="Next Chapter: Symmetries in QM"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Symmetries in QM &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/Quantum/approx.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="quantum-approximation-methods">
+<h1>Quantum Approximation Methods<a class="headerlink" href="#quantum-approximation-methods" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="variational-method">
+<h2>Variational Method<a class="headerlink" href="#variational-method" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="trial-functions">
+<h3>Trial functions<a class="headerlink" href="#trial-functions" title="Permalink to this headline">¶</a></h3>
+<p>Some of the calculable trial functions:</p>
+<ol class="arabic simple">
+<li><img class="math" src="../_images/math/3c2b6161d5ed49a1cef85e7dfc3df73bd22be8d7.png" alt="\psi(x) = \cos\alpha x"/>, for <img class="math" src="../_images/math/cc0f2bc56d53b364d3f330d6591be706b8fb0387.png" alt="|\alpha x|&lt;\pi/2"/>, otherwise 0.</li>
+<li><img class="math" src="../_images/math/a79004a56d89d9c3edfecad3bbc1bbde69dd3754.png" alt="\psi(x) = \alpha^2 - x^2"/>, for <img class="math" src="../_images/math/b606b7b2c8666fac193e181f9cace398cf6c4268.png" alt="|x|&lt;\alpha"/>, otherwise 0.</li>
+<li><img class="math" src="../_images/math/31d60832597fcd0f63bcb548fcce5fad8b06e5b7.png" alt="\psi(x) = C \exp(-\alpha x^2/2)"/>.</li>
+<li><img class="math" src="../_images/math/4363bf018494bff7f2459f4453467f9cd5f0b755.png" alt="\psi(x) = C(\alpha - |x|)"/>, for <img class="math" src="../_images/math/b606b7b2c8666fac193e181f9cace398cf6c4268.png" alt="|x|&lt;\alpha"/>, otherwise 0.</li>
+<li><img class="math" src="../_images/math/b536693832ddbeb46c70feaddc8ea35b455e9980.png" alt="\psi(x) = C\sin\alpha x"/>, for <img class="math" src="../_images/math/a542b84b085a55b826ee010794c7ec7cf4095d6f.png" alt="|\alpha x|&lt;\pi"/>, otherwise 0.</li>
+</ol>
+</div>
+<div class="section" id="procedure">
+<h3>Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Pick a trial function.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>How to pick a trial function? For ground state energy, we should pick a function that has the same property as the real ground state. This requires some understanding of the problem we are dealing with.</p>
+<p>Things to consider:</p>
+<ol class="last loweralpha simple">
+<li>The new problem is just a modification of a known solved problem. Then we can easily find out what really is different and interprete the new problem in terms of the old one.</li>
+<li>If the Hamiltonian have definite parity, the ground state wave function should pick up some parity which is usually even to make it the lowest energy.</li>
+<li>Continious function? A <img class="math" src="../_images/math/f95db599863f41f5a1224c046ec96d268ab39607.png" alt="C^\infty"/> Hamiltonian can only have continious functions as solutions for a finite system.</li>
+<li>Nodes deteremines the kinetic energy so check the nodes for ground state wave function.</li>
+<li>Check the behivior of the wave function at different limits. In most cases, the Shrödinger equation can be reduced to something solvable at some limits.</li>
+<li><strong>One more thing, the trial function should make the problem calculable.</strong></li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="why-not-general-viriational-method">
+<h3>Why Not General Viriational Method<a class="headerlink" href="#why-not-general-viriational-method" title="Permalink to this headline">¶</a></h3>
+<p>Why don&#8217;t we just use a most general variational method to find out the ground state? Because we will eventually come back to the time-independent Shrödinger equation.</p>
+<p>Suppose we have a functional form</p>
+<div class="math">
+<p><img src="../_images/math/3a9598d03aac26f3c6c9c9b12799e12508af6d90.png" alt="E(\psi^*, \psi, \lambda) = \int dx \psi^* H \psi - \lambda \left( \int dx \psi^* \psi - 1 \right)"/></p>
+</div><p>The reason we have this Lagrange multiplier method is that the wave function should be normalized and this multiplier provides the degree of freedom. We would only get a wrong result if we don&#8217;t include this DoF.</p>
+<p>Variation of <img class="math" src="../_images/math/476bfb741aaf217d4a3a98a8818c35c57451c098.png" alt="\psi^*"/>,</p>
+<div class="math">
+<p><img src="../_images/math/3b10c1c936c96bb9aa1d4e41863e414a7d7121b3.png" alt="\delta E = \int dx \delta \psi^* H \psi - \int dx \delta \psi^* \psi = 0"/></p>
+</div><p>Now what?</p>
+<div class="math">
+<p><img src="../_images/math/ab3d2efc800ee420460cc53a0068172818c21f3e.png" alt="H \psi - \lambda \psi = 0"/></p>
+</div><p>Not helpful.</p>
+</div>
+</div>
+<div class="section" id="variational-method-and-virial-theorem">
+<h2>Variational Method and Virial Theorem<a class="headerlink" href="#variational-method-and-virial-theorem" title="Permalink to this headline">¶</a></h2>
+<p>For a potential <img class="math" src="../_images/math/5f7c62c9f50ac3c861504cb1b9a6670134db2462.png" alt="V(x)=b x^n"/>, we can prove that virial theorem is valid for ground state if we use Gaussian trial function <img class="math" src="../_images/math/7b827f037fe9e165b94065fc6928ea7a9ec11aea.png" alt="e^{- \alpha x^2/2}"/>.</p>
+<p>A MMA proof is <a class="reference external" href="assets/mma/variational.nb">here</a>.</p>
+<p>Virial theorem is pretty interesting. It shares the same math with equipartition theorem.</p>
+</div>
+<div class="section" id="wkb">
+<h2>WKB<a class="headerlink" href="#wkb" title="Permalink to this headline">¶</a></h2>
+<p>This is a semi-classical method. It is semi classical because we will use the classical momentum</p>
+<div class="math">
+<p><img src="../_images/math/3ff180dceb6e7345aca80c3db947db45376bc678.png" alt="\hbar k(x) = \sqrt{2m (E - V(x))}"/></p>
+</div><p>The following points are important for this method.</p>
+<ol class="arabic" start="0">
+<li><p class="first">WKB start from a classical estimation of wave number at a certain energy <img class="math" src="../_images/math/a5f55c6f10fd3ca69829c0d5808b75e9ba921084.png" alt="E"/> which is later quantified by the Bohr-Sommerfeld quantization rule.</p>
+</li>
+<li><p class="first">Conservation law:</p>
+<div class="math">
+<p><img src="../_images/math/75f8606b1c2b922628a7b7e11c71e8af074d128e.png" alt="\frac{\partial}{\partial t}\rho + \nabla \cdot \vec j = 0"/></p>
+</div><p>where <img class="math" src="../_images/math/146d0b4a8fdd564d4e0ac893c2c5b987309e0884.png" alt="\rho = \psi^* \psi"/>, <img class="math" src="../_images/math/c6299708d42504849ce7f618a01c04a94089dffe.png" alt="\vec j = -\frac{\hbar}{2 m i} \left( \psi \nabla \psi^* - \psi^* \nabla \psi \right)"/>. This can be derived from Shrödinger equation easily.</p>
+</li>
+<li><p class="first">Phase:
+Wave function is generally <img class="math" src="../_images/math/567df0dd5cf07b5a85e789ce5338904c1dcc1ff2.png" alt="A(x)\exp(\phi(x))"/>. However, <img class="math" src="../_images/math/447e7599bc03cd27a1d24ffcea70a123049504c6.png" alt="\phi(x)"/> should be the area of the phase function starting from some initial point. For example in WKB, <img class="math" src="../_images/math/a0679b1ded7e847aa777fd6bfbacd97e0d763d0a.png" alt="k(x) = \phi'(x)"/> and <img class="math" src="../_images/math/78ec3ba5c8ab85f4bc6a824d4080678ae7fbd98e.png" alt="\phi(x) = \int \phi'(x')d x' = \int k(x') d x'"/>.</p>
+<p>Using this general wave function and conservation law we find out that <img class="math" src="../_images/math/d0f6e41a7f8a0fe3609bf8a8cf0e707c76fb0045.png" alt="A(x) ~ \frac{1}{\sqrt{k(x)}}"/>. Then we can apply the two boundary conditions. However we will find two different wave functions given by two boundary conditions. Now we should connect them because <img class="math" src="../_images/math/57bd59954e42cd54d86806e6b28120f88217ca30.png" alt="\psi(a) = \psi(b)"/> exactly. By comparing the two wave functions we can find something like Bohr-Sommerfeld quantization rule.</p>
+</li>
+<li><p class="first">Correction at bouldary:
+However, this method requires that the potential varies slowly or equivalently the wave number varies slowly. Basicly we are just using the following approximation:</p>
+<div class="math">
+<p><img src="../_images/math/5d35893acc5218b09bd70fe0b66345c798215016.png" alt="A'(x) = 0, k'(x) = 0"/></p>
+</div><p>For example when taking the derivative of wave function,</p>
+<div class="math">
+<p><img src="../_images/math/a74b293e20b2c08a40085cc34ef873f3f81d4dad.png" alt="\psi'(x) = A'(x) e^{i\int \cdots} + A(x) k(x) e^{i\int \cdots} \approx A(x) k(x) e^{i\int \cdots}"/></p>
+</div><p>where we drop the term with <img class="math" src="../_images/math/b5736c1a973b71cb5b7430bafe3081787f7881d3.png" alt="A'(x)"/>. That is to say</p>
+<div class="math">
+<p><img src="../_images/math/e7accf8693cbd869523e6b9a74c0b36d54fd5095.png" alt="|A'|\ll |A k| \Rightarrow |k'| \ll k^2"/></p>
+</div><p>But at boundary where <img class="math" src="../_images/math/d5cc1052eaa9e4d9fef107f0dc2cd47a2cb5c2ce.png" alt="E = V"/>, this is obviously not valid because <img class="math" src="../_images/math/9fd82539139f8ca0c6747834555906b3613518f9.png" alt="k=0"/>. So we need to fix this problem.</p>
+<p>The solution is to use first order of the potential in a Taylor expansion. Then solve the problem exactly. Finally we connect regions that is far out from the boundary, need the boundary and between the boundary.</p>
+</li>
+</ol>
+<p>If we can have a good boundary condition, then the energy spectrum given by WKB can be very good. Even we don&#8217;t have a good boundary condtion, the excited states given by this method are always close to the exact ones.</p>
+<div class="section" id="how-does-it-work">
+<h3>How does it work<a class="headerlink" href="#how-does-it-work" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer> 
+
+  </body>
+</html>

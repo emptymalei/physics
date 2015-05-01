@@ -15,8 +15,7 @@ Use the source. Keep the source open.
 At The Begining of The Universe
 ================================
 
-Some notes continued from the full theoretical physics notes are `here <http://cosmologytaskforce.github.io/PhysicsResearchSurvivalManual/>`_.
-
+I am not a good physicist so don't trust the notes written here.
 
 
 Preface
@@ -29,13 +28,25 @@ Preface
     preface.rst
 
 
+
+Fun
+===========================
+
+.. toctree::
+   :maxdepth: 3
+
+   fun.rst
+
+
 Vocabulary
 =====================
 
 .. toctree::
     :maxdepth: 3
 
+    voc/vocabulary.rst
     Basic.rst
+
 
 
 
@@ -46,7 +57,10 @@ Mathematics
     :maxdepth: 3
 
     math.rst
+    mathphysics.rst
     statistics/statistics.rst
+    special-functions.rst
+    equation-solving.rst
 
 
 
@@ -58,10 +72,11 @@ Fundamental Physics
     :maxdepth: 3
 
     ClassicalMechanics.rst
-    QuantumMechanics.rst
-    QuantumMechanics2.rst
-    QuantumMechanics3.rst
+    Quantum/QuantumMechanics.rst
+    Quantum/QuantumMechanics2.rst
+    Quantum/QuantumMechanics3.rst
     statmech/StatisticalPhysics.rst
+    electrodynamics.rst
 
 
 
@@ -73,7 +88,7 @@ Advanced Physics
 
     relativity/SpecialRelativity.rst
     relativity/GeneralRelativity.rst
-    
+
 
 
 
@@ -83,9 +98,12 @@ Cutting Edge Physics
 .. toctree::
     :maxdepth: 3
 
+    astrophysics.rst
     relativity/GeneralRelativityAdv.rst
     Cosmology/cosmoIndex.rst
     Quantum/QuantumOptics.rst
+    Quantum/susyQuantum.rst
+
 
 
 
@@ -103,9 +121,11 @@ This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http:/
 .. figure:: _static/images/cc_byncsa.png
    :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/
 
+DOI
+==============
 
-
-
+.. image:: https://zenodo.org/badge/7726/CosmologyTaskForce/PhysicsResearchSurvivalManual.svg
+   :target: http://dx.doi.org/10.5281/zenodo.13216
 
 
 
@@ -114,10 +134,4 @@ This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http:/
 -----
 
 This open source project is hosted on GitHub: `Physics Research Manual <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual>`_ .
-
-`Latest PDF here <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual/raw/master/_build/latex/physics-research-survival-manual.pdf>`_.
-
-
-
-
 

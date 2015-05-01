@@ -1,5 +1,5 @@
 # Only for bootstrap theme. comment it when using other themes
-# import sphinx_bootstrap_theme
+import sphinx_bootstrap_theme
 
 # -*- coding: utf-8 -*-
 #
@@ -242,20 +242,39 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 # html_theme = 'haiku'
-# html_theme = 'bootstrap'
+html_theme = 'bootstrap'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
 
+html_theme_options = {
+    # Choose Bootstrap version.
+    # Values: "3" (default) or "2" (in quotes)
+    'bootstrap_version': "3",
+
+    # Location of link to source.
+    # Options are "nav" (default), "footer" or anything else to exclude.
+    # 'source_link_position': "footer",
+
+    # Bootswatch (http://bootswatch.com/) theme.
+    #
+    # Options are nothing with "" (default) or the name of a valid theme
+    # such as "amelia" or "cosmo".
+    'bootswatch_theme': "flatly",
+
+    # Fix navigation bar to top of page?
+    # Values: "true" (default) or "false"
+    # 'navbar_fixed_top': "false",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
 
 
 # For bootstrap theme:
-# html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # bootswatch_theme = "cosmo"
 
 

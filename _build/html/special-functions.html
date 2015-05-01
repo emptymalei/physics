@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Special Functions &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="index.html" />
+    <link rel="next" title="Equation Solving" href="equation-solving.html" />
+    <link rel="prev" title="Mathematics" href="math.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Basic.html">Basic</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="math.html">Mathematics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ClassicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics.html">Electrodynamics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="relativity/SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relativity/GeneralRelativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relativity/GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Special Functions</a><ul>
+<li><a class="reference internal" href="#gamma-functions">Gamma Functions</a></li>
+<li><a class="reference internal" href="#legendre-polynomials">Legendre Polynomials</a></li>
+<li><a class="reference internal" href="#associated-legendre-polynomials">Associated Legendre Polynomials</a></li>
+<li><a class="reference internal" href="#bessel-functions">Bessel Functions</a><ul>
+<li><a class="reference internal" href="#bessel-function-of-the-first-kind">Bessel Function of the first kind</a></li>
+<li><a class="reference internal" href="#graphics-and-properties">Graphics and Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="math.html" title="Previous Chapter: Mathematics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Mathematics</span>
+    </a>
+  </li>
+  <li>
+    <a href="equation-solving.html" title="Next Chapter: Equation Solving"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Equation Solving &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/special-functions.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="special-functions">
+<h1>Special Functions<a class="headerlink" href="#special-functions" title="Permalink to this headline">¶</a></h1>
+<p>There are a lot of useful special function in physics. Some of them provides physics understanding of the problem, some of them helps us writing down a solution quickly.</p>
+<p>Among them, Gamma functions, Legendre polynomials, Bessel functions, spherical harmonics, modified bessel functions, spherical bessel functions, and elliptical functions are the most used ones.</p>
+<div class="section" id="gamma-functions">
+<h2>Gamma Functions<a class="headerlink" href="#gamma-functions" title="Permalink to this headline">¶</a></h2>
+<p>Gamma function satisfies the following relatioin,</p>
+<div class="math">
+<p><img src="_images/math/e98be14928551dc192e13a8f256e33935850cf3b.png" alt="\Gamma(z+1) = z\Gamma(z) ."/></p>
+</div><p>For some cases, it can also be written as</p>
+<div class="math">
+<p><img src="_images/math/ab7f2e773ae878fa613e476cca1381e6424afddd.png" alt="\Gamma(n) = \int_0^\infty dt t^{n-1} e^{-t} ."/></p>
+</div><p>One can prove that</p>
+<div class="math">
+<p><img src="_images/math/5c043738608b932ada80bfa9902b9c9861b644ff.png" alt="\Gamma(z)\Gamma(1-z) = \frac{\pi}{\sin(\pi z)} ."/></p>
+</div></div>
+<div class="section" id="legendre-polynomials">
+<h2>Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this headline">¶</a></h2>
+<p>Legendre polynomials are solutions to Legendre equation, which is</p>
+<div class="math">
+<p><img src="_images/math/e575c52a9d2db787ceac90bba86bebd61e08a7f2.png" alt="\left(\frac{d}{dx}\left[(1-x^2)\frac{d}{dx}\right] + n(n+1)\right) P_n(x) = 0."/></p>
+</div><p>Legendre polynomials has many different representations.</p>
+<p><strong>Integral</strong></p>
+<div class="math">
+<p><img src="_images/math/d5345ce13a73d37f6f6143ff42846b8be4602c4b.png" alt="P_n(z) = \frac{1}{2\pi i} \oint (1 - 2 t z + t^2)^{1/2} t^{-n-1} dt."/></p>
+</div><p><strong>Rodrigues representation</strong></p>
+<div class="math">
+<p><img src="_images/math/361be499ef4b7e70deb2583b18d2b5ba0483b459.png" alt="P_n(z) = \frac{1}{2^l l!} \frac{d^l}{d x^l} (x^2 - 1)^l ."/></p>
+</div><p>It&#8217;s generation function is</p>
+<div class="math">
+<p><img src="_images/math/1a5e4e6233c0ef9129f0209fcac4d55620942a8a.png" alt="\frac{1}{\sqrt{1 + \eta^2 - 2 \eta x }} = \sum_{k=0}^\infty \eta^k P_k(x) ."/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Properties</p>
+<blockquote class="last">
+<div><p><strong>Orthogonality</strong></p>
+<div class="math">
+<p><img src="_images/math/2201bd859e3ca2c1a8ea4fd3ac70d8e6149d5c12.png" alt="\int_{-1}^1 P_m(x) P_n(x) dx =  \frac{2}{2n + 1}\delta_{mn} ."/></p>
+</div><p>They all have value 1 at <img class="math" src="_images/math/81abe980b4a5d32255f5c21af5a50fd24ff07e8a.png" alt="z=1"/>.</p>
+<p>The parity is alternating.</p>
+<p><strong>Examples</strong></p>
+<div class="math">
+<p><img src="_images/math/dc08ed7dc002187deb53a9d02aca624b4ef7d0b0.png" alt="P_0(x) &amp; = 1 \\
+P_1(x) &amp; = x \\
+P_2(x) &amp; = \frac{1}{2}(3x^2-1)."/></p>
+</div><p>Through these, we can solve out</p>
+<div class="math">
+<p><img src="_images/math/63c805da285954b561848fac081e9b23b8074179.png" alt="x &amp;= P_1(x) \\
+x^2 &amp;= \frac{1}{3}(P_0(x) + 2 P_2(x) )."/></p>
+</div><p>Notice that they have physics meanings although it&#8217;s better to understand it together with spherical harmonics.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="associated-legendre-polynomials">
+<h2>Associated Legendre Polynomials<a class="headerlink" href="#associated-legendre-polynomials" title="Permalink to this headline">¶</a></h2>
+<p>The associated Legendre equation is</p>
+<div class="math">
+<p><img src="_images/math/21dc762049ae5642b93400127e8a261248532641.png" alt="\left(\frac{d}{dx}\left[(1-x^2)\frac{d}{dx}\right] + n(n+1) - \frac{m^2}{1-x^2} \right) P_n(x) = 0."/></p>
+</div><p>The solution to this equation is Associated Legendre polynomial, which can be represented by</p>
+<div class="math">
+<p><img src="_images/math/4ecebdd3db6eb90f91ffe13aa9308f100d8c6e3c.png" alt="P_n^{\nu}(x) = (-1)^m(1-x^2)^{m/2} \frac{d^m}{dx^m} P_l(x) ."/></p>
+</div></div>
+<div class="section" id="bessel-functions">
+<h2>Bessel Functions<a class="headerlink" href="#bessel-functions" title="Permalink to this headline">¶</a></h2>
+<p>Bessel functions are solutions to Bessel equation,</p>
+<div class="math">
+<p><img src="_images/math/688ea9f68da47f712e0a1b228068651acd1a0e52.png" alt="\left( x \frac{d}{dx} x \frac{d}{dx} + x^2 - \nu^2 \right) J_{\nu} (x) = 0."/></p>
+</div><p>They all satisfy these recurrence relations,</p>
+<div class="math">
+<p><img src="_images/math/adb7c8993b37f3f00b11a2890df5594058a11002.png" alt="Z_{n+1} + Z_{n-1} &amp;= \frac{2n}{x} Z_n  \\
+Z_{n-1} - Z_{n+1} &amp; = 2 \frac{d}{dx}Z_n ."/></p>
+</div><div class="section" id="bessel-function-of-the-first-kind">
+<h3>Bessel Function of the first kind<a class="headerlink" href="#bessel-function-of-the-first-kind" title="Permalink to this headline">¶</a></h3>
+<p>Use notation <img class="math" src="_images/math/bea4a9f71e03a07ebec7c18b453f3fb73bac04d7.png" alt="J_n(x)"/> for the first kind.</p>
+<p><strong>Generating function</strong> is</p>
+<div class="math">
+<p><img src="_images/math/98205d1a5c47abbf36d7e1ecc122378edcbb22c6.png" alt="e^{\frac{z}{2}\left(t-\frac{1}{t}\right)} = \sum_{n=-\infty}{infty} t^n J_n(z) ."/></p>
+</div><p><strong>Integral representation</strong></p>
+<div class="math">
+<p><img src="_images/math/f0b40ae39a0e61509588256f32a3e1c3d81d348b.png" alt="J_n(z) = \frac{1}{2\pi} \int_{-\pi}^{\pi} e^{i(n\tau - x \sin \tau)} d\tau ."/></p>
+</div><p>It also has a <strong>summation representation</strong>,</p>
+<div class="math">
+<p><img src="_images/math/6d2a948684d7175ada81416450df9dfc97d541b5.png" alt="J_\alpha(z) = \sum_{m=0}^\infty \frac{(-1)^m}{m!\Gamma(m+\alpha +1)}  \left( \frac{x}{2} \right)^{2m+\alpha} ."/></p>
+</div><p>At large <img class="math" src="_images/math/999842384bbe8a9993261aca9fcf1980e0b11c9a.png" alt="\vert x \vert"/> limits, we have</p>
+<div class="math">
+<p><img src="_images/math/d14f96f414a3391f8097c4b02462395ad072fba6.png" alt="\lim_{\vert x\vert \to \infty} J_l(x) &amp;= \frac{\sin(z-l\frac{\pi}{2})}{x} \\
+\lim_{\vert x\vert \to \infty} J_l'(x) &amp;= \frac{\cos(z-l\frac{\pi}{2})}{x} ."/></p>
+</div><p>By playing with the recurrence relation,</p>
+<div class="math">
+<p><img src="_images/math/bad9c7e372dbedfd04d94fc909bcf1f9103ab275.png" alt="2J_n' &amp;= J_{n-1} - J_{n+1} \\
+2n J_n &amp; = J_{n+1} + J_{n-1},"/></p>
+</div><p>we can get two more useful relations,</p>
+<div class="math">
+<p><img src="_images/math/cb2f7be490eb4fc587fda78c68a00826553f64b0.png" alt="\frac{d}{dz} (z^n J_n) &amp; = z^n J_{n-1} \\
+\frac{d}{dz} (z^{-n} J_{n}) &amp; = - z^{-n} J_{n+1} ."/></p>
+</div><p>They are very useful when integrating by part.</p>
+</div>
+<div class="section" id="graphics-and-properties">
+<h3>Graphics and Properties<a class="headerlink" href="#graphics-and-properties" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id1">
+<img alt="_images/BesselZeros.png" src="_images/BesselZeros.png" />
+<p class="caption"><span class="caption-text">The first 10 zeros of Bessel functions from order 0 to 4.</span></p>
+</div>
+<div class="figure align-center" id="id2">
+<img alt="_images/sphericalBesselZeros.png" src="_images/sphericalBesselZeros.png" />
+<p class="caption"><span class="caption-text">The first 10 zeros of spherical Bessel functions from order 0 to 4.</span></p>
+</div>
+<div class="figure align-center" id="id3">
+<img alt="_images/besselZerosListPlt.png" src="_images/besselZerosListPlt.png" />
+<p class="caption"><span class="caption-text">Bessel function zeros in a list plot. Horizontal axis is nth zero point, while vertical axis is the value.</span></p>
+</div>
+<div class="figure align-center" id="id4">
+<img alt="_images/sphbesselZerosListPlt.png" src="_images/sphbesselZerosListPlt.png" />
+<p class="caption"><span class="caption-text">Spherical Bessel function zeros.</span></p>
+</div>
+<div class="figure align-center" id="id5">
+<img alt="_images/besselZerosDifferencePlt.png" src="_images/besselZerosDifferencePlt.png" />
+<p class="caption"><span class="caption-text">The difference between zeros of Bessel functions. They are almost the same, which a around Pi.</span></p>
+</div>
+<div class="figure align-center" id="id6">
+<img alt="_images/sphbesselZerosDifferencePlt.png" src="_images/sphbesselZerosDifferencePlt.png" />
+<p class="caption"><span class="caption-text">Spherical Bessel function zeros differences.</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="refs-notes">
+<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer> 
+
+  </body>
+</html>

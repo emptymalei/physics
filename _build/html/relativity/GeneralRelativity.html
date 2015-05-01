@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
@@ -31,7 +31,7 @@
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Research Survival Manual" href="../index.html" />
-    <link rel="next" title="General Relativity Revisited" href="GeneralRelativityAdv.html" />
+    <link rel="next" title="Astrophysics" href="../astrophysics.html" />
     <link rel="prev" title="Special Relativity" href="SpecialRelativity.html" />
     <script type="text/javascript">
 
@@ -51,10 +51,9 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
-
-
+ 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -84,26 +83,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Basic.html">Basic</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../ClassicalMechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics2.html">Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics.html">Electrodynamics</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="SpecialRelativity.html">Special Relativity</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">General Relativity</a></li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GeneralRelativityAdv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Cosmology/cosmoIndex.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
 </ul>
 </ul>
 </li>
@@ -120,10 +128,10 @@
 <li><a class="reference internal" href="#volume">Volume</a></li>
 <li><a class="reference internal" href="#velocity">4-velocity</a></li>
 <li><a class="reference internal" href="#projection-tensors">Projection Tensors</a></li>
-<li><a class="reference internal" href="#covariant-time-derivative">Covariant time derivative (<img class="math" src="../_images/math/acab176201f3a6241d792302a4408fddd9bdde4c.png" alt="\dot \quad"/>)</a></li>
-<li><a class="reference internal" href="#fully-orthogonally-projected-covariant-derivative">Fully orthogonally projected covariant derivative (<img class="math" src="../_images/math/d62109aa222cfab66dd2be824972317fb2ff4032.png" alt="\tilde \nabla"/>)</a></li>
+<li><a class="reference internal" href="#covariant-time-derivative">Covariant time derivative (<img class="math" src="../_images/math/389e1dca579b9ae1198e3acc19ba54fc3afa18dd.png" alt="\dot \quad"/>)</a></li>
+<li><a class="reference internal" href="#fully-orthogonally-projected-covariant-derivative">Fully orthogonally projected covariant derivative (<img class="math" src="../_images/math/426e2057984361df8bc13ed1a90e04f2cb4959b6.png" alt="\tilde \nabla"/>)</a></li>
 <li><a class="reference internal" href="#orthogonal-projections-of-vectors">Orthogonal projections of vectors</a></li>
-<li><a class="reference internal" href="#othogonal-projected-covariant-time-derivatives-along">Othogonal projected covariant time derivatives along <img class="math" src="../_images/math/2d0a08f5690f55403a9f8b8f7232a7e691ea28fe.png" alt="u^a"/></a></li>
+<li><a class="reference internal" href="#othogonal-projected-covariant-time-derivatives-along">Othogonal projected covariant time derivatives along <img class="math" src="../_images/math/b9579698ae5835d1b6e6d482991497a526f39256.png" alt="u^a"/></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#properties">Properties</a></li>
@@ -161,7 +169,7 @@
     </a>
   </li>
   <li>
-    <a href="GeneralRelativityAdv.html" title="Next Chapter: General Relativity Revisited"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">General Relativi... &raquo;</span>
+    <a href="../astrophysics.html" title="Next Chapter: Astrophysics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Astrophysics &raquo;</span>
     </a>
   </li>
               
@@ -230,13 +238,13 @@
 <p>On an oriented manifold with metric, the defined volume element (a n-form) should be compatible with the orientation and also determined by the metric. <a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
 <p>Introducing those requirements, a compatible volume element is</p>
 <div class="math">
-<p><img src="../_images/math/f4731563e775ba95314f0ca6325509af02b6ab60.png" alt="\epsilon_{a_1\cdots a_n} = \pm \sqrt{|g|} (e^1)_{a_1}\wedge \cdots \wedge (e^n)_{a_n}"/></p>
+<p><img src="../_images/math/d9191fa7fc42e32d258c971915afa050f5dff770.png" alt="\epsilon_{a_1\cdots a_n} = \pm \sqrt{|g|} (e^1)_{a_1}\wedge \cdots \wedge (e^n)_{a_n}"/></p>
 </div><p>Alternatively, this can be expressed in the way Ellis used in arXiv:gr-qc/9812046v5.</p>
 <div class="math">
-<p><img src="../_images/math/a05d5ab6b7f981ff1cfe4ebf39d3674aee30fabb.png" alt="\eta_{abcd} = \eta_{[abcd]}, \quad \mathrm{with} \eta_{0123} = \sqrt{|\mathrm {det} g_{ab}|}"/></p>
-</div><p>Induced volume element <img class="math" src="../_images/math/fde42c5e68625789b1a9d997f15e36b63118e19a.png" alt="\hat \epsilon_{a_1\cdots a_{n-1}}"/> is defined use the normal vector <img class="math" src="../_images/math/2d0a08f5690f55403a9f8b8f7232a7e691ea28fe.png" alt="u^a"/> of the hypersurface,</p>
+<p><img src="../_images/math/b3e2a32276085a2d32ce9e68fa906858c05c0963.png" alt="\eta_{abcd} = \eta_{[abcd]}, \quad \mathrm{with} \eta_{0123} = \sqrt{|\mathrm {det} g_{ab}|}"/></p>
+</div><p>Induced volume element <img class="math" src="../_images/math/0d9ff4ebb44ae620de3e4a09d9e88b9d938b24d1.png" alt="\hat \epsilon_{a_1\cdots a_{n-1}}"/> is defined use the normal vector <img class="math" src="../_images/math/b9579698ae5835d1b6e6d482991497a526f39256.png" alt="u^a"/> of the hypersurface,</p>
 <div class="math">
-<p><img src="../_images/math/bbb4daf5fc105a192233ec2281fca0f2abe90c3f.png" alt="\hat \epsilon_{a_1\cdots a_{n-1}} = u^b \epsilon_{b a_1 \cdots a_{n-1}}"/></p>
+<p><img src="../_images/math/2e218f7ddf9a0addcb7500cdb46872ece7dc7cc8.png" alt="\hat \epsilon_{a_1\cdots a_{n-1}} = u^b \epsilon_{b a_1 \cdots a_{n-1}}"/></p>
 </div><table class="docutils footnote" frame="void" id="id2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -248,47 +256,47 @@
 <h4>4-velocity<a class="headerlink" href="#velocity" title="Permalink to this headline">¶</a></h4>
 <p>4-velocity of observed matter is</p>
 <div class="math">
-<p><img src="../_images/math/2fb0b27c9bf76732d0a72e35a408e3a2902409bc.png" alt="u^\alpha = \frac{\mathrm d x^\alpha}{\mathrm d \tau}"/></p>
-</div><p>with <img class="math" src="../_images/math/b25a1ae912f624258b8f00808b14f6f588d70bcf.png" alt="u^\alpha u_\alpha =-1"/>, <img class="math" src="../_images/math/1dc1c0119a604b91be9142370dc3159b6a9bbcb9.png" alt="\tau"/> is the proper time along the worldlines of investaged matter.</p>
+<p><img src="../_images/math/9efedd5852bb15378af6bd929b548f143215ed08.png" alt="u^\alpha = \frac{\mathrm d x^\alpha}{\mathrm d \tau}"/></p>
+</div><p>with <img class="math" src="../_images/math/05a4bf2cad79dc88e343374ab743b395ad85a1af.png" alt="u^\alpha u_\alpha =-1"/>, <img class="math" src="../_images/math/bc79a6ba6699adb9e6f9984cc3bba7fcce6f2c62.png" alt="\tau"/> is the proper time along the worldlines of investaged matter.</p>
 </div>
 <div class="section" id="projection-tensors">
 <h4>Projection Tensors<a class="headerlink" href="#projection-tensors" title="Permalink to this headline">¶</a></h4>
-<p>We can use 4-velocity to project variables to parts that is parallel to <img class="math" src="../_images/math/a3253671277129b53858aed17b250c13245befd1.png" alt="u^\alpha"/> and parts that is orthogonal to <img class="math" src="../_images/math/a3253671277129b53858aed17b250c13245befd1.png" alt="u^\alpha"/>.</p>
+<p>We can use 4-velocity to project variables to parts that is parallel to <img class="math" src="../_images/math/755b97439ae233a73546723ccef006827a196cca.png" alt="u^\alpha"/> and parts that is orthogonal to <img class="math" src="../_images/math/755b97439ae233a73546723ccef006827a196cca.png" alt="u^\alpha"/>.</p>
 <div class="math">
-<p><img src="../_images/math/75e44896d235be8e22139c2f3bbf4957689cd9ce.png" alt="U^a_{\phantom a b} &amp;= -u^a u_b \\
+<p><img src="../_images/math/3aa6fbfe953eb9790dfea7d052e5184a8fa82ea5.png" alt="U^a_{\phantom a b} &amp;= -u^a u_b \\
 h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}"/></p>
 </div><p>Some properties of the  two projections.</p>
 <div class="math">
-<p><img src="../_images/math/a1a9402e42eefcaac76a1872e639283691c23f88.png" alt="&amp; U^a_{\phantom a b} U^b_{\phantom bc} = U^a_{\phantom a c}  ,  U^a_{\phantom a a} = 1  , U_{ab}=g_{ac} U^c_{\phantom cb}  , U_{ab} u^b = - g_{ac} u^c u_b u^b = u_a \\
+<p><img src="../_images/math/0700c9ffc38d4bb27f426dd81b98976aa62dacd0.png" alt="&amp; U^a_{\phantom a b} U^b_{\phantom bc} = U^a_{\phantom a c}  ,  U^a_{\phantom a a} = 1  , U_{ab}=g_{ac} U^c_{\phantom cb}  , U_{ab} u^b = - g_{ac} u^c u_b u^b = u_a \\
 &amp; h^a_{\phantom ab} = g^{ac} h_{cb} = \delta^a_{\phantom ab} + u^a u_b = \delta^a_{\phantom ab} - U^a_{\phantom ab} \\
 &amp; h^a_{\phantom a c}h^c_{\phantom c b} = (\delta^a_{\phantom ac} - U^a_{\phantom ac})(\delta^c_{\phantom cb} - U^c_{\phantom cb}) = \delta^a_{\phantom ab} - U^a_{\phantom ab} = h^a_{\phantom ab} \\
 &amp; h^a_{\phantom aa} = 4-1 = 3  ,   h_{ab}u^b = 0"/></p>
 </div></div>
 <div class="section" id="covariant-time-derivative">
-<h4>Covariant time derivative (<img class="math" src="../_images/math/acab176201f3a6241d792302a4408fddd9bdde4c.png" alt="\dot \quad"/>)<a class="headerlink" href="#covariant-time-derivative" title="Permalink to this headline">¶</a></h4>
+<h4>Covariant time derivative (<img class="math" src="../_images/math/389e1dca579b9ae1198e3acc19ba54fc3afa18dd.png" alt="\dot \quad"/>)<a class="headerlink" href="#covariant-time-derivative" title="Permalink to this headline">¶</a></h4>
 <p>This is the derivative along the fundamental worldlines (projection on the worldlines),</p>
 <div class="math">
-<p><img src="../_images/math/9f96c6a9ae1f830b65db5d7cdd6021309ee840ea.png" alt="\dot T^{ab}_{\phantom{ab}cd} = u^e \nabla_e T^{ab}_{\phantom{ab}cd}"/></p>
+<p><img src="../_images/math/35807bcdaf57832db4b8a205097c04dd819049eb.png" alt="\dot T^{ab}_{\phantom{ab}cd} = u^e \nabla_e T^{ab}_{\phantom{ab}cd}"/></p>
 </div></div>
 <div class="section" id="fully-orthogonally-projected-covariant-derivative">
-<h4>Fully orthogonally projected covariant derivative (<img class="math" src="../_images/math/d62109aa222cfab66dd2be824972317fb2ff4032.png" alt="\tilde \nabla"/>)<a class="headerlink" href="#fully-orthogonally-projected-covariant-derivative" title="Permalink to this headline">¶</a></h4>
+<h4>Fully orthogonally projected covariant derivative (<img class="math" src="../_images/math/426e2057984361df8bc13ed1a90e04f2cb4959b6.png" alt="\tilde \nabla"/>)<a class="headerlink" href="#fully-orthogonally-projected-covariant-derivative" title="Permalink to this headline">¶</a></h4>
 <p>This derivative is the project orghogonal to the normal vector of the hyperspace or orthogonal to the observer&#8217;s 4-velocity or along the tagent of the hyperspace.</p>
 <div class="math">
-<p><img src="../_images/math/5a95e46807fc179e25dc413cdaecd59ed897c48b.png" alt="\tilde\nabla_e T^{ab}_{\phantom{ab}cd} = h^a_f h^b_gh^p_ch^q_dh^r_e \nabla_r T^{fg}_{\phantom{fg}pq}"/></p>
+<p><img src="../_images/math/bfa8b4398bea6405c1ba8cfacca3ffa0be2bf1e1.png" alt="\tilde\nabla_e T^{ab}_{\phantom{ab}cd} = h^a_f h^b_gh^p_ch^q_dh^r_e \nabla_r T^{fg}_{\phantom{fg}pq}"/></p>
 </div></div>
 <div class="section" id="orthogonal-projections-of-vectors">
 <h4>Orthogonal projections of vectors<a class="headerlink" href="#orthogonal-projections-of-vectors" title="Permalink to this headline">¶</a></h4>
 <p>Orthogonal projection of vectors</p>
 <div class="math">
-<p><img src="../_images/math/7c5a24d1d0cc424836a6727bba1ba4d880c8f710.png" alt="v^{&lt;a&gt;}      = h^a_{\phantom a b} v^b"/></p>
+<p><img src="../_images/math/cb9051f4e5d05585ee4091369615d0a98c61aa01.png" alt="v^{&lt;a&gt;}      = h^a_{\phantom a b} v^b"/></p>
 </div><p>And the orthogonally projected symmetric trace-free part of tensors</p>
 <div class="math">
-<p><img src="../_images/math/15dc94a10fcdddeb4a60132c41c28b21607d84d3.png" alt="T^{&lt;ab&gt;} = [h^{(a}_{\phantom {(a} c} h^{b)}_{\phantom{b)}d} - \frac{1}{3} h^{ab} h_{cd} ] T^{cd}"/></p>
+<p><img src="../_images/math/f3e3c9a9fcfbd80edfaa586dfc6672697f2a73ed.png" alt="T^{&lt;ab&gt;} = [h^{(a}_{\phantom {(a} c} h^{b)}_{\phantom{b)}d} - \frac{1}{3} h^{ab} h_{cd} ] T^{cd}"/></p>
 </div></div>
 <div class="section" id="othogonal-projected-covariant-time-derivatives-along">
-<h4>Othogonal projected covariant time derivatives along <img class="math" src="../_images/math/2d0a08f5690f55403a9f8b8f7232a7e691ea28fe.png" alt="u^a"/><a class="headerlink" href="#othogonal-projected-covariant-time-derivatives-along" title="Permalink to this headline">¶</a></h4>
+<h4>Othogonal projected covariant time derivatives along <img class="math" src="../_images/math/b9579698ae5835d1b6e6d482991497a526f39256.png" alt="u^a"/><a class="headerlink" href="#othogonal-projected-covariant-time-derivatives-along" title="Permalink to this headline">¶</a></h4>
 <div class="math">
-<p><img src="../_images/math/560635d393d1d088e984a35369ccf1dffc2a11e5.png" alt="\dot v^{&lt;a&gt;} = h^a_{\phantom a b} \dot v^b
+<p><img src="../_images/math/113eac44e157c9622f2c7d510776d7aa22f3059f.png" alt="\dot v^{&lt;a&gt;} = h^a_{\phantom a b} \dot v^b
 
 \dot T^{&lt;ab&gt;} = [ h^{(a}_{\phantom{(a}b} h^{b)}_{\phantom{b)} d} - \frac 1 3 h^{ab}h_{cd} ]\dot T^{cd}"/></p>
 </div></div>
@@ -296,7 +304,7 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}"/></p
 <div class="section" id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Projected time and space derivatives of <img class="math" src="../_images/math/a8fce16c479f8f4d3e568a6ca6d6d53bfe3a1682.png" alt="U_{ab}"/>, <img class="math" src="../_images/math/6c5d008b41daad3624d7d4dcc49bf7487cd7e3ef.png" alt="h_{ab}"/> and <img class="math" src="../_images/math/956f8dd5373356a618097651f70c955666f86299.png" alt="\eta_{abc}"/> vanish.</li>
+<li>Projected time and space derivatives of <img class="math" src="../_images/math/e4ba6ab172b6c4cdc433cf07d03533cf8473bb73.png" alt="U_{ab}"/>, <img class="math" src="../_images/math/6a2177b590cd4354b8a99f089bb6545b21589b47.png" alt="h_{ab}"/> and <img class="math" src="../_images/math/b09d28d04ae1f30d30bc13465350eb462deccf30.png" alt="\eta_{abc}"/> vanish.</li>
 </ul>
 </div>
 </div>
@@ -305,17 +313,17 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}"/></p
 <div class="section" id="energy-momentum-tensor-for-particles">
 <h3>Energy-Momentum Tensor for Particles<a class="headerlink" href="#energy-momentum-tensor-for-particles" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/8615545ce0ed09c05ba5354c26bba11f85be91f2.png" alt="S_p \equiv -m c \int \int \mathrm d s\mathrm d\tau \sqrt{-\dot x ^\mu g_{\mu\nu} \dot x^\nu} \delta^4(x^\mu - x^\mu (s))    ,"/></p>
-</div><p>in which <img class="math" src="../_images/math/cca8ac475ec46e3699055b5a56e48a8ce128f7d5.png" alt="x^\mu(s)"/> is the trajectory of the particle. Then the energy density <img class="math" src="../_images/math/0027034d8a10372a06deaf4f4084c01956587479.png" alt="\rho"/> corresponds to <img class="math" src="../_images/math/b9d24b7a30bef6e4c70f0970a159821218290d86.png" alt="m\delta^4(x^\mu- x^\mu(s))"/>.</p>
+<p><img src="../_images/math/1eef655e74a812bdea5ff2ecf6a9d3434542cca7.png" alt="S_p \equiv -m c \int \int \mathrm d s\mathrm d\tau \sqrt{-\dot x ^\mu g_{\mu\nu} \dot x^\nu} \delta^4(x^\mu - x^\mu (s))    ,"/></p>
+</div><p>in which <img class="math" src="../_images/math/aada19082bb810879fbc3791077074791a88d135.png" alt="x^\mu(s)"/> is the trajectory of the particle. Then the energy density <img class="math" src="../_images/math/e6a69c8b302d6d4d61049a3fc0565347c7ddddb6.png" alt="\rho"/> corresponds to <img class="math" src="../_images/math/34c03f8c949cf229856f40854ee5b891f7ae8d8b.png" alt="m\delta^4(x^\mu- x^\mu(s))"/>.</p>
 <p>The Largrange density</p>
 <div class="math">
-<p><img src="../_images/math/36520965e4910255c07ef4a8677a1e9d6a48c5f2.png" alt="\mathcal L = -\int\mathrm ds mc \sqrt{-\dot x^\mu g_{\mu\nu}\dot x^\nu}\delta^4(x^\mu - x^\mu(s))"/></p>
-</div><p>Energy-momentum density is <img class="math" src="../_images/math/e414e9a4dec510a19ccae7e3644e982268d20c21.png" alt="\mathcal T^{\mu\nu} = \sqrt{-g}T^{\mu\nu}"/> is</p>
+<p><img src="../_images/math/a9c48f75d9c4ededc3ea01c765f560ec6a571284.png" alt="\mathcal L = -\int\mathrm ds mc \sqrt{-\dot x^\mu g_{\mu\nu}\dot x^\nu}\delta^4(x^\mu - x^\mu(s))"/></p>
+</div><p>Energy-momentum density is <img class="math" src="../_images/math/1d1e9827c4f3a85f4dea3a25165168aedf4e5723.png" alt="\mathcal T^{\mu\nu} = \sqrt{-g}T^{\mu\nu}"/> is</p>
 <div class="math">
-<p><img src="../_images/math/24d70295bded1cbc562f4272166c34d0380029d8.png" alt="\mathcal T^{\mu\nu} = -2 \frac{\partial \mathcal L}{\partial g_{\mu\nu}}"/></p>
+<p><img src="../_images/math/10273a8dccf7dcd32ee9ede3b8aaba201356dbb0.png" alt="\mathcal T^{\mu\nu} = -2 \frac{\partial \mathcal L}{\partial g_{\mu\nu}}"/></p>
 </div><p>Finally,</p>
 <div class="math">
-<p><img src="../_images/math/09a2be2fb216fb65dafec5f825d2b9d4a34801d1.png" alt="\mathcal T^{\mu\nu} &amp;= \int \mathrm ds \frac{mc\dot x^\mu \dot x^\nu}{\sqrt{-\dot x^\mu g_{\mu\nu} \dot x^\nu}} \delta(t-t(s))\delta^3(\vec x - \vec x(t)) \\
+<p><img src="../_images/math/57ba850de905f9595e9baa4a3ebbc4208174d5c0.png" alt="\mathcal T^{\mu\nu} &amp;= \int \mathrm ds \frac{mc\dot x^\mu \dot x^\nu}{\sqrt{-\dot x^\mu g_{\mu\nu} \dot x^\nu}} \delta(t-t(s))\delta^3(\vec x - \vec x(t)) \\
 &amp;= m\dot x^\mu \dot x^\nu \frac{\mathrm d s}{\mathrm d t} \delta^3(\vec x - \vec x(s(t)))"/></p>
 </div></div>
 </div>
@@ -323,14 +331,14 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}"/></p
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="killing-vector-related">
 <h3>Killing Vector Related<a class="headerlink" href="#killing-vector-related" title="Permalink to this headline">¶</a></h3>
-<p><img class="math" src="../_images/math/7b81ce68cfd153d7ffb59031b6e9e43bb7deb5c2.png" alt="\xi^a"/> is Killing vector field, <img class="math" src="../_images/math/4e5ea0afada3b9f48a400f6ec0119c893943c3b4.png" alt="T^a"/> is the tangent vector of geodesic line. Then <img class="math" src="../_images/math/a2a468e11f224ead341e78467bd1c5946a84d98c.png" alt="T^a\nabla_a(T^b\xi_b)=0"/>, that is <img class="math" src="../_images/math/56712833f96fcdf07d42578b12dcafa28a557da9.png" alt="T^b\xi_b"/> is a constant on geodesics.</p>
+<p><img class="math" src="../_images/math/a7e274377d0e3249571eef1a2b746e5017a659fa.png" alt="\xi^a"/> is Killing vector field, <img class="math" src="../_images/math/aedb792b29c1749815e80938c6160ecd419415d9.png" alt="T^a"/> is the tangent vector of geodesic line. Then <img class="math" src="../_images/math/6a8f7deb39a5504e2308f91d06b795b57b32f63e.png" alt="T^a\nabla_a(T^b\xi_b)=0"/>, that is <img class="math" src="../_images/math/8cd38a4f422e930e14aae8bc526b01c1e8e6a85d.png" alt="T^b\xi_b"/> is a constant on geodesics.</p>
 </div>
 </div>
 <div class="section" id="specific-topics">
 <h2>Specific Topics<a class="headerlink" href="#specific-topics" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="redshift">
 <h3>Redshift<a class="headerlink" href="#redshift" title="Permalink to this headline">¶</a></h3>
-<p>In geometrical optics limit, the angular frequency <img class="math" src="../_images/math/54d7d48553f4d9e7ab418118607ea324cbfddfda.png" alt="\omega"/> of a photon with a 4-vector <img class="math" src="../_images/math/d016f91abcebc2ed828ead75ceadeb36832decdb.png" alt="K^a"/>, measured by a observer with a 4-velocity <img class="math" src="../_images/math/2f8edbfe8bb8c652298041d8ac0b8599fcb86813.png" alt="Z^a"/>, is <img class="math" src="../_images/math/6a180c1fce44617bda3056b752ae2cef9b86a8a4.png" alt="\omega=-K_aZ^a"/>.</p>
+<p>In geometrical optics limit, the angular frequency <img class="math" src="../_images/math/aff21286744f071a30510e94b9cddfe615914b71.png" alt="\omega"/> of a photon with a 4-vector <img class="math" src="../_images/math/1792afc0a5138971d9b7ee2ced8d0415c0e0209c.png" alt="K^a"/>, measured by a observer with a 4-velocity <img class="math" src="../_images/math/4ba4431bc7f6963a8ffc4d2dd2d2a2e9404ae4bf.png" alt="Z^a"/>, is <img class="math" src="../_images/math/05987911844894ba00b7afaea214f5fc1757c5b2.png" alt="\omega=-K_aZ^a"/>.</p>
 </div>
 <div class="section" id="stationary-vs-static">
 <h3>Stationary vs Static<a class="headerlink" href="#stationary-vs-static" title="Permalink to this headline">¶</a></h3>
@@ -353,6 +361,30 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}"/></p
       
   </div>
 </div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
@@ -361,9 +393,10 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}"/></p
     </p>
     <p>
         &copy; Copyright 2014, Lei Ma.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b2.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
-</footer>
+</footer> 
+
   </body>
 </html>

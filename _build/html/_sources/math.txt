@@ -10,6 +10,139 @@ Mathematics
 
 
 
+
+Kindergarten
+=================
+
+
+
+
+
+**Binominal theorem**
+
+.. math::
+   (1+x)^n = \sum_{k=0}^{n} C_n^k x^k .
+
+
+
+
+
+
+
+
+
+Complex Analysis
+================
+
+
+
+Some useful concepts: [1]_
+
+* Representation of a complex number and its conjugate
+* Complex functions
+* curves, closed curves, simple curves
+* Ininity point
+* Analytic functions: depends only on z not its complex conjugate
+* Entire function: single-valued analytic all over C
+* Liouville theorem
+* Pole
+* Singularity, Essential Singularity
+* Meromorphic function
+
+For multi-valued functions,
+
+* A branch of a function
+* Analyticity of multi-valued function
+* Branch point
+* Cut
+
+
+Operations
+
+* Contour integral of a continuous function arround some simple curve
+* Cauchy's Integral Theorem
+
+
+
+
+Cauchy-Riemann Equation
+-----------------------------------
+
+A function :math:`f(z) = u(z) + i v(z)` is a function of a complex variable :math:`z=x+i y`.
+
+.. math::
+   \frac{\partial}{\partial x} u &= \frac{\partial}{\partial y} v \\
+   \frac{\partial}{\partial x} v & = -\frac{\partial}{\partial y} u
+
+
+
+Singularities
+--------------------
+
+
+There are 3 common singularities,
+
+1. Pole
+2. Branch point
+3. Essential singularity
+
+
+Pole is very useful since it's related to the Residue Theorem. Thus one of the task in physics is to calculate the residue of a function.
+
+The residue at a simple pole is given by
+
+.. math::
+   \text{Residue}(f(z_0)) = \lim_{z\to z_0}\left( (z-z_0)f(z) \right).
+
+Meanwhile, the residue at a pole of nth order is
+
+.. math::
+   \text{Residue}(f(z_0)) =  \frac{1}{(n-1)!} \lim_{z\to z_0} \frac{\mathrm d ^ {n-1}}{\mathrm d z^{n-1}}  \left( (z-z_0)^n f(z) \right).
+
+
+Branch points are points when we go around it in circles the values of our function would change. Examples of such points are :math:`z=0` for :math:`f(z)=ln(z)` and :math:`z=1` for :math:`f(z)=(z-1)^{1/2}`.
+
+
+Calculus
+============
+
+
+
+.. figure:: math/assets/DifferentialANDIntegralOnOnePage.png
+   :align: center
+
+   LaTeX source of this image is `here <math/assets/DifferentialANDIntegralOnOnePage.tex>`_ .
+
+
+
+
+Differential of Functions
+-------------------------------
+
+
+
+
+Integrals
+--------------
+
+Sometimes a integral on Real plane can be very hard, one of the techniques is to work on Complex plane and use contour integral.
+
+1. Contours: use Ghost Contours so that we don't need to calculate these complicated integrals.
+2. Branch Cut: cuts are needed if we have got branch points on the complex plane.
+3. Residue Theorem: we can write down the integral by calculating the residue of the integrand,
+
+   .. math::
+      \int_C f(z) \mathrm dz = 2\pi i \sum_j \text{Residue}(f(z_j)),
+
+   where :math:`z_j` are the poles.
+
+
+
+
+
+
+
+
 Linear Algebra
 ====================
 
@@ -29,7 +162,7 @@ Tensor Product Space
 
 
 Inner Product
-"""""""""""""""
+~~~~~~~~~~~~~
 
 Inner product of two tensor products
 
@@ -38,12 +171,34 @@ Inner product of two tensor products
 
 
 Operators Applied to Tensor Product
-""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two operators :math:`\hat O_1` and :math:`\hat O_2` works on :math:`H_1` and :math:`H_2` respectively applied to tensor product
 
 .. math::
    (\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)
+
+
+
+
+
+Solving Linear Equations
+------------------------------
+
+First of all, write down the augmented matrix for the equation set.
+
+Elementary row operations are allowed on the augmented matrix. Operate on the matrix until one can read out the solutions.
+
+
+
+
+
+
+
+
+
+
+
 
 
 Differential Geometry
@@ -56,7 +211,7 @@ Metric
 
 
 Definitions
-""""""""""""""
+~~~~~~~~~~~~
 
 
 Denote the basis in use as :math:`\hat e_\mu`, then the metric can be written as
@@ -77,7 +232,7 @@ Inversed metric
 
 
 How to calculate the metric
-"""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's check the definition of metric again.
 
@@ -93,9 +248,9 @@ Then we can construct the expression of metric of this point under this coordina
    g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu
 
 
-For example, in spherical coordinate system, 
+For example, in spherical coordinate system,
 
-.. math:: \vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z 
+.. math:: \vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z
    :label: EQrelativityMetricPoint
 
 
@@ -111,15 +266,15 @@ etc. Then collect the terms in formula :eq:`EQrelativityMetricPoint` is we get :
 .. math::
      \mathrm d\vec x =  \hat e_x (\mathrm dr \sin\theta\cos\phi+r\cos\theta\cos\phi\mathrm d\theta-r\sin\theta\sin\phi\mathrm d\phi)
 
-     \hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi) 
+     \hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi)
 
-     \hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta) 
+     \hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta)
 
-      = \mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)  
+      = \mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)
 
-     \mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi - \hat e_z \sin\theta)r 
+     \mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi - \hat e_z \sin\theta)r
 
-     \mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta  
+     \mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta
 
      =\hat e_r\mathrm dr+\hat e_\theta r\mathrm d\theta +\hat e_\phi r\sin\theta\mathrm d \phi
 
@@ -130,7 +285,7 @@ Once we reach here, the component (:math:`e_r ,e_\theta, e_\phi`) of the point u
      = e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi
 
 
-In this way, the metric tensor for spherical coordinates is 
+In this way, the metric tensor for spherical coordinates is
 
 
 
@@ -148,7 +303,7 @@ In this way, the metric tensor for spherical coordinates is
 Connection
 -----------
 
-First class connection can be calculated 
+First class connection can be calculated
 
 .. math::
    \Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}
@@ -168,7 +323,7 @@ Gradient, Curl, Divergence, etc
 
 
 Gradient
-""""""""""
+~~~~~~~~~~~
 
 .. math::
    T^b_{\phantom bc;a}= \nabla_aT^b_{\phantom bc}=T^b_{\phantom bc,a}+\Gamma^b_{ad}T^d_{\phantom dc}-\Gamma^d_{ac}T^b_{\phantom bd}
@@ -176,7 +331,7 @@ Gradient
 
 
 Curl
-"""""""
+~~~~~~~~~~~~~~
 
 For an anti-symmetric tensor, :math:`a_{\mu\nu}=-a_{\nu\mu}`
 
@@ -187,7 +342,7 @@ For an anti-symmetric tensor, :math:`a_{\mu\nu}=-a_{\nu\mu}`
 
 
 Divergence
-"""""""""""""
+~~~~~~~~~~~~~
 
 .. math::
     \mathrm{div}_\nu(a^{\mu\nu})&\equiv   a^{\mu\nu}_{\phantom{\mu\nu};\nu} \\
@@ -227,7 +382,7 @@ Basic Concepts
 
 
 Trace
-""""""""
+~~~~~~~~
 
 Trace should be calculated using the metric. An example is the trace of Ricci tensor,
 
@@ -235,12 +390,12 @@ Trace should be calculated using the metric. An example is the trace of Ricci te
    R=g^{ab}R_{ab}
 
 
-Einstein equation is 
+Einstein equation is
 
 .. math::
    R_{ab}-\frac{1}{2}g_{ab}R=8\pi G T_{ab}
 
-The trace is 
+The trace is
 
 .. math::
    g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R &= 8\pi G g^{ab}T_{ab} \\
@@ -253,7 +408,7 @@ Technique
 ------------
 
 Inverse of a matrix
-""""""""""""""""""""
+~~~~~~~~~~~~~~~~~
 
 Many methods to get the inverse of a matrix. Check wikipedia for Invertible matrix.
 
@@ -267,16 +422,13 @@ in which, :math:`A^*` is the adjugate matrix of :math:`A`.
 
 
 
-Differential Equations
-=======================
 
-Standard Procedure
---------------------
 
-Tricky
-------------
 
-WKB Approximation
-""""""""""""""""""""
 
-When the highest derivative is multiplied by a small parameter, try this.
+
+
+Refs & Notes
+============
+
+..  [1] `A handout note by Finly <http://physics.unm.edu/Courses/Finley/p466F2014/Homework/hw1.pdf>`_
