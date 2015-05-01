@@ -70,3 +70,7 @@ text-decoration:none;
 .dropdown-menu {
 min-width: 260px !important;
 }
+
+.alert-info {
+color: black !important;
+}

@@ -162,7 +162,7 @@
 <li><a class="reference internal" href="#classical-limit-of-qm">Classical Limit of QM</a><ul>
 <li><a class="reference internal" href="#ehrenfest-s-theorem">Ehrenfest&#8217;s Theorem</a><ul>
 <li><a class="reference internal" href="#simple-example-of-ehrenfest-s-theorem">Simple Example of Ehrenfest&#8217;s Theorem</a></li>
-<li><a class="reference internal" href="#what-does-mean">What does <img class="math" src="../_images/math/af3d0c8f4001682aab1658774d7db78cb8bc0819.png" alt="-\left&lt; V'(\hat x)\right&gt;"/> mean</a></li>
+<li><a class="reference internal" href="#what-does-mean">What does <img class="math" src="../_images/math/abe3c107432ecc495eeac16f845e17d0990d2faf.png" alt="-\left&lt; V'(\hat x)\right&gt;"/> mean</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#picture">Picture</a><ul>
@@ -264,19 +264,19 @@
 <div class="section" id="first-three-postulates">
 <h3>First Three Postulates<a class="headerlink" href="#first-three-postulates" title="Permalink to this headline">¶</a></h3>
 <ul>
-<li><p class="first">Physical state is described by kets in a Hilbert space. We need to specify a complete basis {<img class="math" src="../_images/math/049894b402be5c9ca22bc8b0ed9986b1f7e1082e.png" alt="\ket{i}"/>} to do calculations.</p>
+<li><p class="first">Physical state is described by kets in a Hilbert space. We need to specify a complete basis {<img class="math" src="../_images/math/e22fd3ef2c72abebd0c295b12205f25668fee25f.png" alt="\ket{i}"/>} to do calculations.</p>
 <div class="math">
-<p><img src="../_images/math/1f52f274ee4101af9d3f6fee5d53c0f40e834858.png" alt="\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}"/></p>
+<p><img src="../_images/math/dce9cad1cecdecd706623d38cf86d0edef5618fc.png" alt="\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}"/></p>
 </div></li>
-<li><p class="first">Operators are given by Hermitian operators; A measurement of the variable <img class="math" src="../_images/math/7f0cbb7794365b643339ff9a0c2a760866ff1396.png" alt="\hat \Omega"/> will yield one of the eigenvalues <img class="math" src="../_images/math/aff21286744f071a30510e94b9cddfe615914b71.png" alt="\omega"/> with the probability</p>
+<li><p class="first">Operators are given by Hermitian operators; A measurement of the variable <img class="math" src="../_images/math/addae0fbe54e90967d5280a9cbf797ffe201805c.png" alt="\hat \Omega"/> will yield one of the eigenvalues <img class="math" src="../_images/math/09eb07492fdbc0a78bdb9895372d783db4ec6562.png" alt="\omega"/> with the probability</p>
 <div class="math">
-<p><img src="../_images/math/94a8310209c5553101e4e1a10df1a6b0955e420e.png" alt="\left|\braket{\omega}{\psi}\right|^2 ."/></p>
-</div><p>And the state of the system will change to <img class="math" src="../_images/math/c4bb4e410f3a56ca0f7cf1b2c4de018561da867f.png" alt="\ket{\omega}"/>.</p>
+<p><img src="../_images/math/ba46677e5a1d01830f1b6c4af538e9f9306a559f.png" alt="\left|\braket{\omega}{\psi}\right|^2 ."/></p>
+</div><p>And the state of the system will change to <img class="math" src="../_images/math/c4b78e3eb7c84e4eb294e04705345201cede153f.png" alt="\ket{\omega}"/>.</p>
 </li>
 <li><p class="first">The state vector obeys the Schrödinger equation,</p>
 <div class="math">
-<p><img src="../_images/math/3d99a6a7a910b0bf96fcce2a57ffbd7bfa162126.png" alt="i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} ,"/></p>
-</div><p>where <img class="math" src="../_images/math/124947d7b8de6693886320c066e0d5814a0fcb8d.png" alt="\hat H"/> is the Hamiltonian operator.</p>
+<p><img src="../_images/math/92888ef04c16f2d11da0965c65bc7500876b4504.png" alt="i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} ,"/></p>
+</div><p>where <img class="math" src="../_images/math/ecdc8eafb2cc2fe34ca132691de2b1979319039f.png" alt="\hat H"/> is the Hamiltonian operator.</p>
 <blockquote>
 <div><p>The logic here is that we first find the way to describe a system, then think about how to find out the information we need from the state vector and also find the evolution of the state vector. Then we need the operator and Schrodinger equation. Finally, we would like to relate the theory to experiments, and it comes the measurement postulate.</p>
 <p>Later we will need the relation between position and momentum, which becomes the fourth postulate.</p>
@@ -285,25 +285,25 @@
 <li><p class="first">How to solve the evolution of a system?
 We just define a magical operator, propagator</p>
 <div class="math">
-<p><img src="../_images/math/cd9331d18da03cac0f4db4b11ff247615832e172.png" alt="\hat U \ket{\psi(t_0)} = \ket{\psi(t)} ."/></p>
+<p><img src="../_images/math/32cd3b3d2e4dafae4d393cc8557068dda39c92bb.png" alt="\hat U \ket{\psi(t_0)} = \ket{\psi(t)} ."/></p>
 </div><p>This operator just gives us the evolution of state vector! Wait, can we write down the explicit expression of it?</p>
 <p>Let&#8217;s find out. The only thing we know about the evolution of a state vector is the third postulate up there.</p>
 <div class="math">
-<p><img src="../_images/math/f8735fd56d19f5b2aac10d3e7a1e40f8e637be99.png" alt="i\hbar \frac{\d }{\d t}\ket{\psi(t)} &amp; =  \hat H \ket{\psi(t)} \\
+<p><img src="../_images/math/66367975d7298592930a198cf898a7c554f5b5a7.png" alt="i\hbar \frac{\d }{\d t}\ket{\psi(t)} &amp; =  \hat H \ket{\psi(t)} \\
 i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp; =  \hat H \hat U \ket{\psi(t_0)} \\
 i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 </div><p>Looks familiar? This just gives us a exponential result, <strong>if the Hamiltonian is time independent</strong>.</p>
 <div class="math">
-<p><img src="../_images/math/b517263e1dab02a9602d32af4d3f71bc11fb70ce.png" alt="\hat U = e^{- i \hat H (t-t_0)/\hbar}"/></p>
-</div><p><strong>We can prove that this operator is Unitary because</strong> <img class="math" src="../_images/math/124947d7b8de6693886320c066e0d5814a0fcb8d.png" alt="\hat H"/> <strong>is Hermitian.</strong></p>
-<p>This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, { <img class="math" src="../_images/math/778886151f6ffaed8cb5f5fd3baceeb54e8c830d.png" alt="\ket{\epsilon_i}"/> },</p>
+<p><img src="../_images/math/b2717b210722db62b7ec095f50e2ab5220d4334d.png" alt="\hat U = e^{- i \hat H (t-t_0)/\hbar}"/></p>
+</div><p><strong>We can prove that this operator is Unitary because</strong> <img class="math" src="../_images/math/ecdc8eafb2cc2fe34ca132691de2b1979319039f.png" alt="\hat H"/> <strong>is Hermitian.</strong></p>
+<p>This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, { <img class="math" src="../_images/math/f211562d91b8320c77a9b7cf9b3d5a75a72c1f32.png" alt="\ket{\epsilon_i}"/> },</p>
 <div class="math">
-<p><img src="../_images/math/0e72e81d1da1f88a9e769a9d39957415e0e99759.png" alt="\hat U \ket{\phi} &amp; =  e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   \\
+<p><img src="../_images/math/33808ef4aa5516e29089d44a25822827a46aec10.png" alt="\hat U \ket{\phi} &amp; =  e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   \\
 \hat U \ket{\phi} &amp; =  \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}  \\
       \hat U \ket{\phi} &amp; =  \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}"/></p>
 </div><p>And we are going to use</p>
 <div class="math">
-<p><img src="../_images/math/e7968ccb6b531bd8e0cbc9a0508f45c1a09b8936.png" alt="\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}"/></p>
+<p><img src="../_images/math/c40ae9f9b8751f4d3100088b271ab83f10665300.png" alt="\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}"/></p>
 </div><p>from now on. (Well, only on discrete eigenvalues ones.)</p>
 <p><strong>(See that? Identity does the work again.)</strong></p>
 </li>
@@ -317,8 +317,8 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 <li><dl class="first docutils">
 <dt>Position</dt>
 <dd><ol class="first last arabic simple">
-<li>Define {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis.</li>
-<li>Define <img class="math" src="../_images/math/4784f6abd5153d08fc413432e9abfb94376a5c8c.png" alt="\hat x"/> operator.</li>
+<li>Define {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis.</li>
+<li>Define <img class="math" src="../_images/math/51b3b6013f6f67734e112a9d2f7ef7e02d2c3597.png" alt="\hat x"/> operator.</li>
 <li>Find wave function in this basis.</li>
 <li>Find measurement.</li>
 </ol>
@@ -328,7 +328,7 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 <li><dl class="first docutils">
 <dt>Evolution</dt>
 <dd><ol class="first last arabic simple">
-<li>Need propagator <img class="math" src="../_images/math/37d7a2c0b9429dd196aa24802b9e333734a1eae0.png" alt="\hat U"/>.</li>
+<li>Need propagator <img class="math" src="../_images/math/a182a1342ee627d0bc0d201c513dd79bc0ffaec5.png" alt="\hat U"/>.</li>
 <li>Propagator needs the solution of Hamiltonian eigensystem.</li>
 <li>(Free particles) Hamiltonian needs the solution of momentum eigensystem.</li>
 </ol>
@@ -351,13 +351,13 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 <div class="section" id="position-space">
 <h4>Position Space<a class="headerlink" href="#position-space" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
-<li><p class="first">Define <img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/> basis.</p>
+<li><p class="first">Define <img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/> basis.</p>
 <blockquote>
 <div><blockquote>
 <div><ul>
 <li><p class="first">Orthonormal:</p>
 <div class="math">
-<p><img src="../_images/math/ec28845cd96f33ba224b8b7cff314b454a6d8d75.png" alt=""/></p>
+<p><img src="../_images/math/bea31c7483bbd1f5f84d36bbccbeb56a3154b60f.png" alt=""/></p>
 </div></li>
 </ul>
 </div></blockquote>
@@ -366,7 +366,7 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 <div><ul>
 <li><p class="first">Complete:</p>
 <div class="math">
-<p><img src="../_images/math/ec28845cd96f33ba224b8b7cff314b454a6d8d75.png" alt=""/></p>
+<p><img src="../_images/math/bea31c7483bbd1f5f84d36bbccbeb56a3154b60f.png" alt=""/></p>
 </div></li>
 </ul>
 </div></blockquote>
@@ -375,27 +375,27 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 </li>
 <li><p class="first">Define position operator.</p>
 <div class="math">
-<p><img src="../_images/math/5d1957c50587bfbd5567c8c83556db87520a019e.png" alt="\hat x \ket{x} = x \ket{x}"/></p>
-</div><p>And in {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis, this operator becomes a function, which is</p>
+<p><img src="../_images/math/b60e9152852798335d19bd248216acc795765060.png" alt="\hat x \ket{x} = x \ket{x}"/></p>
+</div><p>And in {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis, this operator becomes a function, which is</p>
 <div class="math">
-<p><img src="../_images/math/35d7915529e67fdc397d70558e505d36f37639f0.png" alt="&amp;\bra{x}\hat x \ket{x'}  \\
+<p><img src="../_images/math/3c8428a6fc1e299c4e87baa7d7beb3d6a89db8e8.png" alt="&amp;\bra{x}\hat x \ket{x'}  \\
 &amp;= \left(\bra{x}\hat x\right)\ket{x'} \\
 &amp;= x \braket{x}{x'} \\
 &amp;= x \delta(x-x')"/></p>
 </div></li>
-<li><p class="first">Find state vector in {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis.</p>
+<li><p class="first">Find state vector in {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis.</p>
 <div class="math">
-<p><img src="../_images/math/54b51c5617b518f42c4dd2771a3d297dde43973b.png" alt="\psi(t,x) = \braket{x}{\psi(t)}"/></p>
+<p><img src="../_images/math/5a35e96787f3a1ecb9cf9ad340324e22dac27062.png" alt="\psi(t,x) = \braket{x}{\psi(t)}"/></p>
 </div><ul class="simple">
 <li>Normalized:</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/d1a88b5cf68e6b851c7766cce39924bafa8c26d0.png" alt="\int \left| \psi(t,x) \right|^2 \d x = 1."/></p>
-</div><p>And we are interpreting <img class="math" src="../_images/math/4ad38e032afabfa1b396994fb31c3d7f7140d310.png" alt="\left| \psi(t, x)\right|^2"/> as probability density.</p>
+<p><img src="../_images/math/815c054cfd3f3bf0f31c796672e2dc383a64ff3f.png" alt="\int \left| \psi(t,x) \right|^2 \d x = 1."/></p>
+</div><p>And we are interpreting <img class="math" src="../_images/math/d210f9edce9c867b6bfdd82cdd096e672132d44d.png" alt="\left| \psi(t, x)\right|^2"/> as probability density.</p>
 </li>
-<li><p class="first">Calculate probability of a measurement. Taking <img class="math" src="../_images/math/4784f6abd5153d08fc413432e9abfb94376a5c8c.png" alt="\hat x"/> as an example.</p>
+<li><p class="first">Calculate probability of a measurement. Taking <img class="math" src="../_images/math/51b3b6013f6f67734e112a9d2f7ef7e02d2c3597.png" alt="\hat x"/> as an example.</p>
 <div class="math">
-<p><img src="../_images/math/5644dada1e295a13f475ad455366ea7cd1028d40.png" alt="&amp;\bra{\psi} \hat x \ket{\psi} \\
+<p><img src="../_images/math/a636c75f031e22f4712eff7fcdfb62849ac26d8d.png" alt="&amp;\bra{\psi} \hat x \ket{\psi} \\
 &amp;= \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\
 &amp;= \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
 &amp;= \int \left| \psi(t,x) \right|^2 x \d x"/></p>
@@ -407,14 +407,14 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 <p>To find the momentum operator, we need to check the relation between momentum and position before we just randomly define one. Truth is, we have a fourth postulate states the relation between them.</p>
 <div class="section" id="postulate-iv">
 <h5>Postulate IV<a class="headerlink" href="#postulate-iv" title="Permalink to this headline">¶</a></h5>
-<p>The commutator of <img class="math" src="../_images/math/4784f6abd5153d08fc413432e9abfb94376a5c8c.png" alt="\hat x"/>, <img class="math" src="../_images/math/cf88acd1adcb38626b837f5bcf98356642a0565e.png" alt="\hat p"/> is</p>
+<p>The commutator of <img class="math" src="../_images/math/51b3b6013f6f67734e112a9d2f7ef7e02d2c3597.png" alt="\hat x"/>, <img class="math" src="../_images/math/84ec2454406f2beeed048cf6ad1806649c62445f.png" alt="\hat p"/> is</p>
 <div class="math">
-<p><img src="../_images/math/44c3697d25bc33896c0107c92e18d6b9c5e21920.png" alt="\left[ \hat x, \hat p \right] = i \hbar"/></p>
+<p><img src="../_images/math/cdf7363b3b7e46c391f82de01c1c6961c74ce6c3.png" alt="\left[ \hat x, \hat p \right] = i \hbar"/></p>
 </div><dl class="docutils">
 <dt>Two comments:</dt>
 <dd><ul class="first last simple">
 <li>Why i ? Eigenvalue of Anti-Hermitian operator.</li>
-<li>Why <img class="math" src="../_images/math/09c25a3d9782b2d9734197ba1e2beabc62bae9be.png" alt="\hbar"/>? Because people define the dimensions of position and momentum differently before they know this commutator. We would like to assign them the same dimension if we already know this relation.</li>
+<li>Why <img class="math" src="../_images/math/9ec57d4d0a3519d4ec011fdb0b2c7e1d988bbccb.png" alt="\hbar"/>? Because people define the dimensions of position and momentum differently before they know this commutator. We would like to assign them the same dimension if we already know this relation.</li>
 </ul>
 </dd>
 </dl>
@@ -422,55 +422,55 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U"/></p>
 <div class="section" id="id1">
 <h5>Momentum Space<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic">
-<li><p class="first">Find momentum operator in position basis {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>}.</p>
+<li><p class="first">Find momentum operator in position basis {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>}.</p>
 <div class="math">
-<p><img src="../_images/math/f96cf4330449ead8ba28cf9094b41445dacc51a7.png" alt="\bra{x} \left[ \hat x, \hat p\right] \ket{x'} = i\hbar \delta(x-x')"/></p>
-</div><p>And write out the commutator and use the relation of delta function <img class="math" src="../_images/math/b6c81ae17d280ac3252df40c1b67538e6409a93e.png" alt="x\delta'(x) = -\delta(x)"/>, we find out the momentum operator in {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis,</p>
+<p><img src="../_images/math/6be64c508a55a8a70be873bbbdbf0798a89e7f65.png" alt="\bra{x} \left[ \hat x, \hat p\right] \ket{x'} = i\hbar \delta(x-x')"/></p>
+</div><p>And write out the commutator and use the relation of delta function <img class="math" src="../_images/math/167a5ededebb430950851f705d5fe8785dc524d1.png" alt="x\delta'(x) = -\delta(x)"/>, we find out the momentum operator in {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis,</p>
 <div class="math">
-<p><img src="../_images/math/fe91940b689a0e30e808d748eea82b8b2de399a6.png" alt="\bra{x}\hat p \ket{x'} = -i\hbar \frac{\d }{\d t} \delta(x-x')"/></p>
-</div><p><strong>Let&#8217;s talk physics.</strong> What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis.</p>
+<p><img src="../_images/math/37e46bab03d489faa2b8fd92499f4cc501d64748.png" alt="\bra{x}\hat p \ket{x'} = -i\hbar \frac{\d }{\d t} \delta(x-x')"/></p>
+</div><p><strong>Let&#8217;s talk physics.</strong> What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis.</p>
 <div class="math">
-<p><img src="../_images/math/cd2358504e8f67e243a50f772ac348a22f87e1e6.png" alt="&amp;\bra{x} \hat p \ket{\psi} \\
+<p><img src="../_images/math/7542656b84756dd8953f9d6788b0695e14b9d208.png" alt="&amp;\bra{x} \hat p \ket{\psi} \\
 &amp; =  \iint \braket{x}{x'} \bra{x'} \hat p \ket{x''}\braket{x''}{\psi} \d x' \d x''  \\
 &amp; =  \int \bra{x}\hat p \ket{x''}\psi(t,x'') \d x'' \\
 &amp; =  \int \left( -i\hbar \frac{\d}{\d x} \delta(x-x') \psi(t,x') \right) \d x' \\
 &amp; =  \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x'"/></p>
 </div><p><strong>Integrate by parts, we will find the expression.</strong> (I am having a problem finding the right answer.)</p>
 <div class="math">
-<p><img src="../_images/math/fd2c296518beb2528ecc2ffc906171c725d91a92.png" alt="\bra{x} \hat p \ket{\psi} = - i\hbar \frac{\d }{\d x}\psi(x) ."/></p>
+<p><img src="../_images/math/f8987ca2946edbc83c9e0a010bfb0a1020f2ec9a.png" alt="\bra{x} \hat p \ket{\psi} = - i\hbar \frac{\d }{\d x}\psi(x) ."/></p>
 </div></li>
 <li><p class="first">Eigenfunction for momentum.</p>
 <div class="math">
-<p><img src="../_images/math/08794e4193d573acbd0c63bc3323de0291c533c1.png" alt="\hat p \ket{p} = p \ket{p} ."/></p>
-</div><p>Again, we are going to project it on the {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis,</p>
+<p><img src="../_images/math/befc70cc6fb85d78fa8b601cbc8eee40ec84cb44.png" alt="\hat p \ket{p} = p \ket{p} ."/></p>
+</div><p>Again, we are going to project it on the {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis,</p>
 <div class="math">
-<p><img src="../_images/math/915e98ae50e8385acefa33bfe28222ae1b4021f7.png" alt="\bra{x}\hat p\ket{p} = \bra{x} p \ket{p} ,"/></p>
-</div><p>where <img class="math" src="../_images/math/ce1fc4d2065168cb762364ebd06ef9eac45229c1.png" alt="\braket{x}{p}"/> is the eigenstates in {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis, we call it <img class="math" src="../_images/math/156a704ba28978814d133dcff09953bb8687427c.png" alt="\phi_p(x)"/>.</p>
+<p><img src="../_images/math/d0203ae7c36828ceac35f2ef0f7e70ce4df0d544.png" alt="\bra{x}\hat p\ket{p} = \bra{x} p \ket{p} ,"/></p>
+</div><p>where <img class="math" src="../_images/math/ba2ab60e9403ebf52e4403c775989471a0a5e2fa.png" alt="\braket{x}{p}"/> is the eigenstates in {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis, we call it <img class="math" src="../_images/math/e3ad522537a7a21724a5fe4c2ccdb9fc41bd65d0.png" alt="\phi_p(x)"/>.</p>
 <div class="math">
-<p><img src="../_images/math/4c3293cae06b79f46e8582f63b101eb18b83b35a.png" alt="\bra{x}\hat p\ket{p} &amp; =  p \phi_p(x)    \\
+<p><img src="../_images/math/c1258812a3a153352f3988e359568f7ed5ea734c.png" alt="\bra{x}\hat p\ket{p} &amp; =  p \phi_p(x)    \\
 \int \bra{x}\hat p \ket{x'}\braket{x'}{p}\d x' &amp; =  p \phi_p(x)    \\
 -i\hbar \frac{\d }{\d x} \phi_p(x) &amp; =  p \phi_p(x)"/></p>
 </div><p>The solution is</p>
 <div class="math">
-<p><img src="../_images/math/d2de3273a90c99969d0bf85864d258d8cae6a1f8.png" alt="\phi_p(x) = \mathrm{C} e^{i p x/\hbar}"/></p>
+<p><img src="../_images/math/d2f03ee818e55ee6985d9f3432ff08c7c711feb8.png" alt="\phi_p(x) = \mathrm{C} e^{i p x/\hbar}"/></p>
 </div><p>This constant C is found by the normalization condition,</p>
 <div class="math">
-<p><img src="../_images/math/26c1b963f1c1ce2fa5334e8732e4ba15b540f27d.png" alt="\braket{p}{p'}=\int \phi_p^*(x)\phi_{p'}(x)\d x = \delta(p-p')"/></p>
+<p><img src="../_images/math/a3ccb74ac294972a4e906ea32adc338189cfafec.png" alt="\braket{p}{p'}=\int \phi_p^*(x)\phi_{p'}(x)\d x = \delta(p-p')"/></p>
 </div><p><strong>The final results should be</strong></p>
 <div class="math">
-<p><img src="../_images/math/b3c01a534e3624debc14658712263e37a0849b84.png" alt="\phi_p(x)=\frac{1}{\sqrt{2\pi \hbar}} \exp{(i p x/\hbar)}"/></p>
+<p><img src="../_images/math/5f4597b665fcd4729b38d82a905ff2a57669aa6f.png" alt="\phi_p(x)=\frac{1}{\sqrt{2\pi \hbar}} \exp{(i p x/\hbar)}"/></p>
 </div></li>
 <li><p class="first">Find the dynamics of free particles in quantum mechanics.
 <strong>Find the propagator and everything solves.</strong>
 The hamiltonian for a free particle is</p>
 <div class="math">
-<p><img src="../_images/math/e42322206d9084c534765643042bb0e554aa81a8.png" alt="\hat H = \frac{\hat p^2}{2m} ."/></p>
-</div><p>We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are <img class="math" src="../_images/math/e609afd53db5eae43db19c4e4ba929bfd0cb0285.png" alt="p^2/2m"/>. So the propagator is</p>
+<p><img src="../_images/math/21886a338ca85b2bb125180e171fa370922e46a3.png" alt="\hat H = \frac{\hat p^2}{2m} ."/></p>
+</div><p>We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are <img class="math" src="../_images/math/a6f2dd91563a301fe798a2494e3544dcc8078001.png" alt="p^2/2m"/>. So the propagator is</p>
 <div class="math">
-<p><img src="../_images/math/ef1c3f14a3ae3decd0efe284ca44ade983376b91.png" alt="\hat U = \int e^{-i p^2 t/2m\hbar} \ket{p}\bra{p} \d p"/></p>
-</div><p>But that is too abstract to use, we can find the expression in {<img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/>} basis.</p>
+<p><img src="../_images/math/cbdaa7c2248cfc1f27cb52e38e2dc7d09a152f88.png" alt="\hat U = \int e^{-i p^2 t/2m\hbar} \ket{p}\bra{p} \d p"/></p>
+</div><p>But that is too abstract to use, we can find the expression in {<img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/>} basis.</p>
 <div class="math">
-<p><img src="../_images/math/facd2ebfb0b56c765f0e931e7bcac7e904e46347.png" alt="\bra{x}\hat U\ket{x} &amp; =  \int e^{-i p^2 t/2 m \hbar} \braket{x}{p}\braket{p}{x} \d p    \\
+<p><img src="../_images/math/fd9690606db4be9aa8d478ff8db0cb10e710ea46.png" alt="\bra{x}\hat U\ket{x} &amp; =  \int e^{-i p^2 t/2 m \hbar} \braket{x}{p}\braket{p}{x} \d p    \\
 &amp; =  \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p"/></p>
 </div></li>
 </ol>
@@ -484,18 +484,18 @@ The hamiltonian for a free particle is</p>
 <h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
 <p>Always start with the propagator for time independent Hamiltonian.</p>
 <div class="math">
-<p><img src="../_images/math/5b3bc2ae934b546c2eb399cbdc6cca42379ca5b8.png" alt="\ket{\psi(t)} = \hat U \ket{\psi(0)}"/></p>
+<p><img src="../_images/math/a68818727e29bcf786387a1c46aed6e86c990baf.png" alt="\ket{\psi(t)} = \hat U \ket{\psi(0)}"/></p>
 </div><p>For cases that Hamiltonian with discrete eigenvalues,</p>
 <div class="math">
-<p><img src="../_images/math/e03c317a20e7da262fcd965868f53ba80cf10263.png" alt="\ket{\psi(t)} = \sum _ n e^{-i \epsilon _ n t/ \hbar } \ket{n}\braket{n}{\psi(0)}"/></p>
+<p><img src="../_images/math/034574e1c1ffcfb0a9cbc9b913e3fca7bcca149b.png" alt="\ket{\psi(t)} = \sum _ n e^{-i \epsilon _ n t/ \hbar } \ket{n}\braket{n}{\psi(0)}"/></p>
 </div><p>If the initial state is just one of the eigenstates of Hamiltonian, say the mth one (normalized),</p>
 <div class="math">
-<p><img src="../_images/math/6ba128e1669662e94426970fe0681bb9a42af7c7.png" alt="\ket{\psi(t)} = e^{- i \epsilon _ m t/\hbar} \ket{ m }"/></p>
+<p><img src="../_images/math/8552890d042b7923c1acceefb5a436b1734aa705.png" alt="\ket{\psi(t)} = e^{- i \epsilon _ m t/\hbar} \ket{ m }"/></p>
 </div><p>Well, that phase factor doesn&#8217;t have any effect for the topic we discuss. So our time evolution will stay on the same state forever.</p>
 <p>The same thing happens for continuous cases.</p>
 <p>So our task is simplified to solve the eigensystem of Hamiltonian, which is</p>
 <div class="math">
-<p><img src="../_images/math/2dfe7d6600b1ab7798576e20455cdfaad0c61dbf.png" alt="\hat H \ket{\epsilon} = \epsilon \ket{\epsilon}"/></p>
+<p><img src="../_images/math/310fdcde395f3a39dd0b3b30f958bafacaeb4d30.png" alt="\hat H \ket{\epsilon} = \epsilon \ket{\epsilon}"/></p>
 </div><div class="section" id="infinite-barriers">
 <h4>Infinite Barriers<a class="headerlink" href="#infinite-barriers" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="math">
@@ -505,7 +505,7 @@ The hamiltonian for a free particle is</p>
 <ul>
 <li><p class="first">Potential in a box</p>
 <div class="math">
-<p><img src="../_images/math/c05133fce249b9c62cfadc147411a9e2a0240d93.png" alt="V(x) = &amp; 0,  0&lt; x &lt;L \\
+<p><img src="../_images/math/8162a0dfd86ea454389c6dce6f5db179aaaa30b6.png" alt="V(x) = &amp; 0,  0&lt; x &lt;L \\
  &amp; \infty, \text{Other}"/></p>
 </div></li>
 </ul>
@@ -515,59 +515,59 @@ The hamiltonian for a free particle is</p>
 <ul>
 <li><p class="first">Hamiltonian</p>
 <div class="math">
-<p><img src="../_images/math/5ac027af911d937b07b5031efced03b61e0bd0b6.png" alt="\hat H = \frac{\hat p ^2}{2 m } + V(x)"/></p>
+<p><img src="../_images/math/2b17ffd1d2981d25b7b68ab101920216d11f4624.png" alt="\hat H = \frac{\hat p ^2}{2 m } + V(x)"/></p>
 </div></li>
 <li><p class="first">Dynamic equation</p>
 <div class="math">
-<p><img src="../_images/math/da18e52c7e1c3e1a2ce16cddf06ef6474de91457.png" alt="\hat H \ket{\psi(t)} = \epsilon \ket{\psi(t)}"/></p>
-</div><p>We are happy to work in {<img class="math" src="../_images/math/47c979b83b26f6a9c3bbaca1af526ad25a99b84d.png" alt="\ket{x})"/>} basis,</p>
+<p><img src="../_images/math/6c24177c82a3c9daf18218705edf49c8fe51af49.png" alt="\hat H \ket{\psi(t)} = \epsilon \ket{\psi(t)}"/></p>
+</div><p>We are happy to work in {<img class="math" src="../_images/math/9b871ee7680c64c9148f4a8268a6310a169080ae.png" alt="\ket{x})"/>} basis,</p>
 <div class="math">
-<p><img src="../_images/math/103617d6caccc469a61fc96c8a3a8ab990c94678.png" alt="\bra{x} \hat H \ket{\psi(t)} = \bra{x} \epsilon \ket{\psi(t)} ."/></p>
+<p><img src="../_images/math/07db1d0a17cb4f2b4b66d8f47adb410c81621142.png" alt="\bra{x} \hat H \ket{\psi(t)} = \bra{x} \epsilon \ket{\psi(t)} ."/></p>
 </div><p>Put the Hamiltonian in, and remember that in position basis</p>
 <div class="math">
-<p><img src="../_images/math/21661a5fe6b9d7d868d2b54a2347c409571af1af.png" alt="\bra{x} \hat p \ket{\psi} = - i \hbar\frac{\d}{\d x} \psi ,"/></p>
+<p><img src="../_images/math/589ad84f30259916e80b76ede585e88846683deb.png" alt="\bra{x} \hat p \ket{\psi} = - i \hbar\frac{\d}{\d x} \psi ,"/></p>
 </div><p>the equation of motion becomes</p>
 <div class="math">
-<p><img src="../_images/math/99b0520f8d08a1c2a56e42e6d1dfc0e5fd9435c2.png" alt="- \frac{\hbar ^2}{2 m} \frac{\d^2}{\d x^2} \psi(x,t) + V(x) \psi(x,t) = \epsilon \psi(x,t)"/></p>
+<p><img src="../_images/math/08cf7b30344abb0e94a31f1180eb293425370899.png" alt="- \frac{\hbar ^2}{2 m} \frac{\d^2}{\d x^2} \psi(x,t) + V(x) \psi(x,t) = \epsilon \psi(x,t)"/></p>
 </div></li>
 <li><p class="first">Boundary conditions</p>
 <div class="math">
-<p><img src="../_images/math/3c89a60345e18347f61914911d8c43123d8999bc.png" alt="\psi _ I(0,t) = \psi _ {II}(0,t)
+<p><img src="../_images/math/7c88f2f33fe65bc37047e218ca0d17a528d5810e.png" alt="\psi _ I(0,t) = \psi _ {II}(0,t)
 
 \psi _ {II}(L, t) = \psi _ {III}(L, t)"/></p>
 </div></li>
 <li><p class="first">Guess the Solutions</p>
 <div class="math">
-<p><img src="../_images/math/0c684c61ca12e1db71f1b5b878b9acbd77b75a34.png" alt="\psi_{II} = \psi = C \sin (k x) + D \cos(kx)"/></p>
+<p><img src="../_images/math/bab36e436d7d569651b0cf6eea03a4050a9c6f27.png" alt="\psi_{II} = \psi = C \sin (k x) + D \cos(kx)"/></p>
 </div></li>
 <li><p class="first">Find the wavenumber k, by putting the assumed solutions into equation of motion</p>
 <div class="math">
-<p><img src="../_images/math/ade689831a85a28c6de48e2a554a31c96b3b0c35.png" alt="k = \pm \sqrt{\frac{2m \epsilon}{\hbar^2} }"/></p>
+<p><img src="../_images/math/be57cabee1c19f11392cadcf0e13ce55ae868ae8.png" alt="k = \pm \sqrt{\frac{2m \epsilon}{\hbar^2} }"/></p>
 </div><p>Since we can always merge the negative into the constants, it is fine to use</p>
 <div class="math">
-<p><img src="../_images/math/f552e736ce49426d691796b4ca33223caa8543b0.png" alt="k = \sqrt{\frac{2m \epsilon}{\hbar^2} }"/></p>
+<p><img src="../_images/math/a7d602742fe16e8e11f281686025e2188dc6b0c4.png" alt="k = \sqrt{\frac{2m \epsilon}{\hbar^2} }"/></p>
 </div></li>
 <li><dl class="first docutils">
 <dt>Use Boundary Condition</dt>
 <dd><ol class="first last arabic">
 <li><p class="first">At x=0,</p>
 <div class="math">
-<p><img src="../_images/math/2fb37d3df3ed284b27435f764ec057e2a7bad146.png" alt="\psi(0,t)=0 ."/></p>
-</div><p>This gives us <img class="math" src="../_images/math/9b9e7d299a659a696ec6ce40f782000d969deb7a.png" alt="D = 0"/> .</p>
+<p><img src="../_images/math/f81031de75991139f5e8a951d2969cacf4b7fb38.png" alt="\psi(0,t)=0 ."/></p>
+</div><p>This gives us <img class="math" src="../_images/math/d6df16f0c7d5fe8b272324467f0a7580e36d90c2.png" alt="D = 0"/> .</p>
 </li>
-<li><p class="first">At <img class="math" src="../_images/math/be9a2e684d8a533018126bd7956921982a43b4f5.png" alt="x=L"/>,</p>
+<li><p class="first">At <img class="math" src="../_images/math/1a86cbe8b6917a6bbdf3b9094bdba9796e52bcbc.png" alt="x=L"/>,</p>
 <div class="math">
-<p><img src="../_images/math/ca8ae80cd1a0942b850af2663ea5271d26e21387.png" alt="\psi(L,t)=0 ."/></p>
+<p><img src="../_images/math/4c2bbed7548f600990aae60df8db3c4971aecee7.png" alt="\psi(L,t)=0 ."/></p>
 </div><p>This leads to</p>
 <div class="math">
-<p><img src="../_images/math/01cb342d2f26fa089c0c38236b5f500659dbb756.png" alt="k L = n \pi ."/></p>
-</div><p>Since <img class="math" src="../_images/math/6f2e405772d9d8340a6cbe9c8a864cccd937f6f0.png" alt="n=0"/> gives us a 0 wave function, we would just drop <img class="math" src="../_images/math/6f2e405772d9d8340a6cbe9c8a864cccd937f6f0.png" alt="n=0"/>. For the same reason why we drop the negative values of k, we would drop all the negative values of n.
+<p><img src="../_images/math/43d38d1b367d1b3d9a3f18d054a4da14d3a30919.png" alt="k L = n \pi ."/></p>
+</div><p>Since <img class="math" src="../_images/math/7257c79c1f86c1b78fcda545a04fa660d5b0c70c.png" alt="n=0"/> gives us a 0 wave function, we would just drop <img class="math" src="../_images/math/7257c79c1f86c1b78fcda545a04fa660d5b0c70c.png" alt="n=0"/>. For the same reason why we drop the negative values of k, we would drop all the negative values of n.
 This BC gives us the possible values of energy because wavenumber k is related to energy,</p>
 <div class="math">
-<p><img src="../_images/math/c08f804f4718fad530cbda9133fe20ae76bd46d1.png" alt="\epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,"/></p>
+<p><img src="../_images/math/174e51f175933c6673c2385a6708bec4ee23edef.png" alt="\epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,"/></p>
 </div><p>with</p>
 <div class="math">
-<p><img src="../_images/math/cebb01bc026feb332a600cd5097437cc115f0986.png" alt="n=1,2,3, \cdots"/></p>
+<p><img src="../_images/math/e78442fcd8d9b379f487e28cdbbf179fea3d3771.png" alt="n=1,2,3, \cdots"/></p>
 </div></li>
 </ol>
 </dd>
@@ -575,7 +575,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 </li>
 <li><p class="first">Normalization as the last constraint for the last undetermined parameter,</p>
 <div class="math">
-<p><img src="../_images/math/35a8d50555b68255dde3d256d6d853198b6d11c2.png" alt="C=\sqrt{\frac{2}{L}}"/></p>
+<p><img src="../_images/math/8ddc42b74e5c753d11ea2fe726936d47ad0d4e7a.png" alt="C=\sqrt{\frac{2}{L}}"/></p>
 </div></li>
 </ul>
 </div>
@@ -612,7 +612,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 <li><dl class="first docutils">
 <dt>What&#8217;s so weird?</dt>
 <dd><ol class="first last arabic simple">
-<li>For <img class="math" src="../_images/math/26b796684e988cdbb61ce65b4f4d0976fa6f7199.png" alt="n=2"/>, no particles found at <img class="math" src="../_images/math/6ad5720e60ab20075d9111a2d43cc3f54eed2f12.png" alt="x=L/2"/>. And so on.</li>
+<li>For <img class="math" src="../_images/math/7f7a23390324ef854bdb9b6889977eeda6c6e051.png" alt="n=2"/>, no particles found at <img class="math" src="../_images/math/3f36077bcc6a8dee3560b29dcce482f0f8c3214c.png" alt="x=L/2"/>. And so on.</li>
 </ol>
 </dd>
 </dl>
@@ -640,22 +640,22 @@ Prove it by assume that there is a degeneracy state.</li>
 <h3>Passive and Active Transformations<a class="headerlink" href="#passive-and-active-transformations" title="Permalink to this headline">¶</a></h3>
 <p>Generally, there are two ways of interpreting a transformation.</p>
 <img alt="Transformations" src="../_images/transformations.png" />
-<p>Here in QM, passive means transform the operator <img class="math" src="../_images/math/7f0cbb7794365b643339ff9a0c2a760866ff1396.png" alt="\hat \Omega"/>, while active means change the state <img class="math" src="../_images/math/e88cec299e23bf46dc28f8e6ac2ba7ff7111fcd0.png" alt="\ket{\psi}"/>. Suppose we have a system <img class="math" src="../_images/math/e88cec299e23bf46dc28f8e6ac2ba7ff7111fcd0.png" alt="\ket{\psi}"/>, an operator <img class="math" src="../_images/math/7f0cbb7794365b643339ff9a0c2a760866ff1396.png" alt="\hat \Omega"/>, a transformation <img class="math" src="../_images/math/37d7a2c0b9429dd196aa24802b9e333734a1eae0.png" alt="\hat U"/>.</p>
-<p>Transformation <img class="math" src="../_images/math/8de5aa1d2c920a39cbbf6819f08539f601b04a19.png" alt="\hat U \ket{\psi}"/> is identical to <img class="math" src="../_images/math/01dc748b4a9351b4cf1fd30cc4e0e5f9174d636b.png" alt="\hat U^\dagger \hat \Omega \hat U"/> because they give the same observation results. The first one is called active, while the second one is called passive.</p>
+<p>Here in QM, passive means transform the operator <img class="math" src="../_images/math/addae0fbe54e90967d5280a9cbf797ffe201805c.png" alt="\hat \Omega"/>, while active means change the state <img class="math" src="../_images/math/b29069d47abd2ab7b198157a23b4da57c3ea9491.png" alt="\ket{\psi}"/>. Suppose we have a system <img class="math" src="../_images/math/b29069d47abd2ab7b198157a23b4da57c3ea9491.png" alt="\ket{\psi}"/>, an operator <img class="math" src="../_images/math/addae0fbe54e90967d5280a9cbf797ffe201805c.png" alt="\hat \Omega"/>, a transformation <img class="math" src="../_images/math/a182a1342ee627d0bc0d201c513dd79bc0ffaec5.png" alt="\hat U"/>.</p>
+<p>Transformation <img class="math" src="../_images/math/bcc1899750e55e3bbe37ad5d1250581e3e8f9113.png" alt="\hat U \ket{\psi}"/> is identical to <img class="math" src="../_images/math/afb95c3735020aed57d7c6f5f455df1bb18c39de.png" alt="\hat U^\dagger \hat \Omega \hat U"/> because they give the same observation results. The first one is called active, while the second one is called passive.</p>
 </div>
 <div class="section" id="id2">
 <h3>Parity<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="definition">
 <h4>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h4>
 <div class="math">
-<p><img src="../_images/math/21cba19cc70bbb15512acad28544237bdfbeb98b.png" alt="\hat \Pi \ket{x}= \ket{-x}"/></p>
+<p><img src="../_images/math/dd04486ceea2174791fed99e0607c609dfeb98b0.png" alt="\hat \Pi \ket{x}= \ket{-x}"/></p>
 </div></div>
 <div class="section" id="properties">
 <h4>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
 <li><p class="first">Act on momentum eigenvectors,</p>
 <div class="math">
-<p><img src="../_images/math/5edfc38704a42a5f6e51bc1f0339915ba0811218.png" alt="\hat \Pi \ket{p} = \ket{-p} ."/></p>
+<p><img src="../_images/math/47a74c819eefdc3f7adc4d86578251210e0ad221.png" alt="\hat \Pi \ket{p} = \ket{-p} ."/></p>
 </div></li>
 </ol>
 <blockquote>
@@ -664,33 +664,33 @@ Prove it by assume that there is a degeneracy state.</li>
 </li>
 <li><p class="first">Math:</p>
 <div class="math">
-<p><img src="../_images/math/4b01c73a0f3adb270c0ed320f006753eddc0c5ed.png" alt="\hat \Pi \ket{p} = \int \hat \Pi \ket{x}\braket{x}{p}\d x= \int \ket{-x}\braket{x}{p}\d x"/></p>
+<p><img src="../_images/math/8fb8fa173cf094c86b03c886aa5ee7a03805ae3d.png" alt="\hat \Pi \ket{p} = \int \hat \Pi \ket{x}\braket{x}{p}\d x= \int \ket{-x}\braket{x}{p}\d x"/></p>
 </div><p>Change coordinate from x to -x,</p>
 <div class="math">
-<p><img src="../_images/math/a9e39656511bb3e28c34a29f608b21e23075d653.png" alt="\hat \Pi \ket{p} = \int \ket{x}\braket{-x}{p}\d x = \int \ket{x}\braket{x}{-p}\d x  = \ket{-p}"/></p>
+<p><img src="../_images/math/9e1e4ebf9e896067bc28ef77a4e46df877de169b.png" alt="\hat \Pi \ket{p} = \int \ket{x}\braket{-x}{p}\d x = \int \ket{x}\braket{x}{-p}\d x  = \ket{-p}"/></p>
 </div></li>
 </ul>
 </div></blockquote>
 <ol class="arabic" start="2">
 <li><p class="first">Hermitian,</p>
 <div class="math">
-<p><img src="../_images/math/be41ee713fc9517a896b2c79ebaecbc890761f53.png" alt="\bra{x}\hat \Pi \ket{x'} = \delta(x+x')
+<p><img src="../_images/math/e76847a2a2add15f5f0d7df79396803105c54b9f.png" alt="\bra{x}\hat \Pi \ket{x'} = \delta(x+x')
 (\bra{x'}\hat \Pi \ket{x})^\dagger = \bra{x}\hat \Pi^\dagger \ket{x'} =\delta(x+x')"/></p>
 </div></li>
 <li><p class="first">Unitary</p>
 <div class="math">
-<p><img src="../_images/math/5102807dbea299679093e53d4fdb1c472dd949c7.png" alt="\bra{x}\hat \Pi^\dagger \hat \Pi \ket{x'}= \braket{-x}{-x'}=\delta(-x+x')=\delta(x-x')=\braket{x}{x'}"/></p>
+<p><img src="../_images/math/170607ee6b1907b7d36e6021731bbd0d05d9e588.png" alt="\bra{x}\hat \Pi^\dagger \hat \Pi \ket{x'}= \braket{-x}{-x'}=\delta(-x+x')=\delta(x-x')=\braket{x}{x'}"/></p>
 </div></li>
 <li><p class="first">Inverse of parity</p>
 <div class="math">
-<p><img src="../_images/math/1868c8f7ed68de5118878aab31468c5528cc5b7c.png" alt="\hat \Pi \hat \Pi = \hat \Pi \hat \Pi^\dagger = \hat I"/></p>
+<p><img src="../_images/math/9403f9ead6ab644d7f1bdd898f91d65f3e763c23.png" alt="\hat \Pi \hat \Pi = \hat \Pi \hat \Pi^\dagger = \hat I"/></p>
 </div></li>
 <li><p class="first">Eigensystem of parity.</p>
 <div class="math">
-<p><img src="../_images/math/7a0d1da0b9bccd6be9772e574086c08fa5018029.png" alt="\hat \Pi \ket{\pi}=\pi\ket{\pi}"/></p>
+<p><img src="../_images/math/67cfa835053e93bf8002520618d18de47e6b5e57.png" alt="\hat \Pi \ket{\pi}=\pi\ket{\pi}"/></p>
 </div><p>Apply another operator</p>
 <div class="math">
-<p><img src="../_images/math/2eac84fed2577d03469821370bda05ae4bd9a2f1.png" alt="\hat \Pi^2 \ket{\pi} = \pi^2 \ket{\pi}"/></p>
+<p><img src="../_images/math/3a2e1e734e081b09ff7309b20fe66b72a37c0abb.png" alt="\hat \Pi^2 \ket{\pi} = \pi^2 \ket{\pi}"/></p>
 </div><p>So,
 * Eigenvalues: 1, -1;
 * Eigenvactors: Even function, Odd function</p>
@@ -699,22 +699,22 @@ Prove it by assume that there is a degeneracy state.</li>
 a. Apply to position operator,</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/0d65af6258a3e77d918e48e5f5767daa84d072ca.png" alt="\hat \Pi^\dagger \hat X \hat \Pi = -\hat X"/></p>
+<p><img src="../_images/math/69cfbf6bdae916f584f12845ceffc84631621e02.png" alt="\hat \Pi^\dagger \hat X \hat \Pi = -\hat X"/></p>
 </div><p>Proof:</p>
 <div class="math">
-<p><img src="../_images/math/150bce2aef1073584c6afcadc5cf736b5ca9d6b6.png" alt="\bra{x}\hat \Pi ^\dagger \hat X \hat \Pi \ket{x'} = \bra{-x}\hat X \ket{-x'}= -x'\delta(x-x') = \bra{x}(-\hat X)\ket{x'}"/></p>
+<p><img src="../_images/math/57ec914050c5bfc6532facacbf1d4895f677ac12.png" alt="\bra{x}\hat \Pi ^\dagger \hat X \hat \Pi \ket{x'} = \bra{-x}\hat X \ket{-x'}= -x'\delta(x-x') = \bra{x}(-\hat X)\ket{x'}"/></p>
 </div></div></blockquote>
 <ol class="loweralpha" start="2">
 <li><p class="first">Apply to momentum operator,</p>
 <div class="math">
-<p><img src="../_images/math/304ae8fe8d9fc9dba8457707611fcee4dbe5ba88.png" alt="\hat \Pi^\dagger \hat p \hat \Pi = -\hat p"/></p>
+<p><img src="../_images/math/5cd4a0ef402f5ead02fca0e5500bfa9ca946c234.png" alt="\hat \Pi^\dagger \hat p \hat \Pi = -\hat p"/></p>
 </div><p>Proof: Similar to the previous one, just change x basis to momentum basis.</p>
 </li>
 </ol>
 </li>
 <li><p class="first">Symmetry related to Hamiltonian.</p>
 <div class="math">
-<p><img src="../_images/math/176dcaea853848628ec2261c8311dd3f3f7c8eaf.png" alt="\left[ \hat \Pi , \hat H  \right] = 0"/></p>
+<p><img src="../_images/math/291231eb1a4b728997d9c984aacb5d18e76d63fb.png" alt="\left[ \hat \Pi , \hat H  \right] = 0"/></p>
 </div><p>When this happens, parity of Hamiltonian won&#8217;t change the wave function. Or the wave function should have an specific parity for 1D problem.</p>
 </li>
 </ol>
@@ -727,12 +727,12 @@ a. Apply to position operator,</p>
 <h3>Ehrenfest&#8217;s Theorem<a class="headerlink" href="#ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h3>
 <p>Schrödinger equation and its adjoint</p>
 <div class="math">
-<p><img src="../_images/math/8d9913b50bd453fc04ecb5461a66871ba0552adc.png" alt="i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}
+<p><img src="../_images/math/9a564a339cea6ab6ec3313c5b1493f139acdb6b3.png" alt="i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}
 
 -i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H"/></p>
-</div><p>For any observable <img class="math" src="../_images/math/7f0cbb7794365b643339ff9a0c2a760866ff1396.png" alt="\hat \Omega"/>,</p>
+</div><p>For any observable <img class="math" src="../_images/math/addae0fbe54e90967d5280a9cbf797ffe201805c.png" alt="\hat \Omega"/>,</p>
 <div class="math">
-<p><img src="../_images/math/2a7b8e13a188ac3aaff5addfdde0fbbb7975d865.png" alt="\frac{\d }{\d t}\left&lt;\hat \Omega \right &gt; &amp; =  \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\
+<p><img src="../_images/math/f10bc73fad8e953dcc539e97b948db1c195e5a9a.png" alt="\frac{\d }{\d t}\left&lt;\hat \Omega \right &gt; &amp; =  \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\
 &amp; =  \frac{1}{i\hbar} \left ( - \bra{\psi(t)} \hat H \hat\Omega \ket{\psi(t)} +\bra{\psi(t)} \hat\Omega \hat H \ket{\psi(t)} \right) + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} \\
 &amp; =  \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}"/></p>
 </div><p>This is called Ehrenfest&#8217;s Theorem.</p>
@@ -740,36 +740,36 @@ a. Apply to position operator,</p>
 <h4>Simple Example of Ehrenfest&#8217;s Theorem<a class="headerlink" href="#simple-example-of-ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h4>
 <p>Suppose we have a system with Hamiltonian</p>
 <div class="math">
-<p><img src="../_images/math/df1dc348d8fa3e93848cfa8d58d3e671a4f865a3.png" alt="\hat H = \frac{\hat p^2}{2m} + V(\hat x)"/></p>
+<p><img src="../_images/math/475e7b6362b1386a6665b13812643b516a0c2a55.png" alt="\hat H = \frac{\hat p^2}{2m} + V(\hat x)"/></p>
 </div><p>We need to figure some commutators first.</p>
 <div class="math">
-<p><img src="../_images/math/00a766688e83e9c3e1c9700128bce2f6f078e6a0.png" alt="2m \left[ \hat x, \hat H \right] =\left[\hat x, \hat p^2\right] = \hat x \hat p\hat p - \hat p \hat p \hat x = \hat x \hat p \hat p -\hat p \hat x \hat p + \hat p \hat x \hat p - \hat p \hat p \hat x  = \left[\hat x , \hat p\right]\hat p + \hat p \left[ \hat x,\hat p\right]  = 2 i \hbar \hat p"/></p>
+<p><img src="../_images/math/e5ec9c44baf3eb30893d78bf4130ffd22a4d541d.png" alt="2m \left[ \hat x, \hat H \right] =\left[\hat x, \hat p^2\right] = \hat x \hat p\hat p - \hat p \hat p \hat x = \hat x \hat p \hat p -\hat p \hat x \hat p + \hat p \hat x \hat p - \hat p \hat p \hat x  = \left[\hat x , \hat p\right]\hat p + \hat p \left[ \hat x,\hat p\right]  = 2 i \hbar \hat p"/></p>
 </div><div class="math">
-<p><img src="../_images/math/89ff5b72c0401360a17a6bf57419158784c1a5e7.png" alt="\left[\hat p, \hat H\right] = \left[\hat p, V(\hat x) \right] = \left[\hat p, \sum_0^\infty \frac{V^{(n)}}{n!}\hat x^n\right] =\cdots =-i\hbar V'(\hat x)"/></p>
+<p><img src="../_images/math/2fb6e0b4fcb038f4bc31e3ff81ef99aef63266f8.png" alt="\left[\hat p, \hat H\right] = \left[\hat p, V(\hat x) \right] = \left[\hat p, \sum_0^\infty \frac{V^{(n)}}{n!}\hat x^n\right] =\cdots =-i\hbar V'(\hat x)"/></p>
 </div><ol class="arabic">
 <li><p class="first">Position average</p>
 <div class="math">
-<p><img src="../_images/math/b70649bedf0801777f68a87011cda6eeee017f14.png" alt="\frac{\d }{\d t} \left&lt; \hat x \right&gt; &amp; =  \frac{1}{i\hbar} \bra{\psi(t)} \left[ \hat x, \hat H \right]\ket{\psi(t)} \\
+<p><img src="../_images/math/d3445284bd91338668366d8d760c2b8ea3073920.png" alt="\frac{\d }{\d t} \left&lt; \hat x \right&gt; &amp; =  \frac{1}{i\hbar} \bra{\psi(t)} \left[ \hat x, \hat H \right]\ket{\psi(t)} \\
 &amp; =   \frac{\left&lt; \hat p \right&gt;}{m}"/></p>
 </div><p>We are familiar with this in classical mechanics.</p>
 </li>
 <li><p class="first">Momentum average</p>
 <div class="math">
-<p><img src="../_images/math/c833238ce46d66f24861a69057a6fe5fe8e948d3.png" alt="\frac{\d}{\d t} \left&lt;\hat p\right&gt; &amp; =  \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\
+<p><img src="../_images/math/b6d1253016fa6816480eb27c0629029a7a5ab664.png" alt="\frac{\d}{\d t} \left&lt;\hat p\right&gt; &amp; =  \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\
 &amp; =  \frac{1}{i\hbar} \bra{\psi(t)}  (-i\hbar V'(\hat x))  \ket{\psi(t)}  \\
 &amp; =  -\left&lt; V'(\hat x) \right&gt;"/></p>
-</div><p>In classical mechanics, the derivative of potential is force. And the result is just like Newton&#8217;s 2n Law except the right hand side is not exactly like a force which should be <img class="math" src="../_images/math/8c43c744acfc8e7fa43aa4eccb0c10940e3a3757.png" alt="-\frac{\d}{\d x} \left&lt; V(\hat x) \right&gt;"/>.</p>
+</div><p>In classical mechanics, the derivative of potential is force. And the result is just like Newton&#8217;s 2n Law except the right hand side is not exactly like a force which should be <img class="math" src="../_images/math/c93aff51910f8547cc9d34e895c09cc95190683a.png" alt="-\frac{\d}{\d x} \left&lt; V(\hat x) \right&gt;"/>.</p>
 </li>
 </ol>
 </div>
 <div class="section" id="what-does-mean">
-<h4>What does <img class="math" src="../_images/math/af3d0c8f4001682aab1658774d7db78cb8bc0819.png" alt="-\left&lt; V'(\hat x)\right&gt;"/> mean<a class="headerlink" href="#what-does-mean" title="Permalink to this headline">¶</a></h4>
-<p>Suppose the potential area is fairly small and distributed around some coordinate <img class="math" src="../_images/math/f5f94729d7c30cc33aae4661cbfe5461b28bffe2.png" alt="x_0=\left&lt; \hat x \right&gt;"/>, we can do Taylor expansion around <img class="math" src="../_images/math/8bec48256288d9f27fe0a30f409614d5b6fd02ae.png" alt="x_0"/>.</p>
+<h4>What does <img class="math" src="../_images/math/abe3c107432ecc495eeac16f845e17d0990d2faf.png" alt="-\left&lt; V'(\hat x)\right&gt;"/> mean<a class="headerlink" href="#what-does-mean" title="Permalink to this headline">¶</a></h4>
+<p>Suppose the potential area is fairly small and distributed around some coordinate <img class="math" src="../_images/math/9dfffa4634181328f46840b083bf528978060427.png" alt="x_0=\left&lt; \hat x \right&gt;"/>, we can do Taylor expansion around <img class="math" src="../_images/math/ff5b05a48ae1a54c81d8a56c44aaa4906de17327.png" alt="x_0"/>.</p>
 <div class="math">
-<p><img src="../_images/math/47562ad9a71da1a023d0aa025dfe3fa47e6e0717.png" alt="&lt; V(\hat x)&gt; &amp; =  V(x_0)   +  V'(x_0) &lt; (x - x_0)&gt; + V''(x_0)&lt;(x-x_0)^2&gt; /2 + \cdots \\
+<p><img src="../_images/math/ec7bc8867d17c60cf39cdaab17f5241989b79130.png" alt="&lt; V(\hat x)&gt; &amp; =  V(x_0)   +  V'(x_0) &lt; (x - x_0)&gt; + V''(x_0)&lt;(x-x_0)^2&gt; /2 + \cdots \\
 &amp; =  V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots"/></p>
-</div><p>If the uncertainty is small enough, every term except the first one becomes small. So to the lowest order, average of potential is approximately the potential at <img class="math" src="../_images/math/8bec48256288d9f27fe0a30f409614d5b6fd02ae.png" alt="x_0"/>.</p>
-<p>Similarly, the average of first derivative of potential <img class="math" src="../_images/math/f3c06687053ce232dba0b467e1e57e018ef4d690.png" alt="&lt;V'(\hat x)&gt;"/> is approximately <img class="math" src="../_images/math/01c35559078a2683466283986ddd803497f47ea6.png" alt="V'(x_0)"/>.</p>
+</div><p>If the uncertainty is small enough, every term except the first one becomes small. So to the lowest order, average of potential is approximately the potential at <img class="math" src="../_images/math/ff5b05a48ae1a54c81d8a56c44aaa4906de17327.png" alt="x_0"/>.</p>
+<p>Similarly, the average of first derivative of potential <img class="math" src="../_images/math/d34de73a868ac36f91025a845bf087bf1de2cd40.png" alt="&lt;V'(\hat x)&gt;"/> is approximately <img class="math" src="../_images/math/b596f84cf8fbaab20b8764c092a4337d292cdb65.png" alt="V'(x_0)"/>.</p>
 <p>These gives us a hint for the previous result we got for the time evolution of average momentum. The result reduces to classical mechanics one as long as we keep the lowest order of Taylor expansion. Those higher order terms show the quantum effect.</p>
 </div>
 </div>
@@ -783,22 +783,22 @@ a. Apply to position operator,</p>
 <h5>Schrödinger Picture<a class="headerlink" href="#schrodinger-picture" title="Permalink to this headline">¶</a></h5>
 <p>In Schrödinger picture the states are evolving with time.</p>
 <div class="math">
-<p><img src="../_images/math/78f47f3ca15326733bdbec8d8ed659f0248a28a2.png" alt="i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S"/></p>
+<p><img src="../_images/math/ddbccf18c3f96ea28eb75970233dc00ab3664fcc.png" alt="i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S"/></p>
 </div><p>And for time independent Hamiltonian,</p>
 <div class="math">
-<p><img src="../_images/math/c053140c2b1f9a212e27fd53b6809fcd4c518882.png" alt="\ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S"/></p>
+<p><img src="../_images/math/a8cc5afb49a84a206ef49a59c0cdc49b7c800b7f.png" alt="\ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S"/></p>
 </div></div>
 <div class="section" id="heisenberg-picture">
 <h5>Heisenberg Picture<a class="headerlink" href="#heisenberg-picture" title="Permalink to this headline">¶</a></h5>
 <p>In Heisenberg Picture, the states do not change with time.</p>
 <div class="math">
-<p><img src="../_images/math/749724ba127be7b219351434043271b335a13a25.png" alt="\ket{\psi} _ H = \ket{\psi_0} _ H ,"/></p>
+<p><img src="../_images/math/3ae3c3d8d67dd364a29bed1f2d7dd04ff4b7e974.png" alt="\ket{\psi} _ H = \ket{\psi_0} _ H ,"/></p>
 </div><p>and of course the initial is the same with Schrödinger Picture,</p>
 <div class="math">
-<p><img src="../_images/math/569d5a6f2cca01744375a86324490ea3ef47d189.png" alt="\ket{\psi_0} _ H = \ket{\psi _ 0} _ S ."/></p>
+<p><img src="../_images/math/66113d69c0521027021cb324a8153140b5348183.png" alt="\ket{\psi_0} _ H = \ket{\psi _ 0} _ S ."/></p>
 </div><p>How do we relate to Heisenberg Picture to Schrödinger Picture? Through investigation of observables. We should have the same observation results in both Pictures.</p>
 <div class="math">
-<p><img src="../_images/math/d243ff432cb70e56855b9f33fe5cff471d597a26.png" alt="{} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp; =  {} _ S \bra{\psi} \hat \Omega _ S \ket{\psi} _ S \\
+<p><img src="../_images/math/880bccdefcfb43988c605ef6650f9f721bca2fdf.png" alt="{} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp; =  {} _ S \bra{\psi} \hat \Omega _ S \ket{\psi} _ S \\
   {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp; =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\
   \hat \Omega _ H &amp; =  \hat U^\dagger \hat \Omega _ S \hat U
 
@@ -808,19 +808,19 @@ So the operators change with time in Heisenberg Picture."/></p>
 <div class="section" id="ehrenfest-s-theorem-in-heisenberg-picture">
 <h4>Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h4>
 <div class="math">
-<p><img src="../_images/math/c61aeaa19e36819f40aca07c414e6cad9aff9d72.png" alt="\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U"/></p>
+<p><img src="../_images/math/32fa0838ffa7a9203db5aec9e8c96051f1059625.png" alt="\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U"/></p>
 </div><p>This can be easily proved by throwing every definition need in to it. We also need the following equations.</p>
 <div class="math">
-<p><img src="../_images/math/ebd5f5514d4d31ea267f5f512383434887f76808.png" alt="\frac{\d }{\d t} \hat U = \frac{\d }{\d t} e^{-i\hat H t /\hbar} = \frac{\hat H}{i\hbar} \hat U"/></p>
+<p><img src="../_images/math/e97b598749b48b3edee766f74d97eb2a21f144ac.png" alt="\frac{\d }{\d t} \hat U = \frac{\d }{\d t} e^{-i\hat H t /\hbar} = \frac{\hat H}{i\hbar} \hat U"/></p>
 </div><p>And REMEMBER that propagator commute with time independent Hamiltonian, so</p>
 <div class="math">
-<p><img src="../_images/math/ee5ba97ef4cbc211c2827100d1eafa29c9d3773a.png" alt="\hat H = \hat U^\dagger \hat U \hat H = \hat U^ \dagger \hat U \hat U \equiv \hat H _ H"/></p>
+<p><img src="../_images/math/ef3677874adbff9bd21c6a062de13e28b4fbde91.png" alt="\hat H = \hat U^\dagger \hat U \hat H = \hat U^ \dagger \hat U \hat U \equiv \hat H _ H"/></p>
 </div><p>So this Ehrenfest&#8217;s Theorem can also be written as</p>
 <div class="math">
-<p><img src="../_images/math/6a04cd38ca4134bf6337252505015928855e8083.png" alt="\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H _ H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U"/></p>
+<p><img src="../_images/math/c7082e804c3657a8e2e9c5043499bc42174c15e0.png" alt="\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H _ H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U"/></p>
 </div><p>We can <strong>define</strong></p>
 <div class="math">
-<p><img src="../_images/math/e4e915de22c288f282524a8a66085c93ffaed956.png" alt="\frac{\partial}{\partial t}\hat  \Omega _ H \equiv \hat U^\dagger  \frac{\partial }{\partial t}\hat  \Omega _ S \hat U  ,"/></p>
+<p><img src="../_images/math/facd72fbbc65e2719ed27358fb4a8fb65a28129b.png" alt="\frac{\partial}{\partial t}\hat  \Omega _ H \equiv \hat U^\dagger  \frac{\partial }{\partial t}\hat  \Omega _ S \hat U  ,"/></p>
 </div><p>which is the time derivative of operator in Heisenberg Picture.</p>
 <p><strong>Reminder: The time derivative of an observable (average) depends not only the time derivative of itself, but also the commutator of the observable and Hamiltonian.</strong></p>
 <div class="section" id="example-of-ehrenfest-s-theorem-in-heisenberg-picture">
@@ -828,13 +828,13 @@ So the operators change with time in Heisenberg Picture."/></p>
 <p>We will show why it is better to work in Heisenberg Picture to show the meanings of Ehrenfest&#8217;s Theorem.</p>
 <p>Suppose we have a Hamiltonian in Heisenberg Picture,</p>
 <div class="math">
-<p><img src="../_images/math/25abe87db89c56dd69f29797673703a652286b6b.png" alt="\hat H_H = \frac{\hat p _ H^2 }{2m} + V(\hat x _ H) ."/></p>
+<p><img src="../_images/math/c0580679557582a201a534cee536623ba59fb06e.png" alt="\hat H_H = \frac{\hat p _ H^2 }{2m} + V(\hat x _ H) ."/></p>
 </div><p>Time derivative of position operator</p>
 <div class="math">
-<p><img src="../_images/math/6a90705836e6e636035cceb19ac7dfabfbaea89d.png" alt="\frac{\d}{\d t} \hat x _ H = \frac{1}{i\hbar} \left[\hat x _ H, \hat H _ H \right ] = \frac{\hat p _ H}{m}"/></p>
+<p><img src="../_images/math/17d1d58471db4eceb38598a934f9a6858c5f75b6.png" alt="\frac{\d}{\d t} \hat x _ H = \frac{1}{i\hbar} \left[\hat x _ H, \hat H _ H \right ] = \frac{\hat p _ H}{m}"/></p>
 </div><p>Time derivative of momentum operator</p>
 <div class="math">
-<p><img src="../_images/math/7f71b4b6a4e517bd065c5186f4b68634872b0fcc.png" alt="\frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)"/></p>
+<p><img src="../_images/math/244e5da9c133f784d79fc8bd6bb601c1f84eed47.png" alt="\frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)"/></p>
 </div><p>So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That&#8217;s why we like it.</p>
 </div>
 </div>
@@ -843,36 +843,36 @@ So the operators change with time in Heisenberg Picture."/></p>
 <h3>Conservation<a class="headerlink" href="#conservation" title="Permalink to this headline">¶</a></h3>
 <p>We say a observable is conserved if the corresponding operator commutes with Hamiltonian,</p>
 <div class="math">
-<p><img src="../_images/math/6e310758179016eedb37542d3b84ce6964fbb319.png" alt="\left[ \hat \Omega, \hat H \right]=0"/></p>
+<p><img src="../_images/math/e92ef6d748fd8bc6a60f68fc088f8b4db37ffc50.png" alt="\left[ \hat \Omega, \hat H \right]=0"/></p>
 </div><p>1. Energy
 Hamiltonian always commutes with itself.</p>
 <div class="math">
-<p><img src="../_images/math/6d03c73272d680a2439814452038850dc822de32.png" alt="\frac{\d}{\d t} \left&lt;\epsilon \right&gt; = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}"/></p>
+<p><img src="../_images/math/5b5e3de39a054ee47387e61128aa37dde27d5132.png" alt="\frac{\d}{\d t} \left&lt;\epsilon \right&gt; = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}"/></p>
 </div><p>If Hamiltonian is time independent, then energy is conserved. (If Hamiltonian is tide dependent, energy is not conserved. This is kind of obvious in classical mechanics.)</p>
 <div class="section" id="what-is-the-nature-of-time-dependence">
 <h4>What is the nature of time dependence<a class="headerlink" href="#what-is-the-nature-of-time-dependence" title="Permalink to this headline">¶</a></h4>
 <p>We can see this by looking at a simple example.</p>
-<p>Assume we have a system with energy eigenstates <img class="math" src="../_images/math/e6b9d52afea865cf051e2dd4f270192c285834fb.png" alt="\ket{\epsilon _ n}"/>, and initially,</p>
+<p>Assume we have a system with energy eigenstates <img class="math" src="../_images/math/0ea3b81c4c2d7e973660b14cb0e8d27ac5ffb794.png" alt="\ket{\epsilon _ n}"/>, and initially,</p>
 <div class="math">
-<p><img src="../_images/math/85dca15abf268c0465759617bb7d5f27512f0747.png" alt="\ket{\psi _ 0} = \sum_n C _ n \ket{\epsilon _ n} ."/></p>
+<p><img src="../_images/math/7138eb638c04ed8753c492564065bce78193bb2e.png" alt="\ket{\psi _ 0} = \sum_n C _ n \ket{\epsilon _ n} ."/></p>
 </div><p>So</p>
 <div class="math">
-<p><img src="../_images/math/d2bdfa856037fdfee6694f962ecb93cd730527d8.png" alt="\ket{\psi(t)} = \sum _ n C _ n e^{-i\epsilon _ n t/\hbar} \ket{\epsilon _ n} ."/></p>
-</div><p>We can calculate the expectation value of some operator <img class="math" src="../_images/math/7f0cbb7794365b643339ff9a0c2a760866ff1396.png" alt="\hat \Omega"/>,</p>
+<p><img src="../_images/math/656446372958b45c55f4232c51e3b590f1dc2375.png" alt="\ket{\psi(t)} = \sum _ n C _ n e^{-i\epsilon _ n t/\hbar} \ket{\epsilon _ n} ."/></p>
+</div><p>We can calculate the expectation value of some operator <img class="math" src="../_images/math/addae0fbe54e90967d5280a9cbf797ffe201805c.png" alt="\hat \Omega"/>,</p>
 <div class="math">
-<p><img src="../_images/math/0b5e8914afd1c60c8d25a657d5f16e765a8819ad.png" alt="\left&lt; \omega (t) \right&gt; =  \sum _ {n,m} \left( C _ n^ * e^{i\epsilon _ n t/\hbar } \bra{\epsilon _ n} \right)  \hat \Omega \left( C _ m e^{-i \epsilon _ m t/\hbar} \ket{\epsilon _ m} \right) = \sum _ {n,m} C _ n ^* C _ m e^{-i(\epsilon _ m - \epsilon _ n) t/\hbar} \bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m}"/></p>
-</div><p>If <img class="math" src="../_images/math/e6b9d52afea865cf051e2dd4f270192c285834fb.png" alt="\ket{\epsilon _ n}"/> are also the eigenvectors of <img class="math" src="../_images/math/7f0cbb7794365b643339ff9a0c2a760866ff1396.png" alt="\hat \Omega"/>, then</p>
+<p><img src="../_images/math/5480c91cf8b8f0775ad92ec13def8126c7f6f9a8.png" alt="\left&lt; \omega (t) \right&gt; =  \sum _ {n,m} \left( C _ n^ * e^{i\epsilon _ n t/\hbar } \bra{\epsilon _ n} \right)  \hat \Omega \left( C _ m e^{-i \epsilon _ m t/\hbar} \ket{\epsilon _ m} \right) = \sum _ {n,m} C _ n ^* C _ m e^{-i(\epsilon _ m - \epsilon _ n) t/\hbar} \bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m}"/></p>
+</div><p>If <img class="math" src="../_images/math/0ea3b81c4c2d7e973660b14cb0e8d27ac5ffb794.png" alt="\ket{\epsilon _ n}"/> are also the eigenvectors of <img class="math" src="../_images/math/addae0fbe54e90967d5280a9cbf797ffe201805c.png" alt="\hat \Omega"/>, then</p>
 <div class="math">
-<p><img src="../_images/math/90d7f42e87c62fa955000cbf309baa3ce76e146d.png" alt="\bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m} = \omega _ m \delta _ {n,m}"/></p>
+<p><img src="../_images/math/d21016542cb45d6a9562f9b1217fddc51577c366.png" alt="\bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m} = \omega _ m \delta _ {n,m}"/></p>
 </div><p>And the expectation value</p>
 <div class="math">
-<p><img src="../_images/math/a22d34f008097e2a9f20a9a3d2db01ee4b38ab92.png" alt="\left&lt;  \omega (t) \right&gt; = \sum _ {n} C _ n^* C _ n \omega _ n"/></p>
+<p><img src="../_images/math/20f6c032f9cd01ef08968746a80efa90876d0cec.png" alt="\left&lt;  \omega (t) \right&gt; = \sum _ {n} C _ n^* C _ n \omega _ n"/></p>
 </div><p><strong>The important thing is that the time dependence of this expectation value actually arise from this term</strong></p>
 <div class="math">
-<p><img src="../_images/math/f9db51647b6d818687b9f818896cddde6e44518b.png" alt="e^{-i(\epsilon _ m - \epsilon _ n)t/\hbar} ."/></p>
+<p><img src="../_images/math/ae9fbc1c37eec65903914b75cc088803aa32ebb9.png" alt="e^{-i(\epsilon _ m - \epsilon _ n)t/\hbar} ."/></p>
 </div><p>As it is so important, we call</p>
 <div class="math">
-<p><img src="../_images/math/d62af9010e5d52e41b6825e696a27dc315c242ac.png" alt="(\epsilon _ m - \epsilon _ n)/\hbar"/></p>
+<p><img src="../_images/math/a2ea3263948ac5791e99e3432b1a302b3104878c.png" alt="(\epsilon _ m - \epsilon _ n)/\hbar"/></p>
 </div><p><strong>Bohr frequency</strong>.</p>
 </div>
 </div>
@@ -884,137 +884,137 @@ Hamiltonian always commutes with itself.</p>
 <p>Many systems can reduce to it. Use Taylor expansion for the potential and redefine parameters we will find harmonic oscillators in the potential.</p>
 <p>Hamiltonian for 1D is</p>
 <div class="math">
-<p><img src="../_images/math/2b674a68de0e6780414b24bcf46c699e37b57e18.png" alt="\hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2"/></p>
+<p><img src="../_images/math/4e1175fc69701620315ff949dbf328b92d714f7c.png" alt="\hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2"/></p>
 </div></div>
 <div class="section" id="standard-solution">
 <h3>Standard Solution<a class="headerlink" href="#standard-solution" title="Permalink to this headline">¶</a></h3>
 <p>We can use polynomial expansion for part of the solution.</p>
 <div class="section" id="dimension-schrodinger-equation">
 <h4>Dimension Schrodinger Equation<a class="headerlink" href="#dimension-schrodinger-equation" title="Permalink to this headline">¶</a></h4>
-<p>First step is always finding out the characteristic length scale and characteristic energy scale. Assume we have an characteristic length <img class="math" src="../_images/math/9af67867c6d21382b6f8e895a4270b37a19b261c.png" alt="\eta"/> and characteristic energy scale <img class="math" src="../_images/math/2480ef3b979c0b482539a149cfb5b02b6d58a82c.png" alt="\epsilon_0"/>. Through uncertainty principle we know only for dimensional analysis</p>
+<p>First step is always finding out the characteristic length scale and characteristic energy scale. Assume we have an characteristic length <img class="math" src="../_images/math/1e5b6974c5b4853b157f5e04381c5c3879067dc7.png" alt="\eta"/> and characteristic energy scale <img class="math" src="../_images/math/13876f915d24ca52caf486594edba9254560766c.png" alt="\epsilon_0"/>. Through uncertainty principle we know only for dimensional analysis</p>
 <div class="math">
-<p><img src="../_images/math/6501bd43feca7de9b324399cb498f877ff886b1e.png" alt="\left[\hat p\right]=\frac{\hbar}{\eta}"/></p>
+<p><img src="../_images/math/6c2ff8af1d198109569ad0cc885b89e1e6767c14.png" alt="\left[\hat p\right]=\frac{\hbar}{\eta}"/></p>
 </div><p>Kinetic energy and potential energy have the same dimension</p>
 <div class="math">
-<p><img src="../_images/math/c85985490d5adfc1af1ad72b9b9dd4d154a94608.png" alt="\frac{\hbar^2}{\eta^2 m}=k \eta^2 ,"/></p>
+<p><img src="../_images/math/dcb0a187e45f6081a4430ca410e20ce489939d43.png" alt="\frac{\hbar^2}{\eta^2 m}=k \eta^2 ,"/></p>
 </div><p>so we have</p>
 <div class="math">
-<p><img src="../_images/math/ffeb58313fb5caa6be8bf6e528d968626682c30c.png" alt="\eta = \sqrt{\frac{\hbar}{m\omega}}"/></p>
-</div><p>with <img class="math" src="../_images/math/28acb8bb691cbebdb6d96db0e43ae3b81562561e.png" alt="\omega^2=k/m"/>. A dimensional analysis shows that <img class="math" src="../_images/math/bc4a69ddb179f7f675bf134c194d5944a59a31bc.png" alt="\epsilon_0=\hbar\omega"/>.</p>
+<p><img src="../_images/math/c395dbbf7d9e4a51ea68fb9e9e24d8736748167c.png" alt="\eta = \sqrt{\frac{\hbar}{m\omega}}"/></p>
+</div><p>with <img class="math" src="../_images/math/2c7fe94f917c5a8df4062420bd44e44c7cac0df0.png" alt="\omega^2=k/m"/>. A dimensional analysis shows that <img class="math" src="../_images/math/8fd17f9b56b0568e241b76942d4709b14a1a3c56.png" alt="\epsilon_0=\hbar\omega"/>.</p>
 <p>Now we can define dimensionless variables,</p>
 <div class="math">
-<p><img src="../_images/math/3dd9ffccaf4892aa075780c8b64fc57df1cd1a0c.png" alt="z=x/\eta, e=\epsilon/\epsilon_0"/></p>
+<p><img src="../_images/math/e7584dee4b9993b81ac3564f05eb38fcc4f1b316.png" alt="z=x/\eta, e=\epsilon/\epsilon_0"/></p>
 </div><p>The time independent Schrodinger equation in position basis is</p>
 <div class="math">
-<p><img src="../_images/math/1c2437df5228e073426a0d66d8cabc0cba7230a5.png" alt="-\hbar^2 \frac{\mathrm d^2}{\mathrm dx^2}\psi'' /m + k x^2 = 2\epsilon \psi ."/></p>
+<p><img src="../_images/math/6728b0072ab02ae6056313635ba1d1c349d31f6e.png" alt="-\hbar^2 \frac{\mathrm d^2}{\mathrm dx^2}\psi'' /m + k x^2 = 2\epsilon \psi ."/></p>
 </div><p>Using those characteristic scales, we can rewrite this equation into a dimensionless one, which is</p>
 <div class="math">
-<p><img src="../_images/math/01dda474cb0940cdda1872e587dd3e5eea99bd6b.png" alt="\psi''+(2e-z^2)\psi = 0"/></p>
-</div><p>in which <img class="math" src="../_images/math/e52a5ce4ec0cc623a4ddaadf835117fd3a867fcc.png" alt="\psi'=\frac{\mathrm d}{\mathrm dz}\psi"/>.</p>
+<p><img src="../_images/math/d8b1b3bd53605be895ce8b5be36e3a98b84d0a83.png" alt="\psi''+(2e-z^2)\psi = 0"/></p>
+</div><p>in which <img class="math" src="../_images/math/360bd68bb3b4674a9de26c0f0a35a7efc4a44479.png" alt="\psi'=\frac{\mathrm d}{\mathrm dz}\psi"/>.</p>
 </div>
 <div class="section" id="take-limits">
 <h4>Take Limits<a class="headerlink" href="#take-limits" title="Permalink to this headline">¶</a></h4>
 <p>We need to look at the behavior of the solutions before we can guess a proper general solution.</p>
-<p><img class="math" src="../_images/math/bf207d7fa5c1db06882f06922be4dd79f1416b1f.png" alt="z\rightarrow \infty"/>, we have <img class="math" src="../_images/math/0ec3c95eaaddc2b7f1e6925b08af97cad2af84d3.png" alt="\psi''-z^2\psi=0"/>. Solution to this equation is <img class="math" src="../_images/math/f200211fd8a7c5a06736c6e42f6936e2881c54cc.png" alt="\psi(z)~ e^{-z^2/2}"/>.</p>
+<p><img class="math" src="../_images/math/e82d26546b3658d72a3bc9b0f7863c8a28244497.png" alt="z\rightarrow \infty"/>, we have <img class="math" src="../_images/math/ca20a6c55a3a26ebe1f2c1a450d1d083b924bed8.png" alt="\psi''-z^2\psi=0"/>. Solution to this equation is <img class="math" src="../_images/math/bace78b31170a50ac3f4c20083c3e6e377196e01.png" alt="\psi(z)~ e^{-z^2/2}"/>.</p>
 <p>The solution of the the equation should be in the form</p>
 <div class="math">
-<p><img src="../_images/math/a883f8d7e52a62375c89b1fb19525b62d9edd63a.png" alt="\psi(z) = u(z) e^{-z^2/2}  ."/></p>
-</div><p>Insert this to time independent Schrodinger equation, we can get the equation of <img class="math" src="../_images/math/f37c34c0afc7dccfbebeb2d717dd287078b6e693.png" alt="u(z)"/>.</p>
+<p><img src="../_images/math/fa33cc4703f0887fdc2713f61bcc22eaf6c9c375.png" alt="\psi(z) = u(z) e^{-z^2/2}  ."/></p>
+</div><p>Insert this to time independent Schrodinger equation, we can get the equation of <img class="math" src="../_images/math/77d7b5819546680a28cc41ccaa368c1752354332.png" alt="u(z)"/>.</p>
 <div class="math">
-<p><img src="../_images/math/52374e95fadca62920aa054406c193263f6d619e.png" alt="u'' - 2 z u' +(2e-1) u = 0"/></p>
+<p><img src="../_images/math/2a489bc5d248a5b02475c2b5105bc5a8005052fa.png" alt="u'' - 2 z u' +(2e-1) u = 0"/></p>
 </div></div>
 <div class="section" id="polynomial-method">
 <h4>Polynomial Method<a class="headerlink" href="#polynomial-method" title="Permalink to this headline">¶</a></h4>
-<p>The simplest form of <img class="math" src="../_images/math/f37c34c0afc7dccfbebeb2d717dd287078b6e693.png" alt="u(z)"/> is polynomial,</p>
+<p>The simplest form of <img class="math" src="../_images/math/77d7b5819546680a28cc41ccaa368c1752354332.png" alt="u(z)"/> is polynomial,</p>
 <div class="math">
-<p><img src="../_images/math/0f8b191b023fe0c90df428e37259031291b428e8.png" alt="u(z) = \sum _ {n=0}^{\infty} u _ n z^n  ."/></p>
+<p><img src="../_images/math/3e1a6f4471ad2464ddc16eed6f73f41a84202d62.png" alt="u(z) = \sum _ {n=0}^{\infty} u _ n z^n  ."/></p>
 </div><p>Put this back to equation of u, we can get the recursion relation,</p>
 <div class="math">
-<p><img src="../_images/math/2e3a79ffd5eb78fc336c765ce55afd19e056fa4c.png" alt="(n + 2)(n+1) u _ {n+2} = \left[ 2n - (2e - 1) \right] u _ n   ."/></p>
-</div><p>If <img class="math" src="../_images/math/af36a6845c4b7d753f50d9d62cff3fbb720ef0d9.png" alt="u_0"/> and <img class="math" src="../_images/math/67bd03000170a5efc9a6a0b58cb60eb78b82f7f6.png" alt="u_1"/> are given, we can get the whole polynomial.</p>
-<p>Notice that we have definite parity here. So <img class="math" src="../_images/math/bc786d531e3c874762499632c329d01ca07baaf9.png" alt="u _ 1"/> branch vanish because they are even.</p>
-<p><img class="math" src="../_images/math/af36a6845c4b7d753f50d9d62cff3fbb720ef0d9.png" alt="u_0"/> is set by the normalization condition.</p>
+<p><img src="../_images/math/e9fcd20d874c0d85606b95aa14edfcf7b93ee62f.png" alt="(n + 2)(n+1) u _ {n+2} = \left[ 2n - (2e - 1) \right] u _ n   ."/></p>
+</div><p>If <img class="math" src="../_images/math/93c9ba7d6c58536a16adf779b4554f503ded2181.png" alt="u_0"/> and <img class="math" src="../_images/math/bd69f96c680b34b5c4b863a91de59eb76d423d9b.png" alt="u_1"/> are given, we can get the whole polynomial.</p>
+<p>Notice that we have definite parity here. So <img class="math" src="../_images/math/a612d5468f83579aa4381843972812776c5afad2.png" alt="u _ 1"/> branch vanish because they are even.</p>
+<p><img class="math" src="../_images/math/93c9ba7d6c58536a16adf779b4554f503ded2181.png" alt="u_0"/> is set by the normalization condition.</p>
 </div>
 <div class="section" id="terminate-the-series">
 <h4>Terminate The Series<a class="headerlink" href="#terminate-the-series" title="Permalink to this headline">¶</a></h4>
 <p>The series blow up if it doesn&#8217;t terminate. So we need to terminate the series using the following relation,</p>
 <div class="math">
-<p><img src="../_images/math/cb94be0c428f8ae111772270e4cfd33c24000c0e.png" alt="2e - 1 = 2n ."/></p>
-</div><p>Then we have the energy levels, which is <img class="math" src="../_images/math/b28d9fa08d4930b81f4293fc7eb4dc4f1888f01e.png" alt="e=n+1/2"/>.</p>
+<p><img src="../_images/math/d437a135d72c3b20d232e81744ae0eb1fa52d1cb.png" alt="2e - 1 = 2n ."/></p>
+</div><p>Then we have the energy levels, which is <img class="math" src="../_images/math/1e6ae8f6ef1596996b97e626a1e25de7c053de23.png" alt="e=n+1/2"/>.</p>
 </div>
 <div class="section" id="complete-series">
 <h4>Complete Series<a class="headerlink" href="#complete-series" title="Permalink to this headline">¶</a></h4>
 <p>By picking proper normalization factor, we can write down the energy levels and corresponding wave functions. In fact, this polynomial can be found in mathematical phyisics books.</p>
 <div class="math">
-<p><img src="../_images/math/8b485d4203ac29d2eff31f6b239884156c48530c.png" alt="H _ {n+1} = 2 z H _n -n H _ {n-1}"/></p>
+<p><img src="../_images/math/9d921164c9e687750551e1c8d5ca03c651f51fdd.png" alt="H _ {n+1} = 2 z H _n -n H _ {n-1}"/></p>
 </div></div>
 </div>
 <div class="section" id="tricky-solution">
 <h3>Tricky Solution<a class="headerlink" href="#tricky-solution" title="Permalink to this headline">¶</a></h3>
 <p>Find out the characteristic length and energy</p>
 <div class="math">
-<p><img src="../_images/math/65bc423ef098b66846deb6891a14cdd0a98a7764.png" alt="\eta = \sqrt{\frac{\hbar }{m\omega }} \\
+<p><img src="../_images/math/e2bd1c2bcb9f21c12124a9b853f5639dc4622ca9.png" alt="\eta = \sqrt{\frac{\hbar }{m\omega }} \\
 \epsilon = \hbar \omega \\
 \omega = \sqrt{\frac{k}{m}}"/></p>
 </div><p>One way to get the intrinsic length without writing down the dimensions of each quantity is to use the following relation</p>
 <div class="math">
-<p><img src="../_images/math/a84d656cf3a96dcf49f655ab6f4d3fc02d7ab64f.png" alt="\left[ E \right] = \left[ m \omega^2 \hat x^2 \right] \\
+<p><img src="../_images/math/f96f31eb7821de9cc843ab596773aa2dbc905378.png" alt="\left[ E \right] = \left[ m \omega^2 \hat x^2 \right] \\
 \hbar \omega = m \omega^2 \eta^2 \\\
 \eta = \sqrt{ \frac{\hbar}{m\omega} }"/></p>
-</div><p>Or if we are given the Hamiltonian in terms of <img class="math" src="../_images/math/8fbc0f61be0f4d9bba761a04c6a2182b6732db1e.png" alt="k"/>,</p>
+</div><p>Or if we are given the Hamiltonian in terms of <img class="math" src="../_images/math/3a737581fb51398bf3d276f0d3a06870c8c737bc.png" alt="k"/>,</p>
 <div class="math">
-<p><img src="../_images/math/82ffb270a350634f0de36da2fa03bcca742681a0.png" alt="\left[ \frac{\hat p^2}{2m} \right] = \left[ k \hat x^2 \right] \\
+<p><img src="../_images/math/f9ec9e9c4662ff94e20b42054ee691702f67ca80.png" alt="\left[ \frac{\hat p^2}{2m} \right] = \left[ k \hat x^2 \right] \\
 \frac{\hbar^2 / \eta^2 }{m} = k\eta^2 \\
 \eta = \sqrt{\hbar}{ \sqrt{m k} } = \sqrt{ \hbar }{ m \omega }"/></p>
 </div><p>Rewrite the Hamiltonian</p>
 <div class="math">
-<p><img src="../_images/math/4c7c385980e0e6d8db0121165f6abceee2f2d182.png" alt="\hat H &amp; =  \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\
+<p><img src="../_images/math/885358e77725183a452042b281d9ca5ec5b77d6e.png" alt="\hat H &amp; =  \frac{1}{2m} \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 \left(\frac{\hbar}{\eta}\right)^2 + \frac{1}{2} m \omega^2 \left( \frac{\hat x}{\eta} \right)^2 \right] \\
 &amp; =  \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\
 &amp; =  \frac 1 2 \hbar \omega \left( \frac{\hat x}{\eta} - i \frac{\hat p}{\hbar/\eta}   \right) \left( \frac{\hat x}{\eta} + i\frac{\hat p}{\hbar/\eta}  \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\
 &amp; =  \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\
 &amp; =  \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)"/></p>
-</div><p>Now we can define <img class="math" src="../_images/math/0e41857c2ce3f582e8b5252a1d4f279988527488.png" alt="\hat a^\dagger \hat a = \hat N"/>, which is just like an operator for (energy) quanta numbers.</p>
+</div><p>Now we can define <img class="math" src="../_images/math/1f9d25fa6f50917bef1333c671703e637dbcec1e.png" alt="\hat a^\dagger \hat a = \hat N"/>, which is just like an operator for (energy) quanta numbers.</p>
 <p>An impoertan relation is</p>
 <div class="math">
-<p><img src="../_images/math/98cb60cc2bf5018efa6ec814baa2098e9408910a.png" alt="\left[\hat a, \hat a^\dagger\right] = 1 \\
+<p><img src="../_images/math/bb284c1eeade4db077a3ec9099e4e43ad730db54.png" alt="\left[\hat a, \hat a^\dagger\right] = 1 \\
 \left[\hat a, \hat N\right] = \hat a"/></p>
 </div><p>The eigen equation for this weird energy quanta number operator is</p>
 <div class="math">
-<p><img src="../_images/math/f49d9e91eb139a8bfe495fef5112328627e12839.png" alt="\hat N \ket{n} = n \ket{n}"/></p>
-</div><p>To find out the eigen state of <img class="math" src="../_images/math/ab1430ec28666b8a47daee09eba1e54f81b387f7.png" alt="\hat a"/> and <img class="math" src="../_images/math/e46a76c86200963ebc32ec68ad5a45b9b176dde8.png" alt="\hat a^\dagger"/>, we try this,</p>
+<p><img src="../_images/math/d67652df82cd35fb69810dc4ea8341c2e0b73791.png" alt="\hat N \ket{n} = n \ket{n}"/></p>
+</div><p>To find out the eigen state of <img class="math" src="../_images/math/0146e9fa7cb974ae8c453567bf004c565e57895a.png" alt="\hat a"/> and <img class="math" src="../_images/math/5ff961024dc309c40266db754905fb54bb374fc2.png" alt="\hat a^\dagger"/>, we try this,</p>
 <div class="math">
-<p><img src="../_images/math/721a36face116debe3e80ae6bed27c32f1cb07a7.png" alt="\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\
+<p><img src="../_images/math/f4feea3e7085fd55055ec804fb813dde0b43d3a2.png" alt="\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\
 \hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})"/></p>
-</div><p>This means <img class="math" src="../_images/math/305d0fbc2fde47a279be2c65ac37b9e591c80f4c.png" alt="\hat a \ket{n}"/> and <img class="math" src="../_images/math/6c5b9a56f122da4baa7aed5a1c42c20071bb1253.png" alt="\hat a^\dagger \ket{n}"/> are also eigen states of <img class="math" src="../_images/math/b2d3fb1d2ca512e6328340dc5a3a15861cbbd4fa.png" alt="hat N"/>.</p>
-<p>The next step is very crucial. Since <img class="math" src="../_images/math/305d0fbc2fde47a279be2c65ac37b9e591c80f4c.png" alt="\hat a \ket{n}"/> and <img class="math" src="../_images/math/6c5b9a56f122da4baa7aed5a1c42c20071bb1253.png" alt="\hat a^\dagger \ket{n}"/> are eigen states of <img class="math" src="../_images/math/b2d3fb1d2ca512e6328340dc5a3a15861cbbd4fa.png" alt="hat N"/>, we know that</p>
+</div><p>This means <img class="math" src="../_images/math/860b1bb83d6d71e3cb7d5f30793541275cc74fbe.png" alt="\hat a \ket{n}"/> and <img class="math" src="../_images/math/a5399ce9507e1a46b9f1906da02ec8d0fe9ee3f6.png" alt="\hat a^\dagger \ket{n}"/> are also eigen states of <img class="math" src="../_images/math/c40645e03b68c8c939836cbdcff803d483ea7628.png" alt="hat N"/>.</p>
+<p>The next step is very crucial. Since <img class="math" src="../_images/math/860b1bb83d6d71e3cb7d5f30793541275cc74fbe.png" alt="\hat a \ket{n}"/> and <img class="math" src="../_images/math/a5399ce9507e1a46b9f1906da02ec8d0fe9ee3f6.png" alt="\hat a^\dagger \ket{n}"/> are eigen states of <img class="math" src="../_images/math/c40645e03b68c8c939836cbdcff803d483ea7628.png" alt="hat N"/>, we know that</p>
 <div class="math">
-<p><img src="../_images/math/c39e4f60beb8bd44425622a925e435ebd4c88938.png" alt="\hat a \ket{n} = C1 \ket{n} \\
+<p><img src="../_images/math/73e9e7f835bb91a9029d7011f704b3370c2644ee.png" alt="\hat a \ket{n} = C1 \ket{n} \\
 \hat a^\dagger \ket{n} = C2 \ket{n}"/></p>
-</div><p>Then our next step is to find out what are <img class="math" src="../_images/math/6063d2d2bfc26958b53375b4b9fc644f4a901bcc.png" alt="C1"/> and <img class="math" src="../_images/math/863b32dcec43bba61bf308930c775b8e12506c56.png" alt="C2"/> exactly.</p>
-<p>They way of finding them is to use invariant quantities, such as the inner product. Here we use average of <img class="math" src="../_images/math/eeb45b4072bbe7511aa34f927a501e109c594d69.png" alt="\hat N"/> operator.</p>
+</div><p>Then our next step is to find out what are <img class="math" src="../_images/math/2634c914a4dc1d01b98f4eba6e55b41f435838c6.png" alt="C1"/> and <img class="math" src="../_images/math/d6b9cfb3da2a047f6acfa185708faf7c36ca1b70.png" alt="C2"/> exactly.</p>
+<p>They way of finding them is to use invariant quantities, such as the inner product. Here we use average of <img class="math" src="../_images/math/487c91a063010c7ce3021d1e7a55823ead04a6f0.png" alt="\hat N"/> operator.</p>
 <div class="math">
-<p><img src="../_images/math/1577c1464ef7536cafe50eb68e96ab94812e9ba0.png" alt="\hat a \ket{n} = \sqrt n \ket{n-1}  \\
+<p><img src="../_images/math/a8ea130b9fb172cc2adcdf2d088ae683df0aca60.png" alt="\hat a \ket{n} = \sqrt n \ket{n-1}  \\
 \hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}"/></p>
-</div><p>Final step is to constrain on <img class="math" src="../_images/math/a91adf6a1feaed1c27e6936b8e4a4d706622ecac.png" alt="n"/>, which should be integrals. This is true because we need a cut off for the eigen equation of <img class="math" src="../_images/math/eeb45b4072bbe7511aa34f927a501e109c594d69.png" alt="\hat N"/>, whose avarage is n and it should be non negative.</p>
+</div><p>Final step is to constrain on <img class="math" src="../_images/math/842bfc08283bf4c696d99825cea7dcc3ed574fb8.png" alt="n"/>, which should be integrals. This is true because we need a cut off for the eigen equation of <img class="math" src="../_images/math/487c91a063010c7ce3021d1e7a55823ead04a6f0.png" alt="\hat N"/>, whose avarage is n and it should be non negative.</p>
 <div class="math">
-<p><img src="../_images/math/703dab73ea8ff2e1077a6c61c92ea5574fba7609.png" alt="\bra{n}\hat N \ket{n} \ge 0"/></p>
-</div><p>leads to <img class="math" src="../_images/math/0ab4cb25831873029d7a67f76595c62938deddd2.png" alt="n\ge 0"/>. To get this proper cut off, <img class="math" src="../_images/math/a91adf6a1feaed1c27e6936b8e4a4d706622ecac.png" alt="n"/> should be integer because if it&#8217;s not, according to</p>
+<p><img src="../_images/math/9cfdbe871f75013eb416ce836b26dd672b4a8acd.png" alt="\bra{n}\hat N \ket{n} \ge 0"/></p>
+</div><p>leads to <img class="math" src="../_images/math/0eef3946182029cac2f1758427ebf7301a9f2187.png" alt="n\ge 0"/>. To get this proper cut off, <img class="math" src="../_images/math/842bfc08283bf4c696d99825cea7dcc3ed574fb8.png" alt="n"/> should be integer because if it&#8217;s not, according to</p>
 <div class="math">
-<p><img src="../_images/math/4d31567d98ac7b16e92e1c414825c6d35b8e841f.png" alt="\hat a \ket{n} = \sqrt n \ket{n-1}"/></p>
+<p><img src="../_images/math/9382767d8c2317581e82f1655a54d3ff5022536d.png" alt="\hat a \ket{n} = \sqrt n \ket{n-1}"/></p>
 </div><p>n can go to negative numbers. If n is positive integer,</p>
 <div class="math">
-<p><img src="../_images/math/3b0f8d030f80eab0135f3aa4f02aded1093bab9a.png" alt="\hat a \ket{1} = \ket{0}  \\
+<p><img src="../_images/math/6ae197c33c1de414d7a634a80c93f0c3c9ef0738.png" alt="\hat a \ket{1} = \ket{0}  \\
 \hat a \ket{0} = 0 \ket{0}"/></p>
 </div><p>show an cut off at 0.</p>
-<p>We can even find out the wave functions of these <img class="math" src="../_images/math/8987ac7e4cba2d9eb2ecf4dc12b445874e423370.png" alt="\ket{n}"/> by finding the ground state first and apply <img class="math" src="../_images/math/e46a76c86200963ebc32ec68ad5a45b9b176dde8.png" alt="\hat a^\dagger"/> to the ground state.</p>
-<p>Ground state in <img class="math" src="../_images/math/5258be2832949ab5e517556decbef0abbe537827.png" alt="{\ket{x}}"/> basis can be found by solving the differential equation,</p>
+<p>We can even find out the wave functions of these <img class="math" src="../_images/math/6ed6983f93250bc219445a6a37d3d1023923c23d.png" alt="\ket{n}"/> by finding the ground state first and apply <img class="math" src="../_images/math/5ff961024dc309c40266db754905fb54bb374fc2.png" alt="\hat a^\dagger"/> to the ground state.</p>
+<p>Ground state in <img class="math" src="../_images/math/fdac0ad311d204a37134ffbdcf3c8216206c1d72.png" alt="{\ket{x}}"/> basis can be found by solving the differential equation,</p>
 <div class="math">
-<p><img src="../_images/math/fb85897d93d7639111ee573cdfce1211227b99b6.png" alt="\bra{x} \hat a \ket{0} = 0"/></p>
+<p><img src="../_images/math/9b1ffb39e02d9f37841ca593486a882087ead436.png" alt="\bra{x} \hat a \ket{0} = 0"/></p>
 </div><blockquote>
 <div><p>Very important:</p>
 <ul class="simple">
-<li>The Hermitian conjugate of <img class="math" src="../_images/math/305d0fbc2fde47a279be2c65ac37b9e591c80f4c.png" alt="\hat a \ket{n}"/> is <img class="math" src="../_images/math/728295593a83bcbee1063df3190d16cc44fcdc29.png" alt="\bra{n} \hat a^\dagger"/>.</li>
-<li>Hermitian conjugate of <img class="math" src="../_images/math/e37ac8b7cf94ee4d2de59d7ba9b8af9588e54eac.png" alt="\hat a \hat a^\dagger"/> is <img class="math" src="../_images/math/0f3a10ef156b2df7e2f8892a11a80e659289acb1.png" alt="\hat a \hat a^dagger"/>. This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!</li>
+<li>The Hermitian conjugate of <img class="math" src="../_images/math/860b1bb83d6d71e3cb7d5f30793541275cc74fbe.png" alt="\hat a \ket{n}"/> is <img class="math" src="../_images/math/1f89d0b518ef8fb3181124e462494d0b0256a12c.png" alt="\bra{n} \hat a^\dagger"/>.</li>
+<li>Hermitian conjugate of <img class="math" src="../_images/math/45901f2ce719f913776dfadcc95e2c5fda93c734.png" alt="\hat a \hat a^\dagger"/> is <img class="math" src="../_images/math/0705d113cd022d23c93886b46be8714236e4bbae.png" alt="\hat a \hat a^dagger"/>. This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!</li>
 </ul>
 </div></blockquote>
 </div>
@@ -1022,13 +1022,13 @@ Hamiltonian always commutes with itself.</p>
 <h3>Semiclassical<a class="headerlink" href="#semiclassical" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="classical">
 <h4>Classical<a class="headerlink" href="#classical" title="Permalink to this headline">¶</a></h4>
-<p>In phase space, the trajectory of phase space points ( {<img class="math" src="../_images/math/870bd6a541237febc72b54fe73a8b247b6b3968c.png" alt="x/\eta"/> and <img class="math" src="../_images/math/db736e33bdb4f89f6548a56953e8dbeb61689782.png" alt="p/(\hbar/\eta)"/>} ) is on a circle of radius <img class="math" src="../_images/math/03f9eb2f9d0edb0356083c00c990fd2382d2ca18.png" alt="x_{max}/\eta"/>.</p>
+<p>In phase space, the trajectory of phase space points ( {<img class="math" src="../_images/math/73c54e03d92df6268faa1041c3d0cc63353243f8.png" alt="x/\eta"/> and <img class="math" src="../_images/math/cb217ec5e00333c5984b83136b6e0a76ab05f72a.png" alt="p/(\hbar/\eta)"/>} ) is on a circle of radius <img class="math" src="../_images/math/719c72d83dc3beb71bbfa77c8956e41e84563b43.png" alt="x_{max}/\eta"/>.</p>
 </div>
 <div class="section" id="quantum-semiclassical">
 <h4>Quantum semiclassical<a class="headerlink" href="#quantum-semiclassical" title="Permalink to this headline">¶</a></h4>
 <p>Key points:</p>
 <ol class="arabic simple">
-<li>What is the trajectory of <img class="math" src="../_images/math/0e9646cf704bedd624f5174b478c3c181cadb64f.png" alt="\left&lt;\hat x/\eta\right&gt;"/> and <img class="math" src="../_images/math/2e6a99fca7cef5e3c442630e922c5805e5c1cb3a.png" alt="\left&lt;\hat p/(\hbar/\eta)\right&gt;"/></li>
+<li>What is the trajectory of <img class="math" src="../_images/math/cd30f1af6c421233677547df464278dabaf942ea.png" alt="\left&lt;\hat x/\eta\right&gt;"/> and <img class="math" src="../_images/math/cfe50f4ba2b0e0cca2d5b35afc0c3fa7c64113db.png" alt="\left&lt;\hat p/(\hbar/\eta)\right&gt;"/></li>
 <li>Can we make the trajectory just like the classical case by choosing some special conditions?</li>
 <li>What do these special cases mean?</li>
 </ol>
@@ -1037,51 +1037,51 @@ Hamiltonian always commutes with itself.</p>
 </ul>
 <p>Apply Ehrenfest theorem to annihilation operator,</p>
 <div class="math">
-<p><img src="../_images/math/9628e587af8b33700b6e5bd2f9ef94101324d1a1.png" alt="i\hbar \frac{\mathrm d}{\mathrm d t} \avg{\hat a(t)} = \bra{\psi} \left[ \hat a(t), \hat H \right] \ket{\psi} = \hbar \omega \avg{\hat a(t)}"/></p>
-</div><p>Excellent. Now we can solve out <img class="math" src="../_images/math/3546667789fc5589c7668d0998fb42545cd6e707.png" alt="\avg{\hat a(t)}"/>, which is</p>
+<p><img src="../_images/math/bec194c0a5fcfe26d0586184d0ca3154a04d8b17.png" alt="i\hbar \frac{\mathrm d}{\mathrm d t} \avg{\hat a(t)} = \bra{\psi} \left[ \hat a(t), \hat H \right] \ket{\psi} = \hbar \omega \avg{\hat a(t)}"/></p>
+</div><p>Excellent. Now we can solve out <img class="math" src="../_images/math/c052e00b61d96d836f0fe3c7f1026449bf9fe517.png" alt="\avg{\hat a(t)}"/>, which is</p>
 <div class="math">
-<p><img src="../_images/math/909f8609dd078fa95e249b8ca6747819dcd6ed3b.png" alt="\avg{\hat a(t)} = \alpha_0 \exp(-i\omega t)"/></p>
+<p><img src="../_images/math/a297fa748b9de16c9b38eaddf76da653692a314e.png" alt="\avg{\hat a(t)} = \alpha_0 \exp(-i\omega t)"/></p>
 </div><p>Take the hermitian conjugate,</p>
 <div class="math">
-<p><img src="../_images/math/dc88e97e48382446f6c710d41fa0251417f3a7b8.png" alt="\avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)"/></p>
+<p><img src="../_images/math/5f2f8f03e11d0ae7cf4cc97a69cfbcdb952a71ff.png" alt="\avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)"/></p>
 </div><ul class="simple">
 <li>Expectation value of position and momentum</li>
 </ul>
-<p>With these two operators, we can find out the average of <img class="math" src="../_images/math/4784f6abd5153d08fc413432e9abfb94376a5c8c.png" alt="\hat x"/> and <img class="math" src="../_images/math/cf88acd1adcb38626b837f5bcf98356642a0565e.png" alt="\hat p"/> because</p>
+<p>With these two operators, we can find out the average of <img class="math" src="../_images/math/51b3b6013f6f67734e112a9d2f7ef7e02d2c3597.png" alt="\hat x"/> and <img class="math" src="../_images/math/84ec2454406f2beeed048cf6ad1806649c62445f.png" alt="\hat p"/> because</p>
 <div class="math">
-<p><img src="../_images/math/333cd32e2262b5a8a6ad4506c92743691afcf6e2.png" alt="\hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\
+<p><img src="../_images/math/e4746494af1902457f610dbeba451e66bf594c19.png" alt="\hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\
 \hat p = \frac{\hbar}{\eta} i \frac{1}{\sqrt 2} \left(\hat a^\dagger - \hat a \right) ,"/></p>
 </div><p>we have</p>
 <div class="math">
-<p><img src="../_images/math/cb96bca012cc86b2178308dba1d59ee2cc96b98b.png" alt="\avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\
+<p><img src="../_images/math/e9e37047fd14dfa2a215c85e59c2c70d59da98ad.png" alt="\avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\
 \avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt {2} } \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)"/></p>
 </div><p>We can have a look at these two averages,</p>
 <div class="math">
-<p><img src="../_images/math/9c75ea446bbd0ab3af8b14b0eeb646254d7f13ae.png" alt="\frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\
+<p><img src="../_images/math/bb736991bb52e9033d584106a9219d12c07c726c.png" alt="\frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\
 \frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]"/></p>
-</div><p>It is obvious that the average reduces to classical case if <img class="math" src="../_images/math/8cea2d5f1a6657867753d3ed0524ad59974c10e6.png" alt="\alpha_0 = \alpha_0^*"/>. <strong>But this is too strong for a semiclassical limit.</strong></p>
+</div><p>It is obvious that the average reduces to classical case if <img class="math" src="../_images/math/6182732cd3fad1f15484b3c00744707c0e64b26b.png" alt="\alpha_0 = \alpha_0^*"/>. <strong>But this is too strong for a semiclassical limit.</strong></p>
 <ul class="simple">
 <li>Coherent state</li>
 </ul>
 <p><strong>Coherent state is the eigenstate of creation operator. Its wave package has the smallest spread allowed by quantum mechanics.</strong></p>
 <p><strong>The most special part about coherent state is that the system stays on coherent state if it start with coherent state.</strong></p>
 <div class="math">
-<p><img src="../_images/math/dd2ae856327df9195748160979f85d51f7268bd9.png" alt="\hat a \ket{\alpha(t)} = \alpha(t) \ket{\alpha(t)}"/></p>
+<p><img src="../_images/math/9b899a60eaa545d638f5bfe35ceea97a77fbabc1.png" alt="\hat a \ket{\alpha(t)} = \alpha(t) \ket{\alpha(t)}"/></p>
 </div><p>Take the hermitian conjugate,</p>
 <div class="math">
-<p><img src="../_images/math/b599bbe3754394f52edfd0b04b1a595864991146.png" alt="\bra{\alpha(t)} \hat a^\dagger  = \bra{\alpha(t)}\alpha(t)^*"/></p>
-</div><p>At <img class="math" src="../_images/math/61ead379a76e2659de321c57dff52e6a51525b65.png" alt="t=0"/>, we have</p>
+<p><img src="../_images/math/336c78c53d14731a8e0d43dfec1bbee83cc638bf.png" alt="\bra{\alpha(t)} \hat a^\dagger  = \bra{\alpha(t)}\alpha(t)^*"/></p>
+</div><p>At <img class="math" src="../_images/math/bacd61ebb89232f66b87f62396883b1fdadd8592.png" alt="t=0"/>, we have</p>
 <div class="math">
-<p><img src="../_images/math/6298e35e3f7f0a9900c3fd552d71427d3fe50c33.png" alt="\bra{\psi(0)} N \ket{\psi(0)} = \vert \alpha_0 \vert ^2"/></p>
+<p><img src="../_images/math/065e0a9406756f40a2c56d18640f4203cb37db3f.png" alt="\bra{\psi(0)} N \ket{\psi(0)} = \vert \alpha_0 \vert ^2"/></p>
 </div><p>That is to say, energy should be</p>
 <div class="math">
-<p><img src="../_images/math/29186999dcb623de22508d07d41c191a535deb34.png" alt="\bra{\psi(0)} \hat H \ket{\psi(0)} = \hbar \omega \left( \vert \alpha_0 \vert^2 + \frac{1}{2} \right)"/></p>
+<p><img src="../_images/math/bdb8be4b106549af24827eb2e755e81531006561.png" alt="\bra{\psi(0)} \hat H \ket{\psi(0)} = \hbar \omega \left( \vert \alpha_0 \vert^2 + \frac{1}{2} \right)"/></p>
 </div><p>Initially, we also have</p>
 <div class="math">
-<p><img src="../_images/math/9a3a9779d2ffe4e39c7fe4c4c783a8f7098a2aef.png" alt="\bra{\psi(0)} (\hat a - \alpha_0)^\dagger (\hat a-\alpha_0) \ket{\psi(0)} = 0"/></p>
+<p><img src="../_images/math/1f200de87ad9d2b5defddf0de59448d81a082134.png" alt="\bra{\psi(0)} (\hat a - \alpha_0)^\dagger (\hat a-\alpha_0) \ket{\psi(0)} = 0"/></p>
 </div><p>This means</p>
 <div class="math">
-<p><img src="../_images/math/c93bfd1114fb6350bc234103b0fb1af9a942851a.png" alt="\hat a \ket{\psi(0)} = \alpha_0 \ket{\psi(0)}"/></p>
+<p><img src="../_images/math/e2a5fc101c71cab29ba92bf7f2966ae36c860e42.png" alt="\hat a \ket{\psi(0)} = \alpha_0 \ket{\psi(0)}"/></p>
 </div><ul class="simple">
 <li>Coherent state expanded using energy eigenstates</li>
 </ul>

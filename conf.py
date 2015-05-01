@@ -35,6 +35,7 @@ latex_preamble = r"""
 \usepackage{slashed}
 \usepackage{yfonts}
 \usepackage{mathrsfs}
+\usepackage{amsmath}
 \usepackage{latexsym}
 \usepackage{graphicx}
 \def\degrees{^\circ}

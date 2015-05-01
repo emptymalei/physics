@@ -214,32 +214,32 @@
 <p class="first admonition-title">Hint</p>
 <p>Starting from Schrödinger equation,</p>
 <div class="math">
-<p><img src="../_images/math/a2ca0ebcb6654af223e1b0e1393c02f161592dc3.png" alt="i\hbar \frac{\ket{\psi(t+\Delta t)} - \ket{\psi(t)}}{\Delta t} = H(t)\psi(t)"/></p>
-</div><p>Then we get the state after a evolution of time <img class="math" src="../_images/math/11ff7c859722745c4347604a6d68d8e37a42121a.png" alt="\Delta t"/>,</p>
+<p><img src="../_images/math/b041fc93a7422eeed0ccb8a0202b3c85627acc05.png" alt="i\hbar \frac{\ket{\psi(t+\Delta t)} - \ket{\psi(t)}}{\Delta t} = H(t)\psi(t)"/></p>
+</div><p>Then we get the state after a evolution of time <img class="math" src="../_images/math/de81a4184cc4862c1760dd7aa933e85fdba2a837.png" alt="\Delta t"/>,</p>
 <div class="math">
-<p><img src="../_images/math/249f5cde9e21ea3e95fbdbbd384907a58e4c1c2c.png" alt="\ket{\psi(t+\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t)}{\hbar} \right) \ket{\psi(t)}"/></p>
-</div><p>Time translation symmetry means the state evolution in the same time interval <img class="math" src="../_images/math/11ff7c859722745c4347604a6d68d8e37a42121a.png" alt="\Delta t"/> no matter when to start the evolution. Mathematically,</p>
+<p><img src="../_images/math/c6378b7239d42640a4a7d8f4af146b2810007907.png" alt="\ket{\psi(t+\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t)}{\hbar} \right) \ket{\psi(t)}"/></p>
+</div><p>Time translation symmetry means the state evolution in the same time interval <img class="math" src="../_images/math/de81a4184cc4862c1760dd7aa933e85fdba2a837.png" alt="\Delta t"/> no matter when to start the evolution. Mathematically,</p>
 <div class="math">
-<p><img src="../_images/math/13866566bd568d7c641e45e72d0293dc4c76848b.png" alt="\ket{\psi(t_1 +\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t_1)}{\hbar} \right) \ket{\psi(t_1)}"/></p>
-</div><p>should get the same final state if we start from some other time <img class="math" src="../_images/math/f51dcbf029e214a0ec28861f29f24ea6c5f952f6.png" alt="t_2"/>,</p>
+<p><img src="../_images/math/f692cd75f15c340dfaa9d91466d5cf6f5c0e5d09.png" alt="\ket{\psi(t_1 +\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t_1)}{\hbar} \right) \ket{\psi(t_1)}"/></p>
+</div><p>should get the same final state if we start from some other time <img class="math" src="../_images/math/e90eed2a9fe92e9c70eab2dec96b3dd0f4d6ca5d.png" alt="t_2"/>,</p>
 <div class="math">
-<p><img src="../_images/math/87b2cadfdf102f51d7d9b61d5866a6bfbcedf1a3.png" alt="\ket{\psi(t_2 +\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t_2)}{\hbar} \right) \ket{\psi(t_2)}"/></p>
+<p><img src="../_images/math/b3ba1e689816ede1d27659bc3ff1a1b9629867e9.png" alt="\ket{\psi(t_2 +\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t_2)}{\hbar} \right) \ket{\psi(t_2)}"/></p>
 </div><p class="last">That means the two Hamiltonian should be the same. Now we reach the conclusion that Hamiltonian is time independent.</p>
 </div>
 <p>The logic is to prove that Hamiltonian is time independent by using infinitesimal time translation approach. Given that Hamiltonian is time independent, we imediately know that time translation operator is just the propagator with the form</p>
 <div class="math">
-<p><img src="../_images/math/cc94d3cfd262de999128faa8bf6871a9bc315932.png" alt="\hat T_{\Delta t} \equiv \hat U(\Delta t) = e^{-i \hat H \Delta t /\hbar}"/></p>
+<p><img src="../_images/math/6d53f7316299f32254377d9304687e0874196a51.png" alt="\hat T_{\Delta t} \equiv \hat U(\Delta t) = e^{-i \hat H \Delta t /\hbar}"/></p>
 </div><p>All other conclusions come from the fact that Hamiltonian is a constant of motion.</p>
 <div class="admonition hint">
 <p class="first admonition-title">Hint</p>
 <p>Ehrenfest theorem tells us that time independent Hamiltonian is a constant of motion.</p>
 <div class="last math">
-<p><img src="../_images/math/ec0045f859f3a5599470197e0755d6a3ca28781b.png" alt="\frac{d}{dt}\avg{H} = \frac{1}{i\hbar}\avg{[\hat H, \hat H]} + \avg{\frac{\partial}{\partial t} H } = 0"/></p>
+<p><img src="../_images/math/32c82d6f103f6fb67ea535054d7561c5055b762a.png" alt="\frac{d}{dt}\avg{H} = \frac{1}{i\hbar}\avg{[\hat H, \hat H]} + \avg{\frac{\partial}{\partial t} H } = 0"/></p>
 </div></div>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p>For an isolated system, T.T.I. should always be satisfied because there is nothing more else to change the system but to leave the system with energy conserved.</p>
-<p class="last">My concern is if we don&#8217;t have an Hamiltonian for <img class="math" src="../_images/math/c8d8ddf8ecabdc6ea5f5a5fd4343176f930c0d9d.png" alt="T\mathrm d S"/>, we can&#8217;t actually says this because of what the second law of thermodynamics tells us.</p>
+<p class="last">My concern is if we don&#8217;t have an Hamiltonian for <img class="math" src="../_images/math/31d9614b3cc7f302848f9c19c893e5dada5cdcd4.png" alt="T\mathrm d S"/>, we can&#8217;t actually says this because of what the second law of thermodynamics tells us.</p>
 </div>
 </div>
 <div class="section" id="space-translation-symmetry">
@@ -248,30 +248,30 @@
 <p><a class="reference external" href="assets/images/SpaceTranslation.gliffy">Space Translation Gliffy Source</a></p>
 <p>S.T.I. is generated by canonical momentum. This is not so obvious as time translation. To prove this we need to understand what space translation really means.</p>
 <p><strong>Definition of Space Translation</strong></p>
-<p>Space translation means we change the position of the system by some spatial distance <img class="math" src="../_images/math/2fe2cee41c684539cd8186c3809055554f0f6ff3.png" alt="a"/>. In math this means a transformation from <img class="math" src="../_images/math/baa198b2da11a0659f09805c1ae8815df3248383.png" alt="\ket{x}"/> to <img class="math" src="../_images/math/a49f407f2eef707c3ec832afa0eed64f05b893b3.png" alt="\ket{x+a}"/> where the plus sign is by definition. We invent this space translation operator,</p>
+<p>Space translation means we change the position of the system by some spatial distance <img class="math" src="../_images/math/7523bd3127076fe6021f2984f1a8aaf465d53f47.png" alt="a"/>. In math this means a transformation from <img class="math" src="../_images/math/3254ab63be04110a499c912a7ba995d9d8bd438b.png" alt="\ket{x}"/> to <img class="math" src="../_images/math/902ae23d4d6ba4aff379c9cf3be571fd9528d0c3.png" alt="\ket{x+a}"/> where the plus sign is by definition. We invent this space translation operator,</p>
 <div class="math">
-<p><img src="../_images/math/107314d02c826556757ef89fba891013b2d31ea5.png" alt="\hat T_a  \ket{x} = \ket{x + a} ."/></p>
+<p><img src="../_images/math/f356d1b58144f2ad38b3b8e37b82ff423438b86f.png" alt="\hat T_a  \ket{x} = \ket{x + a} ."/></p>
 </div><p><strong>Space Translation Applied to States</strong></p>
 <p>Next we can obtain the result of space translation operator applied to state in position basis</p>
 <div class="math">
-<p><img src="../_images/math/59f8df3e576cf967580a0a00a70d5028a4392e35.png" alt="\bra{x}\hat T_a \ket{\psi} = (\bra{x}\hat T_a^\dagger) \ket{\psi} = \braket{x-a}{\psi} = \psi(x-a)"/></p>
+<p><img src="../_images/math/db673db24c6280c9e1e4c594d7bae865fac1655e.png" alt="\bra{x}\hat T_a \ket{\psi} = (\bra{x}\hat T_a^\dagger) \ket{\psi} = \braket{x-a}{\psi} = \psi(x-a)"/></p>
 </div><p>where we used the relation</p>
 <div class="math">
-<p><img src="../_images/math/4b006e88ec552410cb056f9e7b6b47d0d58b01a7.png" alt="(\bra{x} \hat T_a) =  (\hat T_a^\dagger \ket{x} )^\dagger = (\hat T _ {-a} \ket{x}  )^\dagger = (\ket{x-a})^\dagger = \bra{x-a}"/></p>
+<p><img src="../_images/math/e90633885dbd40ccbf81615be790cf65fa81ce42.png" alt="(\bra{x} \hat T_a) =  (\hat T_a^\dagger \ket{x} )^\dagger = (\hat T _ {-a} \ket{x}  )^\dagger = (\ket{x-a})^\dagger = \bra{x-a}"/></p>
 </div><p>which of course is because the normalization of coordinate basis tells us that space translation operator is unitary,</p>
 <div class="math">
-<p><img src="../_images/math/e45d3d6b5559922b435702edc7bb6bb2c5efd0b8.png" alt="\braket{x+a}{x+a} = \bra{x}\hat T_a^\dagger \hat T_a \ket{x}"/></p>
+<p><img src="../_images/math/2cc3fc2fba9127224bf1a5c3eed66ac85a72dec5.png" alt="\braket{x+a}{x+a} = \bra{x}\hat T_a^\dagger \hat T_a \ket{x}"/></p>
 </div><p><strong>Generator of Space Translation</strong></p>
 <p>Similarly to time translation, we can find out the generator out of this definition. For infinitesimal translation,</p>
 <div class="math">
-<p><img src="../_images/math/e97c359bff6ea8abee5b6d70187d2174bb3fcd2b.png" alt="-i\hbar \frac{\ket{\psi(x)} - \ket{\psi(x - \Delta)}}{\Delta} = \hat p \ket{\psi(x)}"/></p>
+<p><img src="../_images/math/65e87a9e429abfc74a6a508f556de938f9a47fc5.png" alt="-i\hbar \frac{\ket{\psi(x)} - \ket{\psi(x - \Delta)}}{\Delta} = \hat p \ket{\psi(x)}"/></p>
 </div><p>i.e.,</p>
 <div class="math">
-<p><img src="../_images/math/510e8d2dc545711cec7300f71431c72bd2888dc6.png" alt="\ket{\psi(x-\Delta)} = \ket{\psi(x)} - \frac{i\Delta}{\hbar} \ket{\psi(x)}"/></p>
+<p><img src="../_images/math/3d86ffc7690bcb3761796cf918a4b309290cefa0.png" alt="\ket{\psi(x-\Delta)} = \ket{\psi(x)} - \frac{i\Delta}{\hbar} \ket{\psi(x)}"/></p>
 </div><p>which shows that the generator of space translation is momentum operator.</p>
 <p><strong>From Infinitesimal to Finite Space Translation</strong></p>
 <div class="math">
-<p><img src="../_images/math/66d4897b3f3b3d4356c990423dba56a3afb1df47.png" alt="\hat T_a = \lim _ {N\rightarrow \infty} \hat T _ {a/N} ^ N = \lim _{N\rightarrow\infty} \left( 1 - \frac{i\hat p}{\hbar} \frac{a}{N} \right)^N = exp\left( -\frac{i \hat p a}{\hbar} \right)"/></p>
+<p><img src="../_images/math/99696542b637e60c6d9bd3637e47a88d96f47dfe.png" alt="\hat T_a = \lim _ {N\rightarrow \infty} \hat T _ {a/N} ^ N = \lim _{N\rightarrow\infty} \left( 1 - \frac{i\hat p}{\hbar} \frac{a}{N} \right)^N = exp\left( -\frac{i \hat p a}{\hbar} \right)"/></p>
 </div><p>Now we have the explicity expression for space translation operators.</p>
 <p><strong>Space Translation on Operators</strong></p>
 <ol class="arabic simple">
@@ -281,13 +281,13 @@
 <p><strong>Space Translational Invariance</strong></p>
 <p>Space translational invariance of arbitary operator is</p>
 <div class="math">
-<p><img src="../_images/math/b150baf59fb4da1ddf652282399684c7b138786c.png" alt="\hat \Omega = \hat T_a^\dagger \hat \Omega \hat T_a"/></p>
+<p><img src="../_images/math/543927ae32a71c8c88c71155f0777f5363929aec.png" alt="\hat \Omega = \hat T_a^\dagger \hat \Omega \hat T_a"/></p>
 </div><p>is equivalent to</p>
 <div class="math">
-<p><img src="../_images/math/6b4e1fb7abf77e14333e3ddbe55e58e76f201eef.png" alt="\hat T_a \hat \Omega = \hat \Omega \hat T_a \Rightarrow [\hat T_a, \hat Omega] = 0"/></p>
+<p><img src="../_images/math/2a8cf04b8eeea3ebe244319604199711508d8bbd.png" alt="\hat T_a \hat \Omega = \hat \Omega \hat T_a \Rightarrow [\hat T_a, \hat Omega] = 0"/></p>
 </div><p>We say some system has space translational invariance we mean the Hamiltonian is space translational invariant,</p>
 <div class="math">
-<p><img src="../_images/math/b1c89bc407fd3cb24b7b5efa5c8dd0ba00eff761.png" alt="[\hat H , \hat T_a ] = 0 ."/></p>
+<p><img src="../_images/math/e8fa0df43ac4f57f3f998af78242dbde438f8008.png" alt="[\hat H , \hat T_a ] = 0 ."/></p>
 </div><p>Such a system has space translational invariance.</p>
 <div class="admonition hint">
 <p class="first admonition-title">Hint</p>
@@ -300,7 +300,7 @@
 <div class="section" id="global-gauge-transformation">
 <h3>Global Gauge Transformation<a class="headerlink" href="#global-gauge-transformation" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/00ca438587ce0596d6ed5c22c0608a708d213370.png" alt="\ket{\psi} \rightarrow e^{i g \hat I} \ket{\psi}"/></p>
+<p><img src="../_images/math/3e45263bc3241a61c8f0f320b7e4b5fef553f562.png" alt="\ket{\psi} \rightarrow e^{i g \hat I} \ket{\psi}"/></p>
 </div><p>All quantum states are invariant under such transformation. This is not a nonsene transformation because the two states are different in some sense if we put them in a phase space where the phase factor assigns a position for the state vector in the phase space and we can see the difference directly in this image.</p>
 <p>The invariant thing is the probability density which is obvious.</p>
 <div class="admonition hint">
@@ -312,18 +312,18 @@
 <h3>Local Gauge Transformation<a class="headerlink" href="#local-gauge-transformation" title="Permalink to this headline">¶</a></h3>
 <img alt="Local Gauge Transformation" src="../_images/LocalGaugeTransformation.png" />
 <p><a class="reference external" href="assets/images/LocalGaugeTransformation.gliffy">Local Gauge Transformation Gliffy Source</a></p>
-<p>What if we have a local phase factor: <img class="math" src="../_images/math/8779b7f29c5609629062308117a274f4749cf67a.png" alt="g(x,t)"/>?</p>
+<p>What if we have a local phase factor: <img class="math" src="../_images/math/b690228f54f4071a15c44ebd9a95342149e22c5b.png" alt="g(x,t)"/>?</p>
 <p>One way of implenment this phase factor is to transform the basis, for example:</p>
 <div class="math">
-<p><img src="../_images/math/f759aea1dc5ce7d487a898af385cae910205f988.png" alt="\ket{x} \rightarrow e^{i g(x,t)/\hbar} \ket{x}"/></p>
+<p><img src="../_images/math/6ecf2b2e69615f704f0d2a2352d3872854090121.png" alt="\ket{x} \rightarrow e^{i g(x,t)/\hbar} \ket{x}"/></p>
 </div><p>By changing the basis, we can transform anything on position basis. Since the first principle of QM is Schrödinger equation, we would like to check what happens to that.</p>
 <p>It turns out that both space derivative and time derivative of the wave function changed. For both of them,</p>
 <div class="math">
-<p><img src="../_images/math/8452861ab3c646a1d8362a1536b68c1c240e4532.png" alt="\frac{d}{dw} (\exp(-ig/\hbar)\phi ) = \exp(-ig/\hbar)\frac{d}{dw} \phi - i/\hbar \left(\frac{d}{dw} g\right) \phi"/></p>
+<p><img src="../_images/math/5b6cfdcb1894026112e509a45c411af154f95e7f.png" alt="\frac{d}{dw} (\exp(-ig/\hbar)\phi ) = \exp(-ig/\hbar)\frac{d}{dw} \phi - i/\hbar \left(\frac{d}{dw} g\right) \phi"/></p>
 </div><p>equivalently, we can just change all the derivatives to</p>
 <div class="math">
-<p><img src="../_images/math/241c86c6a9cdcb96af7ddd4b4ad238922e521a0c.png" alt="\frac{d}{dw} \rightarrow  \exp(-ig/\hbar)\frac{d}{dw} - i/\hbar \frac{d}{dw} g"/></p>
-</div><p>where <img class="math" src="../_images/math/b8c88073b246f6d10dc0d737e37f2c817c897d89.png" alt="w"/> can be <img class="math" src="../_images/math/a22a59134eccbd522b7ee376280e1556c19999c3.png" alt="x"/> or <img class="math" src="../_images/math/08d2361c9f14e2e187d266de24a6087b6f4d1ae4.png" alt="t"/>.</p>
+<p><img src="../_images/math/7147a873e5d5a82aa59654ddbcbfca9a07cd3561.png" alt="\frac{d}{dw} \rightarrow  \exp(-ig/\hbar)\frac{d}{dw} - i/\hbar \frac{d}{dw} g"/></p>
+</div><p>where <img class="math" src="../_images/math/a0272f7f1793b17e2345f8afe598f91d168ff0e8.png" alt="w"/> can be <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> or <img class="math" src="../_images/math/89e28189c72069d5f8ec4e0ab4901f3c88cb1f9b.png" alt="t"/>.</p>
 </div>
 </div>
 <div class="section" id="parity">
@@ -332,63 +332,63 @@
 <h3>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h3>
 <p>The only thing we need is the definition:</p>
 <div class="math">
-<p><img src="../_images/math/c008c861afc470ac00b8fc0d24e5a762a995e6d2.png" alt="\hat \Pi \ket{\vec x} = \ket{-\vec x}"/></p>
+<p><img src="../_images/math/73e4292f66e56a6778f8cbb94b03e7964fcbdee9.png" alt="\hat \Pi \ket{\vec x} = \ket{-\vec x}"/></p>
 </div><p>Starting from that, we can derive properties.</p>
 <ol class="arabic">
 <li><p class="first">Hermition? <strong>The way to find out something is Hermition or not is to take the Hermitian conjugate of the inner product sandwiched by the operator.</strong></p>
 <p>We know</p>
 <div class="math">
-<p><img src="../_images/math/b8fc9649618b4ebe25285e14d47d2c8ba7687be8.png" alt="\bra{x}\hat \Pi \ket{x} = \delta(x+x')"/></p>
+<p><img src="../_images/math/5aa35b49bf7c0fd0598ac4aacb63ee22fb05e183.png" alt="\bra{x}\hat \Pi \ket{x} = \delta(x+x')"/></p>
 </div><p>Take the Hermitian conjugate of the whole expression,</p>
 <div class="math">
-<p><img src="../_images/math/dd9bc166a58bf7b9379e4c539f4a943a6c634d28.png" alt="(\bra{x'}\hat \Pi \ket{x} )^\dagger = \delta(x+x')"/></p>
-</div><p>We know the LHS is <img class="math" src="../_images/math/d1c3111ccd88051f36e5182a2f6c13ae96d4c773.png" alt="\bra{x}\hat \Pi^\dagger \ket{x'}"/>. So we have</p>
+<p><img src="../_images/math/77160fcccb0d5adea2e9aedc4d931a4b57a1e251.png" alt="(\bra{x'}\hat \Pi \ket{x} )^\dagger = \delta(x+x')"/></p>
+</div><p>We know the LHS is <img class="math" src="../_images/math/13c499720332c710c3eb0742213e1321eff7c84e.png" alt="\bra{x}\hat \Pi^\dagger \ket{x'}"/>. So we have</p>
 <div class="math">
-<p><img src="../_images/math/9a8887fa47861d6d176c1d23b059b0fc79b57b1f.png" alt="\bra{x}\hat \Pi^\dagger \ket{x'}  =  \bra{x}\hat \Pi \ket{x'}"/></p>
+<p><img src="../_images/math/66f04e27fe1cb95599774bd21e2b66e1a9fd69fb.png" alt="\bra{x}\hat \Pi^\dagger \ket{x'}  =  \bra{x}\hat \Pi \ket{x'}"/></p>
 </div><p>Then we get that parity operator is Hermitian.</p>
 </li>
 <li><p class="first">Inversion? Parity operator is Unitary.</p>
 <div class="math">
-<p><img src="../_images/math/407dc93f602b4c5a2fd681480d373311e1152c08.png" alt="\hat \Pi \hat \Pi \ket{\pi} = \hat \Pi \pi \ket{\pi} = \pi^2\ket{\pi}"/></p>
-</div><p>By physics we know that parity twice gets back to the original state. So <img class="math" src="../_images/math/c5f7fd89cc79cc992fd053f7d1526cc72871a3b8.png" alt="\pi^2=1"/> . Then we can find inverse parity operator. What&#8217;s important is that it&#8217;s unitary.</p>
+<p><img src="../_images/math/10f50ea390b62e5379b423f4087381f84ffd8093.png" alt="\hat \Pi \hat \Pi \ket{\pi} = \hat \Pi \pi \ket{\pi} = \pi^2\ket{\pi}"/></p>
+</div><p>By physics we know that parity twice gets back to the original state. So <img class="math" src="../_images/math/da005d3d33bff8a0d8f4ef2af52c7b5dbf17f6dd.png" alt="\pi^2=1"/> . Then we can find inverse parity operator. What&#8217;s important is that it&#8217;s unitary.</p>
 </li>
 <li><p class="first">Acts on states? From definition, we need to go to position basis.</p>
 <div class="math">
-<p><img src="../_images/math/12bd224299c97dbf4015738f32b495b2b6345cfd.png" alt="\bra{x}\hat \Pi\ket{\psi}  = \braket{-x}{\psi} ."/></p>
+<p><img src="../_images/math/d2b0e0ae4f02112ceff8871c7240a044b4fc8108.png" alt="\bra{x}\hat \Pi\ket{\psi}  = \braket{-x}{\psi} ."/></p>
 </div><p>We can also find the results on momentum eigenbasis, which is</p>
 <div class="math">
-<p><img src="../_images/math/65d7273a519ccd2e544b916d8f1017e003f5657b.png" alt="\bra{x}\hat \Pi \ket{p} = \braket{-x}{p}   ."/></p>
-</div><p>We already know mometum eigen state in postion is some kind of plane wave and it&#8217;s easily proved that <img class="math" src="../_images/math/3db860634739d1c3500d557a3db26a883fe9e92e.png" alt="\braket{-x}{p} = \braket{x}{-p}"/> .</p>
+<p><img src="../_images/math/643d3f64ce9ddf4d99dadae66765aa861c4ede49.png" alt="\bra{x}\hat \Pi \ket{p} = \braket{-x}{p}   ."/></p>
+</div><p>We already know mometum eigen state in postion is some kind of plane wave and it&#8217;s easily proved that <img class="math" src="../_images/math/a531c4293a0e16930cc166b8d53a51dbc4ee2329.png" alt="\braket{-x}{p} = \braket{x}{-p}"/> .</p>
 </li>
-<li><p class="first">Commutators with any observables? Just sandwich <img class="math" src="../_images/math/1ce85f6f67fd56db2e28a102bb090e1e77b6e627.png" alt="\hat \Pi^ \dagger \hat \Omega \hat \Pi"/> then act on arbitary state and put it into position basis.</p>
+<li><p class="first">Commutators with any observables? Just sandwich <img class="math" src="../_images/math/bfb8a556e2d38f08adf77f0c6150701eba291fc0.png" alt="\hat \Pi^ \dagger \hat \Omega \hat \Pi"/> then act on arbitary state and put it into position basis.</p>
 <p>As an example, find commutation relation with position operator.</p>
 <div class="math">
-<p><img src="../_images/math/df901fdcf735ed913e1470105603f096979cde1e.png" alt="\bra{x}\hat \Pi^\dagger \hat X \hat \Pi \ket{\psi} = \bra{ - x}\hat X \hat \Pi\ket{x} = -x \bra{-x}\hat \Pi \ket{\psi} = -x \braket{x}{\psi}"/></p>
-</div><p>which is <img class="math" src="../_images/math/a86245010821c8587a4d9331fbeea3e4f7c518f0.png" alt="\bra{x}(-\hat X)\ket{\psi}"/>. This proves the following equation.</p>
+<p><img src="../_images/math/b065e77070dd5766fe524ac04aa8d2ff5605ba42.png" alt="\bra{x}\hat \Pi^\dagger \hat X \hat \Pi \ket{\psi} = \bra{ - x}\hat X \hat \Pi\ket{x} = -x \bra{-x}\hat \Pi \ket{\psi} = -x \braket{x}{\psi}"/></p>
+</div><p>which is <img class="math" src="../_images/math/ad12e6756bdfaa5f2874ec018615219c0891f64b.png" alt="\bra{x}(-\hat X)\ket{\psi}"/>. This proves the following equation.</p>
 <div class="math">
-<p><img src="../_images/math/0d65af6258a3e77d918e48e5f5767daa84d072ca.png" alt="\hat \Pi^\dagger \hat X \hat \Pi = -\hat X"/></p>
+<p><img src="../_images/math/69cfbf6bdae916f584f12845ceffc84631621e02.png" alt="\hat \Pi^\dagger \hat X \hat \Pi = -\hat X"/></p>
 </div><p>which can also be interpreted as passive transformation.</p>
 <p>Another example is the commutation relation with (canonical) momentum.</p>
 <div class="math">
-<p><img src="../_images/math/67931af7a61cb3c69dd71d42ac62e8965ccda5bd.png" alt="\bra{x}\hat \Pi^\dagger \hat P \hat \Pi \ket{\psi} = \bra{-x} \hat P \hat \Pi\ket{\psi} = \int \bra{-x}\hat P \ket{x'}\bra{x'}\hat \Pi\ket{\psi} dx'  ."/></p>
+<p><img src="../_images/math/1fed7576c3c7367c5e161f17d36a04a50a61ff2d.png" alt="\bra{x}\hat \Pi^\dagger \hat P \hat \Pi \ket{\psi} = \bra{-x} \hat P \hat \Pi\ket{\psi} = \int \bra{-x}\hat P \ket{x'}\bra{x'}\hat \Pi\ket{\psi} dx'  ."/></p>
 </div><p>By carefully applying parity on position basis, we have</p>
 <div class="math">
-<p><img src="../_images/math/eadc0ffb6f73c92fefaaaf765557715397a213fc.png" alt="\int \bra{-x}\hat P \ket{x'}\braket{-x'}{\psi} d x' = \int \bra{-x}\hat P \ket{-x'}\braket{x'}{\psi} d x'"/></p>
+<p><img src="../_images/math/1b53ca20f6df835cdf4d68f00714b0647e7178e1.png" alt="\int \bra{-x}\hat P \ket{x'}\braket{-x'}{\psi} d x' = \int \bra{-x}\hat P \ket{-x'}\braket{x'}{\psi} d x'"/></p>
 </div><p>Because commutation relation tells us</p>
 <div class="math">
-<p><img src="../_images/math/a9a4595980e26cae7a43f2ad776be9feabfeac96.png" alt="\bra{x'}[\hat X,\hat P]\ket{x} = \bra{x'}\hat X \hat P\ket{x} - \bra{x'}\hat P \hat X\ket{x} = (x' - x)\bra{x'}\hat P\ket{x} = i\hbar \delta(x'-x)"/></p>
+<p><img src="../_images/math/246c12f37e20d86883b3f8b2bc6ed5ff15841c47.png" alt="\bra{x'}[\hat X,\hat P]\ket{x} = \bra{x'}\hat X \hat P\ket{x} - \bra{x'}\hat P \hat X\ket{x} = (x' - x)\bra{x'}\hat P\ket{x} = i\hbar \delta(x'-x)"/></p>
 </div><p>Here comes the keypoint. Recall that</p>
 <div class="math">
-<p><img src="../_images/math/0acf7c31bfd120c5f824824e96e7194ded405a9b.png" alt="x\delta'(x) = -\delta"/></p>
+<p><img src="../_images/math/844da49d61ef1807c492cf181bd67bf94a9df4a8.png" alt="x\delta'(x) = -\delta"/></p>
 </div><p>we know that</p>
 <div class="math">
-<p><img src="../_images/math/eea78d722a3a663af5f35e5c8da2704843084714.png" alt="(x - x')\bra{x}\hat P\ket{x'} = i\hbar \delta(x'-x)"/></p>
+<p><img src="../_images/math/c25ed9fbfb5addffeb07903100370616b5e3b06f.png" alt="(x - x')\bra{x}\hat P\ket{x'} = i\hbar \delta(x'-x)"/></p>
 </div><p>gives us the expression of momentum in position basis,</p>
 <div class="math">
-<p><img src="../_images/math/3dd961c25b9e997a6af31e3d042c973fb566b3c5.png" alt="\bra{x'}\hat P \ket{x} = -i\hbar \partial_x \delta(x'-x)"/></p>
+<p><img src="../_images/math/abfcd6800510778f73eb262864c78b362a83f9f6.png" alt="\bra{x'}\hat P \ket{x} = -i\hbar \partial_x \delta(x'-x)"/></p>
 </div><p>So to continue our calculation of parity applied to momentum,</p>
 <div class="math">
-<p><img src="../_images/math/79b1d5fda9042cf98a3ea10a5effac04d713f2a2.png" alt="\int \bra{-x}\hat P \ket{-x'}\braket{x'}{\psi} d x' = \int \bra{x}(-\hat P)\ket{x'}\braket{x'}{\psi}dx'"/></p>
+<p><img src="../_images/math/e5cc451bb7f46d3b80711d17eaeacdf557770a9c.png" alt="\int \bra{-x}\hat P \ket{-x'}\braket{x'}{\psi} d x' = \int \bra{x}(-\hat P)\ket{x'}\braket{x'}{\psi}dx'"/></p>
 </div><p>So we can prove that mometum actually invserses when parity is applied to it.</p>
 </li>
 </ol>
