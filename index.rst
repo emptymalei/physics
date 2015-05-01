@@ -102,6 +102,7 @@ Cutting Edge Physics
     relativity/GeneralRelativityAdv.rst
     Cosmology/cosmoIndex.rst
     Quantum/QuantumOptics.rst
+    Quantum/susyQuantum.rst
 
 
 

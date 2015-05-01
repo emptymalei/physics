@@ -12,11 +12,23 @@
 \usepackage{sphinx}
 \usepackage{multirow}
 
+\addto\captionsenglish{\renewcommand{\figurename}{Fig. }}
+\addto\captionsenglish{\renewcommand{\tablename}{Table }}
+\floatname{literal-block}{Listing }
+
+
 \usepackage{dsfont}
 \usepackage{slashed}
 \usepackage{yfonts}
 \usepackage{mathrsfs}
 \usepackage{latexsym}
+\usepackage{graphicx}
+# This is for a image type rule
+\usepackage{epstopdf}
+\epstopdfDeclareGraphicsRule
+  {.gif}{png}{.png}{convert gif:\SourceFile.\SourceExt png:\OutputFile}
+\AppendGraphicsExtensions{.gif}
+# Code up there converts images
 \def\degrees{^\circ}
 \def\d{{\rm d}}
 
@@ -147,9 +159,12 @@
 \def\Arg{\hbox{Arg}}
 \def\atan{\hbox{atan}}
 
+%For augmented matrix
+\newenvironment{amatrix}[1]{\left(\begin{array}{@{}*{#1}{c}|c@{}}}{\end{array}\right)}
+
 
 \title{Physics Research Survival Manual}
-\date{March 03, 2014}
+\date{April 30, 2015}
 \release{1.38}
 \author{Cosmology TF}
 \newcommand{\sphinxlogo}{}
@@ -210,10 +225,11 @@
 \expandafter\def\csname PYG@tok@c\endcsname{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.25,0.50,0.56}{##1}}}
 \expandafter\def\csname PYG@tok@mf\endcsname{\def\PYG@tc##1{\textcolor[rgb]{0.13,0.50,0.31}{##1}}}
 \expandafter\def\csname PYG@tok@err\endcsname{\def\PYG@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
-\expandafter\def\csname PYG@tok@kd\endcsname{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.44,0.13}{##1}}}
+\expandafter\def\csname PYG@tok@mb\endcsname{\def\PYG@tc##1{\textcolor[rgb]{0.13,0.50,0.31}{##1}}}
 \expandafter\def\csname PYG@tok@ss\endcsname{\def\PYG@tc##1{\textcolor[rgb]{0.32,0.47,0.09}{##1}}}
 \expandafter\def\csname PYG@tok@sr\endcsname{\def\PYG@tc##1{\textcolor[rgb]{0.14,0.33,0.53}{##1}}}
 \expandafter\def\csname PYG@tok@mo\endcsname{\def\PYG@tc##1{\textcolor[rgb]{0.13,0.50,0.31}{##1}}}
+\expandafter\def\csname PYG@tok@kd\endcsname{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.44,0.13}{##1}}}
 \expandafter\def\csname PYG@tok@mi\endcsname{\def\PYG@tc##1{\textcolor[rgb]{0.13,0.50,0.31}{##1}}}
 \expandafter\def\csname PYG@tok@kn\endcsname{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.44,0.13}{##1}}}
 \expandafter\def\csname PYG@tok@o\endcsname{\def\PYG@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
@@ -249,6 +265,8 @@
 \def\PYGZrb{]}
 \makeatother
 
+\renewcommand\PYGZsq{\textquotesingle}
+
 \begin{document}
 
 \maketitle
@@ -263,7 +281,7 @@ Use the source. Keep the source open.
 
 \chapter{At The Begining of The Universe}
 \label{index:at-the-begining-of-the-universe}\label{index:welcome-to-physics-research-survival-manual}
-Some notes continued from the full theoretical physics notes are \href{http://cosmologytaskforce.github.io/PhysicsResearchSurvivalManual/}{here}.
+I am not a good physicist so don't trust the notes written here.
 
 
 \chapter{Preface}
@@ -273,19 +291,286 @@ Some notes continued from the full theoretical physics notes are \href{http://co
 \label{preface::doc}\label{preface:whatever}
 I alway believe that making things open to everyone is one of the most powerful things that drive the world forward. So I DO think open source and open data, even open education are reforming the world.
 
-This was a draft handbook for myself when I was studying in Fudan University. At that time, I learned how to use LaTeX and I was so exciting. So I thought I should start writing something using LaTeX since it's so beautiful. Well, the bad thing is, I just randomly wrote down my notes on some specific topics.
+This was a notebook for myself when I was studying at Fudan University. At that time, I learned how to use LaTeX and I was so excited. So I thought I should start writing something using LaTeX since it's so beautiful. Well, the bad thing is, I just randomly wrote down my notes on some specific topics.
 
-I was so greedy back then. I was trying to build up my own framework of physics by writing notes here. It never did the work by the way. Then I realized a framework should be somethng organized much better than this one. (I should draw a map of physics.)
+I was so greedy back then. Then I tried to build up my own framework of physics by writing notes here. It never did the work by the way. Then I realized a framework should be somethng organized much better than this one. (I should draw a map of physics.)
 
-Though these notes didn't help me building up my framework of phyiscs, I learn an important lesson. A physicist should build up his/her own style: the way to think, the way to solve problems, the way to check answers, the way to write, etc.  (I just want to create a new word for his/her, hir or hes.)
+Though these notes didn't help me building up my framework of phyiscs, I learned an important lesson. A physicist should build up his/her own style: the way to think, the way to solve problems, the way to check answers, the way to write, etc.
 
 Anyway, I got frastrated and gave up the effort to utilize it as a framework-building thing. However I won't just dump these notes. As I have more and more to add, I think I'll just let it be my notebook, which, of course, is open source and accessible to everyone.
 
 Yes. Use the source. Keep the source open.
 
 
+\chapter{Fun}
+\label{index:fun}
+
+\section{Fun}
+\label{fun:fun}\label{fun::doc}
+Here are some interesting physics related problems.
+
+
+\subsection{Quantum}
+\label{fun:quantum}
+\begin{notice}{note}{Why Rutherford was wrong about the atom model?}
+
+Link to this: {\hyperref[fun:rutherford-atom]{\emph{rutherford-atom}}}
+
+A Rutherford atom model is the combination of protons and electrons to give us a neutral nucleus.
+
+Question 1: What is the energy of the electron if we confine it inside the nucleus? Consider only the kinetic energy due to uncertainty principle is enough to construct a contradiction.
+
+Question 2: From the point of view of nuclear magnetic moment, the electron magnetic moment is way to large. Measurement tells us that nuclei usually have nuclear magnetic moment \(-3\mu_N\) to \(10\mu_N\) where \(\mu_N=e\hbar/2m_p\) and \(m_p\) is the mass of proton.
+
+Hint: The magnetic moment is of the magnitude \(e\hbar/2m_x\).
+\end{notice}
+
+
+\subsection{Relativity}
+\label{fun:relativity}
+\begin{notice}{note}{Blazers in astrophysics}
+
+Link to this: {\hyperref[fun:blazers]{\emph{Blazers}}}
+
+Blazers has a very large apparant velocity, which is usually much larger than speed of light, eg, 34c.
+
+This problem is very nicely explained on this page: \href{http://math.ucr.edu/home/baez/physics/Relativity/SpeedOfLight/Superluminal/superluminal.html}{Apparent Superluminal Velocity of Galaxies} .
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{superluminal.gif}
+\caption{This is taken form the link metioned above. We measure the distance at 1 Jan then at 1 Feb. The apparent velocity would be the travelled distance divided by 1 month. However, the first measurement only measured the light from a place that is \(1+d/c\) further than the second spot due the the fact that light travels at a finite speed. So the distance we measured is larger than the actual distance at 1 Jan and 1 Feb. Thus leading to a apparent larger velocity and this velocity can exceed the limit of light speed.}\end{figure}
+\end{notice}
+
+
+\subsection{Electrodynamics in 2+1 Spacetime}
+\label{fun:electrodynamics-in-2-1-spacetime}
+Maxwell's equations are mostly experiment determined, except for one term by Maxwell involves the induced current. The only hope to write down a real 2+1 electrodynamcs formalism is to really understand the most fundamental properties of electrodynamics which I don't have at this moment.
+
+So I turned to another approach. First of all we need to reach some basic agreement that which is not changed from our 3+1 theory to a 2+1 theory. As this being said, there could be a bunch of different versions of 2+1 theory.
+
+To make sure we have a consistant theory, the following terms should be applied.
+\begin{enumerate}
+\item {} 
+Something should be unchanged which will act as a connection between our 2+1 theory and 3+1 theory.
+
+\end{enumerate}
+
+\begin{notice}{note}{Maxwell's Theory}
+
+The equations could be written as
+\begin{gather}
+\begin{split}\partial_\mu F^{\mu\nu} = 0,\end{split}\notag
+\end{gather}
+where \(F_{\mu\nu} = \partial_\mu A_\nu -\partial_\nu A_\mu\).
+
+However we would like to check the four laws independently since we really need to look into the meaning of the equations.
+\begin{gather}
+\begin{split}\partial_i E_i & = 4\pi \rho\\
+\partial_i B_i & = 0 \\
+\epsilon_{ijk} \partial_j E_k  &= -\frac{1}{c} \partial_t B_i \\
+\epsilon_{ijk} \partial_j B_k & = \frac{4\pi}{c} J_i + \frac{1}{c} \partial_t E_i .\end{split}\notag
+\end{gather}
+Here we write down the component form because the cross product doesn't have a clear meaning as we move to different dimensions.
+\end{notice}
+
+
+\subsubsection{The first naive version}
+\label{fun:the-first-naive-version}
+\begin{notice}{note}{Assumptions}
+\begin{enumerate}
+\item {} 
+The dimension of energy is not changed.
+
+\item {} 
+The dimension of length and time are kept.
+
+\end{enumerate}
+\end{notice}
+
+
+\paragraph{Gauss's Law}
+\label{fun:gauss-s-law}
+\textbf{Gauss's law} shows the source of the electric field, which should be in the form
+\begin{gather}
+\begin{split}\oint \vec E\cdot \vec {dl} = 2\pi \int \rho dS.\end{split}\notag
+\end{gather}
+We have \(2\pi\) instead of \(4\pi\) is because we have only a integral of a closed loop not a closed surface.
+
+\begin{notice}{note}{Applying Stokes Theorem?}
+
+At first thought, we need to math the integral on the two sides thus Stokes theorem should be applied.
+
+Surprisingly, we don't really get to the familiar Gauss's law of differential form. Instead, we have
+\begin{gather}
+\begin{split}\iint \nabla \times \vec E \cdot \vec{dS} = 2\pi \int \rho dS.\end{split}\notag
+\end{gather}
+BUT think about this. Is this really true? We DO NOT have a third dimension! How could we define a curl? Back to the component form,
+\begin{gather}
+\begin{split}\nabla \times \vec E = \hat{e_i} \epsilon_{ijk} \partial_j E_k.\end{split}\notag
+\end{gather}
+As a reminder,
+\begin{gather}
+\begin{split}\epsilon_{ijk} = \begin{cases}
++1 & \text{if } (i,j,k) \text{ is } (1,2,3), (2,3,1) \text{ or } (3,1,2), \\
+-1 & \text{if } (i,j,k) \text{ is } (3,2,1), (1,3,2) \text{ or } (2,1,3), \\
+\;\;\,0 & \text{if }i=j \text{ or } j=k \text{ or } k=i
+\end{cases}\end{split}\notag
+\end{gather}
+Now the problem is we have all the elements of this Levi-Civita symbol 0 because only 2 dimensions can be used in this theory.
+
+That means we have no Gaussian theorem or no charge as a naive interpretation if we follow our idea that charge is source of static curl free electric field and followed up by using Stokes theorem.
+
+\textbf{This argument is WRONG. We need to reconsider the meaning of equations. This is 2D we don't have a third dimension to use Stokes theorem. We need divergence theorem.}
+\end{notice}
+
+Two match up the dimensions we do need to apply the divergence theorem, in 2D.
+\begin{gather}
+\begin{split}\oint \vec E\cdot \vec {dl} = \iint \partial_i E_i dS,\end{split}\notag
+\end{gather}
+from which we are able to determine the differential form
+\begin{gather}
+\begin{split}\partial_i E_i = 2\pi\rho,\end{split}\notag
+\end{gather}
+in which we have \(i=1,2\).
+
+\begin{notice}{note}{Vectors in 2D}
+
+TBD
+\end{notice}
+
+
+\paragraph{Faraday's Law}
+\label{fun:faraday-s-law}
+The change of magnetic flux generate electric field,
+\begin{gather}
+\begin{split}\oint \vec E \cdot \vec{dl}  =  -\frac{1}{c} \frac{d}{dt} \int \vec B \vec{dS}.\end{split}\notag
+\end{gather}
+
+\paragraph{Wave}
+\label{fun:wave}
+We still have a wave solution.
+
+
+\subsubsection{Refs}
+\label{fun:refs}\begin{enumerate}
+\item {} 
+\href{http://www.hep.princeton.edu/~mcdonald/examples/2dem.pdf}{Electrodynamics in 2D by Kirk T. McDonald @ Princeton}
+
+\end{enumerate}
+
+
 \chapter{Vocabulary}
 \label{index:vocabulary}
+
+\section{Vocabulary}
+\label{voc/vocabulary::doc}\label{voc/vocabulary:vocabulary}
+
+\subsection{Functional Derivative}
+\label{voc/vocabulary:functional-derivative}
+By definition, \footnote{
+Chapter 15 of \href{http://www.amazon.com/Physical-Mathematics-Kevin-Cahill/dp/1107005213}{Physical Mathematics}
+} functional derivative of a functional \(G[f]\) with respect to \(f\) along the `direction' of \(h\) is
+\begin{gather}
+\begin{split}\delta G[f][h] = \frac{d}{d\epsilon} G[f+\epsilon h]\vert_{\epsilon=0}.\end{split}\notag
+\end{gather}
+As an example, the functional derivative of \(G[f]=\int dx f^n(x)\) \(\delta G[f][h]\) is
+\begin{gather}
+\begin{split}\delta G[f][h] &= \frac{d}{d\epsilon} G[f+\epsilon h] \vert_{\epsilon=0} \\
+& = \int nf^{n-1}(x) h(x) dx.\end{split}\notag
+\end{gather}
+Now the problem appears. We have an unknown function \(h\) which makes sense because we haven't specify a direction of the derivative yet.
+
+For a physicist, the savior of integral is Dirac delta. So we use delta distribution as the direction in the functional derivative of action which is an integral,
+\begin{gather}
+\begin{split}\frac{\delta G[f]}{\delta f(y)} = \delta G[f][\delta_y].\end{split}\notag
+\end{gather}
+It can be ambiguous to just write down \(\delta_y\) without an example. Here is the previous example continued,
+\begin{gather}
+\begin{split}\frac{\delta G[f(y)]}{\delta f(y)} &= \int nf^{n-1}(x) h(x) dx \vert_{h(x)= \delta(x-y)} \\
+& = \int nf^{n-1}(x) \delta(x-y) dx \\
+& = n f^{n-1}(y) .\end{split}\notag
+\end{gather}
+It seems that we can just think of \(f\) as a variable then take the ordinary derivative with respect to it. It is NOT true.
+
+Consider such a functional \(G[f]=\int (f'(x))^2 dx\) where ` means the derivative of \(f(x)\).
+\begin{gather}
+\begin{split}\frac{\delta G[f]}{\delta f} & = -\int dx 2 f''(x) h(x) \vert_{h(x)=\delta(x-y)}  \\
+& = -2 f''(y) ,\end{split}\notag
+\end{gather}
+which is not that straightforward to understand from function derivatives.
+
+
+\subsection{Legendre Transformation}
+\label{voc/vocabulary:legendre-transformation}
+Legendre transformation is NOT just some algebra. Given \(f(x)\) as a function of \(x\), which is shown in blue, we could find the distance between a line \(y=px_i\) and the function value \(f(x_i)\).
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{legendreTransformation.png}
+\caption{Meaning of Legendre transformation}\end{figure}
+
+However, as we didn't fix \(x\), this means that the distance
+\begin{gather}
+\begin{split}F(p,x) = p x - f(x)\end{split}\notag
+\end{gather}
+varies according to \(x\). This is a transformation that maps a function \(f(x)\) to some other function \(F(p,x)\) which depends on the parameter \(p\). A more pedagogical way of writing this is
+\begin{gather}
+\begin{split}px = F(x,p) + f(x).\end{split}\notag
+\end{gather}
+To have a Legendre transformation, let's choose a relation between \(x\) and \(p\). One choice is to make sure we have a maximum distance given \(p\), which means the \(x\) we choose is the point that makes the slope of \(f(x)\) the same as the line \(y=px\). In the language of math, the condition we require is
+\begin{gather}
+\begin{split}0 = \frac{\partial F(p,x)}{\partial x} \equiv f'(x) - p,\end{split}\notag
+\end{gather}
+which indeed shows that the slope of function and slope of the straight line match eath other at the specified point. Thus we have a relation between \(x\) and \(p\).
+
+Substitute \(x(p)\) back into \(F(p,x)\), we will get the Legendre transformation \(F(p,x(p))\) of \(f(x)\).
+
+Back to the math we learned in undergrad study. A Legendre transformation transforms a function of \(x\) to another function with variable \(\frac{f(x)}{x}\). Using \(f(x)\) and its Legendre transformation \(F(p = p x - f(x(p))\) as an example, we can show that the slope of \(F(p)\) is \(x\),
+\begin{gather}
+\begin{split}\frac{d F(p)}{d p} = x,\end{split}\notag
+\end{gather}
+which is intriging because the slope of \(f(x)\) is \(p\) in our requirement. We removed the dependence of \(x\) in \(F(p)\) because we have this extra constrain.
+
+\begin{notice}{note}{Let's Move to Another Level}
+
+We require the function \(f(x)\) is convex (second order derivative is not negative ). This is required because otherwise we would NOT have a one on one mapping of \(x\) and \(p\).
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{legendreTransformation2.png}
+\caption{This graph shows the Legendre transformation and triangles in which G is actually the F we used before and F in the graph corresponds to f.}{\small 
+One imediately notices the symmety of Legendre transformation on interchanging of F and f.
+
+This graph is taken from this paper \href{http://arxiv.org/abs/0806.1147}{Making Sense of the Legendre Transform} .
+}\end{figure}
+
+This is the triangle that represents the Legendre transformation.
+
+If we have a slope that vanishes, which means \(f(x)\) is at minimium, then we have the relation
+\end{notice}
+
+
+\subsection{Vector Analysis}
+\label{voc/vocabulary:vector-analysis}
+The ultimate trick is to use component form.
+\begin{gather}
+\begin{split}&\vec a \times (\vec b \times \vec c) \\
+= & \hat e_i \epsilon_{ijk} a_j (\epsilon_{kmn} b_m c_n ) \\
+= & \hat e_i \epsilon_{kij}\epsilon_{kmn} a_j b_m c_n \\
+= & \hat e_i ( \delta_{im}\delta_{jn} - \delta_{in}\delta_{jm} )a_j b_m c_n \\
+= & \hat e_i \delta_{im}\delta_{jn} a_j b_m c_n -  \hat e_i \delta_{in}\delta_{jm} a_j b_m c_n \\
+= & \hat e_i a_j b_i c_j - \hat e_i a_j b_j c_i \\
+= & \vec b (\vec a\cdot \vec c) - \vec c (\vec a \cdot \vec b) .\end{split}\notag
+\end{gather}
+One should be able to find the component forms of gradient \(\vec \nabla \cdot\), divergence \(\vec \nabla \times\), Laplace operator, in \textbf{spherical coordinates, cylindrical coordinates and cartisian coordinates}.
+
+
+\subsection{Refs \& Notes}
+\label{voc/vocabulary:refs-notes}
 
 \section{Basic}
 \label{Basic::doc}\label{Basic:basic}
@@ -295,20 +580,20 @@ Yes. Use the source. Keep the source open.
 How to find the relationship between two quantities? For example, what is the dimensional relationship between length and mass.
 
 \begin{DUlineblock}{0em}
-\item[] * Plank constant: $\mathrm{ \hbar \sim [Energy]\cdot [Time] \sim [Mass]\cdot [Length]^2 \cdot [Time]^{-1} }$
-\item[] * Speed of light in vacuum: $\mathrm{ c\sim [Length]\cdot [Time]^{-1} }$
-\item[] * Gravitational constant: $\mathrm{  G \sim [Length]^3\cdot [Mass]^{-1} \cdot [Time]^{-2} }$
+\item[] * Plank constant: \(\mathrm{ \hbar \sim [Energy]\cdot [Time] \sim [Mass]\cdot [Length]^2 \cdot [Time]^{-1} }\)
+\item[] * Speed of light in vacuum: \(\mathrm{ c\sim [Length]\cdot [Time]^{-1} }\)
+\item[] * Gravitational constant: \(\mathrm{  G \sim [Length]^3\cdot [Mass]^{-1} \cdot [Time]^{-2} }\)
 \end{DUlineblock}
 
-Then it is easy to find that a combination of $c/\hbar$ cancels the dimension of mass and leaves the inverse of length. That is
+Then it is easy to find that a combination of \(c/\hbar\) cancels the dimension of mass and leaves the inverse of length. That is
 \begin{gather}
-\begin{split}[ L ]^2 =\left[ \frac{\hbar G}{c^3} \right]\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}[ L ]^2 =\left[ \frac{\hbar G}{c^3} \right]\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}[ M ]^2 = \left [ \frac{\hbar c}{ G } \right]\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}[ M ]^2 = \left [ \frac{\hbar c}{ G } \right]\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}[T]^2 = \left[ \frac{ \hbar G }{ c^5 }  \right]\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}[T]^2 = \left[ \frac{ \hbar G }{ c^5 }  \right]\end{split}\notag
 \end{gather}
-As we can see, it is possible to use $c=1, \hbar = 1, G =1$ because we can always restore the units in a deterministic way. $c, \hbar, G$ are function of mass, length, time, and with $c = \hbar = G=1$ give us only one solution of mass, length and time: three equations + three variables.
+As we can see, it is possible to use \(c=1, \hbar = 1, G =1\) because we can always restore the units in a deterministic way. \(c, \hbar, G\) are function of mass, length, time, and with \(c = \hbar = G=1\) give us only one solution of mass, length and time: three equations + three variables.
 
 
 \subsubsection{Planck Scales}
@@ -317,22 +602,22 @@ As we have seen, the three constant can make up a length scale, a mass scale, a 
 
 Planck length:
 \begin{gather}
-\begin{split}l_P = \sqrt{ \frac{ \hbar G }{ c^3 } }\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}l_P = \sqrt{ \frac{ \hbar G }{ c^3 } }\end{split}\notag
 \end{gather}
 Planck mass:
 \begin{gather}
-\begin{split}m_P = \sqrt{ \frac{ \hbar c }{ G } }\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}m_P = \sqrt{ \frac{ \hbar c }{ G } }\end{split}\notag
 \end{gather}
 Planck time:
 \begin{gather}
-\begin{split}t_P = \sqrt{ \frac{\hbar G}{ c^5 } }\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}t_P = \sqrt{ \frac{\hbar G}{ c^5 } }\end{split}\notag
 \end{gather}
 
 \subsubsection{Equations and Dimensions}
 \label{Basic:equations-and-dimensions}
 Before solving equations, it is good to reform them in to dimensionless ones.
 
-To make the equation dimensionless doesn't mean we can just divide arbitary terms on both sides. We need to find out the characteristic quantity of the system. For example, we can divide by $\hbar\omega$ on both sides of Schrodinger equation for Harmonic Oscillators. This is a good step because $\hbar\omega$ is the characteristic energy scale of system. At the same time, we can make the length terms dimensionless using the characteristic length. DO NOT use an arbitary length!
+To make the equation dimensionless doesn't mean we can just divide arbitary terms on both sides. We need to find out the characteristic quantity of the system. For example, we can divide by \(\hbar\omega\) on both sides of Schrodinger equation for Harmonic Oscillators. This is a good step because \(\hbar\omega\) is the characteristic energy scale of system. At the same time, we can make the length terms dimensionless using the characteristic length. DO NOT use an arbitary length!
 
 
 \paragraph{Most Wonderful Equations That Should Never Be Forgotten}
@@ -340,37 +625,37 @@ To make the equation dimensionless doesn't mean we can just divide arbitary term
 
 \subsubsection{Electrodynamics}
 \label{Basic:electrodynamics}\begin{gather}
-\begin{split}\nabla\times\vec E=-\partial_t \vec B\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\nabla\times\vec E=-\partial_t \vec B\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\nabla\times\vec H=\vec J+\partial_t \vec D\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\nabla\times\vec H=\vec J+\partial_t \vec D\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\nabla\cdot \vec D=\rho\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\nabla\cdot \vec D=\rho\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\nabla\cdot \vec B=0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\nabla\cdot \vec B=0\end{split}\notag
 \end{gather}
 For linear meterials,
 \begin{gather}
-\begin{split}\vec D=\epsilon \vec E\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\vec D=\epsilon \vec E\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\vec B=\mu \vec H\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\vec B=\mu \vec H\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\vec J= \sigma \vec E\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\vec J= \sigma \vec E\end{split}\notag
 \end{gather}
 
 \subsubsection{Dynamics}
 \label{Basic:dynamics}
 Hamilton conanical equations
 \begin{gather}
-\begin{split}\dot q_i = \frac{\partial H}{\partial p_i}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\dot q_i = \frac{\partial H}{\partial p_i}\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\dot p_i = - \frac{\partial H}{\partial q_i}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\dot p_i = - \frac{\partial H}{\partial q_i}\end{split}\notag
 \end{gather}
 
 \subsubsection{Thermodynamics and Statistical Physics}
 \label{Basic:thermodynamics-and-statistical-physics}
 Liouville's Law
 \begin{gather}
-\begin{split}\frac{\mathrm d \rho}{\mathrm d t}\equiv \frac{\partial \rho}{\partial t} + \sum_i \left[ \frac{\partial \rho}{\partial q_i}\dot q_i + \frac{\partial \rho}{\partial p_i}\dot p_i \right] = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\mathrm d \rho}{\mathrm d t}\equiv \frac{\partial \rho}{\partial t} + \sum_i \left[ \frac{\partial \rho}{\partial q_i}\dot q_i + \frac{\partial \rho}{\partial p_i}\dot p_i \right] = 0\end{split}\notag
 \end{gather}
 
 \chapter{Mathematics}
@@ -379,29 +664,176 @@ Liouville's Law
 \section{Mathematics}
 \label{math:mathematics}\label{math::doc}
 
+\subsection{Kindergarten}
+\label{math:kindergarten}
+\textbf{Binominal theorem}
+\begin{gather}
+\begin{split}(1+x)^n = \sum_{k=0}^{n} C_n^k x^k .\end{split}\notag
+\end{gather}
+
+\subsection{Complex Analysis}
+\label{math:complex-analysis}
+Some useful concepts: \footnote{
+\href{http://physics.unm.edu/Courses/Finley/p466F2014/Homework/hw1.pdf}{A handout note by Finly}
+}
+\begin{itemize}
+\item {} 
+Representation of a complex number and its conjugate
+
+\item {} 
+Complex functions
+
+\item {} 
+curves, closed curves, simple curves
+
+\item {} 
+Ininity point
+
+\item {} 
+Analytic functions: depends only on z not its complex conjugate
+
+\item {} 
+Entire function: single-valued analytic all over C
+
+\item {} 
+Liouville theorem
+
+\item {} 
+Pole
+
+\item {} 
+Singularity, Essential Singularity
+
+\item {} 
+Meromorphic function
+
+\end{itemize}
+
+For multi-valued functions,
+\begin{itemize}
+\item {} 
+A branch of a function
+
+\item {} 
+Analyticity of multi-valued function
+
+\item {} 
+Branch point
+
+\item {} 
+Cut
+
+\end{itemize}
+
+Operations
+\begin{itemize}
+\item {} 
+Contour integral of a continuous function arround some simple curve
+
+\item {} 
+Cauchy's Integral Theorem
+
+\end{itemize}
+
+
+\subsubsection{Cauchy-Riemann Equation}
+\label{math:cauchy-riemann-equation}
+A function \(f(z) = u(z) + i v(z)\) is a function of a complex variable \(z=x+i y\).
+\begin{gather}
+\begin{split}\frac{\partial}{\partial x} u &= \frac{\partial}{\partial y} v \\
+\frac{\partial}{\partial x} v & = -\frac{\partial}{\partial y} u\end{split}\notag
+\end{gather}
+
+\subsubsection{Singularities}
+\label{math:singularities}
+There are 3 common singularities,
+\begin{enumerate}
+\item {} 
+Pole
+
+\item {} 
+Branch point
+
+\item {} 
+Essential singularity
+
+\end{enumerate}
+
+Pole is very useful since it's related to the Residue Theorem. Thus one of the task in physics is to calculate the residue of a function.
+
+The residue at a simple pole is given by
+\begin{gather}
+\begin{split}\text{Residue}(f(z_0)) = \lim_{z\to z_0}\left( (z-z_0)f(z) \right).\end{split}\notag
+\end{gather}
+Meanwhile, the residue at a pole of nth order is
+\begin{gather}
+\begin{split}\text{Residue}(f(z_0)) =  \frac{1}{(n-1)!} \lim_{z\to z_0} \frac{\mathrm d ^ {n-1}}{\mathrm d z^{n-1}}  \left( (z-z_0)^n f(z) \right).\end{split}\notag
+\end{gather}
+Branch points are points when we go around it in circles the values of our function would change. Examples of such points are \(z=0\) for \(f(z)=ln(z)\) and \(z=1\) for \(f(z)=(z-1)^{1/2}\).
+
+
+\subsection{Calculus}
+\label{math:calculus}\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{DifferentialANDIntegralOnOnePage.png}
+\caption{LaTeX source of this image is here .}\end{figure}
+
+
+\subsubsection{Differential of Functions}
+\label{math:differential-of-functions}
+
+\subsubsection{Integrals}
+\label{math:integrals}
+Sometimes a integral on Real plane can be very hard, one of the techniques is to work on Complex plane and use contour integral.
+\begin{enumerate}
+\item {} 
+Contours: use Ghost Contours so that we don't need to calculate these complicated integrals.
+
+\item {} 
+Branch Cut: cuts are needed if we have got branch points on the complex plane.
+
+\item {} 
+Residue Theorem: we can write down the integral by calculating the residue of the integrand,
+\begin{gather}
+\begin{split}\int_C f(z) \mathrm dz = 2\pi i \sum_j \text{Residue}(f(z_j)),\end{split}\notag
+\end{gather}
+where \(z_j\) are the poles.
+
+\end{enumerate}
+
+
 \subsection{Linear Algebra}
 \label{math:linear-algebra}
 
 \subsubsection{Tensor Product Space}
 \label{math:tensorproductspace}\label{math:tensor-product-space}
-$\ket{\phi}_1$ and $\ket{\phi}_2$ are elements of Hilbert space $H_1$ and $H_2$. \textbf{Tensor Product} of $\ket{\phi}_1$ and $\ket{\phi}_2$ is denoted as $\ket{\phi}_1\otimes \ket{\phi}_2$. This operation is linear and distributive.
+\(\ket{\phi}_1\) and \(\ket{\phi}_2\) are elements of Hilbert space \(H_1\) and \(H_2\). \textbf{Tensor Product} of \(\ket{\phi}_1\) and \(\ket{\phi}_2\) is denoted as \(\ket{\phi}_1\otimes \ket{\phi}_2\). This operation is linear and distributive.
 
-\textbf{Tensor product space} $H_1\otimes H_2$ is composed of all the linear combinations of all possible tensor products of elements in $H_1$ and $H_2$.
+\textbf{Tensor product space} \(H_1\otimes H_2\) is composed of all the linear combinations of all possible tensor products of elements in \(H_1\) and \(H_2\).
 
 
 \paragraph{Inner Product}
 \label{math:inner-product}
 Inner product of two tensor products
 \begin{gather}
-\begin{split}(\bra{\phi}_1\otimes \bra{\phi}_2)(\ket{\psi}_1\otimes \ket{\psi}_2) = ( {} _ 1 \braket{\phi}{\psi}_1)({}_2\braket{\phi}{\psi}_2)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}(\bra{\phi}_1\otimes \bra{\phi}_2)(\ket{\psi}_1\otimes \ket{\psi}_2) = ( {} _ 1 \braket{\phi}{\psi}_1)({}_2\braket{\phi}{\psi}_2)\end{split}\notag
 \end{gather}
 
 \paragraph{Operators Applied to Tensor Product}
 \label{math:operators-applied-to-tensor-product}
-Two operators $\hat O_1$ and $\hat O_2$ works on $H_1$ and $H_2$ respectively applied to tensor product
+Two operators \(\hat O_1\) and \(\hat O_2\) works on \(H_1\) and \(H_2\) respectively applied to tensor product
 \begin{gather}
-\begin{split}(\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}(\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)\end{split}\notag
 \end{gather}
+
+\subsubsection{Solving Linear Equations}
+\label{math:solving-linear-equations}
+First of all, write down the augmented matrix for the equation set.
+
+Elementary row operations are allowed on the augmented matrix. Operate on the matrix until one can read out the solutions.
+
 
 \subsection{Differential Geometry}
 \label{math:differential-geometry}
@@ -411,63 +843,63 @@ Two operators $\hat O_1$ and $\hat O_2$ works on $H_1$ and $H_2$ respectively ap
 
 \paragraph{Definitions}
 \label{math:definitions}
-Denote the basis in use as $\hat e_\mu$, then the metric can be written as
+Denote the basis in use as \(\hat e_\mu\), then the metric can be written as
 \begin{gather}
-\begin{split}g_{\mu\nu}=\hat e_\mu \hat \cdot e_\nu\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}g_{\mu\nu}=\hat e_\mu \hat \cdot e_\nu\end{split}\notag
 \end{gather}
 if the basis satisfies
 
 Inversed metric
 \begin{gather}
-\begin{split}g_{\mu\lambda}g^{\lambda\nu}=\delta_\mu^\nu = g_\mu^\nu\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}g_{\mu\lambda}g^{\lambda\nu}=\delta_\mu^\nu = g_\mu^\nu\end{split}\notag
 \end{gather}
 
 \paragraph{How to calculate the metric}
 \label{math:how-to-calculate-the-metric}
 Let's check the definition of metric again.
 
-If we choose a basis $\hat e_\mu$, then a vector (at one certain point) in this coordinate system is
+If we choose a basis \(\hat e_\mu\), then a vector (at one certain point) in this coordinate system is
 \begin{gather}
-\begin{split}x^a=x^\mu \hat e_\mu\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}x^a=x^\mu \hat e_\mu\end{split}\notag
 \end{gather}
 Then we can construct the expression of metric of this point under this coordinate system,
 \begin{gather}
-\begin{split}g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu\end{split}\notag
 \end{gather}
 For example, in spherical coordinate system,
 \phantomsection\label{math:equation-EQrelativityMetricPoint}\begin{gather}
-\begin{split}\vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z\end{split}\label{math-EQrelativityMetricPoint}\\\begin{split}\end{split}\notag
+\begin{split}\vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z\end{split}\label{math-EQrelativityMetricPoint}
 \end{gather}
-Now we have to find the basis under spherical coordinate system. Assume the basis is $\hat e_r, \hat e_\theta, \hat e_\phi$. Choose some scale factors $h_r=1, h_\theta=r, h_\phi=r\sin\theta$. Then the basis is
+Now we have to find the basis under spherical coordinate system. Assume the basis is \(\hat e_r, \hat e_\theta, \hat e_\phi\). Choose some scale factors \(h_r=1, h_\theta=r, h_\phi=r\sin\theta\). Then the basis is
 \begin{gather}
-\begin{split}\hat e_r=\frac{\partial \vec x}{h_r\partial r}=\hat e_x \sin\theta\cos\phi+\hat e_y \sin\theta\sin\phi+\hat e_z \cos\theta,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat e_r=\frac{\partial \vec x}{h_r\partial r}=\hat e_x \sin\theta\cos\phi+\hat e_y \sin\theta\sin\phi+\hat e_z \cos\theta,\end{split}\notag
 \end{gather}
-etc. Then collect the terms in formula \eqref{math-EQrelativityMetricPoint} is we get $\vec x=r\hat e_r$, this is incomplete. So we check the derivative.
+etc. Then collect the terms in formula \eqref{math-EQrelativityMetricPoint} is we get \(\vec x=r\hat e_r\), this is incomplete. So we check the derivative.
 \begin{gather}
 \begin{split}\mathrm d\vec x =  \hat e_x (\mathrm dr \sin\theta\cos\phi+r\cos\theta\cos\phi\mathrm d\theta-r\sin\theta\sin\phi\mathrm d\phi)\end{split}\notag\\\begin{split}\hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi)\end{split}\notag\\\begin{split}\hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta)\end{split}\notag\\\begin{split} = \mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)\end{split}\notag\\\begin{split}\mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi - \hat e_z \sin\theta)r\end{split}\notag\\\begin{split}\mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta\end{split}\notag\\\begin{split}=\hat e_r\mathrm dr+\hat e_\theta r\mathrm d\theta +\hat e_\phi r\sin\theta\mathrm d \phi\end{split}\notag
 \end{gather}
-Once we reach here, the component ($e_r ,e_\theta, e_\phi$) of the point under the spherical coordinates system basis ($\hat e_r, \hat e_\theta, \hat e_\phi$) at this point are clear, i.e.,
+Once we reach here, the component (\(e_r ,e_\theta, e_\phi\)) of the point under the spherical coordinates system basis (\(\hat e_r, \hat e_\theta, \hat e_\phi\)) at this point are clear, i.e.,
 \begin{gather}
 \begin{split}\mathrm d\vec x = \hat e_r\mathrm d r+\hat e_\theta r\mathrm d \theta+\hat e_\phi r\sin\theta \mathrm d\phi \\
- = e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi\end{split}\notag\\\begin{split}\end{split}\notag
+ = e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi\end{split}\notag
 \end{gather}
 In this way, the metric tensor for spherical coordinates is
 \begin{gather}
 \begin{split}g_{\mu\nu}=(e_\mu\cdot e_\nu) = \begin{pmatrix}
 1 & 0 & 0 \\
 0 & r^2 &  0 \\
-0 & 0 & r^2 \sin^2\theta \end{pmatrix}\end{split}\notag\\\begin{split}\end{split}\notag
+0 & 0 & r^2 \sin^2\theta \end{pmatrix}\end{split}\notag
 \end{gather}
 
 \subsubsection{Connection}
 \label{math:connection}
 First class connection can be calculated
 \begin{gather}
-\begin{split}\Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}\end{split}\notag
 \end{gather}
 Second class connection isfootnote\{Kevin E. Cahill\}
 \begin{gather}
-\begin{split}[\mu\nu,\iota]=g_{\iota\mu}\Gamma^\mu_{\phantom{\mu}\nu\lambda}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}[\mu\nu,\iota]=g_{\iota\mu}\Gamma^\mu_{\phantom{\mu}\nu\lambda}\end{split}\notag
 \end{gather}
 
 \subsubsection{Gradient, Curl, Divergence, etc}
@@ -475,52 +907,52 @@ Second class connection isfootnote\{Kevin E. Cahill\}
 
 \paragraph{Gradient}
 \label{math:gradient}\begin{gather}
-\begin{split}T^b_{\phantom bc;a}= \nabla_aT^b_{\phantom bc}=T^b_{\phantom bc,a}+\Gamma^b_{ad}T^d_{\phantom dc}-\Gamma^d_{ac}T^b_{\phantom bd}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}T^b_{\phantom bc;a}= \nabla_aT^b_{\phantom bc}=T^b_{\phantom bc,a}+\Gamma^b_{ad}T^d_{\phantom dc}-\Gamma^d_{ac}T^b_{\phantom bd}\end{split}\notag
 \end{gather}
 
 \paragraph{Curl}
 \label{math:curl}
-For an anti-symmetric tensor, $a_{\mu\nu}=-a_{\nu\mu}$
+For an anti-symmetric tensor, \(a_{\mu\nu}=-a_{\nu\mu}\)
 \begin{gather}
 \begin{split}\mathrm{Curl}_{\mu\nu\tau}(a_{\mu\nu})  \equiv  a_{\mu\nu;\tau}+a_{\nu\tau;\mu}+a_{\tau\mu;\nu} \\
- = a_{\mu\nu,\tau}+a_{\nu\tau,\mu}+a_{\tau\mu,\nu}\end{split}\notag\\\begin{split}\end{split}\notag
+ = a_{\mu\nu,\tau}+a_{\nu\tau,\mu}+a_{\tau\mu,\nu}\end{split}\notag
 \end{gather}
 
 \paragraph{Divergence}
 \label{math:divergence}\begin{gather}
 \begin{split}\mathrm{div}_\nu(a^{\mu\nu})&\equiv   a^{\mu\nu}_{\phantom{\mu\nu};\nu} \\
 & = \frac{\partial a^{\mu\nu}}{\partial x^\nu}+\Gamma^\mu_{\nu\tau}a^{\tau\nu}+\Gamma^\nu_{\nu\tau}a^{\mu\tau} \\
-& = \frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})+\Gamma^\mu_{\nu\lambda}a^{\nu\lambda}\end{split}\notag\\\begin{split}\end{split}\notag
+& = \frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})+\Gamma^\mu_{\nu\lambda}a^{\nu\lambda}\end{split}\notag
 \end{gather}
 For an anti-symmetric tensor
 \begin{gather}
-\begin{split}\mathrm {div}(a^{\mu\nu})=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\mathrm {div}(a^{\mu\nu})=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})\end{split}\notag
 \end{gather}
-\textbf{Annotation} Using the relation $g=g_{\mu\nu}A_{\mu\nu}$, $A_{\mu\nu}$ is the algebraic complement, we can prove the following two equalities.
+\textbf{Annotation} Using the relation \(g=g_{\mu\nu}A_{\mu\nu}\), \(A_{\mu\nu}\) is the algebraic complement, we can prove the following two equalities.
 \begin{gather}
-\begin{split}\Gamma^\mu_{\mu\nu}=\partial_\nu\ln{\sqrt{-g}}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\Gamma^\mu_{\mu\nu}=\partial_\nu\ln{\sqrt{-g}}\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}V^\mu_{\phantom\mu;\mu}=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\mu}(\sqrt{-g}V^\mu)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}V^\mu_{\phantom\mu;\mu}=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\mu}(\sqrt{-g}V^\mu)\end{split}\notag
 \end{gather}
-In some simple case, all the three kind of operation can be demonstrated by different applications of the del operator, which $\nabla\equiv \hat x\partial_x+\hat y\partial_y+\hat z \partial_z$.
+In some simple case, all the three kind of operation can be demonstrated by different applications of the del operator, which \(\nabla\equiv \hat x\partial_x+\hat y\partial_y+\hat z \partial_z\).
 \begin{itemize}
 \item {} 
-Gradient,  $\nabla f$, in which $f$ is a scalar.
+Gradient,  \(\nabla f\), in which \(f\) is a scalar.
 
 \item {} 
-Divergence, $\nabla\cdot \vec v$
+Divergence, \(\nabla\cdot \vec v\)
 
 \item {} 
-Curl, $\nabla \times \vec v$
+Curl, \(\nabla \times \vec v\)
 
 \item {} 
-Laplacian, $\Delta\equiv \nabla\cdot\nabla\equiv \nabla^2$
+Laplacian, \(\Delta\equiv \nabla\cdot\nabla\equiv \nabla^2\)
 
 \end{itemize}
 
 
 \subsection{Linear Algebra}
-\label{math:id1}
+\label{math:id2}
 
 \subsubsection{Basic Concepts}
 \label{math:basic-concepts}
@@ -529,17 +961,17 @@ Laplacian, $\Delta\equiv \nabla\cdot\nabla\equiv \nabla^2$
 \label{math:trace}
 Trace should be calculated using the metric. An example is the trace of Ricci tensor,
 \begin{gather}
-\begin{split}R=g^{ab}R_{ab}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}R=g^{ab}R_{ab}\end{split}\notag
 \end{gather}
 Einstein equation is
 \begin{gather}
-\begin{split}R_{ab}-\frac{1}{2}g_{ab}R=8\pi G T_{ab}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}R_{ab}-\frac{1}{2}g_{ab}R=8\pi G T_{ab}\end{split}\notag
 \end{gather}
 The trace is
 \begin{gather}
 \begin{split}g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R &= 8\pi G g^{ab}T_{ab} \\
 \Rightarrow R-\frac{1}{2} 4 R  &=  8\pi G T \\
-\Rightarrow -R &= 8\pi GT\end{split}\notag\\\begin{split}\end{split}\notag
+\Rightarrow -R &= 8\pi GT\end{split}\notag
 \end{gather}
 
 \subsubsection{Technique}
@@ -551,23 +983,523 @@ Many methods to get the inverse of a matrix. Check wikipedia for Invertible matr
 
 Adjugate matrix method for example is here.
 \begin{gather}
-\begin{split}A^{-1} = \frac{A^*}{|A|}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}A^{-1} = \frac{A^*}{|A|}\end{split}\notag
 \end{gather}
-in which, $A^*$ is the adjugate matrix of $A$.
+in which, \(A^*\) is the adjugate matrix of \(A\).
 
 
-\subsection{Differential Equations}
-\label{math:differential-equations}
+\subsection{Refs \& Notes}
+\label{math:refs-notes}
 
-\subsubsection{Standard Procedure}
-\label{math:standard-procedure}
+\section{Special Functions}
+\label{special-functions:special-functions}\label{special-functions::doc}
+There are a lot of useful special function in physics. Some of them provides physics understanding of the problem, some of them helps us writing down a solution quickly.
 
-\subsubsection{Tricky}
-\label{math:tricky}
+Among them, Gamma functions, Legendre polynomials, Bessel functions, spherical harmonics, modified bessel functions, spherical bessel functions, and elliptical functions are the most used ones.
 
-\paragraph{WKB Approximation}
-\label{math:wkb-approximation}
-When the highest derivative is multiplied by a small parameter, try this.
+
+\subsection{Gamma Functions}
+\label{special-functions:gamma-functions}
+Gamma function satisfies the following relatioin,
+\begin{gather}
+\begin{split}\Gamma(z+1) = z\Gamma(z) .\end{split}\notag
+\end{gather}
+For some cases, it can also be written as
+\begin{gather}
+\begin{split}\Gamma(n) = \int_0^\infty dt t^{n-1} e^{-t} .\end{split}\notag
+\end{gather}
+One can prove that
+\begin{gather}
+\begin{split}\Gamma(z)\Gamma(1-z) = \frac{\pi}{\sin(\pi z)} .\end{split}\notag
+\end{gather}
+
+\subsection{Legendre Polynomials}
+\label{special-functions:legendre-polynomials}
+Legendre polynomials are solutions to Legendre equation, which is
+\begin{gather}
+\begin{split}\left(\frac{d}{dx}\left[(1-x^2)\frac{d}{dx}\right] + n(n+1)\right) P_n(x) = 0.\end{split}\notag
+\end{gather}
+Legendre polynomials has many different representations.
+
+\textbf{Integral}
+\begin{gather}
+\begin{split}P_n(z) = \frac{1}{2\pi i} \oint (1 - 2 t z + t^2)^{1/2} t^{-n-1} dt.\end{split}\notag
+\end{gather}
+\textbf{Rodrigues representation}
+\begin{gather}
+\begin{split}P_n(z) = \frac{1}{2^l l!} \frac{d^l}{d x^l} (x^2 - 1)^l .\end{split}\notag
+\end{gather}
+It's generation function is
+\begin{gather}
+\begin{split}\frac{1}{\sqrt{1 + \eta^2 - 2 \eta x }} = \sum_{k=0}^\infty \eta^k P_k(x) .\end{split}\notag
+\end{gather}
+\begin{notice}{note}{Properties}
+\begin{quote}
+
+\textbf{Orthogonality}
+\begin{gather}
+\begin{split}\int_{-1}^1 P_m(x) P_n(x) dx =  \frac{2}{2n + 1}\delta_{mn} .\end{split}\notag
+\end{gather}
+They all have value 1 at \(z=1\).
+
+The parity is alternating.
+
+\textbf{Examples}
+\begin{gather}
+\begin{split}P_0(x) & = 1 \\
+P_1(x) & = x \\
+P_2(x) & = \frac{1}{2}(3x^2-1).\end{split}\notag
+\end{gather}
+Through these, we can solve out
+\begin{gather}
+\begin{split}x &= P_1(x) \\
+x^2 &= \frac{1}{3}(P_0(x) + 2 P_2(x) ).\end{split}\notag
+\end{gather}
+Notice that they have physics meanings although it's better to understand it together with spherical harmonics.
+\end{quote}
+\end{notice}
+
+
+\subsection{Associated Legendre Polynomials}
+\label{special-functions:associated-legendre-polynomials}
+The associated Legendre equation is
+\begin{gather}
+\begin{split}\left(\frac{d}{dx}\left[(1-x^2)\frac{d}{dx}\right] + n(n+1) - \frac{m^2}{1-x^2} \right) P_n(x) = 0.\end{split}\notag
+\end{gather}
+The solution to this equation is Associated Legendre polynomial, which can be represented by
+\begin{gather}
+\begin{split}P_n^{\nu}(x) = (-1)^m(1-x^2)^{m/2} \frac{d^m}{dx^m} P_l(x) .\end{split}\notag
+\end{gather}
+
+\subsection{Bessel Functions}
+\label{special-functions:bessel-functions}
+Bessel functions are solutions to Bessel equation,
+\begin{gather}
+\begin{split}\left( x \frac{d}{dx} x \frac{d}{dx} + x^2 - \nu^2 \right) J_{\nu} (x) = 0.\end{split}\notag
+\end{gather}
+They all satisfy these recurrence relations,
+\begin{gather}
+\begin{split}Z_{n+1} + Z_{n-1} &= \frac{2n}{x} Z_n  \\
+Z_{n-1} - Z_{n+1} & = 2 \frac{d}{dx}Z_n .\end{split}\notag
+\end{gather}
+
+\subsubsection{Bessel Function of the first kind}
+\label{special-functions:bessel-function-of-the-first-kind}
+Use notation \(J_n(x)\) for the first kind.
+
+\textbf{Generating function} is
+\begin{gather}
+\begin{split}e^{\frac{z}{2}\left(t-\frac{1}{t}\right)} = \sum_{n=-\infty}{infty} t^n J_n(z) .\end{split}\notag
+\end{gather}
+\textbf{Integral representation}
+\begin{gather}
+\begin{split}J_n(z) = \frac{1}{2\pi} \int_{-\pi}^{\pi} e^{i(n\tau - x \sin \tau)} d\tau .\end{split}\notag
+\end{gather}
+It also has a \textbf{summation representation},
+\begin{gather}
+\begin{split}J_\alpha(z) = \sum_{m=0}^\infty \frac{(-1)^m}{m!\Gamma(m+\alpha +1)}  \left( \frac{x}{2} \right)^{2m+\alpha} .\end{split}\notag
+\end{gather}
+At large \(\vert x \vert\) limits, we have
+\begin{gather}
+\begin{split}\lim_{\vert x\vert \to \infty} J_l(x) &= \frac{\sin(z-l\frac{\pi}{2})}{x} \\
+\lim_{\vert x\vert \to \infty} J_l'(x) &= \frac{\cos(z-l\frac{\pi}{2})}{x} .\end{split}\notag
+\end{gather}
+By playing with the recurrence relation,
+\begin{gather}
+\begin{split}2J_n' &= J_{n-1} - J_{n+1} \\
+2n J_n & = J_{n+1} + J_{n-1},\end{split}\notag
+\end{gather}
+we can get two more useful relations,
+\begin{gather}
+\begin{split}\frac{d}{dz} (z^n J_n) & = z^n J_{n-1} \\
+\frac{d}{dz} (z^{-n} J_{n}) & = - z^{-n} J_{n+1} .\end{split}\notag
+\end{gather}
+They are very useful when integrating by part.
+
+
+\subsubsection{Graphics and Properties}
+\label{special-functions:graphics-and-properties}\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{BesselZeros.png}
+\caption{The first 10 zeros of Bessel functions from order 0 to 4.}\end{figure}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{sphericalBesselZeros.png}
+\caption{The first 10 zeros of spherical Bessel functions from order 0 to 4.}\end{figure}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{besselZerosListPlt.png}
+\caption{Bessel function zeros in a list plot. Horizontal axis is nth zero point, while vertical axis is the value.}\end{figure}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{sphbesselZerosListPlt.png}
+\caption{Spherical Bessel function zeros.}\end{figure}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{besselZerosDifferencePlt.png}
+\caption{The difference between zeros of Bessel functions. They are almost the same, which a around Pi.}\end{figure}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{sphbesselZerosDifferencePlt.png}
+\caption{Spherical Bessel function zeros differences.}\end{figure}
+
+
+\subsection{Refs \& Notes}
+\label{special-functions:refs-notes}
+
+\section{Equation Solving}
+\label{equation-solving::doc}\label{equation-solving:equation-solving}
+There are so many methods and techniques to solve an equation. Here we will review only some of them.
+
+
+\subsection{Ordinary Differential Equations}
+\label{equation-solving:ordinary-differential-equations}
+There are many important equations in physics.
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{2ndODEs.png}
+\caption{Taken from Riley's book.}\end{figure}
+
+The are many methods to solve an ODE,
+\begin{enumerate}
+\item {} 
+Green's function.
+
+\item {} 
+Series solution
+
+\item {} 
+Laplace transform
+
+\item {} 
+Fourier transform
+
+\end{enumerate}
+
+
+\subsubsection{Green's Function}
+\label{equation-solving:green-s-function}
+Suppose we have a differential operator \(L_x\), for example \(L_x\) can be \(L_x\equiv \frac{d^2}{dx^2}+1\). The definition of GF is
+\begin{gather}
+\begin{split}L_x G(x,z) = \delta(x-z).\end{split}\notag
+\end{gather}
+with the constrain of boundary condition of the ODE.
+
+In most cases, GF is a stepwised function.
+
+The application of GF to ODE follows the precedure,
+\begin{enumerate}
+\item {} 
+Find the general form of GF for operator \(L_x\);
+
+\item {} 
+Apply BC to GF;
+
+\item {} 
+Continuity at \(n-2\) order of derivatives at point \(x=z\), i.e., \(G^{(n-2)}(x,z)\vert_{x<z} = G^{(n-2)}(x,z)\vert_{x>z}\) at \(x=z\);
+
+\item {} 
+Discontinuity of the first order derivative at \(x=z\), i.e., \(G^{(n-1)}(x,z)\vert_{x>z} - G^{(n-1)}(x,z)\vert_{x<z} = 1\) at point \(x=z\);
+
+\item {} 
+Solve the coefficients to get the GF;
+
+\item {} 
+The solution to an inhomogeneous ODE \(L_x y(x) = f(x)\) is given immediately by
+\begin{gather}
+\begin{split}y(x) = \int_{Lower}^{Upper} G(x,z) f(z) dz\end{split}\notag
+\end{gather}
+\end{enumerate}
+
+\begin{notice}{note}{An Example}
+
+Solve equation
+\begin{gather}
+\begin{split}y'' + \frac{1}{4}y = f(x).\end{split}\notag
+\end{gather}
+\{bf Green's Function \}
+
+The operator is \(\hat L = \partial^2 + 1/4\) with boundary condition \(y(0)=y(\pi)=0\) .
+
+First step is to find the Green's function of this operator, which is defined as the solution to
+\begin{gather}
+\begin{split}\hat L G(x,x') = \delta(x-x'),\end{split}\notag
+\end{gather}
+where \(\hat L\) only operates on \(x\) not \(x'\).
+
+The general solutions for \(\hat L G(x,x')=0\) is
+\begin{gather}
+\begin{split}G(x,x') = A\cos(x/2) + B \sin(x/2).\end{split}\notag
+\end{gather}
+Applying the BC, we reach a step function expression for \(G(x,x')\),
+\begin{gather}
+\begin{split}G(x,x') &=    B\sin(x/2) , \text{if} 0\leq x \lt x' , \\
+&=A\cos(x/2) , \text{if} x'\lt x \leq \pi .\end{split}\notag
+\end{gather}
+\{bf Continuity and Discontinuity \}
+
+It is required by the equation for Green's function that,
+\begin{gather}
+\begin{split}G(x',x') = A \sin(x'/2) = B \cos(x'/2),\end{split}\notag
+\end{gather}
+and
+\begin{gather}
+\begin{split}\frac{d G}{d x}\vert_{x'+} - \frac{dG}{dx}\vert_{x'-} = 1 .\end{split}\notag
+\end{gather}
+Put the expressions for Green's function in, we can solve the coefficients,
+\begin{gather}
+\begin{split}G(x,x') &=  -2 \cos(x'/2)\sin(x/2) , \text{if} 0\leq x \lt x' ,\\
+&= -2 \sin(x'/2)\cos(x/2) , \text{if} x' \lt x \leq \pi .\end{split}\notag
+\end{gather}
+In one line this can be written as,
+\begin{gather}
+\begin{split}G(x,x') = -2 \sin(x_</2)\cos(x_>/2) .\end{split}\notag
+\end{gather}
+The final step is to find the solution to original equaion, which is straightforward.
+\end{notice}
+
+
+\subsubsection{Series Solution}
+\label{equation-solving:series-solution}
+A second order ODE,
+\begin{gather}
+\begin{split}y''(x)+p(x) y'(x) + q(x)y(x)=0\end{split}\notag
+\end{gather}
+Wronskian of this is
+\begin{gather}
+\begin{split}W(x) = \begin{vmatrix} y_1 & y_2 \\ y_1' & y_2' \end{vmatrix},\end{split}\notag
+\end{gather}
+where \(y_1\) and \(y_2\) are linearly independent solutions, i.e., \(c_1 y_1 + c_2 y_2=0\) is only satisfied when \(c_1=c_2=0\). \textbf{Wronskian is NOT zero if they are linearly independent.}
+
+Singularities of an ODE is are defined when \(p(x)\) or \(q(x)\) or both of them have singular points. For example, Legendre equation
+\begin{gather}
+\begin{split}(1-z^2) y'' - 2 z y' + l(l+1) y = 0\end{split}\notag
+\end{gather}
+has three singular points which are \(z=\pm 1, \infty\) while \(z=0\) is an ordinary point.
+
+
+\paragraph{Solution at Ordinary Points}
+\label{equation-solving:solution-at-ordinary-points}
+Series expansion of the solution can be as simple as
+\begin{gather}
+\begin{split}y(z) = \sum_{n=0}^{\infty} a_n z^n,\end{split}\notag
+\end{gather}
+which converges in a radius \(R\) where \(R\) is the distance from \(z=0\) to the nearest singular point of our ODE.
+
+
+\paragraph{Solution at Regular Singular Points}
+\label{equation-solving:solution-at-regular-singular-points}
+Frobenius series of the solution
+\begin{gather}
+\begin{split}y(z) = z^\sigma \sum_{n=0}^{\infty} a_n z^n.\end{split}\notag
+\end{gather}
+The next task is to find the indicial equation.
+
+If the roots are not differing by an integer, we just plug the two solutions to \(\sigma\) in and find two solutions independently.
+
+If the roots differ by an integer, on the other side, we can only plug in the \textbf{larger} root and find one solution. As for the second solution, we need some other techniques, such as Wronskian method and derivative method.
+
+\textbf{Wronskian method} requires two expression of Wronskian, which are
+\begin{gather}
+\begin{split}W(x) = \begin{vmatrix} y_1 & y_2 \\ y_1' & y_2' \end{vmatrix} ,\end{split}\notag
+\end{gather}
+and
+\begin{gather}
+\begin{split}W(z) = C e^{-\int^z p(u) \mathrm du}.\end{split}\notag
+\end{gather}
+From the first expression, we have
+\begin{gather}
+\begin{split}y_2(z) = y_1(z) \int^z \frac{W(u)}{y_1(u)^2} \mathrm d u.\end{split}\notag
+\end{gather}
+However, we don't know \(W(z)\) at this point. We should apply the second expression of Wronskian,
+\begin{gather}
+\begin{split}y_2(z) = y_1(z) \int^z \frac{C e^{-\int^z p(u) \mathrm du}}{y_1(u)^2} \mathrm d u,\end{split}\notag
+\end{gather}
+where the constant \(C\) can be set to 1 as one wish.
+
+\begin{notice}{note}{TO DO}
+
+The \textbf{derivative method} is on my to do list.
+\end{notice}
+
+
+\subsubsection{Comparing With A General Form}
+\label{equation-solving:comparing-with-a-general-form}
+For equation that take the following form,
+\begin{gather}
+\begin{split}y'' + \frac{1 - 2a}{x} y' + \left( (b c x^{c-1})^2 + \frac{a^2 - p^2 c^2}{x^2} \right) y = 0,\end{split}\notag
+\end{gather}
+where \(y\equiv y(x)\), we can write down the solutions immediately,
+\begin{gather}
+\begin{split}y(x) = x^a \mathscr {Z}_p (b x^c),\end{split}\notag
+\end{gather}
+in which \(\mathscr {Z}_p\) is the solution to Bessel equation, i.e., is one kind of Bessel function with index \(p\).
+
+\begin{notice}{note}{A Pendulum With A Uniformly Chaning String Length}
+\begin{quote}
+
+As an example, let's consider the case of length changing pendulum,
+\begin{gather}
+\begin{split}\frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.\end{split}\notag
+\end{gather}
+Notice that l is a function of time and
+\begin{gather}
+\begin{split}l = l_0 + v t.\end{split}\notag
+\end{gather}
+Then the equation can be rewritten as
+\begin{gather}
+\begin{split}\frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0.\end{split}\notag
+\end{gather}
+Comparing with the general form, we have one of the possible solutions
+\begin{gather}
+\begin{split}a & = -1/2, \\
+pc & = 1/2, \\
+c & = 1/2, \\
+p & = 1, \\
+b & = 2\sqrt{g}/v.\end{split}\notag
+\end{gather}
+This solution should be
+\begin{gather}
+\begin{split}\theta  &=  l^a \mathscr{Z}_p(b l^c) \\
+& = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).\end{split}\notag
+\end{gather}\end{quote}
+\end{notice}
+
+\begin{notice}{note}{Airy Equatioin}
+\begin{quote}
+
+Time-independent Schrödinger equation with a simple potential,
+\begin{gather}
+\begin{split}\ddot{\Psi} + \alpha x \Psi  = 0.\end{split}\notag
+\end{gather}
+Comparing it with general form, we should set
+\begin{gather}
+\begin{split}a & = 1/2, \\
+\lvert p c \rvert & = 1/2, \\
+c & = 3/2, \\
+b^2 c^2 & = \alpha^2.\end{split}\notag
+\end{gather}
+So the two possible solutions are
+\begin{gather}
+\begin{split}\Psi_1(x) & = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
+\Psi_2(x) & = \sqrt{x} \mathscr{Z}_{-1/3}(2/3 \alpha x^{3/2}).\end{split}\notag
+\end{gather}
+The general solution is
+\begin{gather}
+\begin{split}\Psi(x) = a \Psi_1(x) + b \Psi_2(x).\end{split}\notag
+\end{gather}\end{quote}
+\end{notice}
+
+
+\subsubsection{Second Order Differential Equations and Gauss' Equation}
+\label{equation-solving:second-order-differential-equations-and-gauss-equation}
+Gauss' equation has the form
+\begin{gather}
+\begin{split}z(z-1)\frac{d^2}{dz^2} u(z) + \left[(a+b+1)z -c \right] \frac{d}{dz} u(z) + a b u(z) =0,\end{split}\notag
+\end{gather}
+which has a solution of the hypergeometric function form
+\begin{gather}
+\begin{split}u(z) = {}_2 F_{1}(a,b;c;z).\end{split}\notag
+\end{gather}
+The interesting this about this equation is that its Paperitz symbol is
+\begin{gather}
+\begin{split}\begin{amatrix}{3}
+0 & 1 & \infty &  \\  0 & 0 & a & z \\ 1-c & c-a-b & b &
+ \end{amatrix} ,\end{split}\notag
+\end{gather}
+in which the first three columns are the singularities at points \(0,1,\infty\) while the last column just points out that the argument of this equation is \(z\).
+
+This means, in some sense, the solution to any equation with three singularities can be directly written down by comparing the equation with Gauss' equation. If you care, the actual steps are changing variables, rewriting the equation into Gauss' equation form, writing down the solutions.
+
+
+\subsection{Integral Equations}
+\label{equation-solving:integral-equations}
+
+\subsubsection{Neumann Series AKA WKB}
+\label{equation-solving:neumann-series-aka-wkb}
+For differential equation, whenever the highest derivative is multiplied by a small parameter, try this. But generally, the formalism is the following.
+
+First of all, we use Hilbert space \(\mathscr L[a,b;w]\) which means the space is defined on \([a,b]\) with a weight \(w\), i.e.,
+\begin{gather}
+\begin{split}\braket{f}{g} = \int_a^b dx w(x) f(x) g(x).\end{split}\notag
+\end{gather}
+\begin{notice}{note}{Quantum Mechanics Books}
+
+\textbf{Notice that this is very different from the notation we used in most QM books.}
+
+What is the catch? Try to write down \(\braket{x}{u}\). It's not that different because one can alway go back to the QM notation anyway.
+\end{notice}
+
+With the help of Hilbert space, one can alway write down the vector form of some operators. Suppose we have an equation
+\begin{gather}
+\begin{split}\hat L u(x) = f(x),\end{split}\notag
+\end{gather}
+where \(\hat L=\hat I + \hat M\). So the solution is simply
+\begin{gather}
+\begin{split}u(x) &= {\hat L}^{-1} f(x)\\
+&=(\hat I + \hat M)^{-1} f(x) .\end{split}\notag
+\end{gather}
+However, it's not a solution until we find the inverse. A most general approach is the Neumann series method. We require that
+\begin{gather}
+\begin{split}\| \hat M u \| < \gamma \| u \|,\end{split}\notag
+\end{gather}
+where \(\gamma\in (0,1)\) and should be independent of \(x\).
+
+As long as this is satisfied, the equation can be solved using Neumann series, which is an iteration method with
+\begin{gather}
+\begin{split}u(x)&=u_0(x)+ \delta u_1(x) + \delta^2 u_2(x) +\cdots \\
+u_0(x) & = f(x).\end{split}\notag
+\end{gather}
+As an example, we can solve this equation
+\begin{gather}
+\begin{split}(\hat I + \ket{t}\bra{\lambda}) u(t) = f(t).\end{split}\notag
+\end{gather}
+We define \(\hat M = \ket{t}\bra{\lambda}\) and check the convergence condition for \(\lambda\).
+
+Step one is always checking condition of convergence.
+
+Step two is to write down the series and zeroth order. Then we reach the key point. The iteration relation is
+\begin{gather}
+\begin{split}u_n(t) + \int_0^1 ds su_{n-1}(s) = 0.\end{split}\notag
+\end{gather}
+One can write down \(u_1\) imediately
+\begin{gather}
+\begin{split}u_1(t) = -\int_0^1 ds s u_0(s).\end{split}\notag
+\end{gather}
+Keep on going.
+
+
+\subsubsection{Using Dyads in Vector Space}
+\label{equation-solving:using-dyads-in-vector-space}
+For the same example,
+\begin{gather}
+\begin{split}\hat L u(x) = f(x),\end{split}\notag
+\end{gather}
+where \(\hat L=\hat I + \hat M\), we can solve it using vector space because if operator is linear.
+
+Suppose we have a \(\hat M=\ket{a}\bra{b}\), the equation, in some Hilbert space, is
+\begin{gather}
+\begin{split}\ket{u} + \ket{a}\braket{b}{u} = \ket{f}.\end{split}\notag
+\end{gather}
+Multiplying through by \(\bra{b}\), we have
+\begin{gather}
+\begin{split}\braket{b}{u} + \braket{b}{a}\braket{b}{u} = \braket{b}{f},\end{split}\notag
+\end{gather}
+which reduces to a linear equation. We only need to solve out \(\braket{b}{u}\) then plug it back into the original equation.
 
 
 \chapter{Fundamental Physics}
@@ -580,84 +1512,84 @@ When the highest derivative is multiplied by a small parameter, try this.
 \label{ClassicalMechanics:oscillators}
 In general, the Lagragian for a system with n general coordinates can be
 \begin{gather}
-\begin{split}L = \frac{1}{2} m _ {jk} \dot q_j \dot q_k - V(q_1, \cdots, q_n)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}L = \frac{1}{2} m _ {jk} \dot q_j \dot q_k - V(q_1, \cdots, q_n)\end{split}\notag
 \end{gather}
 To write down equation of motion, we need the following terms,
 \begin{gather}
 \begin{split}\frac{\partial L}{\partial \dot q_j} = m_{jk} \dot q_k
-\frac{\partial L}{\partial q_j} = \frac{1}{2} \frac{\partial m_{kl}}{\partial q_j} \dot q_k \dot q_l - \frac{\partial V}{\partial q_j}\end{split}\notag\\\begin{split}\end{split}\notag
+\frac{\partial L}{\partial q_j} = \frac{1}{2} \frac{\partial m_{kl}}{\partial q_j} \dot q_k \dot q_l - \frac{\partial V}{\partial q_j}\end{split}\notag
 \end{gather}
 Then equation of motion is
 \begin{gather}
-\begin{split}m_{jk} \ddot q_{k} + \frac{\partial m_{jk}}{\partial q_l} \dot q_k \dot q_l - \frac{1}{2} \frac{\partial m_{kl}}{\partial q_j} \dot q_k \dot q_l = - \frac{\partial V}{\partial q_j}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}m_{jk} \ddot q_{k} + \frac{\partial m_{jk}}{\partial q_l} \dot q_k \dot q_l - \frac{1}{2} \frac{\partial m_{kl}}{\partial q_j} \dot q_k \dot q_l = - \frac{\partial V}{\partial q_j}\end{split}\notag
 \end{gather}
 Generally, we can't solve this system. But there is an interesting limit. The system may have equilibrium points. We can study systems oscillating around equilibrium points.
 
-At equilibrium, the system can stay steady, i.e., $\dot q_j^0 = 0$. This gives us
+At equilibrium, the system can stay steady, i.e., \(\dot q_j^0 = 0\). This gives us
 \begin{gather}
-\begin{split}\frac{\partial V}{\partial q_j} = 0 ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\partial V}{\partial q_j} = 0 ,\end{split}\notag
 \end{gather}
 for all j.
 
 Now for small deviations, we can expand the system around equilibrium points.
 \begin{gather}
-\begin{split}q_j = q_j^0 + \eta _j\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}q_j = q_j^0 + \eta _j\end{split}\notag
 \end{gather}
 Then
 \begin{gather}
-\begin{split}T = \frac{1}{2} m_{jk} \vert _ 0 \dot \eta _ j \dot \eta_k \equiv \frac{1}{2} T_{jk} \dot \eta _ j \dot \eta _k\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}T = \frac{1}{2} m_{jk} \vert _ 0 \dot \eta _ j \dot \eta_k \equiv \frac{1}{2} T_{jk} \dot \eta _ j \dot \eta _k\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}V = V\vert _0 + \frac{\partial V}{\partial q_j}\vert _ 0 \eta_j + \frac{1}{2} \frac{\partial ^ 2 V}{\partial q_j \partial q_k} \vert _ 0 \eta _ j \eta _ k + \cdots \equiv \frac{1}{2} V_{jk}\eta _ j\eta _ k\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}V = V\vert _0 + \frac{\partial V}{\partial q_j}\vert _ 0 \eta_j + \frac{1}{2} \frac{\partial ^ 2 V}{\partial q_j \partial q_k} \vert _ 0 \eta _ j \eta _ k + \cdots \equiv \frac{1}{2} V_{jk}\eta _ j\eta _ k\end{split}\notag
 \end{gather}
 So we have the Lagrangian for small oscillations,
 \begin{gather}
-\begin{split}L = \frac{1}{2} T _ {jk} \dot \eta_j \dot \eta_k - \frac{1}{2} V_{jk}\eta_j \eta_k\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}L = \frac{1}{2} T _ {jk} \dot \eta_j \dot \eta_k - \frac{1}{2} V_{jk}\eta_j \eta_k\end{split}\notag
 \end{gather}
 Typing indices using LaTeX is so annoying. So we'll use matrix notations and Lagragian becomes
 \begin{gather}
-\begin{split}L = \frac{1}{2} \dot {\tilde \eta} T \dot \eta - \frac{1}{2} \tilde \eta V \eta ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}L = \frac{1}{2} \dot {\tilde \eta} T \dot \eta - \frac{1}{2} \tilde \eta V \eta ,\end{split}\notag
 \end{gather}
-in which $T$ and $V$ matrices are n by n real and symmetric.
+in which \(T\) and \(V\) matrices are n by n real and symmetric.
 
 (We need to diagonalize T and V. First question comes to us is:
 
 ** Is is possible to diagonalize both T and V at the same time? **
 
-We can have a look at the surface $\tilde p T p = C$, which is a elliptical surface with coordinates $p$.)
+We can have a look at the surface \(\tilde p T p = C\), which is a elliptical surface with coordinates \(p\).)
 
 Use the following transformation
 \begin{gather}
-\begin{split}\xi = T^{1/2}\eta\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\xi = T^{1/2}\eta\end{split}\notag
 \end{gather}
 Then transpose
 \begin{gather}
-\begin{split}\tilde \xi = \tilde \eta T^{1/2}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\tilde \xi = \tilde \eta T^{1/2}\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\dot{\tilde \xi} \dot \xi = \dot {\tilde \eta} T \dot \eta\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\dot{\tilde \xi} \dot \xi = \dot {\tilde \eta} T \dot \eta\end{split}\notag
 \end{gather}
 So we have the new Lagragian
 \begin{gather}
-\begin{split}L = \frac{1}{2} \dot{\tilde \xi} \dot \xi - \frac{1}{2} \tilde \xi T^{-1/2} V T^{-1/2} \xi\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}L = \frac{1}{2} \dot{\tilde \xi} \dot \xi - \frac{1}{2} \tilde \xi T^{-1/2} V T^{-1/2} \xi\end{split}\notag
 \end{gather}
-Define $T^{-1/2} V T^{-1/2} \equiv V'$.
+Define \(T^{-1/2} V T^{-1/2} \equiv V'\).
 
 Next we need to diagonalize V' by using its eigen vectors.
 \begin{gather}
-\begin{split}V' b = \lambda b\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}V' b = \lambda b\end{split}\notag
 \end{gather}
 is equivalent to
 \begin{gather}
-\begin{split}V a = \lambda T a\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}V a = \lambda T a\end{split}\notag
 \end{gather}
-with $b = T^{1/2} a$. So we have
+with \(b = T^{1/2} a\). So we have
 \begin{gather}
-\begin{split}\det(V' - \lambda \mathbf I) = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\det(V' - \lambda \mathbf I) = 0\end{split}\notag
 \end{gather}
 is same as
 \begin{gather}
-\begin{split}\det(V - \lambda T) = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\det(V - \lambda T) = 0\end{split}\notag
 \end{gather}
-in which $\lambda$ is the eigen value of this function.
+in which \(\lambda\) is the eigen value of this function.
 
 
 \subsection{Hamiltonian Dynamics}
@@ -666,13 +1598,13 @@ Phase space
 
 
 \section{Quantum Mechanics}
-\label{QuantumMechanics:quantum-mechanics}\label{QuantumMechanics::doc}
+\label{Quantum/QuantumMechanics:quantum-mechanics}\label{Quantum/QuantumMechanics::doc}
 
 \subsection{Quantum Mechanics Framework}
-\label{QuantumMechanics:quantum-mechanics-framework}
+\label{Quantum/QuantumMechanics:quantum-mechanics-framework}
 
 \subsubsection{What're the most important tricks in QM calculations?}
-\label{QuantumMechanics:what-re-the-most-important-tricks-in-qm-calculations}\begin{itemize}
+\label{Quantum/QuantumMechanics:what-re-the-most-important-tricks-in-qm-calculations}\begin{itemize}
 \item {} 
 \textbf{Remember what basis we are working in}
 
@@ -683,25 +1615,25 @@ Phase space
 
 
 \subsubsection{First Three Postulates}
-\label{QuantumMechanics:first-three-postulates}\begin{itemize}
+\label{Quantum/QuantumMechanics:first-three-postulates}\begin{itemize}
 \item {} 
-Physical state is described by kets in a Hilbert space. We need to specify a complete basis \{$\ket{i}$\} to do calculations.
+Physical state is described by kets in a Hilbert space. We need to specify a complete basis \{\(\ket{i}\)\} to do calculations.
 \begin{gather}
-\begin{split}\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}\end{split}\notag
 \end{gather}
 \item {} 
-Operators are given by Hermitian operators; A measurement of the variable $\hat \Omega$ will yield one of the eigenvalues $\omega$ with the probability
+Operators are given by Hermitian operators; A measurement of the variable \(\hat \Omega\) will yield one of the eigenvalues \(\omega\) with the probability
 \begin{gather}
-\begin{split}\left|\braket{\omega}{\psi}\right|^2 .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left|\braket{\omega}{\psi}\right|^2 .\end{split}\notag
 \end{gather}
-And the state of the system will change to $\ket{\omega}$.
+And the state of the system will change to \(\ket{\omega}\).
 
 \item {} 
 The state vector obeys the Schrödinger equation,
 \begin{gather}
-\begin{split}i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} ,\end{split}\notag
 \end{gather}
-where $\hat H$ is the Hamiltonian operator.
+where \(\hat H\) is the Hamiltonian operator.
 \begin{quote}
 
 The logic here is that we first find the way to describe a system, then think about how to find out the information we need from the state vector and also find the evolution of the state vector. Then we need the operator and Schrodinger equation. Finally, we would like to relate the theory to experiments, and it comes the measurement postulate.
@@ -713,7 +1645,7 @@ Later we will need the relation between position and momentum, which becomes the
 How to solve the evolution of a system?
 We just define a magical operator, propagator
 \begin{gather}
-\begin{split}\hat U \ket{\psi(t_0)} = \ket{\psi(t)} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat U \ket{\psi(t_0)} = \ket{\psi(t)} .\end{split}\notag
 \end{gather}
 This operator just gives us the evolution of state vector! Wait, can we write down the explicit expression of it?
 
@@ -721,23 +1653,23 @@ Let's find out. The only thing we know about the evolution of a state vector is 
 \begin{gather}
 \begin{split}i\hbar \frac{\d }{\d t}\ket{\psi(t)} & =  \hat H \ket{\psi(t)} \\
 i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} & =  \hat H \hat U \ket{\psi(t_0)} \\
-i\hbar \frac{\d }{\d t}\hat U & =  \hat H \hat U\end{split}\notag\\\begin{split}\end{split}\notag
+i\hbar \frac{\d }{\d t}\hat U & =  \hat H \hat U\end{split}\notag
 \end{gather}
 Looks familiar? This just gives us a exponential result, \textbf{if the Hamiltonian is time independent}.
 \begin{gather}
-\begin{split}\hat U = e^{- i \hat H (t-t_0)/\hbar}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat U = e^{- i \hat H (t-t_0)/\hbar}\end{split}\notag
 \end{gather}
-\textbf{We can prove that this operator is Unitary because} $\hat H$ \textbf{is Hermitian.}
+\textbf{We can prove that this operator is Unitary because} \(\hat H\) \textbf{is Hermitian.}
 
-This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, \{ $\ket{\epsilon_i}$ \},
+This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, \{ \(\ket{\epsilon_i}\) \},
 \begin{gather}
 \begin{split}\hat U \ket{\phi} & =  e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   \\
 \hat U \ket{\phi} & =  \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}  \\
-      \hat U \ket{\phi} & =  \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}\end{split}\notag\\\begin{split}\end{split}\notag
+      \hat U \ket{\phi} & =  \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}\end{split}\notag
 \end{gather}
 And we are going to use
 \begin{gather}
-\begin{split}\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}\end{split}\notag
 \end{gather}
 from now on. (Well, only on discrete eigenvalues ones.)
 
@@ -747,7 +1679,7 @@ from now on. (Well, only on discrete eigenvalues ones.)
 
 
 \subsubsection{Position and Momentum Space}
-\label{QuantumMechanics:position-and-momentum-space}
+\label{Quantum/QuantumMechanics:position-and-momentum-space}
 Summarize here.
 
 
@@ -757,10 +1689,10 @@ Summarize here.
 \item {} \begin{description}
 \item[{Position}] \leavevmode\begin{enumerate}
 \item {} 
-Define \{$\ket{x}$\} basis.
+Define \{\(\ket{x}\)\} basis.
 
 \item {} 
-Define $\hat x$ operator.
+Define \(\hat x\) operator.
 
 \item {} 
 Find wave function in this basis.
@@ -775,7 +1707,7 @@ Find measurement.
 \item {} \begin{description}
 \item[{Evolution}] \leavevmode\begin{enumerate}
 \item {} 
-Need propagator $\hat U$.
+Need propagator \(\hat U\).
 
 \item {} 
 Propagator needs the solution of Hamiltonian eigensystem.
@@ -813,25 +1745,21 @@ Find eigenstates.
 
 
 \paragraph{Position Space}
-\label{QuantumMechanics:position-space}\begin{enumerate}
+\label{Quantum/QuantumMechanics:position-space}\begin{enumerate}
 \item {} 
-Define $\ket{x}$ basis.
+Define \(\ket{x}\) basis.
 \begin{quote}
 \begin{itemize}
 \item {} 
 Orthonormal:
-\begin{gather}
-\begin{split}\end{split}\notag
-\end{gather}
+
 \end{itemize}
 
 braket\{x\}\{x'\}=delta(x-x')
 \begin{itemize}
 \item {} 
 Complete:
-\begin{gather}
-\begin{split}\end{split}\notag
-\end{gather}
+
 \end{itemize}
 
 int braket\{x'\}\{x'\} d x' = mathbb\{I\}
@@ -840,48 +1768,48 @@ int braket\{x'\}\{x'\} d x' = mathbb\{I\}
 \item {} 
 Define position operator.
 \begin{gather}
-\begin{split}\hat x \ket{x} = x \ket{x}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat x \ket{x} = x \ket{x}\end{split}\notag
 \end{gather}
-And in \{$\ket{x}$\} basis, this operator becomes a function, which is
+And in \{\(\ket{x}\)\} basis, this operator becomes a function, which is
 \begin{gather}
 \begin{split}&\bra{x}\hat x \ket{x'}  \\
 &= \left(\bra{x}\hat x\right)\ket{x'} \\
 &= x \braket{x}{x'} \\
-&= x \delta(x-x')\end{split}\notag\\\begin{split}\end{split}\notag
+&= x \delta(x-x')\end{split}\notag
 \end{gather}
 \item {} 
-Find state vector in \{$\ket{x}$\} basis.
+Find state vector in \{\(\ket{x}\)\} basis.
 \begin{gather}
-\begin{split}\psi(t,x) = \braket{x}{\psi(t)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\psi(t,x) = \braket{x}{\psi(t)}\end{split}\notag
 \end{gather}\begin{itemize}
 \item {} 
 Normalized:
 
 \end{itemize}
 \begin{gather}
-\begin{split}\int \left| \psi(t,x) \right|^2 \d x = 1.\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\int \left| \psi(t,x) \right|^2 \d x = 1.\end{split}\notag
 \end{gather}
-And we are interpreting $\left| \psi(t, x)\right|^2$ as probability density.
+And we are interpreting \(\left| \psi(t, x)\right|^2\) as probability density.
 
 \item {} 
-Calculate probability of a measurement. Taking $\hat x$ as an example.
+Calculate probability of a measurement. Taking \(\hat x\) as an example.
 \begin{gather}
 \begin{split}&\bra{\psi} \hat x \ket{\psi} \\
 &= \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\
 &= \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
-&= \int \left| \psi(t,x) \right|^2 x \d x\end{split}\notag\\\begin{split}\end{split}\notag
+&= \int \left| \psi(t,x) \right|^2 x \d x\end{split}\notag
 \end{gather}
 \end{enumerate}
 
 
 \paragraph{Momentum Space}
-\label{QuantumMechanics:momentum-space}
+\label{Quantum/QuantumMechanics:momentum-space}
 To find the momentum operator, we need to check the relation between momentum and position before we just randomly define one. Truth is, we have a fourth postulate states the relation between them.
 
 
 \subparagraph{Postulate IV}
-\label{QuantumMechanics:postulate-iv}
-The commutator of $\hat x$, $\hat p$ is
+\label{Quantum/QuantumMechanics:postulate-iv}
+The commutator of \(\hat x\), \(\hat p\) is
 \begin{gather}
 \begin{split}\left[ \hat x, \hat p \right] = i \hbar\end{split}\notag
 \end{gather}\begin{description}
@@ -890,7 +1818,7 @@ The commutator of $\hat x$, $\hat p$ is
 Why i ? Eigenvalue of Anti-Hermitian operator.
 
 \item {} 
-Why $\hbar$? Because people define the dimensions of position and momentum differently before they know this commutator. We would like to assign them the same dimension if we already know this relation.
+Why \(\hbar\)? Because people define the dimensions of position and momentum differently before they know this commutator. We would like to assign them the same dimension if we already know this relation.
 
 \end{itemize}
 
@@ -898,90 +1826,90 @@ Why $\hbar$? Because people define the dimensions of position and momentum diffe
 
 
 \subparagraph{Momentum Space}
-\label{QuantumMechanics:id1}\begin{enumerate}
+\label{Quantum/QuantumMechanics:id1}\begin{enumerate}
 \item {} 
-Find momentum operator in position basis \{$\ket{x}$\}.
+Find momentum operator in position basis \{\(\ket{x}\)\}.
 \begin{gather}
-\begin{split}\bra{x} \left[ \hat x, \hat p\right] \ket{x'} = i\hbar \delta(x-x')\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x} \left[ \hat x, \hat p\right] \ket{x'} = i\hbar \delta(x-x')\end{split}\notag
 \end{gather}
-And write out the commutator and use the relation of delta function $x\delta'(x) = -\delta(x)$, we find out the momentum operator in \{$\ket{x}$\} basis,
+And write out the commutator and use the relation of delta function \(x\delta'(x) = -\delta(x)\), we find out the momentum operator in \{\(\ket{x}\)\} basis,
 \begin{gather}
-\begin{split}\bra{x}\hat p \ket{x'} = -i\hbar \frac{\d }{\d t} \delta(x-x')\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x}\hat p \ket{x'} = -i\hbar \frac{\d }{\d t} \delta(x-x')\end{split}\notag
 \end{gather}
-\textbf{Let's talk physics.} What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in \{$\ket{x}$\} basis.
+\textbf{Let's talk physics.} What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in \{\(\ket{x}\)\} basis.
 \begin{gather}
 \begin{split}&\bra{x} \hat p \ket{\psi} \\
 & =  \iint \braket{x}{x'} \bra{x'} \hat p \ket{x''}\braket{x''}{\psi} \d x' \d x''  \\
 & =  \int \bra{x}\hat p \ket{x''}\psi(t,x'') \d x'' \\
 & =  \int \left( -i\hbar \frac{\d}{\d x} \delta(x-x') \psi(t,x') \right) \d x' \\
-& =  \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x'\end{split}\notag\\\begin{split}\end{split}\notag
+& =  \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x'\end{split}\notag
 \end{gather}
 \textbf{Integrate by parts, we will find the expression.} (I am having a problem finding the right answer.)
 \begin{gather}
-\begin{split}\bra{x} \hat p \ket{\psi} = - i\hbar \frac{\d }{\d x}\psi(x) .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x} \hat p \ket{\psi} = - i\hbar \frac{\d }{\d x}\psi(x) .\end{split}\notag
 \end{gather}
 \item {} 
 Eigenfunction for momentum.
 \begin{gather}
 \begin{split}\hat p \ket{p} = p \ket{p} .\end{split}\notag
 \end{gather}
-Again, we are going to project it on the \{$\ket{x}$\} basis,
+Again, we are going to project it on the \{\(\ket{x}\)\} basis,
 \begin{gather}
-\begin{split}\bra{x}\hat p\ket{p} = \bra{x} p \ket{p} ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x}\hat p\ket{p} = \bra{x} p \ket{p} ,\end{split}\notag
 \end{gather}
-where $\braket{x}{p}$ is the eigenstates in \{$\ket{x}$\} basis, we call it $\phi_p(x)$.
+where \(\braket{x}{p}\) is the eigenstates in \{\(\ket{x}\)\} basis, we call it \(\phi_p(x)\).
 \begin{gather}
 \begin{split}\bra{x}\hat p\ket{p} & =  p \phi_p(x)    \\
 \int \bra{x}\hat p \ket{x'}\braket{x'}{p}\d x' & =  p \phi_p(x)    \\
--i\hbar \frac{\d }{\d x} \phi_p(x) & =  p \phi_p(x)\end{split}\notag\\\begin{split}\end{split}\notag
+-i\hbar \frac{\d }{\d x} \phi_p(x) & =  p \phi_p(x)\end{split}\notag
 \end{gather}
 The solution is
 \begin{gather}
-\begin{split}\phi_p(x) = \mathrm{C} e^{i p x/\hbar}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\phi_p(x) = \mathrm{C} e^{i p x/\hbar}\end{split}\notag
 \end{gather}
 This constant C is found by the normalization condition,
 \begin{gather}
-\begin{split}\braket{p}{p'}=\int \phi_p^*(x)\phi_{p'}(x)\d x = \delta(p-p')\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\braket{p}{p'}=\int \phi_p^*(x)\phi_{p'}(x)\d x = \delta(p-p')\end{split}\notag
 \end{gather}
 \textbf{The final results should be}
 \begin{gather}
-\begin{split}\phi_p(x)=\frac{1}{\sqrt{2\pi \hbar}} \exp{(i p x/\hbar)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\phi_p(x)=\frac{1}{\sqrt{2\pi \hbar}} \exp{(i p x/\hbar)}\end{split}\notag
 \end{gather}
 \item {} 
 Find the dynamics of free particles in quantum mechanics.
 \textbf{Find the propagator and everything solves.}
 The hamiltonian for a free particle is
 \begin{gather}
-\begin{split}\hat H = \frac{\hat p^2}{2m} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H = \frac{\hat p^2}{2m} .\end{split}\notag
 \end{gather}
-We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are $p^2/2m$. So the propagator is
+We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are \(p^2/2m\). So the propagator is
 \begin{gather}
-\begin{split}\hat U = \int e^{-i p^2 t/2m\hbar} \ket{p}\bra{p} \d p\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat U = \int e^{-i p^2 t/2m\hbar} \ket{p}\bra{p} \d p\end{split}\notag
 \end{gather}
-But that is too abstract to use, we can find the expression in \{$\ket{x}$\} basis.
+But that is too abstract to use, we can find the expression in \{\(\ket{x}\)\} basis.
 \begin{gather}
 \begin{split}\bra{x}\hat U\ket{x} & =  \int e^{-i p^2 t/2 m \hbar} \braket{x}{p}\braket{p}{x} \d p    \\
-& =  \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p\end{split}\notag\\\begin{split}\end{split}\notag
+& =  \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p\end{split}\notag
 \end{gather}
 \end{enumerate}
 
 
 \subsection{Quantum in 1D}
-\label{QuantumMechanics:quantum-in-1d}
+\label{Quantum/QuantumMechanics:quantum-in-1d}
 
 \subsubsection{General}
-\label{QuantumMechanics:general}
+\label{Quantum/QuantumMechanics:general}
 Always start with the propagator for time independent Hamiltonian.
 \begin{gather}
-\begin{split}\ket{\psi(t)} = \hat U \ket{\psi(0)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi(t)} = \hat U \ket{\psi(0)}\end{split}\notag
 \end{gather}
 For cases that Hamiltonian with discrete eigenvalues,
 \begin{gather}
-\begin{split}\ket{\psi(t)} = \sum _ n e^{-i \epsilon _ n t/ \hbar } \ket{n}\braket{n}{\psi(0)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi(t)} = \sum _ n e^{-i \epsilon _ n t/ \hbar } \ket{n}\braket{n}{\psi(0)}\end{split}\notag
 \end{gather}
 If the initial state is just one of the eigenstates of Hamiltonian, say the mth one (normalized),
 \begin{gather}
-\begin{split}\ket{\psi(t)} = e^{- i \epsilon _ m t/\hbar} \ket{ m }\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi(t)} = e^{- i \epsilon _ m t/\hbar} \ket{ m }\end{split}\notag
 \end{gather}
 Well, that phase factor doesn't have any effect for the topic we discuss. So our time evolution will stay on the same state forever.
 
@@ -989,49 +1917,49 @@ The same thing happens for continuous cases.
 
 So our task is simplified to solve the eigensystem of Hamiltonian, which is
 \begin{gather}
-\begin{split}\hat H \ket{\epsilon} = \epsilon \ket{\epsilon}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H \ket{\epsilon} = \epsilon \ket{\epsilon}\end{split}\notag
 \end{gather}
 
 \paragraph{Infinite Barriers}
-\label{QuantumMechanics:infinite-barriers}
+\label{Quantum/QuantumMechanics:infinite-barriers}
 
 \subparagraph{Math}
-\label{QuantumMechanics:math}
+\label{Quantum/QuantumMechanics:math}
 
 \subparagraph{Setup}
-\label{QuantumMechanics:setup}\begin{itemize}
+\label{Quantum/QuantumMechanics:setup}\begin{itemize}
 \item {} 
 Potential in a box
 \begin{gather}
 \begin{split}V(x) = & 0,  0< x <L \\
- & \infty, \text{Other}\end{split}\notag\\\begin{split}\end{split}\notag
+ & \infty, \text{Other}\end{split}\notag
 \end{gather}
 \end{itemize}
 
 
 \subparagraph{Solve the Problem}
-\label{QuantumMechanics:solve-the-problem}\begin{itemize}
+\label{Quantum/QuantumMechanics:solve-the-problem}\begin{itemize}
 \item {} 
 Hamiltonian
 \begin{gather}
-\begin{split}\hat H = \frac{\hat p ^2}{2 m } + V(x)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H = \frac{\hat p ^2}{2 m } + V(x)\end{split}\notag
 \end{gather}
 \item {} 
 Dynamic equation
 \begin{gather}
-\begin{split}\hat H \ket{\psi(t)} = \epsilon \ket{\psi(t)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H \ket{\psi(t)} = \epsilon \ket{\psi(t)}\end{split}\notag
 \end{gather}
-We are happy to work in \{$\ket{x})$\} basis,
+We are happy to work in \{\(\ket{x})\)\} basis,
 \begin{gather}
-\begin{split}\bra{x} \hat H \ket{\psi(t)} = \bra{x} \epsilon \ket{\psi(t)} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x} \hat H \ket{\psi(t)} = \bra{x} \epsilon \ket{\psi(t)} .\end{split}\notag
 \end{gather}
 Put the Hamiltonian in, and remember that in position basis
 \begin{gather}
-\begin{split}\bra{x} \hat p \ket{\psi} = - i \hbar\frac{\d}{\d x} \psi ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x} \hat p \ket{\psi} = - i \hbar\frac{\d}{\d x} \psi ,\end{split}\notag
 \end{gather}
 the equation of motion becomes
 \begin{gather}
-\begin{split}- \frac{\hbar ^2}{2 m} \frac{\d^2}{\d x^2} \psi(x,t) + V(x) \psi(x,t) = \epsilon \psi(x,t)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}- \frac{\hbar ^2}{2 m} \frac{\d^2}{\d x^2} \psi(x,t) + V(x) \psi(x,t) = \epsilon \psi(x,t)\end{split}\notag
 \end{gather}
 \item {} 
 Boundary conditions
@@ -1041,43 +1969,43 @@ Boundary conditions
 \item {} 
 Guess the Solutions
 \begin{gather}
-\begin{split}\psi_{II} = \psi = C \sin (k x) + D \cos(kx)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\psi_{II} = \psi = C \sin (k x) + D \cos(kx)\end{split}\notag
 \end{gather}
 \item {} 
 Find the wavenumber k, by putting the assumed solutions into equation of motion
 \begin{gather}
-\begin{split}k = \pm \sqrt{\frac{2m \epsilon}{\hbar^2} }\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}k = \pm \sqrt{\frac{2m \epsilon}{\hbar^2} }\end{split}\notag
 \end{gather}
 Since we can always merge the negative into the constants, it is fine to use
 \begin{gather}
-\begin{split}k = \sqrt{\frac{2m \epsilon}{\hbar^2} }\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}k = \sqrt{\frac{2m \epsilon}{\hbar^2} }\end{split}\notag
 \end{gather}
 \item {} \begin{description}
 \item[{Use Boundary Condition}] \leavevmode\begin{enumerate}
 \item {} 
 At x=0,
 \begin{gather}
-\begin{split}\psi(0,t)=0 .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\psi(0,t)=0 .\end{split}\notag
 \end{gather}
-This gives us $D = 0$ .
+This gives us \(D = 0\) .
 
 \item {} 
-At $x=L$,
+At \(x=L\),
 \begin{gather}
-\begin{split}\psi(L,t)=0 .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\psi(L,t)=0 .\end{split}\notag
 \end{gather}
 This leads to
 \begin{gather}
-\begin{split}k L = n \pi .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}k L = n \pi .\end{split}\notag
 \end{gather}
-Since $n=0$ gives us a 0 wave function, we would just drop $n=0$. For the same reason why we drop the negative values of k, we would drop all the negative values of n.
+Since \(n=0\) gives us a 0 wave function, we would just drop \(n=0\). For the same reason why we drop the negative values of k, we would drop all the negative values of n.
 This BC gives us the possible values of energy because wavenumber k is related to energy,
 \begin{gather}
-\begin{split}\epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,\end{split}\notag
 \end{gather}
 with
 \begin{gather}
-\begin{split}n=1,2,3, \cdots\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}n=1,2,3, \cdots\end{split}\notag
 \end{gather}
 \end{enumerate}
 
@@ -1086,13 +2014,13 @@ with
 \item {} 
 Normalization as the last constraint for the last undetermined parameter,
 \begin{gather}
-\begin{split}C=\sqrt{\frac{2}{L}}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}C=\sqrt{\frac{2}{L}}\end{split}\notag
 \end{gather}
 \end{itemize}
 
 
 \subparagraph{Physics}
-\label{QuantumMechanics:physics}\begin{enumerate}
+\label{Quantum/QuantumMechanics:physics}\begin{enumerate}
 \item {} 
 Estimation
 \begin{itemize}
@@ -1128,7 +2056,7 @@ Have a look at the kinetic energy term, the derivative does it.
 \item {} \begin{description}
 \item[{What's so weird?}] \leavevmode\begin{enumerate}
 \item {} 
-For $n=2$, no particles found at $x=L/2$. And so on.
+For \(n=2\), no particles found at \(x=L/2\). And so on.
 
 \end{enumerate}
 
@@ -1140,7 +2068,7 @@ For $n=2$, no particles found at $x=L/2$. And so on.
 
 
 \subparagraph{Some General Properties}
-\label{QuantumMechanics:some-general-properties}\begin{enumerate}
+\label{Quantum/QuantumMechanics:some-general-properties}\begin{enumerate}
 \item {} 
 1D bound states have no degeneracy.
 Prove it by assume that there is a degeneracy state.
@@ -1152,33 +2080,33 @@ Prove it by assume that there is a degeneracy state.
 
 
 \subsection{Parity}
-\label{QuantumMechanics:parity}
+\label{Quantum/QuantumMechanics:parity}
 
 \subsubsection{Passive and Active Transformations}
-\label{QuantumMechanics:passive-and-active-transformations}
+\label{Quantum/QuantumMechanics:passive-and-active-transformations}
 Generally, there are two ways of interpreting a transformation.
 
 \includegraphics{transformations.png}
 
-Here in QM, passive means transform the operator $\hat \Omega$, while active means change the state $\ket{\psi}$. Suppose we have a system $\ket{\psi}$, an operator $\hat \Omega$, a transformation $\hat U$.
+Here in QM, passive means transform the operator \(\hat \Omega\), while active means change the state \(\ket{\psi}\). Suppose we have a system \(\ket{\psi}\), an operator \(\hat \Omega\), a transformation \(\hat U\).
 
-Transformation $\hat U \ket{\psi}$ is identical to $\hat U^\dagger \hat \Omega \hat U$ because they give the same observation results. The first one is called active, while the second one is called passive.
+Transformation \(\hat U \ket{\psi}\) is identical to \(\hat U^\dagger \hat \Omega \hat U\) because they give the same observation results. The first one is called active, while the second one is called passive.
 
 
 \subsubsection{Parity}
-\label{QuantumMechanics:id2}
+\label{Quantum/QuantumMechanics:id2}
 
 \paragraph{Definition}
-\label{QuantumMechanics:definition}\begin{gather}
-\begin{split}\hat \Pi \ket{x}= \ket{-x}\end{split}\notag\\\begin{split}\end{split}\notag
+\label{Quantum/QuantumMechanics:definition}\begin{gather}
+\begin{split}\hat \Pi \ket{x}= \ket{-x}\end{split}\notag
 \end{gather}
 
 \paragraph{Properties}
-\label{QuantumMechanics:properties}\begin{enumerate}
+\label{Quantum/QuantumMechanics:properties}\begin{enumerate}
 \item {} 
 Act on momentum eigenvectors,
 \begin{gather}
-\begin{split}\hat \Pi \ket{p} = \ket{-p} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi \ket{p} = \ket{-p} .\end{split}\notag
 \end{gather}
 \end{enumerate}
 \begin{itemize}
@@ -1188,11 +2116,11 @@ Physics: Parity changes the coordinate, so the direction of momentum is also cha
 \item {} 
 Math:
 \begin{gather}
-\begin{split}\hat \Pi \ket{p} = \int \hat \Pi \ket{x}\braket{x}{p}\d x= \int \ket{-x}\braket{x}{p}\d x\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi \ket{p} = \int \hat \Pi \ket{x}\braket{x}{p}\d x= \int \ket{-x}\braket{x}{p}\d x\end{split}\notag
 \end{gather}
 Change coordinate from x to -x,
 \begin{gather}
-\begin{split}\hat \Pi \ket{p} = \int \ket{x}\braket{-x}{p}\d x = \int \ket{x}\braket{x}{-p}\d x  = \ket{-p}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi \ket{p} = \int \ket{x}\braket{-x}{p}\d x = \int \ket{x}\braket{x}{-p}\d x  = \ket{-p}\end{split}\notag
 \end{gather}
 \end{itemize}
 \begin{enumerate}
@@ -1201,26 +2129,26 @@ Change coordinate from x to -x,
 Hermitian,
 \begin{gather}
 \begin{split}\bra{x}\hat \Pi \ket{x'} = \delta(x+x')
-(\bra{x'}\hat \Pi \ket{x})^\dagger = \bra{x}\hat \Pi^\dagger \ket{x'} =\delta(x+x')\end{split}\notag\\\begin{split}\end{split}\notag
+(\bra{x'}\hat \Pi \ket{x})^\dagger = \bra{x}\hat \Pi^\dagger \ket{x'} =\delta(x+x')\end{split}\notag
 \end{gather}
 \item {} 
 Unitary
 \begin{gather}
-\begin{split}\bra{x}\hat \Pi^\dagger \hat \Pi \ket{x'}= \braket{-x}{-x'}=\delta(-x+x')=\delta(x-x')=\braket{x}{x'}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x}\hat \Pi^\dagger \hat \Pi \ket{x'}= \braket{-x}{-x'}=\delta(-x+x')=\delta(x-x')=\braket{x}{x'}\end{split}\notag
 \end{gather}
 \item {} 
 Inverse of parity
 \begin{gather}
-\begin{split}\hat \Pi \hat \Pi = \hat \Pi \hat \Pi^\dagger = \hat I\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi \hat \Pi = \hat \Pi \hat \Pi^\dagger = \hat I\end{split}\notag
 \end{gather}
 \item {} 
 Eigensystem of parity.
 \begin{gather}
-\begin{split}\hat \Pi \ket{\pi}=\pi\ket{\pi}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi \ket{\pi}=\pi\ket{\pi}\end{split}\notag
 \end{gather}
 Apply another operator
 \begin{gather}
-\begin{split}\hat \Pi^2 \ket{\pi} = \pi^2 \ket{\pi}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi^2 \ket{\pi} = \pi^2 \ket{\pi}\end{split}\notag
 \end{gather}
 So,
 * Eigenvalues: 1, -1;
@@ -1231,18 +2159,18 @@ Parity applied to operators
 a. Apply to position operator,
 \begin{quote}
 \begin{gather}
-\begin{split}\hat \Pi^\dagger \hat X \hat \Pi = -\hat X\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi^\dagger \hat X \hat \Pi = -\hat X\end{split}\notag
 \end{gather}
 Proof:
 \begin{gather}
-\begin{split}\bra{x}\hat \Pi ^\dagger \hat X \hat \Pi \ket{x'} = \bra{-x}\hat X \ket{-x'}= -x'\delta(x-x') = \bra{x}(-\hat X)\ket{x'}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x}\hat \Pi ^\dagger \hat X \hat \Pi \ket{x'} = \bra{-x}\hat X \ket{-x'}= -x'\delta(x-x') = \bra{x}(-\hat X)\ket{x'}\end{split}\notag
 \end{gather}\end{quote}
 \begin{enumerate}
 \setcounter{enumi}{1}
 \item {} 
 Apply to momentum operator,
 \begin{gather}
-\begin{split}\hat \Pi^\dagger \hat p \hat \Pi = -\hat p\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \Pi^\dagger \hat p \hat \Pi = -\hat p\end{split}\notag
 \end{gather}
 Proof: Similar to the previous one, just change x basis to momentum basis.
 
@@ -1251,7 +2179,7 @@ Proof: Similar to the previous one, just change x basis to momentum basis.
 \item {} 
 Symmetry related to Hamiltonian.
 \begin{gather}
-\begin{split}\left[ \hat \Pi , \hat H  \right] = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[ \hat \Pi , \hat H  \right] = 0\end{split}\notag
 \end{gather}
 When this happens, parity of Hamiltonian won't change the wave function. Or the wave function should have an specific parity for 1D problem.
 
@@ -1259,40 +2187,40 @@ When this happens, parity of Hamiltonian won't change the wave function. Or the 
 
 
 \subsection{Classical Limit of QM}
-\label{QuantumMechanics:classical-limit-of-qm}
+\label{Quantum/QuantumMechanics:classical-limit-of-qm}
 
 \subsubsection{Ehrenfest's Theorem}
-\label{QuantumMechanics:ehrenfest-s-theorem}
+\label{Quantum/QuantumMechanics:ehrenfest-s-theorem}
 Schrödinger equation and its adjoint
 \begin{gather}
 \begin{split}i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}\end{split}\notag\\\begin{split}-i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H\end{split}\notag
 \end{gather}
-For any observable $\hat \Omega$,
+For any observable \(\hat \Omega\),
 \begin{gather}
 \begin{split}\frac{\d }{\d t}\left<\hat \Omega \right > & =  \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\
 & =  \frac{1}{i\hbar} \left ( - \bra{\psi(t)} \hat H \hat\Omega \ket{\psi(t)} +\bra{\psi(t)} \hat\Omega \hat H \ket{\psi(t)} \right) + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} \\
-& =  \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}\end{split}\notag\\\begin{split}\end{split}\notag
+& =  \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}\end{split}\notag
 \end{gather}
 This is called Ehrenfest's Theorem.
 
 
 \paragraph{Simple Example of Ehrenfest's Theorem}
-\label{QuantumMechanics:simple-example-of-ehrenfest-s-theorem}
+\label{Quantum/QuantumMechanics:simple-example-of-ehrenfest-s-theorem}
 Suppose we have a system with Hamiltonian
 \begin{gather}
-\begin{split}\hat H = \frac{\hat p^2}{2m} + V(\hat x)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H = \frac{\hat p^2}{2m} + V(\hat x)\end{split}\notag
 \end{gather}
 We need to figure some commutators first.
 \begin{gather}
-\begin{split}2m \left[ \hat x, \hat H \right] =\left[\hat x, \hat p^2\right] = \hat x \hat p\hat p - \hat p \hat p \hat x = \hat x \hat p \hat p -\hat p \hat x \hat p + \hat p \hat x \hat p - \hat p \hat p \hat x  = \left[\hat x , \hat p\right]\hat p + \hat p \left[ \hat x,\hat p\right]  = 2 i \hbar \hat p\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}2m \left[ \hat x, \hat H \right] =\left[\hat x, \hat p^2\right] = \hat x \hat p\hat p - \hat p \hat p \hat x = \hat x \hat p \hat p -\hat p \hat x \hat p + \hat p \hat x \hat p - \hat p \hat p \hat x  = \left[\hat x , \hat p\right]\hat p + \hat p \left[ \hat x,\hat p\right]  = 2 i \hbar \hat p\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\left[\hat p, \hat H\right] = \left[\hat p, V(\hat x) \right] = \left[\hat p, \sum_0^\infty \frac{V^{(n)}}{n!}\hat x^n\right] =\cdots =-i\hbar V'(\hat x)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[\hat p, \hat H\right] = \left[\hat p, V(\hat x) \right] = \left[\hat p, \sum_0^\infty \frac{V^{(n)}}{n!}\hat x^n\right] =\cdots =-i\hbar V'(\hat x)\end{split}\notag
 \end{gather}\begin{enumerate}
 \item {} 
 Position average
 \begin{gather}
 \begin{split}\frac{\d }{\d t} \left< \hat x \right> & =  \frac{1}{i\hbar} \bra{\psi(t)} \left[ \hat x, \hat H \right]\ket{\psi(t)} \\
-& =   \frac{\left< \hat p \right>}{m}\end{split}\notag\\\begin{split}\end{split}\notag
+& =   \frac{\left< \hat p \right>}{m}\end{split}\notag
 \end{gather}
 We are familiar with this in classical mechanics.
 
@@ -1301,57 +2229,57 @@ Momentum average
 \begin{gather}
 \begin{split}\frac{\d}{\d t} \left<\hat p\right> & =  \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\
 & =  \frac{1}{i\hbar} \bra{\psi(t)}  (-i\hbar V'(\hat x))  \ket{\psi(t)}  \\
-& =  -\left< V'(\hat x) \right>\end{split}\notag\\\begin{split}\end{split}\notag
+& =  -\left< V'(\hat x) \right>\end{split}\notag
 \end{gather}
-In classical mechanics, the derivative of potential is force. And the result is just like Newton's 2n Law except the right hand side is not exactly like a force which should be $-\frac{\d}{\d x} \left< V(\hat x) \right>$.
+In classical mechanics, the derivative of potential is force. And the result is just like Newton's 2n Law except the right hand side is not exactly like a force which should be \(-\frac{\d}{\d x} \left< V(\hat x) \right>\).
 
 \end{enumerate}
 
 
-\paragraph{What does $-\left< V'(\hat x)\right>$ mean}
-\label{QuantumMechanics:what-does-mean}
-Suppose the potential area is fairly small and distributed around some coordinate $x_0=\left< \hat x \right>$, we can do Taylor expansion around $x_0$.
+\paragraph{What does \(-\left< V'(\hat x)\right>\) mean}
+\label{Quantum/QuantumMechanics:what-does-mean}
+Suppose the potential area is fairly small and distributed around some coordinate \(x_0=\left< \hat x \right>\), we can do Taylor expansion around \(x_0\).
 \begin{gather}
 \begin{split}< V(\hat x)> & =  V(x_0)   +  V'(x_0) < (x - x_0)> + V''(x_0)<(x-x_0)^2> /2 + \cdots \\
-& =  V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots\end{split}\notag\\\begin{split}\end{split}\notag
+& =  V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots\end{split}\notag
 \end{gather}
-If the uncertainty is small enough, every term except the first one becomes small. So to the lowest order, average of potential is approximately the potential at $x_0$.
+If the uncertainty is small enough, every term except the first one becomes small. So to the lowest order, average of potential is approximately the potential at \(x_0\).
 
-Similarly, the average of first derivative of potential $<V'(\hat x)>$ is approximately $V'(x_0)$.
+Similarly, the average of first derivative of potential \(<V'(\hat x)>\) is approximately \(V'(x_0)\).
 
 These gives us a hint for the previous result we got for the time evolution of average momentum. The result reduces to classical mechanics one as long as we keep the lowest order of Taylor expansion. Those higher order terms show the quantum effect.
 
 
 \subsubsection{Picture}
-\label{QuantumMechanics:picture}
+\label{Quantum/QuantumMechanics:picture}
 We can see deeper into Ehrenfest's Theorem through Heisenberg Picture of quantum mechanics.
 
 
 \paragraph{Schrödinger \& Heisenberg Pictures}
-\label{QuantumMechanics:schrodinger-heisenberg-pictures}
+\label{Quantum/QuantumMechanics:schrodinger-heisenberg-pictures}
 Pictures are the ways we look at the evolution of systems.
 
 
 \subparagraph{Schrödinger Picture}
-\label{QuantumMechanics:schrodinger-picture}
+\label{Quantum/QuantumMechanics:schrodinger-picture}
 In Schrödinger picture the states are evolving with time.
 \begin{gather}
-\begin{split}i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S\end{split}\notag
 \end{gather}
 And for time independent Hamiltonian,
 \begin{gather}
-\begin{split}\ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S\end{split}\notag
 \end{gather}
 
 \subparagraph{Heisenberg Picture}
-\label{QuantumMechanics:heisenberg-picture}
+\label{Quantum/QuantumMechanics:heisenberg-picture}
 In Heisenberg Picture, the states do not change with time.
 \begin{gather}
-\begin{split}\ket{\psi} _ H = \ket{\psi_0} _ H ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi} _ H = \ket{\psi_0} _ H ,\end{split}\notag
 \end{gather}
 and of course the initial is the same with Schrödinger Picture,
 \begin{gather}
-\begin{split}\ket{\psi_0} _ H = \ket{\psi _ 0} _ S .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi_0} _ H = \ket{\psi _ 0} _ S .\end{split}\notag
 \end{gather}
 How do we relate to Heisenberg Picture to Schrödinger Picture? Through investigation of observables. We should have the same observation results in both Pictures.
 \begin{gather}
@@ -1361,24 +2289,24 @@ How do we relate to Heisenberg Picture to Schrödinger Picture? Through investig
 \end{gather}
 
 \paragraph{Ehrenfest's Theorem in Heisenberg Picture}
-\label{QuantumMechanics:ehrenfest-s-theorem-in-heisenberg-picture}\begin{gather}
-\begin{split}\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\end{split}\notag\\\begin{split}\end{split}\notag
+\label{Quantum/QuantumMechanics:ehrenfest-s-theorem-in-heisenberg-picture}\begin{gather}
+\begin{split}\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\end{split}\notag
 \end{gather}
 This can be easily proved by throwing every definition need in to it. We also need the following equations.
 \begin{gather}
-\begin{split}\frac{\d }{\d t} \hat U = \frac{\d }{\d t} e^{-i\hat H t /\hbar} = \frac{\hat H}{i\hbar} \hat U\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\d }{\d t} \hat U = \frac{\d }{\d t} e^{-i\hat H t /\hbar} = \frac{\hat H}{i\hbar} \hat U\end{split}\notag
 \end{gather}
 And REMEMBER that propagator commute with time independent Hamiltonian, so
 \begin{gather}
-\begin{split}\hat H = \hat U^\dagger \hat U \hat H = \hat U^ \dagger \hat U \hat U \equiv \hat H _ H\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H = \hat U^\dagger \hat U \hat H = \hat U^ \dagger \hat U \hat U \equiv \hat H _ H\end{split}\notag
 \end{gather}
 So this Ehrenfest's Theorem can also be written as
 \begin{gather}
-\begin{split}\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H _ H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H _ H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\end{split}\notag
 \end{gather}
 We can \textbf{define}
 \begin{gather}
-\begin{split}\frac{\partial}{\partial t}\hat  \Omega _ H \equiv \hat U^\dagger  \frac{\partial }{\partial t}\hat  \Omega _ S \hat U  ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\partial}{\partial t}\hat  \Omega _ H \equiv \hat U^\dagger  \frac{\partial }{\partial t}\hat  \Omega _ S \hat U  ,\end{split}\notag
 \end{gather}
 which is the time derivative of operator in Heisenberg Picture.
 
@@ -1386,188 +2314,188 @@ which is the time derivative of operator in Heisenberg Picture.
 
 
 \subparagraph{Example of Ehrenfest's Theorem in Heisenberg Picture}
-\label{QuantumMechanics:example-of-ehrenfest-s-theorem-in-heisenberg-picture}
+\label{Quantum/QuantumMechanics:example-of-ehrenfest-s-theorem-in-heisenberg-picture}
 We will show why it is better to work in Heisenberg Picture to show the meanings of Ehrenfest's Theorem.
 
 Suppose we have a Hamiltonian in Heisenberg Picture,
 \begin{gather}
-\begin{split}\hat H_H = \frac{\hat p _ H^2 }{2m} + V(\hat x _ H) .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H_H = \frac{\hat p _ H^2 }{2m} + V(\hat x _ H) .\end{split}\notag
 \end{gather}
 Time derivative of position operator
 \begin{gather}
-\begin{split}\frac{\d}{\d t} \hat x _ H = \frac{1}{i\hbar} \left[\hat x _ H, \hat H _ H \right ] = \frac{\hat p _ H}{m}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\d}{\d t} \hat x _ H = \frac{1}{i\hbar} \left[\hat x _ H, \hat H _ H \right ] = \frac{\hat p _ H}{m}\end{split}\notag
 \end{gather}
 Time derivative of momentum operator
 \begin{gather}
-\begin{split}\frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)\end{split}\notag
 \end{gather}
 So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That's why we like it.
 
 
 \subsubsection{Conservation}
-\label{QuantumMechanics:conservation}
+\label{Quantum/QuantumMechanics:conservation}
 We say a observable is conserved if the corresponding operator commutes with Hamiltonian,
 \begin{gather}
-\begin{split}\left[ \hat \Omega, \hat H \right]=0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[ \hat \Omega, \hat H \right]=0\end{split}\notag
 \end{gather}
 1. Energy
 Hamiltonian always commutes with itself.
 \begin{gather}
-\begin{split}\frac{\d}{\d t} \left<\epsilon \right> = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\d}{\d t} \left<\epsilon \right> = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}\end{split}\notag
 \end{gather}
 If Hamiltonian is time independent, then energy is conserved. (If Hamiltonian is tide dependent, energy is not conserved. This is kind of obvious in classical mechanics.)
 
 
 \paragraph{What is the nature of time dependence}
-\label{QuantumMechanics:what-is-the-nature-of-time-dependence}
+\label{Quantum/QuantumMechanics:what-is-the-nature-of-time-dependence}
 We can see this by looking at a simple example.
 
-Assume we have a system with energy eigenstates $\ket{\epsilon _ n}$, and initially,
+Assume we have a system with energy eigenstates \(\ket{\epsilon _ n}\), and initially,
 \begin{gather}
-\begin{split}\ket{\psi _ 0} = \sum_n C _ n \ket{\epsilon _ n} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi _ 0} = \sum_n C _ n \ket{\epsilon _ n} .\end{split}\notag
 \end{gather}
 So
 \begin{gather}
-\begin{split}\ket{\psi(t)} = \sum _ n C _ n e^{-i\epsilon _ n t/\hbar} \ket{\epsilon _ n} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi(t)} = \sum _ n C _ n e^{-i\epsilon _ n t/\hbar} \ket{\epsilon _ n} .\end{split}\notag
 \end{gather}
-We can calculate the expectation value of some operator $\hat \Omega$,
+We can calculate the expectation value of some operator \(\hat \Omega\),
 \begin{gather}
-\begin{split}\left< \omega (t) \right> =  \sum _ {n,m} \left( C _ n^ * e^{i\epsilon _ n t/\hbar } \bra{\epsilon _ n} \right)  \hat \Omega \left( C _ m e^{-i \epsilon _ m t/\hbar} \ket{\epsilon _ m} \right) = \sum _ {n,m} C _ n ^* C _ m e^{-i(\epsilon _ m - \epsilon _ n) t/\hbar} \bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left< \omega (t) \right> =  \sum _ {n,m} \left( C _ n^ * e^{i\epsilon _ n t/\hbar } \bra{\epsilon _ n} \right)  \hat \Omega \left( C _ m e^{-i \epsilon _ m t/\hbar} \ket{\epsilon _ m} \right) = \sum _ {n,m} C _ n ^* C _ m e^{-i(\epsilon _ m - \epsilon _ n) t/\hbar} \bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m}\end{split}\notag
 \end{gather}
-If $\ket{\epsilon _ n}$ are also the eigenvectors of $\hat \Omega$, then
+If \(\ket{\epsilon _ n}\) are also the eigenvectors of \(\hat \Omega\), then
 \begin{gather}
-\begin{split}\bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m} = \omega _ m \delta _ {n,m}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m} = \omega _ m \delta _ {n,m}\end{split}\notag
 \end{gather}
 And the expectation value
 \begin{gather}
-\begin{split}\left<  \omega (t) \right> = \sum _ {n} C _ n^* C _ n \omega _ n\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left<  \omega (t) \right> = \sum _ {n} C _ n^* C _ n \omega _ n\end{split}\notag
 \end{gather}
 \textbf{The important thing is that the time dependence of this expectation value actually arise from this term}
 \begin{gather}
-\begin{split}e^{-i(\epsilon _ m - \epsilon _ n)t/\hbar} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}e^{-i(\epsilon _ m - \epsilon _ n)t/\hbar} .\end{split}\notag
 \end{gather}
 As it is so important, we call
 \begin{gather}
-\begin{split}(\epsilon _ m - \epsilon _ n)/\hbar\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}(\epsilon _ m - \epsilon _ n)/\hbar\end{split}\notag
 \end{gather}
 \textbf{Bohr frequency}.
 
 
 \subsection{Harmonic Oscillators}
-\label{QuantumMechanics:harmonic-oscillators}
+\label{Quantum/QuantumMechanics:harmonic-oscillators}
 
 \subsubsection{Why Harmonic Oscillators}
-\label{QuantumMechanics:why-harmonic-oscillators}
+\label{Quantum/QuantumMechanics:why-harmonic-oscillators}
 Many systems can reduce to it. Use Taylor expansion for the potential and redefine parameters we will find harmonic oscillators in the potential.
 
 Hamiltonian for 1D is
 \begin{gather}
-\begin{split}\hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2\end{split}\notag
 \end{gather}
 
 \subsubsection{Standard Solution}
-\label{QuantumMechanics:standard-solution}
+\label{Quantum/QuantumMechanics:standard-solution}
 We can use polynomial expansion for part of the solution.
 
 
 \paragraph{Dimension Schrodinger Equation}
-\label{QuantumMechanics:dimension-schrodinger-equation}
-First step is always finding out the characteristic length scale and characteristic energy scale. Assume we have an characteristic length $\eta$ and characteristic energy scale $\epsilon_0$. Through uncertainty principle we know only for dimensional analysis
+\label{Quantum/QuantumMechanics:dimension-schrodinger-equation}
+First step is always finding out the characteristic length scale and characteristic energy scale. Assume we have an characteristic length \(\eta\) and characteristic energy scale \(\epsilon_0\). Through uncertainty principle we know only for dimensional analysis
 \begin{gather}
-\begin{split}\left[\hat p\right]=\frac{\hbar}{\eta}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[\hat p\right]=\frac{\hbar}{\eta}\end{split}\notag
 \end{gather}
 Kinetic energy and potential energy have the same dimension
 \begin{gather}
-\begin{split}\frac{\hbar^2}{\eta^2 m}=k \eta^2 ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\hbar^2}{\eta^2 m}=k \eta^2 ,\end{split}\notag
 \end{gather}
 so we have
 \begin{gather}
-\begin{split}\eta = \sqrt{\frac{\hbar}{m\omega}}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\eta = \sqrt{\frac{\hbar}{m\omega}}\end{split}\notag
 \end{gather}
-with $\omega^2=k/m$. A dimensional analysis shows that $\epsilon_0=\hbar\omega$.
+with \(\omega^2=k/m\). A dimensional analysis shows that \(\epsilon_0=\hbar\omega\).
 
 Now we can define dimensionless variables,
 \begin{gather}
-\begin{split}z=x/\eta, e=\epsilon/\epsilon_0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}z=x/\eta, e=\epsilon/\epsilon_0\end{split}\notag
 \end{gather}
 The time independent Schrodinger equation in position basis is
 \begin{gather}
-\begin{split}-\hbar^2 \frac{\mathrm d^2}{\mathrm dx^2}\psi'' /m + k x^2 = 2\epsilon \psi .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}-\hbar^2 \frac{\mathrm d^2}{\mathrm dx^2}\psi'' /m + k x^2 = 2\epsilon \psi .\end{split}\notag
 \end{gather}
 Using those characteristic scales, we can rewrite this equation into a dimensionless one, which is
 \begin{gather}
-\begin{split}\psi''+(2e-z^2)\psi = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\psi''+(2e-z^2)\psi = 0\end{split}\notag
 \end{gather}
-in which $\psi'=\frac{\mathrm d}{\mathrm dz}\psi$.
+in which \(\psi'=\frac{\mathrm d}{\mathrm dz}\psi\).
 
 
 \paragraph{Take Limits}
-\label{QuantumMechanics:take-limits}
+\label{Quantum/QuantumMechanics:take-limits}
 We need to look at the behavior of the solutions before we can guess a proper general solution.
 
-$z\rightarrow \infty$, we have $\psi''-z^2\psi=0$. Solution to this equation is $\psi(z)~ e^{-z^2/2}$.
+\(z\rightarrow \infty\), we have \(\psi''-z^2\psi=0\). Solution to this equation is \(\psi(z)~ e^{-z^2/2}\).
 
 The solution of the the equation should be in the form
 \begin{gather}
-\begin{split}\psi(z) = u(z) e^{-z^2/2}  .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\psi(z) = u(z) e^{-z^2/2}  .\end{split}\notag
 \end{gather}
-Insert this to time independent Schrodinger equation, we can get the equation of $u(z)$.
+Insert this to time independent Schrodinger equation, we can get the equation of \(u(z)\).
 \begin{gather}
-\begin{split}u'' - 2 z u' +(2e-1) u = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}u'' - 2 z u' +(2e-1) u = 0\end{split}\notag
 \end{gather}
 
 \paragraph{Polynomial Method}
-\label{QuantumMechanics:polynomial-method}
-The simplest form of $u(z)$ is polynomial,
+\label{Quantum/QuantumMechanics:polynomial-method}
+The simplest form of \(u(z)\) is polynomial,
 \begin{gather}
-\begin{split}u(z) = \sum _ {n=0}^{\infty} u _ n z^n  .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}u(z) = \sum _ {n=0}^{\infty} u _ n z^n  .\end{split}\notag
 \end{gather}
 Put this back to equation of u, we can get the recursion relation,
 \begin{gather}
-\begin{split}(n + 2)(n+1) u _ {n+2} = \left[ 2n - (2e - 1) \right] u _ n   .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}(n + 2)(n+1) u _ {n+2} = \left[ 2n - (2e - 1) \right] u _ n   .\end{split}\notag
 \end{gather}
-If $u_0$ and $u_1$ are given, we can get the whole polynomial.
+If \(u_0\) and \(u_1\) are given, we can get the whole polynomial.
 
-Notice that we have definite parity here. So $u _ 1$ branch vanish because they are even.
+Notice that we have definite parity here. So \(u _ 1\) branch vanish because they are even.
 
-$u_0$ is set by the normalization condition.
+\(u_0\) is set by the normalization condition.
 
 
 \paragraph{Terminate The Series}
-\label{QuantumMechanics:terminate-the-series}
+\label{Quantum/QuantumMechanics:terminate-the-series}
 The series blow up if it doesn't terminate. So we need to terminate the series using the following relation,
 \begin{gather}
-\begin{split}2e - 1 = 2n .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}2e - 1 = 2n .\end{split}\notag
 \end{gather}
-Then we have the energy levels, which is $e=n+1/2$.
+Then we have the energy levels, which is \(e=n+1/2\).
 
 
 \paragraph{Complete Series}
-\label{QuantumMechanics:complete-series}
+\label{Quantum/QuantumMechanics:complete-series}
 By picking proper normalization factor, we can write down the energy levels and corresponding wave functions. In fact, this polynomial can be found in mathematical phyisics books.
 \begin{gather}
-\begin{split}H _ {n+1} = 2 z H _n -n H _ {n-1}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}H _ {n+1} = 2 z H _n -n H _ {n-1}\end{split}\notag
 \end{gather}
 
 \subsubsection{Tricky Solution}
-\label{QuantumMechanics:tricky-solution}
+\label{Quantum/QuantumMechanics:tricky-solution}
 Find out the characteristic length and energy
 \begin{gather}
 \begin{split}\eta = \sqrt{\frac{\hbar }{m\omega }} \\
 \epsilon = \hbar \omega \\
-\omega = \sqrt{\frac{k}{m}}\end{split}\notag\\\begin{split}\end{split}\notag
+\omega = \sqrt{\frac{k}{m}}\end{split}\notag
 \end{gather}
 One way to get the intrinsic length without writing down the dimensions of each quantity is to use the following relation
 \begin{gather}
 \begin{split}\left[ E \right] = \left[ m \omega^2 \hat x^2 \right] \\
 \hbar \omega = m \omega^2 \eta^2 \\\
-\eta = \sqrt{ \frac{\hbar}{m\omega} }\end{split}\notag\\\begin{split}\end{split}\notag
+\eta = \sqrt{ \frac{\hbar}{m\omega} }\end{split}\notag
 \end{gather}
-Or if we are given the Hamiltonian in terms of $k$,
+Or if we are given the Hamiltonian in terms of \(k\),
 \begin{gather}
 \begin{split}\left[ \frac{\hat p^2}{2m} \right] = \left[ k \hat x^2 \right] \\
 \frac{\hbar^2 / \eta^2 }{m} = k\eta^2 \\
-\eta = \sqrt{\hbar}{ \sqrt{m k} } = \sqrt{ \hbar }{ m \omega }\end{split}\notag\\\begin{split}\end{split}\notag
+\eta = \sqrt{\hbar}{ \sqrt{m k} } = \sqrt{ \hbar }{ m \omega }\end{split}\notag
 \end{gather}
 Rewrite the Hamiltonian
 \begin{gather}
@@ -1575,86 +2503,86 @@ Rewrite the Hamiltonian
 & =  \frac 1 2 \hbar \omega \left[ \left(\frac{\hat p}{\hbar/\eta}\right)^2 + \left(\frac{\hat x}{\eta}\right)^2 \right]    \\
 & =  \frac 1 2 \hbar \omega \left( \frac{\hat x}{\eta} - i \frac{\hat p}{\hbar/\eta}   \right) \left( \frac{\hat x}{\eta} + i\frac{\hat p}{\hbar/\eta}  \right)  - \frac{i}{\hbar} \left[\hat x, \hat p\right]    \\
 & =  \frac 1 2 \hbar \omega (\sqrt 2 \hat a^\dagger \sqrt 2 \hat a + 1) \\
-& =  \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)\end{split}\notag\\\begin{split}\end{split}\notag
+& =  \hbar \omega \left( \hat a^\dagger \hat a + \frac 1 2\right)\end{split}\notag
 \end{gather}
-Now we can define $\hat a^\dagger \hat a = \hat N$, which is just like an operator for (energy) quanta numbers.
+Now we can define \(\hat a^\dagger \hat a = \hat N\), which is just like an operator for (energy) quanta numbers.
 
 An impoertan relation is
 \begin{gather}
 \begin{split}\left[\hat a, \hat a^\dagger\right] = 1 \\
-\left[\hat a, \hat N\right] = \hat a\end{split}\notag\\\begin{split}\end{split}\notag
+\left[\hat a, \hat N\right] = \hat a\end{split}\notag
 \end{gather}
 The eigen equation for this weird energy quanta number operator is
 \begin{gather}
-\begin{split}\hat N \ket{n} = n \ket{n}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat N \ket{n} = n \ket{n}\end{split}\notag
 \end{gather}
-To find out the eigen state of $\hat a$ and $\hat a^\dagger$, we try this,
+To find out the eigen state of \(\hat a\) and \(\hat a^\dagger\), we try this,
 \begin{gather}
 \begin{split}\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\
-\hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})\end{split}\notag\\\begin{split}\end{split}\notag
+\hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})\end{split}\notag
 \end{gather}
-This means $\hat a \ket{n}$ and $\hat a^\dagger \ket{n}$ are also eigen states of $hat N$.
+This means \(\hat a \ket{n}\) and \(\hat a^\dagger \ket{n}\) are also eigen states of \(hat N\).
 
-The next step is very crucial. Since $\hat a \ket{n}$ and $\hat a^\dagger \ket{n}$ are eigen states of $hat N$, we know that
+The next step is very crucial. Since \(\hat a \ket{n}\) and \(\hat a^\dagger \ket{n}\) are eigen states of \(hat N\), we know that
 \begin{gather}
 \begin{split}\hat a \ket{n} = C1 \ket{n} \\
-\hat a^\dagger \ket{n} = C2 \ket{n}\end{split}\notag\\\begin{split}\end{split}\notag
+\hat a^\dagger \ket{n} = C2 \ket{n}\end{split}\notag
 \end{gather}
-Then our next step is to find out what are $C1$ and $C2$ exactly.
+Then our next step is to find out what are \(C1\) and \(C2\) exactly.
 
-They way of finding them is to use invariant quantities, such as the inner product. Here we use average of $\hat N$ operator.
+They way of finding them is to use invariant quantities, such as the inner product. Here we use average of \(\hat N\) operator.
 \begin{gather}
 \begin{split}\hat a \ket{n} = \sqrt n \ket{n-1}  \\
-\hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}\end{split}\notag\\\begin{split}\end{split}\notag
+\hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}\end{split}\notag
 \end{gather}
-Final step is to constrain on $n$, which should be integrals. This is true because we need a cut off for the eigen equation of $\hat N$, whose avarage is n and it should be non negative.
+Final step is to constrain on \(n\), which should be integrals. This is true because we need a cut off for the eigen equation of \(\hat N\), whose avarage is n and it should be non negative.
 \begin{gather}
-\begin{split}\bra{n}\hat N \ket{n} \ge 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{n}\hat N \ket{n} \ge 0\end{split}\notag
 \end{gather}
-leads to $n\ge 0$. To get this proper cut off, $n$ should be integer because if it's not, according to
+leads to \(n\ge 0\). To get this proper cut off, \(n\) should be integer because if it's not, according to
 \begin{gather}
-\begin{split}\hat a \ket{n} = \sqrt n \ket{n-1}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat a \ket{n} = \sqrt n \ket{n-1}\end{split}\notag
 \end{gather}
 n can go to negative numbers. If n is positive integer,
 \begin{gather}
 \begin{split}\hat a \ket{1} = \ket{0}  \\
-\hat a \ket{0} = 0 \ket{0}\end{split}\notag\\\begin{split}\end{split}\notag
+\hat a \ket{0} = 0 \ket{0}\end{split}\notag
 \end{gather}
 show an cut off at 0.
 
-We can even find out the wave functions of these $\ket{n}$ by finding the ground state first and apply $\hat a^\dagger$ to the ground state.
+We can even find out the wave functions of these \(\ket{n}\) by finding the ground state first and apply \(\hat a^\dagger\) to the ground state.
 
-Ground state in ${\ket{x}}$ basis can be found by solving the differential equation,
+Ground state in \({\ket{x}}\) basis can be found by solving the differential equation,
 \begin{gather}
-\begin{split}\bra{x} \hat a \ket{0} = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{x} \hat a \ket{0} = 0\end{split}\notag
 \end{gather}\begin{quote}
 
 Very important:
 \begin{itemize}
 \item {} 
-The Hermitian conjugate of $\hat a \ket{n}$ is $\bra{n} \hat a^\dagger$.
+The Hermitian conjugate of \(\hat a \ket{n}\) is \(\bra{n} \hat a^\dagger\).
 
 \item {} 
-Hermitian conjugate of $\hat a \hat a^\dagger$ is $\hat a \hat a^dagger$. This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!
+Hermitian conjugate of \(\hat a \hat a^\dagger\) is \(\hat a \hat a^dagger\). This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!
 
 \end{itemize}
 \end{quote}
 
 
 \subsubsection{Semiclassical}
-\label{QuantumMechanics:semiclassical}
+\label{Quantum/QuantumMechanics:semiclassical}
 
 \paragraph{Classical}
-\label{QuantumMechanics:classical}
-In phase space, the trajectory of phase space points ( \{$x/\eta$ and $p/(\hbar/\eta)$\} ) is on a circle of radius $x_{max}/\eta$.
+\label{Quantum/QuantumMechanics:classical}
+In phase space, the trajectory of phase space points ( \{\(x/\eta\) and \(p/(\hbar/\eta)\)\} ) is on a circle of radius \(x_{max}/\eta\).
 
 
 \paragraph{Quantum semiclassical}
-\label{QuantumMechanics:quantum-semiclassical}
+\label{Quantum/QuantumMechanics:quantum-semiclassical}
 Key points:
 \begin{enumerate}
 \item {} 
-What is the trajectory of $\left<\hat x/\eta\right>$ and $\left<\hat p/(\hbar/\eta)\right>$
+What is the trajectory of \(\left<\hat x/\eta\right>\) and \(\left<\hat p/(\hbar/\eta)\right>\)
 
 \item {} 
 Can we make the trajectory just like the classical case by choosing some special conditions?
@@ -1671,37 +2599,37 @@ Expectation value of creation and annihilation operators
 
 Apply Ehrenfest theorem to annihilation operator,
 \begin{gather}
-\begin{split}i\hbar \frac{\mathrm d}{\mathrm d t} \avg{\hat a(t)} = \bra{\psi} \left[ \hat a(t), \hat H \right] \ket{\psi} = \hbar \omega \avg{\hat a(t)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}i\hbar \frac{\mathrm d}{\mathrm d t} \avg{\hat a(t)} = \bra{\psi} \left[ \hat a(t), \hat H \right] \ket{\psi} = \hbar \omega \avg{\hat a(t)}\end{split}\notag
 \end{gather}
-Excellent. Now we can solve out $\avg{\hat a(t)}$, which is
+Excellent. Now we can solve out \(\avg{\hat a(t)}\), which is
 \begin{gather}
-\begin{split}\avg{\hat a(t)} = \alpha_0 \exp(-i\omega t)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\avg{\hat a(t)} = \alpha_0 \exp(-i\omega t)\end{split}\notag
 \end{gather}
 Take the hermitian conjugate,
 \begin{gather}
-\begin{split}\avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\avg{\hat a^\dagger (t)} = \alpha_0^* \exp(i\omega t)\end{split}\notag
 \end{gather}\begin{itemize}
 \item {} 
 Expectation value of position and momentum
 
 \end{itemize}
 
-With these two operators, we can find out the average of $\hat x$ and $\hat p$ because
+With these two operators, we can find out the average of \(\hat x\) and \(\hat p\) because
 \begin{gather}
 \begin{split}\hat x = \eta \frac{1}{\sqrt 2} \left( \hat a^\dagger + \hat a\right)\\
-\hat p = \frac{\hbar}{\eta} i \frac{1}{\sqrt 2} \left(\hat a^\dagger - \hat a \right) ,\end{split}\notag\\\begin{split}\end{split}\notag
+\hat p = \frac{\hbar}{\eta} i \frac{1}{\sqrt 2} \left(\hat a^\dagger - \hat a \right) ,\end{split}\notag
 \end{gather}
 we have
 \begin{gather}
 \begin{split}\avg{\hat x(t)} = \eta \frac{1}{\sqrt 2} \left( \avg{\hat a^\dagger (t)} + \avg{\hat a(t)} \right) \\
-\avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt {2} } \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)\end{split}\notag\\\begin{split}\end{split}\notag
+\avg{\hat p(t)} = \frac{\hbar}{\eta} i \frac{1}{\sqrt {2} } \left( \avg{\hat a^\dagger (t) - \avg{\hat a(t)}} \right)\end{split}\notag
 \end{gather}
 We can have a look at these two averages,
 \begin{gather}
 \begin{split}\frac{\avg{\hat x(t)} }{\eta} = \frac{1}{\sqrt{2} } \left[ (\alpha_0 + \alpha_0^*)\cos(\omega t) + i (\alpha_0^* - \alpha_0 ) \sin(\omega t) \right] \\
-\frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]\end{split}\notag\\\begin{split}\end{split}\notag
+\frac{\avg{\hat p(t)}}{\hbar/\eta} = \frac{1}{\sqrt{2}} \left[ (\alpha_0 + \alpha_0^*) \sin(\omega t) + i( \alpha_0 - \alpha_0^*)\cos(\omega t) \right]\end{split}\notag
 \end{gather}
-It is obvious that the average reduces to classical case if $\alpha_0 = \alpha_0^*$. \textbf{But this is too strong for a semiclassical limit.}
+It is obvious that the average reduces to classical case if \(\alpha_0 = \alpha_0^*\). \textbf{But this is too strong for a semiclassical limit.}
 \begin{itemize}
 \item {} 
 Coherent state
@@ -1712,27 +2640,27 @@ Coherent state
 
 \textbf{The most special part about coherent state is that the system stays on coherent state if it start with coherent state.}
 \begin{gather}
-\begin{split}\hat a \ket{\alpha(t)} = \alpha(t) \ket{\alpha(t)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat a \ket{\alpha(t)} = \alpha(t) \ket{\alpha(t)}\end{split}\notag
 \end{gather}
 Take the hermitian conjugate,
 \begin{gather}
-\begin{split}\bra{\alpha(t)} \hat a^\dagger  = \bra{\alpha(t)}\alpha(t)^*\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{\alpha(t)} \hat a^\dagger  = \bra{\alpha(t)}\alpha(t)^*\end{split}\notag
 \end{gather}
-At $t=0$, we have
+At \(t=0\), we have
 \begin{gather}
-\begin{split}\bra{\psi(0)} N \ket{\psi(0)} = \vert \alpha_0 \vert ^2\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{\psi(0)} N \ket{\psi(0)} = \vert \alpha_0 \vert ^2\end{split}\notag
 \end{gather}
 That is to say, energy should be
 \begin{gather}
-\begin{split}\bra{\psi(0)} \hat H \ket{\psi(0)} = \hbar \omega \left( \vert \alpha_0 \vert^2 + \frac{1}{2} \right)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{\psi(0)} \hat H \ket{\psi(0)} = \hbar \omega \left( \vert \alpha_0 \vert^2 + \frac{1}{2} \right)\end{split}\notag
 \end{gather}
 Initially, we also have
 \begin{gather}
-\begin{split}\bra{\psi(0)} (\hat a - \alpha_0)^\dagger (\hat a-\alpha_0) \ket{\psi(0)} = 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{\psi(0)} (\hat a - \alpha_0)^\dagger (\hat a-\alpha_0) \ket{\psi(0)} = 0\end{split}\notag
 \end{gather}
 This means
 \begin{gather}
-\begin{split}\hat a \ket{\psi(0)} = \alpha_0 \ket{\psi(0)}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat a \ket{\psi(0)} = \alpha_0 \ket{\psi(0)}\end{split}\notag
 \end{gather}\begin{itemize}
 \item {} 
 Coherent state expanded using energy eigenstates
@@ -1745,21 +2673,21 @@ Coherent state expanded using energy eigenstates
 
 
 \section{Quantum Mechanics 2}
-\label{QuantumMechanics2:quantum-mechanics-2}\label{QuantumMechanics2::doc}
+\label{Quantum/QuantumMechanics2:quantum-mechanics-2}\label{Quantum/QuantumMechanics2::doc}
 
 \subsection{Tensor Product Space}
-\label{QuantumMechanics2:tensor-product-space}
-This part has been moved to {\hyperref[math:tensorproductspace]{\emph{Tensor Product Space}}}
+\label{Quantum/QuantumMechanics2:tensor-product-space}
+This part has been moved to {\hyperref[math:tensorproductspace]{\emph{\DUspan{}{Tensor Product Space}}}}
 
 
 \subsection{Density Matrix}
-\label{QuantumMechanics2:density-matrix}
+\label{Quantum/QuantumMechanics2:density-matrix}
 
 \subsection{Angular Momentum}
-\label{QuantumMechanics2:angular-momentum}
+\label{Quantum/QuantumMechanics2:angular-momentum}
 
 \subsubsection{Angular Momentum}
-\label{QuantumMechanics2:id1}
+\label{Quantum/QuantumMechanics2:id1}
 For an new operator, we would like to know
 \begin{enumerate}
 \item {} 
@@ -1778,101 +2706,641 @@ Expectation and classical limit.
 
 
 \paragraph{Definition of Angular Momentum}
-\label{QuantumMechanics2:definition-of-angular-momentum}
+\label{Quantum/QuantumMechanics2:definition-of-angular-momentum}
 In classical mechanics, angular momentum is defined as
 \begin{gather}
-\begin{split}\vec L = \vec X \times \vec P .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\vec L = \vec X \times \vec P .\end{split}\notag
 \end{gather}
 One way of defining operator is to change position and momentum into operators and check if the operator is working properly in QM. So we just define
 \begin{gather}
-\begin{split}\hat {\vec L} = \hat {\vec X}\times \hat{\vec P}.\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat {\vec L} = \hat {\vec X}\times \hat{\vec P}.\end{split}\notag
 \end{gather}
 It is Hermitian. So it can be an operator. We also find
 \begin{gather}
-\begin{split}\hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    .\end{split}\notag
 \end{gather}
 \textbf{More generally, we can define angular momentum as}
 \begin{gather}
-\begin{split}\left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k\end{split}\notag
 \end{gather}
 We can prove that
 \begin{gather}
-\begin{split}\left[ \hat J^2,\hat J_z \right] = 0.\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[ \hat J^2,\hat J_z \right] = 0.\end{split}\notag
 \end{gather}
 So they can have the same eigenstates
 \begin{gather}
-\begin{split}\hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}\end{split}\notag
 \end{gather}
 To find the constraints on these eigenvalues, we can use positive definite condition of certain inner porducts, such as,
 \begin{gather}
-\begin{split}\bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0\end{split}\notag
 \end{gather}
 where
 \begin{gather}
-\begin{split}\hat J_{\pm} = \hat J_x \pm i \hat J_y\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat J_{\pm} = \hat J_x \pm i \hat J_y\end{split}\notag
 \end{gather}
 and we have
 \begin{gather}
-\begin{split}\left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}.\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}.\end{split}\notag
 \end{gather}
 It's easy to find out that
 \begin{gather}
-\begin{split}\hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})\end{split}\notag
 \end{gather}
-i.e., $\hat J_{\pm}\ket{\lambda m}$ is eigenstate of $\hat J_z$.
+i.e., \(\hat J_{\pm}\ket{\lambda m}\) is eigenstate of \(\hat J_z\).
 
 Follow the plan of finding out the bounds through these positive inner products, we can prove that
 \begin{gather}
-\begin{split}\hat J^2\ket{jm} = j(j+1)\hbar^2 \ket{jm}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat J^2\ket{jm} = j(j+1)\hbar^2 \ket{jm}\end{split}\notag
 \end{gather}\begin{gather}
-\begin{split}\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}\end{split}\notag
 \end{gather}
 
 \paragraph{Eigenstates of Angular Momentum}
-\label{QuantumMechanics2:eigenstates-of-angular-momentum}
-As we have proposed, the eigenstates of both $\hat J_z$ and $\hat{\vec J}^2$ are $\ket{j,m}$, where $j=0,1,2,\cdots$ and $m=-j,-j+1,\cdots, j-1,j$.
+\label{Quantum/QuantumMechanics2:eigenstates-of-angular-momentum}
+As we have proposed, the eigenstates of both \(\hat J_z\) and \(\hat{\vec J}^2\) are \(\ket{j,m}\), where \(j=0,1,2,\cdots\) and \(m=-j,-j+1,\cdots, j-1,j\).
 
-We can also find out the wave function in ${\ket{\theta,\phi } }$ basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.
+We can also find out the wave function in \({\ket{\theta,\phi } }\) basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.
 \begin{gather}
 \begin{split}\int \mathrm d \Omega \braket{\theta',\phi'}{\theta,\phi} = \delta(\cos\theta'-\cos\theta,\phi'-\phi)
-\int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} = 1\end{split}\notag\\\begin{split}\end{split}\notag
+\int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} = 1\end{split}\notag
 \end{gather}
-Now we have an arbitary state $\ket{\psi}$,
+Now we have an arbitary state \(\ket{\psi}\),
 \begin{gather}
 \begin{split}\ket{\psi} &= \sum _ {l,m} \psi _ {lm}\ket{l,m} \\
            &= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} \psi _ {lm}\ket{l,m} \\
-           &= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'} (\braket{\theta,\phi}{l,m} ) \psi _ {lm} \\\end{split}\notag\\\begin{split}\end{split}\notag
+           &= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'} (\braket{\theta,\phi}{l,m} ) \psi _ {lm} \\\end{split}\notag
 \end{gather}
 Then we define
 \begin{gather}
-\begin{split}\braket{\theta,\phi}{l,m}=Y_l^m(\theta,\phi)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\braket{\theta,\phi}{l,m}=Y_l^m(\theta,\phi)\end{split}\notag
 \end{gather}
 which is the spherical harmonic function.
 
 Then
 \begin{gather}
-\begin{split}\ket{\psi} &= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\ket{\psi} &= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\\end{split}\notag
 \end{gather}
-So as long as we find out what $\psi _ {lm}$ is, any problem is done.
+So as long as we find out what \(\psi _ {lm}\) is, any problem is done.
 
 
 \section{Quantum Mechanics 3}
-\label{QuantumMechanics3:quantum-mechanics-3}\label{QuantumMechanics3::doc}
-This part has been moved to \href{http://emptymalei.github.io/quantum/}{http://emptymalei.github.io/quantum/} .
+\label{Quantum/QuantumMechanics3:quantum-mechanics-3}\label{Quantum/QuantumMechanics3::doc}
 
+\subsection{Topics}
+\label{Quantum/QuantumMechanics3:topics}
+
+\subsubsection{Quantum Vocabulary}
+\label{Quantum/vocabulary::doc}\label{Quantum/vocabulary:quantum-vocabulary}
+Vocabulary of physics, the fountain of research ideas.
+\begin{enumerate}
+\setcounter{enumi}{-1}
+\item {} 
+Fine Structure Constant
+
+\end{enumerate}
+
+\(\alpha = \frac{k_\mathrm{e} e^2}{\hbar c} = \frac{1}{(4 \pi \varepsilon_0)} \frac{e^2}{\hbar c} = \frac{e^2 c \mu_0}{2 h}\)
+
+In electrostatic cgs units, \(\alpha = \frac{e^2}{\hbar c}\).
+
+In natural units, \(\alpha = \frac{e^2}{4 \pi}\) .
+\begin{enumerate}
+\item {} 
+Hydrogen Atom
+
+\end{enumerate}
+
+Potential \(V(r) = -\frac{Z e^2}{4\pi \epsilon_0 r}\).
+
+Energy levels: \(E_{n} = -\left(\frac{Z^2 \mu e^4}{32 \pi^2\epsilon_0^2\hbar^2}\right)\frac{1}{n^2} = -\left(\frac{Z^2\hbar^2}{2\mu a_{\mu}^2}\right)\frac{1}{n^2} = \frac{\mu c^2Z^2\alpha^2}{2n^2}.\)
+
+Ground state of hydrogen atom \(\psi_{100}(r)=\frac{1}{\sqrt{\pi}}\frac{1}{a^{3/2}} e^{-Z r/a}\).
+
+
+\subsubsection{Quantum Questions}
+\label{Quantum/questions::doc}\label{Quantum/questions:quantum-questions}
+
+\paragraph{Wedge Product, Cross Prodcut \& Commutation relation}
+\label{Quantum/questions:wedge-product-cross-prodcut-commutation-relation}\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{commutationCrossWedge.png}
+\caption{Geometry language here?}\end{figure}
+
+
+\subsubsection{Quantum Approximation Methods}
+\label{Quantum/approx::doc}\label{Quantum/approx:quantum-approximation-methods}
+
+\paragraph{Variational Method}
+\label{Quantum/approx:variational-method}
+
+\subparagraph{Trial functions}
+\label{Quantum/approx:trial-functions}
+Some of the calculable trial functions:
+\begin{enumerate}
+\item {} 
+\(\psi(x) = \cos\alpha x\), for \(|\alpha x|<\pi/2\), otherwise 0.
+
+\item {} 
+\(\psi(x) = \alpha^2 - x^2\), for \(|x|<\alpha\), otherwise 0.
+
+\item {} 
+\(\psi(x) = C \exp(-\alpha x^2/2)\).
+
+\item {} 
+\(\psi(x) = C(\alpha - |x|)\), for \(|x|<\alpha\), otherwise 0.
+
+\item {} 
+\(\psi(x) = C\sin\alpha x\), for \(|\alpha x|<\pi\), otherwise 0.
+
+\end{enumerate}
+
+
+\subparagraph{Procedure}
+\label{Quantum/approx:procedure}\begin{enumerate}
+\item {} 
+Pick a trial function.
+
+\begin{notice}{note}{Note:}
+How to pick a trial function? For ground state energy, we should pick a function that has the same property as the real ground state. This requires some understanding of the problem we are dealing with.
+
+Things to consider:
+\begin{enumerate}
+\item {} 
+The new problem is just a modification of a known solved problem. Then we can easily find out what really is different and interprete the new problem in terms of the old one.
+
+\item {} 
+If the Hamiltonian have definite parity, the ground state wave function should pick up some parity which is usually even to make it the lowest energy.
+
+\item {} 
+Continious function? A \(C^\infty\) Hamiltonian can only have continious functions as solutions for a finite system.
+
+\item {} 
+Nodes deteremines the kinetic energy so check the nodes for ground state wave function.
+
+\item {} 
+Check the behivior of the wave function at different limits. In most cases, the Shrödinger equation can be reduced to something solvable at some limits.
+
+\item {} 
+\textbf{One more thing, the trial function should make the problem calculable.}
+
+\end{enumerate}
+\end{notice}
+
+\end{enumerate}
+
+
+\subparagraph{Why Not General Viriational Method}
+\label{Quantum/approx:why-not-general-viriational-method}
+Why don't we just use a most general variational method to find out the ground state? Because we will eventually come back to the time-independent Shrödinger equation.
+
+Suppose we have a functional form
+\begin{gather}
+\begin{split}E(\psi^*, \psi, \lambda) = \int dx \psi^* H \psi - \lambda \left( \int dx \psi^* \psi - 1 \right)\end{split}\notag
+\end{gather}
+The reason we have this Lagrange multiplier method is that the wave function should be normalized and this multiplier provides the degree of freedom. We would only get a wrong result if we don't include this DoF.
+
+Variation of \(\psi^*\),
+\begin{gather}
+\begin{split}\delta E = \int dx \delta \psi^* H \psi - \int dx \delta \psi^* \psi = 0\end{split}\notag
+\end{gather}
+Now what?
+\begin{gather}
+\begin{split}H \psi - \lambda \psi = 0\end{split}\notag
+\end{gather}
+Not helpful.
+
+
+\paragraph{Variational Method and Virial Theorem}
+\label{Quantum/approx:variational-method-and-virial-theorem}
+For a potential \(V(x)=b x^n\), we can prove that virial theorem is valid for ground state if we use Gaussian trial function \(e^{- \alpha x^2/2}\).
+
+A MMA proof is here.
+
+Virial theorem is pretty interesting. It shares the same math with equipartition theorem.
+
+
+\paragraph{WKB}
+\label{Quantum/approx:wkb}
+This is a semi-classical method. It is semi classical because we will use the classical momentum
+\begin{gather}
+\begin{split}\hbar k(x) = \sqrt{2m (E - V(x))}\end{split}\notag
+\end{gather}
+The following points are important for this method.
+\begin{enumerate}
+\setcounter{enumi}{-1}
+\item {} 
+WKB start from a classical estimation of wave number at a certain energy \(E\) which is later quantified by the Bohr-Sommerfeld quantization rule.
+
+\item {} 
+Conservation law:
+\begin{gather}
+\begin{split}\frac{\partial}{\partial t}\rho + \nabla \cdot \vec j = 0\end{split}\notag
+\end{gather}
+where \(\rho = \psi^* \psi\), \(\vec j = -\frac{\hbar}{2 m i} \left( \psi \nabla \psi^* - \psi^* \nabla \psi \right)\). This can be derived from Shrödinger equation easily.
+
+\item {} 
+Phase:
+Wave function is generally \(A(x)\exp(\phi(x))\). However, \(\phi(x)\) should be the area of the phase function starting from some initial point. For example in WKB, \(k(x) = \phi'(x)\) and \(\phi(x) = \int \phi'(x')d x' = \int k(x') d x'\).
+
+Using this general wave function and conservation law we find out that \(A(x) ~ \frac{1}{\sqrt{k(x)}}\). Then we can apply the two boundary conditions. However we will find two different wave functions given by two boundary conditions. Now we should connect them because \(\psi(a) = \psi(b)\) exactly. By comparing the two wave functions we can find something like Bohr-Sommerfeld quantization rule.
+
+\item {} 
+Correction at bouldary:
+However, this method requires that the potential varies slowly or equivalently the wave number varies slowly. Basicly we are just using the following approximation:
+\begin{gather}
+\begin{split}A'(x) = 0, k'(x) = 0\end{split}\notag
+\end{gather}
+For example when taking the derivative of wave function,
+\begin{gather}
+\begin{split}\psi'(x) = A'(x) e^{i\int \cdots} + A(x) k(x) e^{i\int \cdots} \approx A(x) k(x) e^{i\int \cdots}\end{split}\notag
+\end{gather}
+where we drop the term with \(A'(x)\). That is to say
+\begin{gather}
+\begin{split}|A'|\ll |A k| \Rightarrow |k'| \ll k^2\end{split}\notag
+\end{gather}
+But at boundary where \(E = V\), this is obviously not valid because \(k=0\). So we need to fix this problem.
+
+The solution is to use first order of the potential in a Taylor expansion. Then solve the problem exactly. Finally we connect regions that is far out from the boundary, need the boundary and between the boundary.
+
+\end{enumerate}
+
+If we can have a good boundary condition, then the energy spectrum given by WKB can be very good. Even we don't have a good boundary condtion, the excited states given by this method are always close to the exact ones.
+
+
+\subparagraph{How does it work}
+\label{Quantum/approx:how-does-it-work}
+
+\subsubsection{Symmetries in QM}
+\label{Quantum/symmetries::doc}\label{Quantum/symmetries:symmetries-in-qm}
+
+\paragraph{Time and Space Translation}
+\label{Quantum/symmetries:time-and-space-translation}
+First of all I want to know what is not changed or what is the invariant quantity in a transformation.
+
+There are three kind of common transformations.
+\begin{enumerate}
+\item {} 
+Time translation: move the system in time. In this sense time translation is just the time evolution operator or propagator.
+
+\item {} 
+Space translation: move the system in space.
+
+\item {} 
+Gauge transformation
+
+\end{enumerate}
+
+The invariance of them corresponds to:
+\begin{enumerate}
+\item {} 
+Time translation invariance (T.T.I.) means the evolution of the system is not changing under time translations. \textbf{Hamiltonian is invariant.}
+
+\item {} 
+Space translation invariance (S.T.I.) means that the
+
+\end{enumerate}
+
+
+\subparagraph{Time Translation Symmetry}
+\label{Quantum/symmetries:time-translation-symmetry}\begin{figure}[htbp]
+\centering
+
+\includegraphics{TimeTranslation.png}
+\end{figure}
+
+Time translation Gliffy Source
+
+\textbf{Definition of Time Translation}
+
+Move the system in time.
+
+\textbf{Generator of Time Translation}
+
+T.T.I. is generated by Hamiltonian which can be easily understood by looking into Shcrödinger equation.
+
+\begin{notice}{hint}{Hint:}
+Starting from Schrödinger equation,
+\begin{gather}
+\begin{split}i\hbar \frac{\ket{\psi(t+\Delta t)} - \ket{\psi(t)}}{\Delta t} = H(t)\psi(t)\end{split}\notag
+\end{gather}
+Then we get the state after a evolution of time \(\Delta t\),
+\begin{gather}
+\begin{split}\ket{\psi(t+\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t)}{\hbar} \right) \ket{\psi(t)}\end{split}\notag
+\end{gather}
+Time translation symmetry means the state evolution in the same time interval \(\Delta t\) no matter when to start the evolution. Mathematically,
+\begin{gather}
+\begin{split}\ket{\psi(t_1 +\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t_1)}{\hbar} \right) \ket{\psi(t_1)}\end{split}\notag
+\end{gather}
+should get the same final state if we start from some other time \(t_2\),
+\begin{gather}
+\begin{split}\ket{\psi(t_2 +\Delta t)} = \left( \hat I - i\frac{\Delta t \hat H(t_2)}{\hbar} \right) \ket{\psi(t_2)}\end{split}\notag
+\end{gather}
+That means the two Hamiltonian should be the same. Now we reach the conclusion that Hamiltonian is time independent.
+\end{notice}
+
+The logic is to prove that Hamiltonian is time independent by using infinitesimal time translation approach. Given that Hamiltonian is time independent, we imediately know that time translation operator is just the propagator with the form
+\begin{gather}
+\begin{split}\hat T_{\Delta t} \equiv \hat U(\Delta t) = e^{-i \hat H \Delta t /\hbar}\end{split}\notag
+\end{gather}
+All other conclusions come from the fact that Hamiltonian is a constant of motion.
+
+\begin{notice}{hint}{Hint:}
+Ehrenfest theorem tells us that time independent Hamiltonian is a constant of motion.
+\begin{gather}
+\begin{split}\frac{d}{dt}\avg{H} = \frac{1}{i\hbar}\avg{[\hat H, \hat H]} + \avg{\frac{\partial}{\partial t} H } = 0\end{split}\notag
+\end{gather}\end{notice}
+
+\begin{notice}{important}{Important:}
+For an isolated system, T.T.I. should always be satisfied because there is nothing more else to change the system but to leave the system with energy conserved.
+
+My concern is if we don't have an Hamiltonian for \(T\mathrm d S\), we can't actually says this because of what the second law of thermodynamics tells us.
+\end{notice}
+
+
+\subparagraph{Space Translation Symmetry}
+\label{Quantum/symmetries:space-translation-symmetry}
+{\hfill\includegraphics{SpaceTranslation.png}\hfill}
+
+Space Translation Gliffy Source
+
+S.T.I. is generated by canonical momentum. This is not so obvious as time translation. To prove this we need to understand what space translation really means.
+
+\textbf{Definition of Space Translation}
+
+Space translation means we change the position of the system by some spatial distance \(a\). In math this means a transformation from \(\ket{x}\) to \(\ket{x+a}\) where the plus sign is by definition. We invent this space translation operator,
+\begin{gather}
+\begin{split}\hat T_a  \ket{x} = \ket{x + a} .\end{split}\notag
+\end{gather}
+\textbf{Space Translation Applied to States}
+
+Next we can obtain the result of space translation operator applied to state in position basis
+\begin{gather}
+\begin{split}\bra{x}\hat T_a \ket{\psi} = (\bra{x}\hat T_a^\dagger) \ket{\psi} = \braket{x-a}{\psi} = \psi(x-a)\end{split}\notag
+\end{gather}
+where we used the relation
+\begin{gather}
+\begin{split}(\bra{x} \hat T_a) =  (\hat T_a^\dagger \ket{x} )^\dagger = (\hat T _ {-a} \ket{x}  )^\dagger = (\ket{x-a})^\dagger = \bra{x-a}\end{split}\notag
+\end{gather}
+which of course is because the normalization of coordinate basis tells us that space translation operator is unitary,
+\begin{gather}
+\begin{split}\braket{x+a}{x+a} = \bra{x}\hat T_a^\dagger \hat T_a \ket{x}\end{split}\notag
+\end{gather}
+\textbf{Generator of Space Translation}
+
+Similarly to time translation, we can find out the generator out of this definition. For infinitesimal translation,
+\begin{gather}
+\begin{split}-i\hbar \frac{\ket{\psi(x)} - \ket{\psi(x - \Delta)}}{\Delta} = \hat p \ket{\psi(x)}\end{split}\notag
+\end{gather}
+i.e.,
+\begin{gather}
+\begin{split}\ket{\psi(x-\Delta)} = \ket{\psi(x)} - \frac{i\Delta}{\hbar} \ket{\psi(x)}\end{split}\notag
+\end{gather}
+which shows that the generator of space translation is momentum operator.
+
+\textbf{From Infinitesimal to Finite Space Translation}
+\begin{gather}
+\begin{split}\hat T_a = \lim _ {N\rightarrow \infty} \hat T _ {a/N} ^ N = \lim _{N\rightarrow\infty} \left( 1 - \frac{i\hat p}{\hbar} \frac{a}{N} \right)^N = exp\left( -\frac{i \hat p a}{\hbar} \right)\end{split}\notag
+\end{gather}
+Now we have the explicity expression for space translation operators.
+
+\textbf{Space Translation on Operators}
+\begin{enumerate}
+\item {} 
+Use the invariant scalar -- inner product.
+
+\item {} 
+Passive vs Active
+
+\end{enumerate}
+
+\textbf{Space Translational Invariance}
+
+Space translational invariance of arbitary operator is
+\begin{gather}
+\begin{split}\hat \Omega = \hat T_a^\dagger \hat \Omega \hat T_a\end{split}\notag
+\end{gather}
+is equivalent to
+\begin{gather}
+\begin{split}\hat T_a \hat \Omega = \hat \Omega \hat T_a \Rightarrow [\hat T_a, \hat Omega] = 0\end{split}\notag
+\end{gather}
+We say some system has space translational invariance we mean the Hamiltonian is space translational invariant,
+\begin{gather}
+\begin{split}[\hat H , \hat T_a ] = 0 .\end{split}\notag
+\end{gather}
+Such a system has space translational invariance.
+
+\begin{notice}{hint}{Hint:}
+I once thought Hamiltonian is space/time translational invariant is not enough for the statement that the whole system is invariant under space or time translation for all observables. Of course I was wrong. Once the Hamiltonian and initial condition is given the whole system can be determined completely in principle.
+\end{notice}
+
+
+\paragraph{Gauge Symmetry}
+\label{Quantum/symmetries:gauge-symmetry}
+
+\subparagraph{Global Gauge Transformation}
+\label{Quantum/symmetries:global-gauge-transformation}\begin{gather}
+\begin{split}\ket{\psi} \rightarrow e^{i g \hat I} \ket{\psi}\end{split}\notag
+\end{gather}
+All quantum states are invariant under such transformation. This is not a nonsene transformation because the two states are different in some sense if we put them in a phase space where the phase factor assigns a position for the state vector in the phase space and we can see the difference directly in this image.
+
+The invariant thing is the probability density which is obvious.
+
+\begin{notice}{hint}{Hint:}
+This is global because the phase factor doesn't depend on position and time.
+\end{notice}
+
+
+\subparagraph{Local Gauge Transformation}
+\label{Quantum/symmetries:local-gauge-transformation}
+\includegraphics{LocalGaugeTransformation.png}
+
+Local Gauge Transformation Gliffy Source
+
+What if we have a local phase factor: \(g(x,t)\)?
+
+One way of implenment this phase factor is to transform the basis, for example:
+\begin{gather}
+\begin{split}\ket{x} \rightarrow e^{i g(x,t)/\hbar} \ket{x}\end{split}\notag
+\end{gather}
+By changing the basis, we can transform anything on position basis. Since the first principle of QM is Schrödinger equation, we would like to check what happens to that.
+
+It turns out that both space derivative and time derivative of the wave function changed. For both of them,
+\begin{gather}
+\begin{split}\frac{d}{dw} (\exp(-ig/\hbar)\phi ) = \exp(-ig/\hbar)\frac{d}{dw} \phi - i/\hbar \left(\frac{d}{dw} g\right) \phi\end{split}\notag
+\end{gather}
+equivalently, we can just change all the derivatives to
+\begin{gather}
+\begin{split}\frac{d}{dw} \rightarrow  \exp(-ig/\hbar)\frac{d}{dw} - i/\hbar \frac{d}{dw} g\end{split}\notag
+\end{gather}
+where \(w\) can be \(x\) or \(t\).
+
+
+\paragraph{Parity}
+\label{Quantum/symmetries:parity}
+
+\subparagraph{Logic}
+\label{Quantum/symmetries:logic}
+The only thing we need is the definition:
+\begin{gather}
+\begin{split}\hat \Pi \ket{\vec x} = \ket{-\vec x}\end{split}\notag
+\end{gather}
+Starting from that, we can derive properties.
+\begin{enumerate}
+\item {} 
+Hermition? \textbf{The way to find out something is Hermition or not is to take the Hermitian conjugate of the inner product sandwiched by the operator.}
+
+We know
+\begin{gather}
+\begin{split}\bra{x}\hat \Pi \ket{x} = \delta(x+x')\end{split}\notag
+\end{gather}
+Take the Hermitian conjugate of the whole expression,
+\begin{gather}
+\begin{split}(\bra{x'}\hat \Pi \ket{x} )^\dagger = \delta(x+x')\end{split}\notag
+\end{gather}
+We know the LHS is \(\bra{x}\hat \Pi^\dagger \ket{x'}\). So we have
+\begin{gather}
+\begin{split}\bra{x}\hat \Pi^\dagger \ket{x'}  =  \bra{x}\hat \Pi \ket{x'}\end{split}\notag
+\end{gather}
+Then we get that parity operator is Hermitian.
+
+\item {} 
+Inversion? Parity operator is Unitary.
+\begin{gather}
+\begin{split}\hat \Pi \hat \Pi \ket{\pi} = \hat \Pi \pi \ket{\pi} = \pi^2\ket{\pi}\end{split}\notag
+\end{gather}
+By physics we know that parity twice gets back to the original state. So \(\pi^2=1\) . Then we can find inverse parity operator. What's important is that it's unitary.
+
+\item {} 
+Acts on states? From definition, we need to go to position basis.
+\begin{gather}
+\begin{split}\bra{x}\hat \Pi\ket{\psi}  = \braket{-x}{\psi} .\end{split}\notag
+\end{gather}
+We can also find the results on momentum eigenbasis, which is
+\begin{gather}
+\begin{split}\bra{x}\hat \Pi \ket{p} = \braket{-x}{p}   .\end{split}\notag
+\end{gather}
+We already know mometum eigen state in postion is some kind of plane wave and it's easily proved that \(\braket{-x}{p} = \braket{x}{-p}\) .
+
+\item {} 
+Commutators with any observables? Just sandwich \(\hat \Pi^ \dagger \hat \Omega \hat \Pi\) then act on arbitary state and put it into position basis.
+
+As an example, find commutation relation with position operator.
+\begin{gather}
+\begin{split}\bra{x}\hat \Pi^\dagger \hat X \hat \Pi \ket{\psi} = \bra{ - x}\hat X \hat \Pi\ket{x} = -x \bra{-x}\hat \Pi \ket{\psi} = -x \braket{x}{\psi}\end{split}\notag
+\end{gather}
+which is \(\bra{x}(-\hat X)\ket{\psi}\). This proves the following equation.
+\begin{gather}
+\begin{split}\hat \Pi^\dagger \hat X \hat \Pi = -\hat X\end{split}\notag
+\end{gather}
+which can also be interpreted as passive transformation.
+
+Another example is the commutation relation with (canonical) momentum.
+\begin{gather}
+\begin{split}\bra{x}\hat \Pi^\dagger \hat P \hat \Pi \ket{\psi} = \bra{-x} \hat P \hat \Pi\ket{\psi} = \int \bra{-x}\hat P \ket{x'}\bra{x'}\hat \Pi\ket{\psi} dx'  .\end{split}\notag
+\end{gather}
+By carefully applying parity on position basis, we have
+\begin{gather}
+\begin{split}\int \bra{-x}\hat P \ket{x'}\braket{-x'}{\psi} d x' = \int \bra{-x}\hat P \ket{-x'}\braket{x'}{\psi} d x'\end{split}\notag
+\end{gather}
+Because commutation relation tells us
+\begin{gather}
+\begin{split}\bra{x'}[\hat X,\hat P]\ket{x} = \bra{x'}\hat X \hat P\ket{x} - \bra{x'}\hat P \hat X\ket{x} = (x' - x)\bra{x'}\hat P\ket{x} = i\hbar \delta(x'-x)\end{split}\notag
+\end{gather}
+Here comes the keypoint. Recall that
+\begin{gather}
+\begin{split}x\delta'(x) = -\delta\end{split}\notag
+\end{gather}
+we know that
+\begin{gather}
+\begin{split}(x - x')\bra{x}\hat P\ket{x'} = i\hbar \delta(x'-x)\end{split}\notag
+\end{gather}
+gives us the expression of momentum in position basis,
+\begin{gather}
+\begin{split}\bra{x'}\hat P \ket{x} = -i\hbar \partial_x \delta(x'-x)\end{split}\notag
+\end{gather}
+So to continue our calculation of parity applied to momentum,
+\begin{gather}
+\begin{split}\int \bra{-x}\hat P \ket{-x'}\braket{x'}{\psi} d x' = \int \bra{x}(-\hat P)\ket{x'}\braket{x'}{\psi}dx'\end{split}\notag
+\end{gather}
+So we can prove that mometum actually invserses when parity is applied to it.
+
+\end{enumerate}
+
+
+\subsubsection{Tensors and Groups in Quantum}
+\label{Quantum/tensors:tensors-and-groups-in-quantum}\label{Quantum/tensors::doc}
+A rank-k tensor \(\hat T_k^q\) is defined as
+\begin{gather}
+\begin{split}\left[\hat J_z, \hat T_k^1 \right] &= q\hbar \hat T_k^q \\
+\left[ \hat J_{\pm}, \hat T_k^q \right] & = \sqrt{(k\mp q)(k\pm q + 1)}\hbar \hat T_{k}^{q\pm 1} .\end{split}\notag
+\end{gather}
+
+\paragraph{Wigner-Eckart Theorem}
+\label{Quantum/tensors:wigner-eckart-theorem}
+Wigner-Eckart theorem is
+\begin{gather}
+\begin{split}\bra{n'j'm'}\hat T_k^q \ket{njm} = \bra{n'j'}\vert \hat T_k \vert \ket{nj} \braket{j'm';kj}{kq;jm},\end{split}\notag
+\end{gather}
+where \(j,j'\) are the angular momentum quantum numbers and \(n, n'\) are quantum numbers which are not related to angular momentum.
+
+It seems that tensor \(\hat T_k^q\) is a source of angular momentum. The maximum angular momentum it can provide is \(k\).
+
+.
+
+
+\subsubsection{Perturbation Theory in Quantum Mechanics}
+\label{Quantum/perturbationTheory::doc}\label{Quantum/perturbationTheory:perturbation-theory-in-quantum-mechanics}
 
 \section{Statistical Physics}
 \label{statmech/StatisticalPhysics::doc}\label{statmech/StatisticalPhysics:statistical-physics}
 This part has been moved to \href{http://emptymalei.github.io/StatisticalPhysics/}{here} .
 
+
+\section{Electrodynamics}
+\label{electrodynamics:electrodynamics}\label{electrodynamics::doc}
+At this moment, the update will be done here \href{http://electrodynamics.readthedocs.org/}{Electrodynamics} as a subproject and will be merged to this to this project when it is done.
+
+
+\subsection{Basics}
+\label{electrodynamics:basics}
+Coulomb Potential Energy for a point charge Q with the appearance of a test charge q at distance r
+\begin{gather}
+\begin{split}V(r) = k \frac{q Q}{r}.\end{split}\notag
+\end{gather}
+The ability to keep storage of charge is called capacitance, which is straight forward to have such a definition as
+\begin{gather}
+\begin{split}C = \frac{q}{U},\end{split}\notag
+\end{gather}
+where \(U\) is the electric potential (not the potential energy).
+
+Maxwell's equations are
+\begin{gather}
+\begin{split}\mathbf{E}\cdot\mathrm{d}\mathbf{S} &= \frac{1}{\varepsilon_0} \iiint_\Omega \rho \,\mathrm{d}V \\
+\mathbf{B}\cdot\mathrm{d}\mathbf{S} &= 0 \\
+\oint_{\partial \Sigma} \mathbf{E} \cdot \mathrm{d}\boldsymbol{\ell} & = - \frac{d}{dt} \iint_{\Sigma} \mathbf{B} \cdot \mathrm{d}\mathbf{S} \\
+\oint_{\partial \Sigma} \mathbf{B} \cdot \mathrm{d}\boldsymbol{\ell} &= \mu_0 \iint_{\Sigma} \mathbf{J} \cdot \mathrm{d}\mathbf{S} + \mu_0 \varepsilon_0 \frac{d}{dt} \iint_{\Sigma} \mathbf{E} \cdot \mathrm{d}\mathbf{S}\end{split}\notag
+\end{gather}
+or
+\begin{gather}
+\begin{split}\nabla \cdot \mathbf{E} &= \frac {\rho} {\varepsilon_0} \\
+\nabla \cdot \mathbf{B} &= 0 \\
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}} {\partial t} \\
+\nabla \times \mathbf{B} &= \mu_0\left(\mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right)\end{split}\notag
+\end{gather}
+
+\subsection{Ref \& Notes}
+\label{electrodynamics:ref-notes}
 
 \chapter{Advanced Physics}
 \label{index:advanced-physics}
@@ -1889,7 +3357,7 @@ Metric in special relativity
      0 & 1 & 0 & 0\\
      0 & 0 & 1 & 0\\
      0 & 0 & 0 & 1\\
-\end{pmatrix}\end{split}\notag\\\begin{split}\end{split}\notag
+\end{pmatrix}\end{split}\notag
 \end{gather}
 
 \subsubsection{Quantities and Operations}
@@ -1901,28 +3369,28 @@ d'Alembert operator, or wave operator, is the Lapace operator in Minkowski space
 Actually, there are more general definations for Lapacian, which includes this d'Alembertian of course.
 }
 \begin{gather}
-\begin{split}\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu\end{split}\notag
 \end{gather}
 In the usual \{t,x,y,z\} natural orthonormal basis,
 \begin{gather}
 \begin{split}\Box & = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
 & = -\partial_t^2+\Delta^2 \\
-& = -\partial_t^2+\nabla\end{split}\notag\\\begin{split}\end{split}\notag
+& = -\partial_t^2+\nabla\end{split}\notag
 \end{gather}\begin{description}
 \item[{On wiki \footnote{
 wiki:D'Alembert\_operator
 } , they give some applications to it.}] \leavevmode\begin{itemize}
 \item {} 
 klein-Gordon equation
-$(\Box+m^2)\phi=0$
+\((\Box+m^2)\phi=0\)
 
 \item {} 
 wave equation for electromagnetic field in vacuum:
-For the electromagnetic four-potential $\Box A^\mu=0$footnote\{Gauge\}
+For the electromagnetic four-potential \(\Box A^\mu=0\)footnote\{Gauge\}
 
 \item {} 
 wave equation for small vibrations
-$\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0$
+\(\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0\)
 
 \end{itemize}
 
@@ -1990,67 +3458,67 @@ For more information, check out Canbin Liang's book. Volume 1, page 115.
 
 Introducing those requirements, a compatible volume element is
 \begin{gather}
-\begin{split}\epsilon_{a_1\cdots a_n} = \pm \sqrt{|g|} (e^1)_{a_1}\wedge \cdots \wedge (e^n)_{a_n}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\epsilon_{a_1\cdots a_n} = \pm \sqrt{|g|} (e^1)_{a_1}\wedge \cdots \wedge (e^n)_{a_n}\end{split}\notag
 \end{gather}
 Alternatively, this can be expressed in the way Ellis used in arXiv:gr-qc/9812046v5.
 \begin{gather}
-\begin{split}\eta_{abcd} = \eta_{[abcd]}, \quad \mathrm{with} \eta_{0123} = \sqrt{|\mathrm {det} g_{ab}|}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\eta_{abcd} = \eta_{[abcd]}, \quad \mathrm{with} \eta_{0123} = \sqrt{|\mathrm {det} g_{ab}|}\end{split}\notag
 \end{gather}
-Induced volume element $\hat \epsilon_{a_1\cdots a_{n-1}}$ is defined use the normal vector $u^a$ of the hypersurface,
+Induced volume element \(\hat \epsilon_{a_1\cdots a_{n-1}}\) is defined use the normal vector \(u^a\) of the hypersurface,
 \begin{gather}
-\begin{split}\hat \epsilon_{a_1\cdots a_{n-1}} = u^b \epsilon_{b a_1 \cdots a_{n-1}}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\hat \epsilon_{a_1\cdots a_{n-1}} = u^b \epsilon_{b a_1 \cdots a_{n-1}}\end{split}\notag
 \end{gather}
 
 \paragraph{4-velocity}
 \label{relativity/GeneralRelativity:velocity}
 4-velocity of observed matter is
 \begin{gather}
-\begin{split}u^\alpha = \frac{\mathrm d x^\alpha}{\mathrm d \tau}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}u^\alpha = \frac{\mathrm d x^\alpha}{\mathrm d \tau}\end{split}\notag
 \end{gather}
-with $u^\alpha u_\alpha =-1$, $\tau$ is the proper time along the worldlines of investaged matter.
+with \(u^\alpha u_\alpha =-1\), \(\tau\) is the proper time along the worldlines of investaged matter.
 
 
 \paragraph{Projection Tensors}
 \label{relativity/GeneralRelativity:projection-tensors}
-We can use 4-velocity to project variables to parts that is parallel to $u^\alpha$ and parts that is orthogonal to $u^\alpha$.
+We can use 4-velocity to project variables to parts that is parallel to \(u^\alpha\) and parts that is orthogonal to \(u^\alpha\).
 \begin{gather}
 \begin{split}U^a_{\phantom a b} &= -u^a u_b \\
-h_{ab} &= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}\end{split}\notag\\\begin{split}\end{split}\notag
+h_{ab} &= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}\end{split}\notag
 \end{gather}
 Some properties of the  two projections.
 \begin{gather}
 \begin{split}& U^a_{\phantom a b} U^b_{\phantom bc} = U^a_{\phantom a c}  ,  U^a_{\phantom a a} = 1  , U_{ab}=g_{ac} U^c_{\phantom cb}  , U_{ab} u^b = - g_{ac} u^c u_b u^b = u_a \\
 & h^a_{\phantom ab} = g^{ac} h_{cb} = \delta^a_{\phantom ab} + u^a u_b = \delta^a_{\phantom ab} - U^a_{\phantom ab} \\
 & h^a_{\phantom a c}h^c_{\phantom c b} = (\delta^a_{\phantom ac} - U^a_{\phantom ac})(\delta^c_{\phantom cb} - U^c_{\phantom cb}) = \delta^a_{\phantom ab} - U^a_{\phantom ab} = h^a_{\phantom ab} \\
-& h^a_{\phantom aa} = 4-1 = 3  ,   h_{ab}u^b = 0\end{split}\notag\\\begin{split}\end{split}\notag
+& h^a_{\phantom aa} = 4-1 = 3  ,   h_{ab}u^b = 0\end{split}\notag
 \end{gather}
 
-\paragraph{Covariant time derivative ($\dot \quad$)}
+\paragraph{Covariant time derivative (\(\dot \quad\))}
 \label{relativity/GeneralRelativity:covariant-time-derivative}
 This is the derivative along the fundamental worldlines (projection on the worldlines),
 \begin{gather}
-\begin{split}\dot T^{ab}_{\phantom{ab}cd} = u^e \nabla_e T^{ab}_{\phantom{ab}cd}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\dot T^{ab}_{\phantom{ab}cd} = u^e \nabla_e T^{ab}_{\phantom{ab}cd}\end{split}\notag
 \end{gather}
 
-\paragraph{Fully orthogonally projected covariant derivative ($\tilde \nabla$)}
+\paragraph{Fully orthogonally projected covariant derivative (\(\tilde \nabla\))}
 \label{relativity/GeneralRelativity:fully-orthogonally-projected-covariant-derivative}
 This derivative is the project orghogonal to the normal vector of the hyperspace or orthogonal to the observer's 4-velocity or along the tagent of the hyperspace.
 \begin{gather}
-\begin{split}\tilde\nabla_e T^{ab}_{\phantom{ab}cd} = h^a_f h^b_gh^p_ch^q_dh^r_e \nabla_r T^{fg}_{\phantom{fg}pq}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\tilde\nabla_e T^{ab}_{\phantom{ab}cd} = h^a_f h^b_gh^p_ch^q_dh^r_e \nabla_r T^{fg}_{\phantom{fg}pq}\end{split}\notag
 \end{gather}
 
 \paragraph{Orthogonal projections of vectors}
 \label{relativity/GeneralRelativity:orthogonal-projections-of-vectors}
 Orthogonal projection of vectors
 \begin{gather}
-\begin{split}v^{<a>}      = h^a_{\phantom a b} v^b\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}v^{<a>}      = h^a_{\phantom a b} v^b\end{split}\notag
 \end{gather}
 And the orthogonally projected symmetric trace-free part of tensors
 \begin{gather}
-\begin{split}T^{<ab>} = [h^{(a}_{\phantom {(a} c} h^{b)}_{\phantom{b)}d} - \frac{1}{3} h^{ab} h_{cd} ] T^{cd}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}T^{<ab>} = [h^{(a}_{\phantom {(a} c} h^{b)}_{\phantom{b)}d} - \frac{1}{3} h^{ab} h_{cd} ] T^{cd}\end{split}\notag
 \end{gather}
 
-\paragraph{Othogonal projected covariant time derivatives along $u^a$}
+\paragraph{Othogonal projected covariant time derivatives along \(u^a\)}
 \label{relativity/GeneralRelativity:othogonal-projected-covariant-time-derivatives-along}\begin{gather}
 \begin{split}\dot v^{<a>} = h^a_{\phantom a b} \dot v^b\end{split}\notag\\\begin{split}\dot T^{<ab>} = [ h^{(a}_{\phantom{(a}b} h^{b)}_{\phantom{b)} d} - \frac 1 3 h^{ab}h_{cd} ]\dot T^{cd}\end{split}\notag
 \end{gather}
@@ -2058,7 +3526,7 @@ And the orthogonally projected symmetric trace-free part of tensors
 \subsubsection{Properties}
 \label{relativity/GeneralRelativity:properties}\begin{itemize}
 \item {} 
-Projected time and space derivatives of $U_{ab}$, $h_{ab}$ and $\eta_{abc}$ vanish.
+Projected time and space derivatives of \(U_{ab}\), \(h_{ab}\) and \(\eta_{abc}\) vanish.
 
 \end{itemize}
 
@@ -2068,22 +3536,22 @@ Projected time and space derivatives of $U_{ab}$, $h_{ab}$ and $\eta_{abc}$ vani
 
 \subsubsection{Energy-Momentum Tensor for Particles}
 \label{relativity/GeneralRelativity:energy-momentum-tensor-for-particles}\begin{gather}
-\begin{split}S_p \equiv -m c \int \int \mathrm d s\mathrm d\tau \sqrt{-\dot x ^\mu g_{\mu\nu} \dot x^\nu} \delta^4(x^\mu - x^\mu (s))    ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}S_p \equiv -m c \int \int \mathrm d s\mathrm d\tau \sqrt{-\dot x ^\mu g_{\mu\nu} \dot x^\nu} \delta^4(x^\mu - x^\mu (s))    ,\end{split}\notag
 \end{gather}
-in which $x^\mu(s)$ is the trajectory of the particle. Then the energy density $\rho$ corresponds to $m\delta^4(x^\mu- x^\mu(s))$.
+in which \(x^\mu(s)\) is the trajectory of the particle. Then the energy density \(\rho\) corresponds to \(m\delta^4(x^\mu- x^\mu(s))\).
 
 The Largrange density
 \begin{gather}
 \begin{split}\mathcal L = -\int\mathrm ds mc \sqrt{-\dot x^\mu g_{\mu\nu}\dot x^\nu}\delta^4(x^\mu - x^\mu(s))\end{split}\notag
 \end{gather}
-Energy-momentum density is $\mathcal T^{\mu\nu} = \sqrt{-g}T^{\mu\nu}$ is
+Energy-momentum density is \(\mathcal T^{\mu\nu} = \sqrt{-g}T^{\mu\nu}\) is
 \begin{gather}
-\begin{split}\mathcal T^{\mu\nu} = -2 \frac{\partial \mathcal L}{\partial g_{\mu\nu}}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\mathcal T^{\mu\nu} = -2 \frac{\partial \mathcal L}{\partial g_{\mu\nu}}\end{split}\notag
 \end{gather}
 Finally,
 \begin{gather}
 \begin{split}\mathcal T^{\mu\nu} &= \int \mathrm ds \frac{mc\dot x^\mu \dot x^\nu}{\sqrt{-\dot x^\mu g_{\mu\nu} \dot x^\nu}} \delta(t-t(s))\delta^3(\vec x - \vec x(t)) \\
-&= m\dot x^\mu \dot x^\nu \frac{\mathrm d s}{\mathrm d t} \delta^3(\vec x - \vec x(s(t)))\end{split}\notag\\\begin{split}\end{split}\notag
+&= m\dot x^\mu \dot x^\nu \frac{\mathrm d s}{\mathrm d t} \delta^3(\vec x - \vec x(s(t)))\end{split}\notag
 \end{gather}
 
 \subsection{Theorems}
@@ -2091,7 +3559,7 @@ Finally,
 
 \subsubsection{Killing Vector Related}
 \label{relativity/GeneralRelativity:killing-vector-related}
-$\xi^a$ is Killing vector field, $T^a$ is the tangent vector of geodesic line. Then $T^a\nabla_a(T^b\xi_b)=0$, that is $T^b\xi_b$ is a constant on geodesics.
+\(\xi^a\) is Killing vector field, \(T^a\) is the tangent vector of geodesic line. Then \(T^a\nabla_a(T^b\xi_b)=0\), that is \(T^b\xi_b\) is a constant on geodesics.
 
 
 \subsection{Specific Topics}
@@ -2099,7 +3567,7 @@ $\xi^a$ is Killing vector field, $T^a$ is the tangent vector of geodesic line. T
 
 \subsubsection{Redshift}
 \label{relativity/GeneralRelativity:redshift}
-In geometrical optics limit, the angular frequency $\omega$ of a photon with a 4-vector $K^a$, measured by a observer with a 4-velocity $Z^a$, is $\omega=-K_aZ^a$.
+In geometrical optics limit, the angular frequency \(\omega\) of a photon with a 4-vector \(K^a\), measured by a observer with a 4-velocity \(Z^a\), is \(\omega=-K_aZ^a\).
 
 
 \subsubsection{Stationary vs Static}
@@ -2121,6 +3589,156 @@ When we say a field is static, the field is both time-independent and symmetric 
 
 \chapter{Cutting Edge Physics}
 \label{index:cutting-edge-physics}
+
+\section{Astrophysics}
+\label{astrophysics:astrophysics}\label{astrophysics::doc}
+
+\subsection{Wave Bands}
+\label{astrophysics:wave-bands}
+A table of wavebands in astronomy is something like this.
+
+
+\subsection{Doppler Shift}
+\label{astrophysics:doppler-shift}
+The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.
+
+{\hfill\includegraphics{dopplerRedshift.png}\hfill}
+
+The observer is fixed in O' frame and source is in O frame. Emitting angle in O frame is \(\theta\).
+
+Since momentum is a vector, we have the Lorentz transformation which transfrom it in to O' frame,
+\begin{gather}
+\begin{split}\frac{E'}{c} = \gamma \left(\frac{E}{c} - \beta p_x\right),\end{split}\notag
+\end{gather}
+where we also have
+\begin{gather}
+\begin{split}p_x &= p\cos\theta,
+p = E/c.\end{split}\notag
+\end{gather}
+Combining these equations, the energy of the photons in O' frame is
+\begin{gather}
+\begin{split}E' = E \gamma (1 - \beta \cos\theta).\end{split}\notag
+\end{gather}
+In quantum mechanics, energy is related to angular frequency,
+\begin{gather}
+\begin{split}E = \hbar \omega.\end{split}\notag
+\end{gather}
+The angular frequency in O' frame is
+\begin{gather}
+\begin{split}\omega ' = \omega \gamma (1-\beta \cos\theta).\end{split}\notag
+\end{gather}
+Redshift is define as
+\begin{gather}
+\begin{split}z &= \frac{\nu_e - \nu_o}{\nu_o} \\
+& = \frac{\omega_e - \omega_o}{\omega_o} \\
+& = \frac{1/\gamma - 1 + \beta\cos\theta}{1-\beta \cos\theta}.\end{split}\notag
+\end{gather}
+\begin{notice}{note}{Non-relativistic Doppler Shift}
+
+To understand the effect of relativity, we would first recall the non-relativistic doppler shift.
+\begin{gather}
+\begin{split}\omega'_{non-rel} = \omega_{non-rel}(1-v/c \cos\theta).\end{split}\notag
+\end{gather}
+where no \(\gamma\) is relavent. It's obvious that we have only two kinds of shift, redshift due to the source is closing, or blueshift due to the fact that the source is moving away.
+\end{notice}
+
+Here we have three different kinds, the additional one is the transverse redshift due to the \(\gamma\) factor or the contraction of time.
+
+An gif from wikipedia shows this explicitly,
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{XYCoordinates.gif}
+\caption{Image Source: \href{https://en.wikipedia.org/wiki/File:XYCoordinates.gif}{File:XYCoordinates.gif}}\end{figure}
+
+
+\subsection{Photon Production}
+\label{astrophysics:photon-production}
+There are two important processes that produces photons in astrophysical environment, namely thermal Bremsstrahlung and synchrotron radiation.
+
+
+\subsubsection{Bremsstrahlung Radiation}
+\label{astrophysics:bremsstrahlung-radiation}\begin{figure}[htbp]
+\centering
+\capstart
+
+\includegraphics{thermalBremsstrahlungSpectrum.png}
+\caption{This is the spectrum of frequency-dependent emissivity of the process which happens when a flux of non-relativistic regime with thermal distributon of temperature T is shot into a plasma of ions or protons.}\end{figure}
+
+
+\subsection{Compton Scattering}
+\label{astrophysics:compton-scattering}
+The quantities we are interested in are cross section and radiated power, both of which are Lorentz invariant.
+
+
+\subsubsection{Thomson Scattering}
+\label{astrophysics:thomson-scattering}
+Total cross section of Thomson scattering can be obtained using only classical electrodynamics. The physics behind it is that the electric field excerts force on an electron then the electron emits photons to all possible direction as it oscillates.
+
+The incoming power per unit area is
+\begin{gather}
+\begin{split}P_{inc}= c u_{rad},\end{split}\notag
+\end{gather}
+as \(u_{rad} = \frac{E^2}{4\pi}\) is the energy density of EM field.
+
+The outgoing or scattered wave power (total) is
+\begin{gather}
+\begin{split}P_{scatt} = \frac{2}{3}\frac{e^4}{m_e^2 c^3} E^2.\end{split}\notag
+\end{gather}
+The total cross section is ratio of the two quantity, i.e.,
+\begin{gather}
+\begin{split}\sigma_T \equiv \frac{P_{scatt}}{P_{inc}} =\frac{8\pi e^4}{3 m_e ^2 c^4} = \frac{8\pi (\alpha \hbar c)^2}{3 m_e ^2 c^4},\end{split}\notag
+\end{gather}
+in which the fine structure constant is defined as \(\alpha = \frac{e^2}{\hbar c}\).
+
+
+\subsubsection{Compton Scattering}
+\label{astrophysics:id1}
+The full quantum electrodynamics result is called Klein-Nishima formula, which describes the total cross section of coliding photon and electron,
+\begin{gather}
+\begin{split}\sigma_{K-N} = \frac{\pi e^4}{m_e^2 c^4} \frac{1}{\epsilon} \left[ \left(1 - \frac{2(\epsilon+1)}{\epsilon^2}\right) \ln (2\epsilon + 1) + \frac{1}{2} + \frac{4}{\epsilon} - \frac{1}{2(2\epsilon + 1)^2} \right],\end{split}\notag
+\end{gather}
+where \(\epsilon = \frac{E}{m_e c^2}\).
+
+In the limit that energy of electron is much larger than photons, we have \(\epsilon\) is much smaller than 1, we would come back to the Thomson limit, which is true for our equation,
+\begin{gather}
+\begin{split}\sigma_{K-N} &= \sigma_T \frac{3 \left(\left(1-\frac{2 (x+1)}{x^2}\right) \log (2 x+1)+\frac{4}{x}-\frac{1}{2 (2 x+1)^2}+\frac{1}{2}\right)}{8 x} \\
+& = \sigma_T (1 - 2\epsilon + O(x^2)).\end{split}\notag
+\end{gather}
+To have more understanding on this formula, I ploted \(\sigma_{K-N}\) in terms of \(\sigma_T\) as the energy scale \(\epsilon\) changes.
+
+{\hfill\includegraphics{comptonScattering.png}\hfill}
+
+
+\subsection{Asteroseismology}
+\label{astrophysics:asteroseismology}
+The stars do shake, from inside out.
+
+Long period variable such as Cepheids pulsate in the luminosity. This is because of the radial oscillation mode with a approximate period of
+\begin{gather}
+\begin{split}P_{dynamical} \approx \left( \frac{R^3}{GM} \right)^{1/2} \approx (G\bar \rho)^{-1/2},\end{split}\notag
+\end{gather}
+in which we have the radius of the star as \(R\), mass of the star as \(M\) and mean density \(\bar \rho\). \textbf{The good thing of this oscillation immediately shows us the mean density of the star, even without any furthure inspectation.}
+
+There are double mode Cepheids, whose modes provides information about mass and radius.
+
+Our sun, up to now we have identified thousands of individual modes. And more modes as many as \(10^{6}\) modes can be determined accurately.{[}\textasciicircum{}helioosc{]}\_
+
+
+\subsubsection{Papers, Researches and More}
+\label{astrophysics:papers-researches-and-more}\begin{enumerate}
+\item {} 
+Double mode Cepheids, J. Otzen Petersen, 1973, 1974, 1978.
+
+\item {} 
+An introduction of seismology applied to stars. \href{http://ap.smu.ca/~guenther/seismology/seismology.html}{http://ap.smu.ca/\textasciitilde{}guenther/seismology/seismology.html}
+
+\end{enumerate}
+
+
+\subsection{Refs \& Notes}
+\label{astrophysics:refs-notes}
 
 \section{General Relativity Revisited}
 \label{relativity/GeneralRelativityAdv:general-relativity-revisited}\label{relativity/GeneralRelativityAdv::doc}
@@ -2255,10 +3873,10 @@ Most items in mathematics are the same in different theories.
 \paragraph{How}
 \label{relativity/GeneralRelativityAdv:how}\begin{itemize}
 \item {} 
-Inertial mass $m_I$
+Inertial mass \(m_I\)
 
 \item {} 
-Gravitational mass $m_G$
+Gravitational mass \(m_G\)
 
 \end{itemize}
 
@@ -2269,9 +3887,9 @@ In a static and uniform gravitation field, the gravity force is \textbackslash{}
 
 Thus the acceleration in this case should be \textbackslash{}{[} a -r g \textbackslash{}{]}
 
-When $m_G/m_I$ is constant, the falling accerelation are the same
-for different objects with same mass. However, if $m_G/m_I$ is not
-a constant, say $m_G\ne m_I$, different objects would fall at
+When \(m_G/m_I\) is constant, the falling accerelation are the same
+for different objects with same mass. However, if \(m_G/m_I\) is not
+a constant, say \(m_G\ne m_I\), different objects would fall at
 different acceleration.
 
 Now if we put two ball with different mass on the Eotvos torsion
@@ -2281,7 +3899,7 @@ balance, the balance would rotate and we can measure it.
 \paragraph{Results}
 \label{relativity/GeneralRelativityAdv:results}
 Detection of
-$R^k_{0l0}=(1/c^2)\partial^2\Phi/\partial x^k\partial x^l \sim 10^{-32} \text{cm}^{-2}$.
+\(R^k_{0l0}=(1/c^2)\partial^2\Phi/\partial x^k\partial x^l \sim 10^{-32} \text{cm}^{-2}\).
 
 
 \subsubsection{Hughes-Drevershiy Experiment, etc}
@@ -2318,16 +3936,16 @@ WEP
  & 
 Eotvos torsion balance
  & 
-$\eta = (0.3 \pm 1.8) \times 10^{-13}$
+\(\eta = (0.3 \pm 1.8) \times 10^{-13}\)
  & 
 More precise in space exp. {[}{[}\textasciicircum{}1{]}a{]} {[}{[}\textasciicircum{}1b{]}{]} {[}{[}\textasciicircum{}1c{]}{]}
 \\
- & 
+\hline & 
 Gravitational redshift of light
  &  & 
 {[}{[}\textasciicircum{}2{]}{]}
 \\
-
+\hline
 EEP
  & 
 Hughes-Drever Experiment
@@ -2410,49 +4028,49 @@ DoF
 
 \subsubsection{Expansion and Temperature}
 \label{Cosmology/cosmoIndex:expansion-and-temperature}
-We can see that the heaviest particle is top quark with a mass of $m_t = 170 \mathrm{GeV}$.
+We can see that the heaviest particle is top quark with a mass of \(m_t = 170 \mathrm{GeV}\).
 
 
 \paragraph{Temperature Greater Than Mass of Top Quark}
 \label{Cosmology/cosmoIndex:temperature-greater-than-mass-of-top-quark}
-If temperature of the universe $T \gg m_t$, all particles should be in relativistic regime and the decay (annihilation) and inverse decay (inverse annihilation) are in equilibrium so all particles contribute to the thermal quantities in a relativistic way.
+If temperature of the universe \(T \gg m_t\), all particles should be in relativistic regime and the decay (annihilation) and inverse decay (inverse annihilation) are in equilibrium so all particles contribute to the thermal quantities in a relativistic way.
 \begin{gather}
 \begin{split}g_B = 28\end{split}\notag\\\begin{split}g_F = 90\end{split}\notag
 \end{gather}
 Then
 \begin{gather}
-\begin{split}g _ * = g_B + \frac{7}{8} g _ F = 106.75\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}g _ * = g_B + \frac{7}{8} g _ F = 106.75\end{split}\notag
 \end{gather}
 For convinience, define the following reduced Planck mass
 \begin{gather}
-\begin{split}8\pi G = \frac{1}{M _ p ^2}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}8\pi G = \frac{1}{M _ p ^2}\end{split}\notag
 \end{gather}
-And it's good to know its value, which is $2.4\times 10^{18} \mathrm{GeV}$.
+And it's good to know its value, which is \(2.4\times 10^{18} \mathrm{GeV}\).
 
 We would like to know the relation between expansion and temperature. We already know that the energy density is
 \begin{gather}
-\begin{split}\rho = g _ * \frac{\pi^2}{30} T^4\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\rho = g _ * \frac{\pi^2}{30} T^4\end{split}\notag
 \end{gather}
 So the expansion is
 \begin{gather}
-\begin{split}H^2 = \frac{8\pi G}{3}\rho = 106.75 \times \frac{\pi^2}{30} \frac{T^4}{3 M_p^2}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}H^2 = \frac{8\pi G}{3}\rho = 106.75 \times \frac{\pi^2}{30} \frac{T^4}{3 M_p^2}\end{split}\notag
 \end{gather}
 So Hubble function is
 \begin{gather}
-\begin{split}H \approx 3 \frac{T^2}{M_p}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}H \approx 3 \frac{T^2}{M_p}\end{split}\notag
 \end{gather}
 
 \paragraph{Temperature Down to Mass of A Particle}
 \label{Cosmology/cosmoIndex:temperature-down-to-mass-of-a-particle}
-As temperature drops down, particle dacay (annihilation) will be greater than its inverse which is suppressed by Boltzmann factor $\exp (-m/T)$. The decay rate is so quick that the particle will almost dispear before the universe expand a lot.
+As temperature drops down, particle dacay (annihilation) will be greater than its inverse which is suppressed by Boltzmann factor \(\exp (-m/T)\). The decay rate is so quick that the particle will almost dispear before the universe expand a lot.
 
 So when the temperature drops below the mass of a particle, it won't contribute to the energy density. Their DoF will just dispear.
 
-For example, if $T~\mathrm{MeV}$, Higgs and W and Z will decay and quarks are combined with gluons. So we only have \textbf{photons, electrons, neutrinos} as elementary particles, that is $g_* = 10.75$.
+For example, if \(T~\mathrm{MeV}\), Higgs and W and Z will decay and quarks are combined with gluons. So we only have \textbf{photons, electrons, neutrinos} as elementary particles, that is \(g_* = 10.75\).
 
 The Hubble function,
 \begin{gather}
-\begin{split}H \approx \frac{T^2}{M _ p ^2}\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}H \approx \frac{T^2}{M _ p ^2}\end{split}\notag
 \end{gather}
 
 \subsubsection{Decay Rate VS Expansion Rate}
@@ -2489,23 +4107,23 @@ This schematic picture shows that energy spread out on a surface because the tot
 
 Through a very simple calculation, it is as simple as
 \begin{gather}
-\begin{split}L_0 = \frac{ L }{ 4\pi r^2 } .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}L_0 = \frac{ L }{ 4\pi r^2 } .\end{split}\notag
 \end{gather}
 We are dealing with Cosmology now. The space-time manifold should be a great concern. The luminosity turns out to be
 \begin{gather}
-\begin{split}L_0 = \frac{L_\mathrm{abs} }{4\pi d^2} \frac{1}{1+z} \frac{1}{1+z} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}L_0 = \frac{L_\mathrm{abs} }{4\pi d^2} \frac{1}{1+z} \frac{1}{1+z} .\end{split}\notag
 \end{gather}
 Here d is the physical distance between the star and the observer. L is the absolute luminosity of the star, which stands for the power of the star. z is the redshift of the star.
 
-The first $\frac{1}{1+z}$ term comes from the fact that the energy of each photon decrease due to expansion of the universe, while the second is the result that the rate of photons arrived at the observer is less.
+The first \(\frac{1}{1+z}\) term comes from the fact that the energy of each photon decrease due to expansion of the universe, while the second is the result that the rate of photons arrived at the observer is less.
 
 We are happy to define
 \begin{gather}
-\begin{split}d_L = d (1+z) ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_L = d (1+z) ,\end{split}\notag
 \end{gather}
 then the luminosity becomes simpler,
 \begin{gather}
-\begin{split}L_0 = \frac{L_{\mathrm {abs}}}{4\pi d_L^2} .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}L_0 = \frac{L_{\mathrm {abs}}}{4\pi d_L^2} .\end{split}\notag
 \end{gather}
 Now we come back to have a look at this luminosity.
 \begin{itemize}
@@ -2516,13 +4134,13 @@ We can measure how much energy is passing through a unit area at a unit time, wh
 We can \textbf{predict the absolute luminosity} from a star evolution model.
 
 \item {} 
-The $d_L = d (1+z)$ is only valid for a flat universe, with curvature term $K=0$ in Friedmann equation.
+The \(d_L = d (1+z)\) is only valid for a flat universe, with curvature term \(K=0\) in Friedmann equation.
 
 \end{itemize}
 
 Then we can find out this so called luminosity distance
 \begin{gather}
-\begin{split}d_L = \frac{  L_{\mathrm {abs}} }{ 4\pi L_0 }\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_L = \frac{  L_{\mathrm {abs}} }{ 4\pi L_0 }\end{split}\notag
 \end{gather}
 from some data.
 
@@ -2534,22 +4152,22 @@ We observe to test theories.
 
 What is this distance in theory?
 \begin{gather}
-\begin{split}d_L = d (1+z)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_L = d (1+z)\end{split}\notag
 \end{gather}
 Wait, didn't we just mention that this is only valid for a flat universe? So we just do some extension.
 \begin{gather}
-\begin{split}d_L = R(d) (1+z)\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_L = R(d) (1+z)\end{split}\notag
 \end{gather}
 where R(d) is a function of d and can be determined through geometry,
 \begin{itemize}
 \item {} 
-Spherical: $4\pi \sin^2 d$ ,
+Spherical: \(4\pi \sin^2 d\) ,
 
 \item {} 
-Flat: $4\pi d$ ,
+Flat: \(4\pi d\) ,
 
 \item {} 
-Hyperbolic: $4\pi \sinh^2 d$ .
+Hyperbolic: \(4\pi \sinh^2 d\) .
 
 \end{itemize}
 
@@ -2560,28 +4178,28 @@ For nearby objects, we can always use flat geometry and use Taylor expansion at 
 
 Luminosity distance is
 \begin{gather}
-\begin{split}d_L = d (1+z) = r a(t) (1+z) ,\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_L = d (1+z) = r a(t) (1+z) ,\end{split}\notag
 \end{gather}
 where r is the comoving distance and a(t) is the scale factor at time t.
 
 We know
 \begin{gather}
-\begin{split}r = \int_t^{t_0} \frac{1}{a(t')} \mathrm d t' .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}r = \int_t^{t_0} \frac{1}{a(t')} \mathrm d t' .\end{split}\notag
 \end{gather}
-So we are happy to use Taylor expansion around $t_0$ for $a(t)$, and keep only up to the second order of time. And do some substitution with
+So we are happy to use Taylor expansion around \(t_0\) for \(a(t)\), and keep only up to the second order of time. And do some substitution with
 \begin{gather}
 \begin{split}H_0 = \dot a(t_0)/a(t_0)\end{split}\notag\\\begin{split}q_0=\ddot a (t_0) / a(t_0)\end{split}\notag
 \end{gather}
 We then do the same thing on redshift
 \begin{gather}
-\begin{split}z=a(t_0)/a(t) - 1 .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}z=a(t_0)/a(t) - 1 .\end{split}\notag
 \end{gather}
-Finally, we can find out the relation $r(z)$, which leads us to the result we need, $d_L(z) = H_0^{-1} (z - \frac12 (1+q_0) z^2)$.
+Finally, we can find out the relation \(r(z)\), which leads us to the result we need, \(d_L(z) = H_0^{-1} (z - \frac12 (1+q_0) z^2)\).
 \begin{itemize}
 \item {} 
 For very near objects (not as near as our sun of course),
 \begin{gather}
-\begin{split}d_L = H_0^{-1}z .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_L = H_0^{-1}z .\end{split}\notag
 \end{gather}
 \end{itemize}
 
@@ -2594,7 +4212,7 @@ We can show that for a vacuum energy dominated universe, the line would go up an
 
 \subparagraph{Comment}
 \label{Cosmology/cosmoIndex:comment}
-In this model independent method, the only two parameters occur are Hubble constant $H_0$ and deceleration parameter $q_0$ .
+In this model independent method, the only two parameters occur are Hubble constant \(H_0\) and deceleration parameter \(q_0\) .
 
 
 \paragraph{Angular Diameter Distance}
@@ -2608,24 +4226,24 @@ Angular diameter distance is really useful if we have some standard ruler. Now a
 
 At the same time, we can use magic of math
 \begin{gather}
-\begin{split}\theta = d/D .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\theta = d/D .\end{split}\notag
 \end{gather}
-Now as we already find out what $\theta$ is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance $D$, which is the distance between us and the standard ruler.
+Now as we already find out what \(\theta\) is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance \(D\), which is the distance between us and the standard ruler.
 
 
 \subparagraph{Theory}
 \label{Cosmology/cosmoIndex:theory}
-We can find out this kind of distance, which we will denote it as $d_A$ from now on. What is it for?
+We can find out this kind of distance, which we will denote it as \(d_A\) from now on. What is it for?
 
 A angular diameter distance is the physical distance between us and the standard ruler,
 \begin{gather}
-\begin{split}d_A = a(t)r .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_A = a(t)r .\end{split}\notag
 \end{gather}
 We can use the same trick we used in luminosity distance calculations, and it is easy to find that
 \begin{gather}
-\begin{split}d_A = H_0^{-1} (z - \frac{1}{2} (3 + q_0)z^2 ) .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}d_A = H_0^{-1} (z - \frac{1}{2} (3 + q_0)z^2 ) .\end{split}\notag
 \end{gather}
-Again, the observation is related to only two parameters, Hubble constant $H_0$ and deceleration parameter $q_0$.
+Again, the observation is related to only two parameters, Hubble constant \(H_0\) and deceleration parameter \(q_0\).
 
 
 \subparagraph{Standard Rulers}
@@ -2647,7 +4265,7 @@ Now we can see anything that is only (simply) related to physical or comoving di
 
 Here another example is the galaxy number count.
 \begin{gather}
-\begin{split}\frac{\mathrm d N_g}{\mathrm d z \mathrm d\Omega} = z^2 \frac{n_0}{H_0^3}  (1-2(1+q_0) z) .\end{split}\notag\\\begin{split}\end{split}\notag
+\begin{split}\frac{\mathrm d N_g}{\mathrm d z \mathrm d\Omega} = z^2 \frac{n_0}{H_0^3}  (1-2(1+q_0) z) .\end{split}\notag
 \end{gather}
 
 \section{Quantum Optics}
@@ -2782,6 +4400,13 @@ Photon interferometry.
 \end{enumerate}
 
 
+\section{Super-Symmetric Quantum Mechanics}
+\label{Quantum/susyQuantum:super-symmetric-quantum-mechanics}\label{Quantum/susyQuantum::doc}
+\href{http://arxiv.org/abs/hep-ph/9907295}{Here is a note on this.}
+
+The idea of supersymmetric quantum mechanics is to introduce a hamiltonian related to supercharge, which is defined through
+
+
 \bigskip\hrule{}\bigskip
 
 
@@ -2794,12 +4419,13 @@ This work is licensed under a \href{http://creativecommons.org/licenses/by-nc-sa
 \href{http://creativecommons.org/licenses/by-nc-sa/3.0/us/}{\includegraphics{cc_byncsa.png}}\end{figure}
 
 
+\chapter{DOI}
+\label{index:doi}\href{http://dx.doi.org/10.5281/zenodo.13216}{}
+
 \bigskip\hrule{}\bigskip
 
 
 This open source project is hosted on GitHub: \href{https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual}{Physics Research Manual} .
-
-\href{https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual/raw/master/\_build/latex/physics-research-survival-manual.pdf}{Latest PDF here}.
 
 
 

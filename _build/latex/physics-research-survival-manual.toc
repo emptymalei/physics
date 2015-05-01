@@ -2,157 +2,236 @@
 \contentsline {chapter}{\numberline {1}At The Begining of The Universe}{3}{chapter.1}
 \contentsline {chapter}{\numberline {2}Preface}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Whatever}{5}{section.2.1}
-\contentsline {chapter}{\numberline {3}Vocabulary}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Basic}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Dimension}{7}{subsection.3.1.1}
-\contentsline {subsubsection}{Planck Scales}{7}{subsubsection*.3}
-\contentsline {subsubsection}{Equations and Dimensions}{8}{subsubsection*.4}
-\contentsline {paragraph}{Most Wonderful Equations That Should Never Be Forgotten}{8}{paragraph*.5}
-\contentsline {subsubsection}{Electrodynamics}{8}{subsubsection*.6}
-\contentsline {subsubsection}{Dynamics}{9}{subsubsection*.7}
-\contentsline {subsubsection}{Thermodynamics and Statistical Physics}{9}{subsubsection*.8}
-\contentsline {chapter}{\numberline {4}Mathematics}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Mathematics}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Linear Algebra}{11}{subsection.4.1.1}
-\contentsline {subsubsection}{Tensor Product Space}{11}{subsubsection*.9}
-\contentsline {paragraph}{Inner Product}{11}{paragraph*.10}
-\contentsline {paragraph}{Operators Applied to Tensor Product}{11}{paragraph*.11}
-\contentsline {subsection}{\numberline {4.1.2}Differential Geometry}{11}{subsection.4.1.2}
-\contentsline {subsubsection}{Metric}{11}{subsubsection*.12}
-\contentsline {paragraph}{Definitions}{11}{paragraph*.13}
-\contentsline {paragraph}{How to calculate the metric}{12}{paragraph*.14}
-\contentsline {subsubsection}{Connection}{13}{subsubsection*.16}
-\contentsline {subsubsection}{Gradient, Curl, Divergence, etc}{13}{subsubsection*.17}
-\contentsline {paragraph}{Gradient}{13}{paragraph*.18}
-\contentsline {paragraph}{Curl}{13}{paragraph*.19}
-\contentsline {paragraph}{Divergence}{13}{paragraph*.20}
-\contentsline {subsection}{\numberline {4.1.3}Linear Algebra}{14}{subsection.4.1.3}
-\contentsline {subsubsection}{Basic Concepts}{14}{subsubsection*.21}
-\contentsline {paragraph}{Trace}{14}{paragraph*.22}
-\contentsline {subsubsection}{Technique}{14}{subsubsection*.23}
-\contentsline {paragraph}{Inverse of a matrix}{14}{paragraph*.24}
-\contentsline {subsection}{\numberline {4.1.4}Differential Equations}{15}{subsection.4.1.4}
-\contentsline {subsubsection}{Standard Procedure}{15}{subsubsection*.25}
-\contentsline {subsubsection}{Tricky}{15}{subsubsection*.26}
-\contentsline {paragraph}{WKB Approximation}{15}{paragraph*.27}
-\contentsline {chapter}{\numberline {5}Fundamental Physics}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Classical Mechanics}{17}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Oscillators}{17}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Hamiltonian Dynamics}{19}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Quantum Mechanics}{19}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Quantum Mechanics Framework}{19}{subsection.5.2.1}
-\contentsline {subsubsection}{What're the most important tricks in QM calculations?}{19}{subsubsection*.28}
-\contentsline {subsubsection}{First Three Postulates}{19}{subsubsection*.29}
-\contentsline {subsubsection}{Position and Momentum Space}{20}{subsubsection*.30}
-\contentsline {paragraph}{Position Space}{21}{paragraph*.31}
-\contentsline {paragraph}{Momentum Space}{22}{paragraph*.32}
-\contentsline {subparagraph}{Postulate IV}{22}{subparagraph*.33}
-\contentsline {subparagraph}{Momentum Space}{22}{subparagraph*.34}
-\contentsline {subsection}{\numberline {5.2.2}Quantum in 1D}{24}{subsection.5.2.2}
-\contentsline {subsubsection}{General}{24}{subsubsection*.35}
-\contentsline {paragraph}{Infinite Barriers}{24}{paragraph*.36}
-\contentsline {subparagraph}{Math}{24}{subparagraph*.37}
-\contentsline {subparagraph}{Setup}{25}{subparagraph*.38}
-\contentsline {subparagraph}{Solve the Problem}{25}{subparagraph*.39}
-\contentsline {subparagraph}{Physics}{26}{subparagraph*.40}
-\contentsline {subparagraph}{Some General Properties}{27}{subparagraph*.41}
-\contentsline {subsection}{\numberline {5.2.3}Parity}{27}{subsection.5.2.3}
-\contentsline {subsubsection}{Passive and Active Transformations}{27}{subsubsection*.42}
-\contentsline {subsubsection}{Parity}{28}{subsubsection*.43}
-\contentsline {paragraph}{Definition}{28}{paragraph*.44}
-\contentsline {paragraph}{Properties}{28}{paragraph*.45}
-\contentsline {subsection}{\numberline {5.2.4}Classical Limit of QM}{29}{subsection.5.2.4}
-\contentsline {subsubsection}{Ehrenfest's Theorem}{29}{subsubsection*.46}
-\contentsline {paragraph}{Simple Example of Ehrenfest's Theorem}{29}{paragraph*.47}
-\contentsline {paragraph}{What does $-\left < V'(\mathaccentV {hat}05Ex)\right >$ mean}{30}{paragraph*.48}
-\contentsline {subsubsection}{Picture}{30}{subsubsection*.49}
-\contentsline {paragraph}{Schr\IeC {\"o}dinger \& Heisenberg Pictures}{31}{paragraph*.50}
-\contentsline {subparagraph}{Schr\IeC {\"o}dinger Picture}{31}{subparagraph*.51}
-\contentsline {subparagraph}{Heisenberg Picture}{31}{subparagraph*.52}
-\contentsline {paragraph}{Ehrenfest's Theorem in Heisenberg Picture}{31}{paragraph*.53}
-\contentsline {subparagraph}{Example of Ehrenfest's Theorem in Heisenberg Picture}{32}{subparagraph*.54}
-\contentsline {subsubsection}{Conservation}{32}{subsubsection*.55}
-\contentsline {paragraph}{What is the nature of time dependence}{33}{paragraph*.56}
-\contentsline {subsection}{\numberline {5.2.5}Harmonic Oscillators}{33}{subsection.5.2.5}
-\contentsline {subsubsection}{Why Harmonic Oscillators}{33}{subsubsection*.57}
-\contentsline {subsubsection}{Standard Solution}{34}{subsubsection*.58}
-\contentsline {paragraph}{Dimension Schrodinger Equation}{34}{paragraph*.59}
-\contentsline {paragraph}{Take Limits}{34}{paragraph*.60}
-\contentsline {paragraph}{Polynomial Method}{35}{paragraph*.61}
-\contentsline {paragraph}{Terminate The Series}{35}{paragraph*.62}
-\contentsline {paragraph}{Complete Series}{35}{paragraph*.63}
-\contentsline {subsubsection}{Tricky Solution}{35}{subsubsection*.64}
-\contentsline {subsubsection}{Semiclassical}{37}{subsubsection*.65}
-\contentsline {paragraph}{Classical}{37}{paragraph*.66}
-\contentsline {paragraph}{Quantum semiclassical}{38}{paragraph*.67}
-\contentsline {section}{\numberline {5.3}Quantum Mechanics 2}{39}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Tensor Product Space}{39}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Density Matrix}{39}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Angular Momentum}{39}{subsection.5.3.3}
-\contentsline {subsubsection}{Angular Momentum}{39}{subsubsection*.68}
-\contentsline {paragraph}{Definition of Angular Momentum}{40}{paragraph*.69}
-\contentsline {paragraph}{Eigenstates of Angular Momentum}{41}{paragraph*.70}
-\contentsline {section}{\numberline {5.4}Quantum Mechanics 3}{42}{section.5.4}
-\contentsline {section}{\numberline {5.5}Statistical Physics}{42}{section.5.5}
-\contentsline {chapter}{\numberline {6}Advanced Physics}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Special Relativity}{43}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Conventions}{43}{subsection.6.1.1}
-\contentsline {subsubsection}{Quantities and Operations}{43}{subsubsection*.71}
-\contentsline {paragraph}{d'Alembertian}{43}{paragraph*.72}
-\contentsline {subsubsection}{Footnotes}{44}{subsubsection*.73}
-\contentsline {section}{\numberline {6.2}General Relativity}{44}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Description of Space-time Manifold}{44}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Description of Space-time Manifold - Coordinates}{44}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Description of Space-time Manifold - Tetrads}{44}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Description of Space-time Manifold - 1+3 Covariant Description}{44}{subsection.6.2.4}
-\contentsline {subsubsection}{Definations}{44}{subsubsection*.74}
-\contentsline {paragraph}{Volume}{44}{paragraph*.75}
-\contentsline {paragraph}{4-velocity}{45}{paragraph*.76}
-\contentsline {paragraph}{Projection Tensors}{45}{paragraph*.77}
-\contentsline {paragraph}{Covariant time derivative ($\mathaccentV {dot}05F\hskip 1em\relax $)}{45}{paragraph*.78}
-\contentsline {paragraph}{Fully orthogonally projected covariant derivative ($\mathaccentV {tilde}07E\nabla $)}{45}{paragraph*.79}
-\contentsline {paragraph}{Orthogonal projections of vectors}{46}{paragraph*.80}
-\contentsline {paragraph}{Othogonal projected covariant time derivatives along $u^a$}{46}{paragraph*.81}
-\contentsline {subsubsection}{Properties}{46}{subsubsection*.82}
-\contentsline {subsection}{\numberline {6.2.5}Fields and Particles}{46}{subsection.6.2.5}
-\contentsline {subsubsection}{Energy-Momentum Tensor for Particles}{46}{subsubsection*.83}
-\contentsline {subsection}{\numberline {6.2.6}Theorems}{47}{subsection.6.2.6}
-\contentsline {subsubsection}{Killing Vector Related}{47}{subsubsection*.84}
-\contentsline {subsection}{\numberline {6.2.7}Specific Topics}{47}{subsection.6.2.7}
-\contentsline {subsubsection}{Redshift}{47}{subsubsection*.85}
-\contentsline {subsubsection}{Stationary vs Static}{47}{subsubsection*.86}
-\contentsline {paragraph}{Stationay}{47}{paragraph*.87}
-\contentsline {paragraph}{Static}{47}{paragraph*.88}
-\contentsline {chapter}{\numberline {7}Cutting Edge Physics}{49}{chapter.7}
-\contentsline {section}{\numberline {7.1}General Relativity Revisited}{49}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Hyperthesis}{49}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Experiments}{49}{subsection.7.1.2}
-\contentsline {subsubsection}{Eotvos Torsion Balance}{49}{subsubsection*.89}
-\contentsline {paragraph}{How}{49}{paragraph*.90}
-\contentsline {paragraph}{Results}{50}{paragraph*.91}
-\contentsline {subsubsection}{Hughes-Drevershiy Experiment, etc}{50}{subsubsection*.92}
-\contentsline {subsubsection}{Radio Signal}{50}{subsubsection*.93}
-\contentsline {subsection}{\numberline {7.1.3}Summary Table}{50}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Cosmology}{50}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Thermal History of The Universe}{50}{subsection.7.2.1}
-\contentsline {subsubsection}{Review of Standard Model for Particle Physics}{50}{subsubsection*.94}
-\contentsline {paragraph}{Degree of Freedom of Elementary Particles}{51}{paragraph*.95}
-\contentsline {subsubsection}{Expansion and Temperature}{51}{subsubsection*.96}
-\contentsline {paragraph}{Temperature Greater Than Mass of Top Quark}{52}{paragraph*.97}
-\contentsline {paragraph}{Temperature Down to Mass of A Particle}{52}{paragraph*.98}
-\contentsline {subsubsection}{Decay Rate VS Expansion Rate}{53}{subsubsection*.99}
-\contentsline {subsection}{\numberline {7.2.2}Two Parameters}{53}{subsection.7.2.2}
-\contentsline {subsubsection}{Observations}{53}{subsubsection*.100}
-\contentsline {paragraph}{Luminosity Distance}{53}{paragraph*.101}
-\contentsline {subparagraph}{Luminosity Distance from Observation}{53}{subparagraph*.102}
-\contentsline {subparagraph}{Luminosity Distance from Theory}{55}{subparagraph*.103}
-\contentsline {subparagraph}{Nearby Objects}{55}{subparagraph*.104}
-\contentsline {subparagraph}{Comment}{56}{subparagraph*.105}
-\contentsline {paragraph}{Angular Diameter Distance}{56}{paragraph*.106}
-\contentsline {subparagraph}{Observation}{56}{subparagraph*.107}
-\contentsline {subparagraph}{Theory}{57}{subparagraph*.108}
-\contentsline {subparagraph}{Standard Rulers}{57}{subparagraph*.109}
-\contentsline {paragraph}{Galaxy Number Count}{57}{paragraph*.110}
-\contentsline {section}{\numberline {7.3}Quantum Optics}{58}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Quantum Optics Framework}{58}{subsection.7.3.1}
-\contentsline {chapter}{\numberline {8}License}{61}{chapter.8}
+\contentsline {chapter}{\numberline {3}Fun}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fun}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Quantum}{7}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Relativity}{7}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Electrodynamics in 2+1 Spacetime}{7}{subsection.3.1.3}
+\contentsline {subsubsection}{The first naive version}{8}{subsubsection*.3}
+\contentsline {paragraph}{Gauss's Law}{8}{paragraph*.4}
+\contentsline {paragraph}{Faraday's Law}{9}{paragraph*.5}
+\contentsline {paragraph}{Wave}{9}{paragraph*.6}
+\contentsline {subsubsection}{Refs}{9}{subsubsection*.7}
+\contentsline {chapter}{\numberline {4}Vocabulary}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Vocabulary}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Functional Derivative}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Legendre Transformation}{12}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Vector Analysis}{14}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Refs \& Notes}{14}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Basic}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Dimension}{14}{subsection.4.2.1}
+\contentsline {subsubsection}{Planck Scales}{15}{subsubsection*.8}
+\contentsline {subsubsection}{Equations and Dimensions}{15}{subsubsection*.9}
+\contentsline {paragraph}{Most Wonderful Equations That Should Never Be Forgotten}{15}{paragraph*.10}
+\contentsline {subsubsection}{Electrodynamics}{15}{subsubsection*.11}
+\contentsline {subsubsection}{Dynamics}{16}{subsubsection*.12}
+\contentsline {subsubsection}{Thermodynamics and Statistical Physics}{16}{subsubsection*.13}
+\contentsline {chapter}{\numberline {5}Mathematics}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Mathematics}{17}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Kindergarten}{17}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Complex Analysis}{17}{subsection.5.1.2}
+\contentsline {subsubsection}{Cauchy-Riemann Equation}{18}{subsubsection*.14}
+\contentsline {subsubsection}{Singularities}{18}{subsubsection*.15}
+\contentsline {subsection}{\numberline {5.1.3}Calculus}{18}{subsection.5.1.3}
+\contentsline {subsubsection}{Differential of Functions}{18}{subsubsection*.16}
+\contentsline {subsubsection}{Integrals}{18}{subsubsection*.17}
+\contentsline {subsection}{\numberline {5.1.4}Linear Algebra}{20}{subsection.5.1.4}
+\contentsline {subsubsection}{Tensor Product Space}{20}{subsubsection*.18}
+\contentsline {paragraph}{Inner Product}{20}{paragraph*.19}
+\contentsline {paragraph}{Operators Applied to Tensor Product}{20}{paragraph*.20}
+\contentsline {subsubsection}{Solving Linear Equations}{20}{subsubsection*.21}
+\contentsline {subsection}{\numberline {5.1.5}Differential Geometry}{20}{subsection.5.1.5}
+\contentsline {subsubsection}{Metric}{20}{subsubsection*.22}
+\contentsline {paragraph}{Definitions}{20}{paragraph*.23}
+\contentsline {paragraph}{How to calculate the metric}{20}{paragraph*.24}
+\contentsline {subsubsection}{Connection}{21}{subsubsection*.26}
+\contentsline {subsubsection}{Gradient, Curl, Divergence, etc}{21}{subsubsection*.27}
+\contentsline {paragraph}{Gradient}{21}{paragraph*.28}
+\contentsline {paragraph}{Curl}{22}{paragraph*.29}
+\contentsline {paragraph}{Divergence}{22}{paragraph*.30}
+\contentsline {subsection}{\numberline {5.1.6}Linear Algebra}{22}{subsection.5.1.6}
+\contentsline {subsubsection}{Basic Concepts}{22}{subsubsection*.31}
+\contentsline {paragraph}{Trace}{22}{paragraph*.32}
+\contentsline {subsubsection}{Technique}{23}{subsubsection*.33}
+\contentsline {paragraph}{Inverse of a matrix}{23}{paragraph*.34}
+\contentsline {subsection}{\numberline {5.1.7}Refs \& Notes}{23}{subsection.5.1.7}
+\contentsline {section}{\numberline {5.2}Special Functions}{23}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Gamma Functions}{23}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Legendre Polynomials}{23}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Associated Legendre Polynomials}{24}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Bessel Functions}{25}{subsection.5.2.4}
+\contentsline {subsubsection}{Bessel Function of the first kind}{25}{subsubsection*.35}
+\contentsline {subsubsection}{Graphics and Properties}{32}{subsubsection*.36}
+\contentsline {subsection}{\numberline {5.2.5}Refs \& Notes}{32}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}Equation Solving}{32}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Ordinary Differential Equations}{32}{subsection.5.3.1}
+\contentsline {subsubsection}{Green's Function}{32}{subsubsection*.37}
+\contentsline {subsubsection}{Series Solution}{34}{subsubsection*.38}
+\contentsline {paragraph}{Solution at Ordinary Points}{35}{paragraph*.39}
+\contentsline {paragraph}{Solution at Regular Singular Points}{35}{paragraph*.40}
+\contentsline {subsubsection}{Comparing With A General Form}{35}{subsubsection*.41}
+\contentsline {subsubsection}{Second Order Differential Equations and Gauss' Equation}{37}{subsubsection*.42}
+\contentsline {subsection}{\numberline {5.3.2}Integral Equations}{37}{subsection.5.3.2}
+\contentsline {subsubsection}{Neumann Series AKA WKB}{37}{subsubsection*.43}
+\contentsline {subsubsection}{Using Dyads in Vector Space}{38}{subsubsection*.44}
+\contentsline {chapter}{\numberline {6}Fundamental Physics}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Classical Mechanics}{39}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Oscillators}{39}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Hamiltonian Dynamics}{40}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Quantum Mechanics}{40}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Quantum Mechanics Framework}{40}{subsection.6.2.1}
+\contentsline {subsubsection}{What're the most important tricks in QM calculations?}{40}{subsubsection*.45}
+\contentsline {subsubsection}{First Three Postulates}{41}{subsubsection*.46}
+\contentsline {subsubsection}{Position and Momentum Space}{42}{subsubsection*.47}
+\contentsline {paragraph}{Position Space}{42}{paragraph*.48}
+\contentsline {paragraph}{Momentum Space}{43}{paragraph*.49}
+\contentsline {subparagraph}{Postulate IV}{43}{subparagraph*.50}
+\contentsline {subparagraph}{Momentum Space}{43}{subparagraph*.51}
+\contentsline {subsection}{\numberline {6.2.2}Quantum in 1D}{45}{subsection.6.2.2}
+\contentsline {subsubsection}{General}{45}{subsubsection*.52}
+\contentsline {paragraph}{Infinite Barriers}{45}{paragraph*.53}
+\contentsline {subparagraph}{Math}{45}{subparagraph*.54}
+\contentsline {subparagraph}{Setup}{45}{subparagraph*.55}
+\contentsline {subparagraph}{Solve the Problem}{45}{subparagraph*.56}
+\contentsline {subparagraph}{Physics}{47}{subparagraph*.57}
+\contentsline {subparagraph}{Some General Properties}{47}{subparagraph*.58}
+\contentsline {subsection}{\numberline {6.2.3}Parity}{47}{subsection.6.2.3}
+\contentsline {subsubsection}{Passive and Active Transformations}{47}{subsubsection*.59}
+\contentsline {subsubsection}{Parity}{48}{subsubsection*.60}
+\contentsline {paragraph}{Definition}{48}{paragraph*.61}
+\contentsline {paragraph}{Properties}{48}{paragraph*.62}
+\contentsline {subsection}{\numberline {6.2.4}Classical Limit of QM}{50}{subsection.6.2.4}
+\contentsline {subsubsection}{Ehrenfest's Theorem}{50}{subsubsection*.63}
+\contentsline {paragraph}{Simple Example of Ehrenfest's Theorem}{50}{paragraph*.64}
+\contentsline {paragraph}{What does \relax $-\left < V'(\mathaccentV {hat}05Ex)\right >\relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.} mean}{51}{paragraph*.65}
+\contentsline {subsubsection}{Picture}{51}{subsubsection*.66}
+\contentsline {paragraph}{Schr\IeC {\"o}dinger \& Heisenberg Pictures}{51}{paragraph*.67}
+\contentsline {subparagraph}{Schr\IeC {\"o}dinger Picture}{51}{subparagraph*.68}
+\contentsline {subparagraph}{Heisenberg Picture}{51}{subparagraph*.69}
+\contentsline {paragraph}{Ehrenfest's Theorem in Heisenberg Picture}{52}{paragraph*.70}
+\contentsline {subparagraph}{Example of Ehrenfest's Theorem in Heisenberg Picture}{52}{subparagraph*.71}
+\contentsline {subsubsection}{Conservation}{52}{subsubsection*.72}
+\contentsline {paragraph}{What is the nature of time dependence}{53}{paragraph*.73}
+\contentsline {subsection}{\numberline {6.2.5}Harmonic Oscillators}{53}{subsection.6.2.5}
+\contentsline {subsubsection}{Why Harmonic Oscillators}{53}{subsubsection*.74}
+\contentsline {subsubsection}{Standard Solution}{53}{subsubsection*.75}
+\contentsline {paragraph}{Dimension Schrodinger Equation}{54}{paragraph*.76}
+\contentsline {paragraph}{Take Limits}{54}{paragraph*.77}
+\contentsline {paragraph}{Polynomial Method}{54}{paragraph*.78}
+\contentsline {paragraph}{Terminate The Series}{55}{paragraph*.79}
+\contentsline {paragraph}{Complete Series}{55}{paragraph*.80}
+\contentsline {subsubsection}{Tricky Solution}{55}{subsubsection*.81}
+\contentsline {subsubsection}{Semiclassical}{57}{subsubsection*.82}
+\contentsline {paragraph}{Classical}{57}{paragraph*.83}
+\contentsline {paragraph}{Quantum semiclassical}{57}{paragraph*.84}
+\contentsline {section}{\numberline {6.3}Quantum Mechanics 2}{58}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Tensor Product Space}{58}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Density Matrix}{58}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Angular Momentum}{58}{subsection.6.3.3}
+\contentsline {subsubsection}{Angular Momentum}{58}{subsubsection*.85}
+\contentsline {paragraph}{Definition of Angular Momentum}{59}{paragraph*.86}
+\contentsline {paragraph}{Eigenstates of Angular Momentum}{60}{paragraph*.87}
+\contentsline {section}{\numberline {6.4}Quantum Mechanics 3}{60}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Topics}{60}{subsection.6.4.1}
+\contentsline {subsubsection}{Quantum Vocabulary}{60}{subsubsection*.88}
+\contentsline {subsubsection}{Quantum Questions}{61}{subsubsection*.89}
+\contentsline {paragraph}{Wedge Product, Cross Prodcut \& Commutation relation}{61}{paragraph*.90}
+\contentsline {subsubsection}{Quantum Approximation Methods}{62}{subsubsection*.91}
+\contentsline {paragraph}{Variational Method}{62}{paragraph*.92}
+\contentsline {subparagraph}{Trial functions}{62}{subparagraph*.93}
+\contentsline {subparagraph}{Procedure}{62}{subparagraph*.94}
+\contentsline {subparagraph}{Why Not General Viriational Method}{62}{subparagraph*.95}
+\contentsline {paragraph}{Variational Method and Virial Theorem}{63}{paragraph*.96}
+\contentsline {paragraph}{WKB}{63}{paragraph*.97}
+\contentsline {subparagraph}{How does it work}{63}{subparagraph*.98}
+\contentsline {subsubsection}{Symmetries in QM}{64}{subsubsection*.99}
+\contentsline {paragraph}{Time and Space Translation}{64}{paragraph*.100}
+\contentsline {subparagraph}{Time Translation Symmetry}{64}{subparagraph*.101}
+\contentsline {subparagraph}{Space Translation Symmetry}{65}{subparagraph*.102}
+\contentsline {paragraph}{Gauge Symmetry}{67}{paragraph*.103}
+\contentsline {subparagraph}{Global Gauge Transformation}{67}{subparagraph*.104}
+\contentsline {subparagraph}{Local Gauge Transformation}{68}{subparagraph*.105}
+\contentsline {paragraph}{Parity}{68}{paragraph*.106}
+\contentsline {subparagraph}{Logic}{68}{subparagraph*.107}
+\contentsline {subsubsection}{Tensors and Groups in Quantum}{70}{subsubsection*.108}
+\contentsline {paragraph}{Wigner-Eckart Theorem}{70}{paragraph*.109}
+\contentsline {subsubsection}{Perturbation Theory in Quantum Mechanics}{70}{subsubsection*.110}
+\contentsline {section}{\numberline {6.5}Statistical Physics}{70}{section.6.5}
+\contentsline {section}{\numberline {6.6}Electrodynamics}{70}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Basics}{70}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Ref \& Notes}{71}{subsection.6.6.2}
+\contentsline {chapter}{\numberline {7}Advanced Physics}{73}{chapter.7}
+\contentsline {section}{\numberline {7.1}Special Relativity}{73}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Conventions}{73}{subsection.7.1.1}
+\contentsline {subsubsection}{Quantities and Operations}{73}{subsubsection*.111}
+\contentsline {paragraph}{d'Alembertian}{73}{paragraph*.112}
+\contentsline {subsubsection}{Footnotes}{74}{subsubsection*.113}
+\contentsline {section}{\numberline {7.2}General Relativity}{74}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Description of Space-time Manifold}{74}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Description of Space-time Manifold - Coordinates}{74}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Description of Space-time Manifold - Tetrads}{74}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Description of Space-time Manifold - 1+3 Covariant Description}{74}{subsection.7.2.4}
+\contentsline {subsubsection}{Definations}{74}{subsubsection*.114}
+\contentsline {paragraph}{Volume}{74}{paragraph*.115}
+\contentsline {paragraph}{4-velocity}{75}{paragraph*.116}
+\contentsline {paragraph}{Projection Tensors}{75}{paragraph*.117}
+\contentsline {paragraph}{Covariant time derivative (\relax $\mathaccentV {dot}05F\hskip 1em\relax \relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.})}{75}{paragraph*.118}
+\contentsline {paragraph}{Fully orthogonally projected covariant derivative (\relax $\mathaccentV {tilde}07E\nabla \relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.})}{75}{paragraph*.119}
+\contentsline {paragraph}{Orthogonal projections of vectors}{75}{paragraph*.120}
+\contentsline {paragraph}{Othogonal projected covariant time derivatives along \relax $u^a\relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{75}{paragraph*.121}
+\contentsline {subsubsection}{Properties}{76}{subsubsection*.122}
+\contentsline {subsection}{\numberline {7.2.5}Fields and Particles}{76}{subsection.7.2.5}
+\contentsline {subsubsection}{Energy-Momentum Tensor for Particles}{76}{subsubsection*.123}
+\contentsline {subsection}{\numberline {7.2.6}Theorems}{76}{subsection.7.2.6}
+\contentsline {subsubsection}{Killing Vector Related}{76}{subsubsection*.124}
+\contentsline {subsection}{\numberline {7.2.7}Specific Topics}{76}{subsection.7.2.7}
+\contentsline {subsubsection}{Redshift}{76}{subsubsection*.125}
+\contentsline {subsubsection}{Stationary vs Static}{76}{subsubsection*.126}
+\contentsline {paragraph}{Stationay}{76}{paragraph*.127}
+\contentsline {paragraph}{Static}{77}{paragraph*.128}
+\contentsline {chapter}{\numberline {8}Cutting Edge Physics}{79}{chapter.8}
+\contentsline {section}{\numberline {8.1}Astrophysics}{79}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Wave Bands}{79}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Doppler Shift}{79}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Photon Production}{80}{subsection.8.1.3}
+\contentsline {subsubsection}{Bremsstrahlung Radiation}{80}{subsubsection*.129}
+\contentsline {subsection}{\numberline {8.1.4}Compton Scattering}{80}{subsection.8.1.4}
+\contentsline {subsubsection}{Thomson Scattering}{82}{subsubsection*.130}
+\contentsline {subsubsection}{Compton Scattering}{82}{subsubsection*.131}
+\contentsline {subsection}{\numberline {8.1.5}Asteroseismology}{83}{subsection.8.1.5}
+\contentsline {subsubsection}{Papers, Researches and More}{83}{subsubsection*.132}
+\contentsline {subsection}{\numberline {8.1.6}Refs \& Notes}{84}{subsection.8.1.6}
+\contentsline {section}{\numberline {8.2}General Relativity Revisited}{84}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Hyperthesis}{84}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Experiments}{84}{subsection.8.2.2}
+\contentsline {subsubsection}{Eotvos Torsion Balance}{84}{subsubsection*.133}
+\contentsline {paragraph}{How}{84}{paragraph*.134}
+\contentsline {paragraph}{Results}{85}{paragraph*.135}
+\contentsline {subsubsection}{Hughes-Drevershiy Experiment, etc}{85}{subsubsection*.136}
+\contentsline {subsubsection}{Radio Signal}{85}{subsubsection*.137}
+\contentsline {subsection}{\numberline {8.2.3}Summary Table}{85}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.3}Cosmology}{85}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Thermal History of The Universe}{85}{subsection.8.3.1}
+\contentsline {subsubsection}{Review of Standard Model for Particle Physics}{85}{subsubsection*.138}
+\contentsline {paragraph}{Degree of Freedom of Elementary Particles}{86}{paragraph*.139}
+\contentsline {subsubsection}{Expansion and Temperature}{86}{subsubsection*.140}
+\contentsline {paragraph}{Temperature Greater Than Mass of Top Quark}{87}{paragraph*.141}
+\contentsline {paragraph}{Temperature Down to Mass of A Particle}{87}{paragraph*.142}
+\contentsline {subsubsection}{Decay Rate VS Expansion Rate}{87}{subsubsection*.143}
+\contentsline {subsection}{\numberline {8.3.2}Two Parameters}{88}{subsection.8.3.2}
+\contentsline {subsubsection}{Observations}{88}{subsubsection*.144}
+\contentsline {paragraph}{Luminosity Distance}{88}{paragraph*.145}
+\contentsline {subparagraph}{Luminosity Distance from Observation}{88}{subparagraph*.146}
+\contentsline {subparagraph}{Luminosity Distance from Theory}{89}{subparagraph*.147}
+\contentsline {subparagraph}{Nearby Objects}{89}{subparagraph*.148}
+\contentsline {subparagraph}{Comment}{90}{subparagraph*.149}
+\contentsline {paragraph}{Angular Diameter Distance}{91}{paragraph*.150}
+\contentsline {subparagraph}{Observation}{91}{subparagraph*.151}
+\contentsline {subparagraph}{Theory}{91}{subparagraph*.152}
+\contentsline {subparagraph}{Standard Rulers}{91}{subparagraph*.153}
+\contentsline {paragraph}{Galaxy Number Count}{91}{paragraph*.154}
+\contentsline {section}{\numberline {8.4}Quantum Optics}{92}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Quantum Optics Framework}{92}{subsection.8.4.1}
+\contentsline {section}{\numberline {8.5}Super-Symmetric Quantum Mechanics}{93}{section.8.5}
+\contentsline {chapter}{\numberline {9}License}{95}{chapter.9}
+\contentsline {chapter}{\numberline {10}DOI}{97}{chapter.10}
