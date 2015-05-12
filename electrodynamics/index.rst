@@ -1,5 +1,3 @@
-Electrodynamics
-=============================
 
 
 
@@ -40,27 +38,11 @@ or
 
 
 
-Books & Acknowledgement
-==================================
 
 
 
 
-
-
-
-
-
-Introduction
-============
-
-
-I am not expecting myself to typeset all the essential notes here but the key ideas that drive me somewhere.
-
-
-
-
-ToC
+Electrodynamics
 ======================
 
 
@@ -79,35 +61,3 @@ ToC
 
 
 
-------
-
-------
-
-.. figure:: _static/images/cc_byncsa.png
-   :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/
-
-
-
-
-
------
-
-This open source project is hosted on GitHub: `electrodynamics <https://github.com/emptymalei/electrodynamics>`_ .
-
-
-Read online: `Electrodynamics Notes <http://emptymalei.github.io/electrodynamics>`_ .
-
-Download the `Latest PDF Version <https://github.com/emptymalei/electrodynamics/raw/master/_build/latex/electrodynamics.pdf>`_ .
-
-
-
-
-Many thanks to open source project `Sphinx <http://sphinx-doc.org>`_ for it saves me a lot of time.
-
-------
-
-RST cheat sheet from `ralsina <https://github.com/ralsina/rst-cheatsheet>`_ .
-
-`Page One <_static/images/rst-cheatsheet-1.png>`_
-
-`Page Two <_static/images/rst-cheatsheet-2.png>`_
