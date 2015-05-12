@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Electrostatics and Magnetostatics &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../../index.html" />
+    <link rel="up" title="Electricity and Magnetism" href="main.html" />
+    <link rel="next" title="Comparison of E &amp; M" href="comparisonstatics.html" />
+    <link rel="prev" title="Electricity and Magnetism" href="main.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../classicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#books-acknowledgement">Books &amp; Acknowledgement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#introduction">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html#toc">ToC</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/GeneralRelativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Electrostatics and Magnetostatics</a><ul>
+<li><a class="reference internal" href="#electric-field">Electric Field</a><ul>
+<li><a class="reference internal" href="#energy-density">Energy Density</a></li>
+<li><a class="reference internal" href="#electric-forces">Electric Forces</a></li>
+<li><a class="reference internal" href="#multipole-expansion">Multipole Expansion</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dielectric-material">Dielectric Material</a><ul>
+<li><a class="reference internal" href="#polarization">Polarization</a></li>
+<li><a class="reference internal" href="#electric-potential">Electric Potential</a></li>
+<li><a class="reference internal" href="#total-field">Total Field</a></li>
+<li><a class="reference internal" href="#energy-and-stress">Energy and Stress</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#magnetic-field">Magnetic Field</a><ul>
+<li><a class="reference internal" href="#amperes-law">Ampere‘s Law</a></li>
+<li><a class="reference internal" href="#biot-savart-law">Biot-Savart Law</a></li>
+<li><a class="reference internal" href="#divergence-and-curl-of-magnetic-field">Divergence and Curl of Magnetic Field</a></li>
+<li><a class="reference internal" href="#vector-potential">Vector Potential</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="main.html" title="Previous Chapter: Electricity and Magnetism"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Electricity and ...</span>
+    </a>
+  </li>
+  <li>
+    <a href="comparisonstatics.html" title="Next Chapter: Comparison of E & M"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Comparison of E ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../../_sources/electrodynamics/em/static.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="electrostatics-and-magnetostatics">
+<h1>Electrostatics and Magnetostatics<a class="headerlink" href="#electrostatics-and-magnetostatics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="electric-field">
+<h2>Electric Field<a class="headerlink" href="#electric-field" title="Permalink to this headline">¶</a></h2>
+<p>The electric potential energy of a point charge in an electric field is given by</p>
+<div class="math">
+<p><img src="../../_images/math/6dfeed3a84393489102ab691659cd72269c43f17.png" alt="U = q \phi."/></p>
+</div><p>In the case of fixed point charge <img class="math" src="../../_images/math/18cf0cd58cda53a7bdc9cfd2642d17fb5cac3303.png" alt="Q"/> field, the amount electric energy of test charge <img class="math" src="../../_images/math/72ddcf266654d2c2aa69750c70d3a9ba54d64a59.png" alt="q"/> is</p>
+<div class="math">
+<p><img src="../../_images/math/474266d0dcea6bf034f759c9b907b989d4c61f5f.png" alt="U_q = q\frac{Q}{r}."/></p>
+</div><p>Suppose we have N point charges places randomly in the space, the total electric energy of the system can be calculated through the a superposition of the electric potential.</p>
+<div class="math">
+<p><img src="../../_images/math/ae79fb9569e5722e25b4281fc6727477c692bcff.png" alt="U &amp;= q_1\sum_{i=1}^N \frac{q_i}{\lvert \vec {x_i} - \vec x \rvert} + \cdots \\
+&amp; = \frac{1}{2}\left( \sum_{i\neq j} \frac{q_i q_j}{\lvert \vec {x_i} - \vec {x_j}} \right),"/></p>
+</div><p>in which the half is due to the double counting of the interactions.</p>
+<div class="section" id="energy-density">
+<h3>Energy Density<a class="headerlink" href="#energy-density" title="Permalink to this headline">¶</a></h3>
+<p>The next question we are going to consider is the electric potential energy of a bulk charged object.</p>
+<div class="math">
+<p><img src="../../_images/math/619e4ca743830af3258a0bc7573149bf372a305c.png" alt="U = \frac{1}{2} \int \rho(\vec x)\phi(\vec x) d^3 x,"/></p>
+</div><p>where</p>
+<div class="math">
+<p><img src="../../_images/math/eb4d91620b966f76716e004d944ded6de9a0ff22.png" alt="\phi(\vec x) = \int \frac{\rho(\vec x')}{ \lvert \vec x - \vec x' \rvert } d^3x'."/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Derivation of Electric Energy of Charged Object</p>
+<p>Construct the system by adding small amount of charge to it from zero charge distribution.</p>
+<p>Charge distribution <img class="math" src="../../_images/math/07f6c761724d5d8f2f2f5435b38000ea74eedd1b.png" alt="\rho(\vec x)"/> can be changed linearly <img class="math" src="../../_images/math/ea229ba866784f7697781f2dfa698d15962ae215.png" alt="\lambda \rho(\vec x')"/> where <img class="math" src="../../_images/math/5b2dec34d043689598329c9568d98d6e3ed1fd33.png" alt="\lambda"/> is a scalar number.</p>
+<p>The energy change due to adding charge to the system to change the charge distribution linearly <img class="math" src="../../_images/math/d1370eba01bdb952e1d5c292f2c102de0ec1502a.png" alt="\delta \lambda"/>. Energy change is</p>
+<div class="math">
+<p><img src="../../_images/math/f022e71ce6427cd47241d807f2dad702208d78a0.png" alt="\delta U = \int \delta \lambda \phi(\vec x) d^3 x."/></p>
+</div><p>where</p>
+<div class="math">
+<p><img src="../../_images/math/56465f732cc7f71bb5daf91568d3c069ac65a4d4.png" alt="\phi(\vec x) = \int d^3x' \frac{\lambda \rho(\vec x')}{\lvert \vec x - \vec x' \rvert }."/></p>
+</div><p>Integrate from 0 to 1 will give us the total energy for an object with charge distribution <img class="math" src="../../_images/math/07f6c761724d5d8f2f2f5435b38000ea74eedd1b.png" alt="\rho(\vec x)"/>.</p>
+<p class="last">It is obvious that the <img class="math" src="../../_images/math/17a01b3a59a163810ed40f348ca6019eb6a463ee.png" alt="1/2"/> comes from the linear dependence of <img class="math" src="../../_images/math/524739c82dfc6f00eb9ea6f820921f44b571f49d.png" alt="\lambda \rho(\vec x)"/>.</p>
+</div>
+<p>Now we have the expression for energy of electric field, it is straightforward to find the energy density.</p>
+<ol class="arabic simple">
+<li>To calculate that, we need to put together two parts of energy, i.e., E-field outside of the conductor and the surface electric potential energy of the conductor.</li>
+<li>Then apple the divergence theorem, counting the infinite surface and also all the surfaces of the conductor.</li>
+<li>Notice the surface integral of the potential energy on the conductor surface is exactly the negative of the surface energy density we put in to the expression in the first step.</li>
+<li>The surface integral at infinity surface is zero.</li>
+<li>The only term left is <img class="math" src="../../_images/math/d7d67705bbc78e4351ee5cfcb2f1ae38a4fdb80b.png" alt="-\frac{1}{8\pi}\int d^3x E_i \partial_i \phi=\frac{1}{8\pi}\int d^3x E_i E_i"/>.</li>
+</ol>
+</div>
+<div class="section" id="electric-forces">
+<h3>Electric Forces<a class="headerlink" href="#electric-forces" title="Permalink to this headline">¶</a></h3>
+<p>Alright, move on to the concept of force in E&amp;M. Coloumb force is</p>
+<div class="math">
+<p><img src="../../_images/math/b40c5fab05fc8eed5e4607bf52c50431efdd4995.png" alt="F_i = \int \rho(\vec x') E_i(\vec x') d^3x'."/></p>
+</div><p>Maxwell&#8217;s equations tells that</p>
+<div class="math">
+<p><img src="../../_images/math/728b0c70a9e1afe7390e8ccd080a245c29c306b0.png" alt="\rho(\vec x') = \frac{1}{4\pi} \nabla' \cdot \vec E(\vec x')."/></p>
+</div><p>So force can be rewritten as</p>
+<div class="math">
+<p><img src="../../_images/math/a06c7c12456a14d49187d4a89c5b5f639a9e87f4.png" alt="F_i &amp;= \int d^3x' \frac{1}{4\pi} (\partial_j E_j(\vec x') ) E_i(\vec x') \\
+&amp; = \frac{1}{4\pi}\int d^3x' ( \partial_j(E_j E_i) - E_j \partial_j E_i )"/></p>
+</div><p>Now notice that <img class="math" src="../../_images/math/c45efd0808fe4a8e5ffbf603387fc8b05740497b.png" alt="\partial_i(E_j E_j)=2E_j\partial_iE_j"/> and <img class="math" src="../../_images/math/1d4b34464ab5212cdc05d0905917328fc9481fd9.png" alt="\partial_i E_j = \partial_j E_i"/>.</p>
+<div class="note admonition">
+<p class="first admonition-title">Proof</p>
+<div class="math">
+<p><img src="../../_images/math/3fe470c3f1dc9db01699c0163dcf84d5d6de28b6.png" alt="\nabla\times \vec E &amp; = \begin{vmatrix}
+\hat i &amp; \hat j &amp; \hat k \\
+\partial_i &amp; \partial_j &amp; \partial_k \\
+E_i &amp; E_j &amp; E_k
+\end{vmatrix} \\
+&amp; = \hat i \epsilon_{ijk} \partial_j E_k."/></p>
+</div><p class="last">So <img class="math" src="../../_images/math/f70e3f0ad1cb30aa1e935f3c7439c1e4ff77e6ee.png" alt="\nabla\times \vec E = 0"/> means <img class="math" src="../../_images/math/52a232a086ee446800f00ebe79c4a6de99c8b2f1.png" alt="\partial_i E_j - \partial_J E_i = 0"/>.</p>
+</div>
+<p>Force becomes</p>
+<div class="math">
+<p><img src="../../_images/math/9687e7d472e1cfed4b1796aed388e35b9ffae885.png" alt="F_i &amp;= \frac{1}{4\pi}\int d^3x' ( \partial_j(E_j E_i) - E_j \partial_j E_i ) \\
+&amp; = \frac{1}{4\pi}\int d^3x' ( \partial_j(E_j E_i) - \frac{1}{2}\partial_i (E_jE_j) ) \\
+&amp; = \frac{1}{4\pi}\int d^3x' \partial_j ( (E_j E_i) - \frac{1}{2} E^2 ) \\
+&amp; = \frac{1}{4\pi}\int d^3x' \partial_j ( (E_i E_j) - \frac{1}{2}\delta_{ij} E_i E_j ) \\
+&amp; = \frac{1}{4\pi}\int d^3x' \partial_j ( (1 - \frac{1}{2}\delta_{ij}) E_i E_j ) \\
+&amp; = \frac{1}{4\pi}\int dS_{j}  (1 - \frac{1}{2}\delta_{ij}) E_i E_j  \\"/></p>
+</div><p>Recall that force is momentum per unit time. What is inside the integral means some force density or momentum flow density per unit time, for some reason we use the definition</p>
+<div class="math">
+<p><img src="../../_images/math/6bbd3eee0d9282874217bec623dad70e64e3dafa.png" alt="T_{ij} =  (1 - \frac{1}{2}\delta_{ij}) E_i E_j,"/></p>
+</div><p>which is symmetric under the exchange of i and j.</p>
+<div class="note admonition">
+<p class="first admonition-title">Stress Tensor in General Relativity or Fluid Dynamics</p>
+<p>Electromagnetic energy momentum tensor using Gaussian units and +2 signature is</p>
+<div class="math">
+<p><img src="../../_images/math/c11a81c6c0ae8e2f33451db4a725de8bb14e5b08.png" alt="T^{\mu\nu} = c^2 \left( F^\mu\alpha F^\nu_{\phantom\alpha} - \frac{1}{4}\eta^{\mu\nu} F_{\alpha\beta}F^{\alpha\beta} \right),"/></p>
+</div><p>where <img class="math" src="../../_images/math/e5708abdcaa0156caa484208dde0052d0c2b3466.png" alt="\mathbf F = \mathbf d \mathbf A \Rightarrow F_{\mu\nu}  = \partial_\mu A_\nu - \partial_\nu A_\mu"/>.</p>
+<div class="math">
+<p><img src="../../_images/math/b386af4fbdda3f52e1687321452824546cc5bcb7.png" alt="F^{\mu\nu} \vert_{\text{matrix form}} = \begin{pmatrix}
+0 &amp; - E_x/c &amp;  - E_y/c &amp; - E_z/c  \\
+E_x/c &amp; 0 &amp; -B_z &amp; B_y \\
+E_y/c &amp; B_z &amp; 0 &amp; -B_x \\
+E_z/c &amp; -B_y &amp; B_x &amp; 0
+\end{pmatrix}."/></p>
+</div><p>To change the index to <img class="math" src="../../_images/math/7939c4f7081881367932ffddc1914bc93f35bc88.png" alt="F^\mu_{\phantom\nu}"/> we just use the Minkowski metric which just put plus and minus signs on the components,</p>
+<div class="math">
+<p><img src="../../_images/math/dad9f54f2e5bb2952f6d15fdc85c7dbb653be339.png" alt="F^{\mu}_{\phantom\nu} \vert_{\text{matrix form}} = \begin{pmatrix}
+0 &amp; - E_x/c &amp;  - E_y/c &amp; - E_z/c  \\
+-E_x/c &amp; 0 &amp; -B_z &amp; B_y \\
+-E_y/c &amp; B_z &amp; 0 &amp; -B_x \\
+-E_z/c &amp; -B_y &amp; B_x &amp; 0
+\end{pmatrix}."/></p>
+</div><p>Why is this the case? This is because of the Lorentz group requires it. Generators of <img class="math" src="../../_images/math/969c3bfbb967ca2f61c5ae0ffd9728f09a4d0fb4.png" alt="L_+^\uparrow"/> which means the orthochronous patch combine together with the infinitesimal change to form the tiny change in Lie algebra, that is to form <img class="math" src="../../_images/math/09eb07492fdbc0a78bdb9895372d783db4ec6562.png" alt="\omega"/> in <img class="math" src="../../_images/math/662036c51de6b43778c433cc5b51e8b2eb5d0256.png" alt="L = I +\omega"/></p>
+<div class="math">
+<p><img src="../../_images/math/e38e1e6aa0233ad404d72a66c6c4c4270c71de84.png" alt="\omega = \vec\theta\cdot \vec R + \vec \lambda \cdot \vec B,"/></p>
+</div><p>where the six matrices are basically the generators to construct the Lorentz group.</p>
+<p>Energy momentum tensor can be decomposed using the generators,</p>
+<div class="math">
+<p><img src="../../_images/math/ca3475128ec7a57c6a12f15d8ad04e7c174a0f0d.png" alt="F^{\mu}_{\phantom\nu}  \vert_{\text{matrix form}} = - E_i B_i + B_i R_i,"/></p>
+</div><p class="last">where we are using the Einstein summation rule.</p>
+</div>
+<div class="note admonition">
+<p class="first admonition-title">Force on Capacitor</p>
+<p>Suppose we have a capacitor with two parallel round plates of radius <img class="math" src="../../_images/math/c161803cd431bb2da4622f78af748292215cd052.png" alt="R"/> and separation <img class="math" src="../../_images/math/6cdb1dcee3be31a318c778f98f474014a2048be7.png" alt="d"/>. The top plate has charge <img class="math" src="../../_images/math/18cf0cd58cda53a7bdc9cfd2642d17fb5cac3303.png" alt="Q"/> and bottom plate has charge <img class="math" src="../../_images/math/461ecd0327cc5f3dc9c236976b3c0cc9c3ba2caa.png" alt="-Q"/>. Now ask the question, what is the force on the top plate?</p>
+<p>Is its magnitude <img class="math" src="../../_images/math/04992ee4c7ff2d519002a144243ebd07275c7a7f.png" alt="F=QE"/> because of the fact that the charge <img class="math" src="../../_images/math/18cf0cd58cda53a7bdc9cfd2642d17fb5cac3303.png" alt="Q"/> is in a electric field <img class="math" src="../../_images/math/d8ed03426dcf54f80353a474ef0978a8f72a4e8e.png" alt="\vec E"/>? NO.</p>
+<p>We can calculate the force using several methods like</p>
+<ol class="arabic simple">
+<li>principle of virtual work,</li>
+<li>stress tensor.</li>
+</ol>
+<p>However the result shows that the magnitude of force is only <img class="math" src="../../_images/math/26a33b7fa9e801c86f0c53b036281759d499abca.png" alt="F=\frac{1}{2} Q E"/>, half of the expectation we had at first.</p>
+<p class="last">The intuition is that electric field only exists on one side of the plate while <img class="math" src="../../_images/math/ca114d8d50b88a3176c525bfbc4774c8c51039a8.png" alt="F=qE"/> describes the force of a charged particle emerged in the electric field. Once one knows this, the half comes from the fact that stress only applies on one side of the top plate.</p>
+</div>
+</div>
+<div class="section" id="multipole-expansion">
+<h3>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h3>
+<p>For a charge object with charge distribution <img class="math" src="../../_images/math/07f6c761724d5d8f2f2f5435b38000ea74eedd1b.png" alt="\rho(\vec x)"/>, the electic potential is</p>
+<div class="math">
+<p><img src="../../_images/math/ee6741d4c2e9b515e3c0ffcc84206f5ae61d0be1.png" alt="\phi(\vec x) = \int \rho(\vec x')\frac{1}{\lvert \vec x - \vec x' \rvert} d^3 x' ."/></p>
+</div><p>For any general distribution, we can always have <img class="math" src="../../_images/math/5f71732aa75e151e580fb952cf4cf6b6d4bf06a2.png" alt="\frac{1}{\lvert \vec x - \vec x' \rvert}"/> expanded and define differential multipoles.</p>
+<div class="note admonition">
+<p class="first admonition-title">Monopole and Dipole</p>
+<p>Before we go into this expansion, a review of the idea of monopole and dipole is very useful.</p>
+<p>Monopole is the case of spherical symmetric distribution of electric potential.</p>
+<div class="math">
+<p><img src="../../_images/math/fbdfb5b287b98f68a5a3084ee58b0c8c65024fc8.png" alt="\rho_0(\vec x) = \frac{Q}{r} = \frac{1}{r} \int d^3x' \rho(\vec x') = \int d^3x' \frac{\rho(\vec x')}{\lvert \vec x \rvert} ."/></p>
+</div><p>Dipole, using the simplest model, is a system of two charged particles with <img class="math" src="../../_images/math/25c81e6dc8ab9dc3311acb0a519f25f5d62872b1.png" alt="\pm Q"/> and directed from negative charge to positive charge.</p>
+<div class="figure align-center" id="id1">
+<img alt="https://upload.wikimedia.org/wikipedia/commons/a/aa/VFPt_dipole_animation_electric.gif" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/VFPt_dipole_animation_electric.gif" />
+<p class="caption"><span class="caption-text">Electric dipole from <a class="reference external" href="https://en.wikipedia.org/wiki/File:VFPt_dipole_animation_electric.gif">wikipedia</a> .</span></p>
+</div>
+<p>In the language of math, <img class="math" src="../../_images/math/ed6a6a9f4d6be3317c094de7bd645973df0101bc.png" alt="\vec q=Q\vec d"/>. The electric potential is the superposition of the two charges.</p>
+<div class="figure align-center" id="id2">
+<img alt="../../_images/dipolePotential.png" src="../../_images/dipolePotential.png" />
+<p class="caption"><span class="caption-text">The dashed line is the position vector <img class="math" src="../../_images/math/1965e2c30cd0d5928cbd589a3f403d94ac59d86f.png" alt="\vec x"/>.</span></p>
+</div>
+<div class="math">
+<p><img src="../../_images/math/45459abec2f0732c166d372282c930103c443589.png" alt="\phi(\vec x) &amp;= \frac{-Q}{\lvert \vec x -(-\vec d/2) \rvert} + \frac{Q}{\lvert \vec x - \vec d/2 \rvert} \\
+&amp;= \int d^3x' \frac{-Q\delta(\vec x' + \vec d/2) + Q \delta(\vec x' -\vec d/2) }{\lvert \vec x - \vec x' \rvert} ??"/></p>
+</div><p class="last">I need some time to make clear of different methods.</p>
+</div>
+<p>Dipole comes from the expansion at <img class="math" src="../../_images/math/f968d0b8858fe3fe69f3953fb4ef3abc358832b7.png" alt="\vec x \gg \vec x'"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/c821120b5f396c4822e641a9d374495e3b9e09da.png" alt="\frac{1}{\lvert \vec x - \vec x' \rvert} = \frac{1}{r} + \vec x' \cdot \vec x \frac{1}{r^3} \cdots"/></p>
+</div><p>thus the dipole part is actually</p>
+<div class="math">
+<p><img src="../../_images/math/95b7935dc182325a8bfaddbf7ca8777ce5853671.png" alt="\phi_1(\vec x) = \frac{1}{r^3}\vec x \cdot d^3x' \vec x' \rho(\vec x')."/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Multipole</p>
+<p class="last">A nth multipole has the dimnsion of <img class="math" src="../../_images/math/8dd034791cd476551a7ba8c6239bec365504c02c.png" alt="\frac{[Q]}{[r]} \left(\frac{d}{r}\right)^2"/>.</p>
+</div>
+<p>In most of the cases, we have a very small dipole compared to the distance at where the field is measured. So we could <strong>take the limit that the dipole is point like</strong>. The actually meaning of a point dipole is that the dipole is a constant viewed from very far away.</p>
+<div class="math">
+<p><img src="../../_images/math/d174f7df208ba1eb55fe273087080a4d77fd2d7b.png" alt="\rho(\vec x) &amp;= -q\delta(\vec x + \vec d/2) + q\delta(\vec x -\vec d/2) \\
+&amp; \approx -q \nabla\cdot \delta(\vec x) ."/></p>
+</div><p>The next question to be answered is the electric field generated by this point dipole.</p>
+<div class="math">
+<p><img src="../../_images/math/e87a1983908a506df68f0e89134bf9fdd878a367.png" alt="\vec E &amp;= -\nabla \frac{\vec p\cdot \vec x}{r^3} \\
+&amp; = \frac{3(\vec p\cdot \vec x)\vec x - \vec p r^2}{r^5} \\
+&amp; = \frac{3(\vec p\cdot \vec x)\vec x}{r^5} - \frac{\vec p}{r^3},"/></p>
+</div><p>which is <strong>only true for</strong> <img class="math" src="../../_images/math/7c0750ebe20e3527dbd6525188304536733d146e.png" alt="\vec x \neq 0"/>.</p>
+<p>Force feels by a dipole is</p>
+<div class="math">
+<p><img src="../../_images/math/91da275b579b7c54f30816b42ecca878ba3e928b.png" alt="\vec F = \nabla(\vec p(\vec x) \cdot \vec E(\vec x) )."/></p>
+</div><p>Torque can also be calculated</p>
+<div class="math">
+<p><img src="../../_images/math/48b6b8a005cd5a77d718071fc1ec8eedff5276fe.png" alt="\vec \tau = \vec p \times \vec E + \vec x \times \vec F."/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Force and Torque of Dipole</p>
+<p>Force can be calculated using principle of virtual work. <img class="math" src="../../_images/math/d9261d803218d145e623d9f131d9de0ec6d6ebe0.png" alt="-\vec p \cdot \vec E"/> is the energy which can be explained using simple two charge model.</p>
+<p class="last">Torque has two parts, one with a precession-like term which is called spin torque while another one is a orbital torque since it tries to align the dipole with the field lines.</p>
+</div>
+</div>
+</div>
+<div class="section" id="dielectric-material">
+<h2>Dielectric Material<a class="headerlink" href="#dielectric-material" title="Permalink to this headline">¶</a></h2>
+<p>In the presence of dielectric material, a new set of quantities will be introduced.</p>
+<div class="section" id="polarization">
+<h3>Polarization<a class="headerlink" href="#polarization" title="Permalink to this headline">¶</a></h3>
+<p>Why do we introduce this polarization <img class="math" src="../../_images/math/13b4f72617cefc0f53fc6493114ec04200714fd9.png" alt="\vec P"/>? To make the picture and the math easier to understand, in some sense.</p>
+<p>Imagine dielectric material in electric field. Since the material is dielectric, the external electric field induces additional electric field.</p>
+<p>We use subscript P for quantities that is induced.</p>
+<p>For a neutral object, one conservation law is</p>
+<div class="math">
+<p><img src="../../_images/math/9f89813f0273796cd04baaef4a2485c8238f32cf.png" alt="\int \rho_P(\vec x') d^3x' + \oint \sigma_P \hat n \cdot \vec{dS} = 0,"/></p>
+</div><p>where <img class="math" src="../../_images/math/eaac1f67b9be71da021b88b27d66fe13396ad89a.png" alt="\rho_P"/> is the charge volume density distribution inside the object while <img class="math" src="../../_images/math/0103dfa596b5ad798e8ff8d64dd7195c6032cd14.png" alt="\sigma_P"/> is the surface charge density. We need the surface charge because charge will be induced on the surface.</p>
+<p>Maxwell&#8217;s equations are very beautiful, so we definitely want to preserve Gauss&#8217; law. Thus we define</p>
+<div class="math">
+<p><img src="../../_images/math/361e611e12b814e7cc1ced4b34c2ba43d238538e.png" alt="\rho_P(\vec x) &amp;= - \nabla \cdot \vec P_P(\vec x) \\
+\sigma_P(\vec x) &amp;= \vec P(\vec x) \cdot \hat n(\vec x)."/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Polarization and Electric Field</p>
+<p>So what is the relation of <img class="math" src="../../_images/math/13b4f72617cefc0f53fc6493114ec04200714fd9.png" alt="\vec P"/> and <img class="math" src="../../_images/math/d8ed03426dcf54f80353a474ef0978a8f72a4e8e.png" alt="\vec E"/>? This is not trivial. The physics here is the electric field (vector), space distribution, polarization (vector).</p>
+<div class="math">
+<p><img src="../../_images/math/a9d95653f119cbad8c78c5939aa1b5492e4dd719.png" alt="P_i  = ? E_j"/></p>
+</div><p>How many ranks do we need to describe a spatially distribution in Euler space? Two maximum. So</p>
+<div class="math">
+<p><img src="../../_images/math/2236872059833ba37eaca8bd4c5e2e3e6151aa67.png" alt="P_i = \chi_{ij}E_j ."/></p>
+</div><p class="last">However, the tensor <img class="math" src="../../_images/math/fd061c26294324ebbfc8c4fb690e86c65b6970f0.png" alt="\chi_{ij}"/> can be a function of <img class="math" src="../../_images/math/c9e3bfdd6848da296ac0428d4025a52b8066e725.png" alt="E_j"/> and even <img class="math" src="../../_images/math/860270075a2bb8356a3d5503a0d30d76e8461ad6.png" alt="P_i"/>.</p>
+</div>
+<p>For <strong>isotropic</strong> material, we would have no direction dependence of the spatial distribution</p>
+<div class="math">
+<p><img src="../../_images/math/2540959ae9f626973f656f0f3ed115f48d326f62.png" alt="P_i = \chi E_i ."/></p>
+</div><p><strong>This is because no shear stress is possible thus :math:`P_i` doesn&#8217;t depend on E field on other directions.</strong></p>
+<p><img class="math" src="../../_images/math/ed41c72ef1835742cb2424b19c54234a76cea357.png" alt="\chi"/> can still be a function of <img class="math" src="../../_images/math/df8d683b2995516a7cc0785c5e62ba939c2a71ce.png" alt="E_i"/> though. Now we require that this material is <strong>linear</strong>, which means <img class="math" src="../../_images/math/ed41c72ef1835742cb2424b19c54234a76cea357.png" alt="\chi"/> is independent of <img class="math" src="../../_images/math/df8d683b2995516a7cc0785c5e62ba939c2a71ce.png" alt="E_i"/>.</p>
+<p>With the requirement of <strong>isotropic and linear</strong>, we have a simple relation,</p>
+<div class="math">
+<p><img src="../../_images/math/be31870b53f56355e90eb0c967a1918d86bec52a.png" alt="P_i = \chi_e E_i,"/></p>
+</div><p>where, for some reason, <img class="math" src="../../_images/math/56600d30e77c492412f85746f7a5ed610bb9a791.png" alt="\chi_e"/> is called <strong>electric suscptibility</strong>.</p>
+<div class="note admonition">
+<p class="first admonition-title">Why is this isotropic and linear approximation useful?</p>
+<p class="last">Think about the microscopic structure of material.</p>
+</div>
+</div>
+<div class="section" id="electric-potential">
+<h3>Electric Potential<a class="headerlink" href="#electric-potential" title="Permalink to this headline">¶</a></h3>
+<p>The potential should be related dipole since this is dielectric material. (&lt;- This is a joke.) Anyway, it is related to dipole.</p>
+<p>The electric potential is composed of two parts, one produced by the volume charge density and another produced by the surface charge density.</p>
+<div class="math">
+<p><img src="../../_images/math/976698a8295eeb783f5b8d6d7e90808cb537cd13.png" alt="\phi_P(\vec x) &amp; =\int d^3x' \frac{\rho(\vec x')}{\lvert\vec x - vec x' \rvert} +  \oint \vec{dS'}\cdot \frac{\sigma_P\hat n'}{\lvert \vec x -\vec x'\rvert} \\
+&amp; = \int d^3 x' \frac{-\nabla' \cdot \vec P(\vec x')}{\vert\vec x - vec x' \vert} + \oint \vec{dS'} \cdot \frac{\vec P(\vec x')}{\vert\vec x - vec x' \vert} \\
+&amp; = \int d^3 x' \frac{-\nabla' \cdot \vec P(\vec x')}{\vert\vec x - vec x' \vert} + \int d^3x' \nabla' \cdot \frac{\vec P(\vec x')}{\vert\vec x - vec x' \vert} \\
+&amp; = \int d^3 x' \left( \vec P(\vec x') \cdot \nabla'\cdot \frac{1}{\vert\vec x - vec x' \vert} \right) \\
+&amp; = \int d^3 x' \frac{\vec P(\vec x') \cdot (\vec x - \vec x')}{\vert\vec x - vec x' \vert^3} ."/></p>
+</div><p>Recall that the electric potential by a dipole is</p>
+<div class="math">
+<p><img src="../../_images/math/4a159c56e4fbaf4600204055fb527e06983e208d.png" alt="\phi_d = \frac{\vec p\cdot \vec x}{r^3}."/></p>
+</div><p>The electrical potential generated by induced charge distribution in dielectric material is a integral of a lot dipole electric potential fields. This can be seen by the following approximation in <img class="math" src="../../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> direction,</p>
+<div class="math">
+<p><img src="../../_images/math/0f89972a80f2bab725706d4efbf05b3a97b7a826.png" alt="(x - x') = x (1 - \frac{x'}{x}) \approx x,"/></p>
+</div><p>then</p>
+<div class="math">
+<p><img src="../../_images/math/83300f4c307eabbfba6a34af137d95cc9862f3b9.png" alt="\phi_P(\vec x) \approx \int d^3x' \frac{\vec P(\vec x') \cdot  \vec x}{ {\vec x}^3 }."/></p>
+</div><p><strong>At this point we only considered the induced field.</strong></p>
+</div>
+<div class="section" id="total-field">
+<h3>Total Field<a class="headerlink" href="#total-field" title="Permalink to this headline">¶</a></h3>
+<p>Gauss&#8217; law tells us the field about the total charge, both the original and the induced, and the total field, whatever generated it.</p>
+<div class="math">
+<p><img src="../../_images/math/467585c5febe25c75bcc805124c9f25047649b7d.png" alt="\nabla\cdot \vec E = 4\pi (\rho + \rho_P),"/></p>
+</div><p>where <img class="math" src="../../_images/math/018e3951498fd235020bf7b87da07c19396ed3fd.png" alt="\rho"/> means the free charge.</p>
+<p>As we have introduced</p>
+<div class="math">
+<p><img src="../../_images/math/369fb71c75e6c46e939360a30db585521c824572.png" alt="\rho_P = -\nabla\cdot \vec P,"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/50b41bced1fec898e2c2eaae69dd4dbef886f354.png" alt="\nabla\cdot \vec E = 4\pi (\rho -\nabla\cdot \vec P) ."/></p>
+</div><p>Combine terms</p>
+<div class="math">
+<p><img src="../../_images/math/36bc3b36db4bcfb1066ae2f080345f1bb1510785.png" alt="\nabla \cdot (\vec E + 4\pi \vec P) = 4\pi \rho."/></p>
+</div><p>The point is we don&#8217;t want to mess with <img class="math" src="../../_images/math/13b4f72617cefc0f53fc6493114ec04200714fd9.png" alt="\vec P"/>, so we define a <strong>displancement vector</strong></p>
+<div class="math">
+<p><img src="../../_images/math/11fbacbe01f7ab882c1d0b07fa4bb31259a335dc.png" alt="\vec D = \vec E + 4\pi \vec P,"/></p>
+</div><p>so that the Gauss&#8217; law only involve with free charge <img class="math" src="../../_images/math/018e3951498fd235020bf7b87da07c19396ed3fd.png" alt="\rho"/> and the displacement vector,</p>
+<div class="math">
+<p><img src="../../_images/math/7a30228b178122f5e01b30ef399911ffd64e2707.png" alt="\nabla\cdot \vec D = 4\pi \rho."/></p>
+</div><p>For <strong>isotropic and linear</strong> material, we already know <img class="math" src="../../_images/math/0aa3ead26c261aa6cff5993e7be4b87fd4fce0e1.png" alt="\vec P = \chi_e \vec E"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/43cdac77a4bcaca3e6771272b2be832c3c553c65.png" alt="\vec D = \vec E + 4\pi \chi \vec E = (1 + 4\pi \chi_e) \vec E,"/></p>
+</div><p>then we define</p>
+<div class="math">
+<p><img src="../../_images/math/e02c965e2bfca26c6b24c539e7bb2cdf074f8d32.png" alt="\epsilon = 1 + 4\pi \chi_e,"/></p>
+</div><p>which is the <strong>permittivity</strong> by definition.</p>
+</div>
+<div class="section" id="energy-and-stress">
+<h3>Energy and Stress<a class="headerlink" href="#energy-and-stress" title="Permalink to this headline">¶</a></h3>
+<p>Just as a reference,</p>
+<div class="math">
+<p><img src="../../_images/math/5d2baf049daa2a9d70b774a247f0cea90f4cb5e0.png" alt="\delta U = \frac{1}{4\pi} \int \vec E \cdot \delta \vec D d^3 x' =  \frac{1}{4\pi} \int \frac{1}{2\epsilon}\delta E^2 d^3 x',"/></p>
+</div><p>which indicates that the energy density is</p>
+<div class="math">
+<p><img src="../../_images/math/c449274fd7b84b94f20bc23a36f321184c088a37.png" alt="u = \frac{1}{8\pi} \vec E\cdot \vec D."/></p>
+</div><p>Stress tensor <img class="math" src="../../_images/math/72c2f966ef4fe0cb810f4901df1581548e65abc5.png" alt="T_{ij}"/> which appears in the formula of force <img class="math" src="../../_images/math/ea842434fa842c111bf6df05e63f1b028af6cb0f.png" alt="\vec F = \int \vec{dS} \cdot \overleftrightarrow{T}"/> is</p>
+<div class="math">
+<p><img src="../../_images/math/1ed36b384a233a7d10f76dab59ddd23c08037bda.png" alt="T_{ij} = \frac{1}{4\pi} \left( D_i E_j - \frac{1}{2} D_k E_k \delta_{ij} \right)."/></p>
+</div></div>
+</div>
+<div class="section" id="magnetic-field">
+<h2>Magnetic Field<a class="headerlink" href="#magnetic-field" title="Permalink to this headline">¶</a></h2>
+<p>Lorentz force is</p>
+<div class="math">
+<p><img src="../../_images/math/c8c8f313ccedff54d2f93002a931e474a27e7fa7.png" alt="\vec F = q \vec E + q \frac{\vec v}{c}\times \vec B ."/></p>
+</div><div class="section" id="amperes-law">
+<h3>Ampere‘s Law<a class="headerlink" href="#amperes-law" title="Permalink to this headline">¶</a></h3>
+<p>Force between two charged wire is given by</p>
+<div class="math">
+<p><img src="../../_images/math/4baabf1c6777b0b8d474526d773d4d5c708f679d.png" alt="\vec F = \frac{1}{c^2} \int \int \frac{I_1 \vec{dx} \times ( I_2\vec{dx'} \times (\vec x - \vec x') ) }{\vert \vec x - \vec x'\vert^3}"/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Force on A Charged in Electric Field</p>
+<p>Force on a charge in a electric field generated by <img class="math" src="../../_images/math/07f6c761724d5d8f2f2f5435b38000ea74eedd1b.png" alt="\rho(\vec x)"/> is</p>
+<div class="last math">
+<p><img src="../../_images/math/aaa85c752e28e4565e7c536a125440c5722f183e.png" alt="\vec F = q \vec E  = q \int d^3x' \frac{\rho(\vec x') (\vec x - \vec x') }{\vert \vec x - \vec x' \vert^3}."/></p>
+</div></div>
+<div class="note admonition">
+<p class="first admonition-title">Charge Conservation in Magnetostatistics</p>
+<p>Conservation of charge means</p>
+<div class="math">
+<p><img src="../../_images/math/7a5cdfc61db08b4c3eb121cc1a702154744f8a70.png" alt="\frac{\partial \rho}{\partial t} + \nabla \cdot \vec j = 0,"/></p>
+</div><p>we require the source of current density 0 which means</p>
+<div class="last math">
+<p><img src="../../_images/math/c09b5a887bf93ba06edf32e230601ed78767cd6a.png" alt="\frac{\partial \rho}{\partial t} = \nabla\cdot \vec j = 0."/></p>
+</div></div>
+<p>The question is how can the electric current feels each other? By intermediate field we say.</p>
+</div>
+<div class="section" id="biot-savart-law">
+<h3>Biot-Savart Law<a class="headerlink" href="#biot-savart-law" title="Permalink to this headline">¶</a></h3>
+<p>The magnetic field generated by electric current is given by Biot-Savart law.</p>
+<div class="math">
+<p><img src="../../_images/math/e856f6fb162798bc6f5125ce910ad9504c41e861.png" alt="\vec B = \frac{1}{c} \int d^3x' \frac{ vec j(\vec x') \times (\vec x - \vec x') }{\vert \vec x - \vec x' \vert ^3}"/></p>
+</div><p>Starting from magnetic field we could find the force,</p>
+<div class="math">
+<p><img src="../../_images/math/8b5c7594f915d3c876af952b57aa9dec976658c3.png" alt="\vec F = \frac{1}{c}\int d^3x' \vec j(\vec x) \times \vec B (\vec x)."/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Force of Charge Distribution in Electric Field</p>
+<p class="last">vec F = int d^3x&#8217; frac{rho(vec x&#8217;)} vec E(vec x&#8217;) .</p>
+</div>
+</div>
+<div class="section" id="divergence-and-curl-of-magnetic-field">
+<h3>Divergence and Curl of Magnetic Field<a class="headerlink" href="#divergence-and-curl-of-magnetic-field" title="Permalink to this headline">¶</a></h3>
+<p>Using the formula of magnetic field generated by current,</p>
+<div class="math">
+<p><img src="../../_images/math/4a195a101cca6924810913318cf15cebd7453e01.png" alt="\nabla \cdot B &amp;= \frac{1}{c} \nabla\cdot \int d^3x' \vec j(\vec x') \times \frac{\vec x - \vec x'}{\vert \vec x -\vec x' \vert^3} \\
+&amp; = \frac{1}{c} \partial_i \int \epsilon_{ikl} j_k(\vec x') \frac{x_l -x_l'}{\vert \vec x - \vec x' \vert^3} d^3x' \\
+&amp; = \frac{1}{c} \int j_k \epsilon_{kli} \partial_i \partial_l \frac{1}{\vert \vec x- \vec x' \vert} d^3 x' \\
+&amp; = 0"/></p>
+</div><p>The last line is true since</p>
+<div class="math">
+<p><img src="../../_images/math/2c33346af9187b499f8db4be8e0dc4d4166b5887.png" alt="&amp;j_k \epsilon_{kli} \partial_i \partial_l \frac{1}{\vert \vec x- \vec x'\vert } \\
+&amp; = \vec j \cdot (\nabla \times \nabla \frac{1}{\vert \vec x- \vec x'\vert } )\\
+&amp; = 0"/></p>
+</div><p>The curl on the other hand is not zero.</p>
+<div class="math">
+<p><img src="../../_images/math/ec81f8ed853a9dddaf2f269017cb33e8e6d60e91.png" alt="\nabla\times \vec B = \frac{4\pi}{c} \vec j ."/></p>
+</div><p>Apply a loop integral,</p>
+<div class="math">
+<p><img src="../../_images/math/c341090e13fab43a7db144661094c9a417665359.png" alt="\oint  \vec{dx} \cdot \vec B = \frac{4\pi}{c} I."/></p>
+</div></div>
+<div class="section" id="vector-potential">
+<h3>Vector Potential<a class="headerlink" href="#vector-potential" title="Permalink to this headline">¶</a></h3>
+<p>For a electric field, we have a scalar potential,</p>
+<div class="math">
+<p><img src="../../_images/math/89d4507b5f274cf08b7cc819e558b072eb3e14fb.png" alt="\vec E = - \nabla \phi,"/></p>
+</div><p>since electrostatics is curl free,</p>
+<div class="math">
+<p><img src="../../_images/math/9d180d948879e13674dd2374c5c1144fe6b573e5.png" alt="\nabla \times \vec E = - \nabla \times \nabla \phi =0 ."/></p>
+</div><p>Magnetostatics, on the other hand, is divergence free. Thus we expect</p>
+<div class="math">
+<p><img src="../../_images/math/e45f450a1280b12bd97a6b416326ffaa52509566.png" alt="\vec B = \nabla\times \vec A."/></p>
+</div><p>Not surprisingly, we have</p>
+<div class="math">
+<p><img src="../../_images/math/4b933af5d63e447a1525eaeede63456ea2572a0b.png" alt="\vec A' = \vec A + \nabla \chi,"/></p>
+</div><p>is also a valid vector potential for <img class="math" src="../../_images/math/0eaf35e2915e5c5200fd6642430875e58f295a68.png" alt="\vec B"/>.</p>
+<div class="note admonition">
+<p class="first admonition-title">Gauges</p>
+<p>Coulomb gauge is</p>
+<div class="last math">
+<p><img src="../../_images/math/fbfae135149e3a6b8df582b2aaae3dee86a67520.png" alt="\nabla \cdot \vec A = 0."/></p>
+</div></div>
+<div class="note admonition">
+<p class="first admonition-title">Example of Gauge Freedom</p>
+<p>To have a magnetic field <img class="math" src="../../_images/math/7a50069fdb87abda82b5295a3e6cbb46b5e9cfd6.png" alt="\vec B = B_0 \hat {e_z}"/>, we could use different vector potentials,</p>
+<div class="math">
+<p><img src="../../_images/math/541e2ed45b4e314c5cd94241241755f693e6058a.png" alt="\vec A_1 &amp;= B_0 x \hat{e_y}, \\
+\vec A_2 &amp; = - B_0 y\hat{e_x}, \\
+\vec A_3 &amp; = \frac{\vec A_1 + \vec A_2}{2}."/></p>
+</div><p class="last">This is the gauge freedom of the magnetic field.</p>
+</div>
+</div>
+</div>
+<div class="section" id="refs-notes">
+<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer> 
+  </body>
+</html>

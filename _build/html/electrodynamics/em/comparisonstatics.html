@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Comparison of E &amp; M &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../../index.html" />
+    <link rel="up" title="Electricity and Magnetism" href="main.html" />
+    <link rel="next" title="Response of Matter" href="../matter.html" />
+    <link rel="prev" title="Electrostatics and Magnetostatics" href="static.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../classicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#books-acknowledgement">Books &amp; Acknowledgement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#introduction">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html#toc">ToC</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/GeneralRelativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Comparison of E &amp; M</a><ul>
+<li><a class="reference internal" href="#useful-tricks">Useful Tricks</a></li>
+<li><a class="reference internal" href="#statics-in-vacuum">Statics in Vacuum</a><ul>
+<li><a class="reference internal" href="#source-of-fields">Source of Fields</a></li>
+<li><a class="reference internal" href="#potentials">Potentials</a></li>
+<li><a class="reference internal" href="#gauge-of-fields">Gauge of fields</a></li>
+<li><a class="reference internal" href="#multipole-expansion">Multipole Expansion</a></li>
+<li><a class="reference internal" href="#force-and-torque">Force and Torque</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="static.html" title="Previous Chapter: Electrostatics and Magnetostatics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Electrostatics a...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../matter.html" title="Next Chapter: Response of Matter"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Response of Matt... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../../_sources/electrodynamics/em/comparisonstatics.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="comparison-of-e-m">
+<h1>Comparison of E &amp; M<a class="headerlink" href="#comparison-of-e-m" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="useful-tricks">
+<h2>Useful Tricks<a class="headerlink" href="#useful-tricks" title="Permalink to this headline">¶</a></h2>
+<div class="math">
+<p><img src="../../_images/math/4c091067b6f97f062073bc4675b253b047929458.png" alt="\partial_i(x_k j_i) = j_k + x_k \partial_i j_i"/></p>
+</div><p>This is useful because we have</p>
+<div class="math">
+<p><img src="../../_images/math/b82442298f470101b699882752fafe8a000bf7f0.png" alt="\nabla \cdot \vec j = \partial_i j_i = \frac{d}{dt} \rho = 0,"/></p>
+</div><p>and the LHS can be turned into a surface integral as one wish and disappears.</p>
+<p>A similar one is</p>
+<div class="math">
+<p><img src="../../_images/math/5a3bca596d8d8b3dc1f5a632b1b88b5124fb6be5.png" alt="\partial_i(x_k x_l j_i) ."/></p>
+</div></div>
+<div class="section" id="statics-in-vacuum">
+<h2>Statics in Vacuum<a class="headerlink" href="#statics-in-vacuum" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="source-of-fields">
+<h3>Source of Fields<a class="headerlink" href="#source-of-fields" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Source of Electric Field in Electrostatics</li>
+</ol>
+<p>Source of electric field is charge</p>
+<div class="math">
+<p><img src="../../_images/math/6f82c91d8e71bf57b7c37b4b7ffd98bc26e82b5e.png" alt="\nabla \cdot \vec E = 4\pi \rho"/></p>
+</div><ol class="arabic simple" start="2">
+<li>Source of Maganetic field in Magnetostatics</li>
+</ol>
+<p>Current is the source of maganetic field</p>
+<div class="math">
+<p><img src="../../_images/math/b0487bd2412c0e8c6c665cb32b5c21277d163ba4.png" alt="\nabla \times \vec B = \frac{4\pi}{c} \vec j ."/></p>
+</div></div>
+<div class="section" id="potentials">
+<h3>Potentials<a class="headerlink" href="#potentials" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Electric Potential</li>
+</ol>
+<p>Electric potential is given by</p>
+<div class="math">
+<p><img src="../../_images/math/20598c163f77886a85f88a87cd55df651ab3645b.png" alt="\vec E = -\nabla \phi."/></p>
+</div><p>Imediately, we have the curl of electrical field being 0, i.e.,</p>
+<div class="math">
+<p><img src="../../_images/math/f7a34064df8b3b5bd18ec97658963c81b65dbb2c.png" alt="\nabla\times \vec E = 0."/></p>
+</div><p>By implementing Gauss&#8217;s law, the equation for potential becomes</p>
+<div class="math">
+<p><img src="../../_images/math/b769bb64510d174407eb75678eb585b033e653b1.png" alt="\nabla^2 \phi = - 4\pi \rho ."/></p>
+</div><p>The solution, apply the Green&#8217;s function to Laplace equation,</p>
+<div class="math">
+<p><img src="../../_images/math/5040442ea7dac659b401f71c9a1ef81d64e3ee4a.png" alt="\phi(\vec x) = \int d^3x' \frac{\rho(\vec x')}{\lvert \vec x - \vec x'  \rvert}"/></p>
+</div><ol class="arabic simple" start="2">
+<li>Magnetic Potential</li>
+</ol>
+<p>Magnetic potential is given by</p>
+<div class="math">
+<p><img src="../../_images/math/441b8907a7b2f3b958baa3b514e6b11e64104514.png" alt="\vec B = \nabla \times \vec A ."/></p>
+</div><p>Applying curl of magnetic field and solving the equation,</p>
+<div class="math">
+<p><img src="../../_images/math/232e68e651e0782e2418587304b571fa3385091b.png" alt="\vec A = \frac{1}{c}\int \frac{\vec j}{\lvert \vec x - \vec x' \rvert} d^3 x' ."/></p>
+</div></div>
+<div class="section" id="gauge-of-fields">
+<h3>Gauge of fields<a class="headerlink" href="#gauge-of-fields" title="Permalink to this headline">¶</a></h3>
+<p>By definition, electric potential and maganetic potential are, repectively,</p>
+<div class="math">
+<p><img src="../../_images/math/f9878662ab645f3a51e3ddecaa5fa05e18b09058.png" alt="\vec E = -\nabla \phi ,"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/82c416967cd1fbb6684c786fea18f4c7d8be57f0.png" alt="\vec B = - \nabla \times \vec A ."/></p>
+</div><p>Electric field is invariant under a transform</p>
+<div class="math">
+<p><img src="../../_images/math/1029ec92c7fbbb08fa1ab9d6d9459b48b4998283.png" alt="\phi' = \phi + \phi_0,"/></p>
+</div><p>where <img class="math" src="../../_images/math/556e690af4fe58e8cd408ab391329ed94c41d8e7.png" alt="\nabla\phi_0=0"/>.</p>
+<p>Similarly, the potential for magnetic field is</p>
+<div class="math">
+<p><img src="../../_images/math/826a9e40805d0327647b75795b90c6f8f3ca70d0.png" alt="\vec A' = \vec A + \nabla \psi,"/></p>
+</div><p>in which <img class="math" src="../../_images/math/9f33e5dbbeacdc91c98297957b00e0f2e3b80d0a.png" alt="\psi"/> can be any scalar fields.</p>
+<div class="note admonition">
+<p class="first admonition-title">Gauge</p>
+<p>As expected, these definitions of fields do not determine the potential completely. This is gauge freedom.</p>
+<p><strong>It might seem strange to talk about such a freedom. As we would ask why we have such freedom for potentials?</strong></p>
+<p>In class electrodynamics, potentials are merely mathematical tools. So the notion that potental has gauge freedom comes only from the mathematical definition of potentials.</p>
+<p class="last">However, we do expect such a freedom is part of nature as we step into quantum ralm. In quantum world, Aharonov-Bohm effect proves that potentials are actually real existance. In such cases, the gauge freedom do have a very important impact on our theory. Gauge freedom is part of the internal structure of fields and goes deep into group theory, topology and differential geometry.</p>
+</div>
+</div>
+<div class="section" id="multipole-expansion">
+<h3>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h3>
+<div class="warning admonition">
+<p class="first admonition-title">Requirement</p>
+<p class="last">One should be able to derive these multipole expansions of fields without refering to any material.</p>
+</div>
+<p>In the expression for potentials,</p>
+<div class="math">
+<p><img src="../../_images/math/bc0389d0dd39cf41d62ff787dc28ec14a7dbc6e0.png" alt="\phi(\vec x) = \int d^3x' \frac{\rho(\vec x')}{\lvert \vec x - \vec x'  \rvert},"/></p>
+</div><p>and</p>
+<div class="math">
+<p><img src="../../_images/math/1120bd186094feedbed3e28739ba955f8a983189.png" alt="\vec A = \frac{1}{c}\int \frac{\vec j}{\lvert \vec x - \vec x' \rvert} d^3x',"/></p>
+</div><p>the term</p>
+<div class="math">
+<p><img src="../../_images/math/efdbcba5b03dde0141ea17d858ea223d952c9707.png" alt="\frac{\vec j}{\lvert \vec x - \vec x' \rvert}"/></p>
+</div><p>can be Taylor expanded when <img class="math" src="../../_images/math/8190e386f893a0da775c986c7265315d158e02a6.png" alt="\vec x' \ll \vec x"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/527884c047953aa2e552d9103ba251642044b79c.png" alt="&amp;\frac{1}{\lvert \vec x - \vec x' \rvert} \\
+=&amp;  \frac{1}{r} - x'_i \partial_i \frac{1}{r} + \frac{1}{2} x'_i x'_j \partial_i \partial_j \frac{1}{r} + cdots"/></p>
+</div><p>where <img class="math" src="../../_images/math/298b30d0b656edf86dcd82a1b5c1bf0e01d68dc2.png" alt="1/r"/> is <img class="math" src="../../_images/math/c02b6d8a75ebf9baddd59ab23a6ebc1e78ae5c6a.png" alt="1/\lvert x \rvert"/> .</p>
+<p>Apply this expansion, we can find the dipole and quadrapole of a charge distribution, which are</p>
+<div class="math">
+<p><img src="../../_images/math/b3dbac2ee749e5c6d159e0578c4f5a9e0152c347.png" alt="\vec p = \int \rho(\vec x') \vec x' d^3 x',"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/a55298a6fd0ee9fad09ad9057603ddfe594a1f01.png" alt="Q_{ij} = \frac{1}{2} \int \rho(\vec x') ( 3x'_i x'_j - r'^2 \delta_{ij}) d^3x'."/></p>
+</div><p>The corresponding potentials are</p>
+<div class="math">
+<p><img src="../../_images/math/0500b6eed3fe834bd1bf9a0712d125b08524d9ff.png" alt="\vec \phi_d = \frac{\vec p\cdot \vec x}{r^3},"/></p>
+</div><p>and</p>
+<div class="math">
+<p><img src="../../_images/math/bc04f83c30d79ed2bbf00b8e39daef020a93a2c3.png" alt="\vec \phi_q = \frac{x_i Q_{ij} x_j }{r^5}."/></p>
+</div><p>The electric field can be calculated using <img class="math" src="../../_images/math/0675b5c9b6d24242c3b9b1eda4d71e199e4e5820.png" alt="\vec E = -\nabla \phi"/>.</p>
+<p>For magnetic field, a dipole expansion shows that</p>
+<div class="math">
+<p><img src="../../_images/math/851703cc8470b73c9787ac35b6def01509c0356f.png" alt="\vec A = \frac{\mu\times \vec x}{r^3},"/></p>
+</div><p>where</p>
+<div class="math">
+<p><img src="../../_images/math/def0bbb56ad43cd8bb750057faf59fb24772afcf.png" alt="\vec \mu  = \frac{1}{2c} \int \vec x' \times \vec j(\vec x') d^3 x'."/></p>
+</div></div>
+<div class="section" id="force-and-torque">
+<h3>Force and Torque<a class="headerlink" href="#force-and-torque" title="Permalink to this headline">¶</a></h3>
+<div class="warning admonition">
+<p class="first admonition-title">Requirement</p>
+<ol class="arabic simple">
+<li>Write the most general expression for force and torque.</li>
+<li>Derive the expression with dipole and quadrapole approximations.</li>
+</ol>
+<p class="last">Among the tricks, virtual work principle could be a nice one.</p>
+</div>
+<p>Force and torque can be calculated using virtual work principle. However, for dipoles, they can be calculated directly.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer> 
+  </body>
+</html>

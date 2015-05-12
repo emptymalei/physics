@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Radiation &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="up" title="Electrodynamics" href="index.html" />
+    <link rel="next" title="Scattering" href="scattering.html" />
+    <link rel="prev" title="Response of Matter" href="matter.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../classicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#books-acknowledgement">Books &amp; Acknowledgement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html#toc">ToC</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Radiation</a><ul>
+<li><a class="reference internal" href="#radiation-in-general">Radiation In General</a><ul>
+<li><a class="reference internal" href="#dipole-radiation">Dipole Radiation</a></li>
+<li><a class="reference internal" href="#approximations">Approximations</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lamor-s-formula">Lamor&#8217;s Formula</a><ul>
+<li><a class="reference internal" href="#charge-moving-in-gravity-feilds">Charge Moving in Gravity Feilds</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="matter.html" title="Previous Chapter: Response of Matter"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Response of Matt...</span>
+    </a>
+  </li>
+  <li>
+    <a href="scattering.html" title="Next Chapter: Scattering"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Scattering &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/electrodynamics/radiation.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="radiation">
+<h1>Radiation<a class="headerlink" href="#radiation" title="Permalink to this headline">¶</a></h1>
+<p>Usually, radiation is something that can be propagated to infinity, which means, those wave that drops according to <img class="math" src="../_images/math/e9499bcff23aa37dbeb3fd1e48a0fcdf8d3f9669.png" alt="\frac{1}{r^3}"/> or even faster won&#8217;t get propagated to very far away. But we still might be interested in those near fields.</p>
+<p>Understand retarded time is something always good for radiation study.</p>
+<div class="math">
+<p><img src="../_images/math/b35c4408872718edf71cf9fd45a1e56d20cd3d1e.png" alt="t_{ret} = t - \frac{\lvert  \vec x - \vec x' \rvert}{c},"/></p>
+</div><p>which means retarded time is the current time minus the travel time of the radiation.</p>
+<p>The mathematical reason for this retardation is that the Green&#8217;s function for electromagnetic wave,</p>
+<div class="math">
+<p><img src="../_images/math/67a6871463f0e119d83da6dbfdf8d97905e3ca6f.png" alt="\left( \nabla ^2 - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}  \right)  A = 0 ."/></p>
+</div><p>This is for the fields in vacuum. For radiation with source, the wave equations gains a source term. To solve the equation, I need to write down the Green&#8217;s function, which, in this case, has a retarded term in it. In fact all such waves have a retarded time in it even just by looking at the math. Retarded time has a great impact on the solution since it delays the effect of source.</p>
+<p>This is also causality.</p>
+<div class="section" id="radiation-in-general">
+<h2>Radiation In General<a class="headerlink" href="#radiation-in-general" title="Permalink to this headline">¶</a></h2>
+<p>In general the wave equation with a source is</p>
+<div class="math">
+<p><img src="../_images/math/62e6c0618c81d879204b96575f5c78f9754d9ee2.png" alt="\left( \nabla^2 - \frac{1}{c^2}\partial_t^2  \right)  A^{\mu} = - s^{\mu}."/></p>
+</div><p>By solving that, the retarded solution comes into effect,</p>
+<div class="math">
+<p><img src="../_images/math/9367fb9bb6c9cafc79122d309ea87400f2761996.png" alt="A^{\mu} = \int d^3x' \frac{ s^{\mu}(t_{ret}, \vec x') }{\lvert   \vec x - \vec x' \rvert} ."/></p>
+</div><p>Here the vector potential is</p>
+<div class="math">
+<p><img src="../_images/math/e4b785ac959a7d161892602b5dd77a4833f9f053.png" alt="\vec A =  \int \frac{ \vec j (t_{ret}, \vec x')/c }{\lvert   \vec x - \vec x' \rvert},"/></p>
+</div><p>while the scalar potential is</p>
+<div class="math">
+<p><img src="../_images/math/bea94454062b22e56c32e91839fd858573079e2a.png" alt="\phi =  \int \frac{ \rho (t_{ret}, \vec x')}{\lvert   \vec x - \vec x' \rvert}."/></p>
+</div><div class="note admonition">
+<p class="first admonition-title">Static Fields</p>
+<p class="last">The static field has similar structure except we have no retardation. Here are the expressions.</p>
+</div>
+<p>The important thing in radiation is the angle depenence of radiation power or total radiation power. To find that, there are many procedures.</p>
+<p>One of them is to use the fact that electric field in radiation is always transverse which means</p>
+<div class="math">
+<p><img src="../_images/math/7713d34fd30743478efeeebd3d37b9d21b61d3dc.png" alt="\vec E = -\hat r \times \vec B."/></p>
+</div><p>So we only need to find out the magnetic field thus the first thing is to calculate the vector potential.</p>
+<div class="note admonition">
+<p class="first admonition-title">Why B field first?</p>
+<p>We can also find out electric field first. But in dynamics,</p>
+<div class="math">
+<p><img src="../_images/math/0f97917930b0b38ccc75306e69b5d9745cc4855b.png" alt="\vec E = - \nabla \phi - \partial_t \vec A,"/></p>
+</div><p>which means we need to find both <img class="math" src="../_images/math/8a2bf899b68f405def1b79b4e97f439601c0bb7a.png" alt="\phi"/> and <img class="math" src="../_images/math/3209c5e85500074c18556182323f177efca6d3ef.png" alt="\vec A"/>.</p>
+<p class="last">While in the procedure stated previously, we only need <img class="math" src="../_images/math/3209c5e85500074c18556182323f177efca6d3ef.png" alt="\vec A"/>.</p>
+</div>
+<p>To summarize, here is the procedure.</p>
+<ol class="arabic simple">
+<li>Calculate <img class="math" src="../_images/math/3209c5e85500074c18556182323f177efca6d3ef.png" alt="\vec A"/>.</li>
+<li>Find magnetic field using <img class="math" src="../_images/math/14efe53a5ce3e894675447ecc62e3c454ff35bbd.png" alt="\vec B = \nabla \times \vec A"/>.</li>
+<li>Find electric field is needed using <img class="math" src="../_images/math/06be1d0cb74b3f0e740293533ccae0c3646e40ef.png" alt="\vec E = - \hat r \times \vec B"/>.</li>
+<li>Find Poynting vector <img class="math" src="../_images/math/300e6f0625aaf15a7ae3eafc63d97e6b7abdb501.png" alt="\vec S = \frac{c}{4\pi} \vec E \times \vec B"/>.</li>
+<li>Find radiation power <img class="math" src="../_images/math/c9a2cbd23a97c7f967b789018fd66e86587cb77d.png" alt="\frac{dP}{d\Omega} = r^2 \langle \vec S \rangle \cdot \hat r"/>, which is angle dependent in general.</li>
+</ol>
+<div class="note admonition">
+<p class="first admonition-title">Zangwill&#8217;s Method</p>
+<p class="last">There is a radiation vector method in Zangwill&#8217;s <em>Modern Electrodynamics</em> book.</p>
+</div>
+<div class="section" id="dipole-radiation">
+<h3>Dipole Radiation<a class="headerlink" href="#dipole-radiation" title="Permalink to this headline">¶</a></h3>
+<p>Dipole Radiatioin Can Be Calculated Exactly.</p>
+</div>
+<div class="section" id="approximations">
+<h3>Approximations<a class="headerlink" href="#approximations" title="Permalink to this headline">¶</a></h3>
+<p>Since we are talking about radiation which is radiated away. Looking at a far zone radiation is good.</p>
+<p>Define <img class="math" src="../_images/math/547e713a1b01963426fad4c5f6ce36c7a0fd121a.png" alt="r = \lvert \vec x \rvert"/>. Expanding the vector potential, we have the multipole expansion of the vector potential in the limit that <img class="math" src="../_images/math/4014de9c4cb3c90d3def7a80cb42b8a08a059093.png" alt="\lvert \vec x' \rvert \ll \lvert \vec x\rvert"/> is all true for the whole integral,</p>
+<div class="math">
+<p><img src="../_images/math/cfd922e14557705bc4c23afa450ef835491022dc.png" alt="\vec A &amp;\approx \frac{1}{cr} \int d^3x' \vec j(t-r/c+ \hat r\cdot \vec x'/c,\vec x') \\
+&amp;\approx \frac{1}{cr} \int d^3 x' \left( \vec j(t-r/c, \vec x') + \frac{\hat r \cdot \vec x'}{c} \partial_t \vec j(t-r/c,\vec x')  \right)"/></p>
+</div><p>So the vector potential under this degree of approximation can be splited into two terms at this point.</p>
+<div class="math">
+<p><img src="../_images/math/6eaafc3b217422b0514b987e2b06bf842f2d91d0.png" alt="\vec A_{E1} =  \frac{1}{cr} \int d^3 x' \vec j(t-r/c, \vec x'),"/></p>
+</div><p>is the electric dipole.</p>
+<div class="note admonition">
+<p class="first admonition-title">Electric Dipole Radiation</p>
+<p>The reason is the conservation of charge. Consider this relation,</p>
+<div class="math">
+<p><img src="../_images/math/dc0a83cb1bf552d5a0531fc20ea6d00d6b0eff01.png" alt="\nabla \cdot \vec j + \partial_t \rho = 0."/></p>
+</div><p>Combine this with the following trick,</p>
+<div class="math">
+<p><img src="../_images/math/800c82a7107366a1f668e96db4566178905e8e3b.png" alt="\partial_i (j_i x_k ) = x_k \partial_i j_i + j_k,"/></p>
+</div><p>and the fact that</p>
+<div class="math">
+<p><img src="../_images/math/eac96037a244fd8a26d3d0e5e3350970e021417d.png" alt="\oint j_i x_k \d\Sigma_i =0,"/></p>
+</div><p>for any surface that is large enough.</p>
+<p>We have the following relation</p>
+<div class="math">
+<p><img src="../_images/math/aeb46ceee3dba821e1cf17d79167ecb54caedf5c.png" alt="\int d^3x ( j_k - x_k \partial_t \rho) = 0."/></p>
+</div><p>Then we know that</p>
+<div class="last math">
+<p><img src="../_images/math/9d3c53b1cc9d81e0514aa6da1bf4512a490cb6a6.png" alt="\int \vec j d^3 x = \dot{\vec p}."/></p>
+</div></div>
+<div class="math">
+<p><img src="../_images/math/8d95596c040b3e839ce42d01a89c47faa74aba7d.png" alt="\vec A_2 &amp;=  \frac{1}{cr} \int d^3 x' \frac{\hat r \cdot \vec x'}{c} \partial_t \vec j(t-r/c,\vec x') \\
+&amp; = \frac{1}{c^2r} \int d^3x' \hat r \cdot \vec x' \partial_t \vec j(t-r/c,
+\vec x')."/></p>
+</div><p>A trick can be applied to this expression,</p>
+<div class="math">
+<p><img src="../_images/math/f56ded0eca59bf49a9f5d25d58553ac28a5ce07a.png" alt="\frac{1}{2}\hat r \times (\vec x ' \times \vec j) = \frac{1}{2} (\hat r \cdot \vec x' ) \vec j - \frac{1}{2} (\hat r \cdot \vec j) \vec x' ."/></p>
+</div><p>Recall that magnetic dipole is by definition</p>
+<div class="math">
+<p><img src="../_images/math/a15b8e037e34c611e70d489ec8957ec07e6aa05d.png" alt="\vec \mu = \frac{1}{2c} \int d^3x' \vec x' \times \vec j."/></p>
+</div><p>We would like to have a term similar to the electric dipole, but we have a term like <img class="math" src="../_images/math/60d62085a57f7149bdf2e4bc9db4a9a5579161b0.png" alt="\hat r \times 2c \vec \mu"/> in <img class="math" src="../_images/math/b8fa383c8b3ff732c5549564bbc8bab7a1cd8445.png" alt="\vec A_2"/>. So we take one step furthur.</p>
+<div class="math">
+<p><img src="../_images/math/b7166c707b84ce569d55d3ef44242dc472015b17.png" alt="\frac{1}{2}\hat r \times (\vec x ' \times \vec j) &amp; = (\hat r\cdot \vec x') \vec j - \frac{1}{2} (\hat r\cdot \vec x') \vec j - \frac{1}{2} (\hat r \cdot \vec j) \vec x' \\
+&amp; = (\hat r\cdot \vec x') \vec j - \frac{1}{2} \left( (\hat r\cdot \vec x') \vec j - (\hat r \cdot \vec j) \vec x' \right)."/></p>
+</div><p>So the term <img class="math" src="../_images/math/b8fa383c8b3ff732c5549564bbc8bab7a1cd8445.png" alt="\vec A_2"/> becomes</p>
+<div class="math">
+<p><img src="../_images/math/669f0b17c200660fcbb5e88f81a1aa0e2d54e526.png" alt="\vec A_2 &amp; = \frac{1}{c^2r} \int d^3x' \left(    \frac{1}{2}\hat r \times (\vec x ' \times \vec j) +  \frac{1}{2} \left( (\hat r\cdot \vec x') \vec j + (\hat r \cdot \vec j) \vec x' \right)  \right) \\
+&amp; = \frac{1}{c^2r} \partial_t \left(   c \hat r\times \vec \mu_{ret}   \right)  + \frac{1}{c^2r} \partial_t \int d^3x' \left(   \frac{1}{2} \left( (\hat r\cdot \vec x') \vec j + (\hat r \cdot \vec j) \vec x' \right)   \right)  \\
+&amp; =\vec A_{M1} + \vec A_{E2}."/></p>
+</div><p>Back to the procedure to find radiation power, we can find the radiation power for a specific case.</p>
+</div>
+</div>
+<div class="section" id="lamor-s-formula">
+<h2>Lamor&#8217;s Formula<a class="headerlink" href="#lamor-s-formula" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="charge-moving-in-gravity-feilds">
+<h3>Charge Moving in Gravity Feilds<a class="headerlink" href="#charge-moving-in-gravity-feilds" title="Permalink to this headline">¶</a></h3>
+<p>A charge q is moving in a constant gravity field.</p>
+<p>Vector potential for a charge moving in gravitational field is</p>
+<div class="math">
+<p><img src="../_images/math/be304458781c139591e88e5dff1c554d8b33c891.png" alt="\vec A &amp;\approx \frac{1}{c r} \int d^3x'  \vec j_{ret} \\
+&amp; \approx \frac{1}{cr} q g (t - \frac{r}{c} ) \hat e_z."/></p>
+</div><p>The magnetic field is</p>
+<div class="math">
+<p><img src="../_images/math/ec5bf2e4b734b9614b246386d7564762a6ad5b26.png" alt="\vec B &amp;= \nabla \times \vec A \\
+&amp; \approx \nabla t_{ret} \times \hat e_z \frac{q g }{cr} \\
+&amp; \approx \frac{qg}{c^2r} (-\hat e_r \times \hat e_z) \\"/></p>
+</div><p>Go on with the calculation,</p>
+<div class="math">
+<p><img src="../_images/math/a03eb473f81dd5bca42309760763c7a1a1f1b182.png" alt="\vec S \cdot \hat e_r &amp;= \frac{c}{4\pi} \vec E\times \vec B \\
+&amp; = \frac{q^2g^2}{4\pi c^3r^2}  \sin^2\theta"/></p>
+</div><p>Then we have the radiation power</p>
+<div class="math">
+<p><img src="../_images/math/60dc8be70e90d9507a6296e870adbc3e1e90bc3f.png" alt="\frac{dP}{d\Omega} =  \frac{q^2 g^2}{4\pi c^3}\sin^2\theta."/></p>
+</div></div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer> 
+  </body>
+</html>

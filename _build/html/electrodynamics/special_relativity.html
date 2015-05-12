@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Special Relativity &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="up" title="Electrodynamics" href="index.html" />
+    <link rel="next" title="Special Relativity" href="../relativity/SpecialRelativity.html" />
+    <link rel="prev" title="Scattering" href="scattering.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../classicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#books-acknowledgement">Books &amp; Acknowledgement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html#toc">ToC</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Special Relativity</a><ul>
+<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="scattering.html" title="Previous Chapter: Scattering"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Scattering</span>
+    </a>
+  </li>
+  <li>
+    <a href="../relativity/SpecialRelativity.html" title="Next Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Special Relativi... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/electrodynamics/special_relativity.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="special-relativity">
+<h1>Special Relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">¶</a></h1>
+<div class="note admonition">
+<p class="first admonition-title">A Coincidence?</p>
+<p>Let&#8217;s start from this coincidence.</p>
+<div class="figure align-center" id="id1">
+<img alt="../_images/specialRelativityVelocityAddition.png" src="../_images/specialRelativityVelocityAddition.png" />
+<p class="caption"><span class="caption-text">Addition of velocities</span></p>
+</div>
+<p>Recall that in special relativity, velocity addition is</p>
+<div class="math">
+<p><img src="../_images/math/1a724c574b6d306e9107bb2bdb523c33d7b52885.png" alt="v_S = \frac{u+v_O}{1+ \beta v/c},"/></p>
+</div><p>where <img class="math" src="../_images/math/26921aef537d9827367d7868783aaac5dc147825.png" alt="v_S"/> is the velocity measured in moving frame S, <img class="math" src="../_images/math/325c31138c4a88d8bd80dbdf5ccc15aef5a66002.png" alt="v_O"/> is the velocity measured in frame O. This <img class="math" src="../_images/math/e92778cbd03c0455a83c023da052969800138052.png" alt="\beta"/> is the factor <img class="math" src="../_images/math/fc0b3bbf0c5dd82ede95bc3775b7e24f2b7a699b.png" alt="u/c"/> where u is the velocity of the moving frame measure in frame O.</p>
+<p>At the same time, we have the following hyper trig relation.</p>
+<div class="math">
+<p><img src="../_images/math/d272d91446a07a6569c9af1ee78cd1bdbc449f1d.png" alt="\tanh (\alpha + \beta) = \frac{\tanh \alpha + \tanh \beta}{1 + \tanh \alpha \tanh \beta}."/></p>
+</div><p class="last">Isn&#8217;t this addition of angles the same as the velocity addition?</p>
+</div>
+<p>The algebra of relativity is mostly based on invariance of a new distance under a new rotation. Here we are not going to repeat the derivation of these transformations from the beginning, instead we would like to have a look at the really amazing part of the theory.</p>
+<p>As we define</p>
+<div class="math">
+<p><img src="../_images/math/842f07d10dc39fc207a3591077a5a53ba75eff51.png" alt="\tanh \alpha_u = \frac{u}{c},"/></p>
+</div><p>and any velocity divided by speed of light to be a hyperbolic tangent,</p>
+<div class="math">
+<p><img src="../_images/math/7f06e0a9d65b96743491534e40c274c4de74af3f.png" alt="\tanh \alpha_{v_x} = \frac{v_x}{c},"/></p>
+</div><p>the velocity transformation, as stated in the admonition block, is an addition of angles</p>
+<div class="math">
+<p><img src="../_images/math/91f3cbc118306d259c6381af9a3a36998e7ebe07.png" alt="v_{S} = \tanh(\alpha_u + \alpha_{v_O}) = \frac{\tanh \alpha_{u} + \tanh \alpha_{v_0}}{1 + \tanh \alpha_{U} \tanh \alpha_{v_O}} = \frac{u/c + v_O/c}{1+ \frac{u}{c} \frac{v_{O}}{c}}."/></p>
+</div><p>However, addition of velocity is not that fundamental. We need to look into the relation</p>
+<div class="math">
+<p><img src="../_images/math/d52e4b798d36f7452805e8467f3faeaf14be86b2.png" alt="\tanh \alpha_{v_x} = \frac{v_x}{c}."/></p>
+</div><p>Since we are talking about geometry, space-time diagram will be extremely important.</p>
+<div class="section" id="refs-notes">
+<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><em>The Geometry of Special Relativity</em> by Tevian Dray.</li>
+</ol>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer> 
+  </body>
+</html>

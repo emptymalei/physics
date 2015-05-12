@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Electrodynamics &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.0.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="next" title="Vocabulary and Program" href="vocabulary/main.html" />
+    <link rel="prev" title="Statistical Physics" href="../statmech/StatisticalPhysics.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../classicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumMechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/StatisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#books-acknowledgement">Books &amp; Acknowledgement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#toc">ToC</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/SpecialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/GeneralRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/cosmoIndex.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/QuantumOptics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Electrodynamics</a></li>
+<li><a class="reference internal" href="#books-acknowledgement">Books &amp; Acknowledgement</a></li>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#toc">ToC</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../statmech/StatisticalPhysics.html" title="Previous Chapter: Statistical Physics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Statistical Phys...</span>
+    </a>
+  </li>
+  <li>
+    <a href="vocabulary/main.html" title="Next Chapter: Vocabulary and Program"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Vocabulary and P... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/electrodynamics/index.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="electrodynamics">
+<h1>Electrodynamics<a class="headerlink" href="#electrodynamics" title="Permalink to this headline">¶</a></h1>
+<p>Note for electrodynamics course.</p>
+<p>Coulomb Potential Energy for a point charge Q with the appearance of a test charge q at distance r</p>
+<div class="math">
+<p><img src="../_images/math/430ef1a4b62bd967103471af8d55adbb90df5ecb.png" alt="V(r) = k \frac{q Q}{r}."/></p>
+</div><p>The ability to keep storage of charge is called capacitance, which is straight forward to have such a definition as</p>
+<div class="math">
+<p><img src="../_images/math/1c3bcfaabeb41b7735d945a511b4b7ecb3ac58f2.png" alt="C = \frac{q}{U},"/></p>
+</div><p>where <img class="math" src="../_images/math/f1ee05cf676e2088c99aaaeef5c239eedf6d9ccd.png" alt="U"/> is the electric potential (not the potential energy).</p>
+<p>Maxwell&#8217;s equations are</p>
+<div class="math">
+<p><img src="../_images/math/c6cef65075c59921eddeca225f2106e8058fc594.png" alt="\mathbf{E}\cdot\mathrm{d}\mathbf{S} &amp;= \frac{1}{\varepsilon_0} \iiint_\Omega \rho \,\mathrm{d}V \\
+\mathbf{B}\cdot\mathrm{d}\mathbf{S} &amp;= 0 \\
+\oint_{\partial \Sigma} \mathbf{E} \cdot \mathrm{d}\boldsymbol{\ell} &amp; = - \frac{d}{dt} \iint_{\Sigma} \mathbf{B} \cdot \mathrm{d}\mathbf{S} \\
+\oint_{\partial \Sigma} \mathbf{B} \cdot \mathrm{d}\boldsymbol{\ell} &amp;= \mu_0 \iint_{\Sigma} \mathbf{J} \cdot \mathrm{d}\mathbf{S} + \mu_0 \varepsilon_0 \frac{d}{dt} \iint_{\Sigma} \mathbf{E} \cdot \mathrm{d}\mathbf{S}"/></p>
+</div><p>or</p>
+<div class="math">
+<p><img src="../_images/math/90331f30da04600f317997f6dd891406f34252d0.png" alt="\nabla \cdot \mathbf{E} &amp;= \frac {\rho} {\varepsilon_0} \\
+\nabla \cdot \mathbf{B} &amp;= 0 \\
+\nabla \times \mathbf{E} &amp;= -\frac{\partial \mathbf{B}} {\partial t} \\
+\nabla \times \mathbf{B} &amp;= \mu_0\left(\mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right)"/></p>
+</div></div>
+<div class="section" id="books-acknowledgement">
+<h1>Books &amp; Acknowledgement<a class="headerlink" href="#books-acknowledgement" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>I am not expecting myself to typeset all the essential notes here but the key ideas that drive me somewhere.</p>
+</div>
+<div class="section" id="toc">
+<h1>ToC<a class="headerlink" href="#toc" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vocabulary/main.html">Vocabulary and Program</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vocabulary/vocabulary.html">Vocabulary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/vocabulary.html#units">Units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/vocabulary.html#math">Math</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/vocabulary.html#e-m">E &amp; M</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/vocabulary.html#radiation-pressure">Radiation Pressure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/vocabulary.html#refs-note">Refs &amp; Note</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vocabulary/models.html">Models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/models.html#drude-model">Drude Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/models.html#lorentz-model">Lorentz Model</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vocabulary/program.html">Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vocabulary/causality.html">Causality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/causality.html#radiation">Radiation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/causality.html#response-of-matter">Response of Matter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="em/main.html">Electricity and Magnetism</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="em/static.html">Electrostatics and Magnetostatics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="em/static.html#electric-field">Electric Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="em/static.html#dielectric-material">Dielectric Material</a></li>
+<li class="toctree-l3"><a class="reference internal" href="em/static.html#magnetic-field">Magnetic Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="em/static.html#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="em/comparisonstatics.html">Comparison of E &amp; M</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="em/comparisonstatics.html#useful-tricks">Useful Tricks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="em/comparisonstatics.html#statics-in-vacuum">Statics in Vacuum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="matter.html">Response of Matter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matter.html#energy-and-momentum">Energy and Momentum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matter.html#id1">Response of Matter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matter.html#impedance">Impedance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matter.html#matching-condition">Matching Condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matter.html#reflected-and-transmitted-wave">Reflected and Transmitted Wave</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matter.html#reflection-refraction-transparent-dissipative">Reflection, Refraction, Transparent, Dissipative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matter.html#ohmic-matter">Ohmic Matter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matter.html#dispersive-media">Dispersive Media</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="radiation.html">Radiation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="radiation.html#radiation-in-general">Radiation In General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="radiation.html#dipole-radiation">Dipole Radiation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="radiation.html#approximations">Approximations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="radiation.html#lamor-s-formula">Lamor&#8217;s Formula</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="radiation.html#charge-moving-in-gravity-feilds">Charge Moving in Gravity Feilds</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scattering.html">Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special_relativity.html">Special Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="special_relativity.html#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<hr class="docutils" />
+<div class="figure">
+<a class="reference external image-reference" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/"><img alt="electrodynamics/_static/images/cc_byncsa.png" src="electrodynamics/_static/images/cc_byncsa.png" /></a>
+</div>
+<hr class="docutils" />
+<p>This open source project is hosted on GitHub: <a class="reference external" href="https://github.com/emptymalei/electrodynamics">electrodynamics</a> .</p>
+<p>Read online: <a class="reference external" href="http://emptymalei.github.io/electrodynamics">Electrodynamics Notes</a> .</p>
+<p>Download the <a class="reference external" href="https://github.com/emptymalei/electrodynamics/raw/master/_build/latex/electrodynamics.pdf">Latest PDF Version</a> .</p>
+<p>Many thanks to open source project <a class="reference external" href="http://sphinx-doc.org">Sphinx</a> for it saves me a lot of time.</p>
+<hr class="docutils" />
+<p>RST cheat sheet from <a class="reference external" href="https://github.com/ralsina/rst-cheatsheet">ralsina</a> .</p>
+<p><a class="reference external" href="_static/images/rst-cheatsheet-1.png">Page One</a></p>
+<p><a class="reference external" href="_static/images/rst-cheatsheet-2.png">Page Two</a></p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+<hr>
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Lei Ma.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer> 
+  </body>
+</html>

@@ -46,7 +46,7 @@ Vocabulary
     :maxdepth: 3
 
     voc/vocabulary.rst
-    Basic.rst
+    basic.rst
 
 
 
@@ -72,12 +72,12 @@ Fundamental Physics
 .. toctree::
     :maxdepth: 3
 
-    ClassicalMechanics.rst
-    Quantum/QuantumMechanics.rst
-    Quantum/QuantumMechanics2.rst
-    Quantum/QuantumMechanics3.rst
+    classicalMechanics.rst
+    quantum/QuantumMechanics.rst
+    quantum/QuantumMechanics2.rst
+    quantum/QuantumMechanics3.rst
     statmech/StatisticalPhysics.rst
-    electrodynamics.rst
+    electrodynamics/index.rst
 
 
 
@@ -101,9 +101,9 @@ Cutting Edge Physics
 
     astrophysics.rst
     relativity/GeneralRelativityAdv.rst
-    Cosmology/cosmoIndex.rst
-    Quantum/QuantumOptics.rst
-    Quantum/susyQuantum.rst
+    cosmology/cosmoIndex.rst
+    quantum/QuantumOptics.rst
+    quantum/susyQuantum.rst
 
 
 
