@@ -73,10 +73,10 @@ Fundamental Physics
     :maxdepth: 3
 
     classicalMechanics.rst
-    quantum/QuantumMechanics.rst
-    quantum/QuantumMechanics2.rst
-    quantum/QuantumMechanics3.rst
-    statmech/StatisticalPhysics.rst
+    quantum/quantumMechanics.rst
+    quantum/quantumMechanics2.rst
+    quantum/quantumMechanics3.rst
+    statmech/statisticalPhysics.rst
     electrodynamics/index.rst
 
 
@@ -87,8 +87,8 @@ Advanced Physics
 .. toctree::
     :maxdepth: 3
 
-    relativity/SpecialRelativity.rst
-    relativity/GeneralRelativity.rst
+    relativity/specialRelativity.rst
+    relativity/generalRelativity.rst
 
 
 
@@ -100,9 +100,9 @@ Cutting Edge Physics
     :maxdepth: 3
 
     astrophysics.rst
-    relativity/GeneralRelativityAdv.rst
+    relativity/generalRelativityAdv.rst
     cosmology/cosmoIndex.rst
-    quantum/QuantumOptics.rst
+    quantum/quantumOptics.rst
     quantum/susyQuantum.rst
 
 
@@ -135,4 +135,3 @@ DOI
 -----
 
 This open source project is hosted on GitHub: `Physics Research Manual <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual>`_ .
-
