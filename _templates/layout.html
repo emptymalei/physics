@@ -14,7 +14,7 @@
     </script>
    {{ super() }} {% endblock %}
 
-{% set css_files = css_files + ["_static/modify.css"] %} {% block footer %}
+{% set css_files = css_files + ["_static/modify.css"] %} {% set css_files = css_files + ["_static/css/rrssb.css"] %} {% set script_files = script_files + ["_static/js/rrssb.js"] %} {% block footer %}
 
 
 <div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
@@ -39,7 +39,24 @@
 
 <hr>
 
-<div class="share-container">
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+    <p class="pull-right">
+        <a href="#">Back to top</a>
+
+    </p>
+    <p>
+        <span>© Copyright 2014, Lei Ma.</span>|
+        <a href="https://github.com/emptymalei/StatisticalPhysics">On GitHub</a>|
+        <span>Created with
+            <a href="http://sphinx.pocoo.org/">Sphinx</a>1.2b2.</span>  <span><script data-gittip-username="emptymalei"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script></span>
+    </p>
+
+    <hr>
+
+    <div class="share-container">
         <span class="label">Share:</span>
         <!-- buttons start here -->
         <ul class="rrssb-buttons clearfix">
@@ -158,4 +175,4 @@
 
 </div>
 
-{{ super() }} {% endblock %}
+ {% endblock %}
