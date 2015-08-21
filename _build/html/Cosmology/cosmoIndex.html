@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cosmology &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/rrssb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/rrssb.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="next" title="Super-Symmetric Quantum Mechanics" href="../quantum/susyQuantum.html" />
+    <link rel="prev" title="General Relativity Revisited" href="../relativity/generalRelativityAdv.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../classicalMechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/statisticalPhysics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/specialRelativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/generalRelativity.html">General Relativity</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/generalRelativityAdv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/susyQuantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Cosmology</a><ul>
+<li><a class="reference internal" href="#thermal-history-of-the-universe">Thermal History of The Universe</a><ul>
+<li><a class="reference internal" href="#review-of-standard-model-for-particle-physics">Review of Standard Model for Particle Physics</a><ul>
+<li><a class="reference internal" href="#degree-of-freedom-of-elementary-particles">Degree of Freedom of Elementary Particles</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#expansion-and-temperature">Expansion and Temperature</a><ul>
+<li><a class="reference internal" href="#temperature-greater-than-mass-of-top-quark">Temperature Greater Than Mass of Top Quark</a></li>
+<li><a class="reference internal" href="#temperature-down-to-mass-of-a-particle">Temperature Down to Mass of A Particle</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#decay-rate-vs-expansion-rate">Decay Rate VS Expansion Rate</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#two-parameters">Two Parameters</a><ul>
+<li><a class="reference internal" href="#observations">Observations</a><ul>
+<li><a class="reference internal" href="#luminosity-distance">Luminosity Distance</a><ul>
+<li><a class="reference internal" href="#luminosity-distance-from-observation">Luminosity Distance from Observation</a></li>
+<li><a class="reference internal" href="#luminosity-distance-from-theory">Luminosity Distance from Theory</a></li>
+<li><a class="reference internal" href="#nearby-objects">Nearby Objects</a></li>
+<li><a class="reference internal" href="#comment">Comment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#angular-diameter-distance">Angular Diameter Distance</a><ul>
+<li><a class="reference internal" href="#observation">Observation</a></li>
+<li><a class="reference internal" href="#theory">Theory</a></li>
+<li><a class="reference internal" href="#standard-rulers">Standard Rulers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#galaxy-number-count">Galaxy Number Count</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../relativity/generalRelativityAdv.html" title="Previous Chapter: General Relativity Revisited"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; General Relativi...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../quantum/susyQuantum.html" title="Next Chapter: Super-Symmetric Quantum Mechanics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Super-Symmetric ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="cosmology">
+<h1>Cosmology<a class="headerlink" href="#cosmology" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="thermal-history-of-the-universe">
+<h2>Thermal History of The Universe<a class="headerlink" href="#thermal-history-of-the-universe" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="review-of-standard-model-for-particle-physics">
+<h3>Review of Standard Model for Particle Physics<a class="headerlink" href="#review-of-standard-model-for-particle-physics" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>SM of particle physics</dt>
+<dd><ol class="first last arabic simple">
+<li>describes elementary particles and their interactions.</li>
+<li>is well test with experiments.</li>
+</ol>
+</dd>
+</dl>
+<div class="section" id="degree-of-freedom-of-elementary-particles">
+<h4>Degree of Freedom of Elementary Particles<a class="headerlink" href="#degree-of-freedom-of-elementary-particles" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="../_images/Standard_Model_of_Elementary_Particles.png"><img alt="../_images/Standard_Model_of_Elementary_Particles.png" src="../_images/Standard_Model_of_Elementary_Particles.png" style="width: 100%;" /></a>
+<p>IMG Source: <a class="reference external" href="https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg">https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg</a></p>
+<p>The orange numbers at the right bottom of each particle is the degrees of freedom it has. Here are some comments.</p>
+<ol class="arabic simple">
+<li>Photons have only two DoF because it is mass 0. Same reason can apply to gluon. But according to symmetry, there are 8 kinds of gluons.</li>
+<li>W bosons carry charges. This is where the 2 come from.</li>
+<li>Electrons and quarks have antiparticles. So there DoF will be doubled after counting the spin.</li>
+<li>Each quark have 3 different colors and this gives us the 3 when calculating there DoF.</li>
+</ol>
+<p>Finally, we can make this table.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Partilces</th>
+<th class="head">Higgs</th>
+<th class="head">Messengers</th>
+<th class="head">Quarks</th>
+<th class="head">Leptons</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>DoF</td>
+<td>1</td>
+<td>27</td>
+<td>72</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="expansion-and-temperature">
+<h3>Expansion and Temperature<a class="headerlink" href="#expansion-and-temperature" title="Permalink to this headline">¶</a></h3>
+<p>We can see that the heaviest particle is top quark with a mass of <img class="math" src="../_images/math/5b694cbbce67c8c19977a05afa2d17e0422ffe01.png" alt="m_t = 170 \mathrm{GeV}"/>.</p>
+<div class="section" id="temperature-greater-than-mass-of-top-quark">
+<h4>Temperature Greater Than Mass of Top Quark<a class="headerlink" href="#temperature-greater-than-mass-of-top-quark" title="Permalink to this headline">¶</a></h4>
+<p>If temperature of the universe <img class="math" src="../_images/math/f8950efef0b1c8de04bab396719107d13b8c12d2.png" alt="T \gg m_t"/>, all particles should be in relativistic regime and the decay (annihilation) and inverse decay (inverse annihilation) are in equilibrium so all particles contribute to the thermal quantities in a relativistic way.</p>
+<div class="math">
+<p><img src="../_images/math/30b2ed4b25c03f2311452f1f265bb1a3e6d7bc6b.png" alt="g_B = 28
+
+g_F = 90"/></p>
+</div><p>Then</p>
+<div class="math">
+<p><img src="../_images/math/4d8101d4dc34d2b9c91d38acf6729b44ccac2de5.png" alt="g _ * = g_B + \frac{7}{8} g _ F = 106.75"/></p>
+</div><p>For convinience, define the following reduced Planck mass</p>
+<div class="math">
+<p><img src="../_images/math/b346aa2659c99ba97d4afaa08d565549e188e4a4.png" alt="8\pi G = \frac{1}{M _ p ^2}"/></p>
+</div><p>And it&#8217;s good to know its value, which is <img class="math" src="../_images/math/0e59120ee522fe5337f90e872b08000db1ccba1a.png" alt="2.4\times 10^{18} \mathrm{GeV}"/>.</p>
+<p>We would like to know the relation between expansion and temperature. We already know that the energy density is</p>
+<div class="math">
+<p><img src="../_images/math/fafc091137f465fbd1acfbf1f5098f0b2f0614fa.png" alt="\rho = g _ * \frac{\pi^2}{30} T^4"/></p>
+</div><p>So the expansion is</p>
+<div class="math">
+<p><img src="../_images/math/7c0078d0b4ad6a8f16fba2464921d35748eed0ac.png" alt="H^2 = \frac{8\pi G}{3}\rho = 106.75 \times \frac{\pi^2}{30} \frac{T^4}{3 M_p^2}"/></p>
+</div><p>So Hubble function is</p>
+<div class="math">
+<p><img src="../_images/math/623452a467287d5d756b0ecede53f9e8d134730a.png" alt="H \approx 3 \frac{T^2}{M_p}"/></p>
+</div></div>
+<div class="section" id="temperature-down-to-mass-of-a-particle">
+<h4>Temperature Down to Mass of A Particle<a class="headerlink" href="#temperature-down-to-mass-of-a-particle" title="Permalink to this headline">¶</a></h4>
+<p>As temperature drops down, particle dacay (annihilation) will be greater than its inverse which is suppressed by Boltzmann factor <img class="math" src="../_images/math/69f3d4ced5e592ee58d45e2a017c016ac77b70a7.png" alt="\exp (-m/T)"/>. The decay rate is so quick that the particle will almost dispear before the universe expand a lot.</p>
+<p>So when the temperature drops below the mass of a particle, it won&#8217;t contribute to the energy density. Their DoF will just dispear.</p>
+<p>For example, if <img class="math" src="../_images/math/a80fe1e2b2b2678b06bdb50dcc519d8032ea4e4c.png" alt="T~\mathrm{MeV}"/>, Higgs and W and Z will decay and quarks are combined with gluons. So we only have <strong>photons, electrons, neutrinos</strong> as elementary particles, that is <img class="math" src="../_images/math/04be3503ba2737177ae573b94d5a56fcc9c9300a.png" alt="g_* = 10.75"/>.</p>
+<p>The Hubble function,</p>
+<div class="math">
+<p><img src="../_images/math/c121e440ab10299278ada0e7c4e7294e2dd258ce.png" alt="H \approx \frac{T^2}{M _ p ^2}"/></p>
+</div></div>
+</div>
+<div class="section" id="decay-rate-vs-expansion-rate">
+<h3>Decay Rate VS Expansion Rate<a class="headerlink" href="#decay-rate-vs-expansion-rate" title="Permalink to this headline">¶</a></h3>
+<p>We can generally prove that decay rate is much faster than the expansion rate. ............... To be added.</p>
+</div>
+</div>
+<div class="section" id="two-parameters">
+<h2>Two Parameters<a class="headerlink" href="#two-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Why is Cosmology Dedicated to Finding Two Parameters Before 90&#8217;s</p>
+<p>Basically, the cosmology before the 90&#8217;s have only two tasks. The first one is to find out the Hubble constant, while the second one is looking for the deceleration parameter.</p>
+<p>We don&#8217;t rush to define what Hubble constant and deceleration parameter are, but have a look at what observations do at that time.</p>
+<div class="section" id="observations">
+<h3>Observations<a class="headerlink" href="#observations" title="Permalink to this headline">¶</a></h3>
+<p>Astronomers are really good at measuring distances. They have infinite tricky ways to find out some distance.</p>
+<div class="section" id="luminosity-distance">
+<h4>Luminosity Distance<a class="headerlink" href="#luminosity-distance" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="luminosity-distance-from-observation">
+<h5>Luminosity Distance from Observation<a class="headerlink" href="#luminosity-distance-from-observation" title="Permalink to this headline">¶</a></h5>
+<p>We can find out how bright a star is by observation. One way to represent the brightness is to use the energy crossed per unit area per unit time at the observer, because this is what our eyes do.</p>
+<p>This quantity is related to how much energy was emitted at the star, how far we are from the star. The more energy the star emitted, the brighter it look like. The nearer the star is, the brighter it is. Just like what we feel like with a candle.</p>
+<p>This schematic picture shows that energy spread out on a surface because the total energy is conserved. Isotropic energy flux through the same solid angle at different radius must be the same.</p>
+<img alt="From Wikipedia: Inverse equare law, CC." class="align-center" src="../_images/InverseSquareLaw.png" />
+<p>Through a very simple calculation, it is as simple as</p>
+<div class="math">
+<p><img src="../_images/math/bedfabd1c3f274757281281e0c68930945a72d16.png" alt="L_0 = \frac{ L }{ 4\pi r^2 } ."/></p>
+</div><p>We are dealing with Cosmology now. The space-time manifold should be a great concern. The luminosity turns out to be</p>
+<div class="math">
+<p><img src="../_images/math/79b26528532ad257f6c6a393bb5688cbd63617d8.png" alt="L_0 = \frac{L_\mathrm{abs} }{4\pi d^2} \frac{1}{1+z} \frac{1}{1+z} ."/></p>
+</div><p>Here d is the physical distance between the star and the observer. L is the absolute luminosity of the star, which stands for the power of the star. z is the redshift of the star.</p>
+<p>The first <img class="math" src="../_images/math/0fee91493e7b92ac45b68466239b6884b83a9523.png" alt="\frac{1}{1+z}"/> term comes from the fact that the energy of each photon decrease due to expansion of the universe, while the second is the result that the rate of photons arrived at the observer is less.</p>
+<p>We are happy to define</p>
+<div class="math">
+<p><img src="../_images/math/44901a3f7dada6c4096129ee1ddb95a114d75977.png" alt="d_L = d (1+z) ,"/></p>
+</div><p>then the luminosity becomes simpler,</p>
+<div class="math">
+<p><img src="../_images/math/766f6ae7a04088732186d76a72b19e68053670b2.png" alt="L_0 = \frac{L_{\mathrm {abs}}}{4\pi d_L^2} ."/></p>
+</div><p>Now we come back to have a look at this luminosity.</p>
+<ul class="simple">
+<li>We can measure how much energy is passing through a unit area at a unit time, which means <strong>we can determine this luminosity directly from observations</strong>.</li>
+<li>We can <strong>predict the absolute luminosity</strong> from a star evolution model.</li>
+<li>The <img class="math" src="../_images/math/8153873f0782e5a2c3ac7a532a082c3f9818fca5.png" alt="d_L = d (1+z)"/> is only valid for a flat universe, with curvature term <img class="math" src="../_images/math/f512f2614a2b1d9f1a2055b54722c23fe1bc7291.png" alt="K=0"/> in Friedmann equation.</li>
+</ul>
+<p>Then we can find out this so called luminosity distance</p>
+<div class="math">
+<p><img src="../_images/math/a66c79d1df5f6029d57a9eeaca26e8494ba1ecc5.png" alt="d_L = \frac{  L_{\mathrm {abs}} }{ 4\pi L_0 }"/></p>
+</div><p>from some data.</p>
+</div>
+<div class="section" id="luminosity-distance-from-theory">
+<h5>Luminosity Distance from Theory<a class="headerlink" href="#luminosity-distance-from-theory" title="Permalink to this headline">¶</a></h5>
+<p>We don&#8217;t just do the observation for the luminosity distance itself.
+We observe to test theories.</p>
+<p>What is this distance in theory?</p>
+<div class="math">
+<p><img src="../_images/math/d2de7feb932e56cb3aa8b22d642af913df942b15.png" alt="d_L = d (1+z)"/></p>
+</div><p>Wait, didn&#8217;t we just mention that this is only valid for a flat universe? So we just do some extension.</p>
+<div class="math">
+<p><img src="../_images/math/f88a71205ac2c38ea963d4977da0d6e031592e06.png" alt="d_L = R(d) (1+z)"/></p>
+</div><p>where R(d) is a function of d and can be determined through geometry,</p>
+<ul class="simple">
+<li>Spherical: <img class="math" src="../_images/math/d86ca2dc344e21eb835aa27c4bd5b92bc25451bf.png" alt="4\pi \sin^2 d"/> ,</li>
+<li>Flat: <img class="math" src="../_images/math/ee27ca2989cce15ba3bf489b60f8d85c3f87a30f.png" alt="4\pi d"/> ,</li>
+<li>Hyperbolic: <img class="math" src="../_images/math/ee225e2f30bac936461b0b56f158c0618ef53e7f.png" alt="4\pi \sinh^2 d"/> .</li>
+</ul>
+</div>
+<div class="section" id="nearby-objects">
+<h5>Nearby Objects<a class="headerlink" href="#nearby-objects" title="Permalink to this headline">¶</a></h5>
+<p>For nearby objects, we can always use flat geometry and use Taylor expansion at current time for a(t).</p>
+<p>Luminosity distance is</p>
+<div class="math">
+<p><img src="../_images/math/ce9043a22fe036b693a9d2fafe79eea6be2a36a2.png" alt="d_L = d (1+z) = r a(t) (1+z) ,"/></p>
+</div><p>where r is the comoving distance and a(t) is the scale factor at time t.</p>
+<p>We know</p>
+<div class="math">
+<p><img src="../_images/math/7df2a01a227324102b1a6b388eb76d61e476670d.png" alt="r = \int_t^{t_0} \frac{1}{a(t')} \mathrm d t' ."/></p>
+</div><p>So we are happy to use Taylor expansion around <img class="math" src="../_images/math/baca5d10c99c7f9b8845f2d3ef3c0ba2295f3b47.png" alt="t_0"/> for <img class="math" src="../_images/math/ce81202d00304fb15791a8747aa933f83735551f.png" alt="a(t)"/>, and keep only up to the second order of time. And do some substitution with</p>
+<div class="math">
+<p><img src="../_images/math/3a37c4339154383a81d47ee16992ceeeb986f1da.png" alt="H_0 = \dot a(t_0)/a(t_0)
+
+q_0=\ddot a (t_0) / a(t_0)"/></p>
+</div><p>We then do the same thing on redshift</p>
+<div class="math">
+<p><img src="../_images/math/b3008e8a8aa43359330bba0129212b72468aa4ab.png" alt="z=a(t_0)/a(t) - 1 ."/></p>
+</div><p>Finally, we can find out the relation <img class="math" src="../_images/math/6447908b5c712b3f3894ecd48e9422bbbaca44df.png" alt="r(z)"/>, which leads us to the result we need, <img class="math" src="../_images/math/fa1dd6fb7240c3437b1d04270af0ff1868e270b7.png" alt="d_L(z) = H_0^{-1} (z - \frac12 (1+q_0) z^2)"/>.</p>
+<ul>
+<li><p class="first">For very near objects (not as near as our sun of course),</p>
+<div class="math">
+<p><img src="../_images/math/5c792e2d4e45b868529aaeda67c3e047b0f54ccc.png" alt="d_L = H_0^{-1}z ."/></p>
+</div></li>
+</ul>
+<p><strong>This is a model independent observation and derivation. We can draw a line to represent the case when deceleration parameter is zero, lines higher than this stands for a accelerating universe while lower region show a decelerating universe.</strong></p>
+<img alt="Luminosity Distance VS Redshift" src="../_images/LuminosityDistanceVSRedshift.png" />
+<p>We can show that for a vacuum energy dominated universe, the line would go up and for a matter dominated universe, it would below the zero deceleration line.</p>
+</div>
+<div class="section" id="comment">
+<h5>Comment<a class="headerlink" href="#comment" title="Permalink to this headline">¶</a></h5>
+<p>In this model independent method, the only two parameters occur are Hubble constant <img class="math" src="../_images/math/d386a9e9e5f659c3c310adb854eb17cddf9e2f13.png" alt="H_0"/> and deceleration parameter <img class="math" src="../_images/math/5abf1618387d4dcf1088b72653b75f2db4267562.png" alt="q_0"/> .</p>
+</div>
+</div>
+<div class="section" id="angular-diameter-distance">
+<h4>Angular Diameter Distance<a class="headerlink" href="#angular-diameter-distance" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="observation">
+<h5>Observation<a class="headerlink" href="#observation" title="Permalink to this headline">¶</a></h5>
+<p>Angular diameter distance is really useful if we have some standard ruler. Now assume we have a ruler d, we can find out the angle between the two ends of the ruler, by some kind of measurement.</p>
+<img alt="Angular Diameter Diatance" src="../_images/AngularDiaFormula.jpg" />
+<p>At the same time, we can use magic of math</p>
+<div class="math">
+<p><img src="../_images/math/b74396facf46c94513e29485656d7b6e2887248a.png" alt="\theta = d/D ."/></p>
+</div><p>Now as we already find out what <img class="math" src="../_images/math/0c6359135f407f7f0df49186befd69442e832664.png" alt="\theta"/> is by a measurement, and we said about the d is a standard ruler, which means we know the length of it very well. Then we can find out the distance <img class="math" src="../_images/math/dd3340e5b5c6f9c0532d61614afb4497fa037560.png" alt="D"/>, which is the distance between us and the standard ruler.</p>
+</div>
+<div class="section" id="theory">
+<h5>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h5>
+<p>We can find out this kind of distance, which we will denote it as <img class="math" src="../_images/math/4896ad2e5ea0b72a1aeab40e5edcb97a0688c1c0.png" alt="d_A"/> from now on. What is it for?</p>
+<p>A angular diameter distance is the physical distance between us and the standard ruler,</p>
+<div class="math">
+<p><img src="../_images/math/a0205f587d511fcea7c0d710f36fba3b21b1d3ad.png" alt="d_A = a(t)r ."/></p>
+</div><p>We can use the same trick we used in luminosity distance calculations, and it is easy to find that</p>
+<div class="math">
+<p><img src="../_images/math/2a51ea46ed8897cace572857dd95065756845092.png" alt="d_A = H_0^{-1} (z - \frac{1}{2} (3 + q_0)z^2 ) ."/></p>
+</div><p>Again, the observation is related to only two parameters, Hubble constant <img class="math" src="../_images/math/d386a9e9e5f659c3c310adb854eb17cddf9e2f13.png" alt="H_0"/> and deceleration parameter <img class="math" src="../_images/math/5abf1618387d4dcf1088b72653b75f2db4267562.png" alt="q_0"/>.</p>
+</div>
+<div class="section" id="standard-rulers">
+<h5>Standard Rulers<a class="headerlink" href="#standard-rulers" title="Permalink to this headline">¶</a></h5>
+<p>It is hard to imagine that we really have some standard rulers. In fact, we do. They are</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations">Baryon Acoustic Oscillation</a></li>
+<li>Sound Horizon at Recombination</li>
+</ul>
+</div>
+</div>
+<div class="section" id="galaxy-number-count">
+<h4>Galaxy Number Count<a class="headerlink" href="#galaxy-number-count" title="Permalink to this headline">¶</a></h4>
+<p>Now we can see anything that is only (simply) related to physical or comoving distance can be determined by this trick. The result is that only two cosmological parameters would come in our equation as long as we keep only upper to order two of redshift.</p>
+<p>Here another example is the galaxy number count.</p>
+<div class="math">
+<p><img src="../_images/math/355888af2199a4e6c0d31d79409339ad2f3cba44.png" alt="\frac{\mathrm d N_g}{\mathrm d z \mathrm d\Omega} = z^2 \frac{n_0}{H_0^3}  (1-2(1+q_0) z) ."/></p>
+</div></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+
+<hr>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+    <p class="pull-right">
+        <a href="#">Back to top</a>
+
+    </p>
+    <p>
+        <span>© Copyright 2014, Lei Ma.</span>|
+        <a href="https://github.com/emptymalei/StatisticalPhysics">On GitHub</a>|
+        <span>Created with
+            <a href="http://sphinx.pocoo.org/">Sphinx</a>1.2b2.</span>  <span><script data-gittip-username="emptymalei"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script></span>
+    </p>
+
+    <hr>
+
+    <div class="share-container">
+        <span class="label">Share:</span>
+        <!-- buttons start here -->
+        <ul class="rrssb-buttons clearfix">
+            <li class="email">
+                <a href="mailto:?subject=Check%20out%20this%20statistical%20mechanics%20website&body=http%3A%2F%2Femptymalei.github.io%2FStatisticalPhysics">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+                            <g>
+                                <path d="M20.111 26.147c-2.336 1.051-4.361 1.401-7.125 1.401c-6.462 0-12.146-4.633-12.146-12.265 c0-7.94 5.762-14.833 14.561-14.833c6.853 0 11.8 4.7 11.8 11.252c0 5.684-3.194 9.265-7.399 9.3 c-1.829 0-3.153-0.934-3.347-2.997h-0.077c-1.208 1.986-2.96 2.997-5.023 2.997c-2.532 0-4.361-1.868-4.361-5.062 c0-4.749 3.504-9.071 9.111-9.071c1.713 0 3.7 0.4 4.6 0.973l-1.169 7.203c-0.388 2.298-0.116 3.3 1 3.4 c1.673 0 3.773-2.102 3.773-6.58c0-5.061-3.27-8.994-9.303-8.994c-5.957 0-11.175 4.673-11.175 12.1 c0 6.5 4.2 10.2 10 10.201c1.986 0 4.089-0.43 5.646-1.245L20.111 26.147z M16.646 10.1 c-0.311-0.078-0.701-0.155-1.207-0.155c-2.571 0-4.595 2.53-4.595 5.529c0 1.5 0.7 2.4 1.9 2.4 c1.441 0 2.959-1.828 3.311-4.087L16.646 10.068z" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text">email</span>
+                </a>
+            </li>
+            <li class="facebook">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://emptymalei.github.io/StatisticalPhysics
+">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 100 100" xml:space="preserve" class="style0">
+                            <path d="M99.5,17.001C99.5,8.31,91.689,0.5,83,0.5H17C8.327,0.5,0.5,8.31,0.5,17.001v65.998C0.5,91.689,8.31,99.5,17,99.5h33V62.1 H37.9V45.6H50v-6.428C50,28.11,58.359,18.1,68.59,18.1H81.9v16.5H68.562c-1.46,0-3.162,1.761-3.162,4.427V45.6h16.5v16.5H65.4v37.4 H83c8.672,0,16.5-7.83,16.5-16.501V17.001z" />
+                        </svg>
+                    </span>
+                    <span class="text">facebook</span>
+                </a>
+            </li>
+            <li class="linkedin">
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://emptymalei.github.io/StatisticalPhysics
+&title=Statistical%20Mechanics%20Notes&summary=Statistical%20Mechanics%20Notes">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xml:space="preserve" class="style0">
+                            <path d="M95 59.727V93H75.71V61.955c0-7.799-2.79-13.121-9.773-13.121c-5.33 0-8.502 3.587-9.897 7.1 c-0.509 1.241-0.64 2.967-0.64 4.704V93H36.104c0 0 0.26-52.58 0-58.028h19.295v8.225c-0.039 0.062-0.09 0.128-0.127 0.188h0.127 v-0.188c2.563-3.948 7.141-9.588 17.388-9.588C85.483 33.6 95 41.9 95 59.727z M15.919 7C9.318 7 5 11.3 5 17 c0 5.6 4.2 10 10.7 10.031h0.129c6.729 0 10.914-4.46 10.914-10.031C26.579 11.3 22.5 7 15.9 7z M6.146 93h19.289 V34.972H6.146V93z" />
+                        </svg>
+                    </span>
+                    <span class="text">linkedin</span>
+                </a>
+            </li>
+            <li class="twitter">
+                <a href="http://twitter.com/home?status=Statistical%20Mechanics%20Notes%20http://emptymalei.github.io/StatisticalPhysics
+">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="328 355 335 276" preserveAspectRatio="xMidYMid meet">
+                            <path d=" M 630  425 A 195  195 0 0 1 331  600 A 142  142 0 0 0 428  570 A 70  70 0 0 1 370  523 A 70  70 0 0 0 401  521 A 70  70 0 0 1 344  455 A 70  70 0 0 0 372  460 A 70  70 0 0 1 354  370 A 195  195 0 0 0 495  442 A 67  67 0 0 1 611  380 A 117  117 0 0 0 654  363 A 65  65 0 0 1 623  401 A 117  117 0 0 0 662  390 A 65  65 0 0 1 630  425 Z" />
+                        </svg>
+                    </span>
+                    <span class="text">twitter</span>
+                </a>
+            </li>
+            <li class="googleplus">
+                <a href="https://plus.google.com/share?url=Statistical%20Mechanics%20Notes%20http://emptymalei.github.io/StatisticalPhysics
+">
+                    <span class="icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="134.658px" height="131.646px" viewBox="0 0 134.658 131.646" enable-background="new 0 0 134.658 131.646" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M72.689,75.044l-6.05-4.698c-1.842-1.527-4.362-3.545-4.362-7.237c0-3.708,2.521-6.064,4.707-8.246
+                                                c7.046-5.547,14.089-11.45,14.089-23.892c0-12.793-8.05-19.523-11.907-22.716h10.401l10.918-6.86H57.408
+                                                c-9.077,0-22.157,2.147-31.733,10.054c-7.217,6.226-10.739,14.813-10.739,22.542c0,13.121,10.075,26.421,27.865,26.421
+                                                c1.681,0,3.518-0.165,5.368-0.337c-0.831,2.021-1.671,3.706-1.671,6.561c0,5.211,2.678,8.406,5.038,11.435
+                                                c-7.559,0.519-21.671,1.356-32.074,7.752c-9.907,5.891-12.923,14.465-12.923,20.519c0,12.458,11.743,24.062,36.092,24.062
+                                                c28.875,0,44.159-15.976,44.159-31.791C86.792,86.988,80.078,81.269,72.689,75.044z M50.698,55.698
+                                                c-14.444,0-20.988-18.673-20.988-29.94c0-4.387,0.831-8.915,3.688-12.453C36.09,9.936,40.781,7.75,45.16,7.75
+                                                c13.925,0,21.147,18.84,21.147,30.957c0,3.032-0.333,8.405-4.194,12.287C59.411,53.69,54.893,55.698,50.698,55.698z
+                                                 M50.863,123.353c-17.961,0-29.545-8.593-29.545-20.541c0-11.943,10.74-15.984,14.435-17.321
+                                                c7.048-2.373,16.117-2.704,17.63-2.704c1.678,0,2.518,0,3.855,0.17c12.77,9.087,18.311,13.615,18.311,22.219
+                                                C75.549,115.594,66.984,123.353,50.863,123.353z" />
+                                    <polygon points="115.087,55.441 115.087,38.619 106.778,38.619 106.778,55.441 89.984,55.441 89.984,63.84 106.778,63.84
+                                                106.778,80.766 115.087,80.766 115.087,63.84 131.966,63.84 131.966,55.441        " />
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text">google+</span>
+                </a>
+            </li>
+            <!-- <li class="youtube">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xml:space="preserve" class="style0"><path d="M95 32.458C95 25 89 19 81.5 19h-63.1 C11.021 19 5 25 5 32.458v36.084C5 76 11 82 18.4 82h63.1C88.979 82 95 76 95 68.542V32.458z M41 65.724V31.83 l25.702 16.947L41 65.724z" class="style1"/></svg>
+                            </span>
+                            <span class="text">youtube</span>
+                        </a>
+                    </li> -->
+            <li class="pinterest">
+                <a href="http://pinterest.com/pin/create/button/?url=http://emptymalei.github.io/StatisticalPhysics
+&media=http://emptymalei.github.io/StatisticalPhysics
+/_static/images/cc_byncsa.png&description=Statistical%20Mechanics%20Notes.">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                            <path d="M256 0C114.615 0 0 114.6 0 256s114.613 256 256 256c141.385 0 256-114.615 256-256S397.385 0 256 0z M280.822 342.1 c-23.26-1.807-33.021-13.328-51.252-24.404c-10.03 52.589-22.282 103.009-58.57 129.3 c-11.202-79.484 16.447-139.182 29.285-202.557c-21.892-36.853 2.635-111.017 48.81-92.737 c56.813 22.474-49.2 137 22 151.308c74.311 14.9 104.645-128.929 58.571-175.712 c-66.579-67.553-193.799-1.54-178.155 95.178c3.807 23.6 28.2 30.8 9.8 63.451c-42.61-9.446-55.325-43.051-53.688-87.856 c2.634-73.337 65.892-124.682 129.343-131.783c80.242-8.982 155.6 29.5 166 104.9 C414.553 256.4 366.6 348.7 280.8 342.059z" />
+                        </svg>
+                    </span>
+                    <span class="text">pinterest</span>
+                </a>
+            </li>
+            <li class="github">
+                <a href="https://github.com/emptymalei/StatisticalPhysics">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                            <style>
+                                .style0{fill-rule:  evenodd;clip-rule:  evenodd;fill:   #181616;}
+                            </style>
+                            <path d="M49.997 0.93c-27.268 0-49.382 22.109-49.382 49.4 c0 21.8 14.1 40.3 33.8 46.858c2.47 0.5 3.37-1.072 3.37-2.381c0-1.171-0.043-4.278-0.066-8.397 c-13.736 2.982-16.636-6.622-16.636-6.622c-2.245-5.705-5.483-7.223-5.483-7.223c-4.482-3.065 0.339-3.004 0.339-3.004 c4.956 0.4 7.6 5.1 7.6 5.091c4.405 7.5 11.6 5.4 14.4 4.103c0.449-3.189 1.726-5.367 3.137-6.602 c-10.967-1.246-22.495-5.483-22.495-24.407c0-5.392 1.924-9.8 5.083-13.253c-0.508-1.248-2.203-6.27 0.484-13.069 c0 0 4.146-1.328 13.6 5.063c3.939-1.096 8.164-1.644 12.363-1.662c4.194 0 8.4 0.6 12.4 1.7 c9.427-6.392 13.566-5.063 13.566-5.063c2.695 6.8 1 11.8 0.5 13.069c3.165 3.5 5.1 7.9 5.1 13.3 c0 18.972-11.547 23.146-22.549 24.368c1.776 1.5 3.4 4.5 3.4 9.147c0 6.602-0.062 11.928-0.062 13.5 c0 1.3 0.9 2.9 3.4 2.375c19.604-6.544 33.742-25.041 33.742-46.853C99.386 23 77.3 0.9 50 0.93z" class="style0" />
+                        </svg>
+                    </span>
+                    <span class="text">github</span>
+                </a>
+            </li>
+        </ul>
+        <!-- buttons end here -->
+    </div>
+
+    <script>
+        window.jQuery || document.write('<script src="_static/js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+
+</div>
+
+ 
+  </body>
+</html>
