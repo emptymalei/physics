@@ -17,7 +17,7 @@ The special relativistic doppler shift can be derived using the fact that 4-mome
 
 
 
-.. image:: astrophysics/assets/dopplerRedshift.png
+.. image:: assets/astrophysics/dopplerRedshift.png
    :align: center
 
 
@@ -72,7 +72,7 @@ Here we have three different kinds, the additional one is the transverse redshif
 
 An gif from wikipedia shows this explicitly,
 
-.. figure:: astrophysics/assets/XYCoordinates.gif
+.. figure:: assets/astrophysics/XYCoordinates.gif
    :align: center
 
    Image Source: `File:XYCoordinates.gif <https://en.wikipedia.org/wiki/File:XYCoordinates.gif>`_
@@ -92,7 +92,7 @@ Bremsstrahlung Radiation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. figure:: astrophysics/assets/thermalBremsstrahlungSpectrum.png
+.. figure:: assets/astrophysics/thermalBremsstrahlungSpectrum.png
    :align: center
 
    This is the spectrum of frequency-dependent emissivity of the process which happens when a flux of non-relativistic regime with thermal distributon of temperature T is shot into a plasma of ions or protons.
@@ -133,7 +133,7 @@ The total cross section is ratio of the two quantity, i.e.,
 .. math::
    \sigma_T \equiv \frac{P_{scatt}}{P_{inc}} =\frac{8\pi e^4}{3 m_e ^2 c^4} = \frac{8\pi (\alpha \hbar c)^2}{3 m_e ^2 c^4},
 
-in which the fine structure constant is defined as :math:`\alpha = \frac{e^2}{\hbar c}`. 
+in which the fine structure constant is defined as :math:`\alpha = \frac{e^2}{\hbar c}`.
 
 
 
@@ -157,7 +157,7 @@ In the limit that energy of electron is much larger than photons, we have :math:
 
 To have more understanding on this formula, I ploted :math:`\sigma_{K-N}` in terms of :math:`\sigma_T` as the energy scale :math:`\epsilon` changes.
 
-.. image:: astrophysics/assets/comptonScattering.png
+.. image:: assets/astrophysics/comptonScattering.png
    :align: center
 
 
@@ -167,7 +167,7 @@ Asteroseismology
 ---------------------
 
 
-The stars do shake, from inside out. 
+The stars do shake, from inside out.
 
 Long period variable such as Cepheids pulsate in the luminosity. This is because of the radial oscillation mode with a approximate period of
 

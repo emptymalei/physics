@@ -25,7 +25,7 @@ SM of particle physics
 Degree of Freedom of Elementary Particles
 """""""""""""""""""""""""""""""""""""""""""""
 
-.. image:: Fig/Standard_Model_of_Elementary_Particles.png
+.. image:: assets/cosmology/Standard_Model_of_Elementary_Particles.png
    :width: 100%
 
 IMG Source: https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
@@ -39,18 +39,18 @@ The orange numbers at the right bottom of each particle is the degrees of freedo
 
 Finally, we can make this table.
 
-+------------+------------+------------+-----------+-----------+  
++------------+------------+------------+-----------+-----------+
 | Partilces  | Higgs      | Messengers | Quarks    | Leptons   |
-+============+============+============+===========+===========+ 
++============+============+============+===========+===========+
 |    DoF     |     1      |     27     |    72     |     18    |
-+------------+------------+------------+-----------+-----------+  
++------------+------------+------------+-----------+-----------+
 
 
 
 Expansion and Temperature
 ----------------------------------
 
-We can see that the heaviest particle is top quark with a mass of :math:`m_t = 170 \mathrm{GeV}`. 
+We can see that the heaviest particle is top quark with a mass of :math:`m_t = 170 \mathrm{GeV}`.
 
 
 
@@ -64,7 +64,7 @@ If temperature of the universe :math:`T \gg m_t`, all particles should be in rel
 
    g_F = 90
 
-Then 
+Then
 
 .. math::
    g _ * = g_B + \frac{7}{8} g _ F = 106.75
@@ -153,7 +153,7 @@ This quantity is related to how much energy was emitted at the star, how far we 
 
 This schematic picture shows that energy spread out on a surface because the total energy is conserved. Isotropic energy flux through the same solid angle at different radius must be the same.
 
-.. image:: Fig/InverseSquareLaw.png
+.. image:: assets/cosmology/InverseSquareLaw.png
    :alt: From Wikipedia: Inverse equare law, CC.
    :align: center
 
@@ -176,7 +176,7 @@ We are happy to define
 
 .. math::
    d_L = d (1+z) ,
-   
+
 then the luminosity becomes simpler,
 
 .. math::
@@ -252,16 +252,16 @@ We then do the same thing on redshift
 
 Finally, we can find out the relation :math:`r(z)`, which leads us to the result we need, :math:`d_L(z) = H_0^{-1} (z - \frac12 (1+q_0) z^2)`.
 
-* For very near objects (not as near as our sun of course), 
+* For very near objects (not as near as our sun of course),
 
-  .. math::	
+  .. math::
      d_L = H_0^{-1}z .
 
 
 
 **This is a model independent observation and derivation. We can draw a line to represent the case when deceleration parameter is zero, lines higher than this stands for a accelerating universe while lower region show a decelerating universe.**
 
-.. image:: Fig/LuminosityDistanceVSRedshift.png
+.. image:: assets/cosmology/LuminosityDistanceVSRedshift.png
    :alt: Luminosity Distance VS Redshift
 
 We can show that for a vacuum energy dominated universe, the line would go up and for a matter dominated universe, it would below the zero deceleration line.
@@ -333,10 +333,3 @@ Here another example is the galaxy number count.
 
 .. math::
    \frac{\mathrm d N_g}{\mathrm d z \mathrm d\Omega} = z^2 \frac{n_0}{H_0^3}  (1-2(1+q_0) z) .
-
-
-
-
-
-
-
