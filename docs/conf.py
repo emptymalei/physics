@@ -1,5 +1,3 @@
-# Only for bootstrap theme. comment it when using other themes
-import sphinx_bootstrap_theme
 
 # -*- coding: utf-8 -*-
 #
@@ -15,6 +13,11 @@ import sphinx_bootstrap_theme
 # serve to show the default.
 
 import sys, os
+# sys.path.append(os.path.join(os.path.dirname(__file__), '_themes/'))
+
+# Only for bootstrap theme. comment it when using other themes
+# import sphinx_bootstrap_theme
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -275,11 +278,11 @@ html_theme_options = {
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ['_themes/sphinx_bootstrap_theme']
 
 
 # For bootstrap theme:
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+# html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # bootswatch_theme = "cosmo"
 
 
