@@ -72,11 +72,11 @@ Fundamental Physics
 .. toctree::
     :maxdepth: 3
 
-    classicalMechanics.rst
-    quantum/quantumMechanics.rst
-    quantum/quantumMechanics2.rst
-    quantum/quantumMechanics3.rst
-    statmech/statisticalPhysics.rst
+    classical-mechanics.rst
+    quantum/quantum-mechanics.rst
+    quantum/quantum-mechanics2.rst
+    quantum/quantum-mechanics3.rst
+    statmech/statistical-physics.rst
     electrodynamics/index.rst
 
 
@@ -87,8 +87,8 @@ Advanced Physics
 .. toctree::
     :maxdepth: 3
 
-    relativity/specialRelativity.rst
-    relativity/generalRelativity.rst
+    relativity/special-relativity.rst
+    relativity/general-relativity.rst
 
 
 
@@ -100,10 +100,10 @@ Cutting Edge Physics
     :maxdepth: 3
 
     astrophysics.rst
-    relativity/generalRelativityAdv.rst
-    cosmology/cosmoIndex.rst
-    quantum/quantumOptics.rst
-    quantum/susyQuantum.rst
+    relativity/general-relativity-adv.rst
+    cosmology.rst
+    quantum/quantum-optics.rst
+    quantum/susy-quantum.rst
 
 
 

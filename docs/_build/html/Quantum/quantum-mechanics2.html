@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Quantum Mechanics 2 &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="next" title="Quantum Mechanics 3" href="quantum-mechanics3.html" />
+    <link rel="prev" title="Quantum Mechanics" href="quantum-mechanics.html" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+     </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+       MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+         cancel: ["Extension","cancel"]
+         });
+      });
+      </script>
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+         }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+       MathJax.Hub.Queue(function() {
+           var all = MathJax.Hub.getAllJax(), i;
+           for(i=0; i < all.length; i += 1) {
+               all[i].SourceElement().parentNode.className += ' has-jax';
+           }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         processEscapes: true
+       }
+     });
+   </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       TeX: {
+         Macros: {
+           overlr: ['\\overset\\leftrightarrow{\#1}',1],
+           overl: ['\\overset\leftarrow{\#1}',1],
+           overr: ['\\overset\rightarrow{\#1}',1],
+           bra: ['\\left\\langle \#1\\right|',1],
+           ket: ['\\left| \#1\\right\\rangle',1],
+           braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+           avg: ['\\left< \#1 \\right>',1],
+           slashed: ['\\cancel{\#1}',1],
+           bold: ['\\boldsymbol{\#1}',1],
+           d: ['\\mathrm d',0]
+         }
+       }
+     });
+     </script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+     </script>
+
+
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+   
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-optics.html">Quantum Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Quantum Mechanics 2</a><ul>
+<li><a class="reference internal" href="#tensor-product-space">Tensor Product Space</a></li>
+<li><a class="reference internal" href="#density-matrix">Density Matrix</a></li>
+<li><a class="reference internal" href="#angular-momentum">Angular Momentum</a><ul>
+<li><a class="reference internal" href="#id1">Angular Momentum</a><ul>
+<li><a class="reference internal" href="#definition-of-angular-momentum">Definition of Angular Momentum</a></li>
+<li><a class="reference internal" href="#eigenstates-of-angular-momentum">Eigenstates of Angular Momentum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="quantum-mechanics.html" title="Previous Chapter: Quantum Mechanics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Mecha...</span>
+    </a>
+  </li>
+  <li>
+    <a href="quantum-mechanics3.html" title="Next Chapter: Quantum Mechanics 3"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum Mecha... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="quantum-mechanics-2">
+<h1>Quantum Mechanics 2<a class="headerlink" href="#quantum-mechanics-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tensor-product-space">
+<h2>Tensor Product Space<a class="headerlink" href="#tensor-product-space" title="Permalink to this headline">¶</a></h2>
+<p>This part has been moved to <a class="reference internal" href="../math.html#tensorproductspace"><span>Tensor Product Space</span></a></p>
+</div>
+<div class="section" id="density-matrix">
+<h2>Density Matrix<a class="headerlink" href="#density-matrix" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="angular-momentum">
+<h2>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Angular Momentum<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>For an new operator, we would like to know</p>
+<ol class="arabic simple">
+<li>Commutation relation: with their own components, with other operators;</li>
+<li>Eigenvalues and their properties;</li>
+<li>Eigenstates and their properties;</li>
+<li>Expectation and classical limit.</li>
+</ol>
+<div class="section" id="definition-of-angular-momentum">
+<h4>Definition of Angular Momentum<a class="headerlink" href="#definition-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
+<p>In classical mechanics, angular momentum is defined as</p>
+<div class="math">
+\[\vec L = \vec X \times \vec P .\]</div>
+<p>One way of defining operator is to change position and momentum into operators and check if the operator is working properly in QM. So we just define</p>
+<div class="math">
+\[\hat {\vec L} = \hat {\vec X}\times \hat{\vec P}.\]</div>
+<p>It is Hermitian. So it can be an operator. We also find</p>
+<div class="math">
+\[\hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}\]</div>
+<div class="math">
+\[\left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    .\]</div>
+<p><strong>More generally, we can define angular momentum as</strong></p>
+<div class="math">
+\[\left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k\]</div>
+<p>We can prove that</p>
+<div class="math">
+\[\left[ \hat J^2,\hat J_z \right] = 0.\]</div>
+<p>So they can have the same eigenstates</p>
+<div class="math">
+\[\hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}\]</div>
+<div class="math">
+\[\hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}\]</div>
+<p>To find the constraints on these eigenvalues, we can use positive definite condition of certain inner porducts, such as,</p>
+<div class="math">
+\[\bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0\]</div>
+<div class="math">
+\[\bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0\]</div>
+<p>where</p>
+<div class="math">
+\[\hat J_{\pm} = \hat J_x \pm i \hat J_y\]</div>
+<p>and we have</p>
+<div class="math">
+\[\left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z\]</div>
+<div class="math">
+\[\left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}.\]</div>
+<p>It&#8217;s easy to find out that</p>
+<div class="math">
+\[\hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})\]</div>
+<p>i.e., <span class="math">\(\hat J_{\pm}\ket{\lambda m}\)</span> is eigenstate of <span class="math">\(\hat J_z\)</span>.</p>
+<p>Follow the plan of finding out the bounds through these positive inner products, we can prove that</p>
+<div class="math">
+\[\hat J^2\ket{jm} = j(j+1)\hbar^2 \ket{jm}\]</div>
+<div class="math">
+\[\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}\]</div>
+</div>
+<div class="section" id="eigenstates-of-angular-momentum">
+<h4>Eigenstates of Angular Momentum<a class="headerlink" href="#eigenstates-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
+<p>As we have proposed, the eigenstates of both <span class="math">\(\hat J_z\)</span> and <span class="math">\(\hat{\vec J}^2\)</span> are <span class="math">\(\ket{j,m}\)</span>, where <span class="math">\(j=0,1,2,\cdots\)</span> and <span class="math">\(m=-j,-j+1,\cdots, j-1,j\)</span>.</p>
+<p>We can also find out the wave function in <span class="math">\({\ket{\theta,\phi } }\)</span> basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.</p>
+<div class="math">
+\[\int \mathrm d \Omega \braket{\theta',\phi'}{\theta,\phi} = \delta(\cos\theta'-\cos\theta,\phi'-\phi)
+\int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} = 1\]</div>
+<p>Now we have an arbitary state <span class="math">\(\ket{\psi}\)</span>,</p>
+<div class="math">
+\[\begin{split}\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm}\ket{l,m} \\
+           &amp;= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} \psi _ {lm}\ket{l,m} \\
+           &amp;= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'} (\braket{\theta,\phi}{l,m} ) \psi _ {lm} \\\end{split}\]</div>
+<p>Then we define</p>
+<div class="math">
+\[\braket{\theta,\phi}{l,m}=Y_l^m(\theta,\phi)\]</div>
+<p>which is the spherical harmonic function.</p>
+<p>Then</p>
+<div class="math">
+\[\begin{split}\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\\end{split}\]</div>
+<p>So as long as we find out what <span class="math">\(\psi _ {lm}\)</span> is, any problem is done.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+
+<hr>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+    <p class="pull-right">
+        <a href="#">Back to top</a>
+
+    </p>
+    <p>
+        <span>© Copyright 2016, Lei Ma.</span>|
+        <a href="https://github.com/emptymalei/physics">On GitHub</a>|
+        <span>Created with
+            <a href="http://sphinx.pocoo.org/">Sphinx</a>1.2b2.</span>  <span><script data-gittip-username="emptymalei"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script></span>
+    </p>
+
+    <hr>
+
+    <script>
+        window.jQuery || document.write('<script src="_static/js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+
+</div>
+
+ 
+  </body>
+</html>

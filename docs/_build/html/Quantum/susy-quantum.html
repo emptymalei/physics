@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Super-Symmetric Quantum Mechanics &mdash; Research Survival Manual</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.38',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Research Survival Manual" href="../index.html" />
+    <link rel="prev" title="Quantum Optics" href="quantum-optics.html" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+     </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+       MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+         cancel: ["Extension","cancel"]
+         });
+      });
+      </script>
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+         }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+       MathJax.Hub.Queue(function() {
+           var all = MathJax.Hub.getAllJax(), i;
+           for(i=0; i < all.length; i += 1) {
+               all[i].SourceElement().parentNode.className += ' has-jax';
+           }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         processEscapes: true
+       }
+     });
+   </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       TeX: {
+         Macros: {
+           overlr: ['\\overset\\leftrightarrow{\#1}',1],
+           overl: ['\\overset\leftarrow{\#1}',1],
+           overr: ['\\overset\rightarrow{\#1}',1],
+           bra: ['\\left\\langle \#1\\right|',1],
+           ket: ['\\left| \#1\\right\\rangle',1],
+           braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+           avg: ['\\left< \#1 \\right>',1],
+           slashed: ['\\cancel{\#1}',1],
+           bold: ['\\boldsymbol{\#1}',1],
+           d: ['\\mathrm d',0]
+         }
+       }
+     });
+     </script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+     </script>
+
+
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+   
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Research Survival Manual</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.38</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic.html">Basic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics3.html">Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-optics.html">Quantum Optics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Super-Symmetric Quantum Mechanics</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="quantum-optics.html" title="Previous Chapter: Quantum Optics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Optics</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="super-symmetric-quantum-mechanics">
+<h1>Super-Symmetric Quantum Mechanics<a class="headerlink" href="#super-symmetric-quantum-mechanics" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://arxiv.org/abs/hep-ph/9907295">Here is a note on this.</a></p>
+<p>The idea of supersymmetric quantum mechanics is to introduce a hamiltonian related to supercharge, which is defined through</p>
+<div class="math">
+\[[H,Q_i] = 0,\]</div>
+<p>for all charges <span class="math">\(Q_i\)</span> and</p>
+<div class="math">
+\[{Q_i,Q_j} = \delta_{ij} H.\]</div>
+<p>In the 2 charge case, I can define two charges,</p>
+<div class="math">
+\[\begin{split}Q_1 &amp; = \frac{1}{2} (\sigma_1 p + \sigma_2 W(x) )\\
+Q_2 &amp; = \frac{1}{2} (\sigma_2 p - \sigma_1 W(x) ).\end{split}\]</div>
+<div class="note admonition">
+<p class="first admonition-title">Harmonic Oscillators</p>
+<p>The harmonic oscillators can be solved using ladder operators,</p>
+<div class="math">
+\[\begin{split}a &amp;= \sqrt{i/2\hbar}(\hat p/\sqrt{m\omega}  -i\sqrt{m\omega}\hat x) \\
+a^\dagger &amp; = \sqrt{-i/2\hbar}(\hat p/\sqrt{m\omega}  + i\sqrt{m\omega}\hat x).\end{split}\]</div>
+<p class="last">This is a hint why we define the charges in that way.</p>
+</div>
+<p>With these charges, we can solve the state that is annihlated by <span class="math">\(Q_1\)</span>.</p>
+<div class="math">
+\[Q\psi_0 = 0,\]</div>
+<p>which is the ground state.</p>
+<p>The result is</p>
+<div class="math">
+\[\psi_0(x) = exp(\int_0^x dy W(y)\sigma_3/\hbar) \psi_0(0).\]</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+
+<hr>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+    <p class="pull-right">
+        <a href="#">Back to top</a>
+
+    </p>
+    <p>
+        <span>© Copyright 2016, Lei Ma.</span>|
+        <a href="https://github.com/emptymalei/physics">On GitHub</a>|
+        <span>Created with
+            <a href="http://sphinx.pocoo.org/">Sphinx</a>1.2b2.</span>  <span><script data-gittip-username="emptymalei"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script></span>
+    </p>
+
+    <hr>
+
+    <script>
+        window.jQuery || document.write('<script src="_static/js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+
+</div>
+
+ 
+  </body>
+</html>

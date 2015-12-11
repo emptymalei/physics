@@ -69,11 +69,9 @@
 
    {{ super() }}
 
-
-
-
    {% endblock %}
 
+{% set bootswatch_css_custom = ['_static/modify.css'] %}
 {% set css_files = css_files + ["_static/modify.css"] %} {% block footer %}
 
 
