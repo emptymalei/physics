@@ -278,11 +278,11 @@ html_theme_options = {
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_themes/sphinx_bootstrap_theme']
+# html_theme_path = ['_themes/sphinx_bootstrap_theme']
 
 
 # For bootstrap theme:
-# html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # bootswatch_theme = "cosmo"
 
 
