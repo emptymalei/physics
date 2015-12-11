@@ -287,7 +287,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Research Survival Manual'
+html_title = 'Physics Notes'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -348,7 +348,7 @@ html_static_path = ['_static']
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'statistical-physics'
+htmlhelp_basename = 'physics-notes'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -362,8 +362,8 @@ htmlhelp_basename = 'statistical-physics'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'physics-research-survival-manual.tex', u'Physics Research Survival Manual',
-   u'Cosmology TF', 'manual'),
+  ('index', 'physics-notes.tex', u'Physics Notes',
+   u'Lei Ma', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
