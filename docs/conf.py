@@ -13,10 +13,10 @@
 # serve to show the default.
 
 import sys, os
-# sys.path.append(os.path.join(os.path.dirname(__file__), '_themes/'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '_themes/'))
 
 # Only for bootstrap theme. comment it when using other themes
-# import sphinx_bootstrap_theme
+import sphinx_bootstrap_theme
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -278,7 +278,7 @@ html_theme_options = {
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_themes/bootstrap']
+html_theme_path = ['_themes/sphinx_bootstrap_theme']
 
 
 # For bootstrap theme:
