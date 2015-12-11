@@ -26,9 +26,9 @@ sys.path.append(os.path.abspath('exts'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.pngmath', "math_dollar"]
+# extensions = ['sphinx.ext.pngmath', "math_dollar"]
 
-# extensions = ['sphinx.ext.mathjax', "math_dollar"]
+extensions = ['sphinx.ext.mathjax', "math_dollar"]
 
 latex_preamble = r"""
 \usepackage{dsfont}

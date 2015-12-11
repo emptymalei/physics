@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
@@ -151,7 +152,7 @@
               
                 
   <li>
-    <a href="em/comparisonstatics.html" title="Previous Chapter: Comparison of E & M"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Comparison of E ...</span>
+    <a href="em/comparisonstatics.html" title="Previous Chapter: Comparison of E & M"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Comparison of...</span>
     </a>
   </li>
   <li>
@@ -181,182 +182,182 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="response-of-matter">
 <h1>Response of Matter<a class="headerlink" href="#response-of-matter" title="Permalink to this headline">¶</a></h1>
 <div class="note admonition">
 <p class="first admonition-title">Maxwell&#8217;s Equations and Transfer of Momentum and Energy</p>
 <div class="last math">
-<p><img src="../_images/math/5a350a1cbc4ecbdb23ca6541a628e72e073db107.png" alt="\nabla \cdot \vec D &amp; = 4\pi \rho \\
+\[\begin{split}\nabla \cdot \vec D &amp; = 4\pi \rho \\
 \nabla \cdot \vec B &amp; = 0 \\
 \nabla \times \vec E &amp; = -\frac{1}{c}\partial_t \vec B \\
-\nabla \times \vec H &amp; = \frac{1}{c}\partial_t \vec D + \frac{4\pi}{c} \vec j ."/></p>
-</div></div>
+\nabla \times \vec H &amp; = \frac{1}{c}\partial_t \vec D + \frac{4\pi}{c} \vec j .\end{split}\]</div>
+</div>
 <div class="section" id="energy-and-momentum">
 <h2>Energy and Momentum<a class="headerlink" href="#energy-and-momentum" title="Permalink to this headline">¶</a></h2>
-<p>Energy transfer can be described through Poynting vector which in the simplist plane wave case is basically <img class="math" src="../_images/math/f4a96f3f70a5aa8374fe10c30d4acadb5e5a7767.png" alt="\langle \vec S \rangle = u_{EM}\vec v"/> where <img class="math" src="../_images/math/88c64d09c1c0ca6b141b4035287757be63eddb1b.png" alt="u_{EM}"/> is the energy density. Obviously Poynting vector is the energy transfer rate.</p>
-<p>Momentum density is <img class="math" src="../_images/math/91c9b9c21440c1833c849d68c06ec72353700ca4.png" alt="\vec g = \frac{u_{EM}}{c}"/> in the same plane wave.</p>
+<p>Energy transfer can be described through Poynting vector which in the simplist plane wave case is basically <span class="math">\(\langle \vec S \rangle = u_{EM}\vec v\)</span> where <span class="math">\(u_{EM}\)</span> is the energy density. Obviously Poynting vector is the energy transfer rate.</p>
+<p>Momentum density is <span class="math">\(\vec g = \frac{u_{EM}}{c}\)</span> in the same plane wave.</p>
 <p>Let&#8217;s start from conservation of charge. Taking the divergence of the following equation,</p>
 <p>I get the conservation law,</p>
 <div class="math">
-<p><img src="../_images/math/7b569e54eccc269e84b7cd10fe6494b9654ee609.png" alt="\partial_t \rho + \nabla \cdot \vec j = 0."/></p>
-</div><p>On the next step we find energy density of the wave. The starting point is the interaction of charge and electric field, e.g., <img class="math" src="../_images/math/79bbde514d5f0c34c566be04950a0bdc67e302ef.png" alt="\vec j \cdot \vec E"/>, <img class="math" src="../_images/math/6e0fb8846921b41acccd62e88d08c6a4fd2978d6.png" alt="q\vec E \cdot d"/>.</p>
+\[\partial_t \rho + \nabla \cdot \vec j = 0.\]</div>
+<p>On the next step we find energy density of the wave. The starting point is the interaction of charge and electric field, e.g., <span class="math">\(\vec j \cdot \vec E\)</span>, <span class="math">\(q\vec E \cdot d\)</span>.</p>
 <div class="math">
-<p><img src="../_images/math/1fc025f33c82fb15072454c8b1b0272a623ba37c.png" alt="u_{EM} = \frac{1}{8\pi} (\vec D \cdot \vec E + \vec B \cdot \vec H)."/></p>
-</div><p>Upon this we can find <img class="math" src="../_images/math/7b9e51a14f98f4381d730444d1494a776d377689.png" alt="\vec S"/> which is</p>
+\[u_{EM} = \frac{1}{8\pi} (\vec D \cdot \vec E + \vec B \cdot \vec H).\]</div>
+<p>Upon this we can find <span class="math">\(\vec S\)</span> which is</p>
 <div class="math">
-<p><img src="../_images/math/4c6e9342628316b5e121e7b2e4c93fd6971aa939.png" alt="\vec S = \frac{c}{4\pi} \vec E \times \vec H."/></p>
-</div><p>As for momentum, we have</p>
+\[\vec S = \frac{c}{4\pi} \vec E \times \vec H.\]</div>
+<p>As for momentum, we have</p>
 <div class="math">
-<p><img src="../_images/math/ccd4ad7ee6b1cf7aa6a4fc1f435d3adf7b92dbee.png" alt="\vec F_{EM} = \oint d\vec a \cdot \mathbf{T} - \frac{d}{dt}\int \vec g(\vec x) d^3x,"/></p>
-</div><p>where</p>
+\[\vec F_{EM} = \oint d\vec a \cdot \mathbf{T} - \frac{d}{dt}\int \vec g(\vec x) d^3x,\]</div>
+<p>where</p>
 <div class="math">
-<p><img src="../_images/math/29477b67f8719f9b6534e7ac89a6e4efccdb4d00.png" alt="\vec g =  \frac{\vec S}{c^2} = \frac{\vec E \times \vec B}{4\pi c}."/></p>
-</div></div>
+\[\vec g =  \frac{\vec S}{c^2} = \frac{\vec E \times \vec B}{4\pi c}.\]</div>
+</div>
 <div class="section" id="id1">
 <h2>Response of Matter<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>The equation for monochromatic wave,</p>
 <div class="math">
-<p><img src="../_images/math/35bc253caacfe16af5a345948fa85a7aa7b09e51.png" alt="\vec k \cdot \vec D &amp;= 4\pi \rho \\
+\[\begin{split}\vec k \cdot \vec D &amp;= 4\pi \rho \\
 \vec k \cdot \vec B &amp; = 0 \\
 \vec k \times \vec E &amp; = i \omega \vec B \\
-\vec k \times \vec H &amp; = - \frac{i\omega}{c} \vec D + \frac{4\pi}{c} \vec j."/></p>
-</div><p>In the case of <img class="math" src="../_images/math/3b53b32171eb54ee6ac495087df7275beb6df981.png" alt="\rho=0"/> (no free charge) and <img class="math" src="../_images/math/0657a0bb9dd291e6d61d9c7de02873099c0c861e.png" alt="\vec j=0"/> no free current,</p>
+\vec k \times \vec H &amp; = - \frac{i\omega}{c} \vec D + \frac{4\pi}{c} \vec j.\end{split}\]</div>
+<p>In the case of <span class="math">\(\rho=0\)</span> (no free charge) and <span class="math">\(\vec j=0\)</span> no free current,</p>
 <div class="math">
-<p><img src="../_images/math/dd27859843ff15a353e3e5bcd245aa9b32d87c87.png" alt="\vec k \cdot \vec E &amp;= 0 \\
+\[\begin{split}\vec k \cdot \vec E &amp;= 0 \\
 \vec k \cdot \vec B &amp; = 0 \\
 \vec k \times \vec E &amp; = i \omega \vec B \\
-\vec k \times \vec B &amp; = - \frac{i\omega}{c}\epsilon \mu \vec E."/></p>
-</div><p>The important relation is dispersion relation which is the relation between wave number and frequency. In this context,</p>
+\vec k \times \vec B &amp; = - \frac{i\omega}{c}\epsilon \mu \vec E.\end{split}\]</div>
+<p>The important relation is dispersion relation which is the relation between wave number and frequency. In this context,</p>
 <div class="math">
-<p><img src="../_images/math/fc8ea9bf57f21ddb63159bdb77c63ffa6beee92e.png" alt="\vec k \cdot \vec k = \frac{\omega^2}{c^2} \mu \epsilon,"/></p>
-</div><p>which reduces to</p>
+\[\vec k \cdot \vec k = \frac{\omega^2}{c^2} \mu \epsilon,\]</div>
+<p>which reduces to</p>
 <div class="math">
-<p><img src="../_images/math/733a7306ed3f0af7c439645c4b97e8e056d9e973.png" alt="k = \frac{\omega}{c/n}"/></p>
-</div><p>as now we can define a new velocity which stands for the phase velocity by</p>
+\[k = \frac{\omega}{c/n}\]</div>
+<p>as now we can define a new velocity which stands for the phase velocity by</p>
 <div class="math">
-<p><img src="../_images/math/b38e9b61da93d8ed69ca7b05d89ec7518069d66b.png" alt="v_{ph} = c/n."/></p>
-</div><div class="section" id="impedance">
+\[v_{ph} = c/n.\]</div>
+<div class="section" id="impedance">
 <h3>Impedance<a class="headerlink" href="#impedance" title="Permalink to this headline">¶</a></h3>
-<p>Since <img class="math" src="../_images/math/d8ed03426dcf54f80353a474ef0978a8f72a4e8e.png" alt="\vec E"/> corresponds to the magnetic part <img class="math" src="../_images/math/e5b09b90c9d586214b245a0127881bd424873275.png" alt="\vec H"/>, we would like to rewrite one of the equation to</p>
+<p>Since <span class="math">\(\vec E\)</span> corresponds to the magnetic part <span class="math">\(\vec H\)</span>, we would like to rewrite one of the equation to</p>
 <div class="math">
-<p><img src="../_images/math/75029c0a4a6175d90f8a099d8cbfcca04134c4df.png" alt="Z \vec H = \vec k \times \vec E."/></p>
-</div><p>where</p>
+\[Z \vec H = \vec k \times \vec E.\]</div>
+<p>where</p>
 <div class="math">
-<p><img src="../_images/math/d676d81054ef5b6cce613ee54a28efd4ae1d29e3.png" alt="Z = \sqrt{\frac{\mu}{\epsilon}}."/></p>
-</div><p>If <img class="math" src="../_images/math/26e4eee0f290e960fa832fe726b69c44f0d5230b.png" alt="\mu=1"/>, we have</p>
+\[Z = \sqrt{\frac{\mu}{\epsilon}}.\]</div>
+<p>If <span class="math">\(\mu=1\)</span>, we have</p>
 <div class="math">
-<p><img src="../_images/math/7e38a2ea35b6d56dadb4eb69035ba78083f53b68.png" alt="Z = \frac{1}{n}."/></p>
-</div></div>
+\[Z = \frac{1}{n}.\]</div>
+</div>
 <div class="section" id="matching-condition">
 <h3>Matching Condition<a class="headerlink" href="#matching-condition" title="Permalink to this headline">¶</a></h3>
 <p>Matching conditions are not just something written down on the textbook. They all have meanings.</p>
 <div class="math">
-<p><img src="../_images/math/6b65e8f881b76cbc66fb868e5fc7750f1286578f.png" alt="\hat n \cdot (\vec D_1 + \vec D_1' - \vec D_2) &amp;= 0, \\
+\[\begin{split}\hat n \cdot (\vec D_1 + \vec D_1' - \vec D_2) &amp;= 0, \\
 \hat n \cdot (\vec B_1 + \vec B_1' - \vec B_2) &amp;= 0, \\
 \hat n\times (\vec E_1 + \vec E_1' - \vec E_2) &amp;= 0, \\
-\hat n \times (\vec H_1 +\vec H_1' - \vec H_2) &amp;=0."/></p>
-</div><p>In order to satisfy these matching conditions, the phase of all fields should be the same. Thus leading to the Snell&#8217;s law</p>
+\hat n \times (\vec H_1 +\vec H_1' - \vec H_2) &amp;=0.\end{split}\]</div>
+<p>In order to satisfy these matching conditions, the phase of all fields should be the same. Thus leading to the Snell&#8217;s law</p>
 <div class="math">
-<p><img src="../_images/math/83c4489e714da0557b4aaf32beee3739164ffc6a.png" alt="\theta_1 &amp;= \theta_1' \\
-n_1 \sin\theta_1 &amp;= n_2 \sin\theta_2 \qquad \text{perpendicular part}."/></p>
-</div><p>The parallel parts of the fields give us the other relation,</p>
+\[\begin{split}\theta_1 &amp;= \theta_1' \\
+n_1 \sin\theta_1 &amp;= n_2 \sin\theta_2 \qquad \text{perpendicular part}.\end{split}\]</div>
+<p>The parallel parts of the fields give us the other relation,</p>
 <div class="math">
-<p><img src="../_images/math/289ce86881b1c008db9f141c47ff686a5f5745f3.png" alt="E_1\cos\theta_1 - E_1'\cos\theta_1 - E_2 \cos\theta_2 &amp;= 0 \\
-H_1 + H_1' = H_2 ."/></p>
-</div></div>
+\[\begin{split}E_1\cos\theta_1 - E_1'\cos\theta_1 - E_2 \cos\theta_2 &amp;= 0 \\
+H_1 + H_1' = H_2 .\end{split}\]</div>
+</div>
 <div class="section" id="reflected-and-transmitted-wave">
 <h3>Reflected and Transmitted Wave<a class="headerlink" href="#reflected-and-transmitted-wave" title="Permalink to this headline">¶</a></h3>
-<p>Recall that impedance is <img class="math" src="../_images/math/6426fd958f32cbafc0421b15c9930a325257aeab.png" alt="Z = \sqrt{\frac{\mu}{\epsilon} }"/> which leads to or corresponds to</p>
+<p>Recall that impedance is <span class="math">\(Z = \sqrt{\frac{\mu}{\epsilon} }\)</span> which leads to or corresponds to</p>
 <div class="math">
-<p><img src="../_images/math/c20e3ed48d80e25038b2a39cd4986353ec44a9dc.png" alt="\lvert E \rvert = Z \lvert H \rvert."/></p>
-</div><p><strong>Impedance shows the scaling between the magnetic field and the electric field.</strong> In fact for monochromatic TEM,</p>
+\[\lvert E \rvert = Z \lvert H \rvert.\]</div>
+<p><strong>Impedance shows the scaling between the magnetic field and the electric field.</strong> In fact for monochromatic TEM,</p>
 <div class="math">
-<p><img src="../_images/math/2907f19f16d7c6f87b7ea185a643b215325d0b13.png" alt="\vec k \times \vec E =  Z \vec H."/></p>
-</div><p>Then we derive the ratios,</p>
+\[\vec k \times \vec E =  Z \vec H.\]</div>
+<p>Then we derive the ratios,</p>
 <div class="math">
-<p><img src="../_images/math/eee2cd4eedd46e5eddb37c868a85f5b3cf475aea.png" alt="\frac{E_1'}{E_1} &amp;= \frac{Z_1\cos\theta_1 - Z_2\cos\theta_2}{Z_1\cos\theta_1 + Z_2\cos\theta_2}, \\
-\frac{E_2}{E_1} &amp;= \frac{2Z_2 \cos\theta_1}{Z_1\cos\theta_1 + Z_2\cos\theta_2} ."/></p>
-</div><p>By definition, impedance becomes <img class="math" src="../_images/math/58bfd0d56f376699ade95640b9ee332e10e45c4c.png" alt="Z = 1/n"/> when <img class="math" src="../_images/math/26e4eee0f290e960fa832fe726b69c44f0d5230b.png" alt="\mu=1"/>. In this limit,</p>
+\[\begin{split}\frac{E_1'}{E_1} &amp;= \frac{Z_1\cos\theta_1 - Z_2\cos\theta_2}{Z_1\cos\theta_1 + Z_2\cos\theta_2}, \\
+\frac{E_2}{E_1} &amp;= \frac{2Z_2 \cos\theta_1}{Z_1\cos\theta_1 + Z_2\cos\theta_2} .\end{split}\]</div>
+<p>By definition, impedance becomes <span class="math">\(Z = 1/n\)</span> when <span class="math">\(\mu=1\)</span>. In this limit,</p>
 <div class="math">
-<p><img src="../_images/math/7538bfcf3c1f2b7f9ea434e9789548b5bee8cd19.png" alt="\frac{E_1'}{E_1} &amp;= \frac{n_2\cos\theta_1 - n_1\cos\theta_2}{n_2\cos\theta_1 + n_1\cos\theta_2}, \\
-\frac{E_2}{E_1} &amp;= \frac{2n_1 \cos\theta_1}{n_2\cos\theta_1 + n_1\cos\theta_2} ."/></p>
-</div><p>Now what I need to be careful is that in this derivation, I used the geometry to project the fields on to the surface where the polarization of the wave matters. For the result above, they are only valid for waves with polarization parallel to the surface.</p>
+\[\begin{split}\frac{E_1'}{E_1} &amp;= \frac{n_2\cos\theta_1 - n_1\cos\theta_2}{n_2\cos\theta_1 + n_1\cos\theta_2}, \\
+\frac{E_2}{E_1} &amp;= \frac{2n_1 \cos\theta_1}{n_2\cos\theta_1 + n_1\cos\theta_2} .\end{split}\]</div>
+<p>Now what I need to be careful is that in this derivation, I used the geometry to project the fields on to the surface where the polarization of the wave matters. For the result above, they are only valid for waves with polarization parallel to the surface.</p>
 <p>Using similar tricks, I can write down the result for waves with polarization perpendicular to surface. The matching conditions are</p>
 <div class="math">
-<p><img src="../_images/math/0d42de1d7b1c900188e6de412ffced077cb3e8a7.png" alt="E_1 + E_1' &amp;=  E_2 \\
-H_1 \cos\theta_1 - H_1'\cos\theta_1 = H_2\cos\theta_2."/></p>
-</div><p>This can be abtained by just draw a graph of the incident wave, reflected wave and refracted wave.</p>
+\[\begin{split}E_1 + E_1' &amp;=  E_2 \\
+H_1 \cos\theta_1 - H_1'\cos\theta_1 = H_2\cos\theta_2.\end{split}\]</div>
+<p>This can be abtained by just draw a graph of the incident wave, reflected wave and refracted wave.</p>
 <p>Solving the equations</p>
 <div class="math">
-<p><img src="../_images/math/b13900717f719b9713deb9fbe2c6dc21cdc55e25.png" alt="\frac{E_1'}{E_1} &amp;= \frac{n_1\cos\theta_1 - n_2\cos\theta_2}{n_1\cos\theta_1 + n_2\cos\theta_2}, \\
-\frac{E_2}{E_1} &amp;= \frac{2n_1 \cos\theta_1}{n_1\cos\theta_1 + n_2\cos\theta_2} ."/></p>
-</div></div>
+\[\begin{split}\frac{E_1'}{E_1} &amp;= \frac{n_1\cos\theta_1 - n_2\cos\theta_2}{n_1\cos\theta_1 + n_2\cos\theta_2}, \\
+\frac{E_2}{E_1} &amp;= \frac{2n_1 \cos\theta_1}{n_1\cos\theta_1 + n_2\cos\theta_2} .\end{split}\]</div>
+</div>
 <div class="section" id="reflection-refraction-transparent-dissipative">
 <h3>Reflection, Refraction, Transparent, Dissipative<a class="headerlink" href="#reflection-refraction-transparent-dissipative" title="Permalink to this headline">¶</a></h3>
 <p>Reflection coefficient and transmission coefficient find the energy reflected and transmitted.</p>
 <div class="math">
-<p><img src="../_images/math/23bdd64c916ac581b9e0272699c66f01baab8c3e.png" alt="R &amp; = \frac{\langle \vec S_1' \rangle \cdot \hat n}{\langle \vec S_1 \rangle \cdot \hat n} \\
+\[\begin{split}R &amp; = \frac{\langle \vec S_1' \rangle \cdot \hat n}{\langle \vec S_1 \rangle \cdot \hat n} \\
 &amp; = \frac{\frac{c}{4\pi}\frac{1}{2} Re( \vec E_1'^* \times \vec H_1' )   }{ \frac{c}{4\pi} \frac{1}{2} Re( \vec E_1^* \times \vec H_1 ) } \\
 &amp; = \cdots \\
 T&amp; =  \frac{\langle \vec S_2 \rangle \cdot \hat n}{\langle \vec S_1 \rangle \cdot \hat n} \\
-&amp; = \cdots"/></p>
-</div><p>For normal incident, these becomes easier to calculate because all thetas becomes 0. The result is</p>
+&amp; = \cdots\end{split}\]</div>
+<p>For normal incident, these becomes easier to calculate because all thetas becomes 0. The result is</p>
 <div class="math">
-<p><img src="../_images/math/755e3f625b1c642240f145e02c538145277b0d8f.png" alt="R &amp;= \frac{( n_1-n_2)^2 }{ (n_1+n_2)^2 } \\
-T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }."/></p>
-</div><p>Evanescent wave is the case when the wave vector becomes imaginary and the wave tenuates to 0 quickly. In the situation of total reflection, the transmitted wave can be calculated. To find out the evanescent wave one need to calculate the condition for total reflection then plug in the condition for a assumed wave in medium 2.</p>
+\[\begin{split}R &amp;= \frac{( n_1-n_2)^2 }{ (n_1+n_2)^2 } \\
+T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }.\end{split}\]</div>
+<p>Evanescent wave is the case when the wave vector becomes imaginary and the wave tenuates to 0 quickly. In the situation of total reflection, the transmitted wave can be calculated. To find out the evanescent wave one need to calculate the condition for total reflection then plug in the condition for a assumed wave in medium 2.</p>
 <p>Evanescent wave doesn&#8217;t mean energy lose in reflection, it only proves that wave can not go deep into the material and all waves are reflected. The material does NOT nessarily obsorbe all the energy of the wave. One can show that in total reflection, energy flowing in all flows out, i.e.,</p>
 <div class="math">
-<p><img src="../_images/math/0943a2c325c4383e93f5bcc9c09e04746c103468.png" alt="R=1."/></p>
-</div><p>The question is, what is dissipative material? They are those with complex wave vectors such that wave dissipates as they passing through the bulk material.</p>
+\[R=1.\]</div>
+<p>The question is, what is dissipative material? They are those with complex wave vectors such that wave dissipates as they passing through the bulk material.</p>
 </div>
 <div class="section" id="ohmic-matter">
 <h3>Ohmic Matter<a class="headerlink" href="#ohmic-matter" title="Permalink to this headline">¶</a></h3>
 <p>A term of current</p>
 <div class="math">
-<p><img src="../_images/math/290dc30e711770dea58e4cb3a9738632d0d79172.png" alt="\frac{4\pi}{c}\vec j"/></p>
-</div><p>is added to the equations so that it describes matter which supports current.</p>
+\[\frac{4\pi}{c}\vec j\]</div>
+<p>is added to the equations so that it describes matter which supports current.</p>
 <p>Ohm&#8217;s law shows the relations between current and field,</p>
 <div class="math">
-<p><img src="../_images/math/42a0d618fdbe2a986eb8b1ff6763d69d414ada76.png" alt="\vec j = \sigma \vec E."/></p>
-</div><p>By plug in this to the Maxwell&#8217;s equations, we can have a new permitivity. For monochromatic wave,</p>
+\[\vec j = \sigma \vec E.\]</div>
+<p>By plug in this to the Maxwell&#8217;s equations, we can have a new permitivity. For monochromatic wave,</p>
 <div class="math">
-<p><img src="../_images/math/a1008cbdeb944462a35895e3e245a1f5cdadab32.png" alt="\epsilon = \epsilon_R + i\frac{4\pi\sigma}{\omega}."/></p>
-</div><p>Using dispersion relation derived, we can define the complex refractive index.</p>
+\[\epsilon = \epsilon_R + i\frac{4\pi\sigma}{\omega}.\]</div>
+<p>Using dispersion relation derived, we can define the complex refractive index.</p>
 <p>Given the dispersion relation we could also find the waves and calculate Poynting vector</p>
 <div class="math">
-<p><img src="../_images/math/6326138882580c95a7a2439d9e242c318560a5c2.png" alt="\langle \vec S \rangle \propto e^{−2(\omega n_i/c)\hat k\cdot x}."/></p>
-</div><p>This is our anticipation since the wave vector has a length of <img class="math" src="../_images/math/e01b7e3eec3d19ecb178e28838c0199ede42b3ce.png" alt="k=\frac{\omega}{c/(n_R+i n_I)}"/> due to dispersion relation <img class="math" src="../_images/math/74a565d78fe9347d8fd54f36c16136442179a322.png" alt="\vec k=\frac{\omega}{c/n}\hat k"/>. Plug this into the expression for plane wave, we have the spatial part proportional to</p>
+\[\langle \vec S \rangle \propto e^{−2(\omega n_i/c)\hat k\cdot x}.\]</div>
+<p>This is our anticipation since the wave vector has a length of <span class="math">\(k=\frac{\omega}{c/(n_R+i n_I)}\)</span> due to dispersion relation <span class="math">\(\vec k=\frac{\omega}{c/n}\hat k\)</span>. Plug this into the expression for plane wave, we have the spatial part proportional to</p>
 <div class="math">
-<p><img src="../_images/math/b782ea9ba59891cea12d73086262e3c8f65f7598.png" alt="e^{\vec k \cdot \vec x} &amp; = e^{i(n_R+i n_I)\omega/c \hat k \cdot \vec x}\\."/></p>
-</div><p>We can directly see the damping part. This is how one finds the skin depth which means the Poynting vector drops to <img class="math" src="../_images/math/fdd2c71726c7467fccf23dab27e50d7d7f828177.png" alt="1/e"/> of that of the incident wave,</p>
+\[\begin{split}e^{\vec k \cdot \vec x} &amp; = e^{i(n_R+i n_I)\omega/c \hat k \cdot \vec x}\\.\end{split}\]</div>
+<p>We can directly see the damping part. This is how one finds the skin depth which means the Poynting vector drops to <span class="math">\(1/e\)</span> of that of the incident wave,</p>
 <div class="math">
-<p><img src="../_images/math/be3ea331032fda6ecd919430635121c28ebd084f.png" alt="\delta = \frac{c}{2\omega n_i}."/></p>
-</div><p>If the imaginary part becomes very large, i.e.,</p>
+\[\delta = \frac{c}{2\omega n_i}.\]</div>
+<p>If the imaginary part becomes very large, i.e.,</p>
 <div class="math">
-<p><img src="../_images/math/d89f470617a9cb1ce8ed40fd225f0dbfa85fb90b.png" alt="\frac{4\pi\sigma}{\omega} \gg 1,"/></p>
-</div><p>the atenuation becomes significant or both real part and imaginary part of refractive index becomes much larger than 1. This is equivalent to good conductor. We can see the skin depth</p>
+\[\frac{4\pi\sigma}{\omega} \gg 1,\]</div>
+<p>the atenuation becomes significant or both real part and imaginary part of refractive index becomes much larger than 1. This is equivalent to good conductor. We can see the skin depth</p>
 <div class="math">
-<p><img src="../_images/math/0f56b6fc46010c7f29c3e1002cd2e226a2026386.png" alt="\delta \ll \frac{c}{\omega}."/></p>
-</div><p>Refrective index also becomes 1.</p>
+\[\delta \ll \frac{c}{\omega}.\]</div>
+<p>Refrective index also becomes 1.</p>
 <p>Remember surface current is defined as</p>
 <div class="math">
-<p><img src="../_images/math/36b7ca6ecf20246b6c5bf8043b98d4ce7e641f8f.png" alt="\vec K = \int\vec j dz."/></p>
-</div><p>We could use this to find a effective surface current. Current density is</p>
+\[\vec K = \int\vec j dz.\]</div>
+<p>We could use this to find a effective surface current. Current density is</p>
 <div class="math">
-<p><img src="../_images/math/4cbb4b4321c01fde4939c2bf0a3dad8f5c3f8ee0.png" alt="\vec j &amp;= \sigma \vec E \\
-&amp; = \sigma \vec E_0 e^{i (\vec k \cdot \vec x - \omega t)}."/></p>
-</div><p>Using dispersion relation, and suppose we have wave vector in z direction. We can write down the incident wave</p>
+\[\begin{split}\vec j &amp;= \sigma \vec E \\
+&amp; = \sigma \vec E_0 e^{i (\vec k \cdot \vec x - \omega t)}.\end{split}\]</div>
+<p>Using dispersion relation, and suppose we have wave vector in z direction. We can write down the incident wave</p>
 <div class="math">
-<p><img src="../_images/math/f089aed9943539a1d6542403be4b588020f5b542.png" alt="\vec E_1 = \vec E_0 e^{i \omega (n z/c - t)} ."/></p>
-</div><p>Fresnel&#8217;s relation tells us the refracted wave, which is</p>
+\[\vec E_1 = \vec E_0 e^{i \omega (n z/c - t)} .\]</div>
+<p>Fresnel&#8217;s relation tells us the refracted wave, which is</p>
 <div class="math">
-<p><img src="../_images/math/48ad238bb9f937ce4602e0161e3ac5a90f9ae209.png" alt="\vec E_2 &amp;= \frac{2\vec E_1}{n+1} \\
+\[\begin{split}\vec E_2 &amp;= \frac{2\vec E_1}{n+1} \\
 &amp;\approx \frac{2\vec E_1}{n} \\
-&amp;= \frac{2\vec E_1}{(1+i)n_R}."/></p>
-</div><p>The last step is true for good conductor. The current density is therefore clear so is the surface current.</p>
+&amp;= \frac{2\vec E_1}{(1+i)n_R}.\end{split}\]</div>
+<p>The last step is true for good conductor. The current density is therefore clear so is the surface current.</p>
 <p>In summary, good conductor has a</p>
 <ol class="arabic simple">
 <li>small skin depth;</li>
@@ -369,8 +370,8 @@ T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }."/></p>
 <p>Dispersive media can be modeled using Drude model, Lorentz model and many other. Read <a class="reference internal" href="vocabulary/models.html#drude-model"><span>Drude Model</span></a> and <a class="reference internal" href="vocabulary/models.html#lorentz-model"><span>Lorentz Model</span></a> in vocabulary part.</p>
 <p>By definition, group velocity is the result of dispersion relation,</p>
 <div class="math">
-<p><img src="../_images/math/e07322975445b7e7357699f6f2e874990b6e6a36.png" alt="v_g = \frac{d \omega}{dk}\vert_{k=k_0},"/></p>
-</div><p>while phase velocity is always <img class="math" src="../_images/math/bbc760e0e9fb62f986457dc1f076a7fddc021f0c.png" alt="v_{phase} = nc"/> where n can be larger than 1.</p>
+\[v_g = \frac{d \omega}{dk}\vert_{k=k_0},\]</div>
+<p>while phase velocity is always <span class="math">\(v_{phase} = nc\)</span> where n can be larger than 1.</p>
 <p>Read <a class="reference external" href="http://www.cambridge.org/us/academic/subjects/physics/mathematical-methods/physical-mathematics">chapte 5 of Kevin Cahill&#8217;s book</a> for knowledge of complex dispersion relation and more. Notice that both group velocity and phase velocity can be larger than the vacuum speed of light.</p>
 </div>
 </div>

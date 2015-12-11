@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
@@ -147,7 +148,7 @@
     </a>
   </li>
   <li>
-    <a href="../em/main.html" title="Next Chapter: Electricity and Magnetism"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Electricity and ... &raquo;</span>
+    <a href="../em/main.html" title="Next Chapter: Electricity and Magnetism"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Electricity a... &raquo;</span>
     </a>
   </li>
               
@@ -173,7 +174,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="causality">
 <h1>Causality<a class="headerlink" href="#causality" title="Permalink to this headline">¶</a></h1>
@@ -182,40 +183,40 @@
 <h2>Radiation<a class="headerlink" href="#radiation" title="Permalink to this headline">¶</a></h2>
 <p>Maxwell&#8217;s equations in vacuum are</p>
 <div class="math">
-<p><img src="../../_images/math/704776a0d80363e56ec5f28856c4e0e90aa04c7d.png" alt="\nabla\cdot \vec E &amp;= 4\pi \rho, \\
+\[\begin{split}\nabla\cdot \vec E &amp;= 4\pi \rho, \\
 \nabla \cdot \vec B &amp;  = 0, \\
 \nabla \times \vec E &amp; = -\frac{1}{c}\partial_t \vec B, \\
-\nabla \times \vec B &amp; = \frac{1}{c}\partial_t E + \frac{4\pi}{c}\vec j."/></p>
-</div><p>To write down the wave equation, we could switch to the scalar potential <img class="math" src="../../_images/math/8a2bf899b68f405def1b79b4e97f439601c0bb7a.png" alt="\phi"/> and vector potential <img class="math" src="../../_images/math/3209c5e85500074c18556182323f177efca6d3ef.png" alt="\vec A"/>.</p>
+\nabla \times \vec B &amp; = \frac{1}{c}\partial_t E + \frac{4\pi}{c}\vec j.\end{split}\]</div>
+<p>To write down the wave equation, we could switch to the scalar potential <span class="math">\(\phi\)</span> and vector potential <span class="math">\(\vec A\)</span>.</p>
 <p>Divergence free means that we can always have</p>
 <div class="math">
-<p><img src="../../_images/math/4162758885afb915390be82ea35430fc0ad34b2b.png" alt="\vec B = \nabla \times \vec A."/></p>
-</div><p>By using the above relation, I could rewrite this to</p>
+\[\vec B = \nabla \times \vec A.\]</div>
+<p>By using the above relation, I could rewrite this to</p>
 <div class="math">
-<p><img src="../../_images/math/0dc28f1bb708961f4504cab1c3ae2a13509bc408.png" alt="\nabla \times \vec E &amp;= -\frac{1}{c} \partial_t (\nabla \times \vec A),\\
-\nabla \times ( \vec E + \frac{1}{c} \partial_t  \vec A ) &amp;= 0."/></p>
-</div><p>This means I can write all inside divergance written as a gradient of a scalar function or a constant time the gradient of some scalar function.</p>
+\[\begin{split}\nabla \times \vec E &amp;= -\frac{1}{c} \partial_t (\nabla \times \vec A),\\
+\nabla \times ( \vec E + \frac{1}{c} \partial_t  \vec A ) &amp;= 0.\end{split}\]</div>
+<p>This means I can write all inside divergance written as a gradient of a scalar function or a constant time the gradient of some scalar function.</p>
 <div class="math">
-<p><img src="../../_images/math/080bde3ee193049c5ae59fd92f90ca9f391b66b1.png" alt="\vec E= -\nabla \phi - \frac{1}{c} \partial_t \vec A."/></p>
-</div><p>With the definition of scalar and vector potentials, we could plug them in and find the wave equations. However, since the values of these potential are gauge dependent, I should choose a convinient gauge. Hereby, I use Lorenz gauge.</p>
+\[\vec E= -\nabla \phi - \frac{1}{c} \partial_t \vec A.\]</div>
+<p>With the definition of scalar and vector potentials, we could plug them in and find the wave equations. However, since the values of these potential are gauge dependent, I should choose a convinient gauge. Hereby, I use Lorenz gauge.</p>
 <div class="math">
-<p><img src="../../_images/math/9b8bdd16e45d406979e53044e9fa67ef52c08f52.png" alt="\frac{1}{c} \partial_t \phi + \nabla \cdot \vec A = 0."/></p>
-</div><p>The importance of this gauge is that it is Lorentz invariant.</p>
+\[\frac{1}{c} \partial_t \phi + \nabla \cdot \vec A = 0.\]</div>
+<p>The importance of this gauge is that it is Lorentz invariant.</p>
 <p>Using this gauge the two other Maxwell&#8217;s equations, I have the wave equations,</p>
 <div class="math">
-<p><img src="../../_images/math/9fba75d6c93af6eff71836007d10a0b87f522cce.png" alt="(\frac{1}{c^2} \partial_t^2 -\nabla^2) \phi &amp;= 4\pi \rho ,\\
-(\frac{1}{c^2} \partial_t^2 -\nabla^2) \vec A &amp;= \frac{4\pi}{c} \vec j ."/></p>
-</div><p>Solving these Helmholtz equations, I get the solution as a function of retarted time <img class="math" src="../../_images/math/210dcbbd2c10b980e83b59fa7dd0faa3f5c2d43d.png" alt="t_{ret}=t-\frac{R}{c}"/>, where <img class="math" src="../../_images/math/c583ae84354263d6edd6f7f82554012b828eac73.png" alt="R=\vert \vec x - \vec x' \vert"/>.</p>
+\[\begin{split}(\frac{1}{c^2} \partial_t^2 -\nabla^2) \phi &amp;= 4\pi \rho ,\\
+(\frac{1}{c^2} \partial_t^2 -\nabla^2) \vec A &amp;= \frac{4\pi}{c} \vec j .\end{split}\]</div>
+<p>Solving these Helmholtz equations, I get the solution as a function of retarted time <span class="math">\(t_{ret}=t-\frac{R}{c}\)</span>, where <span class="math">\(R=\vert \vec x - \vec x' \vert\)</span>.</p>
 <div class="math">
-<p><img src="../../_images/math/71350da3681e2d0981fb99b19a90a53aeee4b7b9.png" alt="\phi(t,\vec x) &amp;= \int d^3x' \frac{\rho(t_{ret},\vec x')}{R}, \\
-\vec A(t,\vec x) &amp; = \int d^3 x' \frac{\vec j(t_{ret},\vec x')}{R}."/></p>
-</div><p>Here it clearly shows that the observation depends on the history <img class="math" src="../../_images/math/ac0d95f467215985fe2945ca1ca8893b33356e39.png" alt="R/c"/> ago. This is the signal propagation time.</p>
+\[\begin{split}\phi(t,\vec x) &amp;= \int d^3x' \frac{\rho(t_{ret},\vec x')}{R}, \\
+\vec A(t,\vec x) &amp; = \int d^3 x' \frac{\vec j(t_{ret},\vec x')}{R}.\end{split}\]</div>
+<p>Here it clearly shows that the observation depends on the history <span class="math">\(R/c\)</span> ago. This is the signal propagation time.</p>
 </div>
 <div class="section" id="response-of-matter">
 <h2>Response of Matter<a class="headerlink" href="#response-of-matter" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../../_images/math/b71daedbe623f52302d55a8ef245391810a74c08.png" alt="\vec P = \int \chi(t,t') \vec E(t') dt'."/></p>
-</div></div>
+\[\vec P = \int \chi(t,t') \vec E(t') dt'.\]</div>
+</div>
 </div>
 
 

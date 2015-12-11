@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
@@ -148,11 +149,11 @@
               
                 
   <li>
-    <a href="../electrodynamics/special_relativity.html" title="Previous Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Relativi...</span>
+    <a href="../electrodynamics/special_relativity.html" title="Previous Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Relat...</span>
     </a>
   </li>
   <li>
-    <a href="generalRelativity.html" title="Next Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relativi... &raquo;</span>
+    <a href="generalRelativity.html" title="Next Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relat... &raquo;</span>
     </a>
   </li>
               
@@ -178,7 +179,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="special-relativity">
 <h1>Special Relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">¶</a></h1>
@@ -186,33 +187,33 @@
 <h2>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
 <p>Metric in special relativity</p>
 <div class="math">
-<p><img src="../_images/math/e2ac865a4a049e10b497da7ab2ca893eea95fea6.png" alt="\eta_{\mu\nu}=\begin{pmatrix}
+\[\begin{split}\eta_{\mu\nu}=\begin{pmatrix}
      -1 &amp; 0 &amp; 0 &amp; 0\\
      0 &amp; 1 &amp; 0 &amp; 0\\
      0 &amp; 0 &amp; 1 &amp; 0\\
      0 &amp; 0 &amp; 0 &amp; 1\\
-\end{pmatrix}"/></p>
-</div><div class="section" id="quantities-and-operations">
+\end{pmatrix}\end{split}\]</div>
+<div class="section" id="quantities-and-operations">
 <h3>Quantities and Operations<a class="headerlink" href="#quantities-and-operations" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="d-alembertian">
 <h4>d&#8217;Alembertian<a class="headerlink" href="#d-alembertian" title="Permalink to this headline">¶</a></h4>
 <p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id3" id="id1">[1]</a></p>
 <div class="math">
-<p><img src="../_images/math/a330ece30c03fbd606dca8196a66ecaa2c7dd207.png" alt="\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu"/></p>
-</div><p>In the usual {t,x,y,z} natural orthonormal basis,</p>
+\[\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu\]</div>
+<p>In the usual {t,x,y,z} natural orthonormal basis,</p>
 <div class="math">
-<p><img src="../_images/math/3cd0aff06fa03d6f0a28f2ed959785005c6d5154.png" alt="\Box &amp; = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
+\[\begin{split}\Box &amp; = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
 &amp; = -\partial_t^2+\Delta^2 \\
-&amp; = -\partial_t^2+\nabla"/></p>
-</div><dl class="docutils">
+&amp; = -\partial_t^2+\nabla\end{split}\]</div>
+<dl class="docutils">
 <dt>On wiki <a class="footnote-reference" href="#id4" id="id2">[2]</a> , they give some applications to it.</dt>
 <dd><ul class="first last simple">
 <li>klein-Gordon equation
-<img class="math" src="../_images/math/ed74ec13c777ca19c8f97038225ffa4e34ea4b1f.png" alt="(\Box+m^2)\phi=0"/></li>
+<span class="math">\((\Box+m^2)\phi=0\)</span></li>
 <li>wave equation for electromagnetic field in vacuum:
-For the electromagnetic four-potential <img class="math" src="../_images/math/9d6cad33b7125648a13002095f9351de593496bc.png" alt="\Box A^\mu=0"/>footnote{Gauge}</li>
+For the electromagnetic four-potential <span class="math">\(\Box A^\mu=0\)</span>footnote{Gauge}</li>
 <li>wave equation for small vibrations
-<img class="math" src="../_images/math/245a856d50ca0895a70d75a2badaae829120ad60.png" alt="\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0"/></li>
+<span class="math">\(\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0\)</span></li>
 </ul>
 </dd>
 </dl>

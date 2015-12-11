@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
@@ -146,7 +147,7 @@
     </a>
   </li>
   <li>
-    <a href="../relativity/specialRelativity.html" title="Next Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Special Relativi... &raquo;</span>
+    <a href="../relativity/specialRelativity.html" title="Next Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Special Relat... &raquo;</span>
     </a>
   </li>
               
@@ -172,7 +173,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="special-relativity">
 <h1>Special Relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">¶</a></h1>
@@ -185,27 +186,27 @@
 </div>
 <p>Recall that in special relativity, velocity addition is</p>
 <div class="math">
-<p><img src="../_images/math/1a724c574b6d306e9107bb2bdb523c33d7b52885.png" alt="v_S = \frac{u+v_O}{1+ \beta v/c},"/></p>
-</div><p>where <img class="math" src="../_images/math/26921aef537d9827367d7868783aaac5dc147825.png" alt="v_S"/> is the velocity measured in moving frame S, <img class="math" src="../_images/math/325c31138c4a88d8bd80dbdf5ccc15aef5a66002.png" alt="v_O"/> is the velocity measured in frame O. This <img class="math" src="../_images/math/e92778cbd03c0455a83c023da052969800138052.png" alt="\beta"/> is the factor <img class="math" src="../_images/math/fc0b3bbf0c5dd82ede95bc3775b7e24f2b7a699b.png" alt="u/c"/> where u is the velocity of the moving frame measure in frame O.</p>
+\[v_S = \frac{u+v_O}{1+ \beta v/c},\]</div>
+<p>where <span class="math">\(v_S\)</span> is the velocity measured in moving frame S, <span class="math">\(v_O\)</span> is the velocity measured in frame O. This <span class="math">\(\beta\)</span> is the factor <span class="math">\(u/c\)</span> where u is the velocity of the moving frame measure in frame O.</p>
 <p>At the same time, we have the following hyper trig relation.</p>
 <div class="math">
-<p><img src="../_images/math/d272d91446a07a6569c9af1ee78cd1bdbc449f1d.png" alt="\tanh (\alpha + \beta) = \frac{\tanh \alpha + \tanh \beta}{1 + \tanh \alpha \tanh \beta}."/></p>
-</div><p class="last">Isn&#8217;t this addition of angles the same as the velocity addition?</p>
+\[\tanh (\alpha + \beta) = \frac{\tanh \alpha + \tanh \beta}{1 + \tanh \alpha \tanh \beta}.\]</div>
+<p class="last">Isn&#8217;t this addition of angles the same as the velocity addition?</p>
 </div>
 <p>The algebra of relativity is mostly based on invariance of a new distance under a new rotation. Here we are not going to repeat the derivation of these transformations from the beginning, instead we would like to have a look at the really amazing part of the theory.</p>
 <p>As we define</p>
 <div class="math">
-<p><img src="../_images/math/842f07d10dc39fc207a3591077a5a53ba75eff51.png" alt="\tanh \alpha_u = \frac{u}{c},"/></p>
-</div><p>and any velocity divided by speed of light to be a hyperbolic tangent,</p>
+\[\tanh \alpha_u = \frac{u}{c},\]</div>
+<p>and any velocity divided by speed of light to be a hyperbolic tangent,</p>
 <div class="math">
-<p><img src="../_images/math/7f06e0a9d65b96743491534e40c274c4de74af3f.png" alt="\tanh \alpha_{v_x} = \frac{v_x}{c},"/></p>
-</div><p>the velocity transformation, as stated in the admonition block, is an addition of angles</p>
+\[\tanh \alpha_{v_x} = \frac{v_x}{c},\]</div>
+<p>the velocity transformation, as stated in the admonition block, is an addition of angles</p>
 <div class="math">
-<p><img src="../_images/math/91f3cbc118306d259c6381af9a3a36998e7ebe07.png" alt="v_{S} = \tanh(\alpha_u + \alpha_{v_O}) = \frac{\tanh \alpha_{u} + \tanh \alpha_{v_0}}{1 + \tanh \alpha_{U} \tanh \alpha_{v_O}} = \frac{u/c + v_O/c}{1+ \frac{u}{c} \frac{v_{O}}{c}}."/></p>
-</div><p>However, addition of velocity is not that fundamental. We need to look into the relation</p>
+\[v_{S} = \tanh(\alpha_u + \alpha_{v_O}) = \frac{\tanh \alpha_{u} + \tanh \alpha_{v_0}}{1 + \tanh \alpha_{U} \tanh \alpha_{v_O}} = \frac{u/c + v_O/c}{1+ \frac{u}{c} \frac{v_{O}}{c}}.\]</div>
+<p>However, addition of velocity is not that fundamental. We need to look into the relation</p>
 <div class="math">
-<p><img src="../_images/math/d52e4b798d36f7452805e8467f3faeaf14be86b2.png" alt="\tanh \alpha_{v_x} = \frac{v_x}{c}."/></p>
-</div><p>Since we are talking about geometry, space-time diagram will be extremely important.</p>
+\[\tanh \alpha_{v_x} = \frac{v_x}{c}.\]</div>
+<p>Since we are talking about geometry, space-time diagram will be extremely important.</p>
 <div class="section" id="refs-notes">
 <h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">

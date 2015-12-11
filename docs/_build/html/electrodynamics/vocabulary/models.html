@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
@@ -182,7 +183,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="models">
 <h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
@@ -190,25 +191,25 @@
 <span id="id1"></span><h2>Drude Model<a class="headerlink" href="#drude-model" title="Permalink to this headline">¶</a></h2>
 <p>Drude models models the electromagnetic properties of conductors. In this simple model, electromagnetic interaction with the electromagnetic waves comes from the free charges governed by this equation of motion.</p>
 <div class="math">
-<p><img src="../../_images/math/581dbca5632afd8a65bab3aea067544533a49939.png" alt="m\frac{d \vec v}{d t} = q \vec E - \frac{m \vec v}{\tau},"/></p>
-</div><p>where <img class="math" src="../../_images/math/31e7d7a5e6deb3403466ceb934916c3957367fa5.png" alt="\tau"/> is the damping term like the one in Brownian motion. In fact this is a Brownian motion like equation since <img class="math" src="../../_images/math/d8ed03426dcf54f80353a474ef0978a8f72a4e8e.png" alt="\vec E"/> is periodic and averages to 0 in a simple case <strong>except that this external electric force is not random</strong>.</p>
+\[m\frac{d \vec v}{d t} = q \vec E - \frac{m \vec v}{\tau},\]</div>
+<p>where <span class="math">\(\tau\)</span> is the damping term like the one in Brownian motion. In fact this is a Brownian motion like equation since <span class="math">\(\vec E\)</span> is periodic and averages to 0 in a simple case <strong>except that this external electric force is not random</strong>.</p>
 <div class="note admonition">
 <p class="first admonition-title">Math</p>
 <p>Now consider the solution to this equation which is simple using Green&#8217;s function,</p>
 <div class="math">
-<p><img src="../../_images/math/511d826b982bc4e168596506991ef8e2c93e86b6.png" alt="\vec v(t) &amp;= \vec v(0) e^{-t/\tau} + \frac{q\vec E _0}{m}\int_0^t dt' e^{-(t-t')/\tau} e^{-i \omega t'}\\
-&amp;= \vec v(0) e^{-t/\tau} + \frac{q\vec E_0}{m} e^{-t/\tau} \frac{i\tau (-1 + e^{t(1/2-i\omega)})}{\tau \omega + i}."/></p>
-</div><p>The first term is the damping contribution to the velocity of the charges and the second term is the contribution of electric field.</p>
+\[\begin{split}\vec v(t) &amp;= \vec v(0) e^{-t/\tau} + \frac{q\vec E _0}{m}\int_0^t dt' e^{-(t-t')/\tau} e^{-i \omega t'}\\
+&amp;= \vec v(0) e^{-t/\tau} + \frac{q\vec E_0}{m} e^{-t/\tau} \frac{i\tau (-1 + e^{t(1/2-i\omega)})}{\tau \omega + i}.\end{split}\]</div>
+<p>The first term is the damping contribution to the velocity of the charges and the second term is the contribution of electric field.</p>
 <p>As a practice, we can show that the ratio of two contributions is</p>
 <div class="math">
-<p><img src="../../_images/math/10a79c06e523e3d4f1637794b66e0094e69c4636.png" alt="M &amp;= \frac{\lvert v_2 \rvert}{\lvert v_1 \rvert} \\
+\[\begin{split}M &amp;= \frac{\lvert v_2 \rvert}{\lvert v_1 \rvert} \\
 &amp; = \frac{1}{v(0)} \frac{q E_0}{m}  \frac{i\tau (-1 + e^{t(1/2-i\omega)})}{\tau \omega + i} \\
-&amp; = \frac{q E_0}{m v(0)} \frac{i\tau ( e^{t/\tau (1-i\omega \tau)} - 1)}{i + \omega \tau}."/></p>
-</div><p>It is obvious that in the limit <img class="math" src="../../_images/math/20f2e3d1107576d882bd3a63df576d1afdabfef8.png" alt="\omega \tau \gg 1"/>, and after a long time this ratio becomes 0 which actually comes from the fact that <img class="math" src="../../_images/math/09eb07492fdbc0a78bdb9895372d783db4ec6562.png" alt="\omega"/> is very large.</p>
+&amp; = \frac{q E_0}{m v(0)} \frac{i\tau ( e^{t/\tau (1-i\omega \tau)} - 1)}{i + \omega \tau}.\end{split}\]</div>
+<p>It is obvious that in the limit <span class="math">\(\omega \tau \gg 1\)</span>, and after a long time this ratio becomes 0 which actually comes from the fact that <span class="math">\(\omega\)</span> is very large.</p>
 <p>This means that in a long run, the damping always takes over the system if we have a very large frequency. Now the next question is what is the energy contribution of electric field after a long time?</p>
 <div class="math">
-<p><img src="../../_images/math/46bb28e348ade9c4f35cbf383625490ba4d7fff6.png" alt="\vec v_2(t) = \frac{q\vec E_0}{m} e^{-t/\tau} \frac{i\tau (-1 + e^{t(1/2-i\omega)})}{\tau \omega + i}"/></p>
-</div><p>becomes 0 as <img class="math" src="../../_images/math/09eb07492fdbc0a78bdb9895372d783db4ec6562.png" alt="\omega"/> becomes large enough.</p>
+\[\vec v_2(t) = \frac{q\vec E_0}{m} e^{-t/\tau} \frac{i\tau (-1 + e^{t(1/2-i\omega)})}{\tau \omega + i}\]</div>
+<p>becomes 0 as <span class="math">\(\omega\)</span> becomes large enough.</p>
 <p>So in a high frequency limit, the system take no energy from electric field.</p>
 <p class="last">Note that this result is complex. Explain why is a velocity is complex.</p>
 </div>
@@ -222,73 +223,73 @@ nablacdot vec B &amp; = 0 ,\
 nabla times vec E &amp; = -frac{1}{c} partial_t vec B ,\
 nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 </div>
-<p>In Drude model, for each mode <img class="math" src="../../_images/math/77cf077bf7b6d95f9e04090177811878885047a6.png" alt="\vec E, \vec B \propto e^{i(\vec k \cdot \vec )}"/>, I can replace <img class="math" src="../../_images/math/c33c02952591a1632847cbaa90e0a3c8dd21a007.png" alt="\partial_t"/> with <img class="math" src="../../_images/math/708587ee97b450cfe81780c6fbf51a6e735d53b3.png" alt="-i\omega"/> and <img class="math" src="../../_images/math/87a15611e13fedbf1446a6084ec85b8b9282e365.png" alt="\vec \nabla"/> with <img class="math" src="../../_images/math/f655dc4eb2c7f2522abf8be442f2ab2311d1df90.png" alt="i\vec k"/>. With the help of this, the Maxwell&#8217;s equation becomes</p>
+<p>In Drude model, for each mode <span class="math">\(\vec E, \vec B \propto e^{i(\vec k \cdot \vec )}\)</span>, I can replace <span class="math">\(\partial_t\)</span> with <span class="math">\(-i\omega\)</span> and <span class="math">\(\vec \nabla\)</span> with <span class="math">\(i\vec k\)</span>. With the help of this, the Maxwell&#8217;s equation becomes</p>
 <div class="math">
-<p><img src="../../_images/math/038b9c0040976a6d1f1d5d61ad9598f1ae5b5067.png" alt="\vec k \cdot \vec D &amp;= 4\pi \rho, \\
+\[\begin{split}\vec k \cdot \vec D &amp;= 4\pi \rho, \\
 \vec k \cdot \vec B &amp; = 0, \\
 \vec k \times \vec E &amp; = -\frac{1}{c} (-i\omega) \vec B, \\
-\vec k \times \vec H &amp; = \frac{1}{c} (-i\omega) \vec D + \frac{4\pi}{c} \vec j."/></p>
-</div></div>
+\vec k \times \vec H &amp; = \frac{1}{c} (-i\omega) \vec D + \frac{4\pi}{c} \vec j.\end{split}\]</div>
+</div>
 <div class="section" id="current-density">
 <h3>Current Density<a class="headerlink" href="#current-density" title="Permalink to this headline">¶</a></h3>
 <p>The current density is</p>
 <div class="math">
-<p><img src="../../_images/math/7e5bc3bd8861e385fdc3ff84b91088886ba0bbc9.png" alt="\vec j = q n_q \langle \vec v \rangle."/></p>
-</div><p>Meanwhile, the Drude model tells us the velocity is governed by</p>
+\[\vec j = q n_q \langle \vec v \rangle.\]</div>
+<p>Meanwhile, the Drude model tells us the velocity is governed by</p>
 <div class="math">
-<p><img src="../../_images/math/ce7972a774ca0c299363c184345fef2a4dcc09c2.png" alt="m \frac{d \vec v}{dt} = q\vec E - \frac{m \vec v}{\tau},"/></p>
-</div><p>where <img class="math" src="../../_images/math/30356cd10359eea90bc235fa4e5c5c4412f3a5a2.png" alt="- \frac{m \vec v}{\tau}"/> is a damping term.</p>
+\[m \frac{d \vec v}{dt} = q\vec E - \frac{m \vec v}{\tau},\]</div>
+<p>where <span class="math">\(- \frac{m \vec v}{\tau}\)</span> is a damping term.</p>
 <div class="note admonition">
 <p class="first admonition-title">Damping Term</p>
 <p class="last">This damping term can also be interpreted as the mean free time or some kind of probability.</p>
 </div>
 <p>Plugin the current density we could find the equation for current density.</p>
 <div class="math">
-<p><img src="../../_images/math/b45141a9af740fce1b63a0f4ea7e63d7f5c0f63c.png" alt="\vec j &amp;= q n_q \langle \vec v \rangle \\
-&amp; = \vec E \left( \frac{q^2 n_q \tau}{m(1 - i \omega\tau)} \right) \\"/></p>
-</div><p>Ohm&#8217;s law tells us that</p>
+\[\begin{split}\vec j &amp;= q n_q \langle \vec v \rangle \\
+&amp; = \vec E \left( \frac{q^2 n_q \tau}{m(1 - i \omega\tau)} \right) \\\end{split}\]</div>
+<p>Ohm&#8217;s law tells us that</p>
 <div class="math">
-<p><img src="../../_images/math/42a0d618fdbe2a986eb8b1ff6763d69d414ada76.png" alt="\vec j = \sigma \vec E."/></p>
-</div><p>Now we can have a phenomelogical conductivity from Drude model,</p>
+\[\vec j = \sigma \vec E.\]</div>
+<p>Now we can have a phenomelogical conductivity from Drude model,</p>
 <div class="math">
-<p><img src="../../_images/math/cfecf376b7b3907c62755ece43eeab03ce574ae3.png" alt="\sigma(\omega) = \frac{q^2 n_q \tau}{m(1 - i \omega\tau)}."/></p>
-</div></div>
+\[\sigma(\omega) = \frac{q^2 n_q \tau}{m(1 - i \omega\tau)}.\]</div>
+</div>
 <div class="section" id="maxwell-s-equation-in-neutral-matter">
 <h3>Maxwell&#8217;s Equation in Neutral Matter<a class="headerlink" href="#maxwell-s-equation-in-neutral-matter" title="Permalink to this headline">¶</a></h3>
 <p>Pluging in the current density we calculated previously, the Maxwell&#8217;s equation becomes</p>
 <div class="math">
-<p><img src="../../_images/math/f7ce54a06afde5ebac6075db081f0c8ac82ec7d5.png" alt="\vec k \cdot \vec D &amp;= 4\pi \rho, \\
+\[\begin{split}\vec k \cdot \vec D &amp;= 4\pi \rho, \\
 \vec k \cdot \vec B &amp; = 0, \\
 \vec k \times \vec E &amp; = -\frac{1}{c} (-i\omega) \vec B, \\
-\vec k \times \vec H &amp; = \frac{1}{c} (-i\omega) \epsilon \vec E + \frac{4\pi}{c} \sigma \vec E."/></p>
-</div><p>Comparing with the equations in matter without free charge, where the transverse wave satisfies</p>
+\vec k \times \vec H &amp; = \frac{1}{c} (-i\omega) \epsilon \vec E + \frac{4\pi}{c} \sigma \vec E.\end{split}\]</div>
+<p>Comparing with the equations in matter without free charge, where the transverse wave satisfies</p>
 <div class="math">
-<p><img src="../../_images/math/f2105d2ddb86a3544bf641778d23b5aa9f58e317.png" alt="\vec k \cdot \vec E &amp;= 0, \\
+\[\begin{split}\vec k \cdot \vec E &amp;= 0, \\
 \vec k \cdot \vec B &amp;=0, \\
 \vec k \times \vec E &amp;= \frac{\omega}{c} \vec B, \\
-\vec k \times \vec H &amp; = -\frac{\omega}{c} \vec D"/></p>
-</div><p>we can find the expression for permitivity,</p>
+\vec k \times \vec H &amp; = -\frac{\omega}{c} \vec D\end{split}\]</div>
+<p>we can find the expression for permitivity,</p>
 <div class="math">
-<p><img src="../../_images/math/037c1e37ed91d29e64f57d2d20758b93a194123a.png" alt="\epsilon = 1 + \frac{i \omega_p^2 \tau}{\omega(1- i\omega \tau)}."/></p>
-</div><p>since <img class="math" src="../../_images/math/26e4eee0f290e960fa832fe726b69c44f0d5230b.png" alt="\mu=1"/>. In the result I defined</p>
+\[\epsilon = 1 + \frac{i \omega_p^2 \tau}{\omega(1- i\omega \tau)}.\]</div>
+<p>since <span class="math">\(\mu=1\)</span>. In the result I defined</p>
 <div class="math">
-<p><img src="../../_images/math/92867a6b659083df25e7b0941bd482b13daec090.png" alt="\omega^2 = e^2n_e\tau/m ."/></p>
-</div><p>The next quantity is to calculate the refractive index with <img class="math" src="../../_images/math/26e4eee0f290e960fa832fe726b69c44f0d5230b.png" alt="\mu=1"/>.</p>
+\[\omega^2 = e^2n_e\tau/m .\]</div>
+<p>The next quantity is to calculate the refractive index with <span class="math">\(\mu=1\)</span>.</p>
 <div class="math">
-<p><img src="../../_images/math/ea8ad06c39ca65d805e5e77ec88e997bf3666083.png" alt="n = \sqrt{\epsilon\mu} = \sqrt{1 + \frac{i \omega_p^2 \tau}{\omega(1- i\omega \tau)} }."/></p>
-</div><p>In the limit of <img class="math" src="../../_images/math/20f2e3d1107576d882bd3a63df576d1afdabfef8.png" alt="\omega \tau \gg 1"/>, refractive index becomes</p>
+\[n = \sqrt{\epsilon\mu} = \sqrt{1 + \frac{i \omega_p^2 \tau}{\omega(1- i\omega \tau)} }.\]</div>
+<p>In the limit of <span class="math">\(\omega \tau \gg 1\)</span>, refractive index becomes</p>
 <div class="math">
-<p><img src="../../_images/math/fbba70d070e1a651cd300c427fe3363e9ceffc3f.png" alt="n^2 = 1 - \frac{\omega_p^2}{\omega^2}."/></p>
-</div></div>
+\[n^2 = 1 - \frac{\omega_p^2}{\omega^2}.\]</div>
+</div>
 <div class="section" id="dispersion-relation">
 <h3>Dispersion Relation<a class="headerlink" href="#dispersion-relation" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../../_images/math/fab89e2fbefa536b71cd4d8adc45e7a5b7942227.png" alt="\vec k \times \vec E &amp;= \frac{\omega}{c} \vec B, \\
-\vec k \times \vec H &amp; = -\frac{\omega}{c} \vec D"/></p>
-</div><p>gives us the dispersion relation. However, we need to make a choice that the field need to be broken into parts that is perpendicular and parallel to wave vector. For the transverse wave, we could write down</p>
+\[\begin{split}\vec k \times \vec E &amp;= \frac{\omega}{c} \vec B, \\
+\vec k \times \vec H &amp; = -\frac{\omega}{c} \vec D\end{split}\]</div>
+<p>gives us the dispersion relation. However, we need to make a choice that the field need to be broken into parts that is perpendicular and parallel to wave vector. For the transverse wave, we could write down</p>
 <div class="math">
-<p><img src="../../_images/math/f2ea7d9372b7e262c042ef6588911381f52f68c5.png" alt="k^2 = \frac{\omega}{c}\epsilon."/></p>
-</div></div>
+\[k^2 = \frac{\omega}{c}\epsilon.\]</div>
+</div>
 </div>
 <div class="section" id="lorentz-model">
 <span id="id2"></span><h2>Lorentz Model<a class="headerlink" href="#lorentz-model" title="Permalink to this headline">¶</a></h2>
@@ -296,38 +297,38 @@ nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 <p>In models about matter response to electromagnetic waves, we have to get the permitivity out of it and furthure calculate the refractive index.</p>
 <p>Suppose we already know how to write down polarization,</p>
 <div class="math">
-<p><img src="../../_images/math/3a9d0c20e776e63c6b3a487826181aabceed3863.png" alt="\vec P = n \vec p,"/></p>
-</div><p>which means the polarization is caused by a lot of small dipoles. At this point we are not binded to the calculation of the detailed expression of these small dipoles. Instead we are going to calculate the permitivity first then come back to have a look at the details.</p>
+\[\vec P = n \vec p,\]</div>
+<p>which means the polarization is caused by a lot of small dipoles. At this point we are not binded to the calculation of the detailed expression of these small dipoles. Instead we are going to calculate the permitivity first then come back to have a look at the details.</p>
 <p>In statics we know,</p>
 <div class="math">
-<p><img src="../../_images/math/4b98621c99657849cbbec20e3fd6bbb87d185294.png" alt="\vec D  = \vec E + 4\pi  \vec P \equiv \vec E + 4\pi \chi\vec E = \epsilon \vec E."/></p>
-</div><p>To find <img class="math" src="../../_images/math/d881ac49cfda22889a9ffebf2610dca805c62061.png" alt="\epsilon"/> we need to establish the relation between <img class="math" src="../../_images/math/13b4f72617cefc0f53fc6493114ec04200714fd9.png" alt="\vec P"/> and <img class="math" src="../../_images/math/d8ed03426dcf54f80353a474ef0978a8f72a4e8e.png" alt="\vec E"/> which is equivalently setting up the relation between <img class="math" src="../../_images/math/3c1e9feb358b1390412193fe16fb218b8fdad507.png" alt="n \vec p"/> and <img class="math" src="../../_images/math/d8ed03426dcf54f80353a474ef0978a8f72a4e8e.png" alt="\vec E"/>.</p>
+\[\vec D  = \vec E + 4\pi  \vec P \equiv \vec E + 4\pi \chi\vec E = \epsilon \vec E.\]</div>
+<p>To find <span class="math">\(\epsilon\)</span> we need to establish the relation between <span class="math">\(\vec P\)</span> and <span class="math">\(\vec E\)</span> which is equivalently setting up the relation between <span class="math">\(n \vec p\)</span> and <span class="math">\(\vec E\)</span>.</p>
 <p>Here we introduce Lorentz model. In this context, we consider the case that equation of motion for the charges are governed by</p>
 <div class="math">
-<p><img src="../../_images/math/f4f62e4dd340fb796b893dafa3f045eddbcf1cbb.png" alt="m\ddot {\vec x} = - e\vec E -m \omega_0^2 \vec x - \gamma m \dot{\vec x}."/></p>
-</div><p>Solve the equation of motion we have the relation between <img class="math" src="../../_images/math/1965e2c30cd0d5928cbd589a3f403d94ac59d86f.png" alt="\vec x"/> and <img class="math" src="../../_images/math/d8ed03426dcf54f80353a474ef0978a8f72a4e8e.png" alt="\vec E"/> thus we can write down</p>
+\[m\ddot {\vec x} = - e\vec E -m \omega_0^2 \vec x - \gamma m \dot{\vec x}.\]</div>
+<p>Solve the equation of motion we have the relation between <span class="math">\(\vec x\)</span> and <span class="math">\(\vec E\)</span> thus we can write down</p>
 <div class="math">
-<p><img src="../../_images/math/b97e7e42575f0f97955fa959d78d72496308801a.png" alt="\vec P &amp;=  n \vec p \\
+\[\begin{split}\vec P &amp;=  n \vec p \\
 &amp; = - e n \vec x \\
 &amp; = -e n \frac{-e \vec E/m}{\omega_0^2 - \omega^2 - i \gamma \omega}\\
-&amp; = \frac{e^2 n /m}{\omega_0^2 - \omega^2 - i \gamma \omega}\vec E ."/></p>
-</div><p>Imediately, we have the permitivity</p>
+&amp; = \frac{e^2 n /m}{\omega_0^2 - \omega^2 - i \gamma \omega}\vec E .\end{split}\]</div>
+<p>Imediately, we have the permitivity</p>
 <div class="math">
-<p><img src="../../_images/math/900c381fbf0cd9e942b822fcd510f5b43016e8c8.png" alt="\epsilon &amp;=  \epsilon_0 + 4\pi \chi \\
+\[\begin{split}\epsilon &amp;=  \epsilon_0 + 4\pi \chi \\
 &amp; = 1 + 4\pi \frac{e^2 n /m}{\omega_0^2 - \omega^2 - i \gamma \omega}  \\
-&amp; = 1 + \frac{\omega_p^2}{\omega_0^2 - \omega^2 - i \gamma \omega} ,"/></p>
-</div><p>where we used the definition of plasma frequency</p>
+&amp; = 1 + \frac{\omega_p^2}{\omega_0^2 - \omega^2 - i \gamma \omega} ,\end{split}\]</div>
+<p>where we used the definition of plasma frequency</p>
 <div class="math">
-<p><img src="../../_images/math/2db01ab82f9dd555a4e32c3999022ce2e9e6a61c.png" alt="\omega_p^2 = \frac{4\pi n e^2}{m}."/></p>
-</div><div class="section" id="limits">
+\[\omega_p^2 = \frac{4\pi n e^2}{m}.\]</div>
+<div class="section" id="limits">
 <h3>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">¶</a></h3>
-<p>We have got three important parameters or arguments in Lorentz model, <img class="math" src="../../_images/math/be38f4ee8b2a562e94d6ef19be884da00e294a42.png" alt="\omega_0"/>, <img class="math" src="../../_images/math/09eb07492fdbc0a78bdb9895372d783db4ec6562.png" alt="\omega"/>, <img class="math" src="../../_images/math/bdf8bd9306e1aeef5ebf2ac8836f087b05304983.png" alt="\gamma"/> and on overall <img class="math" src="../../_images/math/332fd15eb99ab94498b9b346dbf75563798b1208.png" alt="\omega_p"/>. One should notice that in normal matter we would see <img class="math" src="../../_images/math/7f125af099d9dfd259d56d911121f88910e46ebe.png" alt="\gamma \ll \omega_0\ll \omega_p"/>.</p>
+<p>We have got three important parameters or arguments in Lorentz model, <span class="math">\(\omega_0\)</span>, <span class="math">\(\omega\)</span>, <span class="math">\(\gamma\)</span> and on overall <span class="math">\(\omega_p\)</span>. One should notice that in normal matter we would see <span class="math">\(\gamma \ll \omega_0\ll \omega_p\)</span>.</p>
 <p>Three limits can be considered,</p>
 <ol class="arabic simple">
-<li>low frequency, <img class="math" src="../../_images/math/09eb07492fdbc0a78bdb9895372d783db4ec6562.png" alt="\omega"/> is very small like <img class="math" src="../../_images/math/42775686031a157e0004d9fb36a712e735dc0089.png" alt="\omega_0 - \omega \gg \gamma"/>;</li>
-<li>critical, <img class="math" src="../../_images/math/394baf4e9e26f0a7404dfe18a2b86eb1ba5d727a.png" alt="\omega  = \omega_0"/> where we have only <img class="math" src="../../_images/math/b0320040f2a82be28859e546b21216ed95c3289c.png" alt="-i\gamma \omega"/> appears in denominator;</li>
-<li>intermediate, <img class="math" src="../../_images/math/147750411cdff404158f69267b4828b193e19a79.png" alt="\omega_0 \ll \omega \ll \omega_p"/>;</li>
-<li>very high frequency, <img class="math" src="../../_images/math/18ea3c21f4add0d06d0fcc5a045173c391139ed5.png" alt="\omega \gg \omega _p"/>.</li>
+<li>low frequency, <span class="math">\(\omega\)</span> is very small like <span class="math">\(\omega_0 - \omega \gg \gamma\)</span>;</li>
+<li>critical, <span class="math">\(\omega  = \omega_0\)</span> where we have only <span class="math">\(-i\gamma \omega\)</span> appears in denominator;</li>
+<li>intermediate, <span class="math">\(\omega_0 \ll \omega \ll \omega_p\)</span>;</li>
+<li>very high frequency, <span class="math">\(\omega \gg \omega _p\)</span>.</li>
 </ol>
 <p>The interesting thing is that in situation 3, we get back to Drude model.</p>
 </div>

@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
@@ -152,7 +153,7 @@
               
                 
   <li>
-    <a href="questions.html" title="Previous Chapter: Quantum Questions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Question...</span>
+    <a href="questions.html" title="Previous Chapter: Quantum Questions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Quest...</span>
     </a>
   </li>
   <li>
@@ -182,7 +183,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="quantum-approximation-methods">
 <h1>Quantum Approximation Methods<a class="headerlink" href="#quantum-approximation-methods" title="Permalink to this headline">¶</a></h1>
@@ -192,11 +193,11 @@
 <h3>Trial functions<a class="headerlink" href="#trial-functions" title="Permalink to this headline">¶</a></h3>
 <p>Some of the calculable trial functions:</p>
 <ol class="arabic simple">
-<li><img class="math" src="../_images/math/95d924f0f1f392de0fd7e81051c29249f0d100ee.png" alt="\psi(x) = \cos\alpha x"/>, for <img class="math" src="../_images/math/5bd6e3fbdb8bf94250a801b1c7d200d8a2103274.png" alt="|\alpha x|&lt;\pi/2"/>, otherwise 0.</li>
-<li><img class="math" src="../_images/math/26aca45267e7681c4c7be593ad4ec268a3b0e182.png" alt="\psi(x) = \alpha^2 - x^2"/>, for <img class="math" src="../_images/math/8183342f765132ed600a8d3c584f9b023227bdbe.png" alt="|x|&lt;\alpha"/>, otherwise 0.</li>
-<li><img class="math" src="../_images/math/f6450d1de33a662c22ae80f9a5b457e062dc90a2.png" alt="\psi(x) = C \exp(-\alpha x^2/2)"/>.</li>
-<li><img class="math" src="../_images/math/92b3a443ff748b1c689b1162ff5cebe1d5aedff1.png" alt="\psi(x) = C(\alpha - |x|)"/>, for <img class="math" src="../_images/math/8183342f765132ed600a8d3c584f9b023227bdbe.png" alt="|x|&lt;\alpha"/>, otherwise 0.</li>
-<li><img class="math" src="../_images/math/c132c6a04b0fd0ca076f99dbb1f73b9b0c4eaa4e.png" alt="\psi(x) = C\sin\alpha x"/>, for <img class="math" src="../_images/math/071d48b46fe32c4d8b691ea64bab7056a8cc2361.png" alt="|\alpha x|&lt;\pi"/>, otherwise 0.</li>
+<li><span class="math">\(\psi(x) = \cos\alpha x\)</span>, for <span class="math">\(|\alpha x|&lt;\pi/2\)</span>, otherwise 0.</li>
+<li><span class="math">\(\psi(x) = \alpha^2 - x^2\)</span>, for <span class="math">\(|x|&lt;\alpha\)</span>, otherwise 0.</li>
+<li><span class="math">\(\psi(x) = C \exp(-\alpha x^2/2)\)</span>.</li>
+<li><span class="math">\(\psi(x) = C(\alpha - |x|)\)</span>, for <span class="math">\(|x|&lt;\alpha\)</span>, otherwise 0.</li>
+<li><span class="math">\(\psi(x) = C\sin\alpha x\)</span>, for <span class="math">\(|\alpha x|&lt;\pi\)</span>, otherwise 0.</li>
 </ol>
 </div>
 <div class="section" id="procedure">
@@ -210,7 +211,7 @@
 <ol class="last loweralpha simple">
 <li>The new problem is just a modification of a known solved problem. Then we can easily find out what really is different and interprete the new problem in terms of the old one.</li>
 <li>If the Hamiltonian have definite parity, the ground state wave function should pick up some parity which is usually even to make it the lowest energy.</li>
-<li>Continious function? A <img class="math" src="../_images/math/19af0a4bd9ff04844748bb3e830e7f8aef0995fc.png" alt="C^\infty"/> Hamiltonian can only have continious functions as solutions for a finite system.</li>
+<li>Continious function? A <span class="math">\(C^\infty\)</span> Hamiltonian can only have continious functions as solutions for a finite system.</li>
 <li>Nodes deteremines the kinetic energy so check the nodes for ground state wave function.</li>
 <li>Check the behivior of the wave function at different limits. In most cases, the Shrödinger equation can be reduced to something solvable at some limits.</li>
 <li><strong>One more thing, the trial function should make the problem calculable.</strong></li>
@@ -224,20 +225,20 @@
 <p>Why don&#8217;t we just use a most general variational method to find out the ground state? Because we will eventually come back to the time-independent Shrödinger equation.</p>
 <p>Suppose we have a functional form</p>
 <div class="math">
-<p><img src="../_images/math/1d6312638c3a3dda886e4b67aa226fc287831d62.png" alt="E(\psi^*, \psi, \lambda) = \int dx \psi^* H \psi - \lambda \left( \int dx \psi^* \psi - 1 \right)"/></p>
-</div><p>The reason we have this Lagrange multiplier method is that the wave function should be normalized and this multiplier provides the degree of freedom. We would only get a wrong result if we don&#8217;t include this DoF.</p>
-<p>Variation of <img class="math" src="../_images/math/4cf35887aa5c836bb286e5f59d026a2cef9523d2.png" alt="\psi^*"/>,</p>
+\[E(\psi^*, \psi, \lambda) = \int dx \psi^* H \psi - \lambda \left( \int dx \psi^* \psi - 1 \right)\]</div>
+<p>The reason we have this Lagrange multiplier method is that the wave function should be normalized and this multiplier provides the degree of freedom. We would only get a wrong result if we don&#8217;t include this DoF.</p>
+<p>Variation of <span class="math">\(\psi^*\)</span>,</p>
 <div class="math">
-<p><img src="../_images/math/00f69bd2360e65c00d407d7a7beae75a82414b5d.png" alt="\delta E = \int dx \delta \psi^* H \psi - \int dx \delta \psi^* \psi = 0"/></p>
-</div><p>Now what?</p>
+\[\delta E = \int dx \delta \psi^* H \psi - \int dx \delta \psi^* \psi = 0\]</div>
+<p>Now what?</p>
 <div class="math">
-<p><img src="../_images/math/4e6718f11ef3ed2d81cd39811ad670d858db09a1.png" alt="H \psi - \lambda \psi = 0"/></p>
-</div><p>Not helpful.</p>
+\[H \psi - \lambda \psi = 0\]</div>
+<p>Not helpful.</p>
 </div>
 </div>
 <div class="section" id="variational-method-and-virial-theorem">
 <h2>Variational Method and Virial Theorem<a class="headerlink" href="#variational-method-and-virial-theorem" title="Permalink to this headline">¶</a></h2>
-<p>For a potential <img class="math" src="../_images/math/ecd78a3dc84542d7c2b9af8ea7129e09510d5a41.png" alt="V(x)=b x^n"/>, we can prove that virial theorem is valid for ground state if we use Gaussian trial function <img class="math" src="../_images/math/3431f085a41ae13cca9d13c15db13c94c00856f1.png" alt="e^{- \alpha x^2/2}"/>.</p>
+<p>For a potential <span class="math">\(V(x)=b x^n\)</span>, we can prove that virial theorem is valid for ground state if we use Gaussian trial function <span class="math">\(e^{- \alpha x^2/2}\)</span>.</p>
 <p>A MMA proof is <a class="reference external" href="assets/mma/variational.nb">here</a>.</p>
 <p>Virial theorem is pretty interesting. It shares the same math with equipartition theorem.</p>
 </div>
@@ -245,31 +246,31 @@
 <h2>WKB<a class="headerlink" href="#wkb" title="Permalink to this headline">¶</a></h2>
 <p>This is a semi-classical method. It is semi classical because we will use the classical momentum</p>
 <div class="math">
-<p><img src="../_images/math/5181136e45ff50655d760e07015c8f247c5b7fad.png" alt="\hbar k(x) = \sqrt{2m (E - V(x))}"/></p>
-</div><p>The following points are important for this method.</p>
+\[\hbar k(x) = \sqrt{2m (E - V(x))}\]</div>
+<p>The following points are important for this method.</p>
 <ol class="arabic" start="0">
-<li><p class="first">WKB start from a classical estimation of wave number at a certain energy <img class="math" src="../_images/math/761167ea27bbf6fdf35071aa61ef2bb21b751f1f.png" alt="E"/> which is later quantified by the Bohr-Sommerfeld quantization rule.</p>
+<li><p class="first">WKB start from a classical estimation of wave number at a certain energy <span class="math">\(E\)</span> which is later quantified by the Bohr-Sommerfeld quantization rule.</p>
 </li>
 <li><p class="first">Conservation law:</p>
 <div class="math">
-<p><img src="../_images/math/57154832040bc7761e71bb5e311bbc5aa7fbf89c.png" alt="\frac{\partial}{\partial t}\rho + \nabla \cdot \vec j = 0"/></p>
-</div><p>where <img class="math" src="../_images/math/0eaa75462b2ecf2b61062ee4960b42f6cf836c79.png" alt="\rho = \psi^* \psi"/>, <img class="math" src="../_images/math/8c3f1cb10966452f787defa9889344dd41940897.png" alt="\vec j = -\frac{\hbar}{2 m i} \left( \psi \nabla \psi^* - \psi^* \nabla \psi \right)"/>. This can be derived from Shrödinger equation easily.</p>
+\[\frac{\partial}{\partial t}\rho + \nabla \cdot \vec j = 0\]</div>
+<p>where <span class="math">\(\rho = \psi^* \psi\)</span>, <span class="math">\(\vec j = -\frac{\hbar}{2 m i} \left( \psi \nabla \psi^* - \psi^* \nabla \psi \right)\)</span>. This can be derived from Shrödinger equation easily.</p>
 </li>
 <li><p class="first">Phase:
-Wave function is generally <img class="math" src="../_images/math/91ba50e0e92620c9e4e25df311e6bd98862a5dd7.png" alt="A(x)\exp(\phi(x))"/>. However, <img class="math" src="../_images/math/edbcb1e9c2b13f8c5116510643d17b6d3f5e87a6.png" alt="\phi(x)"/> should be the area of the phase function starting from some initial point. For example in WKB, <img class="math" src="../_images/math/d4a1cbd05e5b7a0ea8e68f2a2e74c767c91d77f5.png" alt="k(x) = \phi'(x)"/> and <img class="math" src="../_images/math/715f6f34b7c19dabbf4fc41785522b68a32326a5.png" alt="\phi(x) = \int \phi'(x')d x' = \int k(x') d x'"/>.</p>
-<p>Using this general wave function and conservation law we find out that <img class="math" src="../_images/math/824bfa59a8ef90fd8cc21a5fdb201455c90a2c4e.png" alt="A(x) ~ \frac{1}{\sqrt{k(x)}}"/>. Then we can apply the two boundary conditions. However we will find two different wave functions given by two boundary conditions. Now we should connect them because <img class="math" src="../_images/math/64556f6e2c6c957c299c8b1ad0c5491c76836587.png" alt="\psi(a) = \psi(b)"/> exactly. By comparing the two wave functions we can find something like Bohr-Sommerfeld quantization rule.</p>
+Wave function is generally <span class="math">\(A(x)\exp(\phi(x))\)</span>. However, <span class="math">\(\phi(x)\)</span> should be the area of the phase function starting from some initial point. For example in WKB, <span class="math">\(k(x) = \phi'(x)\)</span> and <span class="math">\(\phi(x) = \int \phi'(x')d x' = \int k(x') d x'\)</span>.</p>
+<p>Using this general wave function and conservation law we find out that <span class="math">\(A(x) ~ \frac{1}{\sqrt{k(x)}}\)</span>. Then we can apply the two boundary conditions. However we will find two different wave functions given by two boundary conditions. Now we should connect them because <span class="math">\(\psi(a) = \psi(b)\)</span> exactly. By comparing the two wave functions we can find something like Bohr-Sommerfeld quantization rule.</p>
 </li>
 <li><p class="first">Correction at bouldary:
 However, this method requires that the potential varies slowly or equivalently the wave number varies slowly. Basicly we are just using the following approximation:</p>
 <div class="math">
-<p><img src="../_images/math/59d697e6e9c50c0104bcb25432da95617f6bcc5d.png" alt="A'(x) = 0, k'(x) = 0"/></p>
-</div><p>For example when taking the derivative of wave function,</p>
+\[A'(x) = 0, k'(x) = 0\]</div>
+<p>For example when taking the derivative of wave function,</p>
 <div class="math">
-<p><img src="../_images/math/4c0566dfb4f713a57f786280dad170512714cc58.png" alt="\psi'(x) = A'(x) e^{i\int \cdots} + A(x) k(x) e^{i\int \cdots} \approx A(x) k(x) e^{i\int \cdots}"/></p>
-</div><p>where we drop the term with <img class="math" src="../_images/math/12e202bb40dd7727279b06ea9ec56afc6b273b40.png" alt="A'(x)"/>. That is to say</p>
+\[\psi'(x) = A'(x) e^{i\int \cdots} + A(x) k(x) e^{i\int \cdots} \approx A(x) k(x) e^{i\int \cdots}\]</div>
+<p>where we drop the term with <span class="math">\(A'(x)\)</span>. That is to say</p>
 <div class="math">
-<p><img src="../_images/math/9813ff8f11feb3012090a1f911937dc2da7b8059.png" alt="|A'|\ll |A k| \Rightarrow |k'| \ll k^2"/></p>
-</div><p>But at boundary where <img class="math" src="../_images/math/b7d8d406d56c84f407ed48167e0d1aa948072b8f.png" alt="E = V"/>, this is obviously not valid because <img class="math" src="../_images/math/b23cea86bef1d044ef33d76be9076257ae06c3e3.png" alt="k=0"/>. So we need to fix this problem.</p>
+\[|A'|\ll |A k| \Rightarrow |k'| \ll k^2\]</div>
+<p>But at boundary where <span class="math">\(E = V\)</span>, this is obviously not valid because <span class="math">\(k=0\)</span>. So we need to fix this problem.</p>
 <p>The solution is to use first order of the potential in a Taylor expansion. Then solve the problem exactly. Finally we connect regions that is far out from the boundary, need the boundary and between the boundary.</p>
 </li>
 </ol>

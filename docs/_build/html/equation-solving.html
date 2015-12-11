@@ -26,6 +26,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/rrssb.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
@@ -156,11 +157,11 @@
               
                 
   <li>
-    <a href="special-functions.html" title="Previous Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Function...</span>
+    <a href="special-functions.html" title="Previous Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Funct...</span>
     </a>
   </li>
   <li>
-    <a href="classicalMechanics.html" title="Next Chapter: Classical Mechanics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Classical Mechan... &raquo;</span>
+    <a href="classicalMechanics.html" title="Next Chapter: Classical Mechanics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Classical Mec... &raquo;</span>
     </a>
   </li>
               
@@ -186,7 +187,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="equation-solving">
 <h1>Equation Solving<a class="headerlink" href="#equation-solving" title="Permalink to this headline">¶</a></h1>
@@ -207,240 +208,104 @@
 </ol>
 <div class="section" id="green-s-function">
 <h3>Green&#8217;s Function<a class="headerlink" href="#green-s-function" title="Permalink to this headline">¶</a></h3>
-<p>Suppose we have a differential operator <img class="math" src="_images/math/f039cb63e0a1af75d36039e798ff668cb4cd4498.png" alt="L_x"/>, for example <img class="math" src="_images/math/f039cb63e0a1af75d36039e798ff668cb4cd4498.png" alt="L_x"/> can be <img class="math" src="_images/math/d02b6fe7988a11a26b6ab6052c5bee1d9f5dfcb4.png" alt="L_x\equiv \frac{d^2}{dx^2}+1"/>. The definition of GF is</p>
+<p>Suppose we have a differential operator <span class="math">\(L_x\)</span>, for example <span class="math">\(L_x\)</span> can be <span class="math">\(L_x\equiv \frac{d^2}{dx^2}+1\)</span>. The definition of GF is</p>
 <div class="math">
-<p><img src="_images/math/be7202bbb2df114dad9fc301084393f11a2523fe.png" alt="L_x G(x,z) = \delta(x-z)."/></p>
-</div><p>with the constrain of boundary condition of the ODE.</p>
+\[L_x G(x,z) = \delta(x-z).\]</div>
+<p>with the constrain of boundary condition of the ODE.</p>
 <p>In most cases, GF is a stepwised function.</p>
 <p>The application of GF to ODE follows the precedure,</p>
 <ol class="arabic">
-<li><p class="first">Find the general form of GF for operator <img class="math" src="_images/math/f039cb63e0a1af75d36039e798ff668cb4cd4498.png" alt="L_x"/>;</p>
+<li><p class="first">Find the general form of GF for operator <span class="math">\(L_x\)</span>;</p>
 </li>
 <li><p class="first">Apply BC to GF;</p>
 </li>
-<li><p class="first">Continuity at <img class="math" src="_images/math/28c6865f102ab81afd7e64f95146e9815fe72198.png" alt="n-2"/> order of derivatives at point <img class="math" src="_images/math/21fccec77ee8243b0fc5c6bee1b99daabd261bc7.png" alt="x=z"/>, i.e., <img class="math" src="_images/math/222645fdb9010021b2df34b618a4e46c601c1638.png" alt="G^{(n-2)}(x,z)\vert_{x&lt;z} = G^{(n-2)}(x,z)\vert_{x&gt;z}"/> at <img class="math" src="_images/math/21fccec77ee8243b0fc5c6bee1b99daabd261bc7.png" alt="x=z"/>;</p>
+<li><p class="first">Continuity at <span class="math">\(n-2\)</span> order of derivatives at point <span class="math">\(x=z\)</span>, i.e., <span class="math">\(G^{(n-2)}(x,z)\vert_{x&lt;z} = G^{(n-2)}(x,z)\vert_{x&gt;z}\)</span> at <span class="math">\(x=z\)</span>;</p>
 </li>
-<li><p class="first">Discontinuity of the first order derivative at <img class="math" src="_images/math/21fccec77ee8243b0fc5c6bee1b99daabd261bc7.png" alt="x=z"/>, i.e., <img class="math" src="_images/math/cd886afc16abad1ea5422703c59b5b47efd9d348.png" alt="G^{(n-1)}(x,z)\vert_{x&gt;z} - G^{(n-1)}(x,z)\vert_{x&lt;z} = 1"/> at point <img class="math" src="_images/math/21fccec77ee8243b0fc5c6bee1b99daabd261bc7.png" alt="x=z"/>;</p>
+<li><p class="first">Discontinuity of the first order derivative at <span class="math">\(x=z\)</span>, i.e., <span class="math">\(G^{(n-1)}(x,z)\vert_{x&gt;z} - G^{(n-1)}(x,z)\vert_{x&lt;z} = 1\)</span> at point <span class="math">\(x=z\)</span>;</p>
 </li>
 <li><p class="first">Solve the coefficients to get the GF;</p>
 </li>
-<li><p class="first">The solution to an inhomogeneous ODE <img class="math" src="_images/math/1106f5cbdf41de3bcf98c07b2b4ce76c6940d360.png" alt="L_x y(x) = f(x)"/> is given immediately by</p>
+<li><p class="first">The solution to an inhomogeneous ODE <span class="math">\(L_x y(x) = f(x)\)</span> is given immediately by</p>
 <div class="math">
-<p><img src="_images/math/398f6245b15ced7e3356b8337a705e427dec2a0c.png" alt="y(x) = \int_{Lower}^{Upper} G(x,z) f(z) dz"/></p>
-</div></li>
+\[y(x) = \int_{Lower}^{Upper} G(x,z) f(z) dz\]</div>
+</li>
 </ol>
 <div class="note admonition" id="greenfunctionexample">
 <p class="first admonition-title">An Example</p>
 <p>Solve equation</p>
 <div class="math">
-<p><img src="_images/math/599e61ecabde07f3688e88aa8b14b692885ed904.png" alt="y'' + \frac{1}{4}y = f(x)."/></p>
-</div><p>{bf Green&#8217;s Function }</p>
-<p>The operator is <img class="math" src="_images/math/d6bf7f8c6a806dd594fd116f930a07ca90923369.png" alt="\hat L = \partial^2 + 1/4"/> with boundary condition <img class="math" src="_images/math/2c8b70b29b8acbb4f68fe7b0c971245a3c4cb5c3.png" alt="y(0)=y(\pi)=0"/> .</p>
+\[y'' + \frac{1}{4}y = f(x).\]</div>
+<p>{bf Green&#8217;s Function }</p>
+<p>The operator is <span class="math">\(\hat L = \partial^2 + 1/4\)</span> with boundary condition <span class="math">\(y(0)=y(\pi)=0\)</span> .</p>
 <p>First step is to find the Green&#8217;s function of this operator, which is defined as the solution to</p>
 <div class="math">
-<p><img src="_images/math/e0f2ba84248a049d9a055c582ef04d45df7d731f.png" alt="\hat L G(x,x') = \delta(x-x'),"/></p>
-</div><p>where <img class="math" src="_images/math/08bd6b6e833a5ba1eb27be7f03be12a3c9267759.png" alt="\hat L"/> only operates on <img class="math" src="_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> not <img class="math" src="_images/math/a212e5354368a2a0a60f7caca897731d3eefd81c.png" alt="x'"/>.</p>
-<p>The general solutions for <img class="math" src="_images/math/d00c790c0bfad9019adad4e48528fc7fcf80a25d.png" alt="\hat L G(x,x')=0"/> is</p>
+\[\hat L G(x,x') = \delta(x-x'),\]</div>
+<p>where <span class="math">\(\hat L\)</span> only operates on <span class="math">\(x\)</span> not <span class="math">\(x'\)</span>.</p>
+<p>The general solutions for <span class="math">\(\hat L G(x,x')=0\)</span> is</p>
 <div class="math">
-<p><img src="_images/math/558bc4349859edf0e031bc6be2275496f344a9c8.png" alt="G(x,x') = A\cos(x/2) + B \sin(x/2)."/></p>
-</div><p>Applying the BC, we reach a step function expression for <img class="math" src="_images/math/b4208a3f0b76769f7bf80b9ab54a75db827ae24b.png" alt="G(x,x')"/>,</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">G(x,x') &amp;=    B\sin(x/2) , \text{if} 0\leq x \lt x' , \\
-&amp;=A\cos(x/2) , \text{if} x'\lt x \leq \pi .
-
-</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2014/05/01&gt;
-Babel &lt;3.9k&gt; and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/utf8x.def))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/ucs.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/data/uni-global.def))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?&#8217; option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/doublestroke/dsfont.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/slashed.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/yfonts/yfonts.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/latexsym.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/dvips.def))) (./math.aux
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/ucsencs.def)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd)
-! Undefined control sequence.
-&lt;argument&gt; ...\sin (x/2) , \text {if} 0\leq x \lt 
-                                                  x&#8217; , \\ &amp;=A\cos (x/2) , \t...
-l.155 \end{gather}
-                  
-! Undefined control sequence.
-&lt;recently read&gt; \lt 
-                    
-l.155 \end{gather}
-                  
-! Undefined control sequence.
-&lt;argument&gt; ...\sin (x/2) , \text {if} 0\leq x \lt 
-                                                  x&#8217; , \\ &amp;=A\cos (x/2) , \t...
-l.155 \end{gather}
-                  
-! Undefined control sequence.
-&lt;recently read&gt; \lt 
-                    
-l.155 \end{gather}
-                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 548 bytes).
-Transcript written on math.log.
-</div>
+\[G(x,x') = A\cos(x/2) + B \sin(x/2).\]</div>
+<p>Applying the BC, we reach a step function expression for <span class="math">\(G(x,x')\)</span>,</p>
+<div class="math">
+\[\begin{split}G(x,x') &amp;=    B\sin(x/2) , \text{if} 0\leq x \lt x' , \\
+&amp;=A\cos(x/2) , \text{if} x'\lt x \leq \pi .\end{split}\]</div>
 <p>{bf Continuity and Discontinuity }</p>
 <p>It is required by the equation for Green&#8217;s function that,</p>
 <div class="math">
-<p><img src="_images/math/8142ee10f9128d5f6a1feaa06b1add954e81be47.png" alt="G(x',x') = A \sin(x'/2) = B \cos(x'/2),"/></p>
-</div><p>and</p>
+\[G(x',x') = A \sin(x'/2) = B \cos(x'/2),\]</div>
+<p>and</p>
 <div class="math">
-<p><img src="_images/math/97bd460e1dd3a1a9c17af56249b22c002b158905.png" alt="\frac{d G}{d x}\vert_{x'+} - \frac{dG}{dx}\vert_{x'-} = 1 ."/></p>
-</div><p>Put the expressions for Green&#8217;s function in, we can solve the coefficients,</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">G(x,x') &amp;=  -2 \cos(x'/2)\sin(x/2) , \text{if} 0\leq x \lt x' ,\\
-&amp;= -2 \sin(x'/2)\cos(x/2) , \text{if} x' \lt x \leq \pi .
-
-</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2014/05/01&gt;
-Babel &lt;3.9k&gt; and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/utf8x.def))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/ucs.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/data/uni-global.def))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?&#8217; option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/doublestroke/dsfont.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/slashed.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/yfonts/yfonts.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/latexsym.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/dvips.def))) (./math.aux
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/ucsencs.def)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd)
-! Undefined control sequence.
-&lt;argument&gt; ...\sin (x/2) , \text {if} 0\leq x \lt 
-                                                  x&#8217; ,\\ &amp;= -2 \sin (x&#8217;/2)\c...
-l.155 \end{gather}
-                  
-! Undefined control sequence.
-&lt;argument&gt; ...x&#8217;/2)\cos (x/2) , \text {if} x&#8217; \lt 
-                                                  x \leq \pi .\end {split}\n...
-l.155 \end{gather}
-                  
-! Undefined control sequence.
-&lt;argument&gt; ...\sin (x/2) , \text {if} 0\leq x \lt 
-                                                  x&#8217; ,\\ &amp;= -2 \sin (x&#8217;/2)\c...
-l.155 \end{gather}
-                  
-! Undefined control sequence.
-&lt;argument&gt; ...x&#8217;/2)\cos (x/2) , \text {if} x&#8217; \lt 
-                                                  x \leq \pi .\end {split}\n...
-l.155 \end{gather}
-                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 608 bytes).
-Transcript written on math.log.
-</div>
+\[\frac{d G}{d x}\vert_{x'+} - \frac{dG}{dx}\vert_{x'-} = 1 .\]</div>
+<p>Put the expressions for Green&#8217;s function in, we can solve the coefficients,</p>
+<div class="math">
+\[\begin{split}G(x,x') &amp;=  -2 \cos(x'/2)\sin(x/2) , \text{if} 0\leq x \lt x' ,\\
+&amp;= -2 \sin(x'/2)\cos(x/2) , \text{if} x' \lt x \leq \pi .\end{split}\]</div>
 <p>In one line this can be written as,</p>
 <div class="math">
-<p><img src="_images/math/028335ccd7b78073b9d26a78be8d3f2a2579c343.png" alt="G(x,x') = -2 \sin(x_&lt;/2)\cos(x_&gt;/2) ."/></p>
-</div><p class="last">The final step is to find the solution to original equaion, which is straightforward.</p>
+\[\begin{split}G(x,x') = -2 \sin(x_&lt;/2)\cos(x_&gt;/2) .\end{split}\]</div>
+<p class="last">The final step is to find the solution to original equaion, which is straightforward.</p>
 </div>
 </div>
 <div class="section" id="series-solution">
 <h3>Series Solution<a class="headerlink" href="#series-solution" title="Permalink to this headline">¶</a></h3>
 <p>A second order ODE,</p>
 <div class="math">
-<p><img src="_images/math/d7791b886a546a01254ea3ebbae81fd1a120c43e.png" alt="y''(x)+p(x) y'(x) + q(x)y(x)=0"/></p>
-</div><p>Wronskian of this is</p>
+\[y''(x)+p(x) y'(x) + q(x)y(x)=0\]</div>
+<p>Wronskian of this is</p>
 <div class="math">
-<p><img src="_images/math/0367a5240720978a2251ff0d713291c0823952a6.png" alt="W(x) = \begin{vmatrix} y_1 &amp; y_2 \\ y_1' &amp; y_2' \end{vmatrix},"/></p>
-</div><p>where <img class="math" src="_images/math/ddaf95c3020bc9ea51ec040e182267aa98469399.png" alt="y_1"/> and <img class="math" src="_images/math/0e00d7bd204832b5c379ea4c156946ce1d160187.png" alt="y_2"/> are linearly independent solutions, i.e., <img class="math" src="_images/math/7a97cf39a22c0f19851eb2c3d853cb3427889575.png" alt="c_1 y_1 + c_2 y_2=0"/> is only satisfied when <img class="math" src="_images/math/b5c21fc8991808a0296db67da40d9702c6c68d26.png" alt="c_1=c_2=0"/>. <strong>Wronskian is NOT zero if they are linearly independent.</strong></p>
-<p>Singularities of an ODE is are defined when <img class="math" src="_images/math/4b6944df0a6bd805ef7a8e26751eb9956419b1d5.png" alt="p(x)"/> or <img class="math" src="_images/math/4d4a0fec788778b2bf8e62a0321660be8714b282.png" alt="q(x)"/> or both of them have singular points. For example, Legendre equation</p>
+\[\begin{split}W(x) = \begin{vmatrix} y_1 &amp; y_2 \\ y_1' &amp; y_2' \end{vmatrix},\end{split}\]</div>
+<p>where <span class="math">\(y_1\)</span> and <span class="math">\(y_2\)</span> are linearly independent solutions, i.e., <span class="math">\(c_1 y_1 + c_2 y_2=0\)</span> is only satisfied when <span class="math">\(c_1=c_2=0\)</span>. <strong>Wronskian is NOT zero if they are linearly independent.</strong></p>
+<p>Singularities of an ODE is are defined when <span class="math">\(p(x)\)</span> or <span class="math">\(q(x)\)</span> or both of them have singular points. For example, Legendre equation</p>
 <div class="math">
-<p><img src="_images/math/9548d0b0cbe47103f1f166cf82ea98245e99c613.png" alt="(1-z^2) y'' - 2 z y' + l(l+1) y = 0"/></p>
-</div><p>has three singular points which are <img class="math" src="_images/math/3148b64a13d66d04882a3ecfe53004a0ded7ff23.png" alt="z=\pm 1, \infty"/> while <img class="math" src="_images/math/3b27f9abde92e216defdf11012756b9b6ad0e058.png" alt="z=0"/> is an ordinary point.</p>
+\[(1-z^2) y'' - 2 z y' + l(l+1) y = 0\]</div>
+<p>has three singular points which are <span class="math">\(z=\pm 1, \infty\)</span> while <span class="math">\(z=0\)</span> is an ordinary point.</p>
 <div class="section" id="solution-at-ordinary-points">
 <h4>Solution at Ordinary Points<a class="headerlink" href="#solution-at-ordinary-points" title="Permalink to this headline">¶</a></h4>
 <p>Series expansion of the solution can be as simple as</p>
 <div class="math">
-<p><img src="_images/math/7a58724857fe943e762a51e34c28c9acd0ee26b0.png" alt="y(z) = \sum_{n=0}^{\infty} a_n z^n,"/></p>
-</div><p>which converges in a radius <img class="math" src="_images/math/c161803cd431bb2da4622f78af748292215cd052.png" alt="R"/> where <img class="math" src="_images/math/c161803cd431bb2da4622f78af748292215cd052.png" alt="R"/> is the distance from <img class="math" src="_images/math/3b27f9abde92e216defdf11012756b9b6ad0e058.png" alt="z=0"/> to the nearest singular point of our ODE.</p>
+\[y(z) = \sum_{n=0}^{\infty} a_n z^n,\]</div>
+<p>which converges in a radius <span class="math">\(R\)</span> where <span class="math">\(R\)</span> is the distance from <span class="math">\(z=0\)</span> to the nearest singular point of our ODE.</p>
 </div>
 <div class="section" id="solution-at-regular-singular-points">
 <h4>Solution at Regular Singular Points<a class="headerlink" href="#solution-at-regular-singular-points" title="Permalink to this headline">¶</a></h4>
 <p>Frobenius series of the solution</p>
 <div class="math">
-<p><img src="_images/math/718a450ba51efe4fa51e0af1cfbcb73558058b50.png" alt="y(z) = z^\sigma \sum_{n=0}^{\infty} a_n z^n."/></p>
-</div><p>The next task is to find the indicial equation.</p>
-<p>If the roots are not differing by an integer, we just plug the two solutions to <img class="math" src="_images/math/91819f85c6b6abf1a340372426fffab40c721d1a.png" alt="\sigma"/> in and find two solutions independently.</p>
+\[y(z) = z^\sigma \sum_{n=0}^{\infty} a_n z^n.\]</div>
+<p>The next task is to find the indicial equation.</p>
+<p>If the roots are not differing by an integer, we just plug the two solutions to <span class="math">\(\sigma\)</span> in and find two solutions independently.</p>
 <p>If the roots differ by an integer, on the other side, we can only plug in the <strong>larger</strong> root and find one solution. As for the second solution, we need some other techniques, such as Wronskian method and derivative method.</p>
 <p><strong>Wronskian method</strong> requires two expression of Wronskian, which are</p>
 <div class="math">
-<p><img src="_images/math/384ab1f0aa078b4ab9549114e51a5fe8a63873d7.png" alt="W(x) = \begin{vmatrix} y_1 &amp; y_2 \\ y_1' &amp; y_2' \end{vmatrix} ,"/></p>
-</div><p>and</p>
+\[\begin{split}W(x) = \begin{vmatrix} y_1 &amp; y_2 \\ y_1' &amp; y_2' \end{vmatrix} ,\end{split}\]</div>
+<p>and</p>
 <div class="math">
-<p><img src="_images/math/d3e3b451513089a281e6b516c30997c60916cee2.png" alt="W(z) = C e^{-\int^z p(u) \mathrm du}."/></p>
-</div><p>From the first expression, we have</p>
+\[W(z) = C e^{-\int^z p(u) \mathrm du}.\]</div>
+<p>From the first expression, we have</p>
 <div class="math">
-<p><img src="_images/math/9f55ecadb98c002447a0723e5729892aa8379e5e.png" alt="y_2(z) = y_1(z) \int^z \frac{W(u)}{y_1(u)^2} \mathrm d u."/></p>
-</div><p>However, we don&#8217;t know <img class="math" src="_images/math/af3713aa28c0f9ad0933e4d5de20e18637c3e2aa.png" alt="W(z)"/> at this point. We should apply the second expression of Wronskian,</p>
+\[y_2(z) = y_1(z) \int^z \frac{W(u)}{y_1(u)^2} \mathrm d u.\]</div>
+<p>However, we don&#8217;t know <span class="math">\(W(z)\)</span> at this point. We should apply the second expression of Wronskian,</p>
 <div class="math">
-<p><img src="_images/math/d159e10d1ba75c388249607ac4fab19a83095098.png" alt="y_2(z) = y_1(z) \int^z \frac{C e^{-\int^z p(u) \mathrm du}}{y_1(u)^2} \mathrm d u,"/></p>
-</div><p>where the constant <img class="math" src="_images/math/303afcf2a97cacc905280ea44e90a86101cf900e.png" alt="C"/> can be set to 1 as one wish.</p>
+\[y_2(z) = y_1(z) \int^z \frac{C e^{-\int^z p(u) \mathrm du}}{y_1(u)^2} \mathrm d u,\]</div>
+<p>where the constant <span class="math">\(C\)</span> can be set to 1 as one wish.</p>
 <div class="warning admonition">
 <p class="first admonition-title">TO DO</p>
 <p class="last">The <strong>derivative method</strong> is on my to do list.</p>
@@ -451,72 +316,72 @@ Transcript written on math.log.
 <h3>Comparing With A General Form<a class="headerlink" href="#comparing-with-a-general-form" title="Permalink to this headline">¶</a></h3>
 <p>For equation that take the following form,</p>
 <div class="math">
-<p><img src="_images/math/fa414876ee41da438ffc5f0cf37566410111a0df.png" alt="y'' + \frac{1 - 2a}{x} y' + \left( (b c x^{c-1})^2 + \frac{a^2 - p^2 c^2}{x^2} \right) y = 0,"/></p>
-</div><p>where <img class="math" src="_images/math/7de29c470b85dfadd5efe86a27deaf806721b7bf.png" alt="y\equiv y(x)"/>, we can write down the solutions immediately,</p>
+\[y'' + \frac{1 - 2a}{x} y' + \left( (b c x^{c-1})^2 + \frac{a^2 - p^2 c^2}{x^2} \right) y = 0,\]</div>
+<p>where <span class="math">\(y\equiv y(x)\)</span>, we can write down the solutions immediately,</p>
 <div class="math">
-<p><img src="_images/math/b8ab35d93debcc2c3bbfb9c28121a73c45e89b6d.png" alt="y(x) = x^a \mathscr {Z}_p (b x^c),"/></p>
-</div><p>in which <img class="math" src="_images/math/e0f39c81fdfea17a8b073107e687756a6eeb59f9.png" alt="\mathscr {Z}_p"/> is the solution to Bessel equation, i.e., is one kind of Bessel function with index <img class="math" src="_images/math/34f235002c18243fd9108207068e2793c5e81b89.png" alt="p"/>.</p>
+\[y(x) = x^a \mathscr {Z}_p (b x^c),\]</div>
+<p>in which <span class="math">\(\mathscr {Z}_p\)</span> is the solution to Bessel equation, i.e., is one kind of Bessel function with index <span class="math">\(p\)</span>.</p>
 <div class="note admonition">
 <p class="first admonition-title">A Pendulum With A Uniformly Chaning String Length</p>
 <blockquote class="last">
 <div><p>As an example, let&#8217;s consider the case of length changing pendulum,</p>
 <div class="math">
-<p><img src="_images/math/385c31f93355fa2f0c5fe42971d73ab7e9fc35af.png" alt="\frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta."/></p>
-</div><p>Notice that l is a function of time and</p>
+\[\frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.\]</div>
+<p>Notice that l is a function of time and</p>
 <div class="math">
-<p><img src="_images/math/7ec43d1f183b924df2f07124030e3e8c3d8a6b28.png" alt="l = l_0 + v t."/></p>
-</div><p>Then the equation can be rewritten as</p>
+\[l = l_0 + v t.\]</div>
+<p>Then the equation can be rewritten as</p>
 <div class="math">
-<p><img src="_images/math/db306dc9c23ef4c2f79cc68e99625228254c8cf9.png" alt="\frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0."/></p>
-</div><p>Comparing with the general form, we have one of the possible solutions</p>
+\[\frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0.\]</div>
+<p>Comparing with the general form, we have one of the possible solutions</p>
 <div class="math">
-<p><img src="_images/math/99f549d9ee3d2cae28528571dee357f35d33f1ed.png" alt="a &amp; = -1/2, \\
+\[\begin{split}a &amp; = -1/2, \\
 pc &amp; = 1/2, \\
 c &amp; = 1/2, \\
 p &amp; = 1, \\
-b &amp; = 2\sqrt{g}/v."/></p>
-</div><p>This solution should be</p>
+b &amp; = 2\sqrt{g}/v.\end{split}\]</div>
+<p>This solution should be</p>
 <div class="math">
-<p><img src="_images/math/60c1f78aae85aa698118380bc80ce77625933cfd.png" alt="\theta  &amp;=  l^a \mathscr{Z}_p(b l^c) \\
-&amp; = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l})."/></p>
-</div></div></blockquote>
+\[\begin{split}\theta  &amp;=  l^a \mathscr{Z}_p(b l^c) \\
+&amp; = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).\end{split}\]</div>
+</div></blockquote>
 </div>
 <div class="note admonition">
 <p class="first admonition-title">Airy Equatioin</p>
 <blockquote class="last">
 <div><p>Time-independent Schrödinger equation with a simple potential,</p>
 <div class="math">
-<p><img src="_images/math/3137f48f49410618c0c3e9dd4659a0831e3e533c.png" alt="\ddot{\Psi} + \alpha x \Psi  = 0."/></p>
-</div><p>Comparing it with general form, we should set</p>
+\[\ddot{\Psi} + \alpha x \Psi  = 0.\]</div>
+<p>Comparing it with general form, we should set</p>
 <div class="math">
-<p><img src="_images/math/66df0657e6041d27d067432299c854884aba7b47.png" alt="a &amp; = 1/2, \\
+\[\begin{split}a &amp; = 1/2, \\
 \lvert p c \rvert &amp; = 1/2, \\
 c &amp; = 3/2, \\
-b^2 c^2 &amp; = \alpha^2."/></p>
-</div><p>So the two possible solutions are</p>
+b^2 c^2 &amp; = \alpha^2.\end{split}\]</div>
+<p>So the two possible solutions are</p>
 <div class="math">
-<p><img src="_images/math/72ecef6f47699db75c2bee48367a65a71cb847a5.png" alt="\Psi_1(x) &amp; = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
-\Psi_2(x) &amp; = \sqrt{x} \mathscr{Z}_{-1/3}(2/3 \alpha x^{3/2})."/></p>
-</div><p>The general solution is</p>
+\[\begin{split}\Psi_1(x) &amp; = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
+\Psi_2(x) &amp; = \sqrt{x} \mathscr{Z}_{-1/3}(2/3 \alpha x^{3/2}).\end{split}\]</div>
+<p>The general solution is</p>
 <div class="math">
-<p><img src="_images/math/58c8753ccca3d13d04b1ba622b6d9db88615403f.png" alt="\Psi(x) = a \Psi_1(x) + b \Psi_2(x)."/></p>
-</div></div></blockquote>
+\[\Psi(x) = a \Psi_1(x) + b \Psi_2(x).\]</div>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="second-order-differential-equations-and-gauss-equation">
 <h3>Second Order Differential Equations and Gauss&#8217; Equation<a class="headerlink" href="#second-order-differential-equations-and-gauss-equation" title="Permalink to this headline">¶</a></h3>
 <p>Gauss&#8217; equation has the form</p>
 <div class="math">
-<p><img src="_images/math/cfa3b0d349cdfe9945231b5b4e3101a15bec7d25.png" alt="z(z-1)\frac{d^2}{dz^2} u(z) + \left[(a+b+1)z -c \right] \frac{d}{dz} u(z) + a b u(z) =0,"/></p>
-</div><p>which has a solution of the hypergeometric function form</p>
+\[z(z-1)\frac{d^2}{dz^2} u(z) + \left[(a+b+1)z -c \right] \frac{d}{dz} u(z) + a b u(z) =0,\]</div>
+<p>which has a solution of the hypergeometric function form</p>
 <div class="math">
-<p><img src="_images/math/9829d0cab33bf6746abec03e512eb97d24c72fe0.png" alt="u(z) = {}_2 F_{1}(a,b;c;z)."/></p>
-</div><p>The interesting this about this equation is that its Paperitz symbol is</p>
+\[u(z) = {}_2 F_{1}(a,b;c;z).\]</div>
+<p>The interesting this about this equation is that its Paperitz symbol is</p>
 <div class="math">
-<p><img src="_images/math/92d3153254360a9492453a59fd6e2233848aff13.png" alt="\begin{amatrix}{3}
+\[\begin{split}\begin{amatrix}{3}
 0 &amp; 1 &amp; \infty &amp;  \\  0 &amp; 0 &amp; a &amp; z \\ 1-c &amp; c-a-b &amp; b &amp;
- \end{amatrix} ,"/></p>
-</div><p>in which the first three columns are the singularities at points <img class="math" src="_images/math/25e60ef3bed1b9962b6fa0c711bc6c8fa01ead2f.png" alt="0,1,\infty"/> while the last column just points out that the argument of this equation is <img class="math" src="_images/math/4c2ad5854b148d9b8534b568e825493e200850a3.png" alt="z"/>.</p>
+ \end{amatrix} ,\end{split}\]</div>
+<p>in which the first three columns are the singularities at points <span class="math">\(0,1,\infty\)</span> while the last column just points out that the argument of this equation is <span class="math">\(z\)</span>.</p>
 <p>This means, in some sense, the solution to any equation with three singularities can be directly written down by comparing the equation with Gauss&#8217; equation. If you care, the actual steps are changing variables, rewriting the equation into Gauss&#8217; equation form, writing down the solutions.</p>
 </div>
 </div>
@@ -525,55 +390,55 @@ b^2 c^2 &amp; = \alpha^2."/></p>
 <div class="section" id="neumann-series-aka-wkb">
 <h3>Neumann Series AKA WKB<a class="headerlink" href="#neumann-series-aka-wkb" title="Permalink to this headline">¶</a></h3>
 <p>For differential equation, whenever the highest derivative is multiplied by a small parameter, try this. But generally, the formalism is the following.</p>
-<p>First of all, we use Hilbert space <img class="math" src="_images/math/c8dc3f02052e99baa872e04c8e0adbb8998bcc4a.png" alt="\mathscr L[a,b;w]"/> which means the space is defined on <img class="math" src="_images/math/513633c450fa07183bbf01d4281db5fb74cae204.png" alt="[a,b]"/> with a weight <img class="math" src="_images/math/a0272f7f1793b17e2345f8afe598f91d168ff0e8.png" alt="w"/>, i.e.,</p>
+<p>First of all, we use Hilbert space <span class="math">\(\mathscr L[a,b;w]\)</span> which means the space is defined on <span class="math">\([a,b]\)</span> with a weight <span class="math">\(w\)</span>, i.e.,</p>
 <div class="math">
-<p><img src="_images/math/70563bb2fedf6c3638a3a44d329c0d7936bbfd29.png" alt="\braket{f}{g} = \int_a^b dx w(x) f(x) g(x)."/></p>
-</div><div class="note admonition">
+\[\braket{f}{g} = \int_a^b dx w(x) f(x) g(x).\]</div>
+<div class="note admonition">
 <p class="first admonition-title">Quantum Mechanics Books</p>
 <p><strong>Notice that this is very different from the notation we used in most QM books.</strong></p>
-<p class="last">What is the catch? Try to write down <img class="math" src="_images/math/0c424afba8785261368cb2cbf947f00d221a1090.png" alt="\braket{x}{u}"/>. It&#8217;s not that different because one can alway go back to the QM notation anyway.</p>
+<p class="last">What is the catch? Try to write down <span class="math">\(\braket{x}{u}\)</span>. It&#8217;s not that different because one can alway go back to the QM notation anyway.</p>
 </div>
 <p>With the help of Hilbert space, one can alway write down the vector form of some operators. Suppose we have an equation</p>
 <div class="math">
-<p><img src="_images/math/99d18fe2e841fd5f0c4174e77c9b889def2a7c30.png" alt="\hat L u(x) = f(x),"/></p>
-</div><p>where <img class="math" src="_images/math/3fd46c8077b02f76ed389e58a2eab93044725c5b.png" alt="\hat L=\hat I + \hat M"/>. So the solution is simply</p>
+\[\hat L u(x) = f(x),\]</div>
+<p>where <span class="math">\(\hat L=\hat I + \hat M\)</span>. So the solution is simply</p>
 <div class="math">
-<p><img src="_images/math/bc5d187a4c1deb6feb6025b5050f615bbe47c74a.png" alt="u(x) &amp;= {\hat L}^{-1} f(x)\\
-&amp;=(\hat I + \hat M)^{-1} f(x) ."/></p>
-</div><p>However, it&#8217;s not a solution until we find the inverse. A most general approach is the Neumann series method. We require that</p>
+\[\begin{split}u(x) &amp;= {\hat L}^{-1} f(x)\\
+&amp;=(\hat I + \hat M)^{-1} f(x) .\end{split}\]</div>
+<p>However, it&#8217;s not a solution until we find the inverse. A most general approach is the Neumann series method. We require that</p>
 <div class="math">
-<p><img src="_images/math/c87696ac78b69c504951c52b6485566568c42965.png" alt="\| \hat M u \| &lt; \gamma \| u \|,"/></p>
-</div><p>where <img class="math" src="_images/math/d14303c400b28e0033cf39936d55013df32aa190.png" alt="\gamma\in (0,1)"/> and should be independent of <img class="math" src="_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/>.</p>
+\[\begin{split}\| \hat M u \| &lt; \gamma \| u \|,\end{split}\]</div>
+<p>where <span class="math">\(\gamma\in (0,1)\)</span> and should be independent of <span class="math">\(x\)</span>.</p>
 <p>As long as this is satisfied, the equation can be solved using Neumann series, which is an iteration method with</p>
 <div class="math">
-<p><img src="_images/math/1e969b434dea82508c35ce861e8d49c3c1468b55.png" alt="u(x)&amp;=u_0(x)+ \delta u_1(x) + \delta^2 u_2(x) +\cdots \\
-u_0(x) &amp; = f(x)."/></p>
-</div><p>As an example, we can solve this equation</p>
+\[\begin{split}u(x)&amp;=u_0(x)+ \delta u_1(x) + \delta^2 u_2(x) +\cdots \\
+u_0(x) &amp; = f(x).\end{split}\]</div>
+<p>As an example, we can solve this equation</p>
 <div class="math">
-<p><img src="_images/math/605728d2916d1daed7a6c0efec324e99c25b64ba.png" alt="(\hat I + \ket{t}\bra{\lambda}) u(t) = f(t)."/></p>
-</div><p>We define <img class="math" src="_images/math/c53dc3e92ca4d0d984b574fb21659d8c05846b9b.png" alt="\hat M = \ket{t}\bra{\lambda}"/> and check the convergence condition for <img class="math" src="_images/math/5b2dec34d043689598329c9568d98d6e3ed1fd33.png" alt="\lambda"/>.</p>
+\[(\hat I + \ket{t}\bra{\lambda}) u(t) = f(t).\]</div>
+<p>We define <span class="math">\(\hat M = \ket{t}\bra{\lambda}\)</span> and check the convergence condition for <span class="math">\(\lambda\)</span>.</p>
 <p>Step one is always checking condition of convergence.</p>
 <p>Step two is to write down the series and zeroth order. Then we reach the key point. The iteration relation is</p>
 <div class="math">
-<p><img src="_images/math/3fdd048da4e6c2d27666e1e6b82ff687b33217f4.png" alt="u_n(t) + \int_0^1 ds su_{n-1}(s) = 0."/></p>
-</div><p>One can write down <img class="math" src="_images/math/bd69f96c680b34b5c4b863a91de59eb76d423d9b.png" alt="u_1"/> imediately</p>
+\[u_n(t) + \int_0^1 ds su_{n-1}(s) = 0.\]</div>
+<p>One can write down <span class="math">\(u_1\)</span> imediately</p>
 <div class="math">
-<p><img src="_images/math/9fce04638c06d59729d3786163e5ca183f165f2c.png" alt="u_1(t) = -\int_0^1 ds s u_0(s)."/></p>
-</div><p>Keep on going.</p>
+\[u_1(t) = -\int_0^1 ds s u_0(s).\]</div>
+<p>Keep on going.</p>
 </div>
 <div class="section" id="using-dyads-in-vector-space">
 <h3>Using Dyads in Vector Space<a class="headerlink" href="#using-dyads-in-vector-space" title="Permalink to this headline">¶</a></h3>
 <p>For the same example,</p>
 <div class="math">
-<p><img src="_images/math/99d18fe2e841fd5f0c4174e77c9b889def2a7c30.png" alt="\hat L u(x) = f(x),"/></p>
-</div><p>where <img class="math" src="_images/math/3fd46c8077b02f76ed389e58a2eab93044725c5b.png" alt="\hat L=\hat I + \hat M"/>, we can solve it using vector space because if operator is linear.</p>
-<p>Suppose we have a <img class="math" src="_images/math/aa53cb9ad22b041c43322b7bd168ca3b8670aa52.png" alt="\hat M=\ket{a}\bra{b}"/>, the equation, in some Hilbert space, is</p>
+\[\hat L u(x) = f(x),\]</div>
+<p>where <span class="math">\(\hat L=\hat I + \hat M\)</span>, we can solve it using vector space because if operator is linear.</p>
+<p>Suppose we have a <span class="math">\(\hat M=\ket{a}\bra{b}\)</span>, the equation, in some Hilbert space, is</p>
 <div class="math">
-<p><img src="_images/math/ba85dd3d84781b87a5a3bc0b527d65dc7c72bc62.png" alt="\ket{u} + \ket{a}\braket{b}{u} = \ket{f}."/></p>
-</div><p>Multiplying through by <img class="math" src="_images/math/3aba79c7bcdbbf41967f8943cbdd839a8b0f0223.png" alt="\bra{b}"/>, we have</p>
+\[\ket{u} + \ket{a}\braket{b}{u} = \ket{f}.\]</div>
+<p>Multiplying through by <span class="math">\(\bra{b}\)</span>, we have</p>
 <div class="math">
-<p><img src="_images/math/74a5fb7a8d6aeea00a073264ca9b39c020c6e596.png" alt="\braket{b}{u} + \braket{b}{a}\braket{b}{u} = \braket{b}{f},"/></p>
-</div><p>which reduces to a linear equation. We only need to solve out <img class="math" src="_images/math/9b03b875ac6c8732413dde224291639ced8da50f.png" alt="\braket{b}{u}"/> then plug it back into the original equation.</p>
+\[\braket{b}{u} + \braket{b}{a}\braket{b}{u} = \braket{b}{f},\]</div>
+<p>which reduces to a linear equation. We only need to solve out <span class="math">\(\braket{b}{u}\)</span> then plug it back into the original equation.</p>
 </div>
 </div>
 </div>

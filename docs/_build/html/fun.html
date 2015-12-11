@@ -26,6 +26,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/rrssb.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
@@ -182,7 +183,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="fun">
 <h1>Fun<a class="headerlink" href="#fun" title="Permalink to this headline">¶</a></h1>
@@ -194,8 +195,8 @@
 <p>Link to this: <a class="reference external" href="#rutherford-atom">rutherford-atom</a></p>
 <p>A Rutherford atom model is the combination of protons and electrons to give us a neutral nucleus.</p>
 <p>Question 1: What is the energy of the electron if we confine it inside the nucleus? Consider only the kinetic energy due to uncertainty principle is enough to construct a contradiction.</p>
-<p>Question 2: From the point of view of nuclear magnetic moment, the electron magnetic moment is way to large. Measurement tells us that nuclei usually have nuclear magnetic moment <img class="math" src="_images/math/13ea96021ba057b62bc3075bea949884e97aa471.png" alt="-3\mu_N"/> to <img class="math" src="_images/math/fb49158b16a99dc1fbb5f0a2eb019740b0a88629.png" alt="10\mu_N"/> where <img class="math" src="_images/math/71456080beb03fe8ca68ddba7a021a4c967e7928.png" alt="\mu_N=e\hbar/2m_p"/> and <img class="math" src="_images/math/8d09facf90015a9538a39466430869ad283c9dee.png" alt="m_p"/> is the mass of proton.</p>
-<p class="last">Hint: The magnetic moment is of the magnitude <img class="math" src="_images/math/a3fffee85a5b0153e81ef766a32c0caa9c43a612.png" alt="e\hbar/2m_x"/>.</p>
+<p>Question 2: From the point of view of nuclear magnetic moment, the electron magnetic moment is way to large. Measurement tells us that nuclei usually have nuclear magnetic moment <span class="math">\(-3\mu_N\)</span> to <span class="math">\(10\mu_N\)</span> where <span class="math">\(\mu_N=e\hbar/2m_p\)</span> and <span class="math">\(m_p\)</span> is the mass of proton.</p>
+<p class="last">Hint: The magnetic moment is of the magnitude <span class="math">\(e\hbar/2m_x\)</span>.</p>
 </div>
 </div>
 <div class="section" id="relativity">
@@ -207,7 +208,7 @@
 <p>This problem is very nicely explained on this page: <a class="reference external" href="http://math.ucr.edu/home/baez/physics/Relativity/SpeedOfLight/Superluminal/superluminal.html">Apparent Superluminal Velocity of Galaxies</a> .</p>
 <div class="last figure align-center" id="id3">
 <img alt="_images/superluminal.gif" src="_images/superluminal.gif" />
-<p class="caption"><span class="caption-text">This is taken form the link metioned above. We measure the distance at 1 Jan then at 1 Feb. The apparent velocity would be the travelled distance divided by 1 month. However, the first measurement only measured the light from a place that is <img class="math" src="_images/math/69b231d723c5d152a266e5e63df15ac0a84fc3a9.png" alt="1+d/c"/> further than the second spot due the the fact that light travels at a finite speed. So the distance we measured is larger than the actual distance at 1 Jan and 1 Feb. Thus leading to a apparent larger velocity and this velocity can exceed the limit of light speed.</span></p>
+<p class="caption"><span class="caption-text">This is taken form the link metioned above. We measure the distance at 1 Jan then at 1 Feb. The apparent velocity would be the travelled distance divided by 1 month. However, the first measurement only measured the light from a place that is <span class="math">\(1+d/c\)</span> further than the second spot due the the fact that light travels at a finite speed. So the distance we measured is larger than the actual distance at 1 Jan and 1 Feb. Thus leading to a apparent larger velocity and this velocity can exceed the limit of light speed.</span></p>
 </div>
 </div>
 </div>
@@ -223,15 +224,15 @@
 <p class="first admonition-title">Maxwell&#8217;s Theory</p>
 <p>The equations could be written as</p>
 <div class="math">
-<p><img src="_images/math/1f8b8940797bfb10f7471f02fe0b41228cb475de.png" alt="\partial_\mu F^{\mu\nu} = 0,"/></p>
-</div><p>where <img class="math" src="_images/math/a862c5053887cfd81791690085afa6f96794b71c.png" alt="F_{\mu\nu} = \partial_\mu A_\nu -\partial_\nu A_\mu"/>.</p>
+\[\partial_\mu F^{\mu\nu} = 0,\]</div>
+<p>where <span class="math">\(F_{\mu\nu} = \partial_\mu A_\nu -\partial_\nu A_\mu\)</span>.</p>
 <p>However we would like to check the four laws independently since we really need to look into the meaning of the equations.</p>
 <div class="math">
-<p><img src="_images/math/813a4069defbacfccc3f495a5bedb971ccf2e44a.png" alt="\partial_i E_i &amp; = 4\pi \rho\\
+\[\begin{split}\partial_i E_i &amp; = 4\pi \rho\\
 \partial_i B_i &amp; = 0 \\
 \epsilon_{ijk} \partial_j E_k  &amp;= -\frac{1}{c} \partial_t B_i \\
-\epsilon_{ijk} \partial_j B_k &amp; = \frac{4\pi}{c} J_i + \frac{1}{c} \partial_t E_i ."/></p>
-</div><p class="last">Here we write down the component form because the cross product doesn&#8217;t have a clear meaning as we move to different dimensions.</p>
+\epsilon_{ijk} \partial_j B_k &amp; = \frac{4\pi}{c} J_i + \frac{1}{c} \partial_t E_i .\end{split}\]</div>
+<p class="last">Here we write down the component form because the cross product doesn&#8217;t have a clear meaning as we move to different dimensions.</p>
 </div>
 <div class="section" id="the-first-naive-version">
 <h3>The first naive version<a class="headerlink" href="#the-first-naive-version" title="Permalink to this headline">¶</a></h3>
@@ -246,35 +247,35 @@
 <h4>Gauss&#8217;s Law<a class="headerlink" href="#gauss-s-law" title="Permalink to this headline">¶</a></h4>
 <p><strong>Gauss&#8217;s law</strong> shows the source of the electric field, which should be in the form</p>
 <div class="math">
-<p><img src="_images/math/46047127fd8d510dd5d1a5c383b3213ef0dd2da1.png" alt="\oint \vec E\cdot \vec {dl} = 2\pi \int \rho dS."/></p>
-</div><p>We have <img class="math" src="_images/math/25b2196bbec9bed3057f94c1b118e582d8bedb61.png" alt="2\pi"/> instead of <img class="math" src="_images/math/f9596d3bf7fba3d6d339710cded94175b1e3ccc3.png" alt="4\pi"/> is because we have only a integral of a closed loop not a closed surface.</p>
+\[\oint \vec E\cdot \vec {dl} = 2\pi \int \rho dS.\]</div>
+<p>We have <span class="math">\(2\pi\)</span> instead of <span class="math">\(4\pi\)</span> is because we have only a integral of a closed loop not a closed surface.</p>
 <div class="note admonition">
 <p class="first admonition-title">Applying Stokes Theorem?</p>
 <p>At first thought, we need to math the integral on the two sides thus Stokes theorem should be applied.</p>
 <p>Surprisingly, we don&#8217;t really get to the familiar Gauss&#8217;s law of differential form. Instead, we have</p>
 <div class="math">
-<p><img src="_images/math/b2aabade6154f4753679d98282a09867779fd1e2.png" alt="\iint \nabla \times \vec E \cdot \vec{dS} = 2\pi \int \rho dS."/></p>
-</div><p>BUT think about this. Is this really true? We DO NOT have a third dimension! How could we define a curl? Back to the component form,</p>
+\[\iint \nabla \times \vec E \cdot \vec{dS} = 2\pi \int \rho dS.\]</div>
+<p>BUT think about this. Is this really true? We DO NOT have a third dimension! How could we define a curl? Back to the component form,</p>
 <div class="math">
-<p><img src="_images/math/040b58d71d969fd98ad0a0861175f89101520a97.png" alt="\nabla \times \vec E = \hat{e_i} \epsilon_{ijk} \partial_j E_k."/></p>
-</div><p>As a reminder,</p>
+\[\nabla \times \vec E = \hat{e_i} \epsilon_{ijk} \partial_j E_k.\]</div>
+<p>As a reminder,</p>
 <div class="math">
-<p><img src="_images/math/75277b6cdc3d0c0e685436cd1fb2a91b3b0c7181.png" alt="\epsilon_{ijk} = \begin{cases}
+\[\begin{split}\epsilon_{ijk} = \begin{cases}
 +1 &amp; \text{if } (i,j,k) \text{ is } (1,2,3), (2,3,1) \text{ or } (3,1,2), \\
 -1 &amp; \text{if } (i,j,k) \text{ is } (3,2,1), (1,3,2) \text{ or } (2,1,3), \\
 \;\;\,0 &amp; \text{if }i=j \text{ or } j=k \text{ or } k=i
-\end{cases}"/></p>
-</div><p>Now the problem is we have all the elements of this Levi-Civita symbol 0 because only 2 dimensions can be used in this theory.</p>
+\end{cases}\end{split}\]</div>
+<p>Now the problem is we have all the elements of this Levi-Civita symbol 0 because only 2 dimensions can be used in this theory.</p>
 <p>That means we have no Gaussian theorem or no charge as a naive interpretation if we follow our idea that charge is source of static curl free electric field and followed up by using Stokes theorem.</p>
 <p class="last"><strong>This argument is WRONG. We need to reconsider the meaning of equations. This is 2D we don&#8217;t have a third dimension to use Stokes theorem. We need divergence theorem.</strong></p>
 </div>
 <p>Two match up the dimensions we do need to apply the divergence theorem, in 2D.</p>
 <div class="math">
-<p><img src="_images/math/158f7f75a42590aef97f5f1adcc2a102da7bf67a.png" alt="\oint \vec E\cdot \vec {dl} = \iint \partial_i E_i dS,"/></p>
-</div><p>from which we are able to determine the differential form</p>
+\[\oint \vec E\cdot \vec {dl} = \iint \partial_i E_i dS,\]</div>
+<p>from which we are able to determine the differential form</p>
 <div class="math">
-<p><img src="_images/math/188a0d571145e54ae1ea2044ce8ac3816a44e071.png" alt="\partial_i E_i = 2\pi\rho,"/></p>
-</div><p>in which we have <img class="math" src="_images/math/ccd2657154a34c1b57a353c1c3d24234a555e26f.png" alt="i=1,2"/>.</p>
+\[\partial_i E_i = 2\pi\rho,\]</div>
+<p>in which we have <span class="math">\(i=1,2\)</span>.</p>
 <div class="note admonition">
 <p class="first admonition-title">Vectors in 2D</p>
 <p class="last">TBD</p>
@@ -284,8 +285,8 @@
 <h4>Faraday&#8217;s Law<a class="headerlink" href="#faraday-s-law" title="Permalink to this headline">¶</a></h4>
 <p>The change of magnetic flux generate electric field,</p>
 <div class="math">
-<p><img src="_images/math/7b7456d0b3a7c8cf4dda3effdf39394275d8d8a8.png" alt="\oint \vec E \cdot \vec{dl}  =  -\frac{1}{c} \frac{d}{dt} \int \vec B \vec{dS}."/></p>
-</div></div>
+\[\oint \vec E \cdot \vec{dl}  =  -\frac{1}{c} \frac{d}{dt} \int \vec B \vec{dS}.\]</div>
+</div>
 <div class="section" id="wave">
 <h4>Wave<a class="headerlink" href="#wave" title="Permalink to this headline">¶</a></h4>
 <p>We still have a wave solution.</p>

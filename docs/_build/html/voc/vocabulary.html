@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
@@ -174,34 +175,34 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="vocabulary">
 <h1>Vocabulary<a class="headerlink" href="#vocabulary" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="functional-derivative">
 <h2>Functional Derivative<a class="headerlink" href="#functional-derivative" title="Permalink to this headline">¶</a></h2>
-<p>By definition, <a class="footnote-reference" href="#physmath" id="id1">[1]</a> functional derivative of a functional <img class="math" src="../_images/math/8086068d0e9f94d47cf1a0af817821b17c584958.png" alt="G[f]"/> with respect to <img class="math" src="../_images/math/ecce7def7160298933a360e23cad0b63aeaa40b5.png" alt="f"/> along the &#8216;direction&#8217; of <img class="math" src="../_images/math/909b623e0574c9d3ff28c2596c5636c9ff900c5c.png" alt="h"/> is</p>
+<p>By definition, <a class="footnote-reference" href="#physmath" id="id1">[1]</a> functional derivative of a functional <span class="math">\(G[f]\)</span> with respect to <span class="math">\(f\)</span> along the &#8216;direction&#8217; of <span class="math">\(h\)</span> is</p>
 <div class="math">
-<p><img src="../_images/math/84d63689ba11a1be2c191e7ecf6763b229c2dff7.png" alt="\delta G[f][h] = \frac{d}{d\epsilon} G[f+\epsilon h]\vert_{\epsilon=0}."/></p>
-</div><p>As an example, the functional derivative of <img class="math" src="../_images/math/00a41192a8a5de6741e36d9d4773574319da3914.png" alt="G[f]=\int dx f^n(x)"/> <img class="math" src="../_images/math/972f238319bdd590c2f3359df8443caafec0592d.png" alt="\delta G[f][h]"/> is</p>
+\[\delta G[f][h] = \frac{d}{d\epsilon} G[f+\epsilon h]\vert_{\epsilon=0}.\]</div>
+<p>As an example, the functional derivative of <span class="math">\(G[f]=\int dx f^n(x)\)</span> <span class="math">\(\delta G[f][h]\)</span> is</p>
 <div class="math">
-<p><img src="../_images/math/e905028b7072ad066e37776864eebc780e96c69d.png" alt="\delta G[f][h] &amp;= \frac{d}{d\epsilon} G[f+\epsilon h] \vert_{\epsilon=0} \\
-&amp; = \int nf^{n-1}(x) h(x) dx."/></p>
-</div><p>Now the problem appears. We have an unknown function <img class="math" src="../_images/math/909b623e0574c9d3ff28c2596c5636c9ff900c5c.png" alt="h"/> which makes sense because we haven&#8217;t specify a direction of the derivative yet.</p>
+\[\begin{split}\delta G[f][h] &amp;= \frac{d}{d\epsilon} G[f+\epsilon h] \vert_{\epsilon=0} \\
+&amp; = \int nf^{n-1}(x) h(x) dx.\end{split}\]</div>
+<p>Now the problem appears. We have an unknown function <span class="math">\(h\)</span> which makes sense because we haven&#8217;t specify a direction of the derivative yet.</p>
 <p>For a physicist, the savior of integral is Dirac delta. So we use delta distribution as the direction in the functional derivative of action which is an integral,</p>
 <div class="math">
-<p><img src="../_images/math/d7325c7dd6e3fe3fc7be20ee44a6883851c25980.png" alt="\frac{\delta G[f]}{\delta f(y)} = \delta G[f][\delta_y]."/></p>
-</div><p>It can be ambiguous to just write down <img class="math" src="../_images/math/a6d10e72ff242321db49c1450cf75f3634c55ad7.png" alt="\delta_y"/> without an example. Here is the previous example continued,</p>
+\[\frac{\delta G[f]}{\delta f(y)} = \delta G[f][\delta_y].\]</div>
+<p>It can be ambiguous to just write down <span class="math">\(\delta_y\)</span> without an example. Here is the previous example continued,</p>
 <div class="math">
-<p><img src="../_images/math/d0291acbd584db8714f2e8f5455ff0d6125d63cf.png" alt="\frac{\delta G[f(y)]}{\delta f(y)} &amp;= \int nf^{n-1}(x) h(x) dx \vert_{h(x)= \delta(x-y)} \\
+\[\begin{split}\frac{\delta G[f(y)]}{\delta f(y)} &amp;= \int nf^{n-1}(x) h(x) dx \vert_{h(x)= \delta(x-y)} \\
 &amp; = \int nf^{n-1}(x) \delta(x-y) dx \\
-&amp; = n f^{n-1}(y) ."/></p>
-</div><p>It seems that we can just think of <img class="math" src="../_images/math/ecce7def7160298933a360e23cad0b63aeaa40b5.png" alt="f"/> as a variable then take the ordinary derivative with respect to it. It is NOT true.</p>
-<p>Consider such a functional <img class="math" src="../_images/math/be2d4b14e86005ea9ec5a079a3d14cd6c8794e9b.png" alt="G[f]=\int (f'(x))^2 dx"/> where &#8216; means the derivative of <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/>.</p>
+&amp; = n f^{n-1}(y) .\end{split}\]</div>
+<p>It seems that we can just think of <span class="math">\(f\)</span> as a variable then take the ordinary derivative with respect to it. It is NOT true.</p>
+<p>Consider such a functional <span class="math">\(G[f]=\int (f'(x))^2 dx\)</span> where &#8216; means the derivative of <span class="math">\(f(x)\)</span>.</p>
 <div class="math">
-<p><img src="../_images/math/14fe35f12729db5969fc45e84214ff75d5bc6bdc.png" alt="\frac{\delta G[f]}{\delta f} &amp; = -\int dx 2 f''(x) h(x) \vert_{h(x)=\delta(x-y)}  \\
-&amp; = -2 f''(y) ,"/></p>
-</div><p>which is not that straightforward to understand from function derivatives.</p>
+\[\begin{split}\frac{\delta G[f]}{\delta f} &amp; = -\int dx 2 f''(x) h(x) \vert_{h(x)=\delta(x-y)}  \\
+&amp; = -2 f''(y) ,\end{split}\]</div>
+<p>which is not that straightforward to understand from function derivatives.</p>
 <table class="docutils footnote" frame="void" id="physmath" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -211,29 +212,29 @@
 </div>
 <div class="section" id="legendre-transformation">
 <h2>Legendre Transformation<a class="headerlink" href="#legendre-transformation" title="Permalink to this headline">¶</a></h2>
-<p>Legendre transformation is NOT just some algebra. Given <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/> as a function of <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/>, which is shown in blue, we could find the distance between a line <img class="math" src="../_images/math/d47f141678726748e7faa7adf2df027e9d28ce39.png" alt="y=px_i"/> and the function value <img class="math" src="../_images/math/2462b20e2797cbb5817cee4a888e037998988e20.png" alt="f(x_i)"/>.</p>
+<p>Legendre transformation is NOT just some algebra. Given <span class="math">\(f(x)\)</span> as a function of <span class="math">\(x\)</span>, which is shown in blue, we could find the distance between a line <span class="math">\(y=px_i\)</span> and the function value <span class="math">\(f(x_i)\)</span>.</p>
 <div class="figure align-center" id="id2">
 <img alt="../_images/legendreTransformation.png" src="../_images/legendreTransformation.png" />
 <p class="caption"><span class="caption-text">Meaning of Legendre transformation</span></p>
 </div>
-<p>However, as we didn&#8217;t fix <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/>, this means that the distance</p>
+<p>However, as we didn&#8217;t fix <span class="math">\(x\)</span>, this means that the distance</p>
 <div class="math">
-<p><img src="../_images/math/e0b673fa9d85b53de27ce9675e9605d944d5cefa.png" alt="F(p,x) = p x - f(x)"/></p>
-</div><p>varies according to <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/>. This is a transformation that maps a function <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/> to some other function <img class="math" src="../_images/math/845cc2c3ae84752e8e476d331b6cb62e4b18d38e.png" alt="F(p,x)"/> which depends on the parameter <img class="math" src="../_images/math/34f235002c18243fd9108207068e2793c5e81b89.png" alt="p"/>. A more pedagogical way of writing this is</p>
+\[F(p,x) = p x - f(x)\]</div>
+<p>varies according to <span class="math">\(x\)</span>. This is a transformation that maps a function <span class="math">\(f(x)\)</span> to some other function <span class="math">\(F(p,x)\)</span> which depends on the parameter <span class="math">\(p\)</span>. A more pedagogical way of writing this is</p>
 <div class="math">
-<p><img src="../_images/math/566533b6b2f3fc6ce6bd3c2711fae56e2ec7a386.png" alt="px = F(x,p) + f(x)."/></p>
-</div><p>To have a Legendre transformation, let&#8217;s choose a relation between <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> and <img class="math" src="../_images/math/34f235002c18243fd9108207068e2793c5e81b89.png" alt="p"/>. One choice is to make sure we have a maximum distance given <img class="math" src="../_images/math/34f235002c18243fd9108207068e2793c5e81b89.png" alt="p"/>, which means the <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> we choose is the point that makes the slope of <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/> the same as the line <img class="math" src="../_images/math/6510530fdcff4ddcc570f8ea9d73f950a61e69cf.png" alt="y=px"/>. In the language of math, the condition we require is</p>
+\[px = F(x,p) + f(x).\]</div>
+<p>To have a Legendre transformation, let&#8217;s choose a relation between <span class="math">\(x\)</span> and <span class="math">\(p\)</span>. One choice is to make sure we have a maximum distance given <span class="math">\(p\)</span>, which means the <span class="math">\(x\)</span> we choose is the point that makes the slope of <span class="math">\(f(x)\)</span> the same as the line <span class="math">\(y=px\)</span>. In the language of math, the condition we require is</p>
 <div class="math">
-<p><img src="../_images/math/07abdadb3c2732b5e3b738cf53e607ef828388bb.png" alt="0 = \frac{\partial F(p,x)}{\partial x} \equiv f'(x) - p,"/></p>
-</div><p>which indeed shows that the slope of function and slope of the straight line match eath other at the specified point. Thus we have a relation between <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> and <img class="math" src="../_images/math/34f235002c18243fd9108207068e2793c5e81b89.png" alt="p"/>.</p>
-<p>Substitute <img class="math" src="../_images/math/8cef0614bb088fee0b5b808fe23b09b3abcd0cc7.png" alt="x(p)"/> back into <img class="math" src="../_images/math/845cc2c3ae84752e8e476d331b6cb62e4b18d38e.png" alt="F(p,x)"/>, we will get the Legendre transformation <img class="math" src="../_images/math/f59f2e7c2e0f2f11869263ee2504c6f1e49663ee.png" alt="F(p,x(p))"/> of <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/>.</p>
-<p>Back to the math we learned in undergrad study. A Legendre transformation transforms a function of <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> to another function with variable <img class="math" src="../_images/math/200728c5a0d3fcdd23a77c766efb78eec5848e4f.png" alt="\frac{f(x)}{x}"/>. Using <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/> and its Legendre transformation <img class="math" src="../_images/math/59164198db9eb42f020ce59128a6d1c1d72b8894.png" alt="F(p = p x - f(x(p))"/> as an example, we can show that the slope of <img class="math" src="../_images/math/b51d391bd2a069cdd67ae3a152d0f20750f07a6d.png" alt="F(p)"/> is <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/>,</p>
+\[0 = \frac{\partial F(p,x)}{\partial x} \equiv f'(x) - p,\]</div>
+<p>which indeed shows that the slope of function and slope of the straight line match eath other at the specified point. Thus we have a relation between <span class="math">\(x\)</span> and <span class="math">\(p\)</span>.</p>
+<p>Substitute <span class="math">\(x(p)\)</span> back into <span class="math">\(F(p,x)\)</span>, we will get the Legendre transformation <span class="math">\(F(p,x(p))\)</span> of <span class="math">\(f(x)\)</span>.</p>
+<p>Back to the math we learned in undergrad study. A Legendre transformation transforms a function of <span class="math">\(x\)</span> to another function with variable <span class="math">\(\frac{f(x)}{x}\)</span>. Using <span class="math">\(f(x)\)</span> and its Legendre transformation <span class="math">\(F(p = p x - f(x(p))\)</span> as an example, we can show that the slope of <span class="math">\(F(p)\)</span> is <span class="math">\(x\)</span>,</p>
 <div class="math">
-<p><img src="../_images/math/4ae10e56a10a83e32b25a1df3316aed8b1753571.png" alt="\frac{d F(p)}{d p} = x,"/></p>
-</div><p>which is intriging because the slope of <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/> is <img class="math" src="../_images/math/34f235002c18243fd9108207068e2793c5e81b89.png" alt="p"/> in our requirement. We removed the dependence of <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> in <img class="math" src="../_images/math/b51d391bd2a069cdd67ae3a152d0f20750f07a6d.png" alt="F(p)"/> because we have this extra constrain.</p>
+\[\frac{d F(p)}{d p} = x,\]</div>
+<p>which is intriging because the slope of <span class="math">\(f(x)\)</span> is <span class="math">\(p\)</span> in our requirement. We removed the dependence of <span class="math">\(x\)</span> in <span class="math">\(F(p)\)</span> because we have this extra constrain.</p>
 <div class="note admonition">
 <p class="first admonition-title">Let&#8217;s Move to Another Level</p>
-<p>We require the function <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/> is convex (second order derivative is not negative ). This is required because otherwise we would NOT have a one on one mapping of <img class="math" src="../_images/math/c9d08ccc65727d7d595d4c033a25476f5c5ac272.png" alt="x"/> and <img class="math" src="../_images/math/34f235002c18243fd9108207068e2793c5e81b89.png" alt="p"/>.</p>
+<p>We require the function <span class="math">\(f(x)\)</span> is convex (second order derivative is not negative ). This is required because otherwise we would NOT have a one on one mapping of <span class="math">\(x\)</span> and <span class="math">\(p\)</span>.</p>
 <div class="figure align-center" id="id3">
 <img alt="../_images/legendreTransformation2.png" src="../_images/legendreTransformation2.png" />
 <p class="caption"><span class="caption-text">This graph shows the Legendre transformation and triangles in which G is actually the F we used before and F in the graph corresponds to f.</span></p>
@@ -243,21 +244,21 @@
 </div>
 </div>
 <p>This is the triangle that represents the Legendre transformation.</p>
-<p class="last">If we have a slope that vanishes, which means <img class="math" src="../_images/math/b305aaac0667a03f870019e4300b45945fcd43e8.png" alt="f(x)"/> is at minimium, then we have the relation</p>
+<p class="last">If we have a slope that vanishes, which means <span class="math">\(f(x)\)</span> is at minimium, then we have the relation</p>
 </div>
 </div>
 <div class="section" id="vector-analysis">
 <h2>Vector Analysis<a class="headerlink" href="#vector-analysis" title="Permalink to this headline">¶</a></h2>
 <p>The ultimate trick is to use component form.</p>
 <div class="math">
-<p><img src="../_images/math/59f9bea50b691fb3a6c4305c1f52c5b62765f557.png" alt="&amp;\vec a \times (\vec b \times \vec c) \\
+\[\begin{split}&amp;\vec a \times (\vec b \times \vec c) \\
 = &amp; \hat e_i \epsilon_{ijk} a_j (\epsilon_{kmn} b_m c_n ) \\
 = &amp; \hat e_i \epsilon_{kij}\epsilon_{kmn} a_j b_m c_n \\
 = &amp; \hat e_i ( \delta_{im}\delta_{jn} - \delta_{in}\delta_{jm} )a_j b_m c_n \\
 = &amp; \hat e_i \delta_{im}\delta_{jn} a_j b_m c_n -  \hat e_i \delta_{in}\delta_{jm} a_j b_m c_n \\
 = &amp; \hat e_i a_j b_i c_j - \hat e_i a_j b_j c_i \\
-= &amp; \vec b (\vec a\cdot \vec c) - \vec c (\vec a \cdot \vec b) ."/></p>
-</div><p>One should be able to find the component forms of gradient <img class="math" src="../_images/math/9584fe4e063b886bd1925a7f2714286264ebd917.png" alt="\vec \nabla \cdot"/>, divergence <img class="math" src="../_images/math/3655fcf6a983b63300851310d6de448a797e84b8.png" alt="\vec \nabla \times"/>, Laplace operator, in <strong>spherical coordinates, cylindrical coordinates and cartisian coordinates</strong>.</p>
+= &amp; \vec b (\vec a\cdot \vec c) - \vec c (\vec a \cdot \vec b) .\end{split}\]</div>
+<p>One should be able to find the component forms of gradient <span class="math">\(\vec \nabla \cdot\)</span>, divergence <span class="math">\(\vec \nabla \times\)</span>, Laplace operator, in <strong>spherical coordinates, cylindrical coordinates and cartisian coordinates</strong>.</p>
 </div>
 <div class="section" id="refs-notes">
 <h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>

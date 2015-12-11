@@ -26,6 +26,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/rrssb.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
@@ -191,7 +192,7 @@
     </a>
   </li>
   <li>
-    <a href="special-functions.html" title="Next Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Special Function... &raquo;</span>
+    <a href="special-functions.html" title="Next Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Special Funct... &raquo;</span>
     </a>
   </li>
               
@@ -217,7 +218,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="mathematics">
 <h1>Mathematics<a class="headerlink" href="#mathematics" title="Permalink to this headline">¶</a></h1>
@@ -225,8 +226,8 @@
 <h2>Kindergarten<a class="headerlink" href="#kindergarten" title="Permalink to this headline">¶</a></h2>
 <p><strong>Binominal theorem</strong></p>
 <div class="math">
-<p><img src="_images/math/68962781f8377e03b0586e73f7ae81c7dc83be0c.png" alt="(1+x)^n = \sum_{k=0}^{n} C_n^k x^k ."/></p>
-</div></div>
+\[(1+x)^n = \sum_{k=0}^{n} C_n^k x^k .\]</div>
+</div>
 <div class="section" id="complex-analysis">
 <h2>Complex Analysis<a class="headerlink" href="#complex-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Some useful concepts: <a class="footnote-reference" href="#id3" id="id1">[1]</a></p>
@@ -256,11 +257,11 @@
 </ul>
 <div class="section" id="cauchy-riemann-equation">
 <h3>Cauchy-Riemann Equation<a class="headerlink" href="#cauchy-riemann-equation" title="Permalink to this headline">¶</a></h3>
-<p>A function <img class="math" src="_images/math/1d1bdd5525f0fc11bee4228677b566f384426eff.png" alt="f(z) = u(z) + i v(z)"/> is a function of a complex variable <img class="math" src="_images/math/2bcad18eccb560e174cf62572651351ef91ba3da.png" alt="z=x+i y"/>.</p>
+<p>A function <span class="math">\(f(z) = u(z) + i v(z)\)</span> is a function of a complex variable <span class="math">\(z=x+i y\)</span>.</p>
 <div class="math">
-<p><img src="_images/math/6dc4932109be47d4d265be00822bbe583b66b646.png" alt="\frac{\partial}{\partial x} u &amp;= \frac{\partial}{\partial y} v \\
-\frac{\partial}{\partial x} v &amp; = -\frac{\partial}{\partial y} u"/></p>
-</div></div>
+\[\begin{split}\frac{\partial}{\partial x} u &amp;= \frac{\partial}{\partial y} v \\
+\frac{\partial}{\partial x} v &amp; = -\frac{\partial}{\partial y} u\end{split}\]</div>
+</div>
 <div class="section" id="singularities">
 <h3>Singularities<a class="headerlink" href="#singularities" title="Permalink to this headline">¶</a></h3>
 <p>There are 3 common singularities,</p>
@@ -272,11 +273,11 @@
 <p>Pole is very useful since it&#8217;s related to the Residue Theorem. Thus one of the task in physics is to calculate the residue of a function.</p>
 <p>The residue at a simple pole is given by</p>
 <div class="math">
-<p><img src="_images/math/8ad4bef9380ab205d8a5f69a120adae73de24ba0.png" alt="\text{Residue}(f(z_0)) = \lim_{z\to z_0}\left( (z-z_0)f(z) \right)."/></p>
-</div><p>Meanwhile, the residue at a pole of nth order is</p>
+\[\text{Residue}(f(z_0)) = \lim_{z\to z_0}\left( (z-z_0)f(z) \right).\]</div>
+<p>Meanwhile, the residue at a pole of nth order is</p>
 <div class="math">
-<p><img src="_images/math/e5909c52ccb2c8f1f79b2ef6d7905fd440f6fd62.png" alt="\text{Residue}(f(z_0)) =  \frac{1}{(n-1)!} \lim_{z\to z_0} \frac{\mathrm d ^ {n-1}}{\mathrm d z^{n-1}}  \left( (z-z_0)^n f(z) \right)."/></p>
-</div><p>Branch points are points when we go around it in circles the values of our function would change. Examples of such points are <img class="math" src="_images/math/3b27f9abde92e216defdf11012756b9b6ad0e058.png" alt="z=0"/> for <img class="math" src="_images/math/d2d928be1437fa5942602b70234840c1d95b9e57.png" alt="f(z)=ln(z)"/> and <img class="math" src="_images/math/fa249b7d3b0ecdcbb94038b3fc608467c3526c7c.png" alt="z=1"/> for <img class="math" src="_images/math/7d845e1a344bd01256d633c7b07e99c2c1d74410.png" alt="f(z)=(z-1)^{1/2}"/>.</p>
+\[\text{Residue}(f(z_0)) =  \frac{1}{(n-1)!} \lim_{z\to z_0} \frac{\mathrm d ^ {n-1}}{\mathrm d z^{n-1}}  \left( (z-z_0)^n f(z) \right).\]</div>
+<p>Branch points are points when we go around it in circles the values of our function would change. Examples of such points are <span class="math">\(z=0\)</span> for <span class="math">\(f(z)=ln(z)\)</span> and <span class="math">\(z=1\)</span> for <span class="math">\(f(z)=(z-1)^{1/2}\)</span>.</p>
 </div>
 </div>
 <div class="section" id="calculus">
@@ -298,8 +299,8 @@
 </li>
 <li><p class="first">Residue Theorem: we can write down the integral by calculating the residue of the integrand,</p>
 <div class="math">
-<p><img src="_images/math/b7ba839f5e7ad468d8e7bc3be058d98b2aa92b62.png" alt="\int_C f(z) \mathrm dz = 2\pi i \sum_j \text{Residue}(f(z_j)),"/></p>
-</div><p>where <img class="math" src="_images/math/f0f44d5c3dea85282fae434f00740107f79c00af.png" alt="z_j"/> are the poles.</p>
+\[\int_C f(z) \mathrm dz = 2\pi i \sum_j \text{Residue}(f(z_j)),\]</div>
+<p>where <span class="math">\(z_j\)</span> are the poles.</p>
 </li>
 </ol>
 </div>
@@ -308,20 +309,20 @@
 <h2>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="tensor-product-space">
 <span id="tensorproductspace"></span><h3>Tensor Product Space<a class="headerlink" href="#tensor-product-space" title="Permalink to this headline">¶</a></h3>
-<p><img class="math" src="_images/math/a6089cde7d22e7d2e0eacf10bfaba353f6574112.png" alt="\ket{\phi}_1"/> and <img class="math" src="_images/math/7bfbf1d999a64eb7a45bde280d71f78a43465432.png" alt="\ket{\phi}_2"/> are elements of Hilbert space <img class="math" src="_images/math/a1757df485b7f0445f6d46e96149a32fa73b5447.png" alt="H_1"/> and <img class="math" src="_images/math/288092177f2ed3cdee1d0dcfa756a061e2b7e9bb.png" alt="H_2"/>. <strong>Tensor Product</strong> of <img class="math" src="_images/math/a6089cde7d22e7d2e0eacf10bfaba353f6574112.png" alt="\ket{\phi}_1"/> and <img class="math" src="_images/math/7bfbf1d999a64eb7a45bde280d71f78a43465432.png" alt="\ket{\phi}_2"/> is denoted as <img class="math" src="_images/math/52c771721b9517aa5d7d3555bf326da7c26b4abc.png" alt="\ket{\phi}_1\otimes \ket{\phi}_2"/>. This operation is linear and distributive.</p>
-<p><strong>Tensor product space</strong> <img class="math" src="_images/math/18a4243838ecf9d915b4e3a3e128acb096d0cf41.png" alt="H_1\otimes H_2"/> is composed of all the linear combinations of all possible tensor products of elements in <img class="math" src="_images/math/a1757df485b7f0445f6d46e96149a32fa73b5447.png" alt="H_1"/> and <img class="math" src="_images/math/288092177f2ed3cdee1d0dcfa756a061e2b7e9bb.png" alt="H_2"/>.</p>
+<p><span class="math">\(\ket{\phi}_1\)</span> and <span class="math">\(\ket{\phi}_2\)</span> are elements of Hilbert space <span class="math">\(H_1\)</span> and <span class="math">\(H_2\)</span>. <strong>Tensor Product</strong> of <span class="math">\(\ket{\phi}_1\)</span> and <span class="math">\(\ket{\phi}_2\)</span> is denoted as <span class="math">\(\ket{\phi}_1\otimes \ket{\phi}_2\)</span>. This operation is linear and distributive.</p>
+<p><strong>Tensor product space</strong> <span class="math">\(H_1\otimes H_2\)</span> is composed of all the linear combinations of all possible tensor products of elements in <span class="math">\(H_1\)</span> and <span class="math">\(H_2\)</span>.</p>
 <div class="section" id="inner-product">
 <h4>Inner Product<a class="headerlink" href="#inner-product" title="Permalink to this headline">¶</a></h4>
 <p>Inner product of two tensor products</p>
 <div class="math">
-<p><img src="_images/math/a2cc0da46241730830651fd449321fd773015fc5.png" alt="(\bra{\phi}_1\otimes \bra{\phi}_2)(\ket{\psi}_1\otimes \ket{\psi}_2) = ( {} _ 1 \braket{\phi}{\psi}_1)({}_2\braket{\phi}{\psi}_2)"/></p>
-</div></div>
+\[(\bra{\phi}_1\otimes \bra{\phi}_2)(\ket{\psi}_1\otimes \ket{\psi}_2) = ( {} _ 1 \braket{\phi}{\psi}_1)({}_2\braket{\phi}{\psi}_2)\]</div>
+</div>
 <div class="section" id="operators-applied-to-tensor-product">
 <h4>Operators Applied to Tensor Product<a class="headerlink" href="#operators-applied-to-tensor-product" title="Permalink to this headline">¶</a></h4>
-<p>Two operators <img class="math" src="_images/math/32df54156060238690ea9bd2fcd66e0bf09ee5ba.png" alt="\hat O_1"/> and <img class="math" src="_images/math/f044444dd2c5ec0ec2e72eb3667d8d2e8c0557f5.png" alt="\hat O_2"/> works on <img class="math" src="_images/math/a1757df485b7f0445f6d46e96149a32fa73b5447.png" alt="H_1"/> and <img class="math" src="_images/math/288092177f2ed3cdee1d0dcfa756a061e2b7e9bb.png" alt="H_2"/> respectively applied to tensor product</p>
+<p>Two operators <span class="math">\(\hat O_1\)</span> and <span class="math">\(\hat O_2\)</span> works on <span class="math">\(H_1\)</span> and <span class="math">\(H_2\)</span> respectively applied to tensor product</p>
 <div class="math">
-<p><img src="_images/math/c16906048009e5b28c44bb125cd0c10303aba7f3.png" alt="(\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)"/></p>
-</div></div>
+\[(\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)\]</div>
+</div>
 </div>
 <div class="section" id="solving-linear-equations">
 <h3>Solving Linear Equations<a class="headerlink" href="#solving-linear-equations" title="Permalink to this headline">¶</a></h3>
@@ -335,99 +336,87 @@
 <h3>Metric<a class="headerlink" href="#metric" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="definitions">
 <h4>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h4>
-<p>Denote the basis in use as <img class="math" src="_images/math/fafdbb1e25c36313b6184af87122875fae8b1d42.png" alt="\hat e_\mu"/>, then the metric can be written as</p>
+<p>Denote the basis in use as <span class="math">\(\hat e_\mu\)</span>, then the metric can be written as</p>
 <div class="math">
-<p><img src="_images/math/1e3ede168757b39e3167137d20e1457c595d2d54.png" alt="g_{\mu\nu}=\hat e_\mu \hat \cdot e_\nu"/></p>
-</div><p>if the basis satisfies</p>
+\[g_{\mu\nu}=\hat e_\mu \hat \cdot e_\nu\]</div>
+<p>if the basis satisfies</p>
 <p>Inversed metric</p>
 <div class="math">
-<p><img src="_images/math/8cd068f3397ad9172a983fe1f0f336567d922fe2.png" alt="g_{\mu\lambda}g^{\lambda\nu}=\delta_\mu^\nu = g_\mu^\nu"/></p>
-</div></div>
+\[g_{\mu\lambda}g^{\lambda\nu}=\delta_\mu^\nu = g_\mu^\nu\]</div>
+</div>
 <div class="section" id="how-to-calculate-the-metric">
 <h4>How to calculate the metric<a class="headerlink" href="#how-to-calculate-the-metric" title="Permalink to this headline">¶</a></h4>
 <p>Let&#8217;s check the definition of metric again.</p>
-<p>If we choose a basis <img class="math" src="_images/math/fafdbb1e25c36313b6184af87122875fae8b1d42.png" alt="\hat e_\mu"/>, then a vector (at one certain point) in this coordinate system is</p>
+<p>If we choose a basis <span class="math">\(\hat e_\mu\)</span>, then a vector (at one certain point) in this coordinate system is</p>
 <div class="math">
-<p><img src="_images/math/78b6af02836f00635db7e0afa9ca125516380ea6.png" alt="x^a=x^\mu \hat e_\mu"/></p>
-</div><p>Then we can construct the expression of metric of this point under this coordinate system,</p>
+\[x^a=x^\mu \hat e_\mu\]</div>
+<p>Then we can construct the expression of metric of this point under this coordinate system,</p>
 <div class="math">
-<p><img src="_images/math/61a13f66a465af196440dcef4db9fd0dacda199e.png" alt="g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu"/></p>
-</div><p>For example, in spherical coordinate system,</p>
+\[g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu\]</div>
+<p>For example, in spherical coordinate system,</p>
 <div class="math" id="equation-EQrelativityMetricPoint">
-<p><span class="eqno">(1)</span><img src="_images/math/f0fba94392da8a3a6b062a644744735f3e773664.png" alt="\vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z"/></p>
-</div><p>Now we have to find the basis under spherical coordinate system. Assume the basis is <img class="math" src="_images/math/c273ae0319b85f27bda8a4ac25489cea81fe7c74.png" alt="\hat e_r, \hat e_\theta, \hat e_\phi"/>. Choose some scale factors <img class="math" src="_images/math/63cd5c42f84fb68f39ce2d7b753a4d66384ef3ed.png" alt="h_r=1, h_\theta=r, h_\phi=r\sin\theta"/>. Then the basis is</p>
+<span class="eqno">(1)</span>\[\vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z\]</div>
+<p>Now we have to find the basis under spherical coordinate system. Assume the basis is <span class="math">\(\hat e_r, \hat e_\theta, \hat e_\phi\)</span>. Choose some scale factors <span class="math">\(h_r=1, h_\theta=r, h_\phi=r\sin\theta\)</span>. Then the basis is</p>
 <div class="math">
-<p><img src="_images/math/bec262eddc84dbb0599a38817710873b0f57d15c.png" alt="\hat e_r=\frac{\partial \vec x}{h_r\partial r}=\hat e_x \sin\theta\cos\phi+\hat e_y \sin\theta\sin\phi+\hat e_z \cos\theta,"/></p>
-</div><p>etc. Then collect the terms in formula <a href="#equation-EQrelativityMetricPoint">(1)</a> is we get <img class="math" src="_images/math/4a9de407dc9994e0995c0fa0754d9d4109230b9a.png" alt="\vec x=r\hat e_r"/>, this is incomplete. So we check the derivative.</p>
+\[\hat e_r=\frac{\partial \vec x}{h_r\partial r}=\hat e_x \sin\theta\cos\phi+\hat e_y \sin\theta\sin\phi+\hat e_z \cos\theta,\]</div>
+<p>etc. Then collect the terms in formula <a href="#equation-EQrelativityMetricPoint">(1)</a> is we get <span class="math">\(\vec x=r\hat e_r\)</span>, this is incomplete. So we check the derivative.</p>
 <div class="math">
-<p><img src="_images/math/358683c9f92e47ec1d0b93bbf0349ad3758743d2.png" alt="\mathrm d\vec x =  \hat e_x (\mathrm dr \sin\theta\cos\phi+r\cos\theta\cos\phi\mathrm d\theta-r\sin\theta\sin\phi\mathrm d\phi)
-
-\hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi)
-
-\hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta)
-
- = \mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)
-
-\mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi - \hat e_z \sin\theta)r
-
-\mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta
-
-=\hat e_r\mathrm dr+\hat e_\theta r\mathrm d\theta +\hat e_\phi r\sin\theta\mathrm d \phi"/></p>
-</div><p>Once we reach here, the component (<img class="math" src="_images/math/33bb1515c8f31dbc0cb0c33cbc16337e74403ac4.png" alt="e_r ,e_\theta, e_\phi"/>) of the point under the spherical coordinates system basis (<img class="math" src="_images/math/c273ae0319b85f27bda8a4ac25489cea81fe7c74.png" alt="\hat e_r, \hat e_\theta, \hat e_\phi"/>) at this point are clear, i.e.,</p>
+\[\mathrm d\vec x =  \hat e_x (\mathrm dr \sin\theta\cos\phi+r\cos\theta\cos\phi\mathrm d\theta-r\sin\theta\sin\phi\mathrm d\phi)\]\[\hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi)\]\[\hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta)\]\[ = \mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)\]\[\mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi - \hat e_z \sin\theta)r\]\[\mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta\]\[=\hat e_r\mathrm dr+\hat e_\theta r\mathrm d\theta +\hat e_\phi r\sin\theta\mathrm d \phi\]</div>
+<p>Once we reach here, the component (<span class="math">\(e_r ,e_\theta, e_\phi\)</span>) of the point under the spherical coordinates system basis (<span class="math">\(\hat e_r, \hat e_\theta, \hat e_\phi\)</span>) at this point are clear, i.e.,</p>
 <div class="math">
-<p><img src="_images/math/329912ab57e0b7b1a91e5b375c3b7bed03489a07.png" alt="\mathrm d\vec x = \hat e_r\mathrm d r+\hat e_\theta r\mathrm d \theta+\hat e_\phi r\sin\theta \mathrm d\phi \\
- = e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi"/></p>
-</div><p>In this way, the metric tensor for spherical coordinates is</p>
+\[\begin{split}\mathrm d\vec x = \hat e_r\mathrm d r+\hat e_\theta r\mathrm d \theta+\hat e_\phi r\sin\theta \mathrm d\phi \\
+ = e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi\end{split}\]</div>
+<p>In this way, the metric tensor for spherical coordinates is</p>
 <div class="math">
-<p><img src="_images/math/b501ee2f78f3102a79cad8117962c03d4ae3bf5f.png" alt="g_{\mu\nu}=(e_\mu\cdot e_\nu) = \begin{pmatrix}
+\[\begin{split}g_{\mu\nu}=(e_\mu\cdot e_\nu) = \begin{pmatrix}
 1 &amp; 0 &amp; 0 \\
 0 &amp; r^2 &amp;  0 \\
-0 &amp; 0 &amp; r^2 \sin^2\theta \end{pmatrix}"/></p>
-</div></div>
+0 &amp; 0 &amp; r^2 \sin^2\theta \end{pmatrix}\end{split}\]</div>
+</div>
 </div>
 <div class="section" id="connection">
 <h3>Connection<a class="headerlink" href="#connection" title="Permalink to this headline">¶</a></h3>
 <p>First class connection can be calculated</p>
 <div class="math">
-<p><img src="_images/math/7d8b42f87d7462ce445ca3aef038400c3aa8c15c.png" alt="\Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}"/></p>
-</div><p>Second class connection isfootnote{Kevin E. Cahill}</p>
+\[\Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}\]</div>
+<p>Second class connection isfootnote{Kevin E. Cahill}</p>
 <div class="math">
-<p><img src="_images/math/391432bd50309fbeecfee991c63b9e21ad35b0db.png" alt="[\mu\nu,\iota]=g_{\iota\mu}\Gamma^\mu_{\phantom{\mu}\nu\lambda}"/></p>
-</div></div>
+\[[\mu\nu,\iota]=g_{\iota\mu}\Gamma^\mu_{\phantom{\mu}\nu\lambda}\]</div>
+</div>
 <div class="section" id="gradient-curl-divergence-etc">
 <h3>Gradient, Curl, Divergence, etc<a class="headerlink" href="#gradient-curl-divergence-etc" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="gradient">
 <h4>Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h4>
 <div class="math">
-<p><img src="_images/math/5900a7ab490d5ae3971523b9292d6aa4c6a3f827.png" alt="T^b_{\phantom bc;a}= \nabla_aT^b_{\phantom bc}=T^b_{\phantom bc,a}+\Gamma^b_{ad}T^d_{\phantom dc}-\Gamma^d_{ac}T^b_{\phantom bd}"/></p>
-</div></div>
+\[T^b_{\phantom bc;a}= \nabla_aT^b_{\phantom bc}=T^b_{\phantom bc,a}+\Gamma^b_{ad}T^d_{\phantom dc}-\Gamma^d_{ac}T^b_{\phantom bd}\]</div>
+</div>
 <div class="section" id="curl">
 <h4>Curl<a class="headerlink" href="#curl" title="Permalink to this headline">¶</a></h4>
-<p>For an anti-symmetric tensor, <img class="math" src="_images/math/ca3ca3b9ffaeed1c3d82c85494daf340d4dd3430.png" alt="a_{\mu\nu}=-a_{\nu\mu}"/></p>
+<p>For an anti-symmetric tensor, <span class="math">\(a_{\mu\nu}=-a_{\nu\mu}\)</span></p>
 <div class="math">
-<p><img src="_images/math/d80c59942efeb2183af200522a2c8abd9dec3f6d.png" alt="\mathrm{Curl}_{\mu\nu\tau}(a_{\mu\nu})  \equiv  a_{\mu\nu;\tau}+a_{\nu\tau;\mu}+a_{\tau\mu;\nu} \\
- = a_{\mu\nu,\tau}+a_{\nu\tau,\mu}+a_{\tau\mu,\nu}"/></p>
-</div></div>
+\[\begin{split}\mathrm{Curl}_{\mu\nu\tau}(a_{\mu\nu})  \equiv  a_{\mu\nu;\tau}+a_{\nu\tau;\mu}+a_{\tau\mu;\nu} \\
+ = a_{\mu\nu,\tau}+a_{\nu\tau,\mu}+a_{\tau\mu,\nu}\end{split}\]</div>
+</div>
 <div class="section" id="divergence">
 <h4>Divergence<a class="headerlink" href="#divergence" title="Permalink to this headline">¶</a></h4>
 <div class="math">
-<p><img src="_images/math/a8348a729817d9b57836d21dd88d4c1c32105735.png" alt="\mathrm{div}_\nu(a^{\mu\nu})&amp;\equiv   a^{\mu\nu}_{\phantom{\mu\nu};\nu} \\
+\[\begin{split}\mathrm{div}_\nu(a^{\mu\nu})&amp;\equiv   a^{\mu\nu}_{\phantom{\mu\nu};\nu} \\
 &amp; = \frac{\partial a^{\mu\nu}}{\partial x^\nu}+\Gamma^\mu_{\nu\tau}a^{\tau\nu}+\Gamma^\nu_{\nu\tau}a^{\mu\tau} \\
-&amp; = \frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})+\Gamma^\mu_{\nu\lambda}a^{\nu\lambda}"/></p>
-</div><p>For an anti-symmetric tensor</p>
+&amp; = \frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})+\Gamma^\mu_{\nu\lambda}a^{\nu\lambda}\end{split}\]</div>
+<p>For an anti-symmetric tensor</p>
 <div class="math">
-<p><img src="_images/math/15a898aab84c88f1c91a276407f84b096220634e.png" alt="\mathrm {div}(a^{\mu\nu})=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})"/></p>
-</div><p><strong>Annotation</strong> Using the relation <img class="math" src="_images/math/81ac580c6505cbe9002d7d7889e1c03ec30e8621.png" alt="g=g_{\mu\nu}A_{\mu\nu}"/>, <img class="math" src="_images/math/cdae16c8ddb5c3f649ec02206371ff4bd6f618dc.png" alt="A_{\mu\nu}"/> is the algebraic complement, we can prove the following two equalities.</p>
+\[\mathrm {div}(a^{\mu\nu})=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\nu}(\sqrt{-g}a^{\mu\nu})\]</div>
+<p><strong>Annotation</strong> Using the relation <span class="math">\(g=g_{\mu\nu}A_{\mu\nu}\)</span>, <span class="math">\(A_{\mu\nu}\)</span> is the algebraic complement, we can prove the following two equalities.</p>
 <div class="math">
-<p><img src="_images/math/40028d2a485e24acffd4135de79166be32fbd9b2.png" alt="\Gamma^\mu_{\mu\nu}=\partial_\nu\ln{\sqrt{-g}}"/></p>
-</div><div class="math">
-<p><img src="_images/math/6c827753b799cd136a9a740fd9a003fab20c0577.png" alt="V^\mu_{\phantom\mu;\mu}=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\mu}(\sqrt{-g}V^\mu)"/></p>
-</div><p>In some simple case, all the three kind of operation can be demonstrated by different applications of the del operator, which <img class="math" src="_images/math/4ef6d37410469782ccd27974615cc23515c775df.png" alt="\nabla\equiv \hat x\partial_x+\hat y\partial_y+\hat z \partial_z"/>.</p>
+\[\Gamma^\mu_{\mu\nu}=\partial_\nu\ln{\sqrt{-g}}\]</div>
+<div class="math">
+\[V^\mu_{\phantom\mu;\mu}=\frac1{\sqrt{-g}}\frac{\partial}{\partial x^\mu}(\sqrt{-g}V^\mu)\]</div>
+<p>In some simple case, all the three kind of operation can be demonstrated by different applications of the del operator, which <span class="math">\(\nabla\equiv \hat x\partial_x+\hat y\partial_y+\hat z \partial_z\)</span>.</p>
 <ul class="simple">
-<li>Gradient,  <img class="math" src="_images/math/38a843ccde5423945d219f585ed6f04f410c8377.png" alt="\nabla f"/>, in which <img class="math" src="_images/math/ecce7def7160298933a360e23cad0b63aeaa40b5.png" alt="f"/> is a scalar.</li>
-<li>Divergence, <img class="math" src="_images/math/a740727d459b04f6436ec366bb8bb2006d938ee9.png" alt="\nabla\cdot \vec v"/></li>
-<li>Curl, <img class="math" src="_images/math/6f6d927ec6ee477b49c0621ea0e607659db895db.png" alt="\nabla \times \vec v"/></li>
-<li>Laplacian, <img class="math" src="_images/math/9da88b18d040d832275601577c53652a84dea2b9.png" alt="\Delta\equiv \nabla\cdot\nabla\equiv \nabla^2"/></li>
+<li>Gradient,  <span class="math">\(\nabla f\)</span>, in which <span class="math">\(f\)</span> is a scalar.</li>
+<li>Divergence, <span class="math">\(\nabla\cdot \vec v\)</span></li>
+<li>Curl, <span class="math">\(\nabla \times \vec v\)</span></li>
+<li>Laplacian, <span class="math">\(\Delta\equiv \nabla\cdot\nabla\equiv \nabla^2\)</span></li>
 </ul>
 </div>
 </div>
@@ -440,16 +429,16 @@
 <h4>Trace<a class="headerlink" href="#trace" title="Permalink to this headline">¶</a></h4>
 <p>Trace should be calculated using the metric. An example is the trace of Ricci tensor,</p>
 <div class="math">
-<p><img src="_images/math/95220788dc4c26c2b3f64ea15bba16a50e27c480.png" alt="R=g^{ab}R_{ab}"/></p>
-</div><p>Einstein equation is</p>
+\[R=g^{ab}R_{ab}\]</div>
+<p>Einstein equation is</p>
 <div class="math">
-<p><img src="_images/math/95528fe4b7441173410e53420909658992823ee5.png" alt="R_{ab}-\frac{1}{2}g_{ab}R=8\pi G T_{ab}"/></p>
-</div><p>The trace is</p>
+\[R_{ab}-\frac{1}{2}g_{ab}R=8\pi G T_{ab}\]</div>
+<p>The trace is</p>
 <div class="math">
-<p><img src="_images/math/be31650dddf74fff3010898924204154bdcb754a.png" alt="g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R &amp;= 8\pi G g^{ab}T_{ab} \\
+\[\begin{split}g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R &amp;= 8\pi G g^{ab}T_{ab} \\
 \Rightarrow R-\frac{1}{2} 4 R  &amp;=  8\pi G T \\
-\Rightarrow -R &amp;= 8\pi GT"/></p>
-</div></div>
+\Rightarrow -R &amp;= 8\pi GT\end{split}\]</div>
+</div>
 </div>
 <div class="section" id="technique">
 <h3>Technique<a class="headerlink" href="#technique" title="Permalink to this headline">¶</a></h3>
@@ -458,8 +447,8 @@
 <p>Many methods to get the inverse of a matrix. Check wikipedia for Invertible matrix.</p>
 <p>Adjugate matrix method for example is here.</p>
 <div class="math">
-<p><img src="_images/math/3d988d1c47378cf78371e71771909f70794dd373.png" alt="A^{-1} = \frac{A^*}{|A|}"/></p>
-</div><p>in which, <img class="math" src="_images/math/4f25c547f56a8989fa9740f3c2e05f1fb4e36309.png" alt="A^*"/> is the adjugate matrix of <img class="math" src="_images/math/38806b50fd3d02fd2a97032314026e5e8c11639f.png" alt="A"/>.</p>
+\[A^{-1} = \frac{A^*}{|A|}\]</div>
+<p>in which, <span class="math">\(A^*\)</span> is the adjugate matrix of <span class="math">\(A\)</span>.</p>
 </div>
 </div>
 </div>

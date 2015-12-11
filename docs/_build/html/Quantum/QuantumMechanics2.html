@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/rrssb.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
@@ -150,11 +151,11 @@
               
                 
   <li>
-    <a href="quantumMechanics.html" title="Previous Chapter: Quantum Mechanics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Mechanic...</span>
+    <a href="quantumMechanics.html" title="Previous Chapter: Quantum Mechanics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Mecha...</span>
     </a>
   </li>
   <li>
-    <a href="quantumMechanics3.html" title="Next Chapter: Quantum Mechanics 3"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum Mechanic... &raquo;</span>
+    <a href="quantumMechanics3.html" title="Next Chapter: Quantum Mechanics 3"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum Mecha... &raquo;</span>
     </a>
   </li>
               
@@ -180,7 +181,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="quantum-mechanics-2">
 <h1>Quantum Mechanics 2<a class="headerlink" href="#quantum-mechanics-2" title="Permalink to this headline">¶</a></h1>
@@ -206,69 +207,69 @@
 <h4>Definition of Angular Momentum<a class="headerlink" href="#definition-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
 <p>In classical mechanics, angular momentum is defined as</p>
 <div class="math">
-<p><img src="../_images/math/854d4a6294e1288579cef54cdfd3eb2f53004146.png" alt="\vec L = \vec X \times \vec P ."/></p>
-</div><p>One way of defining operator is to change position and momentum into operators and check if the operator is working properly in QM. So we just define</p>
+\[\vec L = \vec X \times \vec P .\]</div>
+<p>One way of defining operator is to change position and momentum into operators and check if the operator is working properly in QM. So we just define</p>
 <div class="math">
-<p><img src="../_images/math/195f455f07d4f1f27e438bb754ffeb9a80f234ae.png" alt="\hat {\vec L} = \hat {\vec X}\times \hat{\vec P}."/></p>
-</div><p>It is Hermitian. So it can be an operator. We also find</p>
+\[\hat {\vec L} = \hat {\vec X}\times \hat{\vec P}.\]</div>
+<p>It is Hermitian. So it can be an operator. We also find</p>
 <div class="math">
-<p><img src="../_images/math/18da1188a9f8944b487e1bbc284ef60cbf872411.png" alt="\hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}"/></p>
-</div><div class="math">
-<p><img src="../_images/math/59a2d7370beb5573965ef881b25a2ca727231ad7.png" alt="\left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    ."/></p>
-</div><p><strong>More generally, we can define angular momentum as</strong></p>
+\[\hat{\vec L}\times \hat{\vec L} = i \hbar \hat{\vec L}\]</div>
 <div class="math">
-<p><img src="../_images/math/efc1e3c6d9d7dcfad86dad952562bab09cbb5835.png" alt="\left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k"/></p>
-</div><p>We can prove that</p>
+\[\left[\hat L_i,\hat L_j\right] = \sum_k i\epsilon_{ijk}\hat L_k    .\]</div>
+<p><strong>More generally, we can define angular momentum as</strong></p>
 <div class="math">
-<p><img src="../_images/math/99cf9e6b98a84cc2a738157b3079f6b6f4c8fa13.png" alt="\left[ \hat J^2,\hat J_z \right] = 0."/></p>
-</div><p>So they can have the same eigenstates</p>
+\[\left[\hat J_i, \hat J_j\right] = i\hbar \sum_k \epsilon_{ijk} \hat J_k\]</div>
+<p>We can prove that</p>
 <div class="math">
-<p><img src="../_images/math/6d29e794b7aca4b1b34ff203d37780ce081af544.png" alt="\hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}"/></p>
-</div><div class="math">
-<p><img src="../_images/math/24b3fa6f801c4a852b9b3d546fd5cc06cb86d3a1.png" alt="\hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}"/></p>
-</div><p>To find the constraints on these eigenvalues, we can use positive definite condition of certain inner porducts, such as,</p>
+\[\left[ \hat J^2,\hat J_z \right] = 0.\]</div>
+<p>So they can have the same eigenstates</p>
 <div class="math">
-<p><img src="../_images/math/5a6356c75ec218c5555fd6a00307474801b4dbc4.png" alt="\bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0"/></p>
-</div><div class="math">
-<p><img src="../_images/math/8a5f437c228b6f3ea75226ac5c7af620dc0dba10.png" alt="\bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0"/></p>
-</div><p>where</p>
+\[\hat J_z \ket{\lambda m} = m\hbar \ket{\lambda m}\]</div>
 <div class="math">
-<p><img src="../_images/math/2529053c3ed60f1a605e0f0d776c65382839d430.png" alt="\hat J_{\pm} = \hat J_x \pm i \hat J_y"/></p>
-</div><p>and we have</p>
+\[\hat J^2 \ket{\lambda m} = \lambda^2 \hbar^2 \ket{\lambda m}\]</div>
+<p>To find the constraints on these eigenvalues, we can use positive definite condition of certain inner porducts, such as,</p>
 <div class="math">
-<p><img src="../_images/math/c34eeab3325bf420561f78ae0722b3696a5c5112.png" alt="\left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z"/></p>
-</div><div class="math">
-<p><img src="../_images/math/39afc3f86f7616de6ea218faeb5e4113d54d8053.png" alt="\left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}."/></p>
-</div><p>It&#8217;s easy to find out that</p>
+\[\bra{\psi} \hat J_+ \hat J_- \ket{\psi} \geq 0\]</div>
 <div class="math">
-<p><img src="../_images/math/39fb06841e621b4713519ce450db93870aba93c7.png" alt="\hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})"/></p>
-</div><p>i.e., <img class="math" src="../_images/math/8a62f24ad4bc49a7a9c7272d0123ff522742e73e.png" alt="\hat J_{\pm}\ket{\lambda m}"/> is eigenstate of <img class="math" src="../_images/math/7e258b5e495a4288ae143e7ca763a0c12ff66715.png" alt="\hat J_z"/>.</p>
+\[\bra{\psi} \hat J_- \hat J_+ \ket{\psi} \geq 0\]</div>
+<p>where</p>
+<div class="math">
+\[\hat J_{\pm} = \hat J_x \pm i \hat J_y\]</div>
+<p>and we have</p>
+<div class="math">
+\[\left[\hat J_+, \hat J_-\right] = 2 \hbar \hat J_z\]</div>
+<div class="math">
+\[\left[\hat J_z, \hat J_{\pm} \right] = \pm \hbar \hat J_{\pm}.\]</div>
+<p>It&#8217;s easy to find out that</p>
+<div class="math">
+\[\hat J_z (\hat J_{\pm}\ket{\lambda m}) = (m\pm 1) \hbar (\hat J_{\pm} \ket{\lambda m})\]</div>
+<p>i.e., <span class="math">\(\hat J_{\pm}\ket{\lambda m}\)</span> is eigenstate of <span class="math">\(\hat J_z\)</span>.</p>
 <p>Follow the plan of finding out the bounds through these positive inner products, we can prove that</p>
 <div class="math">
-<p><img src="../_images/math/8f2085b5914994e5429e91f262c14dd0afc51f88.png" alt="\hat J^2\ket{jm} = j(j+1)\hbar^2 \ket{jm}"/></p>
-</div><div class="math">
-<p><img src="../_images/math/475891a6a49f0a934ea26a8c4254b5a27634947e.png" alt="\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}"/></p>
-</div></div>
+\[\hat J^2\ket{jm} = j(j+1)\hbar^2 \ket{jm}\]</div>
+<div class="math">
+\[\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}\]</div>
+</div>
 <div class="section" id="eigenstates-of-angular-momentum">
 <h4>Eigenstates of Angular Momentum<a class="headerlink" href="#eigenstates-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
-<p>As we have proposed, the eigenstates of both <img class="math" src="../_images/math/7e258b5e495a4288ae143e7ca763a0c12ff66715.png" alt="\hat J_z"/> and <img class="math" src="../_images/math/099ea5ff1e104884e3103a46a74b318d70ad11c3.png" alt="\hat{\vec J}^2"/> are <img class="math" src="../_images/math/e4bdb758b7711b348e676dd8f2a5ec46d67d471e.png" alt="\ket{j,m}"/>, where <img class="math" src="../_images/math/9e5eedf6182cf7923f73835ae067c757cbd24518.png" alt="j=0,1,2,\cdots"/> and <img class="math" src="../_images/math/7aaf1619169ee7b52ebd1ae8a05c4a6cbfaf7ca6.png" alt="m=-j,-j+1,\cdots, j-1,j"/>.</p>
-<p>We can also find out the wave function in <img class="math" src="../_images/math/1cc96da9ca595b7f9e7f9c59998edb9122157305.png" alt="{\ket{\theta,\phi } }"/> basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.</p>
+<p>As we have proposed, the eigenstates of both <span class="math">\(\hat J_z\)</span> and <span class="math">\(\hat{\vec J}^2\)</span> are <span class="math">\(\ket{j,m}\)</span>, where <span class="math">\(j=0,1,2,\cdots\)</span> and <span class="math">\(m=-j,-j+1,\cdots, j-1,j\)</span>.</p>
+<p>We can also find out the wave function in <span class="math">\({\ket{\theta,\phi } }\)</span> basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.</p>
 <div class="math">
-<p><img src="../_images/math/edbb249523147f12540b325d833c26d0e095d341.png" alt="\int \mathrm d \Omega \braket{\theta',\phi'}{\theta,\phi} = \delta(\cos\theta'-\cos\theta,\phi'-\phi)
-\int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} = 1"/></p>
-</div><p>Now we have an arbitary state <img class="math" src="../_images/math/b29069d47abd2ab7b198157a23b4da57c3ea9491.png" alt="\ket{\psi}"/>,</p>
+\[\int \mathrm d \Omega \braket{\theta',\phi'}{\theta,\phi} = \delta(\cos\theta'-\cos\theta,\phi'-\phi)
+\int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} = 1\]</div>
+<p>Now we have an arbitary state <span class="math">\(\ket{\psi}\)</span>,</p>
 <div class="math">
-<p><img src="../_images/math/fc505962a204b385371db84bd20823cd31e54e5c.png" alt="\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm}\ket{l,m} \\
+\[\begin{split}\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm}\ket{l,m} \\
            &amp;= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'}\bra{\theta,\phi} \psi _ {lm}\ket{l,m} \\
-           &amp;= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'} (\braket{\theta,\phi}{l,m} ) \psi _ {lm} \\"/></p>
-</div><p>Then we define</p>
+           &amp;= \sum _ {l,m} \int \mathrm d \Omega \ket{\theta',\phi'} (\braket{\theta,\phi}{l,m} ) \psi _ {lm} \\\end{split}\]</div>
+<p>Then we define</p>
 <div class="math">
-<p><img src="../_images/math/48c60a6ef3ffa9c6b290050db250c42ee60eb6ec.png" alt="\braket{\theta,\phi}{l,m}=Y_l^m(\theta,\phi)"/></p>
-</div><p>which is the spherical harmonic function.</p>
+\[\braket{\theta,\phi}{l,m}=Y_l^m(\theta,\phi)\]</div>
+<p>which is the spherical harmonic function.</p>
 <p>Then</p>
 <div class="math">
-<p><img src="../_images/math/28a2afadd8ffa0cbf6bbb941811a25d1809723c6.png" alt="\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\"/></p>
-</div><p>So as long as we find out what <img class="math" src="../_images/math/cbcfd32c6fc15576ee25613785c0de66d343e785.png" alt="\psi _ {lm}"/> is, any problem is done.</p>
+\[\begin{split}\ket{\psi} &amp;= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\\end{split}\]</div>
+<p>So as long as we find out what <span class="math">\(\psi _ {lm}\)</span> is, any problem is done.</p>
 </div>
 </div>
 </div>

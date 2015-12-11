@@ -26,6 +26,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/rrssb.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
@@ -156,11 +157,11 @@
               
                 
   <li>
-    <a href="relativity/generalRelativity.html" title="Previous Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; General Relativi...</span>
+    <a href="relativity/generalRelativity.html" title="Previous Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; General Relat...</span>
     </a>
   </li>
   <li>
-    <a href="relativity/generalRelativityAdv.html" title="Next Chapter: General Relativity Revisited"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relativi... &raquo;</span>
+    <a href="relativity/generalRelativityAdv.html" title="Next Chapter: General Relativity Revisited"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relat... &raquo;</span>
     </a>
   </li>
               
@@ -186,7 +187,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="astrophysics">
 <h1>Astrophysics<a class="headerlink" href="#astrophysics" title="Permalink to this headline">¶</a></h1>
@@ -198,36 +199,36 @@
 <h2>Doppler Shift<a class="headerlink" href="#doppler-shift" title="Permalink to this headline">¶</a></h2>
 <p>The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.</p>
 <img alt="_images/dopplerRedshift.png" class="align-center" src="_images/dopplerRedshift.png" />
-<p>The observer is fixed in O&#8217; frame and source is in O frame. Emitting angle in O frame is <img class="math" src="_images/math/0c6359135f407f7f0df49186befd69442e832664.png" alt="\theta"/>.</p>
+<p>The observer is fixed in O&#8217; frame and source is in O frame. Emitting angle in O frame is <span class="math">\(\theta\)</span>.</p>
 <p>Since momentum is a vector, we have the Lorentz transformation which transfrom it in to O&#8217; frame,</p>
 <div class="math">
-<p><img src="_images/math/0c41eec95376bb0cf312314c18621c9d1a7c197f.png" alt="\frac{E'}{c} = \gamma \left(\frac{E}{c} - \beta p_x\right),"/></p>
-</div><p>where we also have</p>
+\[\frac{E'}{c} = \gamma \left(\frac{E}{c} - \beta p_x\right),\]</div>
+<p>where we also have</p>
 <div class="math">
-<p><img src="_images/math/d4668aa7b8db5dfdab28d93565bbd7c68e557fde.png" alt="p_x &amp;= p\cos\theta,
-p = E/c."/></p>
-</div><p>Combining these equations, the energy of the photons in O&#8217; frame is</p>
+\[\begin{split}p_x &amp;= p\cos\theta,
+p = E/c.\end{split}\]</div>
+<p>Combining these equations, the energy of the photons in O&#8217; frame is</p>
 <div class="math">
-<p><img src="_images/math/2081364f02909e78917d81f7c728acbbf9cdb99e.png" alt="E' = E \gamma (1 - \beta \cos\theta)."/></p>
-</div><p>In quantum mechanics, energy is related to angular frequency,</p>
+\[E' = E \gamma (1 - \beta \cos\theta).\]</div>
+<p>In quantum mechanics, energy is related to angular frequency,</p>
 <div class="math">
-<p><img src="_images/math/5ec3c7ac3085f8245d26a93208cc7cd96ae979f0.png" alt="E = \hbar \omega."/></p>
-</div><p>The angular frequency in O&#8217; frame is</p>
+\[E = \hbar \omega.\]</div>
+<p>The angular frequency in O&#8217; frame is</p>
 <div class="math">
-<p><img src="_images/math/62bab6dbd9be5d15bf717fc2c98352782071de15.png" alt="\omega ' = \omega \gamma (1-\beta \cos\theta)."/></p>
-</div><p>Redshift is define as</p>
+\[\omega ' = \omega \gamma (1-\beta \cos\theta).\]</div>
+<p>Redshift is define as</p>
 <div class="math">
-<p><img src="_images/math/fe6f8652a6f0df308a5b449b1061e805c91fcf3e.png" alt="z &amp;= \frac{\nu_e - \nu_o}{\nu_o} \\
+\[\begin{split}z &amp;= \frac{\nu_e - \nu_o}{\nu_o} \\
 &amp; = \frac{\omega_e - \omega_o}{\omega_o} \\
-&amp; = \frac{1/\gamma - 1 + \beta\cos\theta}{1-\beta \cos\theta}."/></p>
-</div><div class="admonition-non-relativistic-doppler-shift admonition">
+&amp; = \frac{1/\gamma - 1 + \beta\cos\theta}{1-\beta \cos\theta}.\end{split}\]</div>
+<div class="admonition-non-relativistic-doppler-shift admonition">
 <p class="first admonition-title">Non-relativistic Doppler Shift</p>
 <p>To understand the effect of relativity, we would first recall the non-relativistic doppler shift.</p>
 <div class="math">
-<p><img src="_images/math/5fe52432ee84dcd0276aa86c525ed6435d98682f.png" alt="\omega'_{non-rel} = \omega_{non-rel}(1-v/c \cos\theta)."/></p>
-</div><p class="last">where no <img class="math" src="_images/math/bdf8bd9306e1aeef5ebf2ac8836f087b05304983.png" alt="\gamma"/> is relavent. It&#8217;s obvious that we have only two kinds of shift, redshift due to the source is closing, or blueshift due to the fact that the source is moving away.</p>
+\[\omega'_{non-rel} = \omega_{non-rel}(1-v/c \cos\theta).\]</div>
+<p class="last">where no <span class="math">\(\gamma\)</span> is relavent. It&#8217;s obvious that we have only two kinds of shift, redshift due to the source is closing, or blueshift due to the fact that the source is moving away.</p>
 </div>
-<p>Here we have three different kinds, the additional one is the transverse redshift due to the <img class="math" src="_images/math/bdf8bd9306e1aeef5ebf2ac8836f087b05304983.png" alt="\gamma"/> factor or the contraction of time.</p>
+<p>Here we have three different kinds, the additional one is the transverse redshift due to the <span class="math">\(\gamma\)</span> factor or the contraction of time.</p>
 <p>An gif from wikipedia shows this explicitly,</p>
 <div class="figure align-center" id="id2">
 <img alt="_images/XYCoordinates.gif" src="_images/XYCoordinates.gif" />
@@ -253,27 +254,27 @@ p = E/c."/></p>
 <p>Total cross section of Thomson scattering can be obtained using only classical electrodynamics. The physics behind it is that the electric field excerts force on an electron then the electron emits photons to all possible direction as it oscillates.</p>
 <p>The incoming power per unit area is</p>
 <div class="math">
-<p><img src="_images/math/7b524327674758fb6051bf4b7ac136ed3391ee72.png" alt="P_{inc}= c u_{rad},"/></p>
-</div><p>as <img class="math" src="_images/math/19386f9af7693198b7e273f7e43e8018996248a9.png" alt="u_{rad} = \frac{E^2}{4\pi}"/> is the energy density of EM field.</p>
+\[P_{inc}= c u_{rad},\]</div>
+<p>as <span class="math">\(u_{rad} = \frac{E^2}{4\pi}\)</span> is the energy density of EM field.</p>
 <p>The outgoing or scattered wave power (total) is</p>
 <div class="math">
-<p><img src="_images/math/5fc0aac9fb05a9fc1338e094fd179e8b6a62f56d.png" alt="P_{scatt} = \frac{2}{3}\frac{e^4}{m_e^2 c^3} E^2."/></p>
-</div><p>The total cross section is ratio of the two quantity, i.e.,</p>
+\[P_{scatt} = \frac{2}{3}\frac{e^4}{m_e^2 c^3} E^2.\]</div>
+<p>The total cross section is ratio of the two quantity, i.e.,</p>
 <div class="math">
-<p><img src="_images/math/59342de0eefa0d8b5282a4b282ae12053d6e44bc.png" alt="\sigma_T \equiv \frac{P_{scatt}}{P_{inc}} =\frac{8\pi e^4}{3 m_e ^2 c^4} = \frac{8\pi (\alpha \hbar c)^2}{3 m_e ^2 c^4},"/></p>
-</div><p>in which the fine structure constant is defined as <img class="math" src="_images/math/2df582b71eb41f80323387154082bbf88572124e.png" alt="\alpha = \frac{e^2}{\hbar c}"/>.</p>
+\[\sigma_T \equiv \frac{P_{scatt}}{P_{inc}} =\frac{8\pi e^4}{3 m_e ^2 c^4} = \frac{8\pi (\alpha \hbar c)^2}{3 m_e ^2 c^4},\]</div>
+<p>in which the fine structure constant is defined as <span class="math">\(\alpha = \frac{e^2}{\hbar c}\)</span>.</p>
 </div>
 <div class="section" id="id1">
 <h3>Compton Scattering<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>The full quantum electrodynamics result is called Klein-Nishima formula, which describes the total cross section of coliding photon and electron,</p>
 <div class="math">
-<p><img src="_images/math/5ac6abf31b429a80ef457ba6f33ab4232d7ea09b.png" alt="\sigma_{K-N} = \frac{\pi e^4}{m_e^2 c^4} \frac{1}{\epsilon} \left[ \left(1 - \frac{2(\epsilon+1)}{\epsilon^2}\right) \ln (2\epsilon + 1) + \frac{1}{2} + \frac{4}{\epsilon} - \frac{1}{2(2\epsilon + 1)^2} \right],"/></p>
-</div><p>where <img class="math" src="_images/math/3c9d64f6e9a9e3f6fa8b6259c6fdd4182a69b77a.png" alt="\epsilon = \frac{E}{m_e c^2}"/>.</p>
-<p>In the limit that energy of electron is much larger than photons, we have <img class="math" src="_images/math/d881ac49cfda22889a9ffebf2610dca805c62061.png" alt="\epsilon"/> is much smaller than 1, we would come back to the Thomson limit, which is true for our equation,</p>
+\[\sigma_{K-N} = \frac{\pi e^4}{m_e^2 c^4} \frac{1}{\epsilon} \left[ \left(1 - \frac{2(\epsilon+1)}{\epsilon^2}\right) \ln (2\epsilon + 1) + \frac{1}{2} + \frac{4}{\epsilon} - \frac{1}{2(2\epsilon + 1)^2} \right],\]</div>
+<p>where <span class="math">\(\epsilon = \frac{E}{m_e c^2}\)</span>.</p>
+<p>In the limit that energy of electron is much larger than photons, we have <span class="math">\(\epsilon\)</span> is much smaller than 1, we would come back to the Thomson limit, which is true for our equation,</p>
 <div class="math">
-<p><img src="_images/math/824decee40a522f0f3e1a7b6a42fa04254925a74.png" alt="\sigma_{K-N} &amp;= \sigma_T \frac{3 \left(\left(1-\frac{2 (x+1)}{x^2}\right) \log (2 x+1)+\frac{4}{x}-\frac{1}{2 (2 x+1)^2}+\frac{1}{2}\right)}{8 x} \\
-&amp; = \sigma_T (1 - 2\epsilon + O(x^2))."/></p>
-</div><p>To have more understanding on this formula, I ploted <img class="math" src="_images/math/ec70c86b05999060a1e1a23bffcdb5b63e71b627.png" alt="\sigma_{K-N}"/> in terms of <img class="math" src="_images/math/7aee3f31be3e0344858f75d9561a9277f5d76218.png" alt="\sigma_T"/> as the energy scale <img class="math" src="_images/math/d881ac49cfda22889a9ffebf2610dca805c62061.png" alt="\epsilon"/> changes.</p>
+\[\begin{split}\sigma_{K-N} &amp;= \sigma_T \frac{3 \left(\left(1-\frac{2 (x+1)}{x^2}\right) \log (2 x+1)+\frac{4}{x}-\frac{1}{2 (2 x+1)^2}+\frac{1}{2}\right)}{8 x} \\
+&amp; = \sigma_T (1 - 2\epsilon + O(x^2)).\end{split}\]</div>
+<p>To have more understanding on this formula, I ploted <span class="math">\(\sigma_{K-N}\)</span> in terms of <span class="math">\(\sigma_T\)</span> as the energy scale <span class="math">\(\epsilon\)</span> changes.</p>
 <img alt="_images/comptonScattering.png" class="align-center" src="_images/comptonScattering.png" />
 </div>
 </div>
@@ -282,10 +283,10 @@ p = E/c."/></p>
 <p>The stars do shake, from inside out.</p>
 <p>Long period variable such as Cepheids pulsate in the luminosity. This is because of the radial oscillation mode with a approximate period of</p>
 <div class="math">
-<p><img src="_images/math/bc627c7e9a57bff67f12bdc1ec5873798791ce74.png" alt="P_{dynamical} \approx \left( \frac{R^3}{GM} \right)^{1/2} \approx (G\bar \rho)^{-1/2},"/></p>
-</div><p>in which we have the radius of the star as <img class="math" src="_images/math/c161803cd431bb2da4622f78af748292215cd052.png" alt="R"/>, mass of the star as <img class="math" src="_images/math/4bdd9716bf124a1ec7aeddaf9cc9bca44e910dad.png" alt="M"/> and mean density <img class="math" src="_images/math/ab11fbfdcfdf36d4610aae109adea543abfa8c72.png" alt="\bar \rho"/>. <strong>The good thing of this oscillation immediately shows us the mean density of the star, even without any furthure inspectation.</strong></p>
+\[P_{dynamical} \approx \left( \frac{R^3}{GM} \right)^{1/2} \approx (G\bar \rho)^{-1/2},\]</div>
+<p>in which we have the radius of the star as <span class="math">\(R\)</span>, mass of the star as <span class="math">\(M\)</span> and mean density <span class="math">\(\bar \rho\)</span>. <strong>The good thing of this oscillation immediately shows us the mean density of the star, even without any furthure inspectation.</strong></p>
 <p>There are double mode Cepheids, whose modes provides information about mass and radius.</p>
-<p>Our sun, up to now we have identified thousands of individual modes. And more modes as many as <img class="math" src="_images/math/993ce739220ab2217616cba03fedca9d0fff0a88.png" alt="10^{6}"/> modes can be determined accurately.[^helioosc]_</p>
+<p>Our sun, up to now we have identified thousands of individual modes. And more modes as many as <span class="math">\(10^{6}\)</span> modes can be determined accurately.[^helioosc]_</p>
 <div class="section" id="papers-researches-and-more">
 <h3>Papers, Researches and More<a class="headerlink" href="#papers-researches-and-more" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
