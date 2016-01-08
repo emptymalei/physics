@@ -232,6 +232,26 @@ The evolution of the system in phase space obeys the Liouville's theorem, which 
 
 
 
+Oscillators
+========================
+
+
+Harmonic oscillators are described by
+
+.. math::
+   -k x = m \ddot x,
+
+which has solution
+
+.. math::
+   x = x(t=0) e^{i\omega x},
+
+where $\omega = \pm \sqrt{ \frac{k}{m} }$ and the final solution is determined by the second initial condition, i.e., the first order derivative of displacement.
+
+
+
+
+
 
 Refs & Notes
 ==================
