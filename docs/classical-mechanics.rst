@@ -6,6 +6,15 @@ Classical Mechanics
       :start: 3
 
 
+Lagrangian and Equation of Motion
+======================================================
+
+
+Euler-Lagrangian equation is
+
+.. math::
+   \frac{d}{dt} \left(  \frac{\partial L}{\partial \dot{\boldsymbol r}} \right) - \frac{\partial L}{\partial \boldsymbol r} = 0.
+
 
 
 
@@ -14,6 +23,52 @@ Central Force Fields
 
 
 Central force fields are widely used in physics and they have simple yet important properties.
+
+In general, central force is described using
+
+.. math::
+   \vec F(\vec r) = f(r)\hat r.
+
+The Lagrangian for an object of mass :math:`m` in a central force field is
+
+.. math::
+   L &= \frac{1}{2} m \dot \boldsymbol{r} ^2 - V(r) \\
+   & = \frac{1}{2} m ( \dot r^2 + r^2 \theta^2 ) - V(r) .
+
+
+The interesting thing for such a system is that there is always a conserved quantity since the Lagrangian has no explicit :math:`\theta` dependence. It is obvious that
+
+.. math::
+   \frac{\partial L}{\partial \theta} = 0.
+
+Now we have
+
+.. math::
+   \frac{d}{dt} \left(  \frac{\partial L}{\partial \dot{\theta}} \right) = 0,
+
+which leads to the conservation of angular momentum as the first equation of motion,
+
+.. math::
+   \dot l \equiv \dot p_\theta = \frac{d}{dt} \left(  m r^2 \dot\theta  \right) = 0
+
+
+The second equation of motion is given by
+
+.. math::
+   \frac{d}{dt} \left(  \frac{\partial L}{\partial \dot{r}} \right) - \frac{\partial L}{\partial r}  = 0,
+
+
+which simplifies to
+
+.. math::
+   \frac{d}{dt} (m \dot r) - m r {\dot \theta}^2  + \frac{\partial V(r)}{\partial r} = 0.
+
+Applying the conserved quantity, we find an effective potential
+
+.. math::
+   V_{eff} (r) = V(r) + \frac{1}{2} \frac{ l^2 }{ m r^2 }.
+
+
 
 
 
@@ -136,4 +191,25 @@ in which :math:`\lambda` is the eigen value of this function.
 Hamiltonian Dynamics
 =====================
 
-Phase space
+Hamiltonian equations are
+
+.. math::
+   \dot q_i &= \frac{\partial H}{\partial p_i} \\
+   \dot p_i &= -\frac{\partial H}{\partial q_i}.
+
+The evolution of the system in phase space obeys the Liouville's theorem, which describes the motion of phase space density $\rho(\{q_i\}, \{p_i\}, t)$,
+
+.. math::
+   \frac{d\rho}{dt} = 0.
+
+
+.. admonition:: Phase Space Density
+   :class: notes
+
+   The probability that the system will be found in a phase space interval $d^n p d^n q$ is given by $\rho(\{q_i\},\{ p_i\},t) d^n p d^n q$.
+
+
+
+
+Refs & Notes
+==================
