@@ -6,6 +6,23 @@ Classical Mechanics
       :start: 3
 
 
+
+Regid Body
+==================================
+
+
+Center of mass $\vec R$ is defined as
+
+.. math::
+   \int \rho(\vec r) \vec r d^3 \vec r = \int \rho(\vec r) \vec R d^3 \vec r .
+
+Equivalently,
+
+.. math::
+   \int \rho(\vec r) \left( \vec r - \vec R \right) d^3 \vec r = 0.
+
+
+
 Lagrangian and Equation of Motion
 ======================================================
 
@@ -197,6 +214,9 @@ Hamiltonian equations are
    \dot q_i &= \frac{\partial H}{\partial p_i} \\
    \dot p_i &= -\frac{\partial H}{\partial q_i}.
 
+Some constant of motion can be read out from the equations by recogonizing the fact that the time derivative of a constant of motion, $q_i$ or $p_i$, is zero. For example, if the Hamiltonian doesn't explicitly depend on $p_k$, we have $\frac{\partial H}{\partial p_k} = 0 = \dot q_k$, which means that $q_k$ is a constant of motion.
+
+
 The evolution of the system in phase space obeys the Liouville's theorem, which describes the motion of phase space density $\rho(\{q_i\}, \{p_i\}, t)$,
 
 .. math::
@@ -207,6 +227,8 @@ The evolution of the system in phase space obeys the Liouville's theorem, which 
    :class: notes
 
    The probability that the system will be found in a phase space interval $d^n p d^n q$ is given by $\rho(\{q_i\},\{ p_i\},t) d^n p d^n q$.
+
+
 
 
 
