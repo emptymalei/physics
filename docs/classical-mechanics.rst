@@ -49,7 +49,7 @@ In general, central force is described using
 The Lagrangian for an object of mass :math:`m` in a central force field is
 
 .. math::
-   L &= \frac{1}{2} m \dot \boldsymbol{r} ^2 - V(r) \\
+   L &= \frac{1}{2} m \dot \mathbf{r} ^2 - V(r) \\
    & = \frac{1}{2} m ( \dot r^2 + r^2 \theta^2 ) - V(r) .
 
 
@@ -200,6 +200,23 @@ in which :math:`\lambda` is the eigen value of this function.
 
 
 
+Simplest Harmonic Oscillators
+--------------------------------------------------------
+
+
+Harmonic oscillators are described by
+
+.. math::
+   -k x = m \ddot x,
+
+which has solution
+
+.. math::
+   x = x(t=0) e^{i\omega x},
+
+where $\omega = \pm \sqrt{ \frac{k}{m} }$ and the final solution is determined by the second initial condition, i.e., the first order derivative of displacement.
+
+
 
 
 
@@ -231,22 +248,6 @@ The evolution of the system in phase space obeys the Liouville's theorem, which 
 
 
 
-
-Oscillators
-========================
-
-
-Harmonic oscillators are described by
-
-.. math::
-   -k x = m \ddot x,
-
-which has solution
-
-.. math::
-   x = x(t=0) e^{i\omega x},
-
-where $\omega = \pm \sqrt{ \frac{k}{m} }$ and the final solution is determined by the second initial condition, i.e., the first order derivative of displacement.
 
 
 
