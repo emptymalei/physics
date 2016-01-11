@@ -49,8 +49,8 @@ In general, central force is described using
 The Lagrangian for an object of mass :math:`m` in a central force field is
 
 .. math::
-   L &= \frac{1}{2} m \dot \mathbf{r} ^2 - V(r) \\
-   & = \frac{1}{2} m ( \dot r^2 + r^2 \theta^2 ) - V(r) .
+   L &= \frac{1}{2} m  \mathbf{ \dot r} ^2 - V(r) \\
+   & = \frac{1}{2} m ( \mathbf{\dot r}^2 + r^2 \theta^2 ) - V(r) .
 
 
 The interesting thing for such a system is that there is always a conserved quantity since the Lagrangian has no explicit :math:`\theta` dependence. It is obvious that
