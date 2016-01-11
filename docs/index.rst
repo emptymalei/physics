@@ -3,23 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Physics Research Survival Manual!
+Welcome to Physics Notebook
 =============================================================
 
 
-This is a notebook about physics. It's not done yet. (Maybe I'll never finish it because there are too many topics in physics.)
+This is a notebook on physics. WIP.
 
 Use the source. Keep the source open.
 
 
 
-At The Begining of The Universe
-================================
-
-I am not a good physicist so don't trust the notes written here.
-
-
-Preface
+Table of Contents
 ==================================
 
 
@@ -111,16 +105,9 @@ Cutting Edge Physics
 
 
 
-------
-
-License
-========
-
-This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_.
 
 
-.. figure:: _static/images/cc_byncsa.png
-   :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+
 
 DOI
 ==============
@@ -132,6 +119,12 @@ DOI
 
 
 
------
+License
+========
+This open source project is hosted on GitHub: `Physics <https://github.com/emptymalei/physics>`_ .
 
-This open source project is hosted on GitHub: `Physics Research Manual <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual>`_ .
+This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_.
+
+
+.. figure:: _static/images/cc_byncsa.png
+   :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/
