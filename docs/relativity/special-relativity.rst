@@ -185,7 +185,7 @@ An gif from wikipedia shows this explicitly,
 The change in wavelength is given by
 
 .. math::
-   \lambda_{obs} = \lambda_{src} \sqrt{ \frac{1 - \beta}{1 + \beta} } .
+   \frac{\lambda_{obs} }{ \lambda_{src}  }= \sqrt{ \frac{1 - \beta}{1 + \beta} } .
 
 
 

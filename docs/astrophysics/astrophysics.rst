@@ -1,6 +1,13 @@
 Astrophysics
 ===============
 
+Orbital Dynamics
+----------------------------------
+
+Kepler's law can be easily derived from Newton's dynamics.
+
+The first law is about the 
+
 
 Wave Bands
 -------------------------

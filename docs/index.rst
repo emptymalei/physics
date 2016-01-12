@@ -93,7 +93,7 @@ Cutting Edge Physics
 .. toctree::
     :maxdepth: 3
 
-    astrophysics.rst
+    astrophysics/basics.rst
     relativity/general-relativity-adv.rst
     cosmology.rst
     quantum/quantum-optics.rst
