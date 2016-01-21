@@ -1,9 +1,13 @@
-
-
-*******************
 General Relativity
 *******************
 
+General relativity is a theory of gravity. The idea is to find a set of "proper" coordinate system to describe physics on a curved space and make connection between these "proper" coordinate systems.
+
+
+Tidal Force
+===================================
+
+It is very important to understand tidal force.
 
 
 Description of Space-time Manifold
@@ -53,7 +57,7 @@ Volume
 
 To calculate volume, the volume element should be defined first in order to integrate. Before that, orientation on manifolds is to be figured out.
 
-On an oriented manifold with metric, the defined volume element (a n-form) should be compatible with the orientation and also determined by the metric. [1]_ 
+On an oriented manifold with metric, the defined volume element (a n-form) should be compatible with the orientation and also determined by the metric. [1]_
 
 Introducing those requirements, a compatible volume element is
 
@@ -81,7 +85,7 @@ Induced volume element $\hat \epsilon_{a_1\cdots a_{n-1}}$ is defined use the no
 4-velocity
 """""""""""
 
-4-velocity of observed matter is 
+4-velocity of observed matter is
 
 .. math::
    u^\alpha = \frac{\mathrm d x^\alpha}{\mathrm d \tau}
@@ -258,5 +262,3 @@ Static
 "A static spacetime is a stationary spacetime in which the timelike Killing vector field has vanishing vorticity, or equivalently (by the Frobenius theorem) is hypersurface orthogonal. A static spacetime is one which admits a slicing into spacelike hypersurfaces which are everywhere orthogonal to the world lines of our 'bored observers'"
 
 When we say a field is static, the field is both time-independent and symmetric in a time reversal process.
-
-
