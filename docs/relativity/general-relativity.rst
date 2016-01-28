@@ -4,14 +4,104 @@ General Relativity
 General relativity is a theory of gravity. The idea is to find a set of "proper" coordinate system to describe physics on a curved space and make connection between these "proper" coordinate systems.
 
 
-Tidal Force
-===================================
+Tidal Force and Equivalence Principle
+======================================================================
 
-It is very important to understand tidal force.
+Tidal force in the frame work of Newtonian gravity can be derived by finding the second order derivative of the displacement difference between two nearby objects.
+
+The Einstein's equivalence principle means that the free falling frame is no different than inertial frame if the two object are close enough and the comoving equipment we are using to measure the tidal effect could not tell the effect.
+
+
+
+
+Vectors and Tensors
+==========================
+
+.. admonition:: Two Systems of Notations
+   :class: note
+
+   **Come back to this when the index fearing syndrome becomes too strong.**
+
+   There are many different systems of notations for vectors.
+
+   One of them is to use a tilde on top of the letter to denote a vector and a tilde at bottom to denote the co-vector, i.e.,
+
+   .. math::
+      \tilde v, & \text{vector}\\
+      \underset{\sim}{v}, & \text{co-vector}.
+
+   The other notation that is widely used is abstract index notation where we use latin superscript to denote vector and latin subscript to denote co-vector, i.e.,
+
+   .. math::
+      v^a, & \text{vector}\\
+      v_a, & \text{co-vector}.
+
+   The question is, obviously, how the components of vectors is denoted. In the first notation, we use subscript (components of vector) and superscript (components of co-vector) for the components,
+
+   .. math::
+      \tilde v_\mu, & \text{$\mu$ component of vector}\\
+      \underset{\sim}{v}^\mu, & \text{$\mu$ component of co-vector}.
+
+
+   However, the abstract index notation is using greek superscript for co-vector component and greek subscript for vector component.
+
+   .. math::
+      v^a_\mu, & \text{$\mu$ component of vector}\\
+      v_a^\mu, & \text{$\mu$ component of co-vector}.
+
+
+
+Whenever a vector is mentioned, it is composed of its components and basis, which should be written as
+
+.. math::
+   \alpha^a = \alpha^\mu e^a_{\phantom{a}\mu},
+
+where $\{ \alpha^\mu \}$ are the components and $\{ e^a_{\phantom{a}\mu} \}$ are the basis.
+
+Then we define its dual $w_b$
+
+.. math::
+   w_a \alpha^a = \mathscr{C},
+
+where the left hand side can be expanded
+
+.. math::
+   w_a \alpha^a = w_\lambda f_a^{\phantom{a}\lambda} \alpha^\mu e^a_{\phantom{a}\mu} = w_\lambda \alpha^\mu f_a^{\phantom{a}\lambda} e^a_{\phantom{a}\mu}.
+
+For orthonormal basis, we have
+
+.. math::
+   f_a^{\phantom{a}\lambda} e^a_{\phantom{a}\mu} = \delta^\lambda _\mu,
+
+which gives us the contraction of $w_a$ and $\alpha^a$
+
+.. math::
+   w_a \alpha^a = w_\lambda \alpha^\mu \delta^\lambda _\mu = w _ \mu \alpha^\mu.
+
+Usually the vector basis could be $\{ dx^\mu \}$ and we could derive the basis for the dual vector $\{ \frac{d}{dx^\mu} \}$.
+
+
+Metric
+-------------------------------
+
+
+We define a scalar product in this way
+
+.. math::
+   \beta^a \cdot w^a = \beta^a g_{ab} \cdot w^b ,
+
+where $g_{ab}$ is the metric and can be related to the basis.
+
+The expression will be simplified using basis formalism,
+
+.. math::
+   \beta^a \cdot w^a = \beta^a g_{ab} \cdot w^b = \beta^\mu e^a_{\phantom{a}\mu} g_{ab} w^\lambda f^b_{\phantom{b}\lambda} = \beta^\mu w^\lambda g_{\mu\lambda} .
+
+
 
 
 Description of Space-time Manifold
-===================================
+======================================================================
 
 
 How to describe space-time manifold?
@@ -24,22 +114,22 @@ How to describe space-time manifold?
 
 
 Description of Space-time Manifold - Coordinates
-====================================================
+------------------------------------------------------
 
 
 Description of Space-time Manifold - Tetrads
-=============================================
+---------------------------------------------------------------------------
 
 
 
 Description of Space-time Manifold - 1+3 Covariant Description
-=================================================================
+---------------------------------------------------------------------------
 
 Physics in description is easier to understand.
 
 
 Definations
--------------
+~~~~~~~~~~~~~~~~~~
 
 Definations of some physical quantities and operators are listed below.
 
@@ -185,7 +275,7 @@ Properties
 
 
 Fields and Particles
-======================
+============================================
 
 
 Energy-Momentum Tensor for Particles
