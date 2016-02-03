@@ -163,7 +163,7 @@ which is symmetric under the exchange of i and j.
    Energy momentum tensor can be decomposed using the generators,
 
    .. math::
-      F^{\mu}_{\phantom\{\mu}\nu}  \vert_{\text{matrix form}} = - E_i B_i + B_i R_i,
+      F^{\mu}_{\phantom{\mu}\nu}  \vert_{\text{matrix form}} = - E_i B_i + B_i R_i,
 
    where we are using the Einstein summation rule.
 
