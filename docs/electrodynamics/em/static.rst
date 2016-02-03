@@ -131,7 +131,7 @@ which is symmetric under the exchange of i and j.
    Electromagnetic energy momentum tensor using Gaussian units and +2 signature is
 
    .. math::
-      T^{\mu\nu} = c^2 \left( F^\mu\alpha F^\nu_{\phantom\alpha} - \frac{1}{4}\eta^{\mu\nu} F_{\alpha\beta}F^{\alpha\beta} \right),
+      T^{\mu\nu} = c^2 \left( F^{\mu\alpha} F^{\nu}_{\phantom{\mu}\alpha} - \frac{1}{4}\eta^{\mu\nu} F_{\alpha\beta}F^{\alpha\beta} \right),
 
    where :math:`\mathbf F = \mathbf d \mathbf A \Rightarrow F_{\mu\nu}  = \partial_\mu A_\nu - \partial_\nu A_\mu`.
 
@@ -143,10 +143,10 @@ which is symmetric under the exchange of i and j.
       E_z/c & -B_y & B_x & 0
       \end{pmatrix}.
 
-   To change the index to :math:`F^\mu_{\phantom\nu}` we just use the Minkowski metric which just put plus and minus signs on the components,
+   To change the index to :math:`F^\mu_{\phantom{\mu}\nu}` we just use the Minkowski metric which just put plus and minus signs on the components,
 
    .. math::
-      F^{\mu}_{\phantom\nu} \vert_{\text{matrix form}} = \begin{pmatrix}
+      F^{\mu}_{\phantom{\mu}\nu} \vert_{\text{matrix form}} = \begin{pmatrix}
       0 & - E_x/c &  - E_y/c & - E_z/c  \\
       -E_x/c & 0 & -B_z & B_y \\
       -E_y/c & B_z & 0 & -B_x \\
@@ -163,9 +163,11 @@ which is symmetric under the exchange of i and j.
    Energy momentum tensor can be decomposed using the generators,
 
    .. math::
-      F^{\mu}_{\phantom\nu}  \vert_{\text{matrix form}} = - E_i B_i + B_i R_i,
+      F^{\mu}_{\phantom\{\mu}\nu}  \vert_{\text{matrix form}} = - E_i B_i + B_i R_i,
 
    where we are using the Einstein summation rule.
+
+   For more information about this please read `arXiv:physics/0005084 <http://arxiv.org/abs/physics/0005084>`_ .
 
 
 

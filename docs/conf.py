@@ -44,135 +44,11 @@ latex_preamble = r"""
 \def\degrees{^\circ}
 \def\d{{\rm d}}
 
-\def\sign{\mathop{\mathrm{sign}}}
-\def\L{{\mathcal L}}
-\def\H{{\mathcal H}}
-\def\M{{\mathcal M}}
-\def\matrix{}
-\def\fslash#1{#1 \!\!\!/}
-\def\F{{\bf F}}
-\def\R{{\bf R}}
-\def\J{{\bf J}}
-\def\x{{\bf x}}
-\def\y{{\bf y}}
-\def\h{{\rm h}}
-\def\a{{\rm a}}
-\newcommand{\bfx}{\mbox{\boldmath $x$}}
-\newcommand{\bfy}{\mbox{\boldmath $y$}}
-\newcommand{\bfz}{\mbox{\boldmath $z$}}
-\newcommand{\bfv}{\mbox{\boldmath $v$}}
-\newcommand{\bfu}{\mbox{\boldmath $u$}}
-\newcommand{\bfF}{\mbox{\boldmath $F$}}
-\newcommand{\bfJ}{\mbox{\boldmath $J$}}
-\newcommand{\bfU}{\mbox{\boldmath $U$}}
-\newcommand{\bfY}{\mbox{\boldmath $Y$}}
-\newcommand{\bfR}{\mbox{\boldmath $R$}}
-\newcommand{\bfg}{\mbox{\boldmath $g$}}
-\newcommand{\bfc}{\mbox{\boldmath $c$}}
-\newcommand{\bfxi}{\mbox{\boldmath $\xi$}}
 \newcommand{\bra}[1]{\left\langle #1\right|}
 \newcommand{\ket}[1]{\left| #1\right\rangle}
 \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
 \newcommand{\avg}[1]{\left< #1 \right>}
 
-
-%\def\back{\!\!\!\!\!\!\!\!\!\!}
-\def\back{}
-\def\col#1#2{\left(\matrix{#1#2}\right)}
-\def\row#1#2{\left(\matrix{#1#2}\right)}
-\def\mat#1{\begin{pmatrix}#1\end{pmatrix}}
-\def\matd#1#2{\left(\matrix{#1\back0\cr0\back#2}\right)}
-\def\p#1#2{{\partial#1\over\partial#2}}
-\def\cg#1#2#3#4#5#6{({#1},\,{#2},\,{#3},\,{#4}\,|\,{#5},\,{#6})}
-\def\half{{\textstyle{1\over2}}}
-\def\jsym#1#2#3#4#5#6{\left\{\matrix{
-{#1}{#2}{#3}
-{#4}{#5}{#6}
-}\right\}}
-\def\diag{\hbox{diag}}
-
-\font\dsrom=dsrom10
-\def\one{\hbox{\dsrom 1}}
-
-\def\res{\mathop{\mathrm{Res}}}
-
-\def\mathnot#1{\text{"$#1$"}}
-
-
-%See Character Table for cmmib10:
-%http://www.math.union.edu/~dpvc/jsmath/download/extra-fonts/cmmib10/cmmib10.html
-\font\mib=cmmib10
-\def\balpha{\hbox{\mib\char"0B}}
-\def\bbeta{\hbox{\mib\char"0C}}
-\def\bgamma{\hbox{\mib\char"0D}}
-\def\bdelta{\hbox{\mib\char"0E}}
-\def\bepsilon{\hbox{\mib\char"0F}}
-\def\bzeta{\hbox{\mib\char"10}}
-\def\boldeta{\hbox{\mib\char"11}}
-\def\btheta{\hbox{\mib\char"12}}
-\def\biota{\hbox{\mib\char"13}}
-\def\bkappa{\hbox{\mib\char"14}}
-\def\blambda{\hbox{\mib\char"15}}
-\def\bmu{\hbox{\mib\char"16}}
-\def\bnu{\hbox{\mib\char"17}}
-\def\bxi{\hbox{\mib\char"18}}
-\def\bpi{\hbox{\mib\char"19}}
-\def\brho{\hbox{\mib\char"1A}}
-\def\bsigma{\hbox{\mib\char"1B}}
-\def\btau{\hbox{\mib\char"1C}}
-\def\bupsilon{\hbox{\mib\char"1D}}
-\def\bphi{\hbox{\mib\char"1E}}
-\def\bchi{\hbox{\mib\char"1F}}
-\def\bpsi{\hbox{\mib\char"20}}
-\def\bomega{\hbox{\mib\char"21}}
-
-\def\bvarepsilon{\hbox{\mib\char"22}}
-\def\bvartheta{\hbox{\mib\char"23}}
-\def\bvarpi{\hbox{\mib\char"24}}
-\def\bvarrho{\hbox{\mib\char"25}}
-\def\bvarphi{\hbox{\mib\char"27}}
-
-%how to use:
-%$$\alpha\balpha$$
-%$$\beta\bbeta$$
-%$$\gamma\bgamma$$
-%$$\delta\bdelta$$
-%$$\epsilon\bepsilon$$
-%$$\zeta\bzeta$$
-%$$\eta\boldeta$$
-%$$\theta\btheta$$
-%$$\iota\biota$$
-%$$\kappa\bkappa$$
-%$$\lambda\blambda$$
-%$$\mu\bmu$$
-%$$\nu\bnu$$
-%$$\xi\bxi$$
-%$$\pi\bpi$$
-%$$\rho\brho$$
-%$$\sigma\bsigma$$
-%$$\tau\btau$$
-%$$\upsilon\bupsilon$$
-%$$\phi\bphi$$
-%$$\chi\bchi$$
-%$$\psi\bpsi$$
-%$$\omega\bomega$$
-%
-%$$\varepsilon\bvarepsilon$$
-%$$\vartheta\bvartheta$$
-%$$\varpi\bvarpi$$
-%$$\varrho\bvarrho$$
-%$$\varphi\bvarphi$$
-
-%small font
-\font\mibsmall=cmmib7
-\def\bsigmasmall{\hbox{\mibsmall\char"1B}}
-
-\def\Tr{\hbox{Tr}\,}
-\def\Arg{\hbox{Arg}}
-\def\atan{\hbox{atan}}
-
-%For augmented matrix
-\newenvironment{amatrix}[1]{\left(\begin{array}{@{}*{#1}{c}|c@{}}}{\end{array}\right)}
 """
 
 pngmath_latex_preamble = latex_preamble
@@ -258,6 +134,12 @@ html_theme_options = {
     # Values: "3" (default) or "2" (in quotes)
     'bootstrap_version': "3",
 
+    # Tab name for entire site. (Default: "Site")
+    'navbar_site_name': "Chapters",
+
+    # Tab name for the current pages TOC. (Default: "Page")
+    'navbar_pagenav_name': "Sections",
+
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
     # 'source_link_position': "footer",
@@ -275,6 +157,7 @@ html_theme_options = {
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
     'source_link_position': "footer",
+
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
