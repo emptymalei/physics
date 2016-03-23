@@ -629,8 +629,7 @@ How do we relate to Heisenberg Picture to Schrödinger Picture? Through investig
    {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H & =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\
    \hat \Omega _ H & =  \hat U^\dagger \hat \Omega _ S \hat U
 
-
- So the operators change with time in Heisenberg Picture.
+So the operators change with time in Heisenberg Picture.
 
 
 Ehrenfest's Theorem in Heisenberg Picture
