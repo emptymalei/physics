@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Equation Solving &mdash; Physics Notes</title>
+    <title>3. Equation Solving &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="index.html" />
-    <link rel="next" title="Classical Mechanics" href="classical-mechanics.html" />
-    <link rel="prev" title="Special Functions" href="special-functions.html" />
+    <link rel="next" title="1. Classical Mechanics" href="classical-mechanics.html" />
+    <link rel="prev" title="2. Special Functions" href="special-functions.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -108,6 +108,76 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+ </script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+   MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+     cancel: ["Extension","cancel"]
+     });
+  });
+  </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+     }
+   });
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+           all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+   });
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     processEscapes: true
+   }
+ });
+</script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   TeX: {
+     Macros: {
+      overlr: ['\\overset\\leftrightarrow{\#1}',1],
+      overl: ['\\overset\leftarrow{\#1}',1],
+      overr: ['\\overset\rightarrow{\#1}',1],
+      bra: ['\\left\\langle \#1\\right|',1],
+      ket: ['\\left| \#1\\right\\rangle',1],
+      braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+      avg: ['\\left< \#1 \\right>',1],
+      slashed: ['\\cancel{\#1}',1],
+      bold: ['\\boldsymbol{\#1}',1],
+      d: ['\\mathrm d',0]
+     }
+   }
+ });
+ </script>
+ <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+
+
+
+
 
    
   </head>
@@ -136,38 +206,40 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="index.html">Site <b class="caret"></b></a>
+     href="index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Whatever</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fun.html">1. Fun</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">1. Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">2. Basic</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="math.html">Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="special-functions.html">Special Functions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Equation Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math.html">1. Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special-functions.html">2. Special Functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">3. Equation Solving</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">5. Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">6. Electrodynamics</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/basics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cosmology.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum/quantum-optics.html">Quantum Optics</a></li>
@@ -181,25 +253,25 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">Page <b class="caret"></b></a>
+     href="#">Sections <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Equation Solving</a><ul>
-<li><a class="reference internal" href="#ordinary-differential-equations">Ordinary Differential Equations</a><ul>
-<li><a class="reference internal" href="#green-s-function">Green&#8217;s Function</a></li>
-<li><a class="reference internal" href="#series-solution">Series Solution</a><ul>
-<li><a class="reference internal" href="#solution-at-ordinary-points">Solution at Ordinary Points</a></li>
-<li><a class="reference internal" href="#solution-at-regular-singular-points">Solution at Regular Singular Points</a></li>
+<li><a class="reference internal" href="#">3. Equation Solving</a><ul>
+<li><a class="reference internal" href="#ordinary-differential-equations">3.1. Ordinary Differential Equations</a><ul>
+<li><a class="reference internal" href="#green-s-function">3.1.1. Green&#8217;s Function</a></li>
+<li><a class="reference internal" href="#series-solution">3.1.2. Series Solution</a><ul>
+<li><a class="reference internal" href="#solution-at-ordinary-points">3.1.2.1. Solution at Ordinary Points</a></li>
+<li><a class="reference internal" href="#solution-at-regular-singular-points">3.1.2.2. Solution at Regular Singular Points</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#comparing-with-a-general-form">Comparing With A General Form</a></li>
-<li><a class="reference internal" href="#second-order-differential-equations-and-gauss-equation">Second Order Differential Equations and Gauss&#8217; Equation</a></li>
+<li><a class="reference internal" href="#comparing-with-a-general-form">3.1.3. Comparing With A General Form</a></li>
+<li><a class="reference internal" href="#second-order-differential-equations-and-gauss-equation">3.1.4. Second Order Differential Equations and Gauss&#8217; Equation</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#integral-equations">Integral Equations</a><ul>
-<li><a class="reference internal" href="#neumann-series-aka-wkb">Neumann Series AKA WKB</a></li>
-<li><a class="reference internal" href="#using-dyads-in-vector-space">Using Dyads in Vector Space</a></li>
+<li><a class="reference internal" href="#integral-equations">3.2. Integral Equations</a><ul>
+<li><a class="reference internal" href="#neumann-series-aka-wkb">3.2.1. Neumann Series AKA WKB</a></li>
+<li><a class="reference internal" href="#using-dyads-in-vector-space">3.2.2. Using Dyads in Vector Space</a></li>
 </ul>
 </li>
 </ul>
@@ -213,11 +285,11 @@
               
                 
   <li>
-    <a href="special-functions.html" title="Previous Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Funct...</span>
+    <a href="special-functions.html" title="Previous Chapter: 2. Special Functions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2. Special Fu...</span>
     </a>
   </li>
   <li>
-    <a href="classical-mechanics.html" title="Next Chapter: Classical Mechanics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Classical Mec... &raquo;</span>
+    <a href="classical-mechanics.html" title="Next Chapter: 1. Classical Mechanics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">1. Classical ... &raquo;</span>
     </a>
   </li>
               
@@ -246,10 +318,10 @@
     <div class="col-md-12 content">
       
   <div class="section" id="equation-solving">
-<h1>Equation Solving<a class="headerlink" href="#equation-solving" title="Permalink to this headline">¶</a></h1>
+<h1>3. Equation Solving<a class="headerlink" href="#equation-solving" title="Permalink to this headline">¶</a></h1>
 <p>There are so many methods and techniques to solve an equation. Here we will review only some of them.</p>
 <div class="section" id="ordinary-differential-equations">
-<h2>Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this headline">¶</a></h2>
+<h2>3.1. Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this headline">¶</a></h2>
 <p>There are many important equations in physics.</p>
 <div class="figure align-center" id="id1">
 <img alt="_images/2ndODEs.png" src="_images/2ndODEs.png" />
@@ -263,7 +335,7 @@
 <li>Fourier transform</li>
 </ol>
 <div class="section" id="green-s-function">
-<h3>Green&#8217;s Function<a class="headerlink" href="#green-s-function" title="Permalink to this headline">¶</a></h3>
+<h3>3.1.1. Green&#8217;s Function<a class="headerlink" href="#green-s-function" title="Permalink to this headline">¶</a></h3>
 <p>Suppose we have a differential operator <span class="math">\(L_x\)</span>, for example <span class="math">\(L_x\)</span> can be <span class="math">\(L_x\equiv \frac{d^2}{dx^2}+1\)</span>. The definition of GF is</p>
 <div class="math">
 \[L_x G(x,z) = \delta(x-z).\]</div>
@@ -322,7 +394,7 @@
 </div>
 </div>
 <div class="section" id="series-solution">
-<h3>Series Solution<a class="headerlink" href="#series-solution" title="Permalink to this headline">¶</a></h3>
+<h3>3.1.2. Series Solution<a class="headerlink" href="#series-solution" title="Permalink to this headline">¶</a></h3>
 <p>A second order ODE,</p>
 <div class="math">
 \[y''(x)+p(x) y'(x) + q(x)y(x)=0\]</div>
@@ -335,14 +407,14 @@
 \[(1-z^2) y'' - 2 z y' + l(l+1) y = 0\]</div>
 <p>has three singular points which are <span class="math">\(z=\pm 1, \infty\)</span> while <span class="math">\(z=0\)</span> is an ordinary point.</p>
 <div class="section" id="solution-at-ordinary-points">
-<h4>Solution at Ordinary Points<a class="headerlink" href="#solution-at-ordinary-points" title="Permalink to this headline">¶</a></h4>
+<h4>3.1.2.1. Solution at Ordinary Points<a class="headerlink" href="#solution-at-ordinary-points" title="Permalink to this headline">¶</a></h4>
 <p>Series expansion of the solution can be as simple as</p>
 <div class="math">
 \[y(z) = \sum_{n=0}^{\infty} a_n z^n,\]</div>
 <p>which converges in a radius <span class="math">\(R\)</span> where <span class="math">\(R\)</span> is the distance from <span class="math">\(z=0\)</span> to the nearest singular point of our ODE.</p>
 </div>
 <div class="section" id="solution-at-regular-singular-points">
-<h4>Solution at Regular Singular Points<a class="headerlink" href="#solution-at-regular-singular-points" title="Permalink to this headline">¶</a></h4>
+<h4>3.1.2.2. Solution at Regular Singular Points<a class="headerlink" href="#solution-at-regular-singular-points" title="Permalink to this headline">¶</a></h4>
 <p>Frobenius series of the solution</p>
 <div class="math">
 \[y(z) = z^\sigma \sum_{n=0}^{\infty} a_n z^n.\]</div>
@@ -369,7 +441,7 @@
 </div>
 </div>
 <div class="section" id="comparing-with-a-general-form">
-<h3>Comparing With A General Form<a class="headerlink" href="#comparing-with-a-general-form" title="Permalink to this headline">¶</a></h3>
+<h3>3.1.3. Comparing With A General Form<a class="headerlink" href="#comparing-with-a-general-form" title="Permalink to this headline">¶</a></h3>
 <p>For equation that take the following form,</p>
 <div class="math">
 \[y'' + \frac{1 - 2a}{x} y' + \left( (b c x^{c-1})^2 + \frac{a^2 - p^2 c^2}{x^2} \right) y = 0,\]</div>
@@ -425,7 +497,7 @@ b^2 c^2 &amp; = \alpha^2.\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="second-order-differential-equations-and-gauss-equation">
-<h3>Second Order Differential Equations and Gauss&#8217; Equation<a class="headerlink" href="#second-order-differential-equations-and-gauss-equation" title="Permalink to this headline">¶</a></h3>
+<h3>3.1.4. Second Order Differential Equations and Gauss&#8217; Equation<a class="headerlink" href="#second-order-differential-equations-and-gauss-equation" title="Permalink to this headline">¶</a></h3>
 <p>Gauss&#8217; equation has the form</p>
 <div class="math">
 \[z(z-1)\frac{d^2}{dz^2} u(z) + \left[(a+b+1)z -c \right] \frac{d}{dz} u(z) + a b u(z) =0,\]</div>
@@ -442,9 +514,9 @@ b^2 c^2 &amp; = \alpha^2.\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="integral-equations">
-<h2>Integral Equations<a class="headerlink" href="#integral-equations" title="Permalink to this headline">¶</a></h2>
+<h2>3.2. Integral Equations<a class="headerlink" href="#integral-equations" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="neumann-series-aka-wkb">
-<h3>Neumann Series AKA WKB<a class="headerlink" href="#neumann-series-aka-wkb" title="Permalink to this headline">¶</a></h3>
+<h3>3.2.1. Neumann Series AKA WKB<a class="headerlink" href="#neumann-series-aka-wkb" title="Permalink to this headline">¶</a></h3>
 <p>For differential equation, whenever the highest derivative is multiplied by a small parameter, try this. But generally, the formalism is the following.</p>
 <p>First of all, we use Hilbert space <span class="math">\(\mathscr L[a,b;w]\)</span> which means the space is defined on <span class="math">\([a,b]\)</span> with a weight <span class="math">\(w\)</span>, i.e.,</p>
 <div class="math">
@@ -483,7 +555,7 @@ u_0(x) &amp; = f(x).\end{split}\]</div>
 <p>Keep on going.</p>
 </div>
 <div class="section" id="using-dyads-in-vector-space">
-<h3>Using Dyads in Vector Space<a class="headerlink" href="#using-dyads-in-vector-space" title="Permalink to this headline">¶</a></h3>
+<h3>3.2.2. Using Dyads in Vector Space<a class="headerlink" href="#using-dyads-in-vector-space" title="Permalink to this headline">¶</a></h3>
 <p>For the same example,</p>
 <div class="math">
 \[\hat L u(x) = f(x),\]</div>

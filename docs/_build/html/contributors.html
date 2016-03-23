@@ -106,6 +106,76 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+ </script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+   MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+     cancel: ["Extension","cancel"]
+     });
+  });
+  </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+     }
+   });
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+           all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+   });
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     processEscapes: true
+   }
+ });
+</script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   TeX: {
+     Macros: {
+      overlr: ['\\overset\\leftrightarrow{\#1}',1],
+      overl: ['\\overset\leftarrow{\#1}',1],
+      overr: ['\\overset\rightarrow{\#1}',1],
+      bra: ['\\left\\langle \#1\\right|',1],
+      ket: ['\\left| \#1\\right\\rangle',1],
+      braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+      avg: ['\\left< \#1 \\right>',1],
+      slashed: ['\\cancel{\#1}',1],
+      bold: ['\\boldsymbol{\#1}',1],
+      d: ['\\mathrm d',0]
+     }
+   }
+ });
+ </script>
+ <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+
+
+
+
 
    
   </head>
@@ -134,38 +204,40 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="index.html">Site <b class="caret"></b></a>
+     href="index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Whatever</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fun.html">1. Fun</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">1. Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">2. Basic</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="math.html">Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="special-functions.html">Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math.html">1. Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special-functions.html">2. Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">3. Equation Solving</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">5. Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">6. Electrodynamics</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/basics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cosmology.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum/quantum-optics.html">Quantum Optics</a></li>
@@ -179,7 +251,7 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">Page <b class="caret"></b></a>
+     href="#">Sections <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul class="simple">

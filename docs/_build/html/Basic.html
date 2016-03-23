@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Basic &mdash; Physics Notes</title>
+    <title>2. Basic &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="index.html" />
-    <link rel="next" title="Mathematics" href="math.html" />
-    <link rel="prev" title="Vocabulary" href="voc/vocabulary.html" />
+    <link rel="next" title="1. Mathematics" href="math.html" />
+    <link rel="prev" title="1. Vocabulary" href="voc/vocabulary.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -108,6 +108,76 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+ </script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+   MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+     cancel: ["Extension","cancel"]
+     });
+  });
+  </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+     }
+   });
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+           all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+   });
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     processEscapes: true
+   }
+ });
+</script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   TeX: {
+     Macros: {
+      overlr: ['\\overset\\leftrightarrow{\#1}',1],
+      overl: ['\\overset\leftarrow{\#1}',1],
+      overr: ['\\overset\rightarrow{\#1}',1],
+      bra: ['\\left\\langle \#1\\right|',1],
+      ket: ['\\left| \#1\\right\\rangle',1],
+      braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+      avg: ['\\left< \#1 \\right>',1],
+      slashed: ['\\cancel{\#1}',1],
+      bold: ['\\boldsymbol{\#1}',1],
+      d: ['\\mathrm d',0]
+     }
+   }
+ });
+ </script>
+ <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+
+
+
+
 
    
   </head>
@@ -136,38 +206,40 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="index.html">Site <b class="caret"></b></a>
+     href="index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Whatever</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fun.html">1. Fun</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">Vocabulary</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">1. Vocabulary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">2. Basic</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="math.html">Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="special-functions.html">Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math.html">1. Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special-functions.html">2. Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">3. Equation Solving</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">5. Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">6. Electrodynamics</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/basics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cosmology.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum/quantum-optics.html">Quantum Optics</a></li>
@@ -181,20 +253,20 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">Page <b class="caret"></b></a>
+     href="#">Sections <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Basic</a><ul>
-<li><a class="reference internal" href="#dimension">Dimension</a><ul>
-<li><a class="reference internal" href="#planck-scales">Planck Scales</a></li>
-<li><a class="reference internal" href="#equations-and-dimensions">Equations and Dimensions</a><ul>
-<li><a class="reference internal" href="#most-wonderful-equations-that-should-never-be-forgotten">Most Wonderful Equations That Should Never Be Forgotten</a></li>
+<li><a class="reference internal" href="#">2. Basic</a><ul>
+<li><a class="reference internal" href="#dimension">2.1. Dimension</a><ul>
+<li><a class="reference internal" href="#planck-scales">2.1.1. Planck Scales</a></li>
+<li><a class="reference internal" href="#equations-and-dimensions">2.1.2. Equations and Dimensions</a><ul>
+<li><a class="reference internal" href="#most-wonderful-equations-that-should-never-be-forgotten">2.1.2.1. Most Wonderful Equations That Should Never Be Forgotten</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#electrodynamics">Electrodynamics</a></li>
-<li><a class="reference internal" href="#dynamics">Dynamics</a></li>
-<li><a class="reference internal" href="#thermodynamics-and-statistical-physics">Thermodynamics and Statistical Physics</a></li>
+<li><a class="reference internal" href="#electrodynamics">2.1.3. Electrodynamics</a></li>
+<li><a class="reference internal" href="#dynamics">2.1.4. Dynamics</a></li>
+<li><a class="reference internal" href="#thermodynamics-and-statistical-physics">2.1.5. Thermodynamics and Statistical Physics</a></li>
 </ul>
 </li>
 </ul>
@@ -208,11 +280,11 @@
               
                 
   <li>
-    <a href="voc/vocabulary.html" title="Previous Chapter: Vocabulary"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Vocabulary</span>
+    <a href="voc/vocabulary.html" title="Previous Chapter: 1. Vocabulary"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 1. Vocabulary</span>
     </a>
   </li>
   <li>
-    <a href="math.html" title="Next Chapter: Mathematics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Mathematics &raquo;</span>
+    <a href="math.html" title="Next Chapter: 1. Mathematics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">1. Mathematics &raquo;</span>
     </a>
   </li>
               
@@ -241,9 +313,9 @@
     <div class="col-md-12 content">
       
   <div class="section" id="basic">
-<h1>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h1>
+<h1>2. Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="dimension">
-<h2>Dimension<a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h2>
+<h2>2.1. Dimension<a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h2>
 <p>How to find the relationship between two quantities? For example, what is the dimensional relationship between length and mass.</p>
 <div class="line-block">
 <div class="line">* Plank constant: <span class="math">\(\mathrm{ \hbar \sim [Energy]\cdot [Time] \sim [Mass]\cdot [Length]^2 \cdot [Time]^{-1} }\)</span></div>
@@ -259,7 +331,7 @@
 \[[T]^2 = \left[ \frac{ \hbar G }{ c^5 }  \right]\]</div>
 <p>As we can see, it is possible to use <span class="math">\(c=1, \hbar = 1, G =1\)</span> because we can always restore the units in a deterministic way. <span class="math">\(c, \hbar, G\)</span> are function of mass, length, time, and with <span class="math">\(c = \hbar = G=1\)</span> give us only one solution of mass, length and time: three equations + three variables.</p>
 <div class="section" id="planck-scales">
-<h3>Planck Scales<a class="headerlink" href="#planck-scales" title="Permalink to this headline">¶</a></h3>
+<h3>2.1.1. Planck Scales<a class="headerlink" href="#planck-scales" title="Permalink to this headline">¶</a></h3>
 <p>As we have seen, the three constant can make up a length scale, a mass scale, a time scale. Then what are they?</p>
 <p>Planck length:</p>
 <div class="math">
@@ -272,15 +344,15 @@
 \[t_P = \sqrt{ \frac{\hbar G}{ c^5 } }\]</div>
 </div>
 <div class="section" id="equations-and-dimensions">
-<h3>Equations and Dimensions<a class="headerlink" href="#equations-and-dimensions" title="Permalink to this headline">¶</a></h3>
+<h3>2.1.2. Equations and Dimensions<a class="headerlink" href="#equations-and-dimensions" title="Permalink to this headline">¶</a></h3>
 <p>Before solving equations, it is good to reform them in to dimensionless ones.</p>
 <p>To make the equation dimensionless doesn&#8217;t mean we can just divide arbitary terms on both sides. We need to find out the characteristic quantity of the system. For example, we can divide by <span class="math">\(\hbar\omega\)</span> on both sides of Schrodinger equation for Harmonic Oscillators. This is a good step because <span class="math">\(\hbar\omega\)</span> is the characteristic energy scale of system. At the same time, we can make the length terms dimensionless using the characteristic length. DO NOT use an arbitary length!</p>
 <div class="section" id="most-wonderful-equations-that-should-never-be-forgotten">
-<h4>Most Wonderful Equations That Should Never Be Forgotten<a class="headerlink" href="#most-wonderful-equations-that-should-never-be-forgotten" title="Permalink to this headline">¶</a></h4>
+<h4>2.1.2.1. Most Wonderful Equations That Should Never Be Forgotten<a class="headerlink" href="#most-wonderful-equations-that-should-never-be-forgotten" title="Permalink to this headline">¶</a></h4>
 </div>
 </div>
 <div class="section" id="electrodynamics">
-<h3>Electrodynamics<a class="headerlink" href="#electrodynamics" title="Permalink to this headline">¶</a></h3>
+<h3>2.1.3. Electrodynamics<a class="headerlink" href="#electrodynamics" title="Permalink to this headline">¶</a></h3>
 <div class="math">
 \[\nabla\times\vec E=-\partial_t \vec B\]</div>
 <div class="math">
@@ -298,7 +370,7 @@
 \[\vec J= \sigma \vec E\]</div>
 </div>
 <div class="section" id="dynamics">
-<h3>Dynamics<a class="headerlink" href="#dynamics" title="Permalink to this headline">¶</a></h3>
+<h3>2.1.4. Dynamics<a class="headerlink" href="#dynamics" title="Permalink to this headline">¶</a></h3>
 <p>Hamilton conanical equations</p>
 <div class="math">
 \[\dot q_i = \frac{\partial H}{\partial p_i}\]</div>
@@ -306,7 +378,7 @@
 \[\dot p_i = - \frac{\partial H}{\partial q_i}\]</div>
 </div>
 <div class="section" id="thermodynamics-and-statistical-physics">
-<h3>Thermodynamics and Statistical Physics<a class="headerlink" href="#thermodynamics-and-statistical-physics" title="Permalink to this headline">¶</a></h3>
+<h3>2.1.5. Thermodynamics and Statistical Physics<a class="headerlink" href="#thermodynamics-and-statistical-physics" title="Permalink to this headline">¶</a></h3>
 <p>Liouville&#8217;s Law</p>
 <div class="math">
 \[\frac{\mathrm d \rho}{\mathrm d t}\equiv \frac{\partial \rho}{\partial t} + \sum_i \left[ \frac{\partial \rho}{\partial q_i}\dot q_i + \frac{\partial \rho}{\partial p_i}\dot p_i \right] = 0\]</div>

@@ -681,6 +681,15 @@ Time derivative of momentum operator
 So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That's why we like it.
 
 
+Comparison of Picutres
+""""""""""""""""""""""""""""""
+
+.. figure:: assets/images/picutres-comparison.png
+   :align: center
+
+   Comparison of different pictures. Notice that in Dirac picture, :math:`\hat W_I = \hat U_0 ^{-1}\hat W \hat U_0`, :math:`\ket{\psi(t)}_I = \hat U_I \ket{\psi(0)}_I`. A markdown file that is used to make this table can be downloaded `here <assets/pictureQM.md>`_ .
+
+
 Conservation
 ---------------
 

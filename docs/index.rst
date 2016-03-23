@@ -13,14 +13,14 @@ Use the source. Keep the source open.
 
 
 
-Table of Contents
+Preface
 ==================================
 
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    preface.rst
+   preface.rst
 
 
 
@@ -37,10 +37,10 @@ Vocabulary
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    voc/vocabulary.rst
-    basic.rst
+   voc/vocabulary.rst
+   basic.rst
 
 
 
@@ -49,13 +49,12 @@ Mathematics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    math.rst
-    mathphysics.rst
-    statistics/statistics.rst
-    special-functions.rst
-    equation-solving.rst
+   math.rst
+   math/statistics/statistics.rst
+   special-functions.rst
+   equation-solving.rst
 
 
 
@@ -64,14 +63,14 @@ Fundamental Physics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    classical-mechanics.rst
-    quantum/quantum-mechanics.rst
-    quantum/quantum-mechanics2.rst
-    quantum/quantum-mechanics3.rst
-    statmech/statistical-physics.rst
-    electrodynamics/index.rst
+   classical-mechanics.rst
+   quantum/quantum-mechanics.rst
+   quantum/quantum-mechanics2.rst
+   quantum/quantum-mechanics3.rst
+   statmech/statistical-physics.rst
+   electrodynamics/index.rst
 
 
 
@@ -79,10 +78,10 @@ Advanced Physics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    relativity/special-relativity.rst
-    relativity/general-relativity.rst
+   relativity/special-relativity.rst
+   relativity/general-relativity.rst
 
 
 
@@ -91,15 +90,15 @@ Cutting Edge Physics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    astrophysics/basics.rst
-    astrophysics/stars.rst
-    astrophysics/supernova.rst
-    relativity/general-relativity-adv.rst
-    cosmology.rst
-    quantum/quantum-optics.rst
-    quantum/susy-quantum.rst
+   astrophysics/basics.rst
+   astrophysics/stars.rst
+   astrophysics/supernova.rst
+   relativity/general-relativity-adv.rst
+   cosmology.rst
+   quantum/quantum-optics.rst
+   quantum/susy-quantum.rst
 
 
 

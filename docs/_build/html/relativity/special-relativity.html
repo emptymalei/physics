@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
     <link rel="next" title="General Relativity" href="general-relativity.html" />
-    <link rel="prev" title="Special Relativity" href="../electrodynamics/special_relativity.html" />
+    <link rel="prev" title="6.5. Scattering" href="../electrodynamics/scattering.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -108,6 +108,76 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+ </script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+   MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+     cancel: ["Extension","cancel"]
+     });
+  });
+  </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+     }
+   });
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+           all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+   });
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     processEscapes: true
+   }
+ });
+</script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   TeX: {
+     Macros: {
+      overlr: ['\\overset\\leftrightarrow{\#1}',1],
+      overl: ['\\overset\leftarrow{\#1}',1],
+      overr: ['\\overset\rightarrow{\#1}',1],
+      bra: ['\\left\\langle \#1\\right|',1],
+      ket: ['\\left| \#1\\right\\rangle',1],
+      braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+      avg: ['\\left< \#1 \\right>',1],
+      slashed: ['\\cancel{\#1}',1],
+      bold: ['\\boldsymbol{\#1}',1],
+      d: ['\\mathrm d',0]
+     }
+   }
+ });
+ </script>
+ <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+
+
+
+
 
    
   </head>
@@ -136,38 +206,40 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="../index.html">Site <b class="caret"></b></a>
+     href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Whatever</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">1. Fun</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">1. Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic.html">2. Basic</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">1. Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">2. Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">3. Equation Solving</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">5. Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">6. Electrodynamics</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="general-relativity.html">General Relativity</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
 <li class="toctree-l1"><a class="reference internal" href="general-relativity-adv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-optics.html">Quantum Optics</a></li>
@@ -181,7 +253,7 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">Page <b class="caret"></b></a>
+     href="#">Sections <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
@@ -191,9 +263,11 @@
 <li><a class="reference internal" href="#d-alembertian">d&#8217;Alembertian</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#footnotes">Footnotes</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#basics">Basics</a></li>
+<li><a class="reference internal" href="#doppler-shift">Doppler Shift</a></li>
+<li><a class="reference internal" href="#footnotes">Footnotes</a></li>
 </ul>
 </li>
 </ul>
@@ -205,7 +279,7 @@
               
                 
   <li>
-    <a href="../electrodynamics/special_relativity.html" title="Previous Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Relat...</span>
+    <a href="../electrodynamics/scattering.html" title="Previous Chapter: 6.5. Scattering"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 6.5. Scattering</span>
     </a>
   </li>
   <li>
@@ -275,8 +349,85 @@ For the electromagnetic four-potential <span class="math">\(\Box A^\mu=0\)</span
 </dl>
 </div>
 </div>
+</div>
+<div class="section" id="basics">
+<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
+<div class="note admonition">
+<p class="first admonition-title">A Coincidence?</p>
+<p>Let&#8217;s start from this coincidence.</p>
+<div class="figure align-center" id="id5">
+<img alt="../_images/specialRelativityVelocityAddition.png" src="../_images/specialRelativityVelocityAddition.png" />
+<p class="caption"><span class="caption-text">Addition of velocities</span></p>
+</div>
+<p>Recall that in special relativity, velocity addition is</p>
+<div class="math">
+\[v_S = \frac{u+v_O}{1+ \beta v/c},\]</div>
+<p>where <span class="math">\(v_S\)</span> is the velocity measured in moving frame S, <span class="math">\(v_O\)</span> is the velocity measured in frame O. This <span class="math">\(\beta\)</span> is the factor <span class="math">\(u/c\)</span> where u is the velocity of the moving frame measure in frame O.</p>
+<p>At the same time, we have the following hyper trig relation.</p>
+<div class="math">
+\[\tanh (\alpha + \beta) = \frac{\tanh \alpha + \tanh \beta}{1 + \tanh \alpha \tanh \beta}.\]</div>
+<p class="last">Isn&#8217;t this addition of angles the same as the velocity addition?</p>
+</div>
+<p>The algebra of relativity is mostly based on invariance of a new distance under a new rotation. Here we are not going to repeat the derivation of these transformations from the beginning, instead we would like to have a look at the really amazing part of the theory.</p>
+<p>As we define</p>
+<div class="math">
+\[\tanh \alpha_u = \frac{u}{c},\]</div>
+<p>and any velocity divided by speed of light to be a hyperbolic tangent,</p>
+<div class="math">
+\[\tanh \alpha_{v_x} = \frac{v_x}{c},\]</div>
+<p>the velocity transformation, as stated in the admonition block, is an addition of angles</p>
+<div class="math">
+\[v_{S} = \tanh(\alpha_u + \alpha_{v_O}) = \frac{\tanh \alpha_{u} + \tanh \alpha_{v_0}}{1 + \tanh \alpha_{U} \tanh \alpha_{v_O}} = \frac{u/c + v_O/c}{1+ \frac{u}{c} \frac{v_{O}}{c}}.\]</div>
+<p>However, addition of velocity is not that fundamental. We need to look into the relation</p>
+<div class="math">
+\[\tanh \alpha_{v_x} = \frac{v_x}{c}.\]</div>
+<p>Since we are talking about geometry, space-time diagram will be extremely important.</p>
+</div>
+<div class="section" id="doppler-shift">
+<span id="index-0"></span><h2>Doppler Shift<a class="headerlink" href="#doppler-shift" title="Permalink to this headline">¶</a></h2>
+<p>The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.</p>
+<img alt="../_images/dopplerRedshift.png" class="align-center" src="../_images/dopplerRedshift.png" />
+<p>The observer is fixed in O&#8217; frame and source is in O frame. Emitting angle in O frame is <span class="math">\(\theta\)</span>.</p>
+<p>Since momentum is a vector, we have the Lorentz transformation which transfrom it in to O&#8217; frame,</p>
+<div class="math">
+\[\frac{E'}{c} = \gamma \left(\frac{E}{c} - \beta p_x\right),\]</div>
+<p>where we also have</p>
+<div class="math">
+\[\begin{split}p_x &amp;= p\cos\theta,
+p = E/c.\end{split}\]</div>
+<p>Combining these equations, the energy of the photons in O&#8217; frame is</p>
+<div class="math">
+\[E' = E \gamma (1 - \beta \cos\theta).\]</div>
+<p>In quantum mechanics, energy is related to angular frequency,</p>
+<div class="math">
+\[E = \hbar \omega.\]</div>
+<p>The angular frequency in O&#8217; frame is</p>
+<div class="math">
+\[\omega ' = \omega \gamma (1-\beta \cos\theta).\]</div>
+<p>Redshift is define as</p>
+<div class="math">
+\[\begin{split}z &amp;= \frac{\nu_e - \nu_o}{\nu_o} \\
+&amp; = \frac{\omega_e - \omega_o}{\omega_o} \\
+&amp; = \frac{1/\gamma - 1 + \beta\cos\theta}{1-\beta \cos\theta}.\end{split}\]</div>
+<div class="admonition-non-relativistic-doppler-shift admonition">
+<p class="first admonition-title">Non-relativistic Doppler Shift</p>
+<p>To understand the effect of relativity, we would first recall the non-relativistic doppler shift.</p>
+<div class="math">
+\[\omega'_{non-rel} = \omega_{non-rel}(1-v/c \cos\theta).\]</div>
+<p class="last">where no <span class="math">\(\gamma\)</span> is relavent. It&#8217;s obvious that we have only two kinds of shift, redshift due to the source is closing, or blueshift due to the fact that the source is moving away.</p>
+</div>
+<p>Here we have three different kinds, the additional one is the transverse redshift due to the <span class="math">\(\gamma\)</span> factor or the contraction of time.</p>
+<p>An gif from wikipedia shows this explicitly,</p>
+<div class="figure align-center" id="id6">
+<img alt="../_images/XYCoordinates.gif" src="../_images/XYCoordinates.gif" />
+<p class="caption"><span class="caption-text">Image Source: <a class="reference external" href="https://en.wikipedia.org/wiki/File:XYCoordinates.gif">File:XYCoordinates.gif</a></span></p>
+</div>
+<p>The change in wavelength is given by</p>
+<div class="math">
+\[\frac{\lambda_{obs} }{ \lambda_{src}  }= \sqrt{ \frac{1 - \beta}{1 + \beta} } .\]</div>
+</div>
 <div class="section" id="footnotes">
-<h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
+<h2>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
 <table class="docutils footnote" frame="void" id="id3" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -289,7 +440,9 @@ For the electromagnetic four-potential <span class="math">\(\Box A^\mu=0\)</span
 <tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>wiki:D&#8217;Alembert_operator</td></tr>
 </tbody>
 </table>
-</div>
+<ol class="arabic simple">
+<li><em>The Geometry of Special Relativity</em> by Tevian Dray.</li>
+</ol>
 </div>
 </div>
 
