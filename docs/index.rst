@@ -94,6 +94,8 @@ Cutting Edge Physics
     :maxdepth: 3
 
     astrophysics/basics.rst
+    astrophysics/stars.rst
+    astrophysics/supernova.rst
     relativity/general-relativity-adv.rst
     cosmology.rst
     quantum/quantum-optics.rst
