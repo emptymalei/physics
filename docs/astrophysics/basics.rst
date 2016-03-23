@@ -1,12 +1,61 @@
 Astrophysics
 ===============
 
+Numbers
+-----------------
+
+One of the most useful concepts in astrophysics is that things should be scaled using a scale that we can understand.
+
+
+Physical Facts
+~~~~~~~~~~~~~~~~~~~
+
+
+Ionization energy for atoms
+
+1. H: 13.6eV
+2. He: 24.7eV
+3. :math:`He^{++}`: 54.4eV
+
+
+
+Solar System
+~~~~~~~~~~~~~~~~~~~
+
+Sun
+````````````
+
+
+Some numbers:
+
+1. Mass of Sun: :math:`M_\odot = 1.99 \times 10^{30}\mathrm{kg}`;
+2. Radius of Sun: :math:`6.9 \times 10^{5}\mathrm{km}`;
+3. Average Density: :math:`1.4\mathrm{g/cm^3}`;
+4. Surface Gravity: :math:`27 g_E`;
+5. Core Density: :math:`150\mathrm{g/cm^3}`;
+6. Core Temperature: :math:`1.5\times 10^7\mathrm{K}` which corresponds to energy of :math:`1\mathrm{keV}`.
+
+
+The sun is composed of
+
+1. X = H mass fraction of :math:`0.70`;
+1. Y = He mass fraction of :math:`0.26`;
+1. X = Li mass fraction of :math:`0.04`.
+
+
+
+
+
+
+
+
+
 Orbital Dynamics
 ----------------------------------
 
 Kepler's law can be easily derived from Newton's dynamics.
 
-The first law is about the 
+The first law is about the
 
 
 Wave Bands
