@@ -24,16 +24,16 @@ First Three Postulates
 -------------------------
 
 * Physical state is described by kets in a Hilbert space. We need to specify a complete basis {:math:`\ket{i}`} to do calculations.
-  
+
   .. math:: \ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}
 
 * Operators are given by Hermitian operators; A measurement of the variable :math:`\hat \Omega` will yield one of the eigenvalues :math:`\omega` with the probability
-  
+
   .. math:: \left|\braket{\omega}{\psi}\right|^2 .
 
   And the state of the system will change to :math:`\ket{\omega}`.
 * The state vector obeys the Schrödinger equation,
-  
+
   .. math:: i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} ,
 
   where :math:`\hat H` is the Hamiltonian operator.
@@ -42,8 +42,8 @@ First Three Postulates
 		The logic here is that we first find the way to describe a system, then think about how to find out the information we need from the state vector and also find the evolution of the state vector. Then we need the operator and Schrodinger equation. Finally, we would like to relate the theory to experiments, and it comes the measurement postulate.
 
 		Later we will need the relation between position and momentum, which becomes the fourth postulate.
- 
- 
+
+
 
 
 * How to solve the evolution of a system?
@@ -53,22 +53,22 @@ First Three Postulates
      \hat U \ket{\psi(t_0)} = \ket{\psi(t)} .
 
   This operator just gives us the evolution of state vector! Wait, can we write down the explicit expression of it?
-	
+
   Let's find out. The only thing we know about the evolution of a state vector is the third postulate up there.
-	
+
   .. math::
      i\hbar \frac{\d }{\d t}\ket{\psi(t)} & =  \hat H \ket{\psi(t)} \\
      i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} & =  \hat H \hat U \ket{\psi(t_0)} \\
      i\hbar \frac{\d }{\d t}\hat U & =  \hat H \hat U
 
- 
-  
+
+
   Looks familiar? This just gives us a exponential result, **if the Hamiltonian is time independent**.
- 
+
   .. math:: \hat U = e^{- i \hat H (t-t_0)/\hbar}
- 
+
   **We can prove that this operator is Unitary because** :math:`\hat H` **is Hermitian.**
- 	
+
   This is just the abstract representation, we work in some basis, and the most convenient basis is the eigenstates of Hamiltonian, { :math:`\ket{\epsilon_i}` },
 
   .. math::
@@ -76,13 +76,13 @@ First Three Postulates
      \hat U \ket{\phi} & =  \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}  \\
 	   \hat U \ket{\phi} & =  \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}  \ket{\psi}
 
- 	
-  And we are going to use 
+
+  And we are going to use
 
   .. math:: \hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}
 
   from now on. (Well, only on discrete eigenvalues ones.)
- 	
+
   **(See that? Identity does the work again.)**
 
 
@@ -118,23 +118,23 @@ Position Space
 
 1. Define :math:`\ket{x}` basis.
 
-	* Orthonormal: 
-	  
+	* Orthonormal:
+
 	  .. math::
        \braket{x}{x'}=\delta(x-x')
 
-	* Complete: 
+	* Complete:
 
 	  .. math::
-       \int \braket{x'}{x'} \d x' = \mathbb{I} 
+       \int \braket{x'}{x'} \d x' = \mathbb{I}
 
 2. Define position operator.
-	
+
    .. math::
-      \hat x \ket{x} = x \ket{x} 
+      \hat x \ket{x} = x \ket{x}
 
    And in {:math:`\ket{x}`} basis, this operator becomes a function, which is
-	 
+
    .. math::
       &\bra{x}\hat x \ket{x'}  \\
       &= \left(\bra{x}\hat x\right)\ket{x'} \\
@@ -143,23 +143,23 @@ Position Space
 
 
 3. Find state vector in {:math:`\ket{x}`} basis.
-   
+
    .. math:: \psi(t,x) = \braket{x}{\psi(t)}
 
-   * Normalized: 
+   * Normalized:
 
    .. math:: \int \left| \psi(t,x) \right|^2 \d x = 1.
 
    And we are interpreting :math:`\left| \psi(t, x)\right|^2` as probability density.
 4. Calculate probability of a measurement. Taking :math:`\hat x` as an example.
-   
+
    .. math::
       &\bra{\psi} \hat x \ket{\psi} \\
       &= \iint \braket{\psi}{x}\bra{x} \hat x \ket{x'} \braket{x'}{\psi}  \d x \d x' \\
       &= \iint  \psi^ * (t,x) x\delta(x-x') \psi(t,x')  \d x \d x'  \\
       &= \int \left| \psi(t,x) \right|^2 x \d x
 
-	
+
 
 
 Momentum Space
@@ -185,11 +185,11 @@ Momentum Space
 ^^^^^^^^^^^^^^^^
 
 1. Find momentum operator in position basis {:math:`\ket{x}`}.
-   
+
    .. math:: \bra{x} \left[ \hat x, \hat p\right] \ket{x'} = i\hbar \delta(x-x')
 
    And write out the commutator and use the relation of delta function :math:`x\delta'(x) = -\delta(x)`, we find out the momentum operator in {:math:`\ket{x}`} basis,
-   
+
    .. math:: \bra{x}\hat p \ket{x'} = -i\hbar \frac{\d }{\d t} \delta(x-x')
 
    **Let's talk physics.** What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {:math:`\ket{x}`} basis.
@@ -199,11 +199,11 @@ Momentum Space
       & =  \iint \braket{x}{x'} \bra{x'} \hat p \ket{x''}\braket{x''}{\psi} \d x' \d x''  \\
       & =  \int \bra{x}\hat p \ket{x''}\psi(t,x'') \d x'' \\
       & =  \int \left( -i\hbar \frac{\d}{\d x} \delta(x-x') \psi(t,x') \right) \d x' \\
-      & =  \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x' 
+      & =  \int \left( -i\hbar \frac{\d}{\d x'} \delta(x'-x) \psi(t,x') \right) \d x'
 
-	
+
    **Integrate by parts, we will find the expression.** (I am having a problem finding the right answer.)
-	
+
    .. math:: \bra{x} \hat p \ket{\psi} = - i\hbar \frac{\d }{\d x}\psi(x) .
 
 2. Eigenfunction for momentum.
@@ -212,8 +212,8 @@ Momentum Space
 
       \hat p \ket{p} = p \ket{p} .
 
-   Again, we are going to project it on the {:math:`\ket{x}`} basis, 
-   
+   Again, we are going to project it on the {:math:`\ket{x}`} basis,
+
    .. math:: \bra{x}\hat p\ket{p} = \bra{x} p \ket{p} ,
 
    where :math:`\braket{x}{p}` is the eigenstates in {:math:`\ket{x}`} basis, we call it :math:`\phi_p(x)`.
@@ -223,34 +223,34 @@ Momentum Space
       \int \bra{x}\hat p \ket{x'}\braket{x'}{p}\d x' & =  p \phi_p(x)    \\
       -i\hbar \frac{\d }{\d x} \phi_p(x) & =  p \phi_p(x)
 
-	
+
    The solution is
-   
+
    .. math:: \phi_p(x) = \mathrm{C} e^{i p x/\hbar}
 
-   This constant C is found by the normalization condition, 
-   
+   This constant C is found by the normalization condition,
+
    .. math:: \braket{p}{p'}=\int \phi_p^*(x)\phi_{p'}(x)\d x = \delta(p-p')
 
    **The final results should be**
-   
-   .. math:: \phi_p(x)=\frac{1}{\sqrt{2\pi \hbar}} \exp{(i p x/\hbar)} 
-	
+
+   .. math:: \phi_p(x)=\frac{1}{\sqrt{2\pi \hbar}} \exp{(i p x/\hbar)}
+
 3. Find the dynamics of free particles in quantum mechanics.
    **Find the propagator and everything solves.**
-   The hamiltonian for a free particle is 
+   The hamiltonian for a free particle is
 
    .. math:: \hat H = \frac{\hat p^2}{2m} .
 
    We argue here that the eigenvectors of momentum are also the eigenvectors of this hamiltonian. And we can easily guess the eigenvalues are :math:`p^2/2m`. So the propagator is
-   
+
    .. math:: \hat U = \int e^{-i p^2 t/2m\hbar} \ket{p}\bra{p} \d p
 
    But that is too abstract to use, we can find the expression in {:math:`\ket{x}`} basis.
-   
+
    .. math::
       \bra{x}\hat U\ket{x} & =  \int e^{-i p^2 t/2 m \hbar} \braket{x}{p}\braket{p}{x} \d p    \\
-      & =  \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p    
+      & =  \int e^{-i p^2 t/2 m \hbar} \left| \phi_p \right|^2 \d p
 
 
 
@@ -303,82 +303,82 @@ Setup
 
   .. math::
      V(x) = & 0,  0< x <L \\
-      & \infty, \text{Other} 
-     
+      & \infty, \text{Other}
+
 
 
 Solve the Problem
 ~~~~~~~~~~~~~~~~~~~
 
 * Hamiltonian
-  
+
   .. math:: \hat H = \frac{\hat p ^2}{2 m } + V(x)
 
 * Dynamic equation
-  
+
   .. math:: \hat H \ket{\psi(t)} = \epsilon \ket{\psi(t)}
 
-  We are happy to work in {:math:`\ket{x})`} basis, 
-  
+  We are happy to work in {:math:`\ket{x})`} basis,
+
   .. math:: \bra{x} \hat H \ket{\psi(t)} = \bra{x} \epsilon \ket{\psi(t)} .
 
   Put the Hamiltonian in, and remember that in position basis
-  
+
   .. math:: \bra{x} \hat p \ket{\psi} = - i \hbar\frac{\d}{\d x} \psi ,
 
   the equation of motion becomes
-  
+
   .. math:: - \frac{\hbar ^2}{2 m} \frac{\d^2}{\d x^2} \psi(x,t) + V(x) \psi(x,t) = \epsilon \psi(x,t)
-  
+
 * Boundary conditions
 
   .. math::
-     
+
      \psi _ I(0,t) = \psi _ {II}(0,t)
 
-     \psi _ {II}(L, t) = \psi _ {III}(L, t) 
+     \psi _ {II}(L, t) = \psi _ {III}(L, t)
 
 * Guess the Solutions
-  
+
   .. math:: \psi_{II} = \psi = C \sin (k x) + D \cos(kx)
 
 * Find the wavenumber k, by putting the assumed solutions into equation of motion
-  
+
   .. math:: k = \pm \sqrt{\frac{2m \epsilon}{\hbar^2} }
 
-  Since we can always merge the negative into the constants, it is fine to use 
-  
+  Since we can always merge the negative into the constants, it is fine to use
+
   .. math:: k = \sqrt{\frac{2m \epsilon}{\hbar^2} }
 
 * Use Boundary Condition
-    1. At x=0, 
+    1. At x=0,
 
        .. math:: \psi(0,t)=0 .
 
        This gives us :math:`D = 0` .
 
-    2. At :math:`x=L`, 
+    2. At :math:`x=L`,
 
-       .. math:: \psi(L,t)=0 . 
+       .. math:: \psi(L,t)=0 .
 
        This leads to
 
        .. math:: k L = n \pi .
 
        Since :math:`n=0` gives us a 0 wave function, we would just drop :math:`n=0`. For the same reason why we drop the negative values of k, we would drop all the negative values of n.
-       This BC gives us the possible values of energy because wavenumber k is related to energy, 
+       This BC gives us the possible values of energy because wavenumber k is related to energy,
 
        .. math:: \epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,
 
-       with 
+       with
 
        .. math:: n=1,2,3, \cdots
 
 * Normalization as the last constraint for the last undetermined parameter,
-  
+
   .. math:: C=\sqrt{\frac{2}{L}}
 
-  
+
 Physics
 ~~~~~~~~
 
@@ -442,11 +442,11 @@ Properties
       \hat \Pi \ket{p} = \ket{-p} .
 
   * Physics: Parity changes the coordinate, so the direction of momentum is also changed.
-  * Math: 
+  * Math:
 
-    .. math:: \hat \Pi \ket{p} = \int \hat \Pi \ket{x}\braket{x}{p}\d x= \int \ket{-x}\braket{x}{p}\d x 
+    .. math:: \hat \Pi \ket{p} = \int \hat \Pi \ket{x}\braket{x}{p}\d x= \int \ket{-x}\braket{x}{p}\d x
 
-    Change coordinate from x to -x, 
+    Change coordinate from x to -x,
 
     .. math:: \hat \Pi \ket{p} = \int \ket{x}\braket{-x}{p}\d x = \int \ket{x}\braket{x}{-p}\d x  = \ket{-p}
 
@@ -457,16 +457,16 @@ Properties
       (\bra{x'}\hat \Pi \ket{x})^\dagger = \bra{x}\hat \Pi^\dagger \ket{x'} =\delta(x+x')
 
 3. Unitary
-  
-   .. math:: \bra{x}\hat \Pi^\dagger \hat \Pi \ket{x'}= \braket{-x}{-x'}=\delta(-x+x')=\delta(x-x')=\braket{x}{x'} 
+
+   .. math:: \bra{x}\hat \Pi^\dagger \hat \Pi \ket{x'}= \braket{-x}{-x'}=\delta(-x+x')=\delta(x-x')=\braket{x}{x'}
 
 4. Inverse of parity
-   
-   .. math:: \hat \Pi \hat \Pi = \hat \Pi \hat \Pi^\dagger = \hat I 
+
+   .. math:: \hat \Pi \hat \Pi = \hat \Pi \hat \Pi^\dagger = \hat I
 
 5. Eigensystem of parity.
 
-   .. math:: \hat \Pi \ket{\pi}=\pi\ket{\pi} 
+   .. math:: \hat \Pi \ket{\pi}=\pi\ket{\pi}
 
    Apply another operator
 
@@ -485,15 +485,15 @@ Properties
       .. math:: \bra{x}\hat \Pi ^\dagger \hat X \hat \Pi \ket{x'} = \bra{-x}\hat X \ket{-x'}= -x'\delta(x-x') = \bra{x}(-\hat X)\ket{x'}
 
    b. Apply to momentum operator,
-      
-      .. math:: \hat \Pi^\dagger \hat p \hat \Pi = -\hat p 
+
+      .. math:: \hat \Pi^\dagger \hat p \hat \Pi = -\hat p
 
       Proof: Similar to the previous one, just change x basis to momentum basis.
 
 7. Symmetry related to Hamiltonian.
-   
+
    .. math:: \left[ \hat \Pi , \hat H  \right] = 0
-   
+
    When this happens, parity of Hamiltonian won't change the wave function. Or the wave function should have an specific parity for 1D problem.
 
 
@@ -521,7 +521,7 @@ Ehrenfest's Theorem
 Schrödinger equation and its adjoint
 
 .. math::
-   
+
    i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}
 
    -i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H
@@ -546,7 +546,7 @@ Suppose we have a system with Hamiltonian
 We need to figure some commutators first.
 
 .. math::
-   2m \left[ \hat x, \hat H \right] =\left[\hat x, \hat p^2\right] = \hat x \hat p\hat p - \hat p \hat p \hat x = \hat x \hat p \hat p -\hat p \hat x \hat p + \hat p \hat x \hat p - \hat p \hat p \hat x  = \left[\hat x , \hat p\right]\hat p + \hat p \left[ \hat x,\hat p\right]  = 2 i \hbar \hat p 
+   2m \left[ \hat x, \hat H \right] =\left[\hat x, \hat p^2\right] = \hat x \hat p\hat p - \hat p \hat p \hat x = \hat x \hat p \hat p -\hat p \hat x \hat p + \hat p \hat x \hat p - \hat p \hat p \hat x  = \left[\hat x , \hat p\right]\hat p + \hat p \left[ \hat x,\hat p\right]  = 2 i \hbar \hat p
 
 .. math::
    \left[\hat p, \hat H\right] = \left[\hat p, V(\hat x) \right] = \left[\hat p, \sum_0^\infty \frac{V^{(n)}}{n!}\hat x^n\right] =\cdots =-i\hbar V'(\hat x)
@@ -557,10 +557,10 @@ We need to figure some commutators first.
       \frac{\d }{\d t} \left< \hat x \right> & =  \frac{1}{i\hbar} \bra{\psi(t)} \left[ \hat x, \hat H \right]\ket{\psi(t)} \\
       & =   \frac{\left< \hat p \right>}{m}
 
-   
+
    We are familiar with this in classical mechanics.
 2. Momentum average
-   
+
    .. math::
       \frac{\d}{\d t} \left<\hat p\right> & =  \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\
       & =  \frac{1}{i\hbar} \bra{\psi(t)}  (-i\hbar V'(\hat x))  \ket{\psi(t)}  \\
@@ -577,7 +577,7 @@ Suppose the potential area is fairly small and distributed around some coordinat
 
 .. math::
    < V(\hat x)> & =  V(x_0)   +  V'(x_0) < (x - x_0)> + V''(x_0)<(x-x_0)^2> /2 + \cdots \\
-   & =  V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots 
+   & =  V(x_0) + 0 + V''(x_0) (\Delta x)^2 + \cdots
 
 
 If the uncertainty is small enough, every term except the first one becomes small. So to the lowest order, average of potential is approximately the potential at :math:`x_0`.
@@ -605,8 +605,8 @@ Schrödinger Picture
 In Schrödinger picture the states are evolving with time.
 
 .. math:: i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S
- 
-And for time independent Hamiltonian, 
+
+And for time independent Hamiltonian,
 
 .. math:: \ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S
 
@@ -626,13 +626,12 @@ How do we relate to Heisenberg Picture to Schrödinger Picture? Through investig
 
 .. math::
    {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H & =  {} _ S \bra{\psi} \hat \Omega _ S \ket{\psi} _ S \\
-   {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H & =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\ 
+   {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H & =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\
    \hat \Omega _ H & =  \hat U^\dagger \hat \Omega _ S \hat U
 
- 
- So the operators change with time in Heisenberg Picture.
- 
- 
+So the operators change with time in Heisenberg Picture.
+
+
 Ehrenfest's Theorem in Heisenberg Picture
 """"""""""""""""""""""""""""""""""""""""""""
 
@@ -682,6 +681,15 @@ Time derivative of momentum operator
 So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That's why we like it.
 
 
+Comparison of Picutres
+""""""""""""""""""""""""""""""
+
+.. figure:: assets/images/picutres-comparison.png
+   :align: center
+
+   Comparison of different pictures. Notice that in Dirac picture, :math:`\hat W_I = \hat U_0 ^{-1}\hat W \hat U_0`, :math:`\ket{\psi(t)}_I = \hat U_I \ket{\psi(0)}_I`. A markdown file that is used to make this table can be downloaded `here <assets/pictureQM.md>`_ .
+
+
 Conservation
 ---------------
 
@@ -702,11 +710,11 @@ What is the nature of time dependence
 
 We can see this by looking at a simple example.
 
-Assume we have a system with energy eigenstates :math:`\ket{\epsilon _ n}`, and initially, 
+Assume we have a system with energy eigenstates :math:`\ket{\epsilon _ n}`, and initially,
 
 .. math:: \ket{\psi _ 0} = \sum_n C _ n \ket{\epsilon _ n} .
 
-So 
+So
 
 .. math:: \ket{\psi(t)} = \sum _ n C _ n e^{-i\epsilon _ n t/\hbar} \ket{\epsilon _ n} .
 
@@ -727,7 +735,7 @@ And the expectation value
 
 .. math:: e^{-i(\epsilon _ m - \epsilon _ n)t/\hbar} .
 
-As it is so important, we call 
+As it is so important, we call
 
 .. math:: (\epsilon _ m - \epsilon _ n)/\hbar
 
@@ -761,7 +769,7 @@ Standard Solution
 --------------------
 
 
-We can use polynomial expansion for part of the solution. 
+We can use polynomial expansion for part of the solution.
 
 
 
@@ -907,7 +915,7 @@ Rewrite the Hamiltonian
 Now we can define :math:`\hat a^\dagger \hat a = \hat N`, which is just like an operator for (energy) quanta numbers.
 
 
-An impoertan relation is 
+An impoertan relation is
 
 .. math::
    \left[\hat a, \hat a^\dagger\right] = 1 \\
@@ -924,9 +932,9 @@ To find out the eigen state of :math:`\hat a` and :math:`\hat a^\dagger`, we try
    \hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\
    \hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})
 
-This means :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are also eigen states of :math:`hat N`.
+This means :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are also eigen states of :math:`\hat N`.
 
-The next step is very crucial. Since :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are eigen states of :math:`hat N`, we know that
+The next step is very crucial. Since :math:`\hat a \ket{n}` and :math:`\hat a^\dagger \ket{n}` are eigen states of :math:`\hat N`, we know that
 
 .. math::
    \hat a \ket{n} = C1 \ket{n} \\
@@ -938,7 +946,7 @@ Then our next step is to find out what are :math:`C1` and :math:`C2` exactly.
 They way of finding them is to use invariant quantities, such as the inner product. Here we use average of :math:`\hat N` operator.
 
 .. math::
-   \hat a \ket{n} = \sqrt n \ket{n-1}  \\ 
+   \hat a \ket{n} = \sqrt n \ket{n-1}  \\
    \hat a^\dagger \ket{n} = \sqrt{n+1} \ket{n+1}
 
 Final step is to constrain on :math:`n`, which should be integrals. This is true because we need a cut off for the eigen equation of :math:`\hat N`, whose avarage is n and it should be non negative.
@@ -951,7 +959,7 @@ leads to :math:`n\ge 0`. To get this proper cut off, :math:`n` should be integer
 .. math::
    \hat a \ket{n} = \sqrt n \ket{n-1}
 
-n can go to negative numbers. If n is positive integer, 
+n can go to negative numbers. If n is positive integer,
 
 .. math::
    \hat a \ket{1} = \ket{0}  \\
@@ -969,10 +977,10 @@ Ground state in :math:`{\ket{x}}` basis can be found by solving the differential
    \bra{x} \hat a \ket{0} = 0
 
 
-.. 
+..
 
   Very important:
-  
+
   * The Hermitian conjugate of :math:`\hat a \ket{n}` is :math:`\bra{n} \hat a^\dagger`.
   * Hermitian conjugate of :math:`\hat a \hat a^\dagger` is :math:`\hat a \hat a^dagger`. This can be a trap. Hermitian conjugate is the complex conjugate AND TRANSPOSE!
 

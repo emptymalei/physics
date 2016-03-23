@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Comparison of E &amp; M &mdash; Physics Notes</title>
+    <title>6.2.3. Comparison of E &amp; M &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,9 +32,9 @@
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../../index.html" />
-    <link rel="up" title="Electricity and Magnetism" href="main.html" />
-    <link rel="next" title="Response of Matter" href="../matter.html" />
-    <link rel="prev" title="Electrostatics and Magnetostatics" href="static.html" />
+    <link rel="up" title="6.2. Electricity and Magnetism" href="main.html" />
+    <link rel="next" title="6.3. Response of Matter" href="../matter.html" />
+    <link rel="prev" title="6.2.2. Electrostatics and Magnetostatics" href="static.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -109,6 +109,76 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+ </script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+   MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+     cancel: ["Extension","cancel"]
+     });
+  });
+  </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+     }
+   });
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+           all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+   });
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     processEscapes: true
+   }
+ });
+</script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   TeX: {
+     Macros: {
+      overlr: ['\\overset\\leftrightarrow{\#1}',1],
+      overl: ['\\overset\leftarrow{\#1}',1],
+      overr: ['\\overset\rightarrow{\#1}',1],
+      bra: ['\\left\\langle \#1\\right|',1],
+      ket: ['\\left| \#1\\right\\rangle',1],
+      braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+      avg: ['\\left< \#1 \\right>',1],
+      slashed: ['\\cancel{\#1}',1],
+      bold: ['\\boldsymbol{\#1}',1],
+      d: ['\\mathrm d',0]
+     }
+   }
+ });
+ </script>
+ <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+
+
+
+
 
    
   </head>
@@ -137,38 +207,40 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="../../index.html">Site <b class="caret"></b></a>
+     href="../../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../preface.html">1. Whatever</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fun.html">1. Fun</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../voc/vocabulary.html">Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../voc/vocabulary.html">1. Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basic.html">2. Basic</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../math.html">Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../special-functions.html">Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../math.html">1. Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../special-functions.html">2. Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../equation-solving.html">3. Equation Solving</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../classical-mechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics2.html">Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../statmech/statistical-physics.html">Statistical Physics</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classical-mechanics.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../statmech/statistical-physics.html">5. Statistical Physics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">6. Electrodynamics</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity.html">General Relativity</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/basics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/supernova.html">Supernova</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../cosmology.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-optics.html">Quantum Optics</a></li>
@@ -182,18 +254,18 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">Page <b class="caret"></b></a>
+     href="#">Sections <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Comparison of E &amp; M</a><ul>
-<li><a class="reference internal" href="#useful-tricks">Useful Tricks</a></li>
-<li><a class="reference internal" href="#statics-in-vacuum">Statics in Vacuum</a><ul>
-<li><a class="reference internal" href="#source-of-fields">Source of Fields</a></li>
-<li><a class="reference internal" href="#potentials">Potentials</a></li>
-<li><a class="reference internal" href="#gauge-of-fields">Gauge of fields</a></li>
-<li><a class="reference internal" href="#multipole-expansion">Multipole Expansion</a></li>
-<li><a class="reference internal" href="#force-and-torque">Force and Torque</a></li>
+<li><a class="reference internal" href="#">6.2.3. Comparison of E &amp; M</a><ul>
+<li><a class="reference internal" href="#useful-tricks">6.2.3.1. Useful Tricks</a></li>
+<li><a class="reference internal" href="#statics-in-vacuum">6.2.3.2. Statics in Vacuum</a><ul>
+<li><a class="reference internal" href="#source-of-fields">6.2.3.2.1. Source of Fields</a></li>
+<li><a class="reference internal" href="#potentials">6.2.3.2.2. Potentials</a></li>
+<li><a class="reference internal" href="#gauge-of-fields">6.2.3.2.3. Gauge of fields</a></li>
+<li><a class="reference internal" href="#multipole-expansion">6.2.3.2.4. Multipole Expansion</a></li>
+<li><a class="reference internal" href="#force-and-torque">6.2.3.2.5. Force and Torque</a></li>
 </ul>
 </li>
 </ul>
@@ -207,11 +279,11 @@
               
                 
   <li>
-    <a href="static.html" title="Previous Chapter: Electrostatics and Magnetostatics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Electrostatic...</span>
+    <a href="static.html" title="Previous Chapter: 6.2.2. Electrostatics and Magnetostatics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 6.2.2. Electr...</span>
     </a>
   </li>
   <li>
-    <a href="../matter.html" title="Next Chapter: Response of Matter"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Response of M... &raquo;</span>
+    <a href="../matter.html" title="Next Chapter: 6.3. Response of Matter"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">6.3. Response... &raquo;</span>
     </a>
   </li>
               
@@ -240,9 +312,9 @@
     <div class="col-md-12 content">
       
   <div class="section" id="comparison-of-e-m">
-<h1>Comparison of E &amp; M<a class="headerlink" href="#comparison-of-e-m" title="Permalink to this headline">¶</a></h1>
+<h1>6.2.3. Comparison of E &amp; M<a class="headerlink" href="#comparison-of-e-m" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="useful-tricks">
-<h2>Useful Tricks<a class="headerlink" href="#useful-tricks" title="Permalink to this headline">¶</a></h2>
+<h2>6.2.3.1. Useful Tricks<a class="headerlink" href="#useful-tricks" title="Permalink to this headline">¶</a></h2>
 <div class="math">
 \[\partial_i(x_k j_i) = j_k + x_k \partial_i j_i\]</div>
 <p>This is useful because we have</p>
@@ -254,9 +326,9 @@
 \[\partial_i(x_k x_l j_i) .\]</div>
 </div>
 <div class="section" id="statics-in-vacuum">
-<h2>Statics in Vacuum<a class="headerlink" href="#statics-in-vacuum" title="Permalink to this headline">¶</a></h2>
+<h2>6.2.3.2. Statics in Vacuum<a class="headerlink" href="#statics-in-vacuum" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="source-of-fields">
-<h3>Source of Fields<a class="headerlink" href="#source-of-fields" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.3.2.1. Source of Fields<a class="headerlink" href="#source-of-fields" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>Source of Electric Field in Electrostatics</li>
 </ol>
@@ -271,7 +343,7 @@
 \[\nabla \times \vec B = \frac{4\pi}{c} \vec j .\]</div>
 </div>
 <div class="section" id="potentials">
-<h3>Potentials<a class="headerlink" href="#potentials" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.3.2.2. Potentials<a class="headerlink" href="#potentials" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>Electric Potential</li>
 </ol>
@@ -298,7 +370,7 @@
 \[\vec A = \frac{1}{c}\int \frac{\vec j}{\lvert \vec x - \vec x' \rvert} d^3 x' .\]</div>
 </div>
 <div class="section" id="gauge-of-fields">
-<h3>Gauge of fields<a class="headerlink" href="#gauge-of-fields" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.3.2.3. Gauge of fields<a class="headerlink" href="#gauge-of-fields" title="Permalink to this headline">¶</a></h3>
 <p>By definition, electric potential and maganetic potential are, repectively,</p>
 <div class="math">
 \[\vec E = -\nabla \phi ,\]</div>
@@ -321,7 +393,7 @@
 </div>
 </div>
 <div class="section" id="multipole-expansion">
-<h3>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.3.2.4. Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h3>
 <div class="warning admonition">
 <p class="first admonition-title">Requirement</p>
 <p class="last">One should be able to derive these multipole expansions of fields without refering to any material.</p>
@@ -360,7 +432,7 @@
 \[\vec \mu  = \frac{1}{2c} \int \vec x' \times \vec j(\vec x') d^3 x'.\]</div>
 </div>
 <div class="section" id="force-and-torque">
-<h3>Force and Torque<a class="headerlink" href="#force-and-torque" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.3.2.5. Force and Torque<a class="headerlink" href="#force-and-torque" title="Permalink to this headline">¶</a></h3>
 <div class="warning admonition">
 <p class="first admonition-title">Requirement</p>
 <ol class="arabic simple">

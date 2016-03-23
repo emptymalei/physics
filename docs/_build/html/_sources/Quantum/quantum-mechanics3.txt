@@ -19,6 +19,3 @@ Topics
     approx.rst
     symmetries.rst
     tensors.rst
-    perturbationTheory.rst
-
-

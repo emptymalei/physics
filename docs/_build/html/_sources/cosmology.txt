@@ -285,7 +285,7 @@ Observation
 
 Angular diameter distance is really useful if we have some standard ruler. Now assume we have a ruler d, we can find out the angle between the two ends of the ruler, by some kind of measurement.
 
-.. image:: Fig/AngularDiaFormula.jpg
+.. image:: assets/cosmology/AngularDiaFormula.jpg
    :alt: Angular Diameter Diatance
 
 At the same time, we can use magic of math

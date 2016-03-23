@@ -64,7 +64,7 @@ Basics
 
    Let's start from this coincidence.
 
-   .. figure:: sr/specialRelativityVelocityAddition.png
+   .. figure:: assets/special-relativity/specialRelativityVelocityAddition.png
       :align: center
 
       Addition of velocities
@@ -121,7 +121,7 @@ Doppler Shift
 The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.
 
 
-.. image:: assets/astrophysics/dopplerRedshift.png
+.. image:: assets/special-relativity/dopplerRedshift.png
    :align: center
 
 
@@ -176,7 +176,7 @@ Here we have three different kinds, the additional one is the transverse redshif
 
 An gif from wikipedia shows this explicitly,
 
-.. figure:: assets/astrophysics/XYCoordinates.gif
+.. figure:: assets/special-relativity/XYCoordinates.gif
    :align: center
 
    Image Source: `File:XYCoordinates.gif <https://en.wikipedia.org/wiki/File:XYCoordinates.gif>`_

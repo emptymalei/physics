@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="next" title="Quantum Mechanics 2" href="quantum-mechanics2.html" />
-    <link rel="prev" title="Classical Mechanics" href="../classical-mechanics.html" />
+    <link rel="next" title="3. Quantum Mechanics 2" href="quantum-mechanics2.html" />
+    <link rel="prev" title="1. Classical Mechanics" href="../classical-mechanics.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -108,6 +108,76 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+ </script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+   MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+     cancel: ["Extension","cancel"]
+     });
+  });
+  </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+     }
+   });
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+           all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+   });
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     processEscapes: true
+   }
+ });
+</script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   TeX: {
+     Macros: {
+      overlr: ['\\overset\\leftrightarrow{\#1}',1],
+      overl: ['\\overset\leftarrow{\#1}',1],
+      overr: ['\\overset\rightarrow{\#1}',1],
+      bra: ['\\left\\langle \#1\\right|',1],
+      ket: ['\\left| \#1\\right\\rangle',1],
+      braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+      avg: ['\\left< \#1 \\right>',1],
+      slashed: ['\\cancel{\#1}',1],
+      bold: ['\\boldsymbol{\#1}',1],
+      d: ['\\mathrm d',0]
+     }
+   }
+ });
+ </script>
+ <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+
+
+
+
 
    
   </head>
@@ -136,38 +206,41 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="../index.html">Site <b class="caret"></b></a>
+     href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Whatever</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun.html">1. Fun</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">1. Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic.html">2. Basic</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">1. Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math/statistics/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">2. Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">3. Equation Solving</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">1. Classical Mechanics</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics2.html">Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">5. Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">6. Electrodynamics</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum-optics.html">Quantum Optics</a></li>
@@ -181,7 +254,7 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">Page <b class="caret"></b></a>
+     href="#">Sections <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
@@ -241,6 +314,7 @@
 <li><a class="reference internal" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture">Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#comparison-of-picutres">Comparison of Picutres</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#conservation">Conservation</a><ul>
@@ -278,11 +352,11 @@
               
                 
   <li>
-    <a href="../classical-mechanics.html" title="Previous Chapter: Classical Mechanics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Classical Mec...</span>
+    <a href="../classical-mechanics.html" title="Previous Chapter: 1. Classical Mechanics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 1. Classical ...</span>
     </a>
   </li>
   <li>
-    <a href="quantum-mechanics2.html" title="Next Chapter: Quantum Mechanics 2"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum Mecha... &raquo;</span>
+    <a href="quantum-mechanics2.html" title="Next Chapter: 3. Quantum Mechanics 2"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">3. Quantum Me... &raquo;</span>
     </a>
   </li>
               
@@ -855,8 +929,9 @@ a. Apply to position operator,</p>
 <p>How do we relate to Heisenberg Picture to Schrödinger Picture? Through investigation of observables. We should have the same observation results in both Pictures.</p>
 <div class="math">
 \[\begin{split}{} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp; =  {} _ S \bra{\psi} \hat \Omega _ S \ket{\psi} _ S \\
-  {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp; =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\
-  \hat \Omega _ H &amp; =  \hat U^\dagger \hat \Omega _ S \hat U\end{split}\]\[So the operators change with time in Heisenberg Picture.\]</div>
+{} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H &amp; =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\
+\hat \Omega _ H &amp; =  \hat U^\dagger \hat \Omega _ S \hat U\end{split}\]</div>
+<p>So the operators change with time in Heisenberg Picture.</p>
 </div>
 </div>
 <div class="section" id="ehrenfest-s-theorem-in-heisenberg-picture">
@@ -890,6 +965,13 @@ a. Apply to position operator,</p>
 <div class="math">
 \[\frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)\]</div>
 <p>So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That&#8217;s why we like it.</p>
+</div>
+</div>
+<div class="section" id="comparison-of-picutres">
+<h4>Comparison of Picutres<a class="headerlink" href="#comparison-of-picutres" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center" id="id3">
+<img alt="../_images/picutres-comparison.png" src="../_images/picutres-comparison.png" />
+<p class="caption"><span class="caption-text">Comparison of different pictures. Notice that in Dirac picture, <span class="math">\(\hat W_I = \hat U_0 ^{-1}\hat W \hat U_0\)</span>, <span class="math">\(\ket{\psi(t)}_I = \hat U_I \ket{\psi(0)}_I\)</span>. A markdown file that is used to make this table can be downloaded <a class="reference external" href="assets/pictureQM.md">here</a> .</span></p>
 </div>
 </div>
 </div>
@@ -1039,8 +1121,8 @@ Hamiltonian always commutes with itself.</p>
 <div class="math">
 \[\begin{split}\hat N (\hat a \ket{n}) = (n-1) (\hat a \ket{n})  \\
 \hat N (\hat a^\dagger \ket{n}) = (n+1) (\hat a^\dagger \ket{n})\end{split}\]</div>
-<p>This means <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are also eigen states of <span class="math">\(hat N\)</span>.</p>
-<p>The next step is very crucial. Since <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are eigen states of <span class="math">\(hat N\)</span>, we know that</p>
+<p>This means <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are also eigen states of <span class="math">\(\hat N\)</span>.</p>
+<p>The next step is very crucial. Since <span class="math">\(\hat a \ket{n}\)</span> and <span class="math">\(\hat a^\dagger \ket{n}\)</span> are eigen states of <span class="math">\(\hat N\)</span>, we know that</p>
 <div class="math">
 \[\begin{split}\hat a \ket{n} = C1 \ket{n} \\
 \hat a^\dagger \ket{n} = C2 \ket{n}\end{split}\]</div>

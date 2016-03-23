@@ -54,10 +54,3 @@ Electrodynamics
     matter.rst
     radiation.rst
     scattering.rst
-    special_relativity.rst
-
-
-
-
-
-

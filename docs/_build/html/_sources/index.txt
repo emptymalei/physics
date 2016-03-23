@@ -3,20 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Physics Research Survival Manual!
+Welcome to Physics Notebook
 =============================================================
 
 
-This is a notebook about physics. It's not done yet. (Maybe I'll never finish it because there are too many topics in physics.)
+This is a notebook on physics. WIP.
 
 Use the source. Keep the source open.
 
-
-
-At The Begining of The Universe
-================================
-
-I am not a good physicist so don't trust the notes written here.
 
 
 Preface
@@ -24,9 +18,9 @@ Preface
 
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    preface.rst
+   preface.rst
 
 
 
@@ -43,10 +37,10 @@ Vocabulary
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    voc/vocabulary.rst
-    basic.rst
+   voc/vocabulary.rst
+   basic.rst
 
 
 
@@ -55,13 +49,12 @@ Mathematics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    math.rst
-    mathphysics.rst
-    statistics/statistics.rst
-    special-functions.rst
-    equation-solving.rst
+   math.rst
+   math/statistics/statistics.rst
+   special-functions.rst
+   equation-solving.rst
 
 
 
@@ -70,14 +63,14 @@ Fundamental Physics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    classical-mechanics.rst
-    quantum/quantum-mechanics.rst
-    quantum/quantum-mechanics2.rst
-    quantum/quantum-mechanics3.rst
-    statmech/statistical-physics.rst
-    electrodynamics/index.rst
+   classical-mechanics.rst
+   quantum/quantum-mechanics.rst
+   quantum/quantum-mechanics2.rst
+   quantum/quantum-mechanics3.rst
+   statmech/statistical-physics.rst
+   electrodynamics/index.rst
 
 
 
@@ -85,10 +78,10 @@ Advanced Physics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    relativity/special-relativity.rst
-    relativity/general-relativity.rst
+   relativity/special-relativity.rst
+   relativity/general-relativity.rst
 
 
 
@@ -97,30 +90,25 @@ Cutting Edge Physics
 =====================
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
-    astrophysics.rst
-    relativity/general-relativity-adv.rst
-    cosmology.rst
-    quantum/quantum-optics.rst
-    quantum/susy-quantum.rst
-
-
-
-
+   astrophysics/basics.rst
+   astrophysics/stars.rst
+   astrophysics/supernova.rst
+   relativity/general-relativity-adv.rst
+   cosmology.rst
+   quantum/quantum-optics.rst
+   quantum/susy-quantum.rst
 
 
 
-------
-
-License
-========
-
-This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_.
 
 
-.. figure:: _static/images/cc_byncsa.png
-   :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+
+
+
+
+
 
 DOI
 ==============
@@ -132,6 +120,12 @@ DOI
 
 
 
------
+License
+========
+This open source project is hosted on GitHub: `Physics <https://github.com/emptymalei/physics>`_ .
 
-This open source project is hosted on GitHub: `Physics Research Manual <https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual>`_ .
+This work is licensed under a `Attribution-NonCommercial-ShareAlike 3.0  <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_.
+
+
+.. figure:: _static/images/cc_byncsa.png
+   :target: http://creativecommons.org/licenses/by-nc-sa/3.0/us/

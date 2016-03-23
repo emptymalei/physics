@@ -629,8 +629,7 @@ How do we relate to Heisenberg Picture to Schrödinger Picture? Through investig
    {} _ H \bra{\psi} \hat \Omega _ H \ket{\psi} _ H & =  {} _ S \bra{\psi _ 0} \hat U^\dagger \hat \Omega _ S  \hat U \ket{\psi _ 0} _ S \\
    \hat \Omega _ H & =  \hat U^\dagger \hat \Omega _ S \hat U
 
-
- So the operators change with time in Heisenberg Picture.
+So the operators change with time in Heisenberg Picture.
 
 
 Ehrenfest's Theorem in Heisenberg Picture
@@ -680,6 +679,15 @@ Time derivative of momentum operator
 .. math:: \frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)
 
 So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That's why we like it.
+
+
+Comparison of Picutres
+""""""""""""""""""""""""""""""
+
+.. figure:: assets/images/picutres-comparison.png
+   :align: center
+
+   Comparison of different pictures. Notice that in Dirac picture, :math:`\hat W_I = \hat U_0 ^{-1}\hat W \hat U_0`, :math:`\ket{\psi(t)}_I = \hat U_I \ket{\psi(0)}_I`. A markdown file that is used to make this table can be downloaded `here <assets/pictureQM.md>`_ .
 
 
 Conservation

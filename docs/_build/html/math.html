@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Mathematics &mdash; Physics Notes</title>
+    <title>1. Mathematics &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="index.html" />
-    <link rel="next" title="Special Functions" href="special-functions.html" />
-    <link rel="prev" title="Basic" href="basic.html" />
+    <link rel="next" title="2. Special Functions" href="special-functions.html" />
+    <link rel="prev" title="2. Basic" href="basic.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -108,6 +108,76 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+ </script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+   MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+     cancel: ["Extension","cancel"]
+     });
+  });
+  </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+     }
+   });
+</script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+           all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+   });
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     processEscapes: true
+   }
+ });
+</script>
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   TeX: {
+     Macros: {
+      overlr: ['\\overset\\leftrightarrow{\#1}',1],
+      overl: ['\\overset\leftarrow{\#1}',1],
+      overr: ['\\overset\rightarrow{\#1}',1],
+      bra: ['\\left\\langle \#1\\right|',1],
+      ket: ['\\left| \#1\\right\\rangle',1],
+      braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+      avg: ['\\left< \#1 \\right>',1],
+      slashed: ['\\cancel{\#1}',1],
+      bold: ['\\boldsymbol{\#1}',1],
+      d: ['\\mathrm d',0]
+     }
+   }
+ });
+ </script>
+ <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+
+
+
+
 
    
   </head>
@@ -136,38 +206,40 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="index.html">Site <b class="caret"></b></a>
+     href="index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Whatever</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="fun.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fun.html">1. Fun</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">1. Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">2. Basic</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="special-functions.html">Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">1. Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special-functions.html">2. Special Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">3. Equation Solving</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">5. Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">6. Electrodynamics</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/basics.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cosmology.html">Cosmology</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum/quantum-optics.html">Quantum Optics</a></li>
@@ -181,58 +253,58 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">Page <b class="caret"></b></a>
+     href="#">Sections <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Mathematics</a><ul>
-<li><a class="reference internal" href="#kindergarten">Kindergarten</a></li>
-<li><a class="reference internal" href="#complex-analysis">Complex Analysis</a><ul>
-<li><a class="reference internal" href="#cauchy-riemann-equation">Cauchy-Riemann Equation</a></li>
-<li><a class="reference internal" href="#singularities">Singularities</a></li>
+<li><a class="reference internal" href="#">1. Mathematics</a><ul>
+<li><a class="reference internal" href="#kindergarten">1.1. Kindergarten</a></li>
+<li><a class="reference internal" href="#complex-analysis">1.2. Complex Analysis</a><ul>
+<li><a class="reference internal" href="#cauchy-riemann-equation">1.2.1. Cauchy-Riemann Equation</a></li>
+<li><a class="reference internal" href="#singularities">1.2.2. Singularities</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#calculus">Calculus</a><ul>
-<li><a class="reference internal" href="#differential-of-functions">Differential of Functions</a></li>
-<li><a class="reference internal" href="#integrals">Integrals</a></li>
+<li><a class="reference internal" href="#calculus">1.3. Calculus</a><ul>
+<li><a class="reference internal" href="#differential-of-functions">1.3.1. Differential of Functions</a></li>
+<li><a class="reference internal" href="#integrals">1.3.2. Integrals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#linear-algebra">Linear Algebra</a><ul>
-<li><a class="reference internal" href="#tensor-product-space">Tensor Product Space</a><ul>
-<li><a class="reference internal" href="#inner-product">Inner Product</a></li>
-<li><a class="reference internal" href="#operators-applied-to-tensor-product">Operators Applied to Tensor Product</a></li>
+<li><a class="reference internal" href="#linear-algebra">1.4. Linear Algebra</a><ul>
+<li><a class="reference internal" href="#tensor-product-space">1.4.1. Tensor Product Space</a><ul>
+<li><a class="reference internal" href="#inner-product">1.4.1.1. Inner Product</a></li>
+<li><a class="reference internal" href="#operators-applied-to-tensor-product">1.4.1.2. Operators Applied to Tensor Product</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#solving-linear-equations">Solving Linear Equations</a></li>
+<li><a class="reference internal" href="#solving-linear-equations">1.4.2. Solving Linear Equations</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#differential-geometry">Differential Geometry</a><ul>
-<li><a class="reference internal" href="#metric">Metric</a><ul>
-<li><a class="reference internal" href="#definitions">Definitions</a></li>
-<li><a class="reference internal" href="#how-to-calculate-the-metric">How to calculate the metric</a></li>
+<li><a class="reference internal" href="#differential-geometry">1.5. Differential Geometry</a><ul>
+<li><a class="reference internal" href="#metric">1.5.1. Metric</a><ul>
+<li><a class="reference internal" href="#definitions">1.5.1.1. Definitions</a></li>
+<li><a class="reference internal" href="#how-to-calculate-the-metric">1.5.1.2. How to calculate the metric</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#connection">Connection</a></li>
-<li><a class="reference internal" href="#gradient-curl-divergence-etc">Gradient, Curl, Divergence, etc</a><ul>
-<li><a class="reference internal" href="#gradient">Gradient</a></li>
-<li><a class="reference internal" href="#curl">Curl</a></li>
-<li><a class="reference internal" href="#divergence">Divergence</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id2">Linear Algebra</a><ul>
-<li><a class="reference internal" href="#basic-concepts">Basic Concepts</a><ul>
-<li><a class="reference internal" href="#trace">Trace</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#technique">Technique</a><ul>
-<li><a class="reference internal" href="#inverse-of-a-matrix">Inverse of a matrix</a></li>
+<li><a class="reference internal" href="#connection">1.5.2. Connection</a></li>
+<li><a class="reference internal" href="#gradient-curl-divergence-etc">1.5.3. Gradient, Curl, Divergence, etc</a><ul>
+<li><a class="reference internal" href="#gradient">1.5.3.1. Gradient</a></li>
+<li><a class="reference internal" href="#curl">1.5.3.2. Curl</a></li>
+<li><a class="reference internal" href="#divergence">1.5.3.3. Divergence</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
+<li><a class="reference internal" href="#id2">1.6. Linear Algebra</a><ul>
+<li><a class="reference internal" href="#basic-concepts">1.6.1. Basic Concepts</a><ul>
+<li><a class="reference internal" href="#trace">1.6.1.1. Trace</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#technique">1.6.2. Technique</a><ul>
+<li><a class="reference internal" href="#inverse-of-a-matrix">1.6.2.1. Inverse of a matrix</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#refs-notes">1.7. Refs &amp; Notes</a></li>
 </ul>
 </li>
 </ul>
@@ -244,11 +316,11 @@
               
                 
   <li>
-    <a href="basic.html" title="Previous Chapter: Basic"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Basic</span>
+    <a href="basic.html" title="Previous Chapter: 2. Basic"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2. Basic</span>
     </a>
   </li>
   <li>
-    <a href="special-functions.html" title="Next Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Special Funct... &raquo;</span>
+    <a href="special-functions.html" title="Next Chapter: 2. Special Functions"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">2. Special Fu... &raquo;</span>
     </a>
   </li>
               
@@ -277,15 +349,15 @@
     <div class="col-md-12 content">
       
   <div class="section" id="mathematics">
-<h1>Mathematics<a class="headerlink" href="#mathematics" title="Permalink to this headline">¶</a></h1>
+<h1>1. Mathematics<a class="headerlink" href="#mathematics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="kindergarten">
-<h2>Kindergarten<a class="headerlink" href="#kindergarten" title="Permalink to this headline">¶</a></h2>
+<h2>1.1. Kindergarten<a class="headerlink" href="#kindergarten" title="Permalink to this headline">¶</a></h2>
 <p><strong>Binominal theorem</strong></p>
 <div class="math">
 \[(1+x)^n = \sum_{k=0}^{n} C_n^k x^k .\]</div>
 </div>
 <div class="section" id="complex-analysis">
-<h2>Complex Analysis<a class="headerlink" href="#complex-analysis" title="Permalink to this headline">¶</a></h2>
+<h2>1.2. Complex Analysis<a class="headerlink" href="#complex-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Some useful concepts: <a class="footnote-reference" href="#id3" id="id1">[1]</a></p>
 <ul class="simple">
 <li>Representation of a complex number and its conjugate</li>
@@ -312,14 +384,14 @@
 <li>Cauchy&#8217;s Integral Theorem</li>
 </ul>
 <div class="section" id="cauchy-riemann-equation">
-<h3>Cauchy-Riemann Equation<a class="headerlink" href="#cauchy-riemann-equation" title="Permalink to this headline">¶</a></h3>
+<h3>1.2.1. Cauchy-Riemann Equation<a class="headerlink" href="#cauchy-riemann-equation" title="Permalink to this headline">¶</a></h3>
 <p>A function <span class="math">\(f(z) = u(z) + i v(z)\)</span> is a function of a complex variable <span class="math">\(z=x+i y\)</span>.</p>
 <div class="math">
 \[\begin{split}\frac{\partial}{\partial x} u &amp;= \frac{\partial}{\partial y} v \\
 \frac{\partial}{\partial x} v &amp; = -\frac{\partial}{\partial y} u\end{split}\]</div>
 </div>
 <div class="section" id="singularities">
-<h3>Singularities<a class="headerlink" href="#singularities" title="Permalink to this headline">¶</a></h3>
+<h3>1.2.2. Singularities<a class="headerlink" href="#singularities" title="Permalink to this headline">¶</a></h3>
 <p>There are 3 common singularities,</p>
 <ol class="arabic simple">
 <li>Pole</li>
@@ -337,16 +409,16 @@
 </div>
 </div>
 <div class="section" id="calculus">
-<h2>Calculus<a class="headerlink" href="#calculus" title="Permalink to this headline">¶</a></h2>
+<h2>1.3. Calculus<a class="headerlink" href="#calculus" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center" id="id4">
 <img alt="_images/DifferentialANDIntegralOnOnePage.png" src="_images/DifferentialANDIntegralOnOnePage.png" />
 <p class="caption"><span class="caption-text">LaTeX source of this image is <a class="reference external" href="math/assets/DifferentialANDIntegralOnOnePage.tex">here</a> .</span></p>
 </div>
 <div class="section" id="differential-of-functions">
-<h3>Differential of Functions<a class="headerlink" href="#differential-of-functions" title="Permalink to this headline">¶</a></h3>
+<h3>1.3.1. Differential of Functions<a class="headerlink" href="#differential-of-functions" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="integrals">
-<h3>Integrals<a class="headerlink" href="#integrals" title="Permalink to this headline">¶</a></h3>
+<h3>1.3.2. Integrals<a class="headerlink" href="#integrals" title="Permalink to this headline">¶</a></h3>
 <p>Sometimes a integral on Real plane can be very hard, one of the techniques is to work on Complex plane and use contour integral.</p>
 <ol class="arabic">
 <li><p class="first">Contours: use Ghost Contours so that we don&#8217;t need to calculate these complicated integrals.</p>
@@ -362,36 +434,36 @@
 </div>
 </div>
 <div class="section" id="linear-algebra">
-<h2>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h2>
+<h2>1.4. Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="tensor-product-space">
-<span id="tensorproductspace"></span><h3>Tensor Product Space<a class="headerlink" href="#tensor-product-space" title="Permalink to this headline">¶</a></h3>
+<span id="tensorproductspace"></span><h3>1.4.1. Tensor Product Space<a class="headerlink" href="#tensor-product-space" title="Permalink to this headline">¶</a></h3>
 <p><span class="math">\(\ket{\phi}_1\)</span> and <span class="math">\(\ket{\phi}_2\)</span> are elements of Hilbert space <span class="math">\(H_1\)</span> and <span class="math">\(H_2\)</span>. <strong>Tensor Product</strong> of <span class="math">\(\ket{\phi}_1\)</span> and <span class="math">\(\ket{\phi}_2\)</span> is denoted as <span class="math">\(\ket{\phi}_1\otimes \ket{\phi}_2\)</span>. This operation is linear and distributive.</p>
 <p><strong>Tensor product space</strong> <span class="math">\(H_1\otimes H_2\)</span> is composed of all the linear combinations of all possible tensor products of elements in <span class="math">\(H_1\)</span> and <span class="math">\(H_2\)</span>.</p>
 <div class="section" id="inner-product">
-<h4>Inner Product<a class="headerlink" href="#inner-product" title="Permalink to this headline">¶</a></h4>
+<h4>1.4.1.1. Inner Product<a class="headerlink" href="#inner-product" title="Permalink to this headline">¶</a></h4>
 <p>Inner product of two tensor products</p>
 <div class="math">
 \[(\bra{\phi}_1\otimes \bra{\phi}_2)(\ket{\psi}_1\otimes \ket{\psi}_2) = ( {} _ 1 \braket{\phi}{\psi}_1)({}_2\braket{\phi}{\psi}_2)\]</div>
 </div>
 <div class="section" id="operators-applied-to-tensor-product">
-<h4>Operators Applied to Tensor Product<a class="headerlink" href="#operators-applied-to-tensor-product" title="Permalink to this headline">¶</a></h4>
+<h4>1.4.1.2. Operators Applied to Tensor Product<a class="headerlink" href="#operators-applied-to-tensor-product" title="Permalink to this headline">¶</a></h4>
 <p>Two operators <span class="math">\(\hat O_1\)</span> and <span class="math">\(\hat O_2\)</span> works on <span class="math">\(H_1\)</span> and <span class="math">\(H_2\)</span> respectively applied to tensor product</p>
 <div class="math">
 \[(\hat O_1 \otimes \hat O_2 )( \ket{\phi}_1\otimes \ket{\phi}_2 ) = (\hat O_1 \ket{\phi}_1) \otimes (\hat O_2 \ket{\phi}_2)\]</div>
 </div>
 </div>
 <div class="section" id="solving-linear-equations">
-<h3>Solving Linear Equations<a class="headerlink" href="#solving-linear-equations" title="Permalink to this headline">¶</a></h3>
+<h3>1.4.2. Solving Linear Equations<a class="headerlink" href="#solving-linear-equations" title="Permalink to this headline">¶</a></h3>
 <p>First of all, write down the augmented matrix for the equation set.</p>
 <p>Elementary row operations are allowed on the augmented matrix. Operate on the matrix until one can read out the solutions.</p>
 </div>
 </div>
 <div class="section" id="differential-geometry">
-<h2>Differential Geometry<a class="headerlink" href="#differential-geometry" title="Permalink to this headline">¶</a></h2>
+<h2>1.5. Differential Geometry<a class="headerlink" href="#differential-geometry" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="metric">
-<h3>Metric<a class="headerlink" href="#metric" title="Permalink to this headline">¶</a></h3>
+<h3>1.5.1. Metric<a class="headerlink" href="#metric" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="definitions">
-<h4>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h4>
+<h4>1.5.1.1. Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h4>
 <p>Denote the basis in use as <span class="math">\(\hat e_\mu\)</span>, then the metric can be written as</p>
 <div class="math">
 \[g_{\mu\nu}=\hat e_\mu \hat \cdot e_\nu\]</div>
@@ -401,7 +473,7 @@
 \[g_{\mu\lambda}g^{\lambda\nu}=\delta_\mu^\nu = g_\mu^\nu\]</div>
 </div>
 <div class="section" id="how-to-calculate-the-metric">
-<h4>How to calculate the metric<a class="headerlink" href="#how-to-calculate-the-metric" title="Permalink to this headline">¶</a></h4>
+<h4>1.5.1.2. How to calculate the metric<a class="headerlink" href="#how-to-calculate-the-metric" title="Permalink to this headline">¶</a></h4>
 <p>Let&#8217;s check the definition of metric again.</p>
 <p>If we choose a basis <span class="math">\(\hat e_\mu\)</span>, then a vector (at one certain point) in this coordinate system is</p>
 <div class="math">
@@ -431,7 +503,7 @@
 </div>
 </div>
 <div class="section" id="connection">
-<h3>Connection<a class="headerlink" href="#connection" title="Permalink to this headline">¶</a></h3>
+<h3>1.5.2. Connection<a class="headerlink" href="#connection" title="Permalink to this headline">¶</a></h3>
 <p>First class connection can be calculated</p>
 <div class="math">
 \[\Gamma^\mu_{\phantom{\mu}\nu\lambda}=\hat e^\mu\cdot \hat e_{\mu,\lambda}\]</div>
@@ -440,21 +512,21 @@
 \[[\mu\nu,\iota]=g_{\iota\mu}\Gamma^\mu_{\phantom{\mu}\nu\lambda}\]</div>
 </div>
 <div class="section" id="gradient-curl-divergence-etc">
-<h3>Gradient, Curl, Divergence, etc<a class="headerlink" href="#gradient-curl-divergence-etc" title="Permalink to this headline">¶</a></h3>
+<h3>1.5.3. Gradient, Curl, Divergence, etc<a class="headerlink" href="#gradient-curl-divergence-etc" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="gradient">
-<h4>Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h4>
+<h4>1.5.3.1. Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h4>
 <div class="math">
 \[T^b_{\phantom bc;a}= \nabla_aT^b_{\phantom bc}=T^b_{\phantom bc,a}+\Gamma^b_{ad}T^d_{\phantom dc}-\Gamma^d_{ac}T^b_{\phantom bd}\]</div>
 </div>
 <div class="section" id="curl">
-<h4>Curl<a class="headerlink" href="#curl" title="Permalink to this headline">¶</a></h4>
+<h4>1.5.3.2. Curl<a class="headerlink" href="#curl" title="Permalink to this headline">¶</a></h4>
 <p>For an anti-symmetric tensor, <span class="math">\(a_{\mu\nu}=-a_{\nu\mu}\)</span></p>
 <div class="math">
 \[\begin{split}\mathrm{Curl}_{\mu\nu\tau}(a_{\mu\nu})  \equiv  a_{\mu\nu;\tau}+a_{\nu\tau;\mu}+a_{\tau\mu;\nu} \\
  = a_{\mu\nu,\tau}+a_{\nu\tau,\mu}+a_{\tau\mu,\nu}\end{split}\]</div>
 </div>
 <div class="section" id="divergence">
-<h4>Divergence<a class="headerlink" href="#divergence" title="Permalink to this headline">¶</a></h4>
+<h4>1.5.3.3. Divergence<a class="headerlink" href="#divergence" title="Permalink to this headline">¶</a></h4>
 <div class="math">
 \[\begin{split}\mathrm{div}_\nu(a^{\mu\nu})&amp;\equiv   a^{\mu\nu}_{\phantom{\mu\nu};\nu} \\
 &amp; = \frac{\partial a^{\mu\nu}}{\partial x^\nu}+\Gamma^\mu_{\nu\tau}a^{\tau\nu}+\Gamma^\nu_{\nu\tau}a^{\mu\tau} \\
@@ -478,11 +550,11 @@
 </div>
 </div>
 <div class="section" id="id2">
-<h2>Linear Algebra<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>1.6. Linear Algebra<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="basic-concepts">
-<h3>Basic Concepts<a class="headerlink" href="#basic-concepts" title="Permalink to this headline">¶</a></h3>
+<h3>1.6.1. Basic Concepts<a class="headerlink" href="#basic-concepts" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="trace">
-<h4>Trace<a class="headerlink" href="#trace" title="Permalink to this headline">¶</a></h4>
+<h4>1.6.1.1. Trace<a class="headerlink" href="#trace" title="Permalink to this headline">¶</a></h4>
 <p>Trace should be calculated using the metric. An example is the trace of Ricci tensor,</p>
 <div class="math">
 \[R=g^{ab}R_{ab}\]</div>
@@ -497,9 +569,9 @@
 </div>
 </div>
 <div class="section" id="technique">
-<h3>Technique<a class="headerlink" href="#technique" title="Permalink to this headline">¶</a></h3>
+<h3>1.6.2. Technique<a class="headerlink" href="#technique" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="inverse-of-a-matrix">
-<h4>Inverse of a matrix<a class="headerlink" href="#inverse-of-a-matrix" title="Permalink to this headline">¶</a></h4>
+<h4>1.6.2.1. Inverse of a matrix<a class="headerlink" href="#inverse-of-a-matrix" title="Permalink to this headline">¶</a></h4>
 <p>Many methods to get the inverse of a matrix. Check wikipedia for Invertible matrix.</p>
 <p>Adjugate matrix method for example is here.</p>
 <div class="math">
@@ -509,7 +581,7 @@
 </div>
 </div>
 <div class="section" id="refs-notes">
-<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
+<h2>1.7. Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
 <table class="docutils footnote" frame="void" id="id3" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
