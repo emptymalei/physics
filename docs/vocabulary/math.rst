@@ -1,5 +1,5 @@
-Vocabulary
-*****************
+Useful Math Tricks
+******************************
 
 Functional Derivative
 ==============================
@@ -62,7 +62,7 @@ Legendre transformation is NOT just some algebra. Given :math:`f(x)` as a functi
 However, as we didn't fix :math:`x`, this means that the distance
 
 .. math::
-   F(p,x) = p x - f(x) 
+   F(p,x) = p x - f(x)
 
 varies according to :math:`x`. This is a transformation that maps a function :math:`f(x)` to some other function :math:`F(p,x)` which depends on the parameter :math:`p`. A more pedagogical way of writing this is
 
@@ -139,7 +139,7 @@ One should be able to find the component forms of gradient :math:`\vec \nabla \c
 
 
 
-   
+
 
 
 
@@ -147,5 +147,3 @@ One should be able to find the component forms of gradient :math:`\vec \nabla \c
 
 Refs & Notes
 ==================
-
-

@@ -36,87 +36,161 @@ Green's Function
 ---------------------------
 
 
-Suppose we have a differential operator :math:`L_x`, for example :math:`L_x` can be :math:`L_x\equiv \frac{d^2}{dx^2}+1`. The definition of GF is
+Definition of Green's Function
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
+The idea of Green/s function is very simple. To solve a general solution of equation
 
 .. math::
-   L_x G(x,z) = \delta(x-z).
+   \frac{d^2}{d x^2} y(x) + y(x) = f(x),
+   :label: eqn-green-function-example
 
-with the constrain of boundary condition of the ODE.
+where :math:`f(x)` is the source and some given boundary conditions. To save ink we define
 
-In most cases, GF is a stepwised function.
+.. admonition::
+   \hat L_x = \frac{d^2}{dx^2} + 1,
 
-The application of GF to ODE follows the precedure,
+which takes a function :math:`y(x)` to :math:`f(x)`, i.e.,
 
-1. Find the general form of GF for operator :math:`L_x`;
-2. Apply BC to GF;
-3. Continuity at :math:`n-2` order of derivatives at point :math:`x=z`, i.e., :math:`G^{(n-2)}(x,z)\vert_{x<z} = G^{(n-2)}(x,z)\vert_{x>z}` at :math:`x=z`;
-4. Discontinuity of the first order derivative at :math:`x=z`, i.e., :math:`G^{(n-1)}(x,z)\vert_{x>z} - G^{(n-1)}(x,z)\vert_{x<z} = 1` at point :math:`x=z`;
-5. Solve the coefficients to get the GF;
-6. The solution to an inhomogeneous ODE :math:`L_x y(x) = f(x)` is given immediately by
+.. math::
+   \hat L_x y(x) = f(x).
+   :label: eqn-green-function-example-1
 
-   .. math::
-      y(x) = \int_{Lower}^{Upper} G(x,z) f(z) dz
+Now we define the Green's function to be the solution of equation :eq:`eqn-green-function-example-1` but replacing the source with delta function :math:`\delta(x-z)`
 
-
-.. admonition:: An Example
-   :class: note
-   :name: greenFunctionExample
-
-   Solve equation
-
-   .. math::
-      y'' + \frac{1}{4}y = f(x).
-
-   {\bf Green's Function }
-
-   The operator is :math:`\hat L = \partial^2 + 1/4` with boundary condition :math:`y(0)=y(\pi)=0` .
-
-   First step is to find the Green's function of this operator, which is defined as the solution to
-
-   .. math::
-      \hat L G(x,x') = \delta(x-x'),
-
-   where :math:`\hat L` only operates on :math:`x` not :math:`x'`.
-
-   The general solutions for :math:`\hat L G(x,x')=0` is
-
-   .. math::
-      G(x,x') = A\cos(x/2) + B \sin(x/2).
-
-   Applying the BC, we reach a step function expression for :math:`G(x,x')`,
-
-   .. math::
-      G(x,x') &=    B\sin(x/2) , \text{if} 0\leq x \lt x' , \\
-      &=A\cos(x/2) , \text{if} x'\lt x \leq \pi . 
+.. math::
+   \hat L_x G(x,z) = \delta(z-x).
 
 
-   {\bf Continuity and Discontinuity }
+Why do we define this function? The solution to equation :eq:`eqn-green-function-example` is given by
 
-   It is required by the equation for Green's function that,
+.. math::
+   y(x) = \int G(x,z) f(z) dz.
+
+
+To verify this conclusion we plug it into the LHS of equation :eq:`eqn-green-function-example`
+
+.. math::
+   & \left(\frac{d^2}{dx^2} +1 \right) \int G(x,z) f(z) dz \\
+   =& \int \left[ \left(\frac{d^2}{dx^2} +1 \right) G(x,z) \right] f(z) dz \\
+   =& \int \delta(z-x) f(z) dz \\
+   =& f(x),
+
+in which we used one of the properties of Dirac delta distribution
+
+.. math::
+   \int f(z) \delta(z-x) dz = f(x).
+
+Also note that delta function is even, i.e., :math:`\delta(-x) = \delta(x)`.
+
+So all we need to do to find the solution to a standard second differential equation
+
+.. math::
+   \left( \frac{d^2}{dx^2} + p(x) \frac{d}{dx} + q(x) \right)y(x) = f(x)
+
+
+is do the following.
+
+1. Find the general form of Green's function (GF) for operator for operator :math:`\hat L_x`.
+2. Apply boundary condition (BC) to GF. This might be the most tricky part of this method. Any ways, for a BC of the form :math:`y(a)=0=y(b)`, we can just choose it to vanish at a and b. Otherwise we can move this step to the end when no intuition is coming to our mind.
+3. Continuity at :math:`n-2` order of derivatives at point :math:`x=z`, that is
 
    .. math::
-      G(x',x') = A \sin(x'/2) = B \cos(x'/2),
+      G^{(n-2)}(x,z) \vert_{x<z} = G^{(n-2)} \vert _{x>z} ,\qquad \text{at } x= z.
 
-   and
-
-   .. math::
-      \frac{d G}{d x}\vert_{x'+} - \frac{dG}{dx}\vert_{x'-} = 1 .
-
-   Put the expressions for Green's function in, we can solve the coefficients,
+4. Discontinuity of the first order derivative at :math:`x=z`, i.e.,
 
    .. math::
-      G(x,x') &=  -2 \cos(x'/2)\sin(x/2) , \text{if} 0\leq x \lt x' ,\\ 
-      &= -2 \sin(x'/2)\cos(x/2) , \text{if} x' \lt x \leq \pi . 
+      G^{(n-1)}(x,z)\vert_{x>z} - G^{(n-1)}(x,z)\vert_{x<z} = 1, \qquad \text{at } x= z.
 
-
-   In one line this can be written as,
+   This condition comes from the fact that the integral of Dirac delta distribution is Heaviside step function.
+5. Solve the coefficients to get the GF.
+6. The solution to an inhomogeneous ODE  :math:`y(x)=f(x)` is given immediately by
 
    .. math::
-      G(x,x') = -2 \sin(x_</2)\cos(x_>/2) .
+      y(x) = \int G(x,z) f(z) dz.
 
-   The final step is to find the solution to original equaion, which is straightforward.
+   If we haven't done step 2 we know would have some unkown coefficients which can be determined by the BC.
 
 
+
+How to Find Green's Function
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+So we are bound to find Green's function. Solving a nonhonogeneous equation with delta as source is as easy as solving homogeneous equations.
+
+We do this by demonstrating an example differential equation. The problem we are going to solve is
+
+.. math::
+   \left(\frac{d^2}{dx^2} + \frac{1}{4}\right) y(x) = f(x),
+
+
+with boundary condition
+
+.. math::
+   y(0) = y(\pi) = 0.\label{eqn-green-function-example2-bc}
+
+
+
+
+For simplicity we define
+
+.. math::
+   \hat L_x = \frac{d^2}{dx^2} + \frac{1}{4}.
+
+
+
+**First of all we find the GF associated with**
+
+.. math::
+   \hat L_x G(x,z) = \delta(z-x).
+
+
+We just follow the steps.
+
+- The general solution to
+
+  .. math::
+     \hat L_x G(x,z) = 0
+
+   is given by
+
+   .. math::
+      G(x,z) = \begin{cases}
+      A_1\cos (x/2) + B_1 \sin(x/2), & \qquad x \leq z, \\
+      A_2\cos (x/2) + B_2 \sin(x/2), & \qquad x \geq z.
+      \end{cases}
+
+- Continuity at $x=z$ for the 0th order derivatives,
+
+  .. math::
+     G(z_-,z) = G(z_+,z),
+
+  which is exactly
+
+  .. math::
+     A_1\cos(z/2) + B_1 \sin(z/2) = A_2 \cos(z/2) + B_2\sin(z/2).\label{eqn-green-function-example2-continuity}
+
+- Discontinuity condition at 1st order derivatives,
+
+  .. math::
+     \left.\frac{d}{dx} G(x,z)  \right\vert_{x=z_+} - \left.\frac{d}{dx} G(x,z)  \right\vert_{x=z_-} = 1,
+
+  which is
+
+  .. math::
+     -\frac{A_2}{2}\sin\frac{z}{2} + \frac{B_2}{2} \cos\frac{z}{2} - \left( -\frac{A_1}{2}\sin\frac{z}{2} + \frac{B_1}{2}\cos\frac{z}{2} \right) = 1
+     :label: eqn-green-function-example2-discontinuity
+
+  Now we combine (\ref{eqn-green-function-example2-continuity}) and (\ref{eqn-green-function-example2-discontinuity}) to eliminate two degrees of freedom. For example, we can solve out $A_1$ and $B_1$ as a function of all other coefficients. Here we have
+
+  .. math::
+     B_1 &= \frac{ - 2/\sin(z/2) }{\tan(z/2) + \cot(z/2)} + B_2 , \\
+     A_1 &= A_2 + B_2(\tan(z/2)-1) + \frac{2}{\sin(z/2) + \cot(z/2)\cos(z/2)}.
+
+- Write down the form solution using :math:`y(x) = \int G(x,z) f(z) dz. Then we still have two unknown free coefficients :math:`A_2` and :math:`B_2`, which in fact is to be determined by the BC equation :eq:`eqn-green-function-example2-bc`.
 
 
 
@@ -237,7 +311,7 @@ in which :math:`\mathscr {Z}_p` is the solution to Bessel equation, i.e., is one
     .. math::
        \frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.
 
-    Notice that l is a function of time and 
+    Notice that l is a function of time and
 
     .. math::
        l = l_0 + v t.
@@ -281,7 +355,7 @@ in which :math:`\mathscr {Z}_p` is the solution to Bessel equation, i.e., is one
        c & = 3/2, \\
        b^2 c^2 & = \alpha^2.
 
-    So the two possible solutions are 
+    So the two possible solutions are
 
     .. math::
        \Psi_1(x) & = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
@@ -309,11 +383,11 @@ which has a solution of the hypergeometric function form
 .. math::
    u(z) = {}_2 F_{1}(a,b;c;z).
 
-The interesting this about this equation is that its Paperitz symbol is 
+The interesting this about this equation is that its Paperitz symbol is
 
 .. math::
    \begin{amatrix}{3}
-  0 & 1 & \infty &  \\  0 & 0 & a & z \\ 1-c & c-a-b & b & 
+  0 & 1 & \infty &  \\  0 & 0 & a & z \\ 1-c & c-a-b & b &
    \end{amatrix} ,
 
 in which the first three columns are the singularities at points :math:`0,1,\infty` while the last column just points out that the argument of this equation is :math:`z`.
@@ -416,19 +490,3 @@ Multiplying through by :math:`\bra{b}`, we have
    \braket{b}{u} + \braket{b}{a}\braket{b}{u} = \braket{b}{f},
 
 which reduces to a linear equation. We only need to solve out :math:`\braket{b}{u}` then plug it back into the original equation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

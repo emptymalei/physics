@@ -1,3 +1,5 @@
+Electrodynamics
+======================
 
 
 
@@ -39,11 +41,6 @@ or
 
 
 
-
-
-
-Electrodynamics
-======================
 
 
 .. toctree::

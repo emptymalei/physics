@@ -1,10 +1,3 @@
-***************************
-Quantum Mechanics
-***************************
-
-.. .. sectnum::
-      :start: 4
-
 Quantum Mechanics Framework
 ==============================
 
