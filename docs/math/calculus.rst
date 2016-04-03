@@ -3,10 +3,10 @@ Calculus
 
 
 
-.. figure:: math/assets/DifferentialANDIntegralOnOnePage.png
+.. figure:: assets/DifferentialANDIntegralOnOnePage.png
    :align: center
 
-   LaTeX source of this image is `here <math/assets/DifferentialANDIntegralOnOnePage.tex>`_ .
+   LaTeX source of this image is `here <assets/DifferentialANDIntegralOnOnePage.tex>`_ .
 
 
 

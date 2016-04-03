@@ -46,8 +46,8 @@ or
 .. toctree::
     :maxdepth: 3
 
-    vocabulary/main.rst
-    em/main.rst
+    vocabulary/index.rst
+    em/index.rst
     matter.rst
     radiation.rst
     scattering.rst

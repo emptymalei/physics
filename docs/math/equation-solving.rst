@@ -15,7 +15,7 @@ Ordinary Differential Equations
 
 There are many important equations in physics.
 
-.. figure:: math/assets/2ndODEs.png
+.. figure:: assets/2ndODEs.png
    :align: center
 
    Taken from Riley's book.

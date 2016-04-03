@@ -15,7 +15,7 @@ Gamma function satisfies the following relatioin,
 .. math::
    \Gamma(z+1) = z\Gamma(z) .
 
-For some cases, it can also be written as 
+For some cases, it can also be written as
 
 .. math::
    \Gamma(n) = \int_0^\infty dt t^{n-1} e^{-t} .
@@ -66,7 +66,7 @@ It's generation function is
     .. math::
        \int_{-1}^1 P_m(x) P_n(x) dx =  \frac{2}{2n + 1}\delta_{mn} .
 
-    They all have value 1 at :math:`z=1`. 
+    They all have value 1 at :math:`z=1`.
 
     The parity is alternating.
 
@@ -77,7 +77,7 @@ It's generation function is
        P_1(x) & = x \\
        P_2(x) & = \frac{1}{2}(3x^2-1).
 
-    Through these, we can solve out 
+    Through these, we can solve out
 
     .. math::
        x &= P_1(x) \\
@@ -97,7 +97,7 @@ The associated Legendre equation is
 .. math::
    \left(\frac{d}{dx}\left[(1-x^2)\frac{d}{dx}\right] + n(n+1) - \frac{m^2}{1-x^2} \right) P_n(x) = 0.
 
-The solution to this equation is Associated Legendre polynomial, which can be represented by 
+The solution to this equation is Associated Legendre polynomial, which can be represented by
 
 .. math::
    P_n^{\nu}(x) = (-1)^m(1-x^2)^{m/2} \frac{d^m}{dx^m} P_l(x) .
@@ -182,7 +182,7 @@ They are very useful when integrating by part.
 Graphics and Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: math/assets/BesselZeros.png
+.. figure:: assets/BesselZeros.png
    :align: center
 
    The first 10 zeros of Bessel functions from order 0 to 4.
@@ -190,33 +190,33 @@ Graphics and Properties
 
 
 
-.. figure:: math/assets/sphericalBesselZeros.png
+.. figure:: assets/sphericalBesselZeros.png
    :align: center
 
    The first 10 zeros of spherical Bessel functions from order 0 to 4.
 
 
 
-.. figure:: math/assets/besselZerosListPlt.png
+.. figure:: assets/besselZerosListPlt.png
    :align: center
 
    Bessel function zeros in a list plot. Horizontal axis is nth zero point, while vertical axis is the value.
 
 
-.. figure:: math/assets/sphbesselZerosListPlt.png
+.. figure:: assets/sphbesselZerosListPlt.png
    :align: center
 
    Spherical Bessel function zeros.
 
 
-.. figure:: math/assets/besselZerosDifferencePlt.png
+.. figure:: assets/besselZerosDifferencePlt.png
    :align: center
 
    The difference between zeros of Bessel functions. They are almost the same, which a around Pi.
 
 
 
-.. figure:: math/assets/sphbesselZerosDifferencePlt.png
+.. figure:: assets/sphbesselZerosDifferencePlt.png
    :align: center
 
    Spherical Bessel function zeros differences.
