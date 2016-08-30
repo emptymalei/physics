@@ -6,6 +6,8 @@ Basic Concepts
 ------------------
 
 
+
+
 Trace
 ~~~~~~~~
 
@@ -33,7 +35,7 @@ Technique
 ------------
 
 Inverse of a matrix
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Many methods to get the inverse of a matrix. Check wikipedia for Invertible matrix.
 
@@ -43,6 +45,44 @@ Adjugate matrix method for example is here.
    A^{-1} = \frac{A^*}{|A|}
 
 in which, :math:`A^*` is the adjugate matrix of :math:`A`.
+
+
+Eigenvalues of :math:`A\dagger A`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+One can prove that the eigenvalues of any matrix :math:`B` that can be written as :math:`A\dagger A` are positive semidefinite.
+
+.. admonition:: Proof
+	:class: toggle
+
+	Suppose the eigenvectors are :math:`V_i` with corresponding eigenvalues :math:`\lambda_i`, i.e.,
+
+	.. math::
+		B V_i = \lambda_i V_i.
+
+	We now construct a number 
+
+	.. math::
+		V_i^\dagger B V_i.
+
+	On one hand, we have
+
+	.. math::
+		V_i^\dagger B V_i = V_i^\dagger \lambda_i V_i = \lambda_i  V_i^\dagger V_i,
+
+	where :math:`V_i^\dagger V_i \geq 0`.
+
+	On the other hand, 
+
+	.. math::
+		V_i^\dagger B V_i = V_i^\dagger A\dagger A V_i = (A V_i)^\dagger A V_i \geq 0.
+
+	As long as :math:`V_i^\dagger V_i \neq 0`, we have
+
+	.. math::
+		\lambda_i = (A V_i)^\dagger A V_i  / V_i^\dagger V_i \geq 0.
+	
+
 
 
 
@@ -61,7 +101,7 @@ Tensor Product Space
 
 
 Inner Product
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Inner product of two tensor products
 
@@ -70,7 +110,7 @@ Inner product of two tensor products
 
 
 Operators Applied to Tensor Product
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two operators :math:`\hat O_1` and :math:`\hat O_2` works on :math:`H_1` and :math:`H_2` respectively applied to tensor product
 
