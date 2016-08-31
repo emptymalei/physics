@@ -47,10 +47,10 @@ Adjugate matrix method for example is here.
 in which, :math:`A^*` is the adjugate matrix of :math:`A`.
 
 
-Eigenvalues of :math:`A\dagger A`
+Eigenvalues of :math:`A^\dagger A`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One can prove that the eigenvalues of any matrix :math:`B` that can be written as :math:`A\dagger A` are positive semidefinite.
+One can prove that the eigenvalues of any matrix :math:`B` that can be written as :math:`A^\dagger A` are positive semidefinite.
 
 .. admonition:: Proof
 	:class: toggle
