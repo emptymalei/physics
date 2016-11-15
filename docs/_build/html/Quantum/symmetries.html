@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>4.1.4. Symmetries in QM &mdash; Physics Notes</title>
+    <title>Symmetries in QM &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,9 +32,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="up" title="4. Quantum Mechanics 3" href="quantum-mechanics3.html" />
-    <link rel="next" title="4.1.5. Tensors and Groups in Quantum" href="tensors.html" />
-    <link rel="prev" title="4.1.3. Quantum Approximation Methods" href="approx.html" />
+    <link rel="up" title="Quantum Mechanics 3" href="quantum-mechanics3.html" />
+    <link rel="next" title="Quantum Approximation Methods" href="approximations.html" />
+    <link rel="prev" title="Quantum Mechanics 3" href="quantum-mechanics3.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -101,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -210,41 +223,18 @@
      href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics.html">2. Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -258,19 +248,19 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">4.1.4. Symmetries in QM</a><ul>
-<li><a class="reference internal" href="#time-and-space-translation">4.1.4.1. Time and Space Translation</a><ul>
-<li><a class="reference internal" href="#time-translation-symmetry">4.1.4.1.1. Time Translation Symmetry</a></li>
-<li><a class="reference internal" href="#space-translation-symmetry">4.1.4.1.2. Space Translation Symmetry</a></li>
+<li><a class="reference internal" href="#">Symmetries in QM</a><ul>
+<li><a class="reference internal" href="#time-and-space-translation">Time and Space Translation</a><ul>
+<li><a class="reference internal" href="#time-translation-symmetry">Time Translation Symmetry</a></li>
+<li><a class="reference internal" href="#space-translation-symmetry">Space Translation Symmetry</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#gauge-symmetry">4.1.4.2. Gauge Symmetry</a><ul>
-<li><a class="reference internal" href="#global-gauge-transformation">4.1.4.2.1. Global Gauge Transformation</a></li>
-<li><a class="reference internal" href="#local-gauge-transformation">4.1.4.2.2. Local Gauge Transformation</a></li>
+<li><a class="reference internal" href="#gauge-symmetry">Gauge Symmetry</a><ul>
+<li><a class="reference internal" href="#global-gauge-transformation">Global Gauge Transformation</a></li>
+<li><a class="reference internal" href="#local-gauge-transformation">Local Gauge Transformation</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#parity">4.1.4.3. Parity</a><ul>
-<li><a class="reference internal" href="#logic">4.1.4.3.1. Logic</a></li>
+<li><a class="reference internal" href="#parity">Parity</a><ul>
+<li><a class="reference internal" href="#logic">Logic</a></li>
 </ul>
 </li>
 </ul>
@@ -284,11 +274,11 @@
               
                 
   <li>
-    <a href="approx.html" title="Previous Chapter: 4.1.3. Quantum Approximation Methods"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 4.1.3. Quantu...</span>
+    <a href="quantum-mechanics3.html" title="Previous Chapter: Quantum Mechanics 3"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Mecha...</span>
     </a>
   </li>
   <li>
-    <a href="tensors.html" title="Next Chapter: 4.1.5. Tensors and Groups in Quantum"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">4.1.5. Tensor... &raquo;</span>
+    <a href="approximations.html" title="Next Chapter: Quantum Approximation Methods"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum Appro... &raquo;</span>
     </a>
   </li>
               
@@ -317,9 +307,9 @@
     <div class="col-md-12 content">
       
   <div class="section" id="symmetries-in-qm">
-<h1>4.1.4. Symmetries in QM<a class="headerlink" href="#symmetries-in-qm" title="Permalink to this headline">¶</a></h1>
+<h1>Symmetries in QM<a class="headerlink" href="#symmetries-in-qm" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="time-and-space-translation">
-<h2>4.1.4.1. Time and Space Translation<a class="headerlink" href="#time-and-space-translation" title="Permalink to this headline">¶</a></h2>
+<h2>Time and Space Translation<a class="headerlink" href="#time-and-space-translation" title="Permalink to this headline">¶</a></h2>
 <p>First of all I want to know what is not changed or what is the invariant quantity in a transformation.</p>
 <p>There are three kind of common transformations.</p>
 <ol class="arabic simple">
@@ -333,7 +323,7 @@
 <li>Space translation invariance (S.T.I.) means that the</li>
 </ol>
 <div class="section" id="time-translation-symmetry">
-<h3>4.1.4.1.1. Time Translation Symmetry<a class="headerlink" href="#time-translation-symmetry" title="Permalink to this headline">¶</a></h3>
+<h3>Time Translation Symmetry<a class="headerlink" href="#time-translation-symmetry" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
 <img alt="Time Translation" src="../_images/TimeTranslation.png" />
 </div>
@@ -375,7 +365,7 @@
 </div>
 </div>
 <div class="section" id="space-translation-symmetry">
-<h3>4.1.4.1.2. Space Translation Symmetry<a class="headerlink" href="#space-translation-symmetry" title="Permalink to this headline">¶</a></h3>
+<h3>Space Translation Symmetry<a class="headerlink" href="#space-translation-symmetry" title="Permalink to this headline">¶</a></h3>
 <img alt="Space translation" class="align-center" src="../_images/SpaceTranslation.png" />
 <p><a class="reference external" href="assets/images/SpaceTranslation.gliffy">Space Translation Gliffy Source</a></p>
 <p>S.T.I. is generated by canonical momentum. This is not so obvious as time translation. To prove this we need to understand what space translation really means.</p>
@@ -428,9 +418,9 @@
 </div>
 </div>
 <div class="section" id="gauge-symmetry">
-<h2>4.1.4.2. Gauge Symmetry<a class="headerlink" href="#gauge-symmetry" title="Permalink to this headline">¶</a></h2>
+<h2>Gauge Symmetry<a class="headerlink" href="#gauge-symmetry" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="global-gauge-transformation">
-<h3>4.1.4.2.1. Global Gauge Transformation<a class="headerlink" href="#global-gauge-transformation" title="Permalink to this headline">¶</a></h3>
+<h3>Global Gauge Transformation<a class="headerlink" href="#global-gauge-transformation" title="Permalink to this headline">¶</a></h3>
 <div class="math">
 \[\ket{\psi} \rightarrow e^{i g \hat I} \ket{\psi}\]</div>
 <p>All quantum states are invariant under such transformation. This is not a nonsene transformation because the two states are different in some sense if we put them in a phase space where the phase factor assigns a position for the state vector in the phase space and we can see the difference directly in this image.</p>
@@ -441,7 +431,7 @@
 </div>
 </div>
 <div class="section" id="local-gauge-transformation">
-<h3>4.1.4.2.2. Local Gauge Transformation<a class="headerlink" href="#local-gauge-transformation" title="Permalink to this headline">¶</a></h3>
+<h3>Local Gauge Transformation<a class="headerlink" href="#local-gauge-transformation" title="Permalink to this headline">¶</a></h3>
 <img alt="Local Gauge Transformation" src="../_images/LocalGaugeTransformation.png" />
 <p><a class="reference external" href="assets/images/LocalGaugeTransformation.gliffy">Local Gauge Transformation Gliffy Source</a></p>
 <p>What if we have a local phase factor: <span class="math">\(g(x,t)\)</span>?</p>
@@ -459,9 +449,9 @@
 </div>
 </div>
 <div class="section" id="parity">
-<h2>4.1.4.3. Parity<a class="headerlink" href="#parity" title="Permalink to this headline">¶</a></h2>
+<h2>Parity<a class="headerlink" href="#parity" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="logic">
-<h3>4.1.4.3.1. Logic<a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h3>
+<h3>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h3>
 <p>The only thing we need is the definition:</p>
 <div class="math">
 \[\hat \Pi \ket{\vec x} = \ket{-\vec x}\]</div>

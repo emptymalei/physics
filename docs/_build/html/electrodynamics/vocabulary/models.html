@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>6.1.2. Models &mdash; Physics Notes</title>
+    <title>Models &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,9 +32,9 @@
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../../index.html" />
-    <link rel="up" title="6.1. Vocabulary and Program" href="main.html" />
-    <link rel="next" title="6.1.3. Program" href="program.html" />
-    <link rel="prev" title="6.1.1. Vocabulary" href="vocabulary.html" />
+    <link rel="up" title="Electrodynamics Vocabulary and Program" href="index.html" />
+    <link rel="next" title="Program" href="program.html" />
+    <link rel="prev" title="Vocabulary" href="vocabulary.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -101,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -210,41 +223,18 @@
      href="../../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -258,16 +248,16 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">6.1.2. Models</a><ul>
-<li><a class="reference internal" href="#drude-model">6.1.2.1. Drude Model</a><ul>
-<li><a class="reference internal" href="#maxwell-equations">6.1.2.1.1. Maxwell Equations</a></li>
-<li><a class="reference internal" href="#current-density">6.1.2.1.2. Current Density</a></li>
-<li><a class="reference internal" href="#maxwell-s-equation-in-neutral-matter">6.1.2.1.3. Maxwell&#8217;s Equation in Neutral Matter</a></li>
-<li><a class="reference internal" href="#dispersion-relation">6.1.2.1.4. Dispersion Relation</a></li>
+<li><a class="reference internal" href="#">Models</a><ul>
+<li><a class="reference internal" href="#drude-model">Drude Model</a><ul>
+<li><a class="reference internal" href="#maxwell-equations">Maxwell Equations</a></li>
+<li><a class="reference internal" href="#current-density">Current Density</a></li>
+<li><a class="reference internal" href="#maxwell-s-equation-in-neutral-matter">Maxwell&#8217;s Equation in Neutral Matter</a></li>
+<li><a class="reference internal" href="#dispersion-relation">Dispersion Relation</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lorentz-model">6.1.2.2. Lorentz Model</a><ul>
-<li><a class="reference internal" href="#limits">6.1.2.2.1. Limits</a></li>
+<li><a class="reference internal" href="#lorentz-model">Lorentz Model</a><ul>
+<li><a class="reference internal" href="#limits">Limits</a></li>
 </ul>
 </li>
 </ul>
@@ -281,11 +271,11 @@
               
                 
   <li>
-    <a href="vocabulary.html" title="Previous Chapter: 6.1.1. Vocabulary"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 6.1.1. Vocabu...</span>
+    <a href="vocabulary.html" title="Previous Chapter: Vocabulary"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Vocabulary</span>
     </a>
   </li>
   <li>
-    <a href="program.html" title="Next Chapter: 6.1.3. Program"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">6.1.3. Program &raquo;</span>
+    <a href="program.html" title="Next Chapter: Program"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Program &raquo;</span>
     </a>
   </li>
               
@@ -314,9 +304,9 @@
     <div class="col-md-12 content">
       
   <div class="section" id="models">
-<h1>6.1.2. Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
+<h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="drude-model">
-<span id="id1"></span><h2>6.1.2.1. Drude Model<a class="headerlink" href="#drude-model" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Drude Model<a class="headerlink" href="#drude-model" title="Permalink to this headline">¶</a></h2>
 <p>Drude models models the electromagnetic properties of conductors. In this simple model, electromagnetic interaction with the electromagnetic waves comes from the free charges governed by this equation of motion.</p>
 <div class="math">
 \[m\frac{d \vec v}{d t} = q \vec E - \frac{m \vec v}{\tau},\]</div>
@@ -343,7 +333,7 @@
 </div>
 <p>In this model, what to calculate is the electromagnetic response of the material like reflection ration etc.</p>
 <div class="section" id="maxwell-equations">
-<h3>6.1.2.1.1. Maxwell Equations<a class="headerlink" href="#maxwell-equations" title="Permalink to this headline">¶</a></h3>
+<h3>Maxwell Equations<a class="headerlink" href="#maxwell-equations" title="Permalink to this headline">¶</a></h3>
 <div class="note admonition">
 <p class="first admonition-title">Maxwell Equations</p>
 <p class="last">nablacdot vec D  &amp;= 4pi rho ,\
@@ -359,7 +349,7 @@ nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 \vec k \times \vec H &amp; = \frac{1}{c} (-i\omega) \vec D + \frac{4\pi}{c} \vec j.\end{split}\]</div>
 </div>
 <div class="section" id="current-density">
-<h3>6.1.2.1.2. Current Density<a class="headerlink" href="#current-density" title="Permalink to this headline">¶</a></h3>
+<h3>Current Density<a class="headerlink" href="#current-density" title="Permalink to this headline">¶</a></h3>
 <p>The current density is</p>
 <div class="math">
 \[\vec j = q n_q \langle \vec v \rangle.\]</div>
@@ -383,7 +373,7 @@ nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 \[\sigma(\omega) = \frac{q^2 n_q \tau}{m(1 - i \omega\tau)}.\]</div>
 </div>
 <div class="section" id="maxwell-s-equation-in-neutral-matter">
-<h3>6.1.2.1.3. Maxwell&#8217;s Equation in Neutral Matter<a class="headerlink" href="#maxwell-s-equation-in-neutral-matter" title="Permalink to this headline">¶</a></h3>
+<h3>Maxwell&#8217;s Equation in Neutral Matter<a class="headerlink" href="#maxwell-s-equation-in-neutral-matter" title="Permalink to this headline">¶</a></h3>
 <p>Pluging in the current density we calculated previously, the Maxwell&#8217;s equation becomes</p>
 <div class="math">
 \[\begin{split}\vec k \cdot \vec D &amp;= 4\pi \rho, \\
@@ -410,7 +400,7 @@ nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 \[n^2 = 1 - \frac{\omega_p^2}{\omega^2}.\]</div>
 </div>
 <div class="section" id="dispersion-relation">
-<h3>6.1.2.1.4. Dispersion Relation<a class="headerlink" href="#dispersion-relation" title="Permalink to this headline">¶</a></h3>
+<h3>Dispersion Relation<a class="headerlink" href="#dispersion-relation" title="Permalink to this headline">¶</a></h3>
 <div class="math">
 \[\begin{split}\vec k \times \vec E &amp;= \frac{\omega}{c} \vec B, \\
 \vec k \times \vec H &amp; = -\frac{\omega}{c} \vec D\end{split}\]</div>
@@ -420,7 +410,7 @@ nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 </div>
 </div>
 <div class="section" id="lorentz-model">
-<span id="id2"></span><h2>6.1.2.2. Lorentz Model<a class="headerlink" href="#lorentz-model" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Lorentz Model<a class="headerlink" href="#lorentz-model" title="Permalink to this headline">¶</a></h2>
 <p>Drude model only considers the damping part of conducting charges. Lorentz model, considers the actually polarization inside medium, using a simple but efficient model.</p>
 <p>In models about matter response to electromagnetic waves, we have to get the permitivity out of it and furthure calculate the refractive index.</p>
 <p>Suppose we already know how to write down polarization,</p>
@@ -449,7 +439,7 @@ nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 <div class="math">
 \[\omega_p^2 = \frac{4\pi n e^2}{m}.\]</div>
 <div class="section" id="limits">
-<h3>6.1.2.2.1. Limits<a class="headerlink" href="#limits" title="Permalink to this headline">¶</a></h3>
+<h3>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">¶</a></h3>
 <p>We have got three important parameters or arguments in Lorentz model, <span class="math">\(\omega_0\)</span>, <span class="math">\(\omega\)</span>, <span class="math">\(\gamma\)</span> and on overall <span class="math">\(\omega_p\)</span>. One should notice that in normal matter we would see <span class="math">\(\gamma \ll \omega_0\ll \omega_p\)</span>.</p>
 <p>Three limits can be considered,</p>
 <ol class="arabic simple">

@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Welcome to Physics Notebook &mdash; Physics Notes</title>
+    <title>Physics Notebook &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="#" />
-    <link rel="next" title="1. Whatever" href="preface.html" />
+    <link rel="next" title="Whatever" href="preface.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -99,6 +99,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -209,41 +222,17 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="math/statistics/statistics.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -257,14 +246,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Welcome to Physics Notebook</a></li>
-<li><a class="reference internal" href="#preface">Preface</a></li>
-<li><a class="reference internal" href="#fun">Fun</a></li>
-<li><a class="reference internal" href="#vocabulary">Vocabulary</a></li>
-<li><a class="reference internal" href="#mathematics">Mathematics</a></li>
-<li><a class="reference internal" href="#fundamental-physics">Fundamental Physics</a></li>
-<li><a class="reference internal" href="#advanced-physics">Advanced Physics</a></li>
-<li><a class="reference internal" href="#cutting-edge-physics">Cutting Edge Physics</a></li>
+<li><a class="reference internal" href="#">Physics Notebook</a></li>
 <li><a class="reference internal" href="#doi">DOI</a></li>
 <li><a class="reference internal" href="#license">License</a></li>
 </ul>
@@ -276,7 +258,7 @@
               
                 
   <li>
-    <a href="preface.html" title="Next Chapter: 1. Whatever"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">1. Whatever &raquo;</span>
+    <a href="preface.html" title="Next Chapter: Whatever"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Whatever &raquo;</span>
     </a>
   </li>
               
@@ -304,339 +286,212 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="welcome-to-physics-notebook">
-<h1>Welcome to Physics Notebook<a class="headerlink" href="#welcome-to-physics-notebook" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="physics-notebook">
+<h1>Physics Notebook<a class="headerlink" href="#physics-notebook" title="Permalink to this headline">¶</a></h1>
 <p>This is a notebook on physics. WIP.</p>
 <p>Use the source. Keep the source open.</p>
-</div>
-<div class="section" id="preface">
-<h1>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Whatever</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="fun">
-<h1>Fun<a class="headerlink" href="#fun" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="fun.html">1. Fun</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fun.html#quantum">1.1. Quantum</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fun.html#relativity">1.2. Relativity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fun.html#electrodynamics-in-2-1-spacetime">1.3. Electrodynamics in 2+1 Spacetime</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="fun.html#the-first-naive-version">1.3.1. The first naive version</a></li>
-<li class="toctree-l3"><a class="reference internal" href="fun.html#refs">1.3.2. Refs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fun/index.html">Fun</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fun/quantum.html">Quantum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fun/relativity.html">Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fun/electrodynamics.html">Electrodynamics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fun/electrodynamics.html#electrodynamics-in-2-1-spacetime">Electrodynamics in 2+1 Spacetime</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</div>
-</div>
-<div class="section" id="vocabulary">
-<h1>Vocabulary<a class="headerlink" href="#vocabulary" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">1. Vocabulary</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="voc/vocabulary.html#functional-derivative">1.1. Functional Derivative</a></li>
-<li class="toctree-l2"><a class="reference internal" href="voc/vocabulary.html#legendre-transformation">1.2. Legendre Transformation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="voc/vocabulary.html#vector-analysis">1.3. Vector Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="voc/vocabulary.html#refs-notes">1.4. Refs &amp; Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vocabulary/index.html">Vocabulary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vocabulary/math.html">Useful Math Tricks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/math.html#functional-derivative">Functional Derivative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/math.html#legendre-transformation">Legendre Transformation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/math.html#vector-analysis">Vector Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/math.html#refs-notes">Refs &amp; Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">2. Basic</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="basic.html#dimension">2.1. Dimension</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="basic.html#planck-scales">2.1.1. Planck Scales</a></li>
-<li class="toctree-l3"><a class="reference internal" href="basic.html#equations-and-dimensions">2.1.2. Equations and Dimensions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="basic.html#electrodynamics">2.1.3. Electrodynamics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="basic.html#dynamics">2.1.4. Dynamics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="basic.html#thermodynamics-and-statistical-physics">2.1.5. Thermodynamics and Statistical Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vocabulary/physics.html">Useful Physics Concepts and Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/physics.html#dimension">Dimension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vocabulary/physics.html#most-wonderful-equations-that-should-never-be-forgotten">Most Wonderful Equations That Should Never Be Forgotten</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</div>
-</div>
-<div class="section" id="mathematics">
-<h1>Mathematics<a class="headerlink" href="#mathematics" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="math.html">1. Mathematics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="math.html#kindergarten">1.1. Kindergarten</a></li>
-<li class="toctree-l2"><a class="reference internal" href="math.html#complex-analysis">1.2. Complex Analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="math.html#cauchy-riemann-equation">1.2.1. Cauchy-Riemann Equation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="math.html#singularities">1.2.2. Singularities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math/index.html">Mathematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="math/basics.html">Kindergarten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/special-functions.html">Special Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="math/special-functions.html#gamma-functions">Gamma Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/special-functions.html#legendre-polynomials">Legendre Polynomials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/special-functions.html#associated-legendre-polynomials">Associated Legendre Polynomials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/special-functions.html#bessel-functions">Bessel Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/special-functions.html#refs-notes">Refs &amp; Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="math.html#calculus">1.3. Calculus</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="math.html#differential-of-functions">1.3.1. Differential of Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="math.html#integrals">1.3.2. Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/equation-solving.html">Equation Solving</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="math/equation-solving.html#ordinary-differential-equations">Ordinary Differential Equations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/equation-solving.html#integral-equations">Integral Equations</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="math.html#linear-algebra">1.4. Linear Algebra</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="math.html#tensor-product-space">1.4.1. Tensor Product Space</a></li>
-<li class="toctree-l3"><a class="reference internal" href="math.html#solving-linear-equations">1.4.2. Solving Linear Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/complex.html">Complex Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="math/complex.html#cauchy-riemann-equation">Cauchy-Riemann Equation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/complex.html#singularities">Singularities</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="math.html#differential-geometry">1.5. Differential Geometry</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="math.html#metric">1.5.1. Metric</a></li>
-<li class="toctree-l3"><a class="reference internal" href="math.html#connection">1.5.2. Connection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="math.html#gradient-curl-divergence-etc">1.5.3. Gradient, Curl, Divergence, etc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/complex.html#refs-notes">Refs &amp; Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/calculus.html">Calculus</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="math/calculus.html#differential-of-functions">Differential of Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/calculus.html#integrals">Integrals</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="math.html#id2">1.6. Linear Algebra</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="math.html#basic-concepts">1.6.1. Basic Concepts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="math.html#technique">1.6.2. Technique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/linear-algebra.html">Linear Algebra</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="math/linear-algebra.html#basic-concepts">Basic Concepts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/linear-algebra.html#technique">Technique</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/linear-algebra.html#tensor-product-space">Tensor Product Space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/linear-algebra.html#solving-linear-equations">Solving Linear Equations</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="math.html#refs-notes">1.7. Refs &amp; Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/differential-geometry.html">Differential Geometry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="math/differential-geometry.html#metric">Metric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/differential-geometry.html#connection">Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math/differential-geometry.html#gradient-curl-divergence-etc">Gradient, Curl, Divergence, etc</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="math/statistics/statistics.html">Statistics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="math/statistics/statistics.html#famous-distributions">Famous Distributions</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="special-functions.html">2. Special Functions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="special-functions.html#gamma-functions">2.1. Gamma Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="special-functions.html#legendre-polynomials">2.2. Legendre Polynomials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="special-functions.html#associated-legendre-polynomials">2.3. Associated Legendre Polynomials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="special-functions.html#bessel-functions">2.4. Bessel Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="special-functions.html#bessel-function-of-the-first-kind">2.4.1. Bessel Function of the first kind</a></li>
-<li class="toctree-l3"><a class="reference internal" href="special-functions.html#graphics-and-properties">2.4.2. Graphics and Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="special-functions.html#refs-notes">2.5. Refs &amp; Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">3. Equation Solving</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="equation-solving.html#ordinary-differential-equations">3.1. Ordinary Differential Equations</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="equation-solving.html#green-s-function">3.1.1. Green&#8217;s Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="equation-solving.html#series-solution">3.1.2. Series Solution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="equation-solving.html#comparing-with-a-general-form">3.1.3. Comparing With A General Form</a></li>
-<li class="toctree-l3"><a class="reference internal" href="equation-solving.html#second-order-differential-equations-and-gauss-equation">3.1.4. Second Order Differential Equations and Gauss&#8217; Equation</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="equation-solving.html#integral-equations">3.2. Integral Equations</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="equation-solving.html#neumann-series-aka-wkb">3.2.1. Neumann Series AKA WKB</a></li>
-<li class="toctree-l3"><a class="reference internal" href="equation-solving.html#using-dyads-in-vector-space">3.2.2. Using Dyads in Vector Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math/statistics/statistics.html">Statistics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="math/statistics/statistics.html#famous-distributions">Famous Distributions</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</div>
-</div>
-<div class="section" id="fundamental-physics">
-<h1>Fundamental Physics<a class="headerlink" href="#fundamental-physics" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">1. Classical Mechanics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="classical-mechanics.html#regid-body">1.1. Regid Body</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classical-mechanics.html#lagrangian-and-equation-of-motion">1.2. Lagrangian and Equation of Motion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classical-mechanics.html#central-force-fields">1.3. Central Force Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classical-mechanics.html#oscillators">1.4. Oscillators</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="classical-mechanics.html#simplest-harmonic-oscillators">1.4.1. Simplest Harmonic Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cm/index.html">Classical Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cm/lagrangian.html">Lagrangian and Equation of Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cm/rigid-body.html">Regid Body</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cm/central-force.html">Central Force Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cm/oscillators.html">Oscillators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cm/oscillators.html#simplest-harmonic-oscillators">Simplest Harmonic Oscillators</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="classical-mechanics.html#hamiltonian-dynamics">1.5. Hamiltonian Dynamics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classical-mechanics.html#refs-notes">1.6. Refs &amp; Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cm/oscillators.html#refs-notes">Refs &amp; Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cm/hamiltonian-dynamics.html">Hamiltonian Dynamics</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">Quantum Mechanics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics.html#quantum-mechanics-framework">Quantum Mechanics Framework</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#what-re-the-most-important-tricks-in-qm-calculations">What&#8217;re the most important tricks in QM calculations?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#first-three-postulates">First Three Postulates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#position-and-momentum-space">Position and Momentum Space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/index.html">Quantum Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quantum/preliminary/index.html">Preliminary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="quantum/preliminary/vocabulary.html">Quantum Vocabulary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/preliminary/basics.html">Quantum Questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/preliminary/tensors.html">Tensors and Groups in Quantum</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics.html#quantum-in-1d">Quantum in 1D</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics-beginners.html">Quantum Mechanics Beginners</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-beginners.html#fundamental-concepts">Fundamental Concepts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-beginners.html#quantum-in-1d">Quantum in 1D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-beginners.html#parity">Parity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-beginners.html#classical-limit-of-qm">Classical Limit of QM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-beginners.html#harmonic-oscillators">Harmonic Oscillators</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics.html#parity">Parity</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#passive-and-active-transformations">Passive and Active Transformations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#id2">Parity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics-intermediates.html">Quantum Mechanics Intermediates</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-intermediates.html#tensor-product-space">Tensor Product Space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-intermediates.html#density-matrix">Density Matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics-intermediates.html#angular-momentum">Angular Momentum</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics.html#classical-limit-of-qm">Classical Limit of QM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#ehrenfest-s-theorem">Ehrenfest&#8217;s Theorem</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#picture">Picture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#conservation">Conservation</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics.html#harmonic-oscillators">Harmonic Oscillators</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#why-harmonic-oscillators">Why Harmonic Oscillators</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#standard-solution">Standard Solution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#tricky-solution">Tricky Solution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics.html#semiclassical">Semiclassical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics-advanced.html">Quantum Mechanics Advanced</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="quantum/symmetries.html">Symmetries in QM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/approximations.html">Quantum Approximation Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics2.html#tensor-product-space">3.1. Tensor Product Space</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics2.html#density-matrix">3.2. Density Matrix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics2.html#angular-momentum">3.3. Angular Momentum</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quantum/quantum-mechanics2.html#id1">3.3.1. Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">Electrodynamics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="electrodynamics/vocabulary/index.html">Electrodynamics Vocabulary and Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/models.html">Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/program.html">Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/causality.html">Causality</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electrodynamics/em/index.html">Electricity and Magnetism</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/em/circuits.html">Circuits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/em/static.html">Electrostatics and Magnetostatics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/em/comparisonstatics.html">Comparison of E &amp; M</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electrodynamics/matter.html">Response of Matter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/matter.html#energy-and-momentum">Energy and Momentum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/matter.html#id1">Response of Matter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electrodynamics/radiation.html">Radiation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/radiation.html#radiation-in-general">Radiation In General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrodynamics/radiation.html#lamor-s-formula">Lamor&#8217;s Formula</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electrodynamics/scattering.html">Scattering</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="relativity/index.html">Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="relativity/special-relativity.html#conventions">Conventions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/special-relativity.html#basics">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/special-relativity.html#doppler-shift">Doppler Shift</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/special-relativity.html#footnotes">Footnotes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#tidal-force-and-equivalence-principle">Tidal Force and Equivalence Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#vectors-and-tensors">Vectors and Tensors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#description-of-space-time-manifold">Description of Space-time Manifold</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#fields-and-particles">Fields and Particles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#theorems">Theorems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#specific-topics">Specific Topics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity-adv.html#hyperthesis">Hyperthesis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity-adv.html#experiments">Experiments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity-adv.html#summary-table">Summary Table</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">Quantum Mechanics 3</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-mechanics3.html#topics">Topics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quantum/vocabulary.html">4.1.1. Quantum Vocabulary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/questions.html">4.1.2. Quantum Questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/approx.html">4.1.3. Quantum Approximation Methods</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/symmetries.html">4.1.4. Symmetries in QM</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quantum/tensors.html">4.1.5. Tensors and Groups in Quantum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/index.html">Astrophysics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html">Astrophysics Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#numbers">Numbers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#orbital-dynamics">Orbital Dynamics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#wave-bands">Wave Bands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#doppler-shift">Doppler Shift</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#photon-production">Photon Production</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#compton-scattering">Compton Scattering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#asteroseismology">Asteroseismology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#relativistic-beaming-effect">Relativistic Beaming Effect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="astrophysics/stars.html">Stars</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/stars.html#refs-and-notes">Refs and Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="astrophysics/supernova.html#refs-notes">Refs &amp; Notes</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">6. Electrodynamics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="electrodynamics/vocabulary/main.html">6.1. Vocabulary and Program</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/vocabulary.html">6.1.1. Vocabulary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/models.html">6.1.2. Models</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/program.html">6.1.3. Program</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/vocabulary/causality.html">6.1.4. Causality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cosmology/index.html">Cosmology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cosmology/two-parameters.html">Two Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cosmology/two-parameters.html#observations">Observations</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="electrodynamics/em/main.html">6.2. Electricity and Magnetism</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/em/circuits.html">6.2.1. Circuits</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/em/static.html">6.2.2. Electrostatics and Magnetostatics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/em/comparisonstatics.html">6.2.3. Comparison of E &amp; M</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="electrodynamics/matter.html">6.3. Response of Matter</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/matter.html#energy-and-momentum">6.3.1. Energy and Momentum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/matter.html#id1">6.3.2. Response of Matter</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="electrodynamics/radiation.html">6.4. Radiation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/radiation.html#radiation-in-general">6.4.1. Radiation In General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrodynamics/radiation.html#lamor-s-formula">6.4.2. Lamor&#8217;s Formula</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="electrodynamics/scattering.html">6.5. Scattering</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="advanced-physics">
-<h1>Advanced Physics<a class="headerlink" href="#advanced-physics" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="relativity/special-relativity.html#conventions">Conventions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="relativity/special-relativity.html#quantities-and-operations">Quantities and Operations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/special-relativity.html#basics">Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/special-relativity.html#doppler-shift">Doppler Shift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/special-relativity.html#footnotes">Footnotes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity.html#tidal-force-and-equivalence-principle">Tidal Force and Equivalence Principle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity.html#vectors-and-tensors">Vectors and Tensors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#metric">Metric</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity.html#description-of-space-time-manifold">Description of Space-time Manifold</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#description-of-space-time-manifold-coordinates">Description of Space-time Manifold - Coordinates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#description-of-space-time-manifold-tetrads">Description of Space-time Manifold - Tetrads</a></li>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#description-of-space-time-manifold-1-3-covariant-description">Description of Space-time Manifold - 1+3 Covariant Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#properties">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity.html#fields-and-particles">Fields and Particles</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#energy-momentum-tensor-for-particles">Energy-Momentum Tensor for Particles</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity.html#theorems">Theorems</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#killing-vector-related">Killing Vector Related</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity.html#specific-topics">Specific Topics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#redshift">Redshift</a></li>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity.html#stationary-vs-static">Stationary vs Static</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cosmology/thermal-history.html">Thermal History of The Universe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cosmology/thermal-history.html#review-of-standard-model-for-particle-physics">Review of Standard Model for Particle Physics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cosmology/thermal-history.html#expansion-and-temperature">Expansion and Temperature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cosmology/thermal-history.html#decay-rate-vs-expansion-rate">Decay Rate VS Expansion Rate</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</div>
-</div>
-<div class="section" id="cutting-edge-physics">
-<h1>Cutting Edge Physics<a class="headerlink" href="#cutting-edge-physics" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/basics.html">Astrophysics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#numbers">Numbers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#physical-facts">Physical Facts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#solar-system">Solar System</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#orbital-dynamics">Orbital Dynamics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#wave-bands">Wave Bands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#doppler-shift">Doppler Shift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#photon-production">Photon Production</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#bremsstrahlung-radiation">Bremsstrahlung Radiation</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#compton-scattering">Compton Scattering</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#thomson-scattering">Thomson Scattering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#id1">Compton Scattering</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#asteroseismology">Asteroseismology</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="astrophysics/basics.html#papers-researches-and-more">Papers, Researches and More</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/basics.html#refs-notes">Refs &amp; Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/stars.html">Stars</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/stars.html#refs-and-notes">Refs and Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="astrophysics/supernova.html#refs-notes">Refs &amp; Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity-adv.html#hyperthesis">Hyperthesis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity-adv.html#experiments">Experiments</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity-adv.html#eotvos-torsion-balance">Eotvos Torsion Balance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity-adv.html#hughes-drevershiy-experiment-etc">Hughes-Drevershiy Experiment, etc</a></li>
-<li class="toctree-l3"><a class="reference internal" href="relativity/general-relativity-adv.html#radio-signal">Radio Signal</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="relativity/general-relativity-adv.html#summary-table">Summary Table</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cosmology.html">Cosmology</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cosmology.html#thermal-history-of-the-universe">Thermal History of The Universe</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="cosmology.html#review-of-standard-model-for-particle-physics">Review of Standard Model for Particle Physics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cosmology.html#expansion-and-temperature">Expansion and Temperature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cosmology.html#decay-rate-vs-expansion-rate">Decay Rate VS Expansion Rate</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="cosmology.html#two-parameters">Two Parameters</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="cosmology.html#observations">Observations</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-optics.html">Quantum Optics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quantum/quantum-optics.html#quantum-optics-framework">Quantum Optics Framework</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
 </ul>
 </div>
 </div>

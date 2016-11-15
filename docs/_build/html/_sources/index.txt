@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Physics Notebook
+Physics Notebook
 =============================================================
 
 
@@ -13,92 +13,21 @@ Use the source. Keep the source open.
 
 
 
-Preface
-==================================
-
-
 .. toctree::
    :maxdepth: 3
 
    preface.rst
-
-
-
-Fun
-===========================
-
-.. toctree::
-   :maxdepth: 3
-
-   fun.rst
-
-
-Vocabulary
-=====================
-
-.. toctree::
-   :maxdepth: 3
-
-   voc/vocabulary.rst
-   basic.rst
-
-
-
-
-Mathematics
-=====================
-
-.. toctree::
-   :maxdepth: 3
-
-   math.rst
-   math/statistics/statistics.rst
-   special-functions.rst
-   equation-solving.rst
-
-
-
-
-Fundamental Physics
-=====================
-
-.. toctree::
-   :maxdepth: 3
-
-   classical-mechanics.rst
-   quantum/quantum-mechanics.rst
-   quantum/quantum-mechanics2.rst
-   quantum/quantum-mechanics3.rst
-   statmech/statistical-physics.rst
+   fun/index.rst
+   vocabulary/index.rst
+   math/index.rst
+   cm/index.rst
+   quantum/index.rst
+   statmech/index.rst
    electrodynamics/index.rst
+   relativity/index.rst
+   astrophysics/index.rst
+   cosmology/index.rst
 
-
-
-Advanced Physics
-=====================
-
-.. toctree::
-   :maxdepth: 3
-
-   relativity/special-relativity.rst
-   relativity/general-relativity.rst
-
-
-
-
-Cutting Edge Physics
-=====================
-
-.. toctree::
-   :maxdepth: 3
-
-   astrophysics/basics.rst
-   astrophysics/stars.rst
-   astrophysics/supernova.rst
-   relativity/general-relativity-adv.rst
-   cosmology.rst
-   quantum/quantum-optics.rst
-   quantum/susy-quantum.rst
 
 
 

@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>6.2.2. Electrostatics and Magnetostatics &mdash; Physics Notes</title>
+    <title>Electrostatics and Magnetostatics &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,9 +32,9 @@
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../../index.html" />
-    <link rel="up" title="6.2. Electricity and Magnetism" href="main.html" />
-    <link rel="next" title="6.2.3. Comparison of E &amp; M" href="comparisonstatics.html" />
-    <link rel="prev" title="6.2.1. Circuits" href="circuits.html" />
+    <link rel="up" title="Electricity and Magnetism" href="index.html" />
+    <link rel="next" title="Comparison of E &amp; M" href="comparisonstatics.html" />
+    <link rel="prev" title="Circuits" href="circuits.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -101,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -210,41 +223,18 @@
      href="../../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -258,28 +248,28 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">6.2.2. Electrostatics and Magnetostatics</a><ul>
-<li><a class="reference internal" href="#electric-field">6.2.2.1. Electric Field</a><ul>
-<li><a class="reference internal" href="#energy-density">6.2.2.1.1. Energy Density</a></li>
-<li><a class="reference internal" href="#electric-forces">6.2.2.1.2. Electric Forces</a></li>
-<li><a class="reference internal" href="#multipole-expansion">6.2.2.1.3. Multipole Expansion</a></li>
+<li><a class="reference internal" href="#">Electrostatics and Magnetostatics</a><ul>
+<li><a class="reference internal" href="#electric-field">Electric Field</a><ul>
+<li><a class="reference internal" href="#energy-density">Energy Density</a></li>
+<li><a class="reference internal" href="#electric-forces">Electric Forces</a></li>
+<li><a class="reference internal" href="#multipole-expansion">Multipole Expansion</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#dielectric-material">6.2.2.2. Dielectric Material</a><ul>
-<li><a class="reference internal" href="#polarization">6.2.2.2.1. Polarization</a></li>
-<li><a class="reference internal" href="#electric-potential">6.2.2.2.2. Electric Potential</a></li>
-<li><a class="reference internal" href="#total-field">6.2.2.2.3. Total Field</a></li>
-<li><a class="reference internal" href="#energy-and-stress">6.2.2.2.4. Energy and Stress</a></li>
+<li><a class="reference internal" href="#dielectric-material">Dielectric Material</a><ul>
+<li><a class="reference internal" href="#polarization">Polarization</a></li>
+<li><a class="reference internal" href="#electric-potential">Electric Potential</a></li>
+<li><a class="reference internal" href="#total-field">Total Field</a></li>
+<li><a class="reference internal" href="#energy-and-stress">Energy and Stress</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#magnetic-field">6.2.2.3. Magnetic Field</a><ul>
-<li><a class="reference internal" href="#amperes-law">6.2.2.3.1. Ampere‘s Law</a></li>
-<li><a class="reference internal" href="#biot-savart-law">6.2.2.3.2. Biot-Savart Law</a></li>
-<li><a class="reference internal" href="#divergence-and-curl-of-magnetic-field">6.2.2.3.3. Divergence and Curl of Magnetic Field</a></li>
-<li><a class="reference internal" href="#vector-potential">6.2.2.3.4. Vector Potential</a></li>
+<li><a class="reference internal" href="#magnetic-field">Magnetic Field</a><ul>
+<li><a class="reference internal" href="#amperes-law">Ampere‘s Law</a></li>
+<li><a class="reference internal" href="#biot-savart-law">Biot-Savart Law</a></li>
+<li><a class="reference internal" href="#divergence-and-curl-of-magnetic-field">Divergence and Curl of Magnetic Field</a></li>
+<li><a class="reference internal" href="#vector-potential">Vector Potential</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#refs-notes">6.2.2.4. Refs &amp; Notes</a></li>
+<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
 </ul>
 </li>
 </ul>
@@ -291,11 +281,11 @@
               
                 
   <li>
-    <a href="circuits.html" title="Previous Chapter: 6.2.1. Circuits"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 6.2.1. Circuits</span>
+    <a href="circuits.html" title="Previous Chapter: Circuits"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Circuits</span>
     </a>
   </li>
   <li>
-    <a href="comparisonstatics.html" title="Next Chapter: 6.2.3. Comparison of E & M"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">6.2.3. Compar... &raquo;</span>
+    <a href="comparisonstatics.html" title="Next Chapter: Comparison of E & M"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Comparison of... &raquo;</span>
     </a>
   </li>
               
@@ -324,9 +314,9 @@
     <div class="col-md-12 content">
       
   <div class="section" id="electrostatics-and-magnetostatics">
-<h1>6.2.2. Electrostatics and Magnetostatics<a class="headerlink" href="#electrostatics-and-magnetostatics" title="Permalink to this headline">¶</a></h1>
+<h1>Electrostatics and Magnetostatics<a class="headerlink" href="#electrostatics-and-magnetostatics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="electric-field">
-<h2>6.2.2.1. Electric Field<a class="headerlink" href="#electric-field" title="Permalink to this headline">¶</a></h2>
+<h2>Electric Field<a class="headerlink" href="#electric-field" title="Permalink to this headline">¶</a></h2>
 <p>The electric potential energy of a point charge in an electric field is given by</p>
 <div class="math">
 \[U = q \phi.\]</div>
@@ -339,7 +329,7 @@
 &amp; = \frac{1}{2}\left( \sum_{i\neq j} \frac{q_i q_j}{\lvert \vec {x_i} - \vec {x_j}} \right),\end{split}\]</div>
 <p>in which the half is due to the double counting of the interactions.</p>
 <div class="section" id="energy-density">
-<h3>6.2.2.1.1. Energy Density<a class="headerlink" href="#energy-density" title="Permalink to this headline">¶</a></h3>
+<h3>Energy Density<a class="headerlink" href="#energy-density" title="Permalink to this headline">¶</a></h3>
 <p>The next question we are going to consider is the electric potential energy of a bulk charged object.</p>
 <div class="math">
 \[U = \frac{1}{2} \int \rho(\vec x)\phi(\vec x) d^3 x,\]</div>
@@ -369,7 +359,7 @@
 </ol>
 </div>
 <div class="section" id="electric-forces">
-<h3>6.2.2.1.2. Electric Forces<a class="headerlink" href="#electric-forces" title="Permalink to this headline">¶</a></h3>
+<h3>Electric Forces<a class="headerlink" href="#electric-forces" title="Permalink to this headline">¶</a></h3>
 <p>Alright, move on to the concept of force in E&amp;M. Coloumb force is</p>
 <div class="math">
 \[F_i = \int \rho(\vec x') E_i(\vec x') d^3x'.\]</div>
@@ -449,7 +439,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 </div>
 </div>
 <div class="section" id="multipole-expansion">
-<h3>6.2.2.1.3. Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h3>
+<h3>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h3>
 <p>For a charge object with charge distribution <span class="math">\(\rho(\vec x)\)</span>, the electic potential is</p>
 <div class="math">
 \[\phi(\vec x) = \int \rho(\vec x')\frac{1}{\lvert \vec x - \vec x' \rvert} d^3 x' .\]</div>
@@ -509,10 +499,10 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 </div>
 </div>
 <div class="section" id="dielectric-material">
-<h2>6.2.2.2. Dielectric Material<a class="headerlink" href="#dielectric-material" title="Permalink to this headline">¶</a></h2>
+<h2>Dielectric Material<a class="headerlink" href="#dielectric-material" title="Permalink to this headline">¶</a></h2>
 <p>In the presence of dielectric material, a new set of quantities will be introduced.</p>
 <div class="section" id="polarization">
-<h3>6.2.2.2.1. Polarization<a class="headerlink" href="#polarization" title="Permalink to this headline">¶</a></h3>
+<h3>Polarization<a class="headerlink" href="#polarization" title="Permalink to this headline">¶</a></h3>
 <p>Why do we introduce this polarization <span class="math">\(\vec P\)</span>? To make the picture and the math easier to understand, in some sense.</p>
 <p>Imagine dielectric material in electric field. Since the material is dielectric, the external electric field induces additional electric field.</p>
 <p>We use subscript P for quantities that is induced.</p>
@@ -549,7 +539,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 </div>
 </div>
 <div class="section" id="electric-potential">
-<h3>6.2.2.2.2. Electric Potential<a class="headerlink" href="#electric-potential" title="Permalink to this headline">¶</a></h3>
+<h3>Electric Potential<a class="headerlink" href="#electric-potential" title="Permalink to this headline">¶</a></h3>
 <p>The potential should be related dipole since this is dielectric material. (&lt;- This is a joke.) Anyway, it is related to dipole.</p>
 <p>The electric potential is composed of two parts, one produced by the volume charge density and another produced by the surface charge density.</p>
 <div class="math">
@@ -570,7 +560,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 <p><strong>At this point we only considered the induced field.</strong></p>
 </div>
 <div class="section" id="total-field">
-<h3>6.2.2.2.3. Total Field<a class="headerlink" href="#total-field" title="Permalink to this headline">¶</a></h3>
+<h3>Total Field<a class="headerlink" href="#total-field" title="Permalink to this headline">¶</a></h3>
 <p>Gauss&#8217; law tells us the field about the total charge, both the original and the induced, and the total field, whatever generated it.</p>
 <div class="math">
 \[\nabla\cdot \vec E = 4\pi (\rho + \rho_P),\]</div>
@@ -598,7 +588,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 <p>which is the <strong>permittivity</strong> by definition.</p>
 </div>
 <div class="section" id="energy-and-stress">
-<h3>6.2.2.2.4. Energy and Stress<a class="headerlink" href="#energy-and-stress" title="Permalink to this headline">¶</a></h3>
+<h3>Energy and Stress<a class="headerlink" href="#energy-and-stress" title="Permalink to this headline">¶</a></h3>
 <p>Just as a reference,</p>
 <div class="math">
 \[\delta U = \frac{1}{4\pi} \int \vec E \cdot \delta \vec D d^3 x' =  \frac{1}{4\pi} \int \frac{1}{2\epsilon}\delta E^2 d^3 x',\]</div>
@@ -611,12 +601,12 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 </div>
 </div>
 <div class="section" id="magnetic-field">
-<h2>6.2.2.3. Magnetic Field<a class="headerlink" href="#magnetic-field" title="Permalink to this headline">¶</a></h2>
+<h2>Magnetic Field<a class="headerlink" href="#magnetic-field" title="Permalink to this headline">¶</a></h2>
 <p>Lorentz force is</p>
 <div class="math">
 \[\vec F = q \vec E + q \frac{\vec v}{c}\times \vec B .\]</div>
 <div class="section" id="amperes-law">
-<h3>6.2.2.3.1. Ampere‘s Law<a class="headerlink" href="#amperes-law" title="Permalink to this headline">¶</a></h3>
+<h3>Ampere‘s Law<a class="headerlink" href="#amperes-law" title="Permalink to this headline">¶</a></h3>
 <p>Force between two charged wire is given by</p>
 <div class="math">
 \[\vec F = \frac{1}{c^2} \int \int \frac{I_1 \vec{dx} \times ( I_2\vec{dx'} \times (\vec x - \vec x') ) }{\vert \vec x - \vec x'\vert^3}\]</div>
@@ -638,7 +628,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 <p>The question is how can the electric current feels each other? By intermediate field we say.</p>
 </div>
 <div class="section" id="biot-savart-law">
-<h3>6.2.2.3.2. Biot-Savart Law<a class="headerlink" href="#biot-savart-law" title="Permalink to this headline">¶</a></h3>
+<h3>Biot-Savart Law<a class="headerlink" href="#biot-savart-law" title="Permalink to this headline">¶</a></h3>
 <p>The magnetic field generated by electric current is given by Biot-Savart law.</p>
 <div class="math">
 \[\vec B = \frac{1}{c} \int d^3x' \frac{ vec j(\vec x') \times (\vec x - \vec x') }{\vert \vec x - \vec x' \vert ^3}\]</div>
@@ -651,7 +641,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 </div>
 </div>
 <div class="section" id="divergence-and-curl-of-magnetic-field">
-<h3>6.2.2.3.3. Divergence and Curl of Magnetic Field<a class="headerlink" href="#divergence-and-curl-of-magnetic-field" title="Permalink to this headline">¶</a></h3>
+<h3>Divergence and Curl of Magnetic Field<a class="headerlink" href="#divergence-and-curl-of-magnetic-field" title="Permalink to this headline">¶</a></h3>
 <p>Using the formula of magnetic field generated by current,</p>
 <div class="math">
 \[\begin{split}\nabla \cdot B &amp;= \frac{1}{c} \nabla\cdot \int d^3x' \vec j(\vec x') \times \frac{\vec x - \vec x'}{\vert \vec x -\vec x' \vert^3} \\
@@ -671,7 +661,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 \[\oint  \vec{dx} \cdot \vec B = \frac{4\pi}{c} I.\]</div>
 </div>
 <div class="section" id="vector-potential">
-<h3>6.2.2.3.4. Vector Potential<a class="headerlink" href="#vector-potential" title="Permalink to this headline">¶</a></h3>
+<h3>Vector Potential<a class="headerlink" href="#vector-potential" title="Permalink to this headline">¶</a></h3>
 <p>For a electric field, we have a scalar potential,</p>
 <div class="math">
 \[\vec E = - \nabla \phi,\]</div>
@@ -703,7 +693,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 </div>
 </div>
 <div class="section" id="refs-notes">
-<h2>6.2.2.4. Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
+<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

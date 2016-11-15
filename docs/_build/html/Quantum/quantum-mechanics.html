@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Quantum Mechanics &mdash; Physics Notes</title>
+    <title>Quantum Mechanics Framework &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="next" title="3. Quantum Mechanics 2" href="quantum-mechanics2.html" />
-    <link rel="prev" title="1. Classical Mechanics" href="../classical-mechanics.html" />
+    <link rel="up" title="Quantum Mechanics" href="index.html" />
+    <link rel="next" title="Quantum Mechanics 2" href="quantum-mechanics2.html" />
+    <link rel="prev" title="Tensors and Groups in Quantum" href="tensors.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -100,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -209,42 +223,18 @@
      href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../math/statistics/statistics.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -258,8 +248,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Quantum Mechanics</a><ul>
-<li><a class="reference internal" href="#quantum-mechanics-framework">Quantum Mechanics Framework</a><ul>
+<li><a class="reference internal" href="#">Quantum Mechanics Framework</a><ul>
 <li><a class="reference internal" href="#what-re-the-most-important-tricks-in-qm-calculations">What&#8217;re the most important tricks in QM calculations?</a></li>
 <li><a class="reference internal" href="#first-three-postulates">First Three Postulates</a></li>
 <li><a class="reference internal" href="#position-and-momentum-space">Position and Momentum Space</a><ul>
@@ -342,8 +331,6 @@
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 </ul>
 </li>
               
@@ -352,11 +339,11 @@
               
                 
   <li>
-    <a href="../classical-mechanics.html" title="Previous Chapter: 1. Classical Mechanics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 1. Classical ...</span>
+    <a href="tensors.html" title="Previous Chapter: Tensors and Groups in Quantum"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Tensors and G...</span>
     </a>
   </li>
   <li>
-    <a href="quantum-mechanics2.html" title="Next Chapter: 3. Quantum Mechanics 2"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">3. Quantum Me... &raquo;</span>
+    <a href="quantum-mechanics2.html" title="Next Chapter: Quantum Mechanics 2"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum Mecha... &raquo;</span>
     </a>
   </li>
               
@@ -384,19 +371,17 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="quantum-mechanics">
-<h1>Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="quantum-mechanics-framework">
-<h2>Quantum Mechanics Framework<a class="headerlink" href="#quantum-mechanics-framework" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="quantum-mechanics-framework">
+<h1>Quantum Mechanics Framework<a class="headerlink" href="#quantum-mechanics-framework" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="what-re-the-most-important-tricks-in-qm-calculations">
-<h3>What&#8217;re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h3>
+<h2>What&#8217;re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><strong>Remember what basis we are working in</strong></li>
 <li><strong>Identity</strong></li>
 </ul>
 </div>
 <div class="section" id="first-three-postulates">
-<h3>First Three Postulates<a class="headerlink" href="#first-three-postulates" title="Permalink to this headline">¶</a></h3>
+<h2>First Three Postulates<a class="headerlink" href="#first-three-postulates" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p class="first">Physical state is described by kets in a Hilbert space. We need to specify a complete basis {<span class="math">\(\ket{i}\)</span>} to do calculations.</p>
 <div class="math">
@@ -444,10 +429,10 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 </ul>
 </div>
 <div class="section" id="position-and-momentum-space">
-<h3>Position and Momentum Space<a class="headerlink" href="#position-and-momentum-space" title="Permalink to this headline">¶</a></h3>
-<p>Summarize here.</p>
-<hr class="docutils" />
-<ul>
+<h2>Position and Momentum Space<a class="headerlink" href="#position-and-momentum-space" title="Permalink to this headline">¶</a></h2>
+<div class="note admonition">
+<p class="first admonition-title">Summary</p>
+<ul class="last">
 <li><dl class="first docutils">
 <dt>Position</dt>
 <dd><ol class="first last arabic simple">
@@ -481,48 +466,33 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 </dl>
 </li>
 </ul>
-<hr class="docutils" />
+</div>
 <div class="section" id="position-space">
-<h4>Position Space<a class="headerlink" href="#position-space" title="Permalink to this headline">¶</a></h4>
+<h3>Position Space<a class="headerlink" href="#position-space" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">Define <span class="math">\(\ket{x}\)</span> basis.</p>
-<blockquote>
-<div><blockquote>
-<div><ul>
-<li><p class="first">Orthonormal:</p>
+<p><strong>Orthonormal condition is</strong></p>
 <div class="math">
-</div>
-</li>
-</ul>
-</div></blockquote>
-<p>braket{x}{x&#8217;}=delta(x-x&#8217;)</p>
-<blockquote>
-<div><ul>
-<li><p class="first">Complete:</p>
+\[\braket{x}{x'}=\delta(x-x').\]</div>
+<p><strong>Completeness condition is</strong></p>
 <div class="math">
-</div>
-</li>
-</ul>
-</div></blockquote>
-<p>int braket{x&#8217;}{x&#8217;} d x&#8217; = mathbb{I}</p>
-</div></blockquote>
+\[\int \braket{x'}{x'} \d x' = \mathbb{I}\]</div>
 </li>
 <li><p class="first">Define position operator.</p>
+<p>The position operator is defined as</p>
 <div class="math">
 \[\hat x \ket{x} = x \ket{x}\]</div>
-<p>And in {<span class="math">\(\ket{x}\)</span>} basis, this operator becomes a function, which is</p>
+<p>And in <span class="math">\(\{\ket{x}\}\)</span> basis, this operator becomes a function, which is</p>
 <div class="math">
 \[\begin{split}&amp;\bra{x}\hat x \ket{x'}  \\
-&amp;= \left(\bra{x}\hat x\right)\ket{x'} \\
-&amp;= x \braket{x}{x'} \\
-&amp;= x \delta(x-x')\end{split}\]</div>
+=&amp; \left(\bra{x}\hat x\right)\ket{x'} \\
+=&amp; x \braket{x}{x'} \\
+=&amp; x \delta(x-x')\end{split}\]</div>
 </li>
-<li><p class="first">Find state vector in {<span class="math">\(\ket{x}\)</span>} basis.</p>
+<li><p class="first">Find state vector in <span class="math">\(\{\ket{x}\}\)</span> basis.</p>
 <div class="math">
 \[\psi(t,x) = \braket{x}{\psi(t)}\]</div>
-<ul class="simple">
-<li>Normalized:</li>
-</ul>
+<p><strong>Normalized</strong></p>
 <div class="math">
 \[\int \left| \psi(t,x) \right|^2 \d x = 1.\]</div>
 <p>And we are interpreting <span class="math">\(\left| \psi(t, x)\right|^2\)</span> as probability density.</p>
@@ -537,10 +507,10 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 </ol>
 </div>
 <div class="section" id="momentum-space">
-<h4>Momentum Space<a class="headerlink" href="#momentum-space" title="Permalink to this headline">¶</a></h4>
+<h3>Momentum Space<a class="headerlink" href="#momentum-space" title="Permalink to this headline">¶</a></h3>
 <p>To find the momentum operator, we need to check the relation between momentum and position before we just randomly define one. Truth is, we have a fourth postulate states the relation between them.</p>
 <div class="section" id="postulate-iv">
-<h5>Postulate IV<a class="headerlink" href="#postulate-iv" title="Permalink to this headline">¶</a></h5>
+<h4>Postulate IV<a class="headerlink" href="#postulate-iv" title="Permalink to this headline">¶</a></h4>
 <p>The commutator of <span class="math">\(\hat x\)</span>, <span class="math">\(\hat p\)</span> is</p>
 <div class="math">
 \[\left[ \hat x, \hat p \right] = i \hbar\]</div>
@@ -554,7 +524,7 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 </dl>
 </div>
 <div class="section" id="id1">
-<h5>Momentum Space<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
+<h4>Momentum Space<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
 <li><p class="first">Find momentum operator in position basis {<span class="math">\(\ket{x}\)</span>}.</p>
 <div class="math">
@@ -613,9 +583,9 @@ The hamiltonian for a free particle is</p>
 </div>
 </div>
 <div class="section" id="quantum-in-1d">
-<h2>Quantum in 1D<a class="headerlink" href="#quantum-in-1d" title="Permalink to this headline">¶</a></h2>
+<h1>Quantum in 1D<a class="headerlink" href="#quantum-in-1d" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="general">
-<h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
 <p>Always start with the propagator for time independent Hamiltonian.</p>
 <div class="math">
 \[\ket{\psi(t)} = \hat U \ket{\psi(0)}\]</div>
@@ -631,11 +601,11 @@ The hamiltonian for a free particle is</p>
 <div class="math">
 \[\hat H \ket{\epsilon} = \epsilon \ket{\epsilon}\]</div>
 <div class="section" id="infinite-barriers">
-<h4>Infinite Barriers<a class="headerlink" href="#infinite-barriers" title="Permalink to this headline">¶</a></h4>
+<h3>Infinite Barriers<a class="headerlink" href="#infinite-barriers" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="math">
-<h5>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h5>
+<h4>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="setup">
-<h6>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h6>
+<h5>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h5>
 <ul>
 <li><p class="first">Potential in a box</p>
 <div class="math">
@@ -645,7 +615,7 @@ The hamiltonian for a free particle is</p>
 </ul>
 </div>
 <div class="section" id="solve-the-problem">
-<h6>Solve the Problem<a class="headerlink" href="#solve-the-problem" title="Permalink to this headline">¶</a></h6>
+<h5>Solve the Problem<a class="headerlink" href="#solve-the-problem" title="Permalink to this headline">¶</a></h5>
 <ul>
 <li><p class="first">Hamiltonian</p>
 <div class="math">
@@ -712,7 +682,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 </ul>
 </div>
 <div class="section" id="physics">
-<h6>Physics<a class="headerlink" href="#physics" title="Permalink to this headline">¶</a></h6>
+<h5>Physics<a class="headerlink" href="#physics" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic">
 <li><p class="first">Estimation</p>
 <blockquote>
@@ -755,7 +725,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 </ol>
 </div>
 <div class="section" id="some-general-properties">
-<h6>Some General Properties<a class="headerlink" href="#some-general-properties" title="Permalink to this headline">¶</a></h6>
+<h5>Some General Properties<a class="headerlink" href="#some-general-properties" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic simple">
 <li>1D bound states have no degeneracy.
 Prove it by assume that there is a degeneracy state.</li>
@@ -767,23 +737,23 @@ Prove it by assume that there is a degeneracy state.</li>
 </div>
 </div>
 <div class="section" id="parity">
-<h2>Parity<a class="headerlink" href="#parity" title="Permalink to this headline">¶</a></h2>
+<h1>Parity<a class="headerlink" href="#parity" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="passive-and-active-transformations">
-<h3>Passive and Active Transformations<a class="headerlink" href="#passive-and-active-transformations" title="Permalink to this headline">¶</a></h3>
+<h2>Passive and Active Transformations<a class="headerlink" href="#passive-and-active-transformations" title="Permalink to this headline">¶</a></h2>
 <p>Generally, there are two ways of interpreting a transformation.</p>
 <img alt="Transformations" src="../_images/transformations.png" />
 <p>Here in QM, passive means transform the operator <span class="math">\(\hat \Omega\)</span>, while active means change the state <span class="math">\(\ket{\psi}\)</span>. Suppose we have a system <span class="math">\(\ket{\psi}\)</span>, an operator <span class="math">\(\hat \Omega\)</span>, a transformation <span class="math">\(\hat U\)</span>.</p>
 <p>Transformation <span class="math">\(\hat U \ket{\psi}\)</span> is identical to <span class="math">\(\hat U^\dagger \hat \Omega \hat U\)</span> because they give the same observation results. The first one is called active, while the second one is called passive.</p>
 </div>
 <div class="section" id="id2">
-<h3>Parity<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h2>Parity<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="definition">
-<h4>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h4>
+<h3>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h3>
 <div class="math">
 \[\hat \Pi \ket{x}= \ket{-x}\]</div>
 </div>
 <div class="section" id="properties">
-<h4>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h4>
+<h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">Act on momentum eigenvectors,</p>
 <div class="math">
@@ -854,9 +824,9 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="classical-limit-of-qm">
-<h2>Classical Limit of QM<a class="headerlink" href="#classical-limit-of-qm" title="Permalink to this headline">¶</a></h2>
+<h1>Classical Limit of QM<a class="headerlink" href="#classical-limit-of-qm" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ehrenfest-s-theorem">
-<h3>Ehrenfest&#8217;s Theorem<a class="headerlink" href="#ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h3>
+<h2>Ehrenfest&#8217;s Theorem<a class="headerlink" href="#ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h2>
 <p>Schrödinger equation and its adjoint</p>
 <div class="math">
 \[i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}\]\[-i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H\]</div>
@@ -867,7 +837,7 @@ a. Apply to position operator,</p>
 &amp; =  \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}\end{split}\]</div>
 <p>This is called Ehrenfest&#8217;s Theorem.</p>
 <div class="section" id="simple-example-of-ehrenfest-s-theorem">
-<h4>Simple Example of Ehrenfest&#8217;s Theorem<a class="headerlink" href="#simple-example-of-ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h4>
+<h3>Simple Example of Ehrenfest&#8217;s Theorem<a class="headerlink" href="#simple-example-of-ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h3>
 <p>Suppose we have a system with Hamiltonian</p>
 <div class="math">
 \[\hat H = \frac{\hat p^2}{2m} + V(\hat x)\]</div>
@@ -893,7 +863,7 @@ a. Apply to position operator,</p>
 </ol>
 </div>
 <div class="section" id="what-does-mean">
-<h4>What does <span class="math">\(-\left&lt; V'(\hat x)\right&gt;\)</span> mean<a class="headerlink" href="#what-does-mean" title="Permalink to this headline">¶</a></h4>
+<h3>What does <span class="math">\(-\left&lt; V'(\hat x)\right&gt;\)</span> mean<a class="headerlink" href="#what-does-mean" title="Permalink to this headline">¶</a></h3>
 <p>Suppose the potential area is fairly small and distributed around some coordinate <span class="math">\(x_0=\left&lt; \hat x \right&gt;\)</span>, we can do Taylor expansion around <span class="math">\(x_0\)</span>.</p>
 <div class="math">
 \[\begin{split}&lt; V(\hat x)&gt; &amp; =  V(x_0)   +  V'(x_0) &lt; (x - x_0)&gt; + V''(x_0)&lt;(x-x_0)^2&gt; /2 + \cdots \\
@@ -904,13 +874,13 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="picture">
-<h3>Picture<a class="headerlink" href="#picture" title="Permalink to this headline">¶</a></h3>
+<h2>Picture<a class="headerlink" href="#picture" title="Permalink to this headline">¶</a></h2>
 <p>We can see deeper into Ehrenfest&#8217;s Theorem through Heisenberg Picture of quantum mechanics.</p>
 <div class="section" id="schrodinger-heisenberg-pictures">
-<h4>Schrödinger &amp; Heisenberg Pictures<a class="headerlink" href="#schrodinger-heisenberg-pictures" title="Permalink to this headline">¶</a></h4>
+<h3>Schrödinger &amp; Heisenberg Pictures<a class="headerlink" href="#schrodinger-heisenberg-pictures" title="Permalink to this headline">¶</a></h3>
 <p>Pictures are the ways we look at the evolution of systems.</p>
 <div class="section" id="schrodinger-picture">
-<h5>Schrödinger Picture<a class="headerlink" href="#schrodinger-picture" title="Permalink to this headline">¶</a></h5>
+<h4>Schrödinger Picture<a class="headerlink" href="#schrodinger-picture" title="Permalink to this headline">¶</a></h4>
 <p>In Schrödinger picture the states are evolving with time.</p>
 <div class="math">
 \[i\hbar \frac{\d}{\d t} \ket{\psi} _ S = \hat H \ket{\psi} _ S\]</div>
@@ -919,7 +889,7 @@ a. Apply to position operator,</p>
 \[\ket{\psi}_S = U^\dagger \ket{\psi _ 0} _ S\]</div>
 </div>
 <div class="section" id="heisenberg-picture">
-<h5>Heisenberg Picture<a class="headerlink" href="#heisenberg-picture" title="Permalink to this headline">¶</a></h5>
+<h4>Heisenberg Picture<a class="headerlink" href="#heisenberg-picture" title="Permalink to this headline">¶</a></h4>
 <p>In Heisenberg Picture, the states do not change with time.</p>
 <div class="math">
 \[\ket{\psi} _ H = \ket{\psi_0} _ H ,\]</div>
@@ -935,7 +905,7 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="ehrenfest-s-theorem-in-heisenberg-picture">
-<h4>Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h4>
+<h3>Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h3>
 <div class="math">
 \[\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\]</div>
 <p>This can be easily proved by throwing every definition need in to it. We also need the following equations.</p>
@@ -953,7 +923,7 @@ a. Apply to position operator,</p>
 <p>which is the time derivative of operator in Heisenberg Picture.</p>
 <p><strong>Reminder: The time derivative of an observable (average) depends not only the time derivative of itself, but also the commutator of the observable and Hamiltonian.</strong></p>
 <div class="section" id="example-of-ehrenfest-s-theorem-in-heisenberg-picture">
-<h5>Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h5>
+<h4>Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h4>
 <p>We will show why it is better to work in Heisenberg Picture to show the meanings of Ehrenfest&#8217;s Theorem.</p>
 <p>Suppose we have a Hamiltonian in Heisenberg Picture,</p>
 <div class="math">
@@ -968,7 +938,7 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="comparison-of-picutres">
-<h4>Comparison of Picutres<a class="headerlink" href="#comparison-of-picutres" title="Permalink to this headline">¶</a></h4>
+<h3>Comparison of Picutres<a class="headerlink" href="#comparison-of-picutres" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center" id="id3">
 <img alt="../_images/picutres-comparison.png" src="../_images/picutres-comparison.png" />
 <p class="caption"><span class="caption-text">Comparison of different pictures. Notice that in Dirac picture, <span class="math">\(\hat W_I = \hat U_0 ^{-1}\hat W \hat U_0\)</span>, <span class="math">\(\ket{\psi(t)}_I = \hat U_I \ket{\psi(0)}_I\)</span>. A markdown file that is used to make this table can be downloaded <a class="reference external" href="assets/pictureQM.md">here</a> .</span></p>
@@ -976,7 +946,7 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="conservation">
-<h3>Conservation<a class="headerlink" href="#conservation" title="Permalink to this headline">¶</a></h3>
+<h2>Conservation<a class="headerlink" href="#conservation" title="Permalink to this headline">¶</a></h2>
 <p>We say a observable is conserved if the corresponding operator commutes with Hamiltonian,</p>
 <div class="math">
 \[\left[ \hat \Omega, \hat H \right]=0\]</div>
@@ -986,7 +956,7 @@ Hamiltonian always commutes with itself.</p>
 \[\begin{split}\frac{\d}{\d t} \left&lt;\epsilon \right&gt; = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}\end{split}\]</div>
 <p>If Hamiltonian is time independent, then energy is conserved. (If Hamiltonian is tide dependent, energy is not conserved. This is kind of obvious in classical mechanics.)</p>
 <div class="section" id="what-is-the-nature-of-time-dependence">
-<h4>What is the nature of time dependence<a class="headerlink" href="#what-is-the-nature-of-time-dependence" title="Permalink to this headline">¶</a></h4>
+<h3>What is the nature of time dependence<a class="headerlink" href="#what-is-the-nature-of-time-dependence" title="Permalink to this headline">¶</a></h3>
 <p>We can see this by looking at a simple example.</p>
 <p>Assume we have a system with energy eigenstates <span class="math">\(\ket{\epsilon _ n}\)</span>, and initially,</p>
 <div class="math">
@@ -1014,19 +984,19 @@ Hamiltonian always commutes with itself.</p>
 </div>
 </div>
 <div class="section" id="harmonic-oscillators">
-<h2>Harmonic Oscillators<a class="headerlink" href="#harmonic-oscillators" title="Permalink to this headline">¶</a></h2>
+<h1>Harmonic Oscillators<a class="headerlink" href="#harmonic-oscillators" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="why-harmonic-oscillators">
-<h3>Why Harmonic Oscillators<a class="headerlink" href="#why-harmonic-oscillators" title="Permalink to this headline">¶</a></h3>
+<h2>Why Harmonic Oscillators<a class="headerlink" href="#why-harmonic-oscillators" title="Permalink to this headline">¶</a></h2>
 <p>Many systems can reduce to it. Use Taylor expansion for the potential and redefine parameters we will find harmonic oscillators in the potential.</p>
 <p>Hamiltonian for 1D is</p>
 <div class="math">
 \[\hat H = \frac{\hat p^2}{2m} + \frac{1}{2} k \hat x^2\]</div>
 </div>
 <div class="section" id="standard-solution">
-<h3>Standard Solution<a class="headerlink" href="#standard-solution" title="Permalink to this headline">¶</a></h3>
+<h2>Standard Solution<a class="headerlink" href="#standard-solution" title="Permalink to this headline">¶</a></h2>
 <p>We can use polynomial expansion for part of the solution.</p>
 <div class="section" id="dimension-schrodinger-equation">
-<h4>Dimension Schrodinger Equation<a class="headerlink" href="#dimension-schrodinger-equation" title="Permalink to this headline">¶</a></h4>
+<h3>Dimension Schrodinger Equation<a class="headerlink" href="#dimension-schrodinger-equation" title="Permalink to this headline">¶</a></h3>
 <p>First step is always finding out the characteristic length scale and characteristic energy scale. Assume we have an characteristic length <span class="math">\(\eta\)</span> and characteristic energy scale <span class="math">\(\epsilon_0\)</span>. Through uncertainty principle we know only for dimensional analysis</p>
 <div class="math">
 \[\left[\hat p\right]=\frac{\hbar}{\eta}\]</div>
@@ -1049,7 +1019,7 @@ Hamiltonian always commutes with itself.</p>
 <p>in which <span class="math">\(\psi'=\frac{\mathrm d}{\mathrm dz}\psi\)</span>.</p>
 </div>
 <div class="section" id="take-limits">
-<h4>Take Limits<a class="headerlink" href="#take-limits" title="Permalink to this headline">¶</a></h4>
+<h3>Take Limits<a class="headerlink" href="#take-limits" title="Permalink to this headline">¶</a></h3>
 <p>We need to look at the behavior of the solutions before we can guess a proper general solution.</p>
 <p><span class="math">\(z\rightarrow \infty\)</span>, we have <span class="math">\(\psi''-z^2\psi=0\)</span>. Solution to this equation is <span class="math">\(\psi(z)~ e^{-z^2/2}\)</span>.</p>
 <p>The solution of the the equation should be in the form</p>
@@ -1060,7 +1030,7 @@ Hamiltonian always commutes with itself.</p>
 \[u'' - 2 z u' +(2e-1) u = 0\]</div>
 </div>
 <div class="section" id="polynomial-method">
-<h4>Polynomial Method<a class="headerlink" href="#polynomial-method" title="Permalink to this headline">¶</a></h4>
+<h3>Polynomial Method<a class="headerlink" href="#polynomial-method" title="Permalink to this headline">¶</a></h3>
 <p>The simplest form of <span class="math">\(u(z)\)</span> is polynomial,</p>
 <div class="math">
 \[u(z) = \sum _ {n=0}^{\infty} u _ n z^n  .\]</div>
@@ -1072,21 +1042,21 @@ Hamiltonian always commutes with itself.</p>
 <p><span class="math">\(u_0\)</span> is set by the normalization condition.</p>
 </div>
 <div class="section" id="terminate-the-series">
-<h4>Terminate The Series<a class="headerlink" href="#terminate-the-series" title="Permalink to this headline">¶</a></h4>
+<h3>Terminate The Series<a class="headerlink" href="#terminate-the-series" title="Permalink to this headline">¶</a></h3>
 <p>The series blow up if it doesn&#8217;t terminate. So we need to terminate the series using the following relation,</p>
 <div class="math">
 \[2e - 1 = 2n .\]</div>
 <p>Then we have the energy levels, which is <span class="math">\(e=n+1/2\)</span>.</p>
 </div>
 <div class="section" id="complete-series">
-<h4>Complete Series<a class="headerlink" href="#complete-series" title="Permalink to this headline">¶</a></h4>
+<h3>Complete Series<a class="headerlink" href="#complete-series" title="Permalink to this headline">¶</a></h3>
 <p>By picking proper normalization factor, we can write down the energy levels and corresponding wave functions. In fact, this polynomial can be found in mathematical phyisics books.</p>
 <div class="math">
 \[H _ {n+1} = 2 z H _n -n H _ {n-1}\]</div>
 </div>
 </div>
 <div class="section" id="tricky-solution">
-<h3>Tricky Solution<a class="headerlink" href="#tricky-solution" title="Permalink to this headline">¶</a></h3>
+<h2>Tricky Solution<a class="headerlink" href="#tricky-solution" title="Permalink to this headline">¶</a></h2>
 <p>Find out the characteristic length and energy</p>
 <div class="math">
 \[\begin{split}\eta = \sqrt{\frac{\hbar }{m\omega }} \\
@@ -1155,13 +1125,13 @@ Hamiltonian always commutes with itself.</p>
 </div></blockquote>
 </div>
 <div class="section" id="semiclassical">
-<h3>Semiclassical<a class="headerlink" href="#semiclassical" title="Permalink to this headline">¶</a></h3>
+<h2>Semiclassical<a class="headerlink" href="#semiclassical" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="classical">
-<h4>Classical<a class="headerlink" href="#classical" title="Permalink to this headline">¶</a></h4>
+<h3>Classical<a class="headerlink" href="#classical" title="Permalink to this headline">¶</a></h3>
 <p>In phase space, the trajectory of phase space points ( {<span class="math">\(x/\eta\)</span> and <span class="math">\(p/(\hbar/\eta)\)</span>} ) is on a circle of radius <span class="math">\(x_{max}/\eta\)</span>.</p>
 </div>
 <div class="section" id="quantum-semiclassical">
-<h4>Quantum semiclassical<a class="headerlink" href="#quantum-semiclassical" title="Permalink to this headline">¶</a></h4>
+<h3>Quantum semiclassical<a class="headerlink" href="#quantum-semiclassical" title="Permalink to this headline">¶</a></h3>
 <p>Key points:</p>
 <ol class="arabic simple">
 <li>What is the trajectory of <span class="math">\(\left&lt;\hat x/\eta\right&gt;\)</span> and <span class="math">\(\left&lt;\hat p/(\hbar/\eta)\right&gt;\)</span></li>
@@ -1223,7 +1193,6 @@ Hamiltonian always commutes with itself.</p>
 </ul>
 <p>(This result)</p>
 <p>(To Be Finished...)</p>
-</div>
 </div>
 </div>
 </div>

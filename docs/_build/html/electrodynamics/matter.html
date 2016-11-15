@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>6.3. Response of Matter &mdash; Physics Notes</title>
+    <title>Response of Matter &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,9 +32,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="up" title="6. Electrodynamics" href="index.html" />
-    <link rel="next" title="6.4. Radiation" href="radiation.html" />
-    <link rel="prev" title="6.2.3. Comparison of E &amp; M" href="em/comparisonstatics.html" />
+    <link rel="up" title="Electrodynamics" href="index.html" />
+    <link rel="next" title="Radiation" href="radiation.html" />
+    <link rel="prev" title="Comparison of E &amp; M" href="em/comparisonstatics.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -101,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -210,41 +223,18 @@
      href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -258,15 +248,15 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">6.3. Response of Matter</a><ul>
-<li><a class="reference internal" href="#energy-and-momentum">6.3.1. Energy and Momentum</a></li>
-<li><a class="reference internal" href="#id1">6.3.2. Response of Matter</a><ul>
-<li><a class="reference internal" href="#impedance">6.3.2.1. Impedance</a></li>
-<li><a class="reference internal" href="#matching-condition">6.3.2.2. Matching Condition</a></li>
-<li><a class="reference internal" href="#reflected-and-transmitted-wave">6.3.2.3. Reflected and Transmitted Wave</a></li>
-<li><a class="reference internal" href="#reflection-refraction-transparent-dissipative">6.3.2.4. Reflection, Refraction, Transparent, Dissipative</a></li>
-<li><a class="reference internal" href="#ohmic-matter">6.3.2.5. Ohmic Matter</a></li>
-<li><a class="reference internal" href="#dispersive-media">6.3.2.6. Dispersive Media</a></li>
+<li><a class="reference internal" href="#">Response of Matter</a><ul>
+<li><a class="reference internal" href="#energy-and-momentum">Energy and Momentum</a></li>
+<li><a class="reference internal" href="#id1">Response of Matter</a><ul>
+<li><a class="reference internal" href="#impedance">Impedance</a></li>
+<li><a class="reference internal" href="#matching-condition">Matching Condition</a></li>
+<li><a class="reference internal" href="#reflected-and-transmitted-wave">Reflected and Transmitted Wave</a></li>
+<li><a class="reference internal" href="#reflection-refraction-transparent-dissipative">Reflection, Refraction, Transparent, Dissipative</a></li>
+<li><a class="reference internal" href="#ohmic-matter">Ohmic Matter</a></li>
+<li><a class="reference internal" href="#dispersive-media">Dispersive Media</a></li>
 </ul>
 </li>
 </ul>
@@ -280,11 +270,11 @@
               
                 
   <li>
-    <a href="em/comparisonstatics.html" title="Previous Chapter: 6.2.3. Comparison of E & M"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 6.2.3. Compar...</span>
+    <a href="em/comparisonstatics.html" title="Previous Chapter: Comparison of E & M"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Comparison of...</span>
     </a>
   </li>
   <li>
-    <a href="radiation.html" title="Next Chapter: 6.4. Radiation"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">6.4. Radiation &raquo;</span>
+    <a href="radiation.html" title="Next Chapter: Radiation"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Radiation &raquo;</span>
     </a>
   </li>
               
@@ -313,7 +303,7 @@
     <div class="col-md-12 content">
       
   <div class="section" id="response-of-matter">
-<h1>6.3. Response of Matter<a class="headerlink" href="#response-of-matter" title="Permalink to this headline">¶</a></h1>
+<h1>Response of Matter<a class="headerlink" href="#response-of-matter" title="Permalink to this headline">¶</a></h1>
 <div class="note admonition">
 <p class="first admonition-title">Maxwell&#8217;s Equations and Transfer of Momentum and Energy</p>
 <div class="last math">
@@ -323,7 +313,7 @@
 \nabla \times \vec H &amp; = \frac{1}{c}\partial_t \vec D + \frac{4\pi}{c} \vec j .\end{split}\]</div>
 </div>
 <div class="section" id="energy-and-momentum">
-<h2>6.3.1. Energy and Momentum<a class="headerlink" href="#energy-and-momentum" title="Permalink to this headline">¶</a></h2>
+<h2>Energy and Momentum<a class="headerlink" href="#energy-and-momentum" title="Permalink to this headline">¶</a></h2>
 <p>Energy transfer can be described through Poynting vector which in the simplist plane wave case is basically <span class="math">\(\langle \vec S \rangle = u_{EM}\vec v\)</span> where <span class="math">\(u_{EM}\)</span> is the energy density. Obviously Poynting vector is the energy transfer rate.</p>
 <p>Momentum density is <span class="math">\(\vec g = \frac{u_{EM}}{c}\)</span> in the same plane wave.</p>
 <p>Let&#8217;s start from conservation of charge. Taking the divergence of the following equation,</p>
@@ -344,7 +334,7 @@
 \[\vec g =  \frac{\vec S}{c^2} = \frac{\vec E \times \vec B}{4\pi c}.\]</div>
 </div>
 <div class="section" id="id1">
-<h2>6.3.2. Response of Matter<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>Response of Matter<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>The equation for monochromatic wave,</p>
 <div class="math">
 \[\begin{split}\vec k \cdot \vec D &amp;= 4\pi \rho \\
@@ -367,7 +357,7 @@
 <div class="math">
 \[v_{ph} = c/n.\]</div>
 <div class="section" id="impedance">
-<h3>6.3.2.1. Impedance<a class="headerlink" href="#impedance" title="Permalink to this headline">¶</a></h3>
+<h3>Impedance<a class="headerlink" href="#impedance" title="Permalink to this headline">¶</a></h3>
 <p>Since <span class="math">\(\vec E\)</span> corresponds to the magnetic part <span class="math">\(\vec H\)</span>, we would like to rewrite one of the equation to</p>
 <div class="math">
 \[Z \vec H = \vec k \times \vec E.\]</div>
@@ -379,7 +369,7 @@
 \[Z = \frac{1}{n}.\]</div>
 </div>
 <div class="section" id="matching-condition">
-<h3>6.3.2.2. Matching Condition<a class="headerlink" href="#matching-condition" title="Permalink to this headline">¶</a></h3>
+<h3>Matching Condition<a class="headerlink" href="#matching-condition" title="Permalink to this headline">¶</a></h3>
 <p>Matching conditions are not just something written down on the textbook. They all have meanings.</p>
 <div class="math">
 \[\begin{split}\hat n \cdot (\vec D_1 + \vec D_1' - \vec D_2) &amp;= 0, \\
@@ -396,7 +386,7 @@ n_1 \sin\theta_1 &amp;= n_2 \sin\theta_2 \qquad \text{perpendicular part}.\end{s
 H_1 + H_1' = H_2 .\end{split}\]</div>
 </div>
 <div class="section" id="reflected-and-transmitted-wave">
-<h3>6.3.2.3. Reflected and Transmitted Wave<a class="headerlink" href="#reflected-and-transmitted-wave" title="Permalink to this headline">¶</a></h3>
+<h3>Reflected and Transmitted Wave<a class="headerlink" href="#reflected-and-transmitted-wave" title="Permalink to this headline">¶</a></h3>
 <p>Recall that impedance is <span class="math">\(Z = \sqrt{\frac{\mu}{\epsilon} }\)</span> which leads to or corresponds to</p>
 <div class="math">
 \[\lvert E \rvert = Z \lvert H \rvert.\]</div>
@@ -423,7 +413,7 @@ H_1 \cos\theta_1 - H_1'\cos\theta_1 = H_2\cos\theta_2.\end{split}\]</div>
 \frac{E_2}{E_1} &amp;= \frac{2n_1 \cos\theta_1}{n_1\cos\theta_1 + n_2\cos\theta_2} .\end{split}\]</div>
 </div>
 <div class="section" id="reflection-refraction-transparent-dissipative">
-<h3>6.3.2.4. Reflection, Refraction, Transparent, Dissipative<a class="headerlink" href="#reflection-refraction-transparent-dissipative" title="Permalink to this headline">¶</a></h3>
+<h3>Reflection, Refraction, Transparent, Dissipative<a class="headerlink" href="#reflection-refraction-transparent-dissipative" title="Permalink to this headline">¶</a></h3>
 <p>Reflection coefficient and transmission coefficient find the energy reflected and transmitted.</p>
 <div class="math">
 \[\begin{split}R &amp; = \frac{\langle \vec S_1' \rangle \cdot \hat n}{\langle \vec S_1 \rangle \cdot \hat n} \\
@@ -442,7 +432,7 @@ T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }.\end{split}\]</div>
 <p>The question is, what is dissipative material? They are those with complex wave vectors such that wave dissipates as they passing through the bulk material.</p>
 </div>
 <div class="section" id="ohmic-matter">
-<h3>6.3.2.5. Ohmic Matter<a class="headerlink" href="#ohmic-matter" title="Permalink to this headline">¶</a></h3>
+<h3>Ohmic Matter<a class="headerlink" href="#ohmic-matter" title="Permalink to this headline">¶</a></h3>
 <p>A term of current</p>
 <div class="math">
 \[\frac{4\pi}{c}\vec j\]</div>
@@ -494,7 +484,7 @@ T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }.\end{split}\]</div>
 </ol>
 </div>
 <div class="section" id="dispersive-media">
-<h3>6.3.2.6. Dispersive Media<a class="headerlink" href="#dispersive-media" title="Permalink to this headline">¶</a></h3>
+<h3>Dispersive Media<a class="headerlink" href="#dispersive-media" title="Permalink to this headline">¶</a></h3>
 <p>Dispersive media can be modeled using Drude model, Lorentz model and many other. Read <a class="reference internal" href="vocabulary/models.html#drude-model"><span>Drude Model</span></a> and <a class="reference internal" href="vocabulary/models.html#lorentz-model"><span>Lorentz Model</span></a> in vocabulary part.</p>
 <p>By definition, group velocity is the result of dispersion relation,</p>
 <div class="math">

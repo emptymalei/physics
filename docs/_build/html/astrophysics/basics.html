@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Astrophysics &mdash; Physics Notes</title>
+    <title>Astrophysics Basics &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
+    <link rel="up" title="Astrophysics" href="index.html" />
     <link rel="next" title="Stars" href="stars.html" />
-    <link rel="prev" title="General Relativity" href="../relativity/general-relativity.html" />
+    <link rel="prev" title="Astrophysics" href="index.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -100,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -209,42 +223,18 @@
      href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../math/statistics/statistics.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -258,7 +248,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Astrophysics</a><ul>
+<li><a class="reference internal" href="#">Astrophysics Basics</a><ul>
 <li><a class="reference internal" href="#numbers">Numbers</a><ul>
 <li><a class="reference internal" href="#physical-facts">Physical Facts</a></li>
 <li><a class="reference internal" href="#solar-system">Solar System</a><ul>
@@ -283,6 +273,7 @@
 <li><a class="reference internal" href="#papers-researches-and-more">Papers, Researches and More</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#relativistic-beaming-effect">Relativistic Beaming Effect</a></li>
 <li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
 </ul>
 </li>
@@ -295,7 +286,7 @@
               
                 
   <li>
-    <a href="../relativity/general-relativity.html" title="Previous Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; General Relat...</span>
+    <a href="index.html" title="Previous Chapter: Astrophysics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Astrophysics</span>
     </a>
   </li>
   <li>
@@ -327,8 +318,8 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="astrophysics">
-<h1>Astrophysics<a class="headerlink" href="#astrophysics" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="astrophysics-basics">
+<h1>Astrophysics Basics<a class="headerlink" href="#astrophysics-basics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="numbers">
 <h2>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h2>
 <p>One of the most useful concepts in astrophysics is that things should be scaled using a scale that we can understand.</p>
@@ -380,7 +371,7 @@
 <div class="section" id="bremsstrahlung-radiation">
 <h3>Bremsstrahlung Radiation<a class="headerlink" href="#bremsstrahlung-radiation" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center" id="id2">
-<img alt="astrophysics/assets/astrophysics/thermalBremsstrahlungSpectrum.png" src="astrophysics/assets/astrophysics/thermalBremsstrahlungSpectrum.png" />
+<img alt="../_images/thermalBremsstrahlungSpectrum.png" src="../_images/thermalBremsstrahlungSpectrum.png" />
 <p class="caption"><span class="caption-text">This is the spectrum of frequency-dependent emissivity of the process which happens when a flux of non-relativistic regime with thermal distributon of temperature T is shot into a plasma of ions or protons.</span></p>
 </div>
 </div>
@@ -414,7 +405,7 @@
 \[\begin{split}\sigma_{K-N} &amp;= \sigma_T \frac{3 \left(\left(1-\frac{2 (x+1)}{x^2}\right) \log (2 x+1)+\frac{4}{x}-\frac{1}{2 (2 x+1)^2}+\frac{1}{2}\right)}{8 x} \\
 &amp; = \sigma_T (1 - 2\epsilon + O(x^2)).\end{split}\]</div>
 <p>To have more understanding on this formula, I ploted <span class="math">\(\sigma_{K-N}\)</span> in terms of <span class="math">\(\sigma_T\)</span> as the energy scale <span class="math">\(\epsilon\)</span> changes.</p>
-<img alt="astrophysics/assets/astrophysics/comptonScattering.png" class="align-center" src="astrophysics/assets/astrophysics/comptonScattering.png" />
+<img alt="../_images/comptonScattering.png" class="align-center" src="../_images/comptonScattering.png" />
 </div>
 </div>
 <div class="section" id="asteroseismology">
@@ -425,7 +416,13 @@
 \[P_{dynamical} \approx \left( \frac{R^3}{GM} \right)^{1/2} \approx (G\bar \rho)^{-1/2},\]</div>
 <p>in which we have the radius of the star as <span class="math">\(R\)</span>, mass of the star as <span class="math">\(M\)</span> and mean density <span class="math">\(\bar \rho\)</span>. <strong>The good thing of this oscillation immediately shows us the mean density of the star, even without any furthure inspectation.</strong></p>
 <p>There are double mode Cepheids, whose modes provides information about mass and radius.</p>
-<p>Our sun, up to now we have identified thousands of individual modes. And more modes as many as <span class="math">\(10^{6}\)</span> modes can be determined accurately.[^helioosc]_</p>
+<p>Our sun, up to now we have identified thousands of individual modes. And more modes as many as <span class="math">\(10^{6}\)</span> modes can be determined accurately.[helioosc]_</p>
+<table class="docutils citation" frame="void" id="helioosc" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[helioosc]</td><td><a class="reference external" href="http://users-phys.au.dk/jcd/oscilnotes/chap-1.pdf">Jørgen Christensen-Dalsgaard&#8217;s Lecture Notes</a></td></tr>
+</tbody>
+</table>
 <div class="section" id="papers-researches-and-more">
 <h3>Papers, Researches and More<a class="headerlink" href="#papers-researches-and-more" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
@@ -433,6 +430,9 @@
 <li>An introduction of seismology applied to stars. <a class="reference external" href="http://ap.smu.ca/~guenther/seismology/seismology.html">http://ap.smu.ca/~guenther/seismology/seismology.html</a></li>
 </ol>
 </div>
+</div>
+<div class="section" id="relativistic-beaming-effect">
+<h2>Relativistic Beaming Effect<a class="headerlink" href="#relativistic-beaming-effect" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="refs-notes">
 <h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>

@@ -1,6 +1,6 @@
-***************************
-Quantum Mechanics 2
-***************************
+******************************************************
+Quantum Mechanics Intermediates
+******************************************************
 
 
 
@@ -129,7 +129,7 @@ Then we define
 
 which is the spherical harmonic function.
 
-Then 
+Then
 
 .. math::
    \ket{\psi} &= \sum _ {l,m} \psi _ {lm} \int \mathrm d \Omega   Y_l^m(\theta,\phi) \ket{\theta',\phi'}  \\

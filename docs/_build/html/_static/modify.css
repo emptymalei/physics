@@ -79,7 +79,7 @@ margin: 10px;
 
 
 
-.highlit {
+/*.highlit {
 padding: 2px 4px;
 /*font-size: 90%;*/
 /*font-weight: bold;*/
@@ -87,6 +87,55 @@ color: #4B648C;
 background-color: #EDFFF0;
 white-space: nowrap;
 border-radius: 4px;
+}
+*/
+
+/* Toggle Environment Begin */
+
+.toggle {
+    background: none repeat scroll 0 0 #e7f2fa;
+    padding: 12px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.toggle .admonition-title {
+    display: block;
+    clear: both;
+    cursor: pointer;
+    font-size: 110% !important;
+}
+
+.toggle .admonition-title:after {
+    content: " ▼";
+}
+
+.toggle .admonition-title.open:after {
+    content: " ▲";
+}
+
+.toggle p:last-child {
+    margin-bottom: 0;
+}
+
+/* Toggle Environment End */
+
+
+.strike {
+  text-decoration: line-through;
+}
+
+/* Highlight Text */
+
+.highlight-text {
+padding: 2px 4px;
+/*font-size: 90%;*/
+/*font-weight: bold;*/
+color: #4B648C;
+background-color: #c3ffcd;
+/*white-space: nowrap;*/
+border-radius: 4px;
+display: inline;
 }
 
 

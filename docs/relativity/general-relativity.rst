@@ -339,7 +339,7 @@ Stationary vs Static
 ---------------------
 
 Stationay
-""""""""""""""""""""""
+~~~~~~~~~~~~~
 
 "A stationary spacetime admits a timelike Killing vector field. That a stationary spacetime is one in which you can find a family of observers who observe no changes in the gravitational field (or sources such as matter or electromagnetic fields) over time."
 
@@ -347,7 +347,7 @@ When we say a field is stationary, we only mean the field is time-independent.
 
 
 Static
-"""""""""""""
+~~~~~~~~~~~
 
 "A static spacetime is a stationary spacetime in which the timelike Killing vector field has vanishing vorticity, or equivalently (by the Frobenius theorem) is hypersurface orthogonal. A static spacetime is one which admits a slicing into spacelike hypersurfaces which are everywhere orthogonal to the world lines of our 'bored observers'"
 

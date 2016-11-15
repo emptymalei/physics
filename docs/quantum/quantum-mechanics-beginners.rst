@@ -1,9 +1,10 @@
-Quantum Mechanics Framework
-==============================
+Quantum Mechanics Beginners
+*******************************
 
 
 
-
+Fundamental Concepts
+==================================
 
 
 What're the most important tricks in QM calculations?
@@ -32,9 +33,12 @@ First Three Postulates
   where :math:`\hat H` is the Hamiltonian operator.
 
 
-		The logic here is that we first find the way to describe a system, then think about how to find out the information we need from the state vector and also find the evolution of the state vector. Then we need the operator and Schrodinger equation. Finally, we would like to relate the theory to experiments, and it comes the measurement postulate.
+  .. admonition:: Comments
+     :class: note
 
-		Later we will need the relation between position and momentum, which becomes the fourth postulate.
+     The logic here is that we first find the way to describe a system, then think about how to find out the information we need from the state vector and also find the evolution of the state vector. Then we need the operator and Schrodinger equation. Finally, we would like to relate the theory to experiments, and it comes the measurement postulate.
+
+     Later we will need the relation between position and momentum, which becomes the fourth postulate.
 
 
 
@@ -84,26 +88,25 @@ Position and Momentum Space
 -----------------------------
 
 
-Summarize here.
+.. admonition:: Summary
+   :class: note
 
------
+   * Position
+       1. Define {:math:`\ket{x}`} basis.
+       2. Define :math:`\hat x` operator.
+       3. Find wave function in this basis.
+       4. Find measurement.
+   * Evolution
+   	1. Need propagator :math:`\hat U`.
+   	2. Propagator needs the solution of Hamiltonian eigensystem.
+   	3. (Free particles) Hamiltonian needs the solution of momentum eigensystem.
+   * Momentum
+   	1. Before we define some arbitrary momentum space, we should check the relation between momentum and position. And it turns out to be related by a commutator.(Postulate IV)
+   	2. Use the postulate to momentum operator.
+   	3. Find eigenstates.
+   	4. (Calculate the propagator.)
 
-* Position
-    1. Define {:math:`\ket{x}`} basis.
-    2. Define :math:`\hat x` operator.
-    3. Find wave function in this basis.
-    4. Find measurement.
-* Evolution
-	1. Need propagator :math:`\hat U`.
-	2. Propagator needs the solution of Hamiltonian eigensystem.
-	3. (Free particles) Hamiltonian needs the solution of momentum eigensystem.
-* Momentum
-	1. Before we define some arbitrary momentum space, we should check the relation between momentum and position. And it turns out to be related by a commutator.(Postulate IV)
-	2. Use the postulate to momentum operator.
-	3. Find eigenstates.
-	4. (Calculate the propagator.)
 
------
 
 
 Position Space
@@ -111,37 +114,42 @@ Position Space
 
 1. Define :math:`\ket{x}` basis.
 
-	* Orthonormal:
+   **Orthonormal condition is**
 
-	  .. math::
-       \braket{x}{x'}=\delta(x-x')
+   .. math::
+      \braket{x}{x'}=\delta(x-x').
 
-	* Complete:
 
-	  .. math::
-       \int \braket{x'}{x'} \d x' = \mathbb{I}
+   **Completeness condition is**
+
+   .. math::
+      \int \braket{x'}{x'} \d x' = \mathbb{I}
 
 2. Define position operator.
+
+   The position operator is defined as
 
    .. math::
       \hat x \ket{x} = x \ket{x}
 
-   And in {:math:`\ket{x}`} basis, this operator becomes a function, which is
+   And in :math:`\{\ket{x}\}` basis, this operator becomes a function, which is
 
    .. math::
       &\bra{x}\hat x \ket{x'}  \\
-      &= \left(\bra{x}\hat x\right)\ket{x'} \\
-      &= x \braket{x}{x'} \\
-      &= x \delta(x-x')
+      =& \left(\bra{x}\hat x \right)\ket{x'} \\
+      =& x \braket{x}{x'} \\
+      =& x \delta(x-x')
 
 
-3. Find state vector in {:math:`\ket{x}`} basis.
+3. Find state vector in :math:`\{\ket{x}\}` basis.
 
-   .. math:: \psi(t,x) = \braket{x}{\psi(t)}
+   .. math::
+      \psi(t,x) = \braket{x}{\psi(t)}
 
-   * Normalized:
+   **Normalized**
 
-   .. math:: \int \left| \psi(t,x) \right|^2 \d x = 1.
+   .. math::
+      \int \left| \psi(t,x) \right|^2 \d x = 1.
 
    And we are interpreting :math:`\left| \psi(t, x)\right|^2` as probability density.
 4. Calculate probability of a measurement. Taking :math:`\hat x` as an example.
@@ -344,28 +352,28 @@ Solve the Problem
   .. math:: k = \sqrt{\frac{2m \epsilon}{\hbar^2} }
 
 * Use Boundary Condition
-    1. At x=0,
+  1. At x=0,
 
-       .. math:: \psi(0,t)=0 .
+     .. math:: \psi(0,t)=0 .
 
-       This gives us :math:`D = 0` .
+     This gives us :math:`D = 0` .
 
-    2. At :math:`x=L`,
+  2. At :math:`x=L`,
 
-       .. math:: \psi(L,t)=0 .
+     .. math:: \psi(L,t)=0 .
 
-       This leads to
+     This leads to
 
-       .. math:: k L = n \pi .
+     .. math:: k L = n \pi .
 
-       Since :math:`n=0` gives us a 0 wave function, we would just drop :math:`n=0`. For the same reason why we drop the negative values of k, we would drop all the negative values of n.
-       This BC gives us the possible values of energy because wavenumber k is related to energy,
+     Since :math:`n=0` gives us a 0 wave function, we would just drop :math:`n=0`. For the same reason why we drop the negative values of k, we would drop all the negative values of n.
+     This BC gives us the possible values of energy because wavenumber k is related to energy,
 
-       .. math:: \epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,
+     .. math:: \epsilon = \frac{\hbar^2}{2m L^2 } (n\pi)^2 ,
 
-       with
+     with
 
-       .. math:: n=1,2,3, \cdots
+     .. math:: n=1,2,3, \cdots
 
 * Normalization as the last constraint for the last undetermined parameter,
 
@@ -373,21 +381,21 @@ Solve the Problem
 
 
 Physics
-~~~~~~~~
+^^^^^^^^^^
 
 1. Estimation
 
-	* Find the expression for energy using dimensional analysis.
-	* Using uncertainty relation to estimate the expression for energy.
+	 * Find the expression for energy using dimensional analysis.
+	 * Using uncertainty relation to estimate the expression for energy.
 
 2. Comments
 
-	* Why is the solution quantized?
-  		1. Too many constraints. BCs + normalization.
-	* Why do the n in the solution goes into the expression for energy?
-  		1. Have a look at the kinetic energy term, the derivative does it.
-	* What's so weird?
-  		1. For :math:`n=2`, no particles found at :math:`x=L/2`. And so on.
+	 * Why is the solution quantized?
+  	 1. Too many constraints. BCs + normalization.
+	 * Why do the n in the solution goes into the expression for energy?
+  	 1. Have a look at the kinetic energy term, the derivative does it.
+	 * What's so weird?
+  	 1. For :math:`n=2`, no particles found at :math:`x=L/2`. And so on.
 
 
 Some General Properties

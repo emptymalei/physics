@@ -100,6 +100,19 @@
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
 
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
+
 
    
 <meta charset='utf-8'>
@@ -209,41 +222,17 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="math/statistics/statistics.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics.html">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-mechanics3.html">Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum/index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>

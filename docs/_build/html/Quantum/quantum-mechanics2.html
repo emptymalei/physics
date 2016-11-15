@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>3. Quantum Mechanics 2 &mdash; Physics Notes</title>
+    <title>Quantum Mechanics 2 &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="next" title="4. Quantum Mechanics 3" href="quantum-mechanics3.html" />
-    <link rel="prev" title="2. Quantum Mechanics" href="quantum-mechanics.html" />
+    <link rel="up" title="Quantum Mechanics" href="index.html" />
+    <link rel="next" title="Quantum Mechanics 3" href="quantum-mechanics3.html" />
+    <link rel="prev" title="Quantum Mechanics Framework" href="quantum-mechanics.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -100,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -209,41 +223,18 @@
      href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics.html">2. Quantum Mechanics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -257,13 +248,13 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">3. Quantum Mechanics 2</a><ul>
-<li><a class="reference internal" href="#tensor-product-space">3.1. Tensor Product Space</a></li>
-<li><a class="reference internal" href="#density-matrix">3.2. Density Matrix</a></li>
-<li><a class="reference internal" href="#angular-momentum">3.3. Angular Momentum</a><ul>
-<li><a class="reference internal" href="#id1">3.3.1. Angular Momentum</a><ul>
-<li><a class="reference internal" href="#definition-of-angular-momentum">3.3.1.1. Definition of Angular Momentum</a></li>
-<li><a class="reference internal" href="#eigenstates-of-angular-momentum">3.3.1.2. Eigenstates of Angular Momentum</a></li>
+<li><a class="reference internal" href="#">Quantum Mechanics 2</a><ul>
+<li><a class="reference internal" href="#tensor-product-space">Tensor Product Space</a></li>
+<li><a class="reference internal" href="#density-matrix">Density Matrix</a></li>
+<li><a class="reference internal" href="#angular-momentum">Angular Momentum</a><ul>
+<li><a class="reference internal" href="#id1">Angular Momentum</a><ul>
+<li><a class="reference internal" href="#definition-of-angular-momentum">Definition of Angular Momentum</a></li>
+<li><a class="reference internal" href="#eigenstates-of-angular-momentum">Eigenstates of Angular Momentum</a></li>
 </ul>
 </li>
 </ul>
@@ -279,11 +270,11 @@
               
                 
   <li>
-    <a href="quantum-mechanics.html" title="Previous Chapter: 2. Quantum Mechanics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2. Quantum Me...</span>
+    <a href="quantum-mechanics.html" title="Previous Chapter: Quantum Mechanics Framework"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quantum Mecha...</span>
     </a>
   </li>
   <li>
-    <a href="quantum-mechanics3.html" title="Next Chapter: 4. Quantum Mechanics 3"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">4. Quantum Me... &raquo;</span>
+    <a href="quantum-mechanics3.html" title="Next Chapter: Quantum Mechanics 3"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum Mecha... &raquo;</span>
     </a>
   </li>
               
@@ -312,18 +303,18 @@
     <div class="col-md-12 content">
       
   <div class="section" id="quantum-mechanics-2">
-<h1>3. Quantum Mechanics 2<a class="headerlink" href="#quantum-mechanics-2" title="Permalink to this headline">¶</a></h1>
+<h1>Quantum Mechanics 2<a class="headerlink" href="#quantum-mechanics-2" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="tensor-product-space">
-<h2>3.1. Tensor Product Space<a class="headerlink" href="#tensor-product-space" title="Permalink to this headline">¶</a></h2>
-<p>This part has been moved to <a class="reference internal" href="../math.html#tensorproductspace"><span>Tensor Product Space</span></a></p>
+<h2>Tensor Product Space<a class="headerlink" href="#tensor-product-space" title="Permalink to this headline">¶</a></h2>
+<p>This part has been moved to <a class="reference internal" href="../math/linear-algebra.html#tensorproductspace"><span>Tensor Product Space</span></a></p>
 </div>
 <div class="section" id="density-matrix">
-<h2>3.2. Density Matrix<a class="headerlink" href="#density-matrix" title="Permalink to this headline">¶</a></h2>
+<h2>Density Matrix<a class="headerlink" href="#density-matrix" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="angular-momentum">
-<h2>3.3. Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
+<h2>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id1">
-<h3>3.3.1. Angular Momentum<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>Angular Momentum<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>For an new operator, we would like to know</p>
 <ol class="arabic simple">
 <li>Commutation relation: with their own components, with other operators;</li>
@@ -332,7 +323,7 @@
 <li>Expectation and classical limit.</li>
 </ol>
 <div class="section" id="definition-of-angular-momentum">
-<h4>3.3.1.1. Definition of Angular Momentum<a class="headerlink" href="#definition-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
+<h4>Definition of Angular Momentum<a class="headerlink" href="#definition-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
 <p>In classical mechanics, angular momentum is defined as</p>
 <div class="math">
 \[\vec L = \vec X \times \vec P .\]</div>
@@ -379,7 +370,7 @@
 \[\hat J_{\pm}\ket{jm} = \sqrt{j(j+1)-m(m\pm 1)} \hbar \ket{j,m\pm 1}\]</div>
 </div>
 <div class="section" id="eigenstates-of-angular-momentum">
-<h4>3.3.1.2. Eigenstates of Angular Momentum<a class="headerlink" href="#eigenstates-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
+<h4>Eigenstates of Angular Momentum<a class="headerlink" href="#eigenstates-of-angular-momentum" title="Permalink to this headline">¶</a></h4>
 <p>As we have proposed, the eigenstates of both <span class="math">\(\hat J_z\)</span> and <span class="math">\(\hat{\vec J}^2\)</span> are <span class="math">\(\ket{j,m}\)</span>, where <span class="math">\(j=0,1,2,\cdots\)</span> and <span class="math">\(m=-j,-j+1,\cdots, j-1,j\)</span>.</p>
 <p>We can also find out the wave function in <span class="math">\({\ket{\theta,\phi } }\)</span> basis. Before we do that, the definition of this basis should be made clear. This basis spans the surface of a 3D sphere in Euclidean space and satisfies the following orthonormal and complete condition.</p>
 <div class="math">

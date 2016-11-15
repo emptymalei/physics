@@ -1,10 +1,3 @@
-***************************
-Quantum Mechanics
-***************************
-
-.. .. sectnum::
-      :start: 4
-
 Quantum Mechanics Framework
 ==============================
 
@@ -91,26 +84,25 @@ Position and Momentum Space
 -----------------------------
 
 
-Summarize here.
+.. admonition:: Summary
+   :class: note
 
------
+   * Position
+       1. Define {:math:`\ket{x}`} basis.
+       2. Define :math:`\hat x` operator.
+       3. Find wave function in this basis.
+       4. Find measurement.
+   * Evolution
+   	1. Need propagator :math:`\hat U`.
+   	2. Propagator needs the solution of Hamiltonian eigensystem.
+   	3. (Free particles) Hamiltonian needs the solution of momentum eigensystem.
+   * Momentum
+   	1. Before we define some arbitrary momentum space, we should check the relation between momentum and position. And it turns out to be related by a commutator.(Postulate IV)
+   	2. Use the postulate to momentum operator.
+   	3. Find eigenstates.
+   	4. (Calculate the propagator.)
 
-* Position
-    1. Define {:math:`\ket{x}`} basis.
-    2. Define :math:`\hat x` operator.
-    3. Find wave function in this basis.
-    4. Find measurement.
-* Evolution
-	1. Need propagator :math:`\hat U`.
-	2. Propagator needs the solution of Hamiltonian eigensystem.
-	3. (Free particles) Hamiltonian needs the solution of momentum eigensystem.
-* Momentum
-	1. Before we define some arbitrary momentum space, we should check the relation between momentum and position. And it turns out to be related by a commutator.(Postulate IV)
-	2. Use the postulate to momentum operator.
-	3. Find eigenstates.
-	4. (Calculate the propagator.)
 
------
 
 
 Position Space
@@ -118,37 +110,42 @@ Position Space
 
 1. Define :math:`\ket{x}` basis.
 
-	* Orthonormal:
+   **Orthonormal condition is**
 
-	  .. math::
-       \braket{x}{x'}=\delta(x-x')
+   .. math::
+      \braket{x}{x'}=\delta(x-x').
 
-	* Complete:
 
-	  .. math::
-       \int \braket{x'}{x'} \d x' = \mathbb{I}
+   **Completeness condition is**
+
+   .. math::
+      \int \braket{x'}{x'} \d x' = \mathbb{I}
 
 2. Define position operator.
+
+   The position operator is defined as
 
    .. math::
       \hat x \ket{x} = x \ket{x}
 
-   And in {:math:`\ket{x}`} basis, this operator becomes a function, which is
+   And in :math:`\{\ket{x}\}` basis, this operator becomes a function, which is
 
    .. math::
       &\bra{x}\hat x \ket{x'}  \\
-      &= \left(\bra{x}\hat x\right)\ket{x'} \\
-      &= x \braket{x}{x'} \\
-      &= x \delta(x-x')
+      =& \left(\bra{x}\hat x\right)\ket{x'} \\
+      =& x \braket{x}{x'} \\
+      =& x \delta(x-x')
 
 
-3. Find state vector in {:math:`\ket{x}`} basis.
+3. Find state vector in :math:`\{\ket{x}\}` basis.
 
-   .. math:: \psi(t,x) = \braket{x}{\psi(t)}
+   .. math::
+      \psi(t,x) = \braket{x}{\psi(t)}
 
-   * Normalized:
+   **Normalized**
 
-   .. math:: \int \left| \psi(t,x) \right|^2 \d x = 1.
+   .. math::
+      \int \left| \psi(t,x) \right|^2 \d x = 1.
 
    And we are interpreting :math:`\left| \psi(t, x)\right|^2` as probability density.
 4. Calculate probability of a measurement. Taking :math:`\hat x` as an example.

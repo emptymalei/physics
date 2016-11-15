@@ -1,5 +1,5 @@
 Tensors and Groups in Quantum
-==========================
+====================================================
 
 
 
@@ -25,17 +25,3 @@ where :math:`j,j'` are the angular momentum quantum numbers and :math:`n, n'` ar
 
 
 It seems that tensor :math:`\hat T_k^q` is a source of angular momentum. The maximum angular momentum it can provide is :math:`k`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-.

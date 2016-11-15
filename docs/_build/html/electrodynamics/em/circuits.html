@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>6.2.1. Circuits &mdash; Physics Notes</title>
+    <title>Circuits &mdash; Physics Notes</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,9 +32,9 @@
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../../index.html" />
-    <link rel="up" title="6.2. Electricity and Magnetism" href="main.html" />
-    <link rel="next" title="6.2.2. Electrostatics and Magnetostatics" href="static.html" />
-    <link rel="prev" title="6.2. Electricity and Magnetism" href="main.html" />
+    <link rel="up" title="Electricity and Magnetism" href="index.html" />
+    <link rel="next" title="Electrostatics and Magnetostatics" href="static.html" />
+    <link rel="prev" title="Electricity and Magnetism" href="index.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -101,6 +101,19 @@
      </script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
      </script>
+
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
 
 
    
@@ -210,41 +223,18 @@
      href="../../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../../preface.html">1. Whatever</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../fun.html">1. Fun</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../voc/vocabulary.html">1. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../basic.html">2. Basic</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../math.html">1. Mathematics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../special-functions.html">2. Special Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../equation-solving.html">3. Equation Solving</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../classical-mechanics.html">1. Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics.html">2. Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics2.html">3. Quantum Mechanics 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-mechanics3.html">4. Quantum Mechanics 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../statmech/statistical-physics.html">5. Statistical Physics</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">6. Electrodynamics</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/special-relativity.html">Special Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity.html">General Relativity</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/basics.html">Astrophysics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cosmology.html">Cosmology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/quantum-optics.html">Quantum Optics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quantum/susy-quantum.html">Super-Symmetric Quantum Mechanics</a></li>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fun/index.html">Fun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vocabulary/index.html">Vocabulary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../math/index.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cm/index.html">Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantum/index.html">Quantum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../relativity/index.html">Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../astrophysics/index.html">Astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cosmology/index.html">Cosmology</a></li>
 </ul>
 </ul>
 </li>
@@ -258,10 +248,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">6.2.1. Circuits</a><ul>
-<li><a class="reference internal" href="#capacitor">6.2.1.1. Capacitor</a></li>
-<li><a class="reference internal" href="#inductor">6.2.1.2. Inductor</a></li>
-<li><a class="reference internal" href="#refs-notes">6.2.1.3. Refs &amp; Notes</a></li>
+<li><a class="reference internal" href="#">Circuits</a><ul>
+<li><a class="reference internal" href="#capacitor">Capacitor</a></li>
+<li><a class="reference internal" href="#inductor">Inductor</a></li>
+<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
 </ul>
 </li>
 </ul>
@@ -273,11 +263,11 @@
               
                 
   <li>
-    <a href="main.html" title="Previous Chapter: 6.2. Electricity and Magnetism"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 6.2. Electric...</span>
+    <a href="index.html" title="Previous Chapter: Electricity and Magnetism"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Electricity a...</span>
     </a>
   </li>
   <li>
-    <a href="static.html" title="Next Chapter: 6.2.2. Electrostatics and Magnetostatics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">6.2.2. Electr... &raquo;</span>
+    <a href="static.html" title="Next Chapter: Electrostatics and Magnetostatics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Electrostatic... &raquo;</span>
     </a>
   </li>
               
@@ -306,9 +296,9 @@
     <div class="col-md-12 content">
       
   <div class="section" id="circuits">
-<h1>6.2.1. Circuits<a class="headerlink" href="#circuits" title="Permalink to this headline">¶</a></h1>
+<h1>Circuits<a class="headerlink" href="#circuits" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="capacitor">
-<h2>6.2.1.1. Capacitor<a class="headerlink" href="#capacitor" title="Permalink to this headline">¶</a></h2>
+<h2>Capacitor<a class="headerlink" href="#capacitor" title="Permalink to this headline">¶</a></h2>
 <p>Capacitance is defined as</p>
 <div class="math">
 \[C = \frac{dQ}{dV}.\]</div>
@@ -319,14 +309,14 @@
 \Rightarrow &amp; C \frac{dV}{dt} = I.\end{split}\]</div>
 </div>
 <div class="section" id="inductor">
-<h2>6.2.1.2. Inductor<a class="headerlink" href="#inductor" title="Permalink to this headline">¶</a></h2>
+<h2>Inductor<a class="headerlink" href="#inductor" title="Permalink to this headline">¶</a></h2>
 <p>Inductor is defined as</p>
 <div class="math">
 \[L = \frac{d\Phi}{dI},\]</div>
 <p>where <span class="math">\(\Phi\)</span> is the magnetic flux of the inductor and <span class="math">\(I\)</span> is the current going through the inductor.</p>
 </div>
 <div class="section" id="refs-notes">
-<h2>6.2.1.3. Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
+<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

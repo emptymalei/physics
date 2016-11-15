@@ -174,12 +174,12 @@ in which we have the radius of the star as :math:`R`, mass of the star as :math:
 
 There are double mode Cepheids, whose modes provides information about mass and radius.
 
-Our sun, up to now we have identified thousands of individual modes. And more modes as many as :math:`10^{6}` modes can be determined accurately.[^helioosc]_
+Our sun, up to now we have identified thousands of individual modes. And more modes as many as :math:`10^{6}` modes can be determined accurately.[helioosc]_
 
 
 
 
-.. [^helioosc] `Jørgen Christensen-Dalsgaard's Lecture Notes <http://users-phys.au.dk/jcd/oscilnotes/chap-1.pdf>`_
+.. [helioosc] `Jørgen Christensen-Dalsgaard's Lecture Notes <http://users-phys.au.dk/jcd/oscilnotes/chap-1.pdf>`_
 
 
 Papers, Researches and More
@@ -190,6 +190,9 @@ Papers, Researches and More
 
 
 
+
+Relativistic Beaming Effect
+------------------------------
 
 
 
