@@ -159,16 +159,40 @@ html_theme_options = {
     # Bootswatch (http://bootswatch.com/) theme.
     #
     # Options are nothing with "" (default) or the name of a valid theme
-    # such as "amelia" or "cosmo".
-    'bootswatch_theme': "flatly",
+    # such as "amelia" or "cosmo". Previously "flatly".
+    'bootswatch_theme': "readable",
 
     # Fix navigation bar to top of page?
     # Values: "true" (default) or "false"
-    # 'navbar_fixed_top': "false",
+    'navbar_fixed_top': "false",
 
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
     'source_link_position': "footer",
+
+    # HTML navbar class (Default: "navbar") to attach to <div> element.
+    # For black navbar, do "navbar navbar-inverse"
+    # 'navbar_class': "navbar navbar-inverse",
+    'navbar_class': "navbar navbar-inverse",
+
+   # Global TOC depth for "site" navbar tab. (Default: 1)
+    # Switching to -1 shows all levels.
+    'globaltoc_depth': 2,
+
+    # Include hidden TOCs in Site navbar?
+    #
+    # Note: If this is "false", you cannot have mixed ``:hidden:`` and
+    # non-hidden ``toctree`` directives in the same page, or else the build
+    # will break.
+    #
+    # Values: "true" (default) or "false"
+    'globaltoc_includehidden': "true",
+
+   # Render the next and previous page links in navbar. (Default: true)
+    'navbar_sidebarrel': True,
+
+    # Render the current pages TOC in the navbar. (Default: true)
+    'navbar_pagenav': True,
 
 }
 

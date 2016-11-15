@@ -5,6 +5,19 @@ html {
 background: none !important;
 }
 
+a {
+   color: #a31 !important;
+}
+a:hover {
+   text-decoration: underline !important;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none !important;
+    color: #fff !important;
+    background-color: #a31 !important;
+}
+
 div.header {
 margin-bottom: 20px;
 }
