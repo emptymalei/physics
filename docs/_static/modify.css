@@ -4,6 +4,9 @@
 html {
 background: none !important;
 }
+body {
+   padding-top: 0 !important;
+}
 
 a {
    color: #a31 !important;
