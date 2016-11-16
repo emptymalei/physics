@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="next" title="Special Relativity" href="special-relativity.html" />
+    <link rel="next" title="Hyperbolic Geometry" href="hyperbolic-geometry.html" />
     <link rel="prev" title="Scattering" href="../electrodynamics/scattering.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -93,7 +93,9 @@
            avg: ['\\left< \#1 \\right>',1],
            slashed: ['\\cancel{\#1}',1],
            bold: ['\\boldsymbol{\#1}',1],
-           d: ['\\mathrm d',0]
+           d: ['\\mathrm d',0],
+           sech: ['\\operatorname{sech}',0],
+           csch: ['\\operatorname{csch}',0]
          }
        }
      });
@@ -273,6 +275,7 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hyperbolic-geometry.html">Hyperbolic Geometry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="general-relativity.html">General Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="general-relativity-adv.html">General Relativity Revisited</a></li>
@@ -316,7 +319,7 @@
     </a>
   </li>
   <li>
-    <a href="special-relativity.html" title="Next Chapter: Special Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Special Relat... &raquo;</span>
+    <a href="hyperbolic-geometry.html" title="Next Chapter: Hyperbolic Geometry"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Hyperbolic Ge... &raquo;</span>
     </a>
   </li>
               
@@ -348,10 +351,15 @@
 <h1>Relativity<a class="headerlink" href="#relativity" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="hyperbolic-geometry.html">Hyperbolic Geometry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hyperbolic-geometry.html#visualizations-of-hyperbolic-space">Visualizations of Hyperbolic Space</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="special-relativity.html">Special Relativity</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="special-relativity.html#conventions">Conventions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="special-relativity.html#basics">Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="special-relativity.html#hyperbolic-geometric-description">Hyperbolic Geometric Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="special-relativity.html#doppler-shift">Doppler Shift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="special-relativity.html#relativistic-aberration-of-light">Relativistic Aberration of Light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="special-relativity.html#footnotes">Footnotes</a></li>
 </ul>
 </li>
@@ -406,14 +414,21 @@
 
 <div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
     <p class="pull-right">
-        <a href="#">Back to top</a>
+        <a href="#"><span class="label label-info">Back to top</span></a>
 
     </p>
     <p>
-        <span>© Copyright 2016, Lei Ma.</span>|
-        <a href="https://github.com/emptymalei/physics">On GitHub</a>|
+        <span>© 2016, Lei Ma. </span>|
         <span>Created with
-            <a href="http://sphinx.pocoo.org/">Sphinx</a>1.2b2.</span>  <span><script data-gittip-username="emptymalei"
+            <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
+        </span>|
+        <span><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+        <a href="https://github.com/emptymalei/physics">On GitHub</a>
+        </span>|
+        <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <a href="http://docs.neutrino.xyz">Neutrino Notebook</a>
+        </span>
+        <span><script data-gittip-username="emptymalei"
         data-gittip-widget="button"
         src="//gttp.co/v1.js"></script></span>
     </p>

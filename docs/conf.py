@@ -49,6 +49,18 @@ latex_preamble = r"""
 \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
 \newcommand{\avg}[1]{\left< #1 \right>}
 
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arcCot}
+\DeclareMathOperator{\arccsc}{arcCsc}
+\DeclareMathOperator{\arccosh}{arcCosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arcCsch}
+\DeclareMathOperator{\arccoth}{arcCoth} 
+
 """
 
 pngmath_latex_preamble = latex_preamble
@@ -80,7 +92,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Physics Notes'
-copyright = u'2016, Lei Ma'
+copyright = u'2016, Lei Ma.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -130,6 +142,8 @@ pygments_style = 'sphinx'
 
 
 # -- Options for HTML output ---------------------------------------------------
+
+numfig = True
 
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.

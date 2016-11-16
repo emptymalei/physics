@@ -94,7 +94,9 @@
            avg: ['\\left< \#1 \\right>',1],
            slashed: ['\\cancel{\#1}',1],
            bold: ['\\boldsymbol{\#1}',1],
-           d: ['\\mathrm d',0]
+           d: ['\\mathrm d',0],
+           sech: ['\\operatorname{sech}',0],
+           csch: ['\\operatorname{csch}',0]
          }
        }
      });
@@ -274,6 +276,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/hyperbolic-geometry.html">Hyperbolic Geometry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
@@ -389,7 +392,7 @@
 <p>Legendre transformation is NOT just some algebra. Given <span class="math">\(f(x)\)</span> as a function of <span class="math">\(x\)</span>, which is shown in blue, we could find the distance between a line <span class="math">\(y=px_i\)</span> and the function value <span class="math">\(f(x_i)\)</span>.</p>
 <div class="figure align-center" id="id2">
 <img alt="../_images/legendreTransformation.png" src="../_images/legendreTransformation.png" />
-<p class="caption"><span class="caption-text">Meaning of Legendre transformation</span></p>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Meaning of Legendre transformation</span></p>
 </div>
 <p>However, as we didn&#8217;t fix <span class="math">\(x\)</span>, this means that the distance</p>
 <div class="math">
@@ -411,7 +414,7 @@
 <p>We require the function <span class="math">\(f(x)\)</span> is convex (second order derivative is not negative ). This is required because otherwise we would NOT have a one on one mapping of <span class="math">\(x\)</span> and <span class="math">\(p\)</span>.</p>
 <div class="figure align-center" id="id3">
 <img alt="../_images/legendreTransformation2.png" src="../_images/legendreTransformation2.png" />
-<p class="caption"><span class="caption-text">This graph shows the Legendre transformation and triangles in which G is actually the F we used before and F in the graph corresponds to f.</span></p>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">This graph shows the Legendre transformation and triangles in which G is actually the F we used before and F in the graph corresponds to f.</span></p>
 <div class="legend">
 <p>One imediately notices the symmety of Legendre transformation on interchanging of F and f.</p>
 <p>This graph is taken from this paper <a class="reference external" href="http://arxiv.org/abs/0806.1147">Making Sense of the Legendre Transform</a> .</p>
@@ -471,14 +474,21 @@
 
 <div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
     <p class="pull-right">
-        <a href="#">Back to top</a>
+        <a href="#"><span class="label label-info">Back to top</span></a>
 
     </p>
     <p>
-        <span>© Copyright 2016, Lei Ma.</span>|
-        <a href="https://github.com/emptymalei/physics">On GitHub</a>|
+        <span>© 2016, Lei Ma. </span>|
         <span>Created with
-            <a href="http://sphinx.pocoo.org/">Sphinx</a>1.2b2.</span>  <span><script data-gittip-username="emptymalei"
+            <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
+        </span>|
+        <span><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+        <a href="https://github.com/emptymalei/physics">On GitHub</a>
+        </span>|
+        <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <a href="http://docs.neutrino.xyz">Neutrino Notebook</a>
+        </span>
+        <span><script data-gittip-username="emptymalei"
         data-gittip-widget="button"
         src="//gttp.co/v1.js"></script></span>
     </p>

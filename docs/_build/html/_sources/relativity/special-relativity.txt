@@ -1,7 +1,66 @@
 Special Relativity
 ********************
 
+We talk about transformations all the time in physics. For space and time, we also have the transformations from one reference frame to another, which plays the key role of our theories. Newtonian mechanics transform each space and time coordinates independently in translations. This idea was simply a extrapolation of our daily life experience that translations only change space coordinates accordingly, i.e.,
 
+.. math::
+   \begin{pmatrix}
+   t'\\
+   x'
+   \end{pmatrix} = \begin{pmatrix}
+   1 & 0 \\
+   -v & 1
+   \end{pmatrix}\begin{pmatrix}
+   t\\
+   x
+   \end{pmatrix}
+
+for the two reference systems described in :numref:`galilean-transformation`. This transformation matrix is neither symmetric nor Hermitian. It is ugly and unexpected. Why is time special and is not related to other coordinates?
+
+
+.. _galilean-transformation:
+
+.. figure:: assets/special-relativity/Standard_conf.png
+   :align: center
+
+   Galilean transformation. Source: `Wikipedia <https://commons.wikimedia.org/wiki/File:Standard_conf.png>`_
+
+
+As we think of this description, we would expect a most general transformation of coordinates for translation that involves all the coordinates, even for time.
+
+
+.. math::
+   \begin{pmatrix}
+   t' \\
+   x'\\
+   y'\\
+   z'
+   \end{pmatrix} = \begin{pmatrix}
+   L_{11} & L_{12} & L_{13} & L_{14}\\
+   L_{21} & L_{22} & L_{23} & L_{24}\\
+   L_{31} & L_{32} & L_{33} & L_{34}\\
+   L_{41} & L_{42} & L_{43} & L_{44}
+   \end{pmatrix}\begin{pmatrix}
+   t \\
+   x\\
+   y\\
+   z
+   \end{pmatrix}.
+
+
+How to determine this transformation matrix :math:`\mathbf L`? Geometrically, we should conserve length since it's a scalar, which is
+
+.. math::
+   \eta^a_b x^a x^b,
+
+where :math:`\eta_{ab}` is the metric. More specifically,
+
+.. math::
+   \eta^a_b (L^a_cx^c )(L^b_d x^d ) = \eta^a_b x^a x^b.
+
+Physically or historically, we should preserve Maxwell's equation, since it has been proved to be true in different reference frames.
+
+What people found is that the geometry is hyperbolic geometry, hence the metric is Minkowskian.
 
 
 
@@ -9,7 +68,7 @@ Conventions
 ===============
 
 
-Metric in special relativity
+We choose the signature :math:`+2` metric in special relativity
 
 .. math::
    \eta_{\mu\nu}=\begin{pmatrix}
@@ -17,52 +76,51 @@ Metric in special relativity
 	0 & 1 & 0 & 0\\
 	0 & 0 & 1 & 0\\
 	0 & 0 & 0 & 1\\
-   \end{pmatrix}
+   \end{pmatrix}.
+
+
+In most cases, we use natural unit :math:`c=1`.
+
+
+.. admonition:: d'Alembert operator
+   :class: toggle
+
+   d'Alembert operator, or wave operator, is the Lapace operator in Minkowski space. [1]_
+
+   .. math::
+      \Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu
+
+
+   In the usual {t,x,y,z} natural orthonormal basis,
+
+   .. math::
+      \Box & = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
+      & = -\partial_t^2+\Delta^2 \\
+      & = -\partial_t^2+\nabla
+
+
+
+   On wiki [2]_ , they give some applications to it.
+   	* klein-Gordon equation
+   	  :math:`(\Box+m^2)\phi=0`
+   	* wave equation for electromagnetic field in vacuum:
+   	  For the electromagnetic four-potential $\Box A^\mu=0$\footnote{Gauge}
+   	* wave equation for small vibrations
+   	  :math:`\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0`
 
 
 
 
 
-Quantities and Operations
---------------------------------------------
-
-d'Alembertian
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-d'Alembert operator, or wave operator, is the Lapace operator in Minkowski space. [1]_
-
-.. math::
-   \Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu
-
-
-In the usual {t,x,y,z} natural orthonormal basis,
-
-.. math::
-   \Box & = -\partial_t^2+\partial_x^2+\partial_y^2+\partial_z^2 \\
-   & = -\partial_t^2+\Delta^2 \\
-   & = -\partial_t^2+\nabla
-
-
-
-On wiki [2]_ , they give some applications to it.
-	* klein-Gordon equation
-	  :math:`(\Box+m^2)\phi=0`
-	* wave equation for electromagnetic field in vacuum:
-	  For the electromagnetic four-potential $\Box A^\mu=0$\footnote{Gauge}
-	* wave equation for small vibrations
-	  :math:`\Box_c u(t,x)=0\rightarrow u_{tt}-c^2 u_{xx}=0`
-
-
-
-
-
-Basics
+Hyperbolic Geometric Description
 ==================================
 
 .. admonition:: A Coincidence?
    :class: note
 
    Let's start from this coincidence.
+
+   .. _special-relativity-velocity-addition:
 
    .. figure:: assets/special-relativity/specialRelativityVelocityAddition.png
       :align: center
@@ -73,6 +131,7 @@ Basics
 
    .. math::
       v_S = \frac{u+v_O}{1+ \beta v/c},
+      :label: eqn-velocity-transformation-1d
 
    where :math:`v_S` is the velocity measured in moving frame S, :math:`v_O` is the velocity measured in frame O. This :math:`\beta` is the factor :math:`u/c` where u is the velocity of the moving frame measure in frame O.
 
@@ -84,32 +143,113 @@ Basics
    Isn't this addition of angles the same as the velocity addition?
 
 
-The algebra of relativity is mostly based on invariance of a new distance under a new rotation. Here we are not going to repeat the derivation of these transformations from the beginning, instead we would like to have a look at the really amazing part of the theory.
+The algebra of relativity is mostly based on invariance of a new distance under a new rotation. Here we are not going to repeat the derivation of these transformations from the beginning, instead we would like to have a look at the really amazing part of this mathematical theory.
 
 
-As we define
+As shown in :numref:`special-relativity-velocity-addition`, we define quantities in two different frames, the frame O and frame S. The velocity of frame S measured in frame O is :math:`u`. Out of this velocity we define a quantity
 
 .. math::
    \tanh \alpha_u = \frac{u}{c},
 
-and any velocity divided by speed of light to be a hyperbolic tangent,
-
-.. math::
-   \tanh \alpha_{v_x} = \frac{v_x}{c},
-
-the velocity transformation, as stated in the admonition block, is an addition of angles
-
-.. math::
-   v_{S} = \tanh(\alpha_u + \alpha_{v_O}) = \frac{\tanh \alpha_{u} + \tanh \alpha_{v_0}}{1 + \tanh \alpha_{U} \tanh \alpha_{v_O}} = \frac{u/c + v_O/c}{1+ \frac{u}{c} \frac{v_{O}}{c}}.
-
-
-However, addition of velocity is not that fundamental. We need to look into the relation
+In fact, any velocity divided by speed of light should be a hyperbolic tangent,
 
 .. math::
    \tanh \alpha_{v_x} = \frac{v_x}{c}.
 
+With this definition of hyperbolic tangent, we notice that
 
-Since we are talking about geometry, space-time diagram will be extremely important.
+.. math::
+   \gamma = \frac{1}{\sqrt{1 - u^2/c^2}} = \cosh\alpha_u.
+
+Suppose we have an object moving with velocity :math:`v_S` in frame S. The velocity measured in frame O is the addition of the velocity of frame S itself and the velocity :math:`v_S`, except the addition rule is not the usual plus but the rule stated in Eq. (:eq:`eqn-velocity-transformation-1d`). We apply the definitions of the hyperbolic trig function,
+
+.. math::
+   \frac{v_{S}}{c} = \tanh(\alpha_u + \alpha_{v_O}) = \frac{\tanh \alpha_{u} + \tanh \alpha_{v_0}}{1 + \tanh \alpha_{U} \tanh \alpha_{v_O}} = \frac{u/c + v_O/c}{1+ \frac{u}{c} \frac{v_{O}}{c}}.
+
+We could imagine the algebra of velocities would be simply summations if we define 'velocity' as :math:`\arctan \frac{v_x}{c}`.
+
+Addition of velocities is not that fundamental. What's more important is :highlight-text:`the transformation of coordinate`, as we have always been talking about. In the old school language, the coordinate transformation is
+
+.. math::
+   \begin{pmatrix}
+   t_O\\
+   x_O
+   \end{pmatrix} = \gamma \begin{pmatrix}
+   1 &  u/c^2 \\
+   u & 1
+   \end{pmatrix}\begin{pmatrix}
+   t_S\\
+   x_S
+   \end{pmatrix},
+
+where
+
+.. math::
+   \gamma = \frac{1}{\sqrt{1 - u^2/c^2}} = \cosh\alpha_u.
+
+If we use the language of hyperbolic trig functions, this transformation becomes
+
+.. math::
+   \begin{pmatrix}
+   t_O\\
+   x_O
+   \end{pmatrix} = &\cosh\alpha_u \begin{pmatrix}
+   1 &  (\tanh \alpha_u)/c \\
+   c(\tanh\alpha_u) & 1
+   \end{pmatrix}\begin{pmatrix}
+   t_S\\
+   x_S
+   \end{pmatrix}\\
+   =& \begin{pmatrix}
+   \cosh\alpha_u &  (\sin \alpha_u)/c \\
+   c(\sin\alpha_u) & \cosh\alpha_u
+   \end{pmatrix}\begin{pmatrix}
+   t_S\\
+   x_S
+   \end{pmatrix}.
+
+To make the transformation symmetric, we consider
+
+.. math::
+   \begin{pmatrix}
+   c t_O\\
+   x_O
+   \end{pmatrix} = \begin{pmatrix}
+   \cosh\alpha_u &  \sin \alpha_u \\
+   \sin\alpha_u & \cosh\alpha_u
+   \end{pmatrix}\begin{pmatrix}
+   ct_S\\
+   x_S
+   \end{pmatrix}.
+
+.. admonition:: Natural Unit
+   :class: hint
+
+   Look at these tedious steps. Why not just use natural units and set :math:`c=1`. We should.
+
+This is basically the rotation matrix in hyperbolic spacetime.
+
+.. admonition:: Rotation in Euclidean Space
+   :class: toggle
+
+   The rotations in Euclidean space is described as
+
+   .. math::
+      \begin{pmatrix}
+      x'\\
+      y'
+      \end{pmatrix} = \begin{pmatrix}
+      \cos\theta &  -\sin \theta \\
+      \sin\theta & \cos\theta
+      \end{pmatrix}\begin{pmatrix}
+      x\\
+      y
+      \end{pmatrix}.
+
+It is quite different from the rotations in Euclidean space.
+
+
+Since we are talking about geometry, space-time diagram will be extremely important. The length contraction, time dilation, and even doppler shift can be explained and calculated using the hyperbolic trig functions. Triangles on the space-time diagram are described in :ref:`visualizations-of-hyperbolic-space`.
 
 
 .. index:: doppler-shift
@@ -188,11 +328,39 @@ The change in wavelength is given by
    \frac{\lambda_{obs} }{ \lambda_{src}  }= \sqrt{ \frac{1 - \beta}{1 + \beta} } .
 
 
+Relativistic Aberration of Light
+==========================================
+
+.. _relativistic-aberration:
+
+.. figure:: assets/special-relativity/relativistic-aberration.png
+   :align: center
+
+   The relativistic aberration of light.
+
+In astrophyics, object moving with a significant fraction of the speed of light :math:`v_S` with angle :math:`\theta` shown in :numref:`relativistic-aberration`, is measure from the observer in a direction
+
+.. math::
+   \cos \theta_O = \frac{\cos\theta_O - v_S}{1 - v_S \cos \theta_S}.
+
+If the object is moving towards us, we observe :math:`\theta_O=0`.
+
+Meanwhile the apparent transverse velocity is measured to be
+
+.. math::
+   v_{\perp,O} = \frac{v}{1-\beta \cos (\pi - \phi +\theta)},
+   :label: eqn-relativistic-apparent-velocity
+
+where :math:`\pi - \phi +\theta` is the angle between line of sight and the velocity, measured in the object's frame. One of the astonishing fact about Eq. (:eq:`eqn-relativistic-apparent-velocity`) is that 
+
+
+
 
 Footnotes
 ==========
 
+1. *The Geometry of Special Relativity* by Tevian Dray.
+
+
 .. [1] Actually, there are more general definations for Lapacian, which includes this d'Alembertian of course.
 .. [2] wiki:D'Alembert\_operator
-
-1. *The Geometry of Special Relativity* by Tevian Dray.

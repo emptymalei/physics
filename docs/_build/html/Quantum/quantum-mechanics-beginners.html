@@ -94,7 +94,9 @@
            avg: ['\\left< \#1 \\right>',1],
            slashed: ['\\cancel{\#1}',1],
            bold: ['\\boldsymbol{\#1}',1],
-           d: ['\\mathrm d',0]
+           d: ['\\mathrm d',0],
+           sech: ['\\operatorname{sech}',0],
+           csch: ['\\operatorname{csch}',0]
          }
        }
      });
@@ -274,6 +276,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/hyperbolic-geometry.html">Hyperbolic Geometry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
@@ -770,8 +773,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 <div class="section" id="some-general-properties">
 <h6>Some General Properties<a class="headerlink" href="#some-general-properties" title="Permalink to this headline">¶</a></h6>
 <ol class="arabic simple">
-<li>1D bound states have no degeneracy.
-Prove it by assume that there is a degeneracy state.</li>
+<li>1D bound states have no degeneracy. Prove it by assume that there is a degeneracy state.</li>
 <li>1D bound states&#8217; wave function can be chosen to be real. (if potential V is real.)</li>
 </ol>
 </div>
@@ -984,7 +986,7 @@ a. Apply to position operator,</p>
 <h4>Comparison of Picutres<a class="headerlink" href="#comparison-of-picutres" title="Permalink to this headline">¶</a></h4>
 <div class="figure align-center" id="id3">
 <img alt="../_images/picutres-comparison.png" src="../_images/picutres-comparison.png" />
-<p class="caption"><span class="caption-text">Comparison of different pictures. Notice that in Dirac picture, <span class="math">\(\hat W_I = \hat U_0 ^{-1}\hat W \hat U_0\)</span>, <span class="math">\(\ket{\psi(t)}_I = \hat U_I \ket{\psi(0)}_I\)</span>. A markdown file that is used to make this table can be downloaded <a class="reference external" href="assets/pictureQM.md">here</a> .</span></p>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Comparison of different pictures. Notice that in Dirac picture, <span class="math">\(\hat W_I = \hat U_0 ^{-1}\hat W \hat U_0\)</span>, <span class="math">\(\ket{\psi(t)}_I = \hat U_I \ket{\psi(0)}_I\)</span>. A markdown file that is used to make this table can be downloaded <a class="reference external" href="assets/pictureQM.md">here</a> .</span></p>
 </div>
 </div>
 </div>
@@ -1273,14 +1275,21 @@ Hamiltonian always commutes with itself.</p>
 
 <div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
     <p class="pull-right">
-        <a href="#">Back to top</a>
+        <a href="#"><span class="label label-info">Back to top</span></a>
 
     </p>
     <p>
-        <span>© Copyright 2016, Lei Ma.</span>|
-        <a href="https://github.com/emptymalei/physics">On GitHub</a>|
+        <span>© 2016, Lei Ma. </span>|
         <span>Created with
-            <a href="http://sphinx.pocoo.org/">Sphinx</a>1.2b2.</span>  <span><script data-gittip-username="emptymalei"
+            <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
+        </span>|
+        <span><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+        <a href="https://github.com/emptymalei/physics">On GitHub</a>
+        </span>|
+        <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <a href="http://docs.neutrino.xyz">Neutrino Notebook</a>
+        </span>
+        <span><script data-gittip-username="emptymalei"
         data-gittip-widget="button"
         src="//gttp.co/v1.js"></script></span>
     </p>

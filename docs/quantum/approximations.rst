@@ -1,5 +1,5 @@
 Quantum Approximation Methods
-===========================
+==================================
 
 
 Variational Method

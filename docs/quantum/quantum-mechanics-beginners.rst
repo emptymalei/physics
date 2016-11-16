@@ -401,8 +401,7 @@ Physics
 Some General Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. 1D bound states have no degeneracy.
-   Prove it by assume that there is a degeneracy state.
+1. 1D bound states have no degeneracy. Prove it by assume that there is a degeneracy state.
 2. 1D bound states' wave function can be chosen to be real. (if potential V is real.)
 
 
