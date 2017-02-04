@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Quantum Mechanics Beginners &mdash; Physics Notes</title>
+    <title>Quantum Mechanics Beginners &#8212; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -20,7 +20,8 @@
         VERSION:     '3.141',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -31,8 +32,8 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="up" title="Quantum Mechanics" href="index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Quantum Mechanics Intermediates" href="quantum-mechanics-intermediates.html" />
     <link rel="prev" title="Tensors and Groups in Quantum" href="preliminary/tensors.html" />
     <script type="text/javascript">
@@ -261,7 +262,7 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Quantum Mechanics</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="preliminary/index.html">Preliminary</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Quantum Mechanics Beginners</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Quantum Mechanics Beginners</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quantum-mechanics-intermediates.html">Quantum Mechanics Intermediates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quantum-mechanics-advanced.html">Quantum Mechanics Advanced</a></li>
 </ul>
@@ -277,6 +278,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/hyperbolic-geometry.html">Hyperbolic Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/space-time-diagram.html">Spacetime Diagram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
@@ -498,10 +500,10 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 <h3>Position and Momentum Space<a class="headerlink" href="#position-and-momentum-space" title="Permalink to this headline">¶</a></h3>
 <div class="note admonition">
 <p class="first admonition-title">Summary</p>
-<ul class="last">
+<ul class="last simple">
 <li><dl class="first docutils">
 <dt>Position</dt>
-<dd><ol class="first last arabic simple">
+<dd><ol class="first last arabic">
 <li>Define {<span class="math">\(\ket{x}\)</span>} basis.</li>
 <li>Define <span class="math">\(\hat x\)</span> operator.</li>
 <li>Find wave function in this basis.</li>
@@ -512,7 +514,7 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 </li>
 <li><dl class="first docutils">
 <dt>Evolution</dt>
-<dd><ol class="first last arabic simple">
+<dd><ol class="first last arabic">
 <li>Need propagator <span class="math">\(\hat U\)</span>.</li>
 <li>Propagator needs the solution of Hamiltonian eigensystem.</li>
 <li>(Free particles) Hamiltonian needs the solution of momentum eigensystem.</li>
@@ -522,7 +524,7 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 </li>
 <li><dl class="first docutils">
 <dt>Momentum</dt>
-<dd><ol class="first last arabic simple">
+<dd><ol class="first last arabic">
 <li>Before we define some arbitrary momentum space, we should check the relation between momentum and position. And it turns out to be related by a commutator.(Postulate IV)</li>
 <li>Use the postulate to momentum operator.</li>
 <li>Find eigenstates.</li>
@@ -702,7 +704,7 @@ The hamiltonian for a free particle is</p>
 </li>
 <li><p class="first">Boundary conditions</p>
 <div class="math">
-\[\psi _ I(0,t) = \psi _ {II}(0,t)\]\[\psi _ {II}(L, t) = \psi _ {III}(L, t)\]</div>
+\[ \begin{align}\begin{aligned}\psi _ I(0,t) = \psi _ {II}(0,t)\\\psi _ {II}(L, t) = \psi _ {III}(L, t)\end{aligned}\end{align} \]</div>
 </li>
 <li><p class="first">Guess the Solutions</p>
 <div class="math">
@@ -874,7 +876,7 @@ a. Apply to position operator,</p>
 <h3>Ehrenfest&#8217;s Theorem<a class="headerlink" href="#ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h3>
 <p>Schrödinger equation and its adjoint</p>
 <div class="math">
-\[i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}\]\[-i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H\]</div>
+\[ \begin{align}\begin{aligned}i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}\\-i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H\end{aligned}\end{align} \]</div>
 <p>For any observable <span class="math">\(\hat \Omega\)</span>,</p>
 <div class="math">
 \[\begin{split}\frac{\d }{\d t}\left&lt;\hat \Omega \right &gt; &amp; =  \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\
@@ -998,7 +1000,7 @@ a. Apply to position operator,</p>
 <p>1. Energy
 Hamiltonian always commutes with itself.</p>
 <div class="math">
-\[\begin{split}\frac{\d}{\d t} \left&lt;\epsilon \right&gt; = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}\end{split}\]</div>
+\[\frac{\d}{\d t} \left&lt;\epsilon \right&gt; = \bra{\psi} \left( \frac{\partial }{\partial t} \hat H \right) \ket{\psi}\]</div>
 <p>If Hamiltonian is time independent, then energy is conserved. (If Hamiltonian is tide dependent, energy is not conserved. This is kind of obvious in classical mechanics.)</p>
 <div class="section" id="what-is-the-nature-of-time-dependence">
 <h4>What is the nature of time dependence<a class="headerlink" href="#what-is-the-nature-of-time-dependence" title="Permalink to this headline">¶</a></h4>
@@ -1011,13 +1013,13 @@ Hamiltonian always commutes with itself.</p>
 \[\ket{\psi(t)} = \sum _ n C _ n e^{-i\epsilon _ n t/\hbar} \ket{\epsilon _ n} .\]</div>
 <p>We can calculate the expectation value of some operator <span class="math">\(\hat \Omega\)</span>,</p>
 <div class="math">
-\[\begin{split}\left&lt; \omega (t) \right&gt; =  \sum _ {n,m} \left( C _ n^ * e^{i\epsilon _ n t/\hbar } \bra{\epsilon _ n} \right)  \hat \Omega \left( C _ m e^{-i \epsilon _ m t/\hbar} \ket{\epsilon _ m} \right) = \sum _ {n,m} C _ n ^* C _ m e^{-i(\epsilon _ m - \epsilon _ n) t/\hbar} \bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m}\end{split}\]</div>
+\[\left&lt; \omega (t) \right&gt; =  \sum _ {n,m} \left( C _ n^ * e^{i\epsilon _ n t/\hbar } \bra{\epsilon _ n} \right)  \hat \Omega \left( C _ m e^{-i \epsilon _ m t/\hbar} \ket{\epsilon _ m} \right) = \sum _ {n,m} C _ n ^* C _ m e^{-i(\epsilon _ m - \epsilon _ n) t/\hbar} \bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m}\]</div>
 <p>If <span class="math">\(\ket{\epsilon _ n}\)</span> are also the eigenvectors of <span class="math">\(\hat \Omega\)</span>, then</p>
 <div class="math">
 \[\bra{\epsilon _ n} \hat \Omega \ket{\epsilon _ m} = \omega _ m \delta _ {n,m}\]</div>
 <p>And the expectation value</p>
 <div class="math">
-\[\begin{split}\left&lt;  \omega (t) \right&gt; = \sum _ {n} C _ n^* C _ n \omega _ n\end{split}\]</div>
+\[\left&lt;  \omega (t) \right&gt; = \sum _ {n} C _ n^* C _ n \omega _ n\]</div>
 <p><strong>The important thing is that the time dependence of this expectation value actually arise from this term</strong></p>
 <div class="math">
 \[e^{-i(\epsilon _ m - \epsilon _ n)t/\hbar} .\]</div>

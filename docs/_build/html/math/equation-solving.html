@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Equation Solving &mdash; Physics Notes</title>
+    <title>Equation Solving &#8212; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -20,7 +20,8 @@
         VERSION:     '3.141',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -31,8 +32,8 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="up" title="Mathematics" href="index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Complex Analysis" href="complex.html" />
     <link rel="prev" title="Special Functions" href="special-functions.html" />
     <script type="text/javascript">
@@ -241,7 +242,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Mathematics</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="basics.html">Kindergarten</a></li>
 <li class="toctree-l2"><a class="reference internal" href="special-functions.html">Special Functions</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Equation Solving</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Equation Solving</a></li>
 <li class="toctree-l2"><a class="reference internal" href="complex.html">Complex Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="complex.html#refs-notes">Refs &amp; Notes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="calculus.html">Calculus</a></li>
@@ -277,6 +278,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/hyperbolic-geometry.html">Hyperbolic Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/space-time-diagram.html">Spacetime Diagram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/special-relativity.html">Special Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity.html">General Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../relativity/general-relativity-adv.html">General Relativity Revisited</a></li>
@@ -337,7 +339,7 @@
               
                 
   <li>
-    <a href="special-functions.html" title="Previous Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Funct...</span>
+    <a href="special-functions.html" title="Previous Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Functions</span>
     </a>
   </li>
   <li>
@@ -392,18 +394,20 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```</p>
 <p>The idea of Green/s function is very simple. To solve a general solution of equation</p>
 <div class="math" id="equation-eqn-green-function-example">
-<span class="eqno">(1)</span>\[\frac{d^2}{d x^2} y(x) + y(x) = f(x),\]</div>
+<span class="eqno">(1)<a class="headerlink" href="#equation-eqn-green-function-example" title="Permalink to this equation">¶</a></span>\[\frac{d^2}{d x^2} y(x) + y(x) = f(x),\]</div>
 <p>where <span class="math">\(f(x)\)</span> is the source and some given boundary conditions. To save ink we define</p>
+<div class="math">
+\[\hat L_x = \frac{d^2}{dx^2} + 1,\]</div>
 <p>which takes a function <span class="math">\(y(x)\)</span> to <span class="math">\(f(x)\)</span>, i.e.,</p>
 <div class="math" id="equation-eqn-green-function-example-1">
-<span class="eqno">(2)</span>\[\hat L_x y(x) = f(x).\]</div>
-<p>Now we define the Green&#8217;s function to be the solution of equation <a href="#equation-eqn-green-function-example-1">(2)</a> but replacing the source with delta function <span class="math">\(\delta(x-z)\)</span></p>
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqn-green-function-example-1" title="Permalink to this equation">¶</a></span>\[\hat L_x y(x) = f(x).\]</div>
+<p>Now we define the Green&#8217;s function to be the solution of equation <a class="reference internal" href="#equation-eqn-green-function-example-1">(2)</a> but replacing the source with delta function <span class="math">\(\delta (x-z)\)</span></p>
 <div class="math">
 \[\hat L_x G(x,z) = \delta(z-x).\]</div>
-<p>Why do we define this function? The solution to equation <a href="#equation-eqn-green-function-example">(1)</a> is given by</p>
+<p>Why do we define this function? The solution to equation <a class="reference internal" href="#equation-eqn-green-function-example">(1)</a> is given by</p>
 <div class="math">
 \[y(x) = \int G(x,z) f(z) dz.\]</div>
-<p>To verify this conclusion we plug it into the LHS of equation <a href="#equation-eqn-green-function-example">(1)</a></p>
+<p>To verify this conclusion we plug it into the LHS of equation <a class="reference internal" href="#equation-eqn-green-function-example">(1)</a></p>
 <div class="math">
 \[\begin{split}&amp; \left(\frac{d^2}{dx^2} +1 \right) \int G(x,z) f(z) dz \\
 =&amp; \int \left[ \left(\frac{d^2}{dx^2} +1 \right) G(x,z) \right] f(z) dz \\
@@ -424,11 +428,11 @@
 </li>
 <li><p class="first">Continuity at <span class="math">\(n-2\)</span> order of derivatives at point <span class="math">\(x=z\)</span>, that is</p>
 <div class="math">
-\[\begin{split}G^{(n-2)}(x,z) \vert_{x&lt;z} = G^{(n-2)} \vert _{x&gt;z} ,\qquad \text{at } x= z.\end{split}\]</div>
+\[G^{(n-2)}(x,z) \vert_{x&lt;z} = G^{(n-2)} \vert _{x&gt;z} ,\qquad \text{at } x= z.\]</div>
 </li>
 <li><p class="first">Discontinuity of the first order derivative at <span class="math">\(x=z\)</span>, i.e.,</p>
 <div class="math">
-\[\begin{split}G^{(n-1)}(x,z)\vert_{x&gt;z} - G^{(n-1)}(x,z)\vert_{x&lt;z} = 1, \qquad \text{at } x= z.\end{split}\]</div>
+\[G^{(n-1)}(x,z)\vert_{x&gt;z} - G^{(n-1)}(x,z)\vert_{x&lt;z} = 1, \qquad \text{at } x= z.\]</div>
 <p>This condition comes from the fact that the integral of Dirac delta distribution is Heaviside step function.</p>
 </li>
 <li><p class="first">Solve the coefficients to get the GF.</p>
@@ -458,11 +462,11 @@
 <ul>
 <li><p class="first">The general solution to</p>
 <div class="math">
-\[\hat L_x G(x,z) = 0\]\[is given by\]\[\begin{split}.. math::
+\[ \begin{align}\begin{aligned}\hat L_x G(x,z) = 0\\is given by\\\begin{split}.. math::
    G(x,z) = \begin{cases}
    A_1\cos (x/2) + B_1 \sin(x/2), &amp; \qquad x \leq z, \\
    A_2\cos (x/2) + B_2 \sin(x/2), &amp; \qquad x \geq z.
-   \end{cases}\end{split}\]</div>
+   \end{cases}\end{split}\end{aligned}\end{align} \]</div>
 </li>
 <li><p class="first">Continuity at <span class="math">\(x=z\)</span> for the 0th order derivatives,</p>
 <div class="math">
@@ -476,13 +480,13 @@
 \[\left.\frac{d}{dx} G(x,z)  \right\vert_{x=z_+} - \left.\frac{d}{dx} G(x,z)  \right\vert_{x=z_-} = 1,\]</div>
 <p>which is</p>
 <div class="math" id="equation-eqn-green-function-example2-discontinuity">
-<span class="eqno">(3)</span>\[-\frac{A_2}{2}\sin\frac{z}{2} + \frac{B_2}{2} \cos\frac{z}{2} - \left( -\frac{A_1}{2}\sin\frac{z}{2} + \frac{B_1}{2}\cos\frac{z}{2} \right) = 1\]</div>
+<span class="eqno">(3)<a class="headerlink" href="#equation-eqn-green-function-example2-discontinuity" title="Permalink to this equation">¶</a></span>\[-\frac{A_2}{2}\sin\frac{z}{2} + \frac{B_2}{2} \cos\frac{z}{2} - \left( -\frac{A_1}{2}\sin\frac{z}{2} + \frac{B_1}{2}\cos\frac{z}{2} \right) = 1\]</div>
 <p>Now we combine (ref{eqn-green-function-example2-continuity}) and (ref{eqn-green-function-example2-discontinuity}) to eliminate two degrees of freedom. For example, we can solve out <span class="math">\(A_1\)</span> and <span class="math">\(B_1\)</span> as a function of all other coefficients. Here we have</p>
 <div class="math">
 \[\begin{split}B_1 &amp;= \frac{ - 2/\sin(z/2) }{\tan(z/2) + \cot(z/2)} + B_2 , \\
 A_1 &amp;= A_2 + B_2(\tan(z/2)-1) + \frac{2}{\sin(z/2) + \cot(z/2)\cos(z/2)}.\end{split}\]</div>
 </li>
-<li><p class="first">Write down the form solution using <span class="math">\(y(x) = \int G(x,z) f(z) dz. Then we still have two unknown free coefficients :math:`A_2\)</span> and <span class="math">\(B_2\)</span>, which in fact is to be determined by the BC equation <a href="#equation-eqn-green-function-example2-bc">(?)</a>.</p>
+<li><p class="first">Write down the form solution using <span class="math">\(y(x) = \int G(x,z) f(z) dz. Then we still have two unknown free coefficients :math:`A_2\)</span> and <span class="math">\(B_2\)</span>, which in fact is to be determined by the BC equation <code class="xref eq docutils literal"><span class="pre">eqn-green-function-example2-bc</span></code>.</p>
 </li>
 </ul>
 </div>
@@ -629,7 +633,7 @@ b^2 c^2 &amp; = \alpha^2.\end{split}\]</div>
 &amp;=(\hat I + \hat M)^{-1} f(x) .\end{split}\]</div>
 <p>However, it&#8217;s not a solution until we find the inverse. A most general approach is the Neumann series method. We require that</p>
 <div class="math">
-\[\begin{split}\| \hat M u \| &lt; \gamma \| u \|,\end{split}\]</div>
+\[\| \hat M u \| &lt; \gamma \| u \|,\]</div>
 <p>where <span class="math">\(\gamma\in (0,1)\)</span> and should be independent of <span class="math">\(x\)</span>.</p>
 <p>As long as this is satisfied, the equation can be solved using Neumann series, which is an iteration method with</p>
 <div class="math">

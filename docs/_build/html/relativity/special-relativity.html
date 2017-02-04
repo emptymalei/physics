@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Special Relativity &mdash; Physics Notes</title>
+    <title>Special Relativity &#8212; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -20,7 +20,8 @@
         VERSION:     '3.141',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -31,10 +32,10 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Physics Notes" href="../index.html" />
-    <link rel="up" title="Relativity" href="index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="General Relativity" href="general-relativity.html" />
-    <link rel="prev" title="Hyperbolic Geometry" href="hyperbolic-geometry.html" />
+    <link rel="prev" title="Spacetime Diagram" href="space-time-diagram.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -277,7 +278,8 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Relativity</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="hyperbolic-geometry.html">Hyperbolic Geometry</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="space-time-diagram.html">Spacetime Diagram</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Special Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="general-relativity.html">General Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="general-relativity-adv.html">General Relativity Revisited</a></li>
 </ul>
@@ -307,8 +309,11 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Special Relativity</a><ul>
-<li><a class="reference internal" href="#conventions">Conventions</a></li>
+<li><a class="reference internal" href="#the-postulates-spacetime-diagram-and-metric">The Postulates, Spacetime Diagram, and Metric</a></li>
+<li><a class="reference internal" href="#metric-conventions">Metric Conventions</a></li>
 <li><a class="reference internal" href="#hyperbolic-geometric-description">Hyperbolic Geometric Description</a></li>
+<li><a class="reference internal" href="#time-dilation">Time Dilation</a></li>
+<li><a class="reference internal" href="#length-contraction">Length Contraction</a></li>
 <li><a class="reference internal" href="#doppler-shift">Doppler Shift</a></li>
 <li><a class="reference internal" href="#relativistic-aberration-of-light">Relativistic Aberration of Light</a></li>
 <li><a class="reference internal" href="#footnotes">Footnotes</a></li>
@@ -323,11 +328,11 @@
               
                 
   <li>
-    <a href="hyperbolic-geometry.html" title="Previous Chapter: Hyperbolic Geometry"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Hyperbolic Ge...</span>
+    <a href="space-time-diagram.html" title="Previous Chapter: Spacetime Diagram"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Spacetime Diagram</span>
     </a>
   </li>
   <li>
-    <a href="general-relativity.html" title="Next Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relat... &raquo;</span>
+    <a href="general-relativity.html" title="Next Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relativity &raquo;</span>
     </a>
   </li>
               
@@ -357,6 +362,10 @@
       
   <div class="section" id="special-relativity">
 <h1>Special Relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">¶</a></h1>
+<div class="toggle admonition">
+<p class="first admonition-title">Notations</p>
+<p class="last">We use abstract index notation for most cases. A tensor with latin indices is an abstract tensor which tells us the rank of it but has no intention to indicate the components or basis.</p>
+</div>
 <p>We talk about transformations all the time in physics. For space and time, we also have the transformations from one reference frame to another, which plays the key role of our theories. Newtonian mechanics transform each space and time coordinates independently in translations. This idea was simply a extrapolation of our daily life experience that translations only change space coordinates accordingly, i.e.,</p>
 <div class="math">
 \[\begin{split}\begin{pmatrix}
@@ -369,8 +378,8 @@ x'
 t\\
 x
 \end{pmatrix}\end{split}\]</div>
-<p>for the two reference systems described in <a class="reference internal" href="#galilean-transformation"><span>Fig. 18</span></a>. This transformation matrix is neither symmetric nor Hermitian. It is ugly and unexpected. Why is time special and is not related to other coordinates?</p>
-<div class="figure align-center" id="id5">
+<p>for the two reference systems described in <a class="reference internal" href="#galilean-transformation"><span class="std std-numref">Fig. 18</span></a>. This transformation matrix is neither symmetric nor Hermitian. It is ugly and unexpected. Why is time special and is not related to other coordinates?</p>
+<div class="figure align-center" id="id7">
 <span id="galilean-transformation"></span><img alt="../_images/Standard_conf.png" src="../_images/Standard_conf.png" />
 <p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Galilean transformation. Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Standard_conf.png">Wikipedia</a></span></p>
 </div>
@@ -393,16 +402,36 @@ y\\
 z
 \end{pmatrix}.\end{split}\]</div>
 <p>How to determine this transformation matrix <span class="math">\(\mathbf L\)</span>? Geometrically, we should conserve length since it&#8217;s a scalar, which is</p>
-<div class="math">
-\[\eta^a_b x^a x^b,\]</div>
+<div class="math" id="equation-eq-sr-calculate-interval">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-sr-calculate-interval" title="Permalink to this equation">¶</a></span>\[\eta^a_b x^a x^b,\]</div>
 <p>where <span class="math">\(\eta_{ab}\)</span> is the metric. More specifically,</p>
 <div class="math">
 \[\eta^a_b (L^a_cx^c )(L^b_d x^d ) = \eta^a_b x^a x^b.\]</div>
+<p>In order to derive special relativity, we have to deterimin this metric <span class="math">\(\eta_{ab}\)</span>.</p>
 <p>Physically or historically, we should preserve Maxwell&#8217;s equation, since it has been proved to be true in different reference frames.</p>
 <p>What people found is that the geometry is hyperbolic geometry, hence the metric is Minkowskian.</p>
-<div class="section" id="conventions">
-<h2>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
-<p>We choose the signature <span class="math">\(+2\)</span> metric in special relativity</p>
+<div class="section" id="the-postulates-spacetime-diagram-and-metric">
+<h2>The Postulates, Spacetime Diagram, and Metric<a class="headerlink" href="#the-postulates-spacetime-diagram-and-metric" title="Permalink to this headline">¶</a></h2>
+<p>Special relativity was developed out of two postulates <a class="reference internal" href="#schutz2009" id="id1">[Schutz2009]</a></p>
+<ol class="arabic simple">
+<li>Princple of relativity (Galileo),</li>
+<li>Universality of speed of light (Einstein).</li>
+</ol>
+<p>Using these two postulates, where the first key definition is interval of events squared</p>
+<div class="math">
+\[\Delta s^2,\]</div>
+<p>we can derive basically all the relations we need. Some other intuitions will also be applied to the derivations.</p>
+<p>Using a spacetime diagram, we can prove that this is invariant under transformation of frames <a class="reference internal" href="#schutz2009" id="id2">[Schutz2009]</a>.</p>
+<div class="note admonition">
+<p class="first admonition-title">Hyperbolic Space</p>
+<p class="last">If anyone realizes that spacetime is in fact hyperbolic space by looking at the expression of intervals <span class="math">\(\Delta s^2\)</span>, the transformation is determined.</p>
+</div>
+<p>As we know the invariant quantity of the physical laws, the transformation of vectors can be found out of it, which is basically a rotation in hyperbolic space.</p>
+</div>
+<div class="section" id="metric-conventions">
+<h2>Metric Conventions<a class="headerlink" href="#metric-conventions" title="Permalink to this headline">¶</a></h2>
+<p>The metric in Eq. <a class="reference internal" href="#equation-eq-sr-calculate-interval">(1)</a> is &#8216;derived&#8217; from the interval.</p>
+<p>To write it down, there are different convention. We choose the signature <span class="math">\(+2\)</span> metric in special relativity</p>
 <div class="math">
 \[\begin{split}\eta_{\mu\nu}=\begin{pmatrix}
      -1 &amp; 0 &amp; 0 &amp; 0\\
@@ -413,7 +442,7 @@ z
 <p>In most cases, we use natural unit <span class="math">\(c=1\)</span>.</p>
 <div class="toggle admonition">
 <p class="first admonition-title">d&#8217;Alembert operator</p>
-<p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id3" id="id1">[1]</a></p>
+<p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id5" id="id3">[1]</a></p>
 <div class="math">
 \[\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu\]</div>
 <p>In the usual {t,x,y,z} natural orthonormal basis,</p>
@@ -422,7 +451,7 @@ z
 &amp; = -\partial_t^2+\Delta^2 \\
 &amp; = -\partial_t^2+\nabla\end{split}\]</div>
 <dl class="last docutils">
-<dt>On wiki <a class="footnote-reference" href="#id4" id="id2">[2]</a> , they give some applications to it.</dt>
+<dt>On wiki <a class="footnote-reference" href="#id6" id="id4">[2]</a> , they give some applications to it.</dt>
 <dd><ul class="first last simple">
 <li>klein-Gordon equation
 <span class="math">\((\Box+m^2)\phi=0\)</span></li>
@@ -440,13 +469,13 @@ For the electromagnetic four-potential <span class="math">\(\Box A^\mu=0\)</span
 <div class="note admonition">
 <p class="first admonition-title">A Coincidence?</p>
 <p>Let&#8217;s start from this coincidence.</p>
-<div class="figure align-center" id="id6">
+<div class="figure align-center" id="id8">
 <span id="special-relativity-velocity-addition"></span><img alt="../_images/specialRelativityVelocityAddition.png" src="../_images/specialRelativityVelocityAddition.png" />
 <p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Addition of velocities</span></p>
 </div>
 <p>Recall that in special relativity, velocity addition is</p>
 <div class="math" id="equation-eqn-velocity-transformation-1d">
-<span class="eqno">(1)</span>\[v_S = \frac{u+v_O}{1+ \beta v/c},\]</div>
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqn-velocity-transformation-1d" title="Permalink to this equation">¶</a></span>\[v_S = \frac{u+v_O}{1+ \beta v/c},\]</div>
 <p>where <span class="math">\(v_S\)</span> is the velocity measured in moving frame S, <span class="math">\(v_O\)</span> is the velocity measured in frame O. This <span class="math">\(\beta\)</span> is the factor <span class="math">\(u/c\)</span> where u is the velocity of the moving frame measure in frame O.</p>
 <p>At the same time, we have the following hyper trig relation.</p>
 <div class="math">
@@ -454,7 +483,7 @@ For the electromagnetic four-potential <span class="math">\(\Box A^\mu=0\)</span
 <p class="last">Isn&#8217;t this addition of angles the same as the velocity addition?</p>
 </div>
 <p>The algebra of relativity is mostly based on invariance of a new distance under a new rotation. Here we are not going to repeat the derivation of these transformations from the beginning, instead we would like to have a look at the really amazing part of this mathematical theory.</p>
-<p>As shown in <a class="reference internal" href="#special-relativity-velocity-addition"><span>Fig. 19</span></a>, we define quantities in two different frames, the frame O and frame S. The velocity of frame S measured in frame O is <span class="math">\(u\)</span>. Out of this velocity we define a quantity</p>
+<p>As shown in <a class="reference internal" href="#special-relativity-velocity-addition"><span class="std std-numref">Fig. 19</span></a>, we define quantities in two different frames, the frame O and frame S. The velocity of frame S measured in frame O is <span class="math">\(u\)</span>. Out of this velocity we define a quantity</p>
 <div class="math">
 \[\tanh \alpha_u = \frac{u}{c},\]</div>
 <p>In fact, any velocity divided by speed of light should be a hyperbolic tangent,</p>
@@ -463,7 +492,7 @@ For the electromagnetic four-potential <span class="math">\(\Box A^\mu=0\)</span
 <p>With this definition of hyperbolic tangent, we notice that</p>
 <div class="math">
 \[\gamma = \frac{1}{\sqrt{1 - u^2/c^2}} = \cosh\alpha_u.\]</div>
-<p>Suppose we have an object moving with velocity <span class="math">\(v_S\)</span> in frame S. The velocity measured in frame O is the addition of the velocity of frame S itself and the velocity <span class="math">\(v_S\)</span>, except the addition rule is not the usual plus but the rule stated in Eq. (<a href="#equation-eqn-velocity-transformation-1d">(1)</a>). We apply the definitions of the hyperbolic trig function,</p>
+<p>Suppose we have an object moving with velocity <span class="math">\(v_S\)</span> in frame S. The velocity measured in frame O is the addition of the velocity of frame S itself and the velocity <span class="math">\(v_S\)</span>, except the addition rule is not the usual plus but the rule stated in Eq. (<a class="reference internal" href="#equation-eqn-velocity-transformation-1d">(2)</a>). We apply the definitions of the hyperbolic trig function,</p>
 <div class="math">
 \[\frac{v_{S}}{c} = \tanh(\alpha_u + \alpha_{v_O}) = \frac{\tanh \alpha_{u} + \tanh \alpha_{v_0}}{1 + \tanh \alpha_{U} \tanh \alpha_{v_O}} = \frac{u/c + v_O/c}{1+ \frac{u}{c} \frac{v_{O}}{c}}.\]</div>
 <p>We could imagine the algebra of velocities would be simply summations if we define &#8216;velocity&#8217; as <span class="math">\(\arctan \frac{v_x}{c}\)</span>.</p>
@@ -534,10 +563,18 @@ y
 \end{pmatrix}.\end{split}\]</div>
 </div>
 <p>It is quite different from the rotations in Euclidean space.</p>
-<p>Since we are talking about geometry, space-time diagram will be extremely important. The length contraction, time dilation, and even doppler shift can be explained and calculated using the hyperbolic trig functions. Triangles on the space-time diagram are described in <a class="reference internal" href="hyperbolic-geometry.html#visualizations-of-hyperbolic-space"><span>Visualizations of Hyperbolic Space</span></a>.</p>
+<p>Since we are talking about geometry, space-time diagram will be extremely important. The length contraction, time dilation, and even doppler shift can be explained and calculated using the hyperbolic trig functions. Triangles on the space-time diagram are described in <a class="reference internal" href="hyperbolic-geometry.html#visualizations-of-hyperbolic-space"><span class="std std-ref">Visualizations of Hyperbolic Space</span></a>.</p>
+</div>
+<div class="section" id="time-dilation">
+<span id="index-0"></span><h2>Time Dilation<a class="headerlink" href="#time-dilation" title="Permalink to this headline">¶</a></h2>
+<p>Use a spacetime diagram.</p>
+</div>
+<div class="section" id="length-contraction">
+<h2>Length Contraction<a class="headerlink" href="#length-contraction" title="Permalink to this headline">¶</a></h2>
+<p>Use a spacetime diagram.</p>
 </div>
 <div class="section" id="doppler-shift">
-<span id="index-0"></span><h2>Doppler Shift<a class="headerlink" href="#doppler-shift" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>Doppler Shift<a class="headerlink" href="#doppler-shift" title="Permalink to this headline">¶</a></h2>
 <p>The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.</p>
 <img alt="../_images/dopplerRedshift.png" class="align-center" src="../_images/dopplerRedshift.png" />
 <p>The observer is fixed in O&#8217; frame and source is in O frame. Emitting angle in O frame is <span class="math">\(\theta\)</span>.</p>
@@ -546,7 +583,7 @@ y
 \[\frac{E'}{c} = \gamma \left(\frac{E}{c} - \beta p_x\right),\]</div>
 <p>where we also have</p>
 <div class="math">
-\[\begin{split}p_x &amp;= p\cos\theta,
+\[\begin{split}p_x &amp;= p\cos\theta,\\
 p = E/c.\end{split}\]</div>
 <p>Combining these equations, the energy of the photons in O&#8217; frame is</p>
 <div class="math">
@@ -571,7 +608,7 @@ p = E/c.\end{split}\]</div>
 </div>
 <p>Here we have three different kinds, the additional one is the transverse redshift due to the <span class="math">\(\gamma\)</span> factor or the contraction of time.</p>
 <p>An gif from wikipedia shows this explicitly,</p>
-<div class="figure align-center" id="id7">
+<div class="figure align-center" id="id9">
 <img alt="../_images/XYCoordinates.gif" src="../_images/XYCoordinates.gif" />
 <p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Image Source: <a class="reference external" href="https://en.wikipedia.org/wiki/File:XYCoordinates.gif">File:XYCoordinates.gif</a></span></p>
 </div>
@@ -581,34 +618,40 @@ p = E/c.\end{split}\]</div>
 </div>
 <div class="section" id="relativistic-aberration-of-light">
 <h2>Relativistic Aberration of Light<a class="headerlink" href="#relativistic-aberration-of-light" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id8">
+<div class="figure align-center" id="id10">
 <span id="relativistic-aberration"></span><img alt="../_images/relativistic-aberration.png" src="../_images/relativistic-aberration.png" />
 <p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">The relativistic aberration of light.</span></p>
 </div>
-<p>In astrophyics, object moving with a significant fraction of the speed of light <span class="math">\(v_S\)</span> with angle <span class="math">\(\theta\)</span> shown in <a class="reference internal" href="#relativistic-aberration"><span>Fig. 21</span></a>, is measure from the observer in a direction</p>
+<p>In astrophyics, object moving with a significant fraction of the speed of light <span class="math">\(v_S\)</span> with angle <span class="math">\(\theta\)</span> shown in <a class="reference internal" href="#relativistic-aberration"><span class="std std-numref">Fig. 21</span></a>, is measure from the observer in a direction</p>
 <div class="math">
 \[\cos \theta_O = \frac{\cos\theta_O - v_S}{1 - v_S \cos \theta_S}.\]</div>
 <p>If the object is moving towards us, we observe <span class="math">\(\theta_O=0\)</span>.</p>
 <p>Meanwhile the apparent transverse velocity is measured to be</p>
 <div class="math" id="equation-eqn-relativistic-apparent-velocity">
-<span class="eqno">(2)</span>\[v_{\perp,O} = \frac{v}{1-\beta \cos (\pi - \phi +\theta)},\]</div>
-<p>where <span class="math">\(\pi - \phi +\theta\)</span> is the angle between line of sight and the velocity, measured in the object&#8217;s frame. One of the astonishing fact about Eq. (<a href="#equation-eqn-relativistic-apparent-velocity">(2)</a>) is that</p>
+<span class="eqno">(3)<a class="headerlink" href="#equation-eqn-relativistic-apparent-velocity" title="Permalink to this equation">¶</a></span>\[v_{\perp,O} = \frac{v}{1-\beta \cos (\pi - \phi +\theta)},\]</div>
+<p>where <span class="math">\(\pi - \phi +\theta\)</span> is the angle between line of sight and the velocity, measured in the object&#8217;s frame. One of the astonishing fact about Eq. (<a class="reference internal" href="#equation-eqn-relativistic-apparent-velocity">(3)</a>) is that it&#8217;s maximun value can be larger than 1, which means we could observe superluminal objects.</p>
 </div>
 <div class="section" id="footnotes">
 <h2>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><em>The Geometry of Special Relativity</em> by Tevian Dray.</li>
 </ol>
-<table class="docutils footnote" frame="void" id="id3" rules="none">
+<table class="docutils footnote" frame="void" id="id5" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Actually, there are more general definations for Lapacian, which includes this d&#8217;Alembertian of course.</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>Actually, there are more general definations for Lapacian, which includes this d&#8217;Alembertian of course.</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
+<table class="docutils footnote" frame="void" id="id6" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>wiki:D&#8217;Alembert_operator</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>wiki:D&#8217;Alembert_operator</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="schutz2009" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[Schutz2009]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id2">2</a>)</em> <em>A First Course in General Relativity</em></td></tr>
 </tbody>
 </table>
 </div>
