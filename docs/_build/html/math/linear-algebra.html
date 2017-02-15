@@ -244,7 +244,6 @@
 <li class="toctree-l2"><a class="reference internal" href="special-functions.html">Special Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="equation-solving.html">Equation Solving</a></li>
 <li class="toctree-l2"><a class="reference internal" href="complex.html">Complex Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="complex.html#refs-notes">Refs &amp; Notes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="calculus.html">Calculus</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Linear Algebra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="differential-geometry.html">Differential Geometry</a></li>
@@ -311,6 +310,7 @@
 <li><a class="reference internal" href="#">Linear Algebra</a><ul>
 <li><a class="reference internal" href="#basic-concepts">Basic Concepts</a><ul>
 <li><a class="reference internal" href="#trace">Trace</a></li>
+<li><a class="reference internal" href="#determinant">Determinant</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#technique">Technique</a><ul>
@@ -384,6 +384,25 @@
 \[\begin{split}g^{ab}R_{ab}-\frac{1}{2}g^{ab}g_{ab}R &amp;= 8\pi G g^{ab}T_{ab} \\
 \Rightarrow R-\frac{1}{2} 4 R  &amp;=  8\pi G T \\
 \Rightarrow -R &amp;= 8\pi GT\end{split}\]</div>
+</div>
+<div class="section" id="determinant">
+<h3>Determinant<a class="headerlink" href="#determinant" title="Permalink to this headline">¶</a></h3>
+<p>Some useful properties of determinant.</p>
+<ol class="arabic simple">
+<li>Interchange rows (colomns) once will generate a negative sign.</li>
+<li>Determinant can be calculated recursively when implemented numerically.</li>
+<li>Determinant for block matrix can be expressed using the blocks.</li>
+</ol>
+<p>Here is an example of the determinant of block matrix. Suppose our block matrix is</p>
+<div class="math">
+\[\begin{split}A = \begin{pmatrix}
+B &amp; C \\
+D &amp; E
+\end{pmatrix},\end{split}\]</div>
+<p>where each block is a square matrix. We calculate the determinant through</p>
+<div class="math">
+\[\mathrm{Det}(A) = \mathrm{Det}(BE - CD).\]</div>
+<p>This is useful when we have a block diagonalized matrix.</p>
 </div>
 </div>
 <div class="section" id="technique">

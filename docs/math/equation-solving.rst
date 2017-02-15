@@ -2,6 +2,10 @@ Equation Solving
 *******************
 
 
+.. admonition:: More about Equation Solving
+   :class: warning
+
+   For more about equation solving please refer to another notebook of mine: `Intelligence <http://intelligence.readthedocs.io/index.html>`_.
 
 
 There are so many methods and techniques to solve an equation. Here we will review only some of them.
@@ -37,7 +41,7 @@ Green's Function
 
 
 Definition of Green's Function
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 The idea of Green/s function is very simple. To solve a general solution of equation
@@ -306,35 +310,35 @@ in which :math:`\mathscr {Z}_p` is the solution to Bessel equation, i.e., is one
 .. admonition:: A Pendulum With A Uniformly Chaning String Length
    :class: note
 
-    As an example, let's consider the case of length changing pendulum,
+   As an example, let's consider the case of length changing pendulum,
 
-    .. math::
-       \frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.
+   .. math::
+    \frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.
 
-    Notice that l is a function of time and
+   Notice that l is a function of time and
 
-    .. math::
-       l = l_0 + v t.
+   .. math::
+    l = l_0 + v t.
 
-    Then the equation can be rewritten as
+   Then the equation can be rewritten as
 
-    .. math::
-       \frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0.
+   .. math::
+    \frac{d^2}{dl^2}\theta  + \frac{2}{l} \frac{d}{dl} \theta + \frac{g/v^2}{l} \theta  = 0.
 
-    Comparing with the general form, we have one of the possible solutions
+   Comparing with the general form, we have one of the possible solutions
 
-    .. math::
-       a & = -1/2, \\
-       pc & = 1/2, \\
-       c & = 1/2, \\
-       p & = 1, \\
-       b & = 2\sqrt{g}/v.
+   .. math::
+    a & = -1/2, \\
+    pc & = 1/2, \\
+    c & = 1/2, \\
+    p & = 1, \\
+    b & = 2\sqrt{g}/v.
 
-    This solution should be
+   This solution should be
 
-    .. math::
-       \theta  &=  l^a \mathscr{Z}_p(b l^c) \\
-       & = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).
+   .. math::
+    \theta  &=  l^a \mathscr{Z}_p(b l^c) \\
+    & = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).
 
 
 
@@ -342,29 +346,29 @@ in which :math:`\mathscr {Z}_p` is the solution to Bessel equation, i.e., is one
    :class: note
 
 
-    Time-independent Schrödinger equation with a simple potential,
+   Time-independent Schrödinger equation with a simple potential,
 
-    .. math::
-       \ddot{\Psi} + \alpha x \Psi  = 0.
+   .. math::
+    \ddot{\Psi} + \alpha x \Psi  = 0.
 
-    Comparing it with general form, we should set
+   Comparing it with general form, we should set
 
-    .. math::
-       a & = 1/2, \\
-       \lvert p c \rvert & = 1/2, \\
-       c & = 3/2, \\
-       b^2 c^2 & = \alpha^2.
+   .. math::
+    a & = 1/2, \\
+    \lvert p c \rvert & = 1/2, \\
+    c & = 3/2, \\
+    b^2 c^2 & = \alpha^2.
 
-    So the two possible solutions are
+   So the two possible solutions are
 
-    .. math::
-       \Psi_1(x) & = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
-       \Psi_2(x) & = \sqrt{x} \mathscr{Z}_{-1/3}(2/3 \alpha x^{3/2}).
+   .. math::
+    \Psi_1(x) & = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
+    \Psi_2(x) & = \sqrt{x} \mathscr{Z}_{-1/3}(2/3 \alpha x^{3/2}).
 
-    The general solution is
+   The general solution is
 
-    .. math::
-       \Psi(x) = a \Psi_1(x) + b \Psi_2(x).
+   .. math::
+    \Psi(x) = a \Psi_1(x) + b \Psi_2(x).
 
 
 
@@ -383,12 +387,12 @@ which has a solution of the hypergeometric function form
 .. math::
    u(z) = {}_2 F_{1}(a,b;c;z).
 
-The interesting this about this equation is that its Paperitz symbol is
+The interesting part about this equation is that its Papperitz symbol is
 
 .. math::
-   \begin{amatrix}{3}
-  0 & 1 & \infty &  \\  0 & 0 & a & z \\ 1-c & c-a-b & b &
-   \end{amatrix} ,
+   \begin{Bmatrix}
+   0 & 1 & \infty &  \\  0 & 0 & a & z \\ 1-c & c-a-b & b &
+   \end{Bmatrix} ,
 
 in which the first three columns are the singularities at points :math:`0,1,\infty` while the last column just points out that the argument of this equation is :math:`z`.
 

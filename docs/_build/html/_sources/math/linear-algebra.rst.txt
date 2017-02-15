@@ -30,6 +30,32 @@ The trace is
    \Rightarrow -R &= 8\pi GT
 
 
+Determinant
+~~~~~~~~~~~~~~~~
+
+Some useful properties of determinant.
+
+1. Interchange rows (colomns) once will generate a negative sign.
+2. Determinant can be calculated recursively when implemented numerically.
+3. Determinant for block matrix can be expressed using the blocks.
+
+Here is an example of the determinant of block matrix. Suppose our block matrix is
+
+.. math::
+   A = \begin{pmatrix}
+   B & C \\
+   D & E
+   \end{pmatrix},
+
+where each block is a square matrix. We calculate the determinant through
+
+.. math::
+   \mathrm{Det}(A) = \mathrm{Det}(BE - CD).
+
+This is useful when we have a block diagonalized matrix.
+
+
+
 
 Technique
 ------------
@@ -60,7 +86,7 @@ One can prove that the eigenvalues of any matrix :math:`B` that can be written a
 	.. math::
 		B V_i = \lambda_i V_i.
 
-	We now construct a number 
+	We now construct a number
 
 	.. math::
 		V_i^\dagger B V_i.
@@ -72,7 +98,7 @@ One can prove that the eigenvalues of any matrix :math:`B` that can be written a
 
 	where :math:`V_i^\dagger V_i \geq 0`.
 
-	On the other hand, 
+	On the other hand,
 
 	.. math::
 		V_i^\dagger B V_i = V_i^\dagger A\dagger A V_i = (A V_i)^\dagger A V_i \geq 0.
@@ -81,7 +107,7 @@ One can prove that the eigenvalues of any matrix :math:`B` that can be written a
 
 	.. math::
 		\lambda_i = (A V_i)^\dagger A V_i  / V_i^\dagger V_i \geq 0.
-	
+
 
 
 

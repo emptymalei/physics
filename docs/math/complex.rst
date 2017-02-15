@@ -73,6 +73,6 @@ Branch points are points when we go around it in circles the values of our funct
 
 
 Refs & Notes
-============
+--------------
 
 ..  [1] `A handout note by Finly <http://physics.unm.edu/Courses/Finley/p466F2014/Homework/hw1.pdf>`_

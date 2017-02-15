@@ -244,7 +244,6 @@
 <li class="toctree-l2"><a class="reference internal" href="special-functions.html">Special Functions</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Equation Solving</a></li>
 <li class="toctree-l2"><a class="reference internal" href="complex.html">Complex Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="complex.html#refs-notes">Refs &amp; Notes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="calculus.html">Calculus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="linear-algebra.html">Linear Algebra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="differential-geometry.html">Differential Geometry</a></li>
@@ -311,6 +310,7 @@
 <li><a class="reference internal" href="#">Equation Solving</a><ul>
 <li><a class="reference internal" href="#ordinary-differential-equations">Ordinary Differential Equations</a><ul>
 <li><a class="reference internal" href="#green-s-function">Green&#8217;s Function</a><ul>
+<li><a class="reference internal" href="#definition-of-green-s-function">Definition of Green&#8217;s Function</a></li>
 <li><a class="reference internal" href="#how-to-find-green-s-function">How to Find Green&#8217;s Function</a></li>
 </ul>
 </li>
@@ -373,6 +373,10 @@
       
   <div class="section" id="equation-solving">
 <h1>Equation Solving<a class="headerlink" href="#equation-solving" title="Permalink to this headline">¶</a></h1>
+<div class="warning admonition">
+<p class="first admonition-title">More about Equation Solving</p>
+<p class="last">For more about equation solving please refer to another notebook of mine: <a class="reference external" href="http://intelligence.readthedocs.io/index.html">Intelligence</a>.</p>
+</div>
 <p>There are so many methods and techniques to solve an equation. Here we will review only some of them.</p>
 <div class="section" id="ordinary-differential-equations">
 <h2>Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this headline">¶</a></h2>
@@ -390,8 +394,8 @@
 </ol>
 <div class="section" id="green-s-function">
 <h3>Green&#8217;s Function<a class="headerlink" href="#green-s-function" title="Permalink to this headline">¶</a></h3>
-<p>Definition of Green&#8217;s Function
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```</p>
+<div class="section" id="definition-of-green-s-function">
+<h4>Definition of Green&#8217;s Function<a class="headerlink" href="#definition-of-green-s-function" title="Permalink to this headline">¶</a></h4>
 <p>The idea of Green/s function is very simple. To solve a general solution of equation</p>
 <div class="math" id="equation-eqn-green-function-example">
 <span class="eqno">(1)<a class="headerlink" href="#equation-eqn-green-function-example" title="Permalink to this equation">¶</a></span>\[\frac{d^2}{d x^2} y(x) + y(x) = f(x),\]</div>
@@ -443,6 +447,7 @@
 <p>If we haven&#8217;t done step 2 we know would have some unkown coefficients which can be determined by the BC.</p>
 </li>
 </ol>
+</div>
 <div class="section" id="how-to-find-green-s-function">
 <h4>How to Find Green&#8217;s Function<a class="headerlink" href="#how-to-find-green-s-function" title="Permalink to this headline">¶</a></h4>
 <p>So we are bound to find Green&#8217;s function. Solving a nonhonogeneous equation with delta as source is as easy as solving homogeneous equations.</p>
@@ -549,8 +554,7 @@ A_1 &amp;= A_2 + B_2(\tan(z/2)-1) + \frac{2}{\sin(z/2) + \cot(z/2)\cos(z/2)}.\en
 <p>in which <span class="math">\(\mathscr {Z}_p\)</span> is the solution to Bessel equation, i.e., is one kind of Bessel function with index <span class="math">\(p\)</span>.</p>
 <div class="note admonition">
 <p class="first admonition-title">A Pendulum With A Uniformly Chaning String Length</p>
-<blockquote class="last">
-<div><p>As an example, let&#8217;s consider the case of length changing pendulum,</p>
+<p>As an example, let&#8217;s consider the case of length changing pendulum,</p>
 <div class="math">
 \[\frac{d}{dt} \left( m l^2 \dot{\theta}\right) = - m g l \sin\theta \approx = - m g l \theta.\]</div>
 <p>Notice that l is a function of time and</p>
@@ -567,15 +571,13 @@ c &amp; = 1/2, \\
 p &amp; = 1, \\
 b &amp; = 2\sqrt{g}/v.\end{split}\]</div>
 <p>This solution should be</p>
-<div class="math">
+<div class="last math">
 \[\begin{split}\theta  &amp;=  l^a \mathscr{Z}_p(b l^c) \\
 &amp; = \frac{1}{\sqrt{l}} J_1(\frac{2\sqrt{g}}{v} \sqrt{l}).\end{split}\]</div>
-</div></blockquote>
 </div>
 <div class="note admonition">
 <p class="first admonition-title">Airy Equatioin</p>
-<blockquote class="last">
-<div><p>Time-independent Schrödinger equation with a simple potential,</p>
+<p>Time-independent Schrödinger equation with a simple potential,</p>
 <div class="math">
 \[\ddot{\Psi} + \alpha x \Psi  = 0.\]</div>
 <p>Comparing it with general form, we should set</p>
@@ -589,9 +591,8 @@ b^2 c^2 &amp; = \alpha^2.\end{split}\]</div>
 \[\begin{split}\Psi_1(x) &amp; = \sqrt{x} \mathscr{Z}_{1/3}(2/3 \alpha x^{3/2}), \\
 \Psi_2(x) &amp; = \sqrt{x} \mathscr{Z}_{-1/3}(2/3 \alpha x^{3/2}).\end{split}\]</div>
 <p>The general solution is</p>
-<div class="math">
+<div class="last math">
 \[\Psi(x) = a \Psi_1(x) + b \Psi_2(x).\]</div>
-</div></blockquote>
 </div>
 </div>
 <div class="section" id="second-order-differential-equations-and-gauss-equation">
@@ -602,11 +603,11 @@ b^2 c^2 &amp; = \alpha^2.\end{split}\]</div>
 <p>which has a solution of the hypergeometric function form</p>
 <div class="math">
 \[u(z) = {}_2 F_{1}(a,b;c;z).\]</div>
-<p>The interesting this about this equation is that its Paperitz symbol is</p>
+<p>The interesting part about this equation is that its Papperitz symbol is</p>
 <div class="math">
-\[\begin{split}\begin{amatrix}{3}
+\[\begin{split}\begin{Bmatrix}
 0 &amp; 1 &amp; \infty &amp;  \\  0 &amp; 0 &amp; a &amp; z \\ 1-c &amp; c-a-b &amp; b &amp;
- \end{amatrix} ,\end{split}\]</div>
+\end{Bmatrix} ,\end{split}\]</div>
 <p>in which the first three columns are the singularities at points <span class="math">\(0,1,\infty\)</span> while the last column just points out that the argument of this equation is <span class="math">\(z\)</span>.</p>
 <p>This means, in some sense, the solution to any equation with three singularities can be directly written down by comparing the equation with Gauss&#8217; equation. If you care, the actual steps are changing variables, rewriting the equation into Gauss&#8217; equation form, writing down the solutions.</p>
 </div>
