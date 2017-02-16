@@ -58,10 +58,11 @@ Maxwell Equations
 .. admonition:: Maxwell Equations
    :class: note
 
-   \nabla\cdot \vec D  &= 4\pi \rho ,\\
-   \nabla\cdot \vec B & = 0 ,\\
-   \nabla \times \vec E & = -\frac{1}{c} \partial_t \vec B ,\\
-   \nabla \times \vec H & = \frac{1}{c}\partial_t \vec D + \frac{4\pi}{c} \vec j .
+   .. math::
+      \nabla\cdot \vec D  &= 4\pi \rho ,\\
+      \nabla\cdot \vec B & = 0 ,\\
+      \nabla \times \vec E & = -\frac{1}{c} \partial_t \vec B ,\\
+      \nabla \times \vec H & = \frac{1}{c}\partial_t \vec D + \frac{4\pi}{c} \vec j .
 
 
 In Drude model, for each mode :math:`\vec E, \vec B \propto e^{i(\vec k \cdot \vec )}`, I can replace :math:`\partial_t` with :math:`-i\omega` and :math:`\vec \nabla` with :math:`i\vec k`. With the help of this, the Maxwell's equation becomes
@@ -244,18 +245,3 @@ Three limits can be considered,
 4. very high frequency, :math:`\omega \gg \omega _p`.
 
 The interesting thing is that in situation 3, we get back to Drude model.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

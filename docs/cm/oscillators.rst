@@ -57,7 +57,7 @@ in which :math:`T` and :math:`V` matrices are n by n real and symmetric.
 
 (We need to diagonalize T and V. First question comes to us is:
 
-** Is is possible to diagonalize both T and V at the same time? **
+**Is is possible to diagonalize both T and V at the same time?**
 
 We can have a look at the surface :math:`\tilde p T p = C`, which is a elliptical surface with coordinates :math:`p`.)
 

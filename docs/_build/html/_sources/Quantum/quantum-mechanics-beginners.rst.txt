@@ -391,11 +391,13 @@ Physics
 2. Comments
 
 	 * Why is the solution quantized?
-  	 1. Too many constraints. BCs + normalization.
-	 * Why do the n in the solution goes into the expression for energy?
-  	 1. Have a look at the kinetic energy term, the derivative does it.
-	 * What's so weird?
-  	 1. For :math:`n=2`, no particles found at :math:`x=L/2`. And so on.
+  	   1. Too many constraints. BCs + normalization.
+
+    * Why do the n in the solution goes into the expression for energy?
+  	   1. Have a look at the kinetic energy term, the derivative does it.
+
+    * What's so weird?
+  	   1. For :math:`n=2`, no particles found at :math:`x=L/2`. And so on.
 
 
 Some General Properties

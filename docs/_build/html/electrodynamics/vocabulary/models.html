@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '3.141',
+        VERSION:     '0.1.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -211,7 +211,7 @@
         </button>
         <a class="navbar-brand" href="../../index.html">
           Physics Notes</a>
-        <span class="navbar-text navbar-version pull-left"><b>3.141</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.2</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -244,7 +244,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../math/special-functions.html">Special Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../math/equation-solving.html">Equation Solving</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../math/complex.html">Complex Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../math/complex.html#refs-notes">Refs &amp; Notes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../math/calculus.html">Calculus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../math/linear-algebra.html">Linear Algebra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../math/differential-geometry.html">Differential Geometry</a></li>
@@ -396,10 +395,11 @@
 <h3>Maxwell Equations<a class="headerlink" href="#maxwell-equations" title="Permalink to this headline">¶</a></h3>
 <div class="note admonition">
 <p class="first admonition-title">Maxwell Equations</p>
-<p class="last">nablacdot vec D  &amp;= 4pi rho ,\
-nablacdot vec B &amp; = 0 ,\
-nabla times vec E &amp; = -frac{1}{c} partial_t vec B ,\
-nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
+<div class="last math">
+\[\begin{split}\nabla\cdot \vec D  &amp;= 4\pi \rho ,\\
+\nabla\cdot \vec B &amp; = 0 ,\\
+\nabla \times \vec E &amp; = -\frac{1}{c} \partial_t \vec B ,\\
+\nabla \times \vec H &amp; = \frac{1}{c}\partial_t \vec D + \frac{4\pi}{c} \vec j .\end{split}\]</div>
 </div>
 <p>In Drude model, for each mode <span class="math">\(\vec E, \vec B \propto e^{i(\vec k \cdot \vec )}\)</span>, I can replace <span class="math">\(\partial_t\)</span> with <span class="math">\(-i\omega\)</span> and <span class="math">\(\vec \nabla\)</span> with <span class="math">\(i\vec k\)</span>. With the help of this, the Maxwell&#8217;s equation becomes</p>
 <div class="math">
@@ -549,7 +549,7 @@ nabla times vec H &amp; = frac{1}{c}partial_t vec D + frac{4pi}{c} vec j .</p>
 
     </p>
     <p>
-        <span>© 2016, Lei Ma. </span>|
+        <span>© 2017, Lei Ma. </span>|
         <span>Created with
             <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
         </span>|

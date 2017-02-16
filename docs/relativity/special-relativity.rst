@@ -310,6 +310,8 @@ Use a spacetime diagram.
 
 .. index:: doppler-shift
 
+.. _doppler-shift:
+
 Doppler Shift
 =========================
 

@@ -134,7 +134,8 @@ We do this by demonstrating an example differential equation. The problem we are
 with boundary condition
 
 .. math::
-   y(0) = y(\pi) = 0.\label{eqn-green-function-example2-bc}
+   y(0) = y(\pi) = 0.
+   :label: eqn-green-function-example2-bc
 
 
 
@@ -159,15 +160,15 @@ We just follow the steps.
   .. math::
      \hat L_x G(x,z) = 0
 
-   is given by
+  is given by
 
-   .. math::
-      G(x,z) = \begin{cases}
-      A_1\cos (x/2) + B_1 \sin(x/2), & \qquad x \leq z, \\
-      A_2\cos (x/2) + B_2 \sin(x/2), & \qquad x \geq z.
-      \end{cases}
+  .. math::
+     G(x,z) = \begin{cases}
+     A_1\cos (x/2) + B_1 \sin(x/2), & \qquad x \leq z, \\
+     A_2\cos (x/2) + B_2 \sin(x/2), & \qquad x \geq z.
+     \end{cases}
 
-- Continuity at $x=z$ for the 0th order derivatives,
+- Continuity at :math:`x=z` for the 0th order derivatives,
 
   .. math::
      G(z_-,z) = G(z_+,z),
@@ -175,7 +176,8 @@ We just follow the steps.
   which is exactly
 
   .. math::
-     A_1\cos(z/2) + B_1 \sin(z/2) = A_2 \cos(z/2) + B_2\sin(z/2).\label{eqn-green-function-example2-continuity}
+     A_1\cos(z/2) + B_1 \sin(z/2) = A_2 \cos(z/2) + B_2\sin(z/2).
+     :label: eqn-green-function-example2-continuity
 
 - Discontinuity condition at 1st order derivatives,
 
@@ -188,13 +190,13 @@ We just follow the steps.
      -\frac{A_2}{2}\sin\frac{z}{2} + \frac{B_2}{2} \cos\frac{z}{2} - \left( -\frac{A_1}{2}\sin\frac{z}{2} + \frac{B_1}{2}\cos\frac{z}{2} \right) = 1
      :label: eqn-green-function-example2-discontinuity
 
-  Now we combine (\ref{eqn-green-function-example2-continuity}) and (\ref{eqn-green-function-example2-discontinuity}) to eliminate two degrees of freedom. For example, we can solve out $A_1$ and $B_1$ as a function of all other coefficients. Here we have
+  Now we combine (:eq:`eqn-green-function-example2-continuity`) and (:eq:`eqn-green-function-example2-discontinuity`) to eliminate two degrees of freedom. For example, we can solve out :math:`A_1` and :math:`B_1` as a function of all other coefficients. Here we have
 
   .. math::
      B_1 &= \frac{ - 2/\sin(z/2) }{\tan(z/2) + \cot(z/2)} + B_2 , \\
      A_1 &= A_2 + B_2(\tan(z/2)-1) + \frac{2}{\sin(z/2) + \cot(z/2)\cos(z/2)}.
 
-- Write down the form solution using :math:`y(x) = \int G(x,z) f(z) dz. Then we still have two unknown free coefficients :math:`A_2` and :math:`B_2`, which in fact is to be determined by the BC equation :eq:`eqn-green-function-example2-bc`.
+- Write down the form solution using :math:`y(x) = \int G(x,z) f(z) dz`. Then we still have two unknown free coefficients :math:`A_2` and :math:`B_2`, which in fact is to be determined by the BC equation :eq:`eqn-green-function-example2-bc`.
 
 
 
@@ -481,7 +483,7 @@ For the same example,
 .. math::
    \hat L u(x) = f(x),
 
-where :math:`\hat L=\hat I + \hat M`, we can solve it using vector space because if operator is linear.
+where :math:`\hat L=\hat I + \hat M`, we can solve it using vector space if operator is linear.
 
 Suppose we have a :math:`\hat M=\ket{a}\bra{b}`, the equation, in some Hilbert space, is
 

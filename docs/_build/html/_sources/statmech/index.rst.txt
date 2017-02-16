@@ -3,7 +3,4 @@ Statistical Physics
 ***************************
 
 
-This part has been moved to `here <http://emptymalei.github.io/StatisticalPhysics/>`_ .
-
-
-
+This part has been moved to `http://statisticalphysics.openmetric.org <http://statisticalphysics.openmetric.org/>`_ .

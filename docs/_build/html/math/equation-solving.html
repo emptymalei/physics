@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '3.141',
+        VERSION:     '0.1.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -211,7 +211,7 @@
         </button>
         <a class="navbar-brand" href="../index.html">
           Physics Notes</a>
-        <span class="navbar-text navbar-version pull-left"><b>3.141</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.2</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -455,8 +455,8 @@
 <div class="math">
 \[\left(\frac{d^2}{dx^2} + \frac{1}{4}\right) y(x) = f(x),\]</div>
 <p>with boundary condition</p>
-<div class="math">
-\[y(0) = y(\pi) = 0.\label{eqn-green-function-example2-bc}\]</div>
+<div class="math" id="equation-eqn-green-function-example2-bc">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eqn-green-function-example2-bc" title="Permalink to this equation">¶</a></span>\[y(0) = y(\pi) = 0.\]</div>
 <p>For simplicity we define</p>
 <div class="math">
 \[\hat L_x = \frac{d^2}{dx^2} + \frac{1}{4}.\]</div>
@@ -467,31 +467,33 @@
 <ul>
 <li><p class="first">The general solution to</p>
 <div class="math">
-\[ \begin{align}\begin{aligned}\hat L_x G(x,z) = 0\\is given by\\\begin{split}.. math::
-   G(x,z) = \begin{cases}
-   A_1\cos (x/2) + B_1 \sin(x/2), &amp; \qquad x \leq z, \\
-   A_2\cos (x/2) + B_2 \sin(x/2), &amp; \qquad x \geq z.
-   \end{cases}\end{split}\end{aligned}\end{align} \]</div>
+\[\hat L_x G(x,z) = 0\]</div>
+<p>is given by</p>
+<div class="math">
+\[\begin{split}G(x,z) = \begin{cases}
+A_1\cos (x/2) + B_1 \sin(x/2), &amp; \qquad x \leq z, \\
+A_2\cos (x/2) + B_2 \sin(x/2), &amp; \qquad x \geq z.
+\end{cases}\end{split}\]</div>
 </li>
 <li><p class="first">Continuity at <span class="math">\(x=z\)</span> for the 0th order derivatives,</p>
 <div class="math">
 \[G(z_-,z) = G(z_+,z),\]</div>
 <p>which is exactly</p>
-<div class="math">
-\[A_1\cos(z/2) + B_1 \sin(z/2) = A_2 \cos(z/2) + B_2\sin(z/2).\label{eqn-green-function-example2-continuity}\]</div>
+<div class="math" id="equation-eqn-green-function-example2-continuity">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eqn-green-function-example2-continuity" title="Permalink to this equation">¶</a></span>\[A_1\cos(z/2) + B_1 \sin(z/2) = A_2 \cos(z/2) + B_2\sin(z/2).\]</div>
 </li>
 <li><p class="first">Discontinuity condition at 1st order derivatives,</p>
 <div class="math">
 \[\left.\frac{d}{dx} G(x,z)  \right\vert_{x=z_+} - \left.\frac{d}{dx} G(x,z)  \right\vert_{x=z_-} = 1,\]</div>
 <p>which is</p>
 <div class="math" id="equation-eqn-green-function-example2-discontinuity">
-<span class="eqno">(3)<a class="headerlink" href="#equation-eqn-green-function-example2-discontinuity" title="Permalink to this equation">¶</a></span>\[-\frac{A_2}{2}\sin\frac{z}{2} + \frac{B_2}{2} \cos\frac{z}{2} - \left( -\frac{A_1}{2}\sin\frac{z}{2} + \frac{B_1}{2}\cos\frac{z}{2} \right) = 1\]</div>
-<p>Now we combine (ref{eqn-green-function-example2-continuity}) and (ref{eqn-green-function-example2-discontinuity}) to eliminate two degrees of freedom. For example, we can solve out <span class="math">\(A_1\)</span> and <span class="math">\(B_1\)</span> as a function of all other coefficients. Here we have</p>
+<span class="eqno">(5)<a class="headerlink" href="#equation-eqn-green-function-example2-discontinuity" title="Permalink to this equation">¶</a></span>\[-\frac{A_2}{2}\sin\frac{z}{2} + \frac{B_2}{2} \cos\frac{z}{2} - \left( -\frac{A_1}{2}\sin\frac{z}{2} + \frac{B_1}{2}\cos\frac{z}{2} \right) = 1\]</div>
+<p>Now we combine (<a class="reference internal" href="#equation-eqn-green-function-example2-continuity">(4)</a>) and (<a class="reference internal" href="#equation-eqn-green-function-example2-discontinuity">(5)</a>) to eliminate two degrees of freedom. For example, we can solve out <span class="math">\(A_1\)</span> and <span class="math">\(B_1\)</span> as a function of all other coefficients. Here we have</p>
 <div class="math">
 \[\begin{split}B_1 &amp;= \frac{ - 2/\sin(z/2) }{\tan(z/2) + \cot(z/2)} + B_2 , \\
 A_1 &amp;= A_2 + B_2(\tan(z/2)-1) + \frac{2}{\sin(z/2) + \cot(z/2)\cos(z/2)}.\end{split}\]</div>
 </li>
-<li><p class="first">Write down the form solution using <span class="math">\(y(x) = \int G(x,z) f(z) dz. Then we still have two unknown free coefficients :math:`A_2\)</span> and <span class="math">\(B_2\)</span>, which in fact is to be determined by the BC equation <code class="xref eq docutils literal"><span class="pre">eqn-green-function-example2-bc</span></code>.</p>
+<li><p class="first">Write down the form solution using <span class="math">\(y(x) = \int G(x,z) f(z) dz\)</span>. Then we still have two unknown free coefficients <span class="math">\(A_2\)</span> and <span class="math">\(B_2\)</span>, which in fact is to be determined by the BC equation <a class="reference internal" href="#equation-eqn-green-function-example2-bc">(3)</a>.</p>
 </li>
 </ul>
 </div>
@@ -658,7 +660,7 @@ u_0(x) &amp; = f(x).\end{split}\]</div>
 <p>For the same example,</p>
 <div class="math">
 \[\hat L u(x) = f(x),\]</div>
-<p>where <span class="math">\(\hat L=\hat I + \hat M\)</span>, we can solve it using vector space because if operator is linear.</p>
+<p>where <span class="math">\(\hat L=\hat I + \hat M\)</span>, we can solve it using vector space if operator is linear.</p>
 <p>Suppose we have a <span class="math">\(\hat M=\ket{a}\bra{b}\)</span>, the equation, in some Hilbert space, is</p>
 <div class="math">
 \[\ket{u} + \ket{a}\braket{b}{u} = \ket{f}.\]</div>
@@ -706,7 +708,7 @@ u_0(x) &amp; = f(x).\end{split}\]</div>
 
     </p>
     <p>
-        <span>© 2016, Lei Ma. </span>|
+        <span>© 2017, Lei Ma. </span>|
         <span>Created with
             <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
         </span>|

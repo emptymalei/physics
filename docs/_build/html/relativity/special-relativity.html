@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '3.141',
+        VERSION:     '0.1.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -211,7 +211,7 @@
         </button>
         <a class="navbar-brand" href="../index.html">
           Physics Notes</a>
-        <span class="navbar-text navbar-version pull-left"><b>3.141</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.2</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -244,7 +244,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../math/special-functions.html">Special Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../math/equation-solving.html">Equation Solving</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../math/complex.html">Complex Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../math/complex.html#refs-notes">Refs &amp; Notes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../math/calculus.html">Calculus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../math/linear-algebra.html">Linear Algebra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../math/differential-geometry.html">Differential Geometry</a></li>
@@ -379,7 +378,7 @@ t\\
 x
 \end{pmatrix}\end{split}\]</div>
 <p>for the two reference systems described in <a class="reference internal" href="#galilean-transformation"><span class="std std-numref">Fig. 18</span></a>. This transformation matrix is neither symmetric nor Hermitian. It is ugly and unexpected. Why is time special and is not related to other coordinates?</p>
-<div class="figure align-center" id="id7">
+<div class="figure align-center" id="id8">
 <span id="galilean-transformation"></span><img alt="../_images/Standard_conf.png" src="../_images/Standard_conf.png" />
 <p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Galilean transformation. Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Standard_conf.png">Wikipedia</a></span></p>
 </div>
@@ -442,7 +441,7 @@ z
 <p>In most cases, we use natural unit <span class="math">\(c=1\)</span>.</p>
 <div class="toggle admonition">
 <p class="first admonition-title">d&#8217;Alembert operator</p>
-<p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id5" id="id3">[1]</a></p>
+<p>d&#8217;Alembert operator, or wave operator, is the Lapace operator in Minkowski space. <a class="footnote-reference" href="#id6" id="id3">[1]</a></p>
 <div class="math">
 \[\Box \equiv \partial _ \mu\partial^\nu = \eta _{\mu\nu}\partial^\mu \partial^\nu\]</div>
 <p>In the usual {t,x,y,z} natural orthonormal basis,</p>
@@ -451,7 +450,7 @@ z
 &amp; = -\partial_t^2+\Delta^2 \\
 &amp; = -\partial_t^2+\nabla\end{split}\]</div>
 <dl class="last docutils">
-<dt>On wiki <a class="footnote-reference" href="#id6" id="id4">[2]</a> , they give some applications to it.</dt>
+<dt>On wiki <a class="footnote-reference" href="#id7" id="id4">[2]</a> , they give some applications to it.</dt>
 <dd><ul class="first last simple">
 <li>klein-Gordon equation
 <span class="math">\((\Box+m^2)\phi=0\)</span></li>
@@ -469,7 +468,7 @@ For the electromagnetic four-potential <span class="math">\(\Box A^\mu=0\)</span
 <div class="note admonition">
 <p class="first admonition-title">A Coincidence?</p>
 <p>Let&#8217;s start from this coincidence.</p>
-<div class="figure align-center" id="id8">
+<div class="figure align-center" id="id9">
 <span id="special-relativity-velocity-addition"></span><img alt="../_images/specialRelativityVelocityAddition.png" src="../_images/specialRelativityVelocityAddition.png" />
 <p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Addition of velocities</span></p>
 </div>
@@ -574,7 +573,7 @@ y
 <p>Use a spacetime diagram.</p>
 </div>
 <div class="section" id="doppler-shift">
-<span id="index-1"></span><h2>Doppler Shift<a class="headerlink" href="#doppler-shift" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><span id="id5"></span><h2>Doppler Shift<a class="headerlink" href="#doppler-shift" title="Permalink to this headline">¶</a></h2>
 <p>The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.</p>
 <img alt="../_images/dopplerRedshift.png" class="align-center" src="../_images/dopplerRedshift.png" />
 <p>The observer is fixed in O&#8217; frame and source is in O frame. Emitting angle in O frame is <span class="math">\(\theta\)</span>.</p>
@@ -608,7 +607,7 @@ p = E/c.\end{split}\]</div>
 </div>
 <p>Here we have three different kinds, the additional one is the transverse redshift due to the <span class="math">\(\gamma\)</span> factor or the contraction of time.</p>
 <p>An gif from wikipedia shows this explicitly,</p>
-<div class="figure align-center" id="id9">
+<div class="figure align-center" id="id10">
 <img alt="../_images/XYCoordinates.gif" src="../_images/XYCoordinates.gif" />
 <p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Image Source: <a class="reference external" href="https://en.wikipedia.org/wiki/File:XYCoordinates.gif">File:XYCoordinates.gif</a></span></p>
 </div>
@@ -618,7 +617,7 @@ p = E/c.\end{split}\]</div>
 </div>
 <div class="section" id="relativistic-aberration-of-light">
 <h2>Relativistic Aberration of Light<a class="headerlink" href="#relativistic-aberration-of-light" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id10">
+<div class="figure align-center" id="id11">
 <span id="relativistic-aberration"></span><img alt="../_images/relativistic-aberration.png" src="../_images/relativistic-aberration.png" />
 <p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">The relativistic aberration of light.</span></p>
 </div>
@@ -636,13 +635,13 @@ p = E/c.\end{split}\]</div>
 <ol class="arabic simple">
 <li><em>The Geometry of Special Relativity</em> by Tevian Dray.</li>
 </ol>
-<table class="docutils footnote" frame="void" id="id5" rules="none">
+<table class="docutils footnote" frame="void" id="id6" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>Actually, there are more general definations for Lapacian, which includes this d&#8217;Alembertian of course.</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id6" rules="none">
+<table class="docutils footnote" frame="void" id="id7" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>wiki:D&#8217;Alembert_operator</td></tr>
@@ -693,7 +692,7 @@ p = E/c.\end{split}\]</div>
 
     </p>
     <p>
-        <span>© 2016, Lei Ma. </span>|
+        <span>© 2017, Lei Ma. </span>|
         <span>Created with
             <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
         </span>|

@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.2] - 2017-02-15
+
+### Changed
+- Fixed typos as well as formatting problems in equation solving
+- Formatting problems in oscillators
+- Fixed link to statistical mechanics notes
+- Fixed math display problem in electrodynamics/vocabulary/models
+- etc (minor fixes)
+
 ## [0.1.1] - 2017-02-15
 
 ### Added
