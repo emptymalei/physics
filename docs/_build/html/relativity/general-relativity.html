@@ -34,7 +34,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="General Relativity Revisited" href="general-relativity-adv.html" />
+    <link rel="next" title="Basic Principles of General Relativity" href="gr/gr-principles.html" />
     <link rel="prev" title="Special Relativity" href="special-relativity.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -308,30 +308,6 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">General Relativity</a><ul>
-<li><a class="reference internal" href="#tidal-force-and-equivalence-principle">Tidal Force and Equivalence Principle</a></li>
-<li><a class="reference internal" href="#vectors-and-tensors">Vectors and Tensors</a><ul>
-<li><a class="reference internal" href="#metric">Metric</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#description-of-space-time-manifold">Description of Space-time Manifold</a><ul>
-<li><a class="reference internal" href="#description-of-space-time-manifold-coordinates">Description of Space-time Manifold - Coordinates</a></li>
-<li><a class="reference internal" href="#description-of-space-time-manifold-tetrads">Description of Space-time Manifold - Tetrads</a></li>
-<li><a class="reference internal" href="#description-of-space-time-manifold-1-3-covariant-description">Description of Space-time Manifold - 1+3 Covariant Description</a><ul>
-<li><a class="reference internal" href="#definations">Definations</a><ul>
-<li><a class="reference internal" href="#volume">Volume</a></li>
-<li><a class="reference internal" href="#velocity">4-velocity</a></li>
-<li><a class="reference internal" href="#projection-tensors">Projection Tensors</a></li>
-<li><a class="reference internal" href="#covariant-time-derivative">Covariant time derivative (<span class="math">\(\dot \quad\)</span>)</a></li>
-<li><a class="reference internal" href="#fully-orthogonally-projected-covariant-derivative">Fully orthogonally projected covariant derivative (<span class="math">\(\tilde \nabla\)</span>)</a></li>
-<li><a class="reference internal" href="#orthogonal-projections-of-vectors">Orthogonal projections of vectors</a></li>
-<li><a class="reference internal" href="#othogonal-projected-covariant-time-derivatives-along">Othogonal projected covariant time derivatives along <span class="math">\(u^a\)</span></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#properties">Properties</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#fields-and-particles">Fields and Particles</a><ul>
 <li><a class="reference internal" href="#energy-momentum-tensor-for-particles">Energy-Momentum Tensor for Particles</a></li>
 </ul>
@@ -364,7 +340,7 @@
     </a>
   </li>
   <li>
-    <a href="general-relativity-adv.html" title="Next Chapter: General Relativity Revisited"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relat... &raquo;</span>
+    <a href="gr/gr-principles.html" title="Next Chapter: Basic Principles of General Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Basic Princip... &raquo;</span>
     </a>
   </li>
               
@@ -395,162 +371,18 @@
   <div class="section" id="general-relativity">
 <h1>General Relativity<a class="headerlink" href="#general-relativity" title="Permalink to this headline">¶</a></h1>
 <p>General relativity is a theory of gravity. The idea is to find a set of &#8220;proper&#8221; coordinate system to describe physics on a curved space and make connection between these &#8220;proper&#8221; coordinate systems.</p>
-<div class="section" id="tidal-force-and-equivalence-principle">
-<h2>Tidal Force and Equivalence Principle<a class="headerlink" href="#tidal-force-and-equivalence-principle" title="Permalink to this headline">¶</a></h2>
-<p>Tidal force in the frame work of Newtonian gravity can be derived by finding the second order derivative of the displacement difference between two nearby objects.</p>
-<p>The Einstein&#8217;s equivalence principle means that the free falling frame is no different than inertial frame if the two object are close enough and the comoving equipment we are using to measure the tidal effect could not tell the effect.</p>
-</div>
-<div class="section" id="vectors-and-tensors">
-<h2>Vectors and Tensors<a class="headerlink" href="#vectors-and-tensors" title="Permalink to this headline">¶</a></h2>
-<div class="note admonition">
-<p class="first admonition-title">Two Systems of Notations</p>
-<p><strong>Come back to this when the index fearing syndrome becomes too strong.</strong></p>
-<p>There are many different systems of notations for vectors.</p>
-<p>One of them is to use a tilde on top of the letter to denote a vector and a tilde at bottom to denote the co-vector, i.e.,</p>
-<div class="math">
-\[\begin{split}\tilde v, &amp; \text{vector}\\
-\underset{\sim}{v}, &amp; \text{co-vector}.\end{split}\]</div>
-<p>The other notation that is widely used is abstract index notation where we use latin superscript to denote vector and latin subscript to denote co-vector, i.e.,</p>
-<div class="math">
-\[\begin{split}v^a, &amp; \text{vector}\\
-v_a, &amp; \text{co-vector}.\end{split}\]</div>
-<p>The question is, obviously, how the components of vectors is denoted. In the first notation, we use subscript (components of vector) and superscript (components of co-vector) for the components,</p>
-<div class="math">
-\[\begin{split}\tilde v_\mu, &amp; \text{$\mu$ component of vector}\\
-\underset{\sim}{v}^\mu, &amp; \text{$\mu$ component of co-vector}.\end{split}\]</div>
-<p>However, the abstract index notation is using greek superscript for co-vector component and greek subscript for vector component.</p>
-<div class="last math">
-\[\begin{split}v^a_\mu, &amp; \text{$\mu$ component of vector}\\
-v_a^\mu, &amp; \text{$\mu$ component of co-vector}.\end{split}\]</div>
-</div>
-<p>Whenever a vector is mentioned, it is composed of its components and basis, which should be written as</p>
-<div class="math">
-\[\alpha^a = \alpha^\mu e^a_{\phantom{a}\mu},\]</div>
-<p>where <span class="math">\(\{ \alpha^\mu \}\)</span> are the components and <span class="math">\(\{ e^a_{\phantom{a}\mu} \}\)</span> are the basis.</p>
-<p>Then we define its dual <span class="math">\(w_b\)</span></p>
-<div class="math">
-\[w_a \alpha^a = \mathscr{C},\]</div>
-<p>where the left hand side can be expanded</p>
-<div class="math">
-\[w_a \alpha^a = w_\lambda f_a^{\phantom{a}\lambda} \alpha^\mu e^a_{\phantom{a}\mu} = w_\lambda \alpha^\mu f_a^{\phantom{a}\lambda} e^a_{\phantom{a}\mu}.\]</div>
-<p>For orthonormal basis, we have</p>
-<div class="math">
-\[f_a^{\phantom{a}\lambda} e^a_{\phantom{a}\mu} = \delta^\lambda _\mu,\]</div>
-<p>which gives us the contraction of <span class="math">\(w_a\)</span> and <span class="math">\(\alpha^a\)</span></p>
-<div class="math">
-\[w_a \alpha^a = w_\lambda \alpha^\mu \delta^\lambda _\mu = w _ \mu \alpha^\mu.\]</div>
-<p>Usually the vector basis could be <span class="math">\(\{ dx^\mu \}\)</span> and we could derive the basis for the dual vector <span class="math">\(\{ \frac{d}{dx^\mu} \}\)</span>.</p>
-<div class="section" id="metric">
-<h3>Metric<a class="headerlink" href="#metric" title="Permalink to this headline">¶</a></h3>
-<p>We define a scalar product in this way</p>
-<div class="math">
-\[\beta^a \cdot w^a = \beta^a g_{ab} \cdot w^b ,\]</div>
-<p>where <span class="math">\(g_{ab}\)</span> is the metric and can be related to the basis.</p>
-<p>The expression will be simplified using basis formalism,</p>
-<div class="math">
-\[\beta^a \cdot w^a = \beta^a g_{ab} \cdot w^b = \beta^\mu e^a_{\phantom{a}\mu} g_{ab} w^\lambda f^b_{\phantom{b}\lambda} = \beta^\mu w^\lambda g_{\mu\lambda} .\]</div>
-</div>
-</div>
-<div class="section" id="description-of-space-time-manifold">
-<h2>Description of Space-time Manifold<a class="headerlink" href="#description-of-space-time-manifold" title="Permalink to this headline">¶</a></h2>
-<p>How to describe space-time manifold?</p>
-<ul class="simple">
-<li>Metric (with a set of local coordinates), connection (Christoffel symbols).</li>
-<li>Metric (in the form of tetrads), connection (Ricci rotation coefficients).</li>
-<li>1+3 covariantly defined variables.</li>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gr/gr-principles.html">Basic Principles of General Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gr/gr-principles.html#tidal-force-and-equivalence-principle">Tidal Force and Equivalence Principle</a></li>
 </ul>
-<div class="section" id="description-of-space-time-manifold-coordinates">
-<h3>Description of Space-time Manifold - Coordinates<a class="headerlink" href="#description-of-space-time-manifold-coordinates" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="description-of-space-time-manifold-tetrads">
-<h3>Description of Space-time Manifold - Tetrads<a class="headerlink" href="#description-of-space-time-manifold-tetrads" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="description-of-space-time-manifold-1-3-covariant-description">
-<h3>Description of Space-time Manifold - 1+3 Covariant Description<a class="headerlink" href="#description-of-space-time-manifold-1-3-covariant-description" title="Permalink to this headline">¶</a></h3>
-<p>Physics in description is easier to understand.</p>
-<div class="section" id="definations">
-<h4>Definations<a class="headerlink" href="#definations" title="Permalink to this headline">¶</a></h4>
-<p>Definations of some physical quantities and operators are listed below.</p>
-<p>Here we have</p>
-<ol class="arabic simple">
-<li><strong>geometrical variables</strong>: Volume</li>
-<li><strong>Kinematical variables</strong>: Velocity, Expansion rate, Shear rate</li>
-<li><strong>Thermaldynanmical variables</strong>: Energy density, Momentum density, Pressure, Equation of state</li>
-</ol>
-<div class="section" id="volume">
-<h5>Volume<a class="headerlink" href="#volume" title="Permalink to this headline">¶</a></h5>
-<p>To calculate volume, the volume element should be defined first in order to integrate. Before that, orientation on manifolds is to be figured out.</p>
-<p>On an oriented manifold with metric, the defined volume element (a n-form) should be compatible with the orientation and also determined by the metric. <a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
-<p>Introducing those requirements, a compatible volume element is</p>
-<div class="math">
-\[\epsilon_{a_1\cdots a_n} = \pm \sqrt{|g|} (e^1)_{a_1}\wedge \cdots \wedge (e^n)_{a_n}\]</div>
-<p>Alternatively, this can be expressed in the way Ellis used in arXiv:gr-qc/9812046v5.</p>
-<div class="math">
-\[\eta_{abcd} = \eta_{[abcd]}, \quad \mathrm{with} \eta_{0123} = \sqrt{|\mathrm {det} g_{ab}|}\]</div>
-<p>Induced volume element <span class="math">\(\hat \epsilon_{a_1\cdots a_{n-1}}\)</span> is defined use the normal vector <span class="math">\(u^a\)</span> of the hypersurface,</p>
-<div class="math">
-\[\hat \epsilon_{a_1\cdots a_{n-1}} = u^b \epsilon_{b a_1 \cdots a_{n-1}}\]</div>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>For more information, check out Canbin Liang&#8217;s book. Volume 1, page 115.</td></tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="velocity">
-<h5>4-velocity<a class="headerlink" href="#velocity" title="Permalink to this headline">¶</a></h5>
-<p>4-velocity of observed matter is</p>
-<div class="math">
-\[u^\alpha = \frac{\mathrm d x^\alpha}{\mathrm d \tau}\]</div>
-<p>with <span class="math">\(u^\alpha u_\alpha =-1\)</span>, <span class="math">\(\tau\)</span> is the proper time along the worldlines of investaged matter.</p>
-</div>
-<div class="section" id="projection-tensors">
-<h5>Projection Tensors<a class="headerlink" href="#projection-tensors" title="Permalink to this headline">¶</a></h5>
-<p>We can use 4-velocity to project variables to parts that is parallel to <span class="math">\(u^\alpha\)</span> and parts that is orthogonal to <span class="math">\(u^\alpha\)</span>.</p>
-<div class="math">
-\[\begin{split}U^a_{\phantom a b} &amp;= -u^a u_b \\
-h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}\end{split}\]</div>
-<p>Some properties of the  two projections.</p>
-<div class="math">
-\[\begin{split}&amp; U^a_{\phantom a b} U^b_{\phantom bc} = U^a_{\phantom a c}  ,  U^a_{\phantom a a} = 1  , U_{ab}=g_{ac} U^c_{\phantom cb}  , U_{ab} u^b = - g_{ac} u^c u_b u^b = u_a \\
-&amp; h^a_{\phantom ab} = g^{ac} h_{cb} = \delta^a_{\phantom ab} + u^a u_b = \delta^a_{\phantom ab} - U^a_{\phantom ab} \\
-&amp; h^a_{\phantom a c}h^c_{\phantom c b} = (\delta^a_{\phantom ac} - U^a_{\phantom ac})(\delta^c_{\phantom cb} - U^c_{\phantom cb}) = \delta^a_{\phantom ab} - U^a_{\phantom ab} = h^a_{\phantom ab} \\
-&amp; h^a_{\phantom aa} = 4-1 = 3  ,   h_{ab}u^b = 0\end{split}\]</div>
-</div>
-<div class="section" id="covariant-time-derivative">
-<h5>Covariant time derivative (<span class="math">\(\dot \quad\)</span>)<a class="headerlink" href="#covariant-time-derivative" title="Permalink to this headline">¶</a></h5>
-<p>This is the derivative along the fundamental worldlines (projection on the worldlines),</p>
-<div class="math">
-\[\dot T^{ab}_{\phantom{ab}cd} = u^e \nabla_e T^{ab}_{\phantom{ab}cd}\]</div>
-</div>
-<div class="section" id="fully-orthogonally-projected-covariant-derivative">
-<h5>Fully orthogonally projected covariant derivative (<span class="math">\(\tilde \nabla\)</span>)<a class="headerlink" href="#fully-orthogonally-projected-covariant-derivative" title="Permalink to this headline">¶</a></h5>
-<p>This derivative is the project orghogonal to the normal vector of the hyperspace or orthogonal to the observer&#8217;s 4-velocity or along the tagent of the hyperspace.</p>
-<div class="math">
-\[\tilde\nabla_e T^{ab}_{\phantom{ab}cd} = h^a_f h^b_gh^p_ch^q_dh^r_e \nabla_r T^{fg}_{\phantom{fg}pq}\]</div>
-</div>
-<div class="section" id="orthogonal-projections-of-vectors">
-<h5>Orthogonal projections of vectors<a class="headerlink" href="#orthogonal-projections-of-vectors" title="Permalink to this headline">¶</a></h5>
-<p>Orthogonal projection of vectors</p>
-<div class="math">
-\[v^{&lt;a&gt;}      = h^a_{\phantom a b} v^b\]</div>
-<p>And the orthogonally projected symmetric trace-free part of tensors</p>
-<div class="math">
-\[T^{&lt;ab&gt;} = [h^{(a}_{\phantom {(a} c} h^{b)}_{\phantom{b)}d} - \frac{1}{3} h^{ab} h_{cd} ] T^{cd}\]</div>
-</div>
-<div class="section" id="othogonal-projected-covariant-time-derivatives-along">
-<h5>Othogonal projected covariant time derivatives along <span class="math">\(u^a\)</span><a class="headerlink" href="#othogonal-projected-covariant-time-derivatives-along" title="Permalink to this headline">¶</a></h5>
-<div class="math">
-\[ \begin{align}\begin{aligned}\dot v^{&lt;a&gt;} = h^a_{\phantom a b} \dot v^b\\\dot T^{&lt;ab&gt;} = [ h^{(a}_{\phantom{(a}b} h^{b)}_{\phantom{b)} d} - \frac 1 3 h^{ab}h_{cd} ]\dot T^{cd}\end{aligned}\end{align} \]</div>
-</div>
-</div>
-</div>
-<div class="section" id="properties">
-<h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Projected time and space derivatives of <span class="math">\(U_{ab}\)</span>, <span class="math">\(h_{ab}\)</span> and <span class="math">\(\eta_{abc}\)</span> vanish.</li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gr/gr-math.html">Mathematics in General Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gr/gr-math.html#vectors-and-tensors">Vectors and Tensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gr/gr-math.html#description-of-space-time-manifold">Description of Space-time Manifold</a></li>
 </ul>
-</div>
+</li>
+</ul>
 </div>
 <div class="section" id="fields-and-particles">
 <h2>Fields and Particles<a class="headerlink" href="#fields-and-particles" title="Permalink to this headline">¶</a></h2>
