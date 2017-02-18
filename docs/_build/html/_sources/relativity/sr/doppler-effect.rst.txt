@@ -1,13 +1,14 @@
+.. index:: doppler-shift
+
+.. _doppler-shift:
+
 Doppler Effect
 =======================
 
 
-Doppler shift in special relativity is always confusing. I'll demonstrate doppler shift in three different ways, to make it clear.
+Doppler shift in special relativity is always confusing. I'll demonstrate doppler shift in four different ways.
 
 
-.. index:: doppler-shift
-
-.. _doppler-shift:
 
 Conservation of Four Momentum
 --------------------------------------------------
@@ -16,11 +17,11 @@ Conservation of Four Momentum
 The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.
 
 
-.. image:: ../assets/special-relativity/dopplerRedshift.png
+.. image:: assets/doppler-shift-configuration.png
    :align: center
 
 
-The observer is fixed in O' frame and source is in O frame. Emitting angle in O frame is :math:`\theta`.
+The observer is fixed in observer frame and source is in emission frame. Emitting angle in O frame is :math:`\theta`.
 
 Since momentum is a vector, we have the Lorentz transformation which transfrom it in to O' frame,
 
