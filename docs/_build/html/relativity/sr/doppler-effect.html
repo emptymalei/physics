@@ -254,7 +254,13 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Doppler Effect</a><ul>
-<li><a class="reference internal" href="#conservation-of-four-momentum">Conservation of Four Momentum</a></li>
+<li><a class="reference internal" href="#conservation-of-four-momentum">Conservation of Four Momentum</a><ul>
+<li><a class="reference internal" href="#redshift-relation-to-angle-in-emission-frame">Redshift Relation to Angle in Emission Frame</a></li>
+<li><a class="reference internal" href="#redshift-relation-to-angle-in-observor-frame">Redshift Relation to Angle in Observor Frame</a></li>
+<li><a class="reference internal" href="#relativistic-effect">Relativistic Effect</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#four-vector-language">Four Vector Language</a></li>
 </ul>
 </li>
 </ul>
@@ -304,29 +310,33 @@
 <div class="section" id="conservation-of-four-momentum">
 <h2>Conservation of Four Momentum<a class="headerlink" href="#conservation-of-four-momentum" title="Permalink to this headline">¶</a></h2>
 <p>The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.</p>
-<img alt="../../_images/doppler-shift-configuration.png" class="align-center" src="../../_images/doppler-shift-configuration.png" />
-<p>The observer is fixed in observer frame and source is in emission frame. Emitting angle in O frame is <span class="math">\(\theta\)</span>.</p>
-<p>Since momentum is a vector, we have the Lorentz transformation which transfrom it in to O&#8217; frame,</p>
+<p>The observer is fixed in observer frame and source of emission is in emission frame.</p>
+<p>The observer detects an angle of light ray <span class="math">\(\theta_o\)</span>. However, the emission angle <span class="math">\(\theta_e\)</span> is different from this angle, i.e., <span class="math">\(\theta_e \neq \theta_0\)</span>.</p>
+<div class="warning admonition">
+<p class="first admonition-title">Which Angle to Use</p>
+<p class="last">Which angle to use then? In theory, we can derive the Doppler shift in terms of either angles. We present both of the analysis. The redshift expressions looks different because they are measuring different events.</p>
+</div>
+<p>Components of four momentum in observer frame is</p>
 <div class="math">
-\[\frac{E'}{c} = \gamma \left(\frac{E}{c} - \beta p_x\right),\]</div>
+\[p_o^\mu = \begin{pmatrix} E_o &amp; E_o \cos\theta_o &amp; E_o\sin\theta_o &amp; 0 \end{pmatrix}.\]</div>
+<p>The components in the emission frame is</p>
+<div class="math">
+\[p_e^\mu = \begin{pmatrix} E_e &amp; E_e \cos\theta_e &amp; E_e\sin\theta_e &amp; 0 \end{pmatrix}.\]</div>
+<p>Since momentum is a vector, we have the Lorentz transformation which transfrom it in to <span class="math">\(O_o\)</span> frame,</p>
+<div class="math">
+\[\frac{E_o}{c} = \gamma \left(\frac{E_e}{c} - \beta p_e^1\right),\]</div>
 <p>where we also have</p>
 <div class="math">
-\[\begin{split}p_x &amp;= p\cos\theta,\\
-p = E/c.\end{split}\]</div>
-<p>Combining these equations, the energy of the photons in O&#8217; frame is</p>
-<div class="math">
-\[E' = E \gamma (1 - \beta \cos\theta).\]</div>
-<p>In quantum mechanics, energy is related to angular frequency,</p>
-<div class="math">
-\[E = \hbar \omega.\]</div>
-<p>The angular frequency in O&#8217; frame is</p>
-<div class="math">
-\[\omega ' = \omega \gamma (1-\beta \cos\theta).\]</div>
+\[\begin{split}p_e^1 &amp;= p_e\cos\theta_e,\\
+p_e &amp;= E_e/c.\end{split}\]</div>
+<div class="note admonition">
+<p class="first admonition-title">Redshift</p>
 <p>Redshift is define as</p>
-<div class="math">
+<div class="last math">
 \[\begin{split}z &amp;= \frac{\nu_e - \nu_o}{\nu_o} \\
 &amp; = \frac{\omega_e - \omega_o}{\omega_o} \\
 &amp; = \frac{1/\gamma - 1 + \beta\cos\theta}{1-\beta \cos\theta}.\end{split}\]</div>
+</div>
 <div class="admonition-non-relativistic-doppler-shift admonition">
 <p class="first admonition-title">Non-relativistic Doppler Shift</p>
 <p>To understand the effect of relativity, we would first recall the non-relativistic doppler shift.</p>
@@ -334,6 +344,25 @@ p = E/c.\end{split}\]</div>
 \[\omega'_{non-rel} = \omega_{non-rel}(1-v/c \cos\theta).\]</div>
 <p class="last">where no <span class="math">\(\gamma\)</span> is relavent. It&#8217;s obvious that we have only two kinds of shift, redshift due to the source is closing, or blueshift due to the fact that the source is moving away.</p>
 </div>
+<div class="section" id="redshift-relation-to-angle-in-emission-frame">
+<h3>Redshift Relation to Angle in Emission Frame<a class="headerlink" href="#redshift-relation-to-angle-in-emission-frame" title="Permalink to this headline">¶</a></h3>
+<p>Combining these equations, the energy of the photons in O&#8217; frame is</p>
+<div class="math">
+\[E_o = E_e \gamma (1 - \beta \cos\theta_e).\]</div>
+<p>In quantum mechanics, energy is related to angular frequency,</p>
+<div class="math">
+\[E_{o/e} = \hbar \omega_{o/e}.\]</div>
+<p>The angular frequency in O&#8217; frame is</p>
+<div class="math">
+\[\omega_o ' = \omega_e \gamma (1-\beta \cos\theta_e).\]</div>
+</div>
+<div class="section" id="redshift-relation-to-angle-in-observor-frame">
+<h3>Redshift Relation to Angle in Observor Frame<a class="headerlink" href="#redshift-relation-to-angle-in-observor-frame" title="Permalink to this headline">¶</a></h3>
+<p>The problem is, we know that <span class="math">\(\theta_e\neq\theta_o\)</span>. In many cases, it&#8217;s more convinient to obtain the angle in observation frame <span class="math">\(\theta_o\)</span>.</p>
+<p>In this case, we Lorentz transform the representation of four momentum in :math:``</p>
+</div>
+<div class="section" id="relativistic-effect">
+<h3>Relativistic Effect<a class="headerlink" href="#relativistic-effect" title="Permalink to this headline">¶</a></h3>
 <p>Here we have three different kinds, the additional one is the transverse redshift due to the <span class="math">\(\gamma\)</span> factor or the contraction of time.</p>
 <p>An gif from wikipedia shows this explicitly,</p>
 <div class="figure align-center" id="id1">
@@ -343,6 +372,14 @@ p = E/c.\end{split}\]</div>
 <p>The change in wavelength is given by</p>
 <div class="math">
 \[\frac{\lambda_{obs} }{ \lambda_{src}  }= \sqrt{ \frac{1 - \beta}{1 + \beta} } .\]</div>
+</div>
+</div>
+<div class="section" id="four-vector-language">
+<h2>Four Vector Language<a class="headerlink" href="#four-vector-language" title="Permalink to this headline">¶</a></h2>
+<p>From the knowledge of special relativity, we know that</p>
+<div class="math">
+\[E_o = p^a U_a,\]</div>
+<p>where <span class="math">\(U_a\)</span> is the four velocity of observer.</p>
 </div>
 </div>
 
