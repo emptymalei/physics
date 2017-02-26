@@ -7,6 +7,7 @@ Relativity
 
    hyperbolic-geometry.rst
    space-time-diagram.rst
+   forms.rst
    special-relativity.rst
    general-relativity.rst
    general-relativity-adv.rst

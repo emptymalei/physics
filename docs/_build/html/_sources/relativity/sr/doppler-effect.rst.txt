@@ -253,4 +253,4 @@ Spacetime Diagram
 
 Needless to say, it can be explained using spacetime diagram. The only caveat is to pay attention to the equal time surface.
 
-I am just too lazy to make a spacetime diagram with six axis here. You get the idea.
+I am just too lazy to make a spacetime diagram with six axes here. You get the idea.
