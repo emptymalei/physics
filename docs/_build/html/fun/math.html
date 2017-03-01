@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Regid Body &#8212; Physics Notes</title>
+    <title>Math4Fun &#8212; Physics Notes</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -34,8 +34,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Central Force Fields" href="central-force.html" />
-    <link rel="prev" title="Lagrangian and Equation of Motion" href="lagrangian.html" />
+    <link rel="next" title="Quantum" href="quantum.html" />
+    <link rel="prev" title="Fun" href="index.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -174,11 +174,11 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../fun/math.html">Math4Fun</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../fun/quantum.html">Quantum</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../fun/relativity.html">Relativity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../fun/electrodynamics.html">Electrodynamics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Fun</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Math4Fun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quantum.html">Quantum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relativity.html">Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electrodynamics.html">Electrodynamics</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../vocabulary/index.html">Vocabulary</a><ul>
@@ -197,13 +197,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../math/statistics/statistics.html">Statistics</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Classical Mechanics</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="lagrangian.html">Lagrangian and Equation of Motion</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Regid Body</a></li>
-<li class="toctree-l2"><a class="reference internal" href="central-force.html">Central Force Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="oscillators.html">Oscillators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="oscillators.html#refs-notes">Refs &amp; Notes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hamiltonian-dynamics.html">Hamiltonian Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cm/lagrangian.html">Lagrangian and Equation of Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/rigid-body.html">Regid Body</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/central-force.html">Central Force Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/oscillators.html">Oscillators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/oscillators.html#refs-notes">Refs &amp; Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/hamiltonian-dynamics.html">Hamiltonian Dynamics</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../quantum/index.html">Quantum Mechanics</a><ul>
@@ -255,7 +255,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Regid Body</a></li>
+<li><a class="reference internal" href="#">Math4Fun</a><ul>
+<li><a class="reference internal" href="#a-funny-expression-for-gradient">A funny expression for gradient</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -265,11 +268,11 @@
               
                 
   <li>
-    <a href="lagrangian.html" title="Previous Chapter: Lagrangian and Equation of Motion"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Lagrangian an...</span>
+    <a href="index.html" title="Previous Chapter: Fun"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Fun</span>
     </a>
   </li>
   <li>
-    <a href="central-force.html" title="Next Chapter: Central Force Fields"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Central Force Fields &raquo;</span>
+    <a href="quantum.html" title="Next Chapter: Quantum"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Quantum &raquo;</span>
     </a>
   </li>
               
@@ -297,14 +300,13 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="regid-body">
-<h1>Regid Body<a class="headerlink" href="#regid-body" title="Permalink to this headline">¶</a></h1>
-<p>Center of mass <span class="math">\(\vec R\)</span> is defined as</p>
+  <div class="section" id="math4fun">
+<h1>Math4Fun<a class="headerlink" href="#math4fun" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a-funny-expression-for-gradient">
+<h2>A funny expression for gradient<a class="headerlink" href="#a-funny-expression-for-gradient" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-\[\int \rho(\vec r) \vec r d^3 \vec r = \int \rho(\vec r) \vec R d^3 \vec r .\]</div>
-<p>Equivalently,</p>
-<div class="math">
-\[\int \rho(\vec r) \left( \vec r - \vec R \right) d^3 \vec r = 0.\]</div>
+\[\odot\nabla\oslash + \oslash\nabla\odot = \nabla(\odot\cdot \oslash)\]</div>
+</div>
 </div>
 
 
@@ -362,7 +364,7 @@
         <a href="/genindex.html">Index</a>
      </span> |
        <span><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-       <a href="../_sources/cm/rigid-body.rst.txt"
+       <a href="../_sources/fun/math.rst.txt"
       rel="nofollow">Page Source</a>
       </span>
 
