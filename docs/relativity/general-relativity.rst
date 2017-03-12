@@ -9,6 +9,7 @@ General relativity is a theory of gravity. The idea is to find a set of "proper"
 
    gr/gr-principles.rst
    gr/gr-math.rst
+   gr/energy-momentum-tensor.rst
 
 
 
