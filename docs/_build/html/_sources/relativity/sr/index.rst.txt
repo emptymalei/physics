@@ -77,6 +77,8 @@ What people found is that the geometry is hyperbolic geometry, hence the metric 
 .. toctree::
    :maxdepth: 2
 
-   sr/sr-basics.rst
-   sr/doppler-effect.rst
-   sr/relativistic-effects-misc.rst
+   hyperbolic-geometry.rst
+   space-time-diagram.rst
+   sr-basics.rst
+   doppler-effect.rst
+   relativistic-effects-misc.rst

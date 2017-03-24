@@ -3,7 +3,7 @@ General Relativity Revisited
 *******************************
 
 
-This post lists the experiments which are used to test gravity theories
+This section lists the experiments which are used to test gravity theories
 carried out on the earth.
 
 

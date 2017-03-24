@@ -3,7 +3,7 @@ Relativistic Aberration of Light
 
 .. _relativistic-aberration:
 
-.. figure:: ../assets/special-relativity/relativistic-aberration.png
+.. figure:: assets/special-relativity/relativistic-aberration.png
    :align: center
 
    The relativistic aberration of light.

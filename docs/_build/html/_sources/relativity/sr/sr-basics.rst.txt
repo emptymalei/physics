@@ -90,7 +90,7 @@ Hyperbolic Geometric Description
 
    .. _special-relativity-velocity-addition:
 
-   .. figure:: ../assets/special-relativity/specialRelativityVelocityAddition.png
+   .. figure:: assets/special-relativity/specialRelativityVelocityAddition.png
       :align: center
 
       Addition of velocities

@@ -5,9 +5,6 @@ Relativity
 .. toctree::
    :maxdepth: 2
 
-   hyperbolic-geometry.rst
-   space-time-diagram.rst
-   forms.rst
-   special-relativity.rst
-   general-relativity.rst
-   general-relativity-adv.rst
+   math/index.rst
+   sr/index.rst
+   gr/index.rst

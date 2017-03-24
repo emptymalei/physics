@@ -156,7 +156,7 @@ For motion that is not along the line-of-sight, angle difference becomes importa
 
 An gif from wikipedia shows this explicitly,
 
-.. figure:: ../assets/special-relativity/XYCoordinates.gif
+.. figure:: assets/special-relativity/XYCoordinates.gif
    :align: center
 
    Image Source: `File:XYCoordinates.gif <https://en.wikipedia.org/wiki/File:XYCoordinates.gif>`_
