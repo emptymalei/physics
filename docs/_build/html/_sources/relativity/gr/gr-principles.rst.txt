@@ -33,7 +33,7 @@ The first example that can be easily worked out is the redshift of photons in gr
 
 Using the equivalence principle, we expect that the photon doesn't change when we measure everything in a freely falling frame.
 
-Suppose the source emits a photon when our free-fall starts. It takes the photon :math:`\Delta t= h` to climb up to a height :math:`h`. When we measure the photon at the top, our frame (measurement) is done with a relative velocity :math:`gh` compared to the beginning of the experiment. Thus we experience Doppler shift of the photon,
+Suppose the source emits a photon when our free-fall starts. It takes the photon :math:`\Delta t= h` to climb up to a height :math:`h`. When we measure the photon at the top, our frame (measurement) is done with a relative velocity :math:`gh` compared to the beginning of the experiment. Thus we experience Doppler shift (first order) of the photon,
 
 .. math::
    \frac{ \nu'_{h} }{\nu_{h}} = 1+gh,
