@@ -2,6 +2,27 @@ Curved Spacetime
 =======================
 
 
+Christoffel Symbol
+---------------------------
+
+
+By definition, Christoffel symbol is defined through
+
+.. math::
+   \frac{\partial}{\partial x^\beta} \mathbf e_\alpha = \Gamma^\mu_{\alpha\beta} \mathbf e_\mu.
+
+So what it means geometrically, is the small change in the basis vector :math:`\mathbf e_\alpha` when we change the coordinate :math:`x^\beta`, then project it on to the basis vector :math:`\mathbf e_\mu`.
+
+.. figure:: assets/christoffel-symbol-geometrical-meaning.png
+   :align: center
+
+   Christoffel symbol tells us the change in the basis when we move around a little bit. This is an example of polar coordinate system.
+
+In polar coordinate system, the basis change when we move from one point to another. At point A, the basis vectors are shown as red while the basis vectors at point B are shown as black. The two sets of basis vectors are different when we look at it. The change of the vectors are described by :math:`\frac{\partial}{\partial x^\beta} \mathbf e_\alpha`, which are shown as dotted vectors :math:`\Delta \mathbf e_\theta` and :math:`\Delta \mathbf e_r`. These are calculatable fairly easily. Then we project these vectors onto the basis to get the components of Christoffel symbol.
+
+
+
+
 Curvature
 --------------------
 
@@ -56,12 +77,40 @@ Then we do the variation of length. Before we actually do it, it's good to think
 which should be 0 if we require it to be the extemal length.
 
 .. admonition:: Mathematics to Prove Geodesic is the Extemal Line
-   :class: toggle
+   :class: note
 
-   Variation
+   In principle, we could define a Lagrangian and use Euler-Lagrange equation. But here I will demonstrate it using the variation principle.
+
+   .. math::
+      \delta l &= \frac{1}{2} \int_{\lambda_1}^{\lambda_2} \left( g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  \right)^{-1/2} \left(  (\delta g_{\alpha\beta}) \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  + g_{\alpha\beta} \left(\delta\frac{d x^\alpha}{d\lambda} \right) \frac{d x^\beta}{d\lambda} + g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \left( \delta \frac{d x^\beta}{d\lambda} \right) \right)  d\lambda\\
+      & = \frac{1}{2} \int_{\lambda_1}^{\lambda_2} \left( g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  \right)^{-1/2} \left(  (\delta g_{\alpha\beta}) \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  + 2 g_{\alpha\beta} \left(\delta\frac{d x^\alpha}{d\lambda} \right) \frac{d x^\beta}{d\lambda}  \right)  d\lambda,
+
+   where we used the symmetry in :math:``{}_{\alpha\beta} in the last step.
+
+   So we need to calculate :math:`\delta g_{\alpha\beta}`
+
+   .. math::
+      \delta g_{\alpha\beta} &= \frac{ g_{\alpha\beta}(x^\mu + \delta x^\mu) - g_{\alpha\beta}(x^\mu) }{\delta x^\mu} \delta x^\mu = g_{\alpha\beta,\mu} \delta x^\mu \\
+      \delta \frac{d x^\alpha}{d\lambda} & = \frac{d \delta x^\alpha}{d\lambda}.
+
+   Plug this in and sort out the total derivatives then we have an expression
+
+   .. math::
+      \delta l = \frac{1}{2}\int_{\lambda_1}^{\lambda_2} S \left( g_{\alpha\beta,\mu} \frac{dx^\alpha}{d\lambda} \frac{dx^\beta}{d\lambda} - 2 \frac{d}{d\lambda}\left(g_{\alpha\mu} \frac{dx^\alpha}{d\lambda} \right) \right) ,
+
+   where we defined
+
+   .. math::
+      S =  \left( g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  \right)^{-1/2}
+
+   which is a constant since it simply measures the scaling of parameters and length.
+
+   Then we use the symmetries in metric and get the Euler-Lagrangian equation which is basically the geodesic equation.
 
 
-1. The longest line between two points is the time-like geodesic.
+
+
+1. The longest length between two points is the time-like geodesic.
 2. The time-like geodesic is not necessarily the longest line between two points.
 3. We can not find shortest time-like lines between two points.
 
@@ -71,7 +120,7 @@ which should be 0 if we require it to be the extemal length.
 
 
 
-
-
 References and Notes
 ----------------------
+
+1. Bernard F. Schutz, A first course in general relativity. Chapter 6.

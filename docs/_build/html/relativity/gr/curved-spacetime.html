@@ -253,6 +253,7 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Curved Spacetime</a><ul>
+<li><a class="reference internal" href="#christoffel-symbol">Christoffel Symbol</a></li>
 <li><a class="reference internal" href="#curvature">Curvature</a></li>
 <li><a class="reference internal" href="#parallel-transport">Parallel Transport</a></li>
 <li><a class="reference internal" href="#geodesics">Geodesics</a></li>
@@ -302,6 +303,18 @@
       
   <div class="section" id="curved-spacetime">
 <h1>Curved Spacetime<a class="headerlink" href="#curved-spacetime" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="christoffel-symbol">
+<h2>Christoffel Symbol<a class="headerlink" href="#christoffel-symbol" title="Permalink to this headline">¶</a></h2>
+<p>By definition, Christoffel symbol is defined through</p>
+<div class="math">
+\[\frac{\partial}{\partial x^\beta} \mathbf e_\alpha = \Gamma^\mu_{\alpha\beta} \mathbf e_\mu.\]</div>
+<p>So what it means geometrically, is the small change in the basis vector <span class="math">\(\mathbf e_\alpha\)</span> when we change the coordinate <span class="math">\(x^\beta\)</span>, then project it on to the basis vector <span class="math">\(\mathbf e_\mu\)</span>.</p>
+<div class="figure align-center" id="id3">
+<img alt="../../_images/christoffel-symbol-geometrical-meaning.png" src="../../_images/christoffel-symbol-geometrical-meaning.png" />
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Christoffel symbol tells us the change in the basis when we move around a little bit. This is an example of polar coordinate system.</span></p>
+</div>
+<p>In polar coordinate system, the basis change when we move from one point to another. At point A, the basis vectors are shown as red while the basis vectors at point B are shown as black. The two sets of basis vectors are different when we look at it. The change of the vectors are described by <span class="math">\(\frac{\partial}{\partial x^\beta} \mathbf e_\alpha\)</span>, which are shown as dotted vectors <span class="math">\(\Delta \mathbf e_\theta\)</span> and <span class="math">\(\Delta \mathbf e_r\)</span>. These are calculatable fairly easily. Then we project these vectors onto the basis to get the components of Christoffel symbol.</p>
+</div>
 <div class="section" id="curvature">
 <h2>Curvature<a class="headerlink" href="#curvature" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
@@ -351,18 +364,37 @@
 <div class="math">
 \[\delta l \sim \int_{\lambda_1}^{\lambda_2} (\cdots)_\alpha \delta x^\alpha d\lambda,\]</div>
 <p>which should be 0 if we require it to be the extemal length.</p>
-<div class="toggle admonition">
+<div class="note admonition">
 <p class="first admonition-title">Mathematics to Prove Geodesic is the Extemal Line</p>
-<p class="last">Variation</p>
+<p>In principle, we could define a Lagrangian and use Euler-Lagrange equation. But here I will demonstrate it using the variation principle.</p>
+<div class="math">
+\[\begin{split}\delta l &amp;= \frac{1}{2} \int_{\lambda_1}^{\lambda_2} \left( g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  \right)^{-1/2} \left(  (\delta g_{\alpha\beta}) \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  + g_{\alpha\beta} \left(\delta\frac{d x^\alpha}{d\lambda} \right) \frac{d x^\beta}{d\lambda} + g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \left( \delta \frac{d x^\beta}{d\lambda} \right) \right)  d\lambda\\
+&amp; = \frac{1}{2} \int_{\lambda_1}^{\lambda_2} \left( g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  \right)^{-1/2} \left(  (\delta g_{\alpha\beta}) \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  + 2 g_{\alpha\beta} \left(\delta\frac{d x^\alpha}{d\lambda} \right) \frac{d x^\beta}{d\lambda}  \right)  d\lambda,\end{split}\]</div>
+<p>where we used the symmetry in :math:<a href="#id1"><span class="problematic" id="id2">``</span></a>{}_{alphabeta} in the last step.</p>
+<p>So we need to calculate <span class="math">\(\delta g_{\alpha\beta}\)</span></p>
+<div class="math">
+\[\begin{split}\delta g_{\alpha\beta} &amp;= \frac{ g_{\alpha\beta}(x^\mu + \delta x^\mu) - g_{\alpha\beta}(x^\mu) }{\delta x^\mu} \delta x^\mu = g_{\alpha\beta,\mu} \delta x^\mu \\
+\delta \frac{d x^\alpha}{d\lambda} &amp; = \frac{d \delta x^\alpha}{d\lambda}.\end{split}\]</div>
+<p>Plug this in and sort out the total derivatives then we have an expression</p>
+<div class="math">
+\[\delta l = \frac{1}{2}\int_{\lambda_1}^{\lambda_2} S \left( g_{\alpha\beta,\mu} \frac{dx^\alpha}{d\lambda} \frac{dx^\beta}{d\lambda} - 2 \frac{d}{d\lambda}\left(g_{\alpha\mu} \frac{dx^\alpha}{d\lambda} \right) \right) ,\]</div>
+<p>where we defined</p>
+<div class="math">
+\[S =  \left( g_{\alpha\beta} \frac{d x^\alpha}{d\lambda} \frac{d x^\beta}{d\lambda}  \right)^{-1/2}\]</div>
+<p>which is a constant since it simply measures the scaling of parameters and length.</p>
+<p class="last">Then we use the symmetries in metric and get the Euler-Lagrangian equation which is basically the geodesic equation.</p>
 </div>
 <ol class="arabic simple">
-<li>The longest line between two points is the time-like geodesic.</li>
+<li>The longest length between two points is the time-like geodesic.</li>
 <li>The time-like geodesic is not necessarily the longest line between two points.</li>
 <li>We can not find shortest time-like lines between two points.</li>
 </ol>
 </div>
 <div class="section" id="references-and-notes">
 <h2>References and Notes<a class="headerlink" href="#references-and-notes" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Bernard F. Schutz, A first course in general relativity. Chapter 6.</li>
+</ol>
 </div>
 </div>
 
