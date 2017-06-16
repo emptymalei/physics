@@ -254,6 +254,16 @@
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">General Relativity Revisited</a><ul>
 <li><a class="reference internal" href="#hyperthesis">Hyperthesis</a></li>
+<li><a class="reference internal" href="#derivation-of-field-equation">Derivation of Field Equation</a><ul>
+<li><a class="reference internal" href="#from-postulations">From postulations</a></li>
+<li><a class="reference internal" href="#from-action">From Action</a></li>
+<li><a class="reference internal" href="#lovelocks-theorem">Lovelock’s Theorem</a></li>
+<li><a class="reference internal" href="#birkhoffs-theorem">Birkhoff’s Theorem</a></li>
+<li><a class="reference internal" href="#no-hair-theorems">No-hair Theorems</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#perturbation-theory-of-general-relativity">Perturbation Theory of General Relativity</a></li>
+<li><a class="reference internal" href="#what-frame-are-we-in">What Frame Are We In</a></li>
 <li><a class="reference internal" href="#experiments">Experiments</a><ul>
 <li><a class="reference internal" href="#eotvos-torsion-balance">Eotvos Torsion Balance</a><ul>
 <li><a class="reference internal" href="#how">How</a></li>
@@ -265,6 +275,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#summary-table">Summary Table</a></li>
+<li><a class="reference internal" href="#footnote">Footnote</a></li>
 </ul>
 </li>
 </ul>
@@ -384,11 +395,11 @@ the following table to do so.</p>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
-<col width="14%" />
-<col width="32%" />
-<col width="26%" />
+<col width="13%" />
+<col width="33%" />
+<col width="27%" />
 <col width="16%" />
-<col width="12%" />
+<col width="11%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Theory</th>
@@ -400,8 +411,8 @@ the following table to do so.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>GR</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>Y</td>
+<td>Y</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -418,6 +429,144 @@ the following table to do so.</p>
 <li><strong>Mach Principle</strong>: gravity coupled to matter</li>
 </ul>
 </div>
+<div class="section" id="derivation-of-field-equation">
+<h2>Derivation of Field Equation<a class="headerlink" href="#derivation-of-field-equation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="from-postulations">
+<h3>From postulations<a class="headerlink" href="#from-postulations" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>General covirance</li>
+<li>Linear approximation should be compatible with Newton’s thoery/Weak
+field and slow motion limit is Newton’s thoery of gravity</li>
+<li>In theory regarding the metric, no higher than second derivative is
+envolved and the terms of second derivative is linear.</li>
+</ol>
+<p>The first point is for the invariance of frames/coordinates. The second
+point is for the success of Newtonian’s theory on our earth.</p>
+<p>Why do we believe the third point? The answer is that we don’t have to.
+Here we propose it is because the simplicity of such quasilinear
+equations, i.e.,</p>
+<div class="math">
+\[F(\phi, \partial \phi) \partial^2\phi + G(\phi, \partial\phi) = 0\]</div>
+<p>We have a bunch of theorems on this system, including its existance of
+solutions, Couchy problem, wave propagation etc.</p>
+<p>We can use both 1&amp;2 and 1&amp;3 to derive Einstein’s equation. That is 2 and
+3 are identical when 1 is considered.</p>
+</div>
+<div class="section" id="from-action">
+<h3>From Action<a class="headerlink" href="#from-action" title="Permalink to this headline">¶</a></h3>
+<p>This is an application of stationary principal and Hilbert action or
+Hilbert action plus a <span class="math">\(\Lambda\)</span>.</p>
+</div>
+<div class="section" id="lovelocks-theorem">
+<h3>Lovelock’s Theorem<a class="headerlink" href="#lovelocks-theorem" title="Permalink to this headline">¶</a></h3>
+<p><strong>The only possible second-order Euler-Lagrange expression obtainable in
+a four dimensional space from a scalar density of the form</strong>
+<span class="math">\(\scr L = \scr L(g_{\mu\nu})\)</span> <strong>is</strong></p>
+<div class="math">
+\[E^{\mu\nu} = \alpha \sqrt{-g} [ R^{\mu\nu} - \frac{1}{2} g^{\mu\nu}R ] +\lambda \sqrt{-g} g^{\mu\nu}\]</div>
+<p>Thus modification could be</p>
+<ul class="simple">
+<li>Metric tensor not a fundamental tensor</li>
+<li>Higher than second order derivatives of the metric in the field
+equations</li>
+<li>Not a four dimension space</li>
+<li>Not rank (2,0) tensor field equations, non-symmetry of field
+equations under exchange of indices, or divergence field equations</li>
+<li>non-locality</li>
+</ul>
+</div>
+<div class="section" id="birkhoffs-theorem">
+<h3>Birkhoff’s Theorem<a class="headerlink" href="#birkhoffs-theorem" title="Permalink to this headline">¶</a></h3>
+<p><strong>All spherically symmetric solutions of Einstein’s equations in vacuum
+must be static and asymptotically flat, without</strong> <span class="math">\(\Lambda\)</span>.</p>
+<p>Actually, this can be extended to a <span class="math">\(\Lambda\)</span> space only keeping
+the static result.</p>
+</div>
+<div class="section" id="no-hair-theorems">
+<h3>No-hair Theorems<a class="headerlink" href="#no-hair-theorems" title="Permalink to this headline">¶</a></h3>
+<p><strong>The generic final state of gravitational collapse is a Kerr-Newman
+black hole, fully specified by its mass, angular momentum and charge</strong></p>
+<p>Also, “in the context of General Relativity with a cosmological constant
+all expanding universe solutions should evolve towards de Sitter
+space.” <a class="footnote-reference" href="#id2" id="id1">[1]</a> This is only valid in some situation.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><strong>R. M. Wald</strong>. Asymptotic behavior of homogeneous cosmological models in the presence of a positive cosmological constant. Phys. Rev. D, 28(8):2118–2120, Oct 1983.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="perturbation-theory-of-general-relativity">
+<h2>Perturbation Theory of General Relativity<a class="headerlink" href="#perturbation-theory-of-general-relativity" title="Permalink to this headline">¶</a></h2>
+<p>Gauge freedom is the freedom of choosing a coordinate system. Fixing a
+gauge means choosing a particular coordinate system.</p>
+<p>Gauge tranformation is Lie derivative along some arbitary vector here.</p>
+<p>Line element</p>
+<div class="math">
+\[\begin{split}\tilde g _ {00} &amp;=&amp; -a^2(1+2 A Y) \\
+\tilde g _ {0j} &amp;=&amp; -a^2 B Y _ j \\
+\tilde g _ {ij} &amp;=&amp; a^2(\gamma _ {ij} +2 H _ L Y \gamma _ {ij} +2 H _ T Y _ {ij} )\end{split}\]</div>
+<p>Energy momentum tensor is</p>
+<div class="math">
+\[\begin{split}\tilde T^0 _ {\phantom{0}0} = -\rho (1+\delta Y) \\
+\tilde T^0 _ {\phantom{0} j} = (\rho + p)(v - B) Y \\
+\tilde T^j _ {\phantom{j}0 } = -(\rho + p)v Y^{j}\end{split}\]</div>
+<p>For a infinitesimal gauge transformation along some vector
+(<span class="math">\(X = T \partial_t + L^i \partial_i\)</span>), gauge
+variables are</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="15%" />
+<col width="34%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Symbol</th>
+<th class="head">Physics</th>
+<th class="head">Gauge Transformation</th>
+<th class="head">Note</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="math">\(\tilde A\)</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Through that we can find out gauge invariant variables.</p>
+</div>
+<div class="section" id="what-frame-are-we-in">
+<h2>What Frame Are We In<a class="headerlink" href="#what-frame-are-we-in" title="Permalink to this headline">¶</a></h2>
+<p>Synge once said, use space and time, and define them.</p>
+<p>This post is aimed to make clear what frame are we in.</p>
+<p>In general relativity, we often transform coordinates. Here is an
+example.</p>
+<p><strong>The general form of metric with spherical space component is</strong></p>
+<div class="math" id="equation-MetricForm1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-MetricForm1" title="Permalink to this equation">¶</a></span>\[\mathrm ds^2 = - \gamma(r,t)c^2\mathrm dt^2 + \beta(r,t)c\mathrm dr\mathrm dt + \alpha(r,t)[\mathrm dr^2 + r^2 (\mathrm d\theta^2 + \sin^2\theta \mathrm d\phi^2)]\]</div>
+<p>With a transformation <span class="math">\(\alpha(r,t)r^2 = r'^2\)</span>,</p>
+<div class="math">
+\[\mathrm ds^2 = - \gamma'(r',t)c^2\mathrm dt^2 + \beta'(r',t)c\mathrm dr\mathrm dt + \alpha(r,t)[\mathrm dr^2 + r^2 (\mathrm d\theta^2 + \sin^2\theta \mathrm d\phi^2)]\]</div>
+<p>Then compose the integral multiplier</p>
+<div class="math">
+\[c\mathrm dt'= \eta(r',t) [ - \gamma'(r',t) c \mathrm dt + \frac{1}{2} \beta'(r',t)\mathrm dr']\]</div>
+<p>And finally,</p>
+<div class="math">
+\[\mathrm ds^2 = -\eta^{-2}(r',t) \gamma'^{-1}(r',t)c^2\mathrm dt'^2 + [\alpha'(r',t) + \frac{\beta'^2(r',t)}{4r'} ]\mathrm dr'^2 + r'^2(\mathrm d\theta^2 + \sin^2\theta\mathrm d\phi^2)\]</div>
+<p>In general</p>
+<div class="math" id="equation-MetricForm2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-MetricForm2" title="Permalink to this equation">¶</a></span>\[\mathrm ds^2 = -b(r,t)c^2\mathrm dt^2 + a(r,t)\mathrm dr^2 + r^2(\mathrm d\theta^2 + \sin^2\theta\mathrm d\phi^2)\]</div>
+<p>Then what? The two forms of metric demonstrate different properties.
+Take Birkhoff theorem as an example. The results could be very different
+startting from the form <a class="reference internal" href="#equation-MetricForm1">(1)</a> and <a class="reference internal" href="#equation-MetricForm2">(2)</a>.</p>
+<p>It is obviously very important to show what the coordinate
+transformation means and what frame are the observers in indicated by
+the coordinates.</p>
+</div>
 <div class="section" id="experiments">
 <h2>Experiments<a class="headerlink" href="#experiments" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="eotvos-torsion-balance">
@@ -428,10 +577,15 @@ the following table to do so.</p>
 <li>Inertial mass <span class="math">\(m_I\)</span></li>
 <li>Gravitational mass <span class="math">\(m_G\)</span></li>
 </ul>
-<p>In Newtonian system, the acceleration of an object will be \[ a \]</p>
-<p>In a static and uniform gravitation field, the gravity force is \[ G =
-- g m_G r \]</p>
-<p>Thus the acceleration in this case should be \[ a -r g \]</p>
+<p>In Newtonian system, the acceleration of an object will be</p>
+<div class="math">
+\[\vec a  \propto \frac{\vec F}{m_I}.\]</div>
+<p>In a static and uniform gravitation field, the gravity force is</p>
+<div class="math">
+\[G = - g m_G \hat r\]</div>
+<p>Thus the acceleration in this case should be</p>
+<div class="math">
+\[\vec a\propto -\hat r g \frac{m_G}{m_I}\]</div>
 <p>When <span class="math">\(m_G/m_I\)</span> is constant, the falling accerelation are the same
 for different objects with same mass. However, if <span class="math">\(m_G/m_I\)</span> is not
 a constant, say <span class="math">\(m_G\ne m_I\)</span>, different objects would fall at
@@ -462,36 +616,144 @@ than the observations).</p>
 <h2>Summary Table<a class="headerlink" href="#summary-table" title="Permalink to this headline">¶</a></h2>
 <p>Tables constructed according to arXiv:1106.2476v3.</p>
 <p>Test of fundamental principles</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="5%" />
-<col width="24%" />
-<col width="33%" />
-<col width="38%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">&nbsp;</th>
-<th class="head">Experiment</th>
-<th class="head">Results</th>
-<th class="head">Note</th>
-</tr>
-</thead>
+<ol class="arabic simple">
+<li>WEP：
+1. Eotvos torsion balance： <span class="math">\(\eta = (0.3 \pm 1.8) \times 10^{-13}\)</span>, More precise in space exp.[1a]_ <a class="reference internal" href="#b" id="id3">[1b]</a> <a class="reference internal" href="#c" id="id4">[1c]</a>
+2. Gravitational redshift of light <a class="footnote-reference" href="#id20" id="id5">[2]</a></li>
+<li>EEP:
+1. Hughes-Drever Experiment: <span class="math">\(n \le 10^{-27}\)</span>, references <a class="reference internal" href="#id21" id="id6">[3a]</a> <a class="reference internal" href="#id22" id="id7">[3b]</a></li>
+</ol>
+<p>Test of GR:</p>
+<ol class="arabic simple">
+<li>Null geodesics test:
+1. photon trajectory, spatial deflection:  <span class="math">\(\theta = (0.99992\pm 0.00023)\times 1.75''\)</span>, where 1.75 is the theoretical value; Achieved through observing star position, etc <a class="footnote-reference" href="#id24" id="id8">[4]</a>
+2. Shapiro time-delay effect: <span class="math">\(\Delta t = (1.00001\pm 0.00001)\Delta t_{GR}\)</span>, references <a class="reference internal" href="#id25" id="id9">[5a]</a> <a class="reference internal" href="#id26" id="id10">[5b]</a></li>
+<li>Time like geodesics:
+1. Anomalous perihelion precession: Just use the PPN formalism <a class="reference internal" href="#id27" id="id11">[6a]</a> <a class="reference internal" href="#id28" id="id12">[6b]</a> <a class="reference internal" href="#id29" id="id13">[6c]</a>
+2. Nordtvedt effect: <span class="math">\(\eta = (-1.0 \pm 1.4) \times 10^{-*13}\)</span>, references <a class="reference internal" href="#id30" id="id14">[7a]</a> <a class="reference internal" href="#id31" id="id15">[7b]</a>
+3. Spinning objects obiting <a class="reference internal" href="#id32" id="id16">[8a]</a> <a class="reference internal" href="#id33" id="id17">[8b]</a></li>
+<li>Small-range:
+1. Potential probing <a class="reference internal" href="#id34" id="id18">[9a]</a> <a class="reference internal" href="#id35" id="id19">[9b]</a></li>
+<li>Radiation
+1. Speed of gravitational waves
+2. Polarity of gravitational radiation
+3. Dynamics of source objects</li>
+</ol>
+</div>
+<div class="section" id="footnote">
+<h2>Footnote<a class="headerlink" href="#footnote" title="Permalink to this headline">¶</a></h2>
+<table class="docutils citation" frame="void" id="a" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr class="row-even"><td>WEP</td>
-<td>Eotvos torsion balance</td>
-<td><span class="math">\(\eta = (0.3 \pm 1.8) \times 10^{-13}\)</span></td>
-<td>More precise in space exp. [[^1]a] [[^1b]] [[^1c]]</td>
-</tr>
-<tr class="row-odd"><td>&nbsp;</td>
-<td>Gravitational redshift of light</td>
-<td>&nbsp;</td>
-<td>[[^2]]</td>
-</tr>
-<tr class="row-even"><td>EEP</td>
-<td>Hughes-Drever Experiment</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
+<tr><td class="label">[1a]</td><td>arXiv:0712.0607</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="b" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[1b]</a></td><td><strong>Eotvos experiment</strong>: using torsion balance to test the equality of gravitational mass and inertial mass. Wikipedia has a photo of how this works.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="c" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[1c]</a></td><td><span class="math">\(\eta=2\frac{ABS(a1-a2)}{ABS(a1+a2)}\)</span>. <span class="math">\(a1\)</span> and <span class="math">\(a2\)</span> are the accelerations of the two bodies in Eotvos torsion balance. Thus <span class="math">\(\eta\)</span> is the accleration difference of the two objects.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id20" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td>To be added</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id21" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[3a]</a></td><td>References: <strong>R. W. P. Drever</strong>. A search for anisotropy of inertial mass using a free precession technique. Philosophical Magazin, 6:683-687, May 1961. ; <strong>V. W. Hughes, H. G. Robinson, and V. Beltran-Lopez</strong>. Upper Limit for the Anisotropy of Inertial Mass from Nuclear Resonance Experiments. Physical Review Letters, 4:342-344, Apr. 1960. ; <strong>S. K. Lamoreaux, J. P. Jacobs, B. R. Heckel, F. J. Raab, and E. N. Fortson</strong>. New limits on spatial anisotropy from optically-pumped 201 Hg and 199 Hg. Physical Review Letters, 57:3125–3128, Dec. 1986. ; <strong>T. E. Chupp, R. J. Hoare, R. A. Loveman, E. R. Oteiza, J. M. Richardson, M. E. Wagshul, and A. K. Thompson</strong>. Results of a new test of local Lorentz invariance: A search for mass anisotropy in 21 Ne. Physical Review Letters, 63:1541–1545, Oct. 1989.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id22" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[3b]</a></td><td><strong>Hughes-Drever Experiment</strong>: test the isotropy of mass and space through the NMR spectrum, or the mono-metric spacetime.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id23" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[3c]</td><td><strong>n</strong>: four momentum of the test particle  is <span class="math">\(p_\mu = \frac{m g_{\mu\nu}u^\nu}{\sqrt{-g_{\alpha\beta}u^\alpha u^\beta}} + \frac{ n h_{\mu\nu}u^\nu }{ -h_{\alpha\beta} u^\alpha u^\beta }\)</span>. Thus <span class="math">\(n\)</span> is the effect of another metric.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id24" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[4]</a></td><td><strong>S. S. Shapiro, J. L. Davis, D. E. Lebach, and J. S. Gregory</strong>. Measurement of the Solar Gravitational Deflection of Radio Waves using Geodetic Very-Long-Baseline Interferometry Data, 1979 1999. Physical Review Letters, 92(12):121101, Mar. 2004.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id25" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[5a]</a></td><td>References, <strong>I. I. Shapiro</strong>. Fourth Test of General Relativity. Physical Review Letters, 13:789–791, Dec. 1964.   ;   <strong>B. Bertotti, L. Iess, and P. Tortora</strong>. A test of general relativity using radio links with the Cassini spacecraft. Nature, 425:374–376, Sept. 2003.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id26" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id10">[5b]</a></td><td><strong>Shapiro time-delay effect</strong>: time delay when light travels through a massive object.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id27" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id11">[6a]</a></td><td>Observational data for the value of perihelion precession of Mercury are summarized in <strong>E. V. Pitjeva</strong>. Modern Numerical Ephemerides of Planets and the Importance of Ranging Observations for Their Creation. Celestial Mechanics and Dynamical Astronomy, 80:249–271, July 2001.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id28" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id12">[6b]</a></td><td>PPN formalism is the lowest order of GR.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id29" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id13">[6c]</a></td><td><strong>Anomalous precession</strong>:</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id30" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id14">[7a]</a></td><td><strong>K. Nordtvedt</strong>. Equivalence Principle for Massive Bodies. I. Phenomenology. Physical Review, 169:1014–1016, May 1968.   ;  <strong>J. G. Williams, S. G. Turyshev, and D. H. Boggs</strong>. Progress in Lunar Laser Ranging Tests of Relativistic Gravity. Physical Review Letters, 93(26):261101, Dec. 2004, arXiv:gr-qc/0411113.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id31" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id15">[7b]</a></td><td><strong>Nordtvedt effect</strong>: massive objects in Eotvos torsion balance experiments. We can use the whole Earth-Moon system to test this effect.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id32" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id16">[8a]</a></td><td>To be added</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id33" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id17">[8b]</a></td><td>There is a Lense Thirring effect here. GPB has done this.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id34" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id18">[9a]</a></td><td>GR can be reduced to Newtonian potential at small range.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id35" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id19">[9b]</a></td><td>Currently, most of the modification has a Yukawa potential form.</td></tr>
 </tbody>
 </table>
 </div>
