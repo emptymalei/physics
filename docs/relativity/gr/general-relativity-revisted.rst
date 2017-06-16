@@ -31,11 +31,11 @@ the following table to do so.
 
 -  **Theoretical Implifications**:
 
-+----------+-----------------------+-------------------+------------+---------+
-| Theory   | Gravitational Waves   | Newtonian Limit   | GR Limit   | Notes   |
-+==========+=======================+===================+============+=========+
-| GR       |                       |                   |            |         |
-+----------+-----------------------+-------------------+------------+---------+
++--------+---------------------+-----------------+----------+-------+
+| Theory | Gravitational Waves | Newtonian Limit | GR Limit | Notes |
++========+=====================+=================+==========+=======+
+| GR     |          Y          |        Y        |          |       |
++--------+---------------------+-----------------+----------+-------+
 
 Most items in mathematics are the same in different theories.
 
@@ -60,12 +60,20 @@ How
 -  Inertial mass :math:`m_I`
 -  Gravitational mass :math:`m_G`
 
-In Newtonian system, the acceleration of an object will be \\[ a \\]
+In Newtonian system, the acceleration of an object will be 
 
-In a static and uniform gravitation field, the gravity force is \\[ G =
-- g m\_G r \\]
+.. math::
+   \vec a  \propto \frac{\vec F}{m_I}.
 
-Thus the acceleration in this case should be \\[ a -r g \\]
+In a static and uniform gravitation field, the gravity force is
+
+.. math::
+    G = - g m_G \hat r
+
+Thus the acceleration in this case should be
+
+.. math::
+   \vec a\propto -\hat r g \frac{m_G}{m_I}
 
 When :math:`m_G/m_I` is constant, the falling accerelation are the same
 for different objects with same mass. However, if :math:`m_G/m_I` is not

@@ -120,8 +120,6 @@ which should be 0 if we require it to be the extemal length.
 
 
 
-
-
 References and Notes
 ----------------------
 
