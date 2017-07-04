@@ -19,6 +19,7 @@ Use the source. Keep the source open.
    preface.rst
    fun/index.rst
    vocabulary/index.rst
+   qualitative-methods/index.rst
    math/index.rst
    cm/index.rst
    quantum/index.rst
