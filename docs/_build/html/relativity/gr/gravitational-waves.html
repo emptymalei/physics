@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Doppler Effect &#8212; Physics Notes</title>
+    <title>Gravitational Waves &#8212; Physics Notes</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -34,8 +34,8 @@
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Relativistic Aberration of Light" href="relativistic-effects-misc.html" />
-    <link rel="prev" title="Basics of Special Relativity" href="sr-basics.html" />
+    <link rel="next" title="General Relativity Revisited" href="general-relativity-revisted.html" />
+    <link rel="prev" title="Energy Momentum Tensor" href="energy-momentum-tensor.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -228,8 +228,8 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Relativity</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../math/index.html">Math in Relativity</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Special Relativity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gr/index.html">General Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sr/index.html">Special Relativity</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">General Relativity</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../astrophysics/index.html">Astrophysics</a><ul>
@@ -256,15 +256,8 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Doppler Effect</a><ul>
-<li><a class="reference internal" href="#conservation-of-four-momentum">Conservation of Four Momentum</a><ul>
-<li><a class="reference internal" href="#redshift-relation-to-angle-in-emission-frame">Redshift Relation to Angle in Emission Frame</a></li>
-<li><a class="reference internal" href="#redshift-relation-to-angle-in-observor-frame">Redshift Relation to Angle in Observor Frame</a></li>
-<li><a class="reference internal" href="#relativistic-effect">Relativistic Effect</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#four-vector-language">Four Vector Language</a></li>
-<li><a class="reference internal" href="#spacetime-diagram">Spacetime Diagram</a></li>
+<li><a class="reference internal" href="#">Gravitational Waves</a><ul>
+<li><a class="reference internal" href="#gauge">Gauge</a></li>
 </ul>
 </li>
 </ul>
@@ -276,11 +269,11 @@
               
                 
   <li>
-    <a href="sr-basics.html" title="Previous Chapter: Basics of Special Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Basics of Spe...</span>
+    <a href="energy-momentum-tensor.html" title="Previous Chapter: Energy Momentum Tensor"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Energy Moment...</span>
     </a>
   </li>
   <li>
-    <a href="relativistic-effects-misc.html" title="Next Chapter: Relativistic Aberration of Light"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Relativistic ... &raquo;</span>
+    <a href="general-relativity-revisted.html" title="Next Chapter: General Relativity Revisited"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Relat... &raquo;</span>
     </a>
   </li>
               
@@ -308,159 +301,21 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="doppler-effect">
-<span id="index-0"></span><h1>Doppler Effect<a class="headerlink" href="#doppler-effect" title="Permalink to this headline">¶</a></h1>
-<p>Doppler shift in special relativity is always confusing. I&#8217;ll demonstrate doppler shift in four different ways.</p>
-<div class="section" id="conservation-of-four-momentum">
-<h2>Conservation of Four Momentum<a class="headerlink" href="#conservation-of-four-momentum" title="Permalink to this headline">¶</a></h2>
-<p>The special relativistic doppler shift can be derived using the fact that 4-momentum is a vector thus it transforms under Lorentz transformation.</p>
-<div class="figure align-center" id="id2">
-<img alt="../../_images/doppler-shift-configuration.png" src="../../_images/doppler-shift-configuration.png" />
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">The observer frame is moving in x direction only.</span></p>
-</div>
-<p>The observer is fixed in observer frame and source of emission is in emission frame.</p>
-<p>The observer detects an angle of light ray <span class="math">\(\theta_o\)</span>. However, the emission angle <span class="math">\(\theta_e\)</span> is different from this angle, i.e., <span class="math">\(\theta_e \neq \theta_0\)</span>.</p>
-<div class="warning admonition">
-<p class="first admonition-title">Which Angle to Use</p>
-<p class="last">Which angle to use then? In theory, we can derive the Doppler shift in terms of either angles. We present both of the analysis. The redshift expressions looks different because they are measuring different events.</p>
-</div>
-<p>Components of four momentum in observer frame is</p>
+  <div class="section" id="gravitational-waves">
+<h1>Gravitational Waves<a class="headerlink" href="#gravitational-waves" title="Permalink to this headline">¶</a></h1>
+<p>In the weak field regime of sourceless Einstein&#8217;s equation (<span class="math">\(T^{\mu\nu}=0\)</span>), the equation for metric with perturbations is reduced to a wave equation,</p>
 <div class="math">
-\[p_o^\mu = \begin{pmatrix} E_o &amp; E_o \cos\theta_o &amp; E_o\sin\theta_o &amp; 0 \end{pmatrix}.\]</div>
-<p>The components in the emission frame is</p>
+\[\left( - \frac{\partial^2}{ \partial t^2 } + \nabla^2 \right) \bar h^{\alpha\beta} = 0,\]</div>
+<p>where <span class="math">\(\bar h^{\alpha\beta}\)</span> is the trace-reversed perturbation of the metric on top of Minkowski metric background, i.e.,</p>
 <div class="math">
-\[p_e^\mu = \begin{pmatrix} E_e &amp; E_e \cos\theta_e &amp; E_e\sin\theta_e &amp; 0 \end{pmatrix}.\]</div>
-<div class="note admonition">
-<p class="first admonition-title">Redshift</p>
-<p>Redshift is define as</p>
-<div class="last math">
-\[\begin{split}z &amp;= \frac{\nu_e - \nu_o}{\nu_o} \\
-&amp; = \frac{\omega_e - \omega_o}{\omega_o}.\end{split}\]</div>
-</div>
-<div class="admonition-non-relativistic-doppler-shift admonition">
-<p class="first admonition-title">Non-relativistic Doppler Shift</p>
-<p>To understand the effect of relativity, we would first recall the non-relativistic doppler shift.</p>
-<div class="math" id="equation-eqn-non-relativistic-redshift-angular-frequency">
-<span class="eqno">(1)<a class="headerlink" href="#equation-eqn-non-relativistic-redshift-angular-frequency" title="Permalink to this equation">¶</a></span>\[\omega_{o,non-rel} = \omega_{e,non-rel}(1-v/c \cos\theta).\]</div>
-<p class="last">where no <span class="math">\(\gamma\)</span> is relavent. It&#8217;s obvious that we have only two kinds of shift, redshift due to the source is closing, or blueshift due to the fact that the source is moving away.</p>
-</div>
-<div class="section" id="redshift-relation-to-angle-in-emission-frame">
-<h3>Redshift Relation to Angle in Emission Frame<a class="headerlink" href="#redshift-relation-to-angle-in-emission-frame" title="Permalink to this headline">¶</a></h3>
-<p>Since momentum is a vector, we have the Lorentz transformation which transfrom it in to <span class="math">\(O_o\)</span> frame,</p>
-<div class="math">
-\[\frac{E_o}{c} = \gamma \left(\frac{E_e}{c} - \beta p_e^1\right),\]</div>
-<p>where we also have</p>
-<div class="math">
-\[\begin{split}p_e^1 &amp;= p_e^0\cos\theta_e,\\
-p_e^0 &amp;= E_e/c.\end{split}\]</div>
-<p>Combining these equations, the energy of the photons in <span class="math">\(O_e\)</span> frame is</p>
-<div class="math">
-\[E_o = E_e \gamma (1 - \beta \cos\theta_e).\]</div>
-<p>In quantum mechanics, energy is related to angular frequency,</p>
-<div class="math">
-\[E_{o/e} = \hbar \omega_{o/e}.\]</div>
-<p>The angular frequency in O&#8217; frame is</p>
-<div class="math" id="equation-eqn-angular-frequency-emission-angle">
-<span class="eqno">(2)<a class="headerlink" href="#equation-eqn-angular-frequency-emission-angle" title="Permalink to this equation">¶</a></span>\[\omega_o = \omega_e \gamma (1-\beta \cos\theta_e).\]</div>
-<p>In fact, <span class="math">\(\beta=v\)</span> if we choose <span class="math">\(c=1\)</span>.</p>
-</div>
-<div class="section" id="redshift-relation-to-angle-in-observor-frame">
-<h3>Redshift Relation to Angle in Observor Frame<a class="headerlink" href="#redshift-relation-to-angle-in-observor-frame" title="Permalink to this headline">¶</a></h3>
-<p>The problem is, we know that <span class="math">\(\theta_e\neq\theta_o\)</span>. In many cases, it&#8217;s more convinient to obtain the angle in observation frame <span class="math">\(\theta_o\)</span>.</p>
-<p>In this case, we Lorentz transform the representation of four momentum in observer frame (<span class="math">\(p_o^\mu\)</span>) to emission frame (<span class="math">\(p_e^\mu\)</span>).</p>
-<div class="math">
-\[\frac{E_e}{c} = \gamma(\frac{E_o}{c}+\beta p_o^1),\]</div>
-<p>where</p>
-<div class="math">
-\[\begin{split}p_o^1 &amp;= p_o^0 \cos \theta_o \\
-p_o^0 &amp;= E_o/c.\end{split}\]</div>
-<p>We solve the angular frequency for photons in observer&#8217;s frame</p>
-<div class="math" id="equation-eqn-angular-frequency-observation-angle">
-<span class="eqno">(3)<a class="headerlink" href="#equation-eqn-angular-frequency-observation-angle" title="Permalink to this equation">¶</a></span>\[\begin{split}\omega_o &amp;= \frac{\omega_e}{\gamma(1+\beta \cos \theta_o)}\\
-&amp;= \omega_e\frac{\sqrt{1-\beta^2}}{(1+\beta \cos \theta_o)},\end{split}\]</div>
-<p>where in the last step we applied</p>
-<div class="math">
-\[\gamma = 1/\sqrt{1-\beta^2}.\]</div>
-<p>Eq. <a class="reference internal" href="#equation-eqn-angular-frequency-observation-angle">(3)</a> seems to be very different from <a class="reference internal" href="#equation-eqn-angular-frequency-emission-angle">(2)</a>. The reason is that we are measuring different events, due to the difference between <span class="math">\(\theta_e\)</span> and <span class="math">\(\theta_o\)</span>.</p>
-<p>Eq. <a class="reference internal" href="#equation-eqn-angular-frequency-observation-angle">(3)</a> is what usually used in discussion of relativistic Doppler effect.</p>
-<div class="note admonition">
-<p class="first admonition-title">Line-of-sight Direction Same as Relative Velocity Direction</p>
-<p><span class="math">\(\theta_o=\theta_e=0\)</span> gives us the most used Doppler shift</p>
-<div class="last math" id="equation-eqn-line-of-sight-motion-doppler-angular-frequency">
-<span class="eqno">(4)<a class="headerlink" href="#equation-eqn-line-of-sight-motion-doppler-angular-frequency" title="Permalink to this equation">¶</a></span>\[\omega_o=\omega_e\sqrt{ \frac{1-\beta}{1+\beta} }.\]</div>
-</div>
-<p><span class="math">\(\beta=v\)</span> if we choose <span class="math">\(c=1\)</span>.</p>
-</div>
-<div class="section" id="relativistic-effect">
-<h3>Relativistic Effect<a class="headerlink" href="#relativistic-effect" title="Permalink to this headline">¶</a></h3>
-<p>Nonrelativistic Doppler shift <a class="reference internal" href="#equation-eqn-non-relativistic-redshift-angular-frequency">(1)</a> contains only the effect of line-of-sight relocity.</p>
-<p>Relativistic Doppler shift <a class="reference internal" href="#equation-eqn-angular-frequency-observation-angle">(3)</a> we have new contributions from relative velocity, which is the transverse redshift due to the <span class="math">\(\gamma\)</span> factor or the contraction of time.</p>
-<p>If the motion is in line-of-sight, Eq. <a class="reference internal" href="#equation-eqn-line-of-sight-motion-doppler-angular-frequency">(4)</a> is reduced to the nonrelativistic Doppler shift for slow velocity <span class="math">\(v\)</span> as we take only first order of its Tayler series.</p>
-<p>For motion that is not along the line-of-sight, angle difference becomes important, since we have to choose the equal time surface.</p>
-<p>An gif from wikipedia shows this explicitly,</p>
-<div class="figure align-center" id="id3">
-<img alt="../../_images/XYCoordinates.gif" src="../../_images/XYCoordinates.gif" />
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Image Source: <a class="reference external" href="https://en.wikipedia.org/wiki/File:XYCoordinates.gif">File:XYCoordinates.gif</a></span></p>
-</div>
-<p>The change in wavelength is given by</p>
-<div class="math">
-\[\frac{\lambda_{obs} }{ \lambda_{src}  }= \sqrt{ \frac{1 - \beta}{1 + \beta} } .\]</div>
-</div>
-</div>
-<div class="section" id="four-vector-language">
-<h2>Four Vector Language<a class="headerlink" href="#four-vector-language" title="Permalink to this headline">¶</a></h2>
-<p>Doppler shift can be solve using abstract four vectors without going into a coordinate system <a class="reference internal" href="#cbliang" id="id1">[CBLiang]</a>.</p>
-<p>First of all we associate the emission frame and observation frame with its own four velocities, <span class="math">\(V^a\)</span> and <span class="math">\(U^a\)</span>.</p>
-<p>From the knowledge of special relativity, we know that</p>
-<div class="math">
-\[E_o/c = -p^a U_a\vert_{obs},\]</div>
-<p>where <span class="math">\(U^a\)</span> is the four velocity of observer, subscript <span class="math">\({}_{obs}\)</span> indicates this is the measurement at observation point.</p>
-<p>The photon energy in emission frame is</p>
-<div class="math" id="equation-eqn-energy-emission-v-frame">
-<span class="eqno">(5)<a class="headerlink" href="#equation-eqn-energy-emission-v-frame" title="Permalink to this equation">¶</a></span>\[E_e/c = - p^a V_a\vert_{em},\]</div>
-<p>which is calculated at the point of emission. <span class="math">\(V^a\)</span> is the four velocity of the emission frame.</p>
-<p>Since inner product is independent of the physical point in special relativity, we can calculate the both energy at the same physical point.</p>
-<p>We also know that</p>
-<div class="math">
-\[\gamma = -V^a U_a,\]</div>
-<p>which associates the four velcoities</p>
-<div class="math" id="equation-eqn-u-a-decomposition-to-v">
-<span class="eqno">(6)<a class="headerlink" href="#equation-eqn-u-a-decomposition-to-v" title="Permalink to this equation">¶</a></span>\[U_a = \gamma V_a + \gamma u_a,\]</div>
-<p>where <span class="math">\(\gamma u_a\)</span> is the three velocity component viewed by <span class="math">\(V_a\)</span>.</p>
+\[\bar h^{\alpha\beta} = h^{\alpha\beta} - \frac{1}{2} \eta^{\alpha\beta} h,\]</div>
+<p>where <span class="math">\(h^{\alpha\beta} = g^{\alpha\beta} - \eta^{\alpha\beta}\)</span> and <span class="math">\(h\)</span> is the trace of metric perturbation <span class="math">\(h^{\alpha\beta}\)</span>.</p>
 <div class="toggle admonition">
-<p class="first admonition-title">The Instataneous Frame Decomposition</p>
-<p>We always have to define our equal time surface first. Here we can see that <span class="math">\(\gamma u_a\)</span> is indeed a decomposition onto our spatial surface.</p>
-<p>Multiply on both sides of Eq. <a class="reference internal" href="#equation-eqn-u-a-decomposition-to-v">(6)</a> by <span class="math">\(V^a\)</span>,</p>
-<div class="last math">
-\[V^a u_a =0.\]</div>
+<p class="first admonition-title">Trace Reverse</p>
+<p class="last">The tensor <span class="math">\(\bar h^{\alpha\beta}\)</span> is called trace reverse of <span class="math">\(h^{\alpha\beta}\)</span> for its trace is <span class="math">\(-h\)</span>.</p>
 </div>
-<p>We also know from Eq. <a class="reference internal" href="#equation-eqn-energy-emission-v-frame">(5)</a></p>
-<div class="math">
-\[p^a = \omega V^a + k^a.\]</div>
-<p>To collect our thoughts, we have obtained from the four momentum and our velocities <span class="math">\(u^a\)</span> and <span class="math">\(k^a\)</span>, which are the quantities we would like to work on in 3D space.</p>
-<p>Finally, we calculate the frequency in observer&#8217;s frame,</p>
-<div class="math">
-\[\begin{split}\omega_o &amp;= -p^a U_a \\
-&amp;=-(\omega V^a + k^a)(\gamma V_a + \gamma u_a) \\
-&amp; = \gamma (\omega - k^a u_a),\end{split}\]</div>
-<p>where</p>
-<div class="math">
-\[k^a u_a = v \omega \cos \theta_e.\]</div>
-<p>Then we obtain the Doppler shift equation</p>
-<div class="math">
-\[\omega_o = \omega_e \gamma (1-v\cos\theta_e).\]</div>
-<p>We can work out this using another projection of spatial dimensions, which is give us the frequency relation in terms of observation angle <span class="math">\(\theta_o\)</span>.</p>
-<table class="docutils citation" frame="void" id="cbliang" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[CBLiang]</a></td><td>梁灿彬，周彬，《微分几何与广义相对论入门》</td></tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="spacetime-diagram">
-<h2>Spacetime Diagram<a class="headerlink" href="#spacetime-diagram" title="Permalink to this headline">¶</a></h2>
-<p>Needless to say, it can be explained using spacetime diagram. The only caveat is to pay attention to the equal time surface.</p>
-<p>I am just too lazy to make a spacetime diagram with six axes here. You get the idea.</p>
+<div class="section" id="gauge">
+<h2>Gauge<a class="headerlink" href="#gauge" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -519,7 +374,7 @@ p_o^0 &amp;= E_o/c.\end{split}\]</div>
         <a href="/genindex.html">Index</a>
      </span> |
        <span><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-       <a href="../../_sources/relativity/sr/doppler-effect.rst.txt"
+       <a href="../../_sources/relativity/gr/gravitational-waves.rst.txt"
       rel="nofollow">Page Source</a>
       </span>
 
