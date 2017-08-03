@@ -316,6 +316,27 @@
 </div>
 <div class="section" id="gauge">
 <h2>Gauge<a class="headerlink" href="#gauge" title="Permalink to this headline">¶</a></h2>
+<p>To solve the equation we introduce a solution of the form <span class="math">\(\hat h^{\alpha\beta} = A^{\alpha\beta}e^{i k_\mu x^\mu }\)</span>, which simiplifies the equation</p>
+<div class="math">
+\[\eta^{\mu\nu} k_{\mu}k_\nu \bar h^{\alpha\beta} = 0.\]</div>
+<p>To solve the amplitude <span class="math">\(A^{\alpha}\)</span> we need constraints on it. We can derive that gravitational waves are always null, that is <span class="math">\(k^\mu k_\mu=0\)</span>.</p>
+<p>Some of the conditions requires a gauge transformation. In any case, we have the second gauge condition as</p>
+<div class="math">
+\[A_{\alpha\beta} U^{\beta} = 0,\]</div>
+<p>which specifies that <span class="math">\(A_{\alpha\beta}\)</span> is orthogonal to the vector we chose <span class="math">\(U^{\beta}\)</span>. A practical choice of <span class="math">\(U^\beta\)</span> is a four velocity. This removes another <strong>four degrees of freedom</strong>. For illustration purpose, we choose <span class="math">\(U^{\beta} \to ( 1, 0, 0, 0 )\)</span> since it&#8217;s a null vector. The degrees of freedom removed can be visualized as the first rwo and column.</p>
+<p>The second one we can think of is a transverse condition,</p>
+<div class="math">
+\[A_{\alpha\beta} k^\beta = 0,\]</div>
+<p>which removes <strong>another three degrees of freedom</strong>. This specifies that the wave is transverse, i.e., <span class="math">\(A_{\alpha\beta}\)</span> can not have elements that is in the direction of four wavevector. We specify a wavevector <span class="math">\(k^\beta \to (\omega, 0, 0, \omega )\)</span>, which leads to the removal of the remaining elements of the fourth row and column.</p>
+<p>The matrix we have now becomes</p>
+<div class="math">
+\[\begin{split}A_{\alpha\beta} \to \begin{pmatrix}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; A_{xx} &amp; A_{xy} &amp; 0 \\
+0 &amp; A_{yx} &amp; A_{yy} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{pmatrix}.\end{split}\]</div>
+<p>The last gauge condition is traceless condition <span class="math">\(A^\alpha_\alpha = 0\)</span> which also requires the gauge transformation. This condition fixes the phase relations between different spatial directions, that is <span class="math">\(A_{xx} = e^{i\pi} A_{yy} = - A_{yy}\)</span>. This conditions insists that the two directions of distance oscillations should be quadrupole-like, i.e., contracts in one direction (say x) while extend in the other direction (say y).</p>
 </div>
 </div>
 

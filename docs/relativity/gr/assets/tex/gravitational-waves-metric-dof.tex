@@ -1,0 +1,27 @@
+% Highlighting elements in matrices
+% Author: Stefan Kottwitz
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{fit}
+\tikzset{%
+  highlight/.style={rectangle,rounded corners,fill=red!15,draw,fill opacity=0.5,thick,inner sep=0pt}
+}
+\newcommand{\tikzmark}[2]{\tikz[overlay,remember picture,baseline=(#1.base)] \node (#1) {#2};}
+%
+\newcommand{\Highlight}[1][submatrix]{%
+    \tikz[overlay,remember picture]{
+    \node[highlight,fit=(left.north west) (right.south east)] (#1) {};}
+}
+\begin{document}
+\[
+  A \to \left(\begin{array}{*4{c}}
+    \tikzmark{left}{A_{11}} & A_{12} & A_{13} & \tikzmark{right}{A_{14}}\\
+    6 & 7 & 8 & 9  \\
+    11 & 12 & 13 & 14  \\
+    16 & 17 & 18 & 19
+  \end{array}\right)
+\]
+\Highlight[second]
+
+
+\end{document}​
