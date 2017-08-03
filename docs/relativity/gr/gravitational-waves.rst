@@ -55,3 +55,9 @@ The matrix we have now becomes
    \end{pmatrix}.
 
 The last gauge condition is traceless condition :math:`A^\alpha_\alpha = 0` which also requires the gauge transformation. This condition fixes the phase relations between different spatial directions, that is $A_{xx} = e^{i\pi} A_{yy} = - A_{yy}$. This conditions insists that the two directions of distance oscillations should be quadrupole-like, i.e., contracts in one direction (say x) while extend in the other direction (say y).
+
+
+.. admonition:: Slicing
+   :class: note
+
+   The first two conditions are basically specifying slicings of spacetime.
