@@ -126,6 +126,17 @@ space.” [1]_ This is only valid in some situation.
 .. [1] **R. M. Wald**. Asymptotic behavior of homogeneous cosmological models in the presence of a positive cosmological constant. Phys. Rev. D, 28(8):2118–2120, Oct 1983.
 
 
+Vacuum Solutions
+-------------------------------------------
+
+The vacuum Einstein equation
+
+.. math::
+   R^{\mu\nu} - \frac{1}{2} g^{\mu\nu} R = 0,
+
+which indicates that all constant metrics are solutions to vacuum Einstein equation.
+
+Physically this doesn't make any sense, unless we impose that our universe is Minkowski like. From this point of view, vacuum Einstein equation is more general than our universe.
 
 
 
