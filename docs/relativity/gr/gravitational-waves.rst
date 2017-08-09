@@ -61,3 +61,25 @@ The last gauge condition is traceless condition :math:`A^\alpha_\alpha = 0` whic
    :class: note
 
    The first two conditions are basically specifying slicings of spacetime.
+
+
+.. admonition:: Physical Significance of Transverse-traceless Gauge
+   :class: important
+
+   Transverse-traceless gauge is the very gauge that determines a coordinate system that a test particle is stationary in terms of coordinates.
+
+   To show this we assume that we have a test particle being stationary initially, i.e., :math:`U^\alpha\vert_{\tau=0} \to (1,0,0,0)^{\mathrm T}`.
+
+   The particle should travel on geodesics,
+
+   .. math::
+      \frac{d}{d\tau} U^\alpha + \Gamma^\alpha_{ \mu\nu } U^\mu U^\nu =0,
+
+   which leads to
+
+   .. math::
+      \frac{ d }{ d\tau } U^\alpha \vert_{\tau = 0} = - \Gamma^\alpha_{00} = 0.
+
+   The four acceleration is 0 for the test particle. No motion would be detected within the coordinate system.
+
+   The same is true for a particle moving in :math:`z` direction. However, the conclusion doesn't hold for other motions.
