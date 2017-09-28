@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Lagrangian and Equation of Motion &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -301,8 +297,23 @@
   <div class="section" id="lagrangian-and-equation-of-motion">
 <h1>Lagrangian and Equation of Motion<a class="headerlink" href="#lagrangian-and-equation-of-motion" title="Permalink to this headline">¶</a></h1>
 <p>Euler-Lagrangian equation is</p>
+<div class="math" id="equation-eqn-euler-lagragian-equation">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eqn-euler-lagragian-equation" title="Permalink to this equation">¶</a></span>\[\frac{d}{dt} \left(  \frac{\partial L}{\partial \dot{\boldsymbol q}} \right) - \frac{\partial L}{\partial \boldsymbol q} = 0.\]</div>
+<p>The component form is</p>
+<div class="math" id="equation-eqn-euler-lagragian-equation-component">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqn-euler-lagragian-equation-component" title="Permalink to this equation">¶</a></span>\[\frac{d}{dt} \left(  \frac{\partial L}{\partial \dot{q_i}} \right) - \frac{\partial L}{\partial q_i} = 0.\]</div>
+<div class="notes admonition">
+<p class="first admonition-title">Conserved Quantities</p>
+<p>A quantity is conserved through time if <span class="math">\(\frac{d}{dt}Q = 0\)</span>.</p>
+<p>We notice that the second term in <a class="reference internal" href="#equation-eqn-euler-lagragian-equation-component">(2)</a> vanishes if the lagragian doesn’t depend on <span class="math">\(q_i\)</span>. That is</p>
 <div class="math">
-\[\frac{d}{dt} \left(  \frac{\partial L}{\partial \dot{\boldsymbol r}} \right) - \frac{\partial L}{\partial \boldsymbol r} = 0.\]</div>
+\[\frac{d}{dt} \left(  \frac{\partial L}{\partial \dot{q_i}} \right) = 0\]</div>
+<p>for Lagragian that doesn’t depend on <span class="math">\(q_i\)</span>.</p>
+<p>We immediately spot that the quantity</p>
+<div class="math">
+\[\frac{\partial L}{\partial \dot{q_i} }\]</div>
+<p class="last">is a conserved quantity.</p>
+</div>
 </div>
 
 

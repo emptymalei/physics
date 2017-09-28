@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Models &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -260,7 +256,7 @@
 <li><a class="reference internal" href="#drude-model">Drude Model</a><ul>
 <li><a class="reference internal" href="#maxwell-equations">Maxwell Equations</a></li>
 <li><a class="reference internal" href="#current-density">Current Density</a></li>
-<li><a class="reference internal" href="#maxwell-s-equation-in-neutral-matter">Maxwell&#8217;s Equation in Neutral Matter</a></li>
+<li><a class="reference internal" href="#maxwell-s-equation-in-neutral-matter">Maxwell’s Equation in Neutral Matter</a></li>
 <li><a class="reference internal" href="#dispersion-relation">Dispersion Relation</a></li>
 </ul>
 </li>
@@ -321,7 +317,7 @@
 <p>where <span class="math">\(\tau\)</span> is the damping term like the one in Brownian motion. In fact this is a Brownian motion like equation since <span class="math">\(\vec E\)</span> is periodic and averages to 0 in a simple case <strong>except that this external electric force is not random</strong>.</p>
 <div class="note admonition">
 <p class="first admonition-title">Math</p>
-<p>Now consider the solution to this equation which is simple using Green&#8217;s function,</p>
+<p>Now consider the solution to this equation which is simple using Green’s function,</p>
 <div class="math">
 \[\begin{split}\vec v(t) &amp;= \vec v(0) e^{-t/\tau} + \frac{q\vec E _0}{m}\int_0^t dt' e^{-(t-t')/\tau} e^{-i \omega t'}\\
 &amp;= \vec v(0) e^{-t/\tau} + \frac{q\vec E_0}{m} e^{-t/\tau} \frac{i\tau (-1 + e^{t(1/2-i\omega)})}{\tau \omega + i}.\end{split}\]</div>
@@ -350,7 +346,7 @@
 \nabla \times \vec E &amp; = -\frac{1}{c} \partial_t \vec B ,\\
 \nabla \times \vec H &amp; = \frac{1}{c}\partial_t \vec D + \frac{4\pi}{c} \vec j .\end{split}\]</div>
 </div>
-<p>In Drude model, for each mode <span class="math">\(\vec E, \vec B \propto e^{i(\vec k \cdot \vec )}\)</span>, I can replace <span class="math">\(\partial_t\)</span> with <span class="math">\(-i\omega\)</span> and <span class="math">\(\vec \nabla\)</span> with <span class="math">\(i\vec k\)</span>. With the help of this, the Maxwell&#8217;s equation becomes</p>
+<p>In Drude model, for each mode <span class="math">\(\vec E, \vec B \propto e^{i(\vec k \cdot \vec )}\)</span>, I can replace <span class="math">\(\partial_t\)</span> with <span class="math">\(-i\omega\)</span> and <span class="math">\(\vec \nabla\)</span> with <span class="math">\(i\vec k\)</span>. With the help of this, the Maxwell’s equation becomes</p>
 <div class="math">
 \[\begin{split}\vec k \cdot \vec D &amp;= 4\pi \rho, \\
 \vec k \cdot \vec B &amp; = 0, \\
@@ -374,7 +370,7 @@
 <div class="math">
 \[\begin{split}\vec j &amp;= q n_q \langle \vec v \rangle \\
 &amp; = \vec E \left( \frac{q^2 n_q \tau}{m(1 - i \omega\tau)} \right) \\\end{split}\]</div>
-<p>Ohm&#8217;s law tells us that</p>
+<p>Ohm’s law tells us that</p>
 <div class="math">
 \[\vec j = \sigma \vec E.\]</div>
 <p>Now we can have a phenomelogical conductivity from Drude model,</p>
@@ -382,8 +378,8 @@
 \[\sigma(\omega) = \frac{q^2 n_q \tau}{m(1 - i \omega\tau)}.\]</div>
 </div>
 <div class="section" id="maxwell-s-equation-in-neutral-matter">
-<h3>Maxwell&#8217;s Equation in Neutral Matter<a class="headerlink" href="#maxwell-s-equation-in-neutral-matter" title="Permalink to this headline">¶</a></h3>
-<p>Pluging in the current density we calculated previously, the Maxwell&#8217;s equation becomes</p>
+<h3>Maxwell’s Equation in Neutral Matter<a class="headerlink" href="#maxwell-s-equation-in-neutral-matter" title="Permalink to this headline">¶</a></h3>
+<p>Pluging in the current density we calculated previously, the Maxwell’s equation becomes</p>
 <div class="math">
 \[\begin{split}\vec k \cdot \vec D &amp;= 4\pi \rho, \\
 \vec k \cdot \vec B &amp; = 0, \\

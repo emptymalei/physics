@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Electrodynamics &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -259,8 +255,8 @@
 <li><a class="reference internal" href="#">Electrodynamics</a><ul>
 <li><a class="reference internal" href="#electrodynamics-in-2-1-spacetime">Electrodynamics in 2+1 Spacetime</a><ul>
 <li><a class="reference internal" href="#the-first-naive-version">The first naive version</a><ul>
-<li><a class="reference internal" href="#gauss-s-law">Gauss&#8217;s Law</a></li>
-<li><a class="reference internal" href="#faraday-s-law">Faraday&#8217;s Law</a></li>
+<li><a class="reference internal" href="#gauss-s-law">Gauss’s Law</a></li>
+<li><a class="reference internal" href="#faraday-s-law">Faraday’s Law</a></li>
 <li><a class="reference internal" href="#wave">Wave</a></li>
 </ul>
 </li>
@@ -314,14 +310,14 @@
 <h1>Electrodynamics<a class="headerlink" href="#electrodynamics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="electrodynamics-in-2-1-spacetime">
 <h2>Electrodynamics in 2+1 Spacetime<a class="headerlink" href="#electrodynamics-in-2-1-spacetime" title="Permalink to this headline">¶</a></h2>
-<p>Maxwell&#8217;s equations are mostly experiment determined, except for one term by Maxwell involves the induced current. The only hope to write down a real 2+1 electrodynamcs formalism is to really understand the most fundamental properties of electrodynamics which I don&#8217;t have at this moment.</p>
+<p>Maxwell’s equations are mostly experiment determined, except for one term by Maxwell involves the induced current. The only hope to write down a real 2+1 electrodynamcs formalism is to really understand the most fundamental properties of electrodynamics which I don’t have at this moment.</p>
 <p>So I turned to another approach. First of all we need to reach some basic agreement that which is not changed from our 3+1 theory to a 2+1 theory. As this being said, there could be a bunch of different versions of 2+1 theory.</p>
 <p>To make sure we have a consistant theory, the following terms should be applied.</p>
 <ol class="arabic simple">
 <li>Something should be unchanged which will act as a connection between our 2+1 theory and 3+1 theory.</li>
 </ol>
 <div class="note admonition">
-<p class="first admonition-title">Maxwell&#8217;s Theory</p>
+<p class="first admonition-title">Maxwell’s Theory</p>
 <p>The equations could be written as</p>
 <div class="math">
 \[\partial_\mu F^{\mu\nu} = 0,\]</div>
@@ -332,7 +328,7 @@
 \partial_i B_i &amp; = 0 \\
 \epsilon_{ijk} \partial_j E_k  &amp;= -\frac{1}{c} \partial_t B_i \\
 \epsilon_{ijk} \partial_j B_k &amp; = \frac{4\pi}{c} J_i + \frac{1}{c} \partial_t E_i .\end{split}\]</div>
-<p class="last">Here we write down the component form because the cross product doesn&#8217;t have a clear meaning as we move to different dimensions.</p>
+<p class="last">Here we write down the component form because the cross product doesn’t have a clear meaning as we move to different dimensions.</p>
 </div>
 <div class="section" id="the-first-naive-version">
 <h3>The first naive version<a class="headerlink" href="#the-first-naive-version" title="Permalink to this headline">¶</a></h3>
@@ -344,15 +340,15 @@
 </ol>
 </div>
 <div class="section" id="gauss-s-law">
-<h4>Gauss&#8217;s Law<a class="headerlink" href="#gauss-s-law" title="Permalink to this headline">¶</a></h4>
-<p><strong>Gauss&#8217;s law</strong> shows the source of the electric field, which should be in the form</p>
+<h4>Gauss’s Law<a class="headerlink" href="#gauss-s-law" title="Permalink to this headline">¶</a></h4>
+<p><strong>Gauss’s law</strong> shows the source of the electric field, which should be in the form</p>
 <div class="math">
 \[\oint \vec E\cdot \vec {dl} = 2\pi \int \rho dS.\]</div>
 <p>We have <span class="math">\(2\pi\)</span> instead of <span class="math">\(4\pi\)</span> is because we have only a integral of a closed loop not a closed surface.</p>
 <div class="note admonition">
 <p class="first admonition-title">Applying Stokes Theorem?</p>
 <p>At first thought, we need to math the integral on the two sides thus Stokes theorem should be applied.</p>
-<p>Surprisingly, we don&#8217;t really get to the familiar Gauss&#8217;s law of differential form. Instead, we have</p>
+<p>Surprisingly, we don’t really get to the familiar Gauss’s law of differential form. Instead, we have</p>
 <div class="math">
 \[\iint \nabla \times \vec E \cdot \vec{dS} = 2\pi \int \rho dS.\]</div>
 <p>BUT think about this. Is this really true? We DO NOT have a third dimension! How could we define a curl? Back to the component form,</p>
@@ -367,7 +363,7 @@
 \end{cases}\end{split}\]</div>
 <p>Now the problem is we have all the elements of this Levi-Civita symbol 0 because only 2 dimensions can be used in this theory.</p>
 <p>That means we have no Gaussian theorem or no charge as a naive interpretation if we follow our idea that charge is source of static curl free electric field and followed up by using Stokes theorem.</p>
-<p class="last"><strong>This argument is WRONG. We need to reconsider the meaning of equations. This is 2D we don&#8217;t have a third dimension to use Stokes theorem. We need divergence theorem.</strong></p>
+<p class="last"><strong>This argument is WRONG. We need to reconsider the meaning of equations. This is 2D we don’t have a third dimension to use Stokes theorem. We need divergence theorem.</strong></p>
 </div>
 <p>Two match up the dimensions we do need to apply the divergence theorem, in 2D.</p>
 <div class="math">
@@ -382,7 +378,7 @@
 </div>
 </div>
 <div class="section" id="faraday-s-law">
-<h4>Faraday&#8217;s Law<a class="headerlink" href="#faraday-s-law" title="Permalink to this headline">¶</a></h4>
+<h4>Faraday’s Law<a class="headerlink" href="#faraday-s-law" title="Permalink to this headline">¶</a></h4>
 <p>The change of magnetic flux generate electric field,</p>
 <div class="math">
 \[\oint \vec E \cdot \vec{dl}  =  -\frac{1}{c} \frac{d}{dt} \int \vec B \vec{dS}.\]</div>

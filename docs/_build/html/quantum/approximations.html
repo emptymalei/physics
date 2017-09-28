@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Quantum Approximation Methods &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -348,11 +344,11 @@
 </div>
 <div class="section" id="why-not-general-viriational-method">
 <h3>Why Not General Viriational Method<a class="headerlink" href="#why-not-general-viriational-method" title="Permalink to this headline">¶</a></h3>
-<p>Why don&#8217;t we just use a most general variational method to find out the ground state? Because we will eventually come back to the time-independent Shrödinger equation.</p>
+<p>Why don’t we just use a most general variational method to find out the ground state? Because we will eventually come back to the time-independent Shrödinger equation.</p>
 <p>Suppose we have a functional form</p>
 <div class="math">
 \[E(\psi^*, \psi, \lambda) = \int dx \psi^* H \psi - \lambda \left( \int dx \psi^* \psi - 1 \right)\]</div>
-<p>The reason we have this Lagrange multiplier method is that the wave function should be normalized and this multiplier provides the degree of freedom. We would only get a wrong result if we don&#8217;t include this DoF.</p>
+<p>The reason we have this Lagrange multiplier method is that the wave function should be normalized and this multiplier provides the degree of freedom. We would only get a wrong result if we don’t include this DoF.</p>
 <p>Variation of <span class="math">\(\psi^*\)</span>,</p>
 <div class="math">
 \[\delta E = \int dx \delta \psi^* H \psi - \int dx \delta \psi^* \psi = 0\]</div>
@@ -400,7 +396,7 @@ However, this method requires that the potential varies slowly or equivalently t
 <p>The solution is to use first order of the potential in a Taylor expansion. Then solve the problem exactly. Finally we connect regions that is far out from the boundary, need the boundary and between the boundary.</p>
 </li>
 </ol>
-<p>If we can have a good boundary condition, then the energy spectrum given by WKB can be very good. Even we don&#8217;t have a good boundary condtion, the excited states given by this method are always close to the exact ones.</p>
+<p>If we can have a good boundary condition, then the energy spectrum given by WKB can be very good. Even we don’t have a good boundary condtion, the excited states given by this method are always close to the exact ones.</p>
 <div class="section" id="how-does-it-work">
 <h3>How does it work<a class="headerlink" href="#how-does-it-work" title="Permalink to this headline">¶</a></h3>
 </div>

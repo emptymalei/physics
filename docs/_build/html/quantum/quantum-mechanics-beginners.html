@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Quantum Mechanics Beginners &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -258,7 +254,7 @@
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Quantum Mechanics Beginners</a><ul>
 <li><a class="reference internal" href="#fundamental-concepts">Fundamental Concepts</a><ul>
-<li><a class="reference internal" href="#what-re-the-most-important-tricks-in-qm-calculations">What&#8217;re the most important tricks in QM calculations?</a></li>
+<li><a class="reference internal" href="#what-re-the-most-important-tricks-in-qm-calculations">What’re the most important tricks in QM calculations?</a></li>
 <li><a class="reference internal" href="#first-three-postulates">First Three Postulates</a></li>
 <li><a class="reference internal" href="#position-and-momentum-space">Position and Momentum Space</a><ul>
 <li><a class="reference internal" href="#position-space">Position Space</a></li>
@@ -299,8 +295,8 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#classical-limit-of-qm">Classical Limit of QM</a><ul>
-<li><a class="reference internal" href="#ehrenfest-s-theorem">Ehrenfest&#8217;s Theorem</a><ul>
-<li><a class="reference internal" href="#simple-example-of-ehrenfest-s-theorem">Simple Example of Ehrenfest&#8217;s Theorem</a></li>
+<li><a class="reference internal" href="#ehrenfest-s-theorem">Ehrenfest’s Theorem</a><ul>
+<li><a class="reference internal" href="#simple-example-of-ehrenfest-s-theorem">Simple Example of Ehrenfest’s Theorem</a></li>
 <li><a class="reference internal" href="#what-does-mean">What does <span class="math">\(-\left&lt; V'(\hat x)\right&gt;\)</span> mean</a></li>
 </ul>
 </li>
@@ -310,8 +306,8 @@
 <li><a class="reference internal" href="#heisenberg-picture">Heisenberg Picture</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ehrenfest-s-theorem-in-heisenberg-picture">Ehrenfest&#8217;s Theorem in Heisenberg Picture</a><ul>
-<li><a class="reference internal" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture">Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture</a></li>
+<li><a class="reference internal" href="#ehrenfest-s-theorem-in-heisenberg-picture">Ehrenfest’s Theorem in Heisenberg Picture</a><ul>
+<li><a class="reference internal" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture">Example of Ehrenfest’s Theorem in Heisenberg Picture</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#comparison-of-picutres">Comparison of Picutres</a></li>
@@ -389,7 +385,7 @@
 <div class="section" id="fundamental-concepts">
 <h2>Fundamental Concepts<a class="headerlink" href="#fundamental-concepts" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="what-re-the-most-important-tricks-in-qm-calculations">
-<h3>What&#8217;re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h3>
+<h3>What’re the most important tricks in QM calculations?<a class="headerlink" href="#what-re-the-most-important-tricks-in-qm-calculations" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><strong>Remember what basis we are working in</strong></li>
 <li><strong>Identity</strong></li>
@@ -422,7 +418,7 @@ We just define a magical operator, propagator</p>
 <div class="math">
 \[\hat U \ket{\psi(t_0)} = \ket{\psi(t)} .\]</div>
 <p>This operator just gives us the evolution of state vector! Wait, can we write down the explicit expression of it?</p>
-<p>Let&#8217;s find out. The only thing we know about the evolution of a state vector is the third postulate up there.</p>
+<p>Let’s find out. The only thing we know about the evolution of a state vector is the third postulate up there.</p>
 <div class="math">
 \[\begin{split}i\hbar \frac{\d }{\d t}\ket{\psi(t)} &amp; =  \hat H \ket{\psi(t)} \\
 i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp; =  \hat H \hat U \ket{\psi(t_0)} \\
@@ -548,7 +544,7 @@ i\hbar \frac{\d }{\d t}\hat U &amp; =  \hat H \hat U\end{split}\]</div>
 <p>And write out the commutator and use the relation of delta function <span class="math">\(x\delta'(x) = -\delta(x)\)</span>, we find out the momentum operator in {<span class="math">\(\ket{x}\)</span>} basis,</p>
 <div class="math">
 \[\bra{x}\hat p \ket{x'} = -i\hbar \frac{\d }{\d t} \delta(x-x')\]</div>
-<p><strong>Let&#8217;s talk physics.</strong> What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {<span class="math">\(\ket{x}\)</span>} basis.</p>
+<p><strong>Let’s talk physics.</strong> What does that operator mean? We need to see what the result is when momentum operator is applied to a state. And remember we would work in {<span class="math">\(\ket{x}\)</span>} basis.</p>
 <div class="math">
 \[\begin{split}&amp;\bra{x} \hat p \ket{\psi} \\
 &amp; =  \iint \braket{x}{x'} \bra{x'} \hat p \ket{x''}\braket{x''}{\psi} \d x' \d x''  \\
@@ -611,7 +607,7 @@ The hamiltonian for a free particle is</p>
 <p>If the initial state is just one of the eigenstates of Hamiltonian, say the mth one (normalized),</p>
 <div class="math">
 \[\ket{\psi(t)} = e^{- i \epsilon _ m t/\hbar} \ket{ m }\]</div>
-<p>Well, that phase factor doesn&#8217;t have any effect for the topic we discuss. So our time evolution will stay on the same state forever.</p>
+<p>Well, that phase factor doesn’t have any effect for the topic we discuss. So our time evolution will stay on the same state forever.</p>
 <p>The same thing happens for continuous cases.</p>
 <p>So our task is simplified to solve the eigensystem of Hamiltonian, which is</p>
 <div class="math">
@@ -725,7 +721,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt>What&#8217;s so weird?</dt>
+<dt>What’s so weird?</dt>
 <dd><ol class="first last arabic">
 <li>For <span class="math">\(n=2\)</span>, no particles found at <span class="math">\(x=L/2\)</span>. And so on.</li>
 </ol>
@@ -740,7 +736,7 @@ This BC gives us the possible values of energy because wavenumber k is related t
 <h6>Some General Properties<a class="headerlink" href="#some-general-properties" title="Permalink to this headline">¶</a></h6>
 <ol class="arabic simple">
 <li>1D bound states have no degeneracy. Prove it by assume that there is a degeneracy state.</li>
-<li>1D bound states&#8217; wave function can be chosen to be real. (if potential V is real.)</li>
+<li>1D bound states’ wave function can be chosen to be real. (if potential V is real.)</li>
 </ol>
 </div>
 </div>
@@ -828,7 +824,7 @@ a. Apply to position operator,</p>
 <li><p class="first">Symmetry related to Hamiltonian.</p>
 <div class="math">
 \[\left[ \hat \Pi , \hat H  \right] = 0\]</div>
-<p>When this happens, parity of Hamiltonian won&#8217;t change the wave function. Or the wave function should have an specific parity for 1D problem.</p>
+<p>When this happens, parity of Hamiltonian won’t change the wave function. Or the wave function should have an specific parity for 1D problem.</p>
 </li>
 </ol>
 </div>
@@ -837,7 +833,7 @@ a. Apply to position operator,</p>
 <div class="section" id="classical-limit-of-qm">
 <h2>Classical Limit of QM<a class="headerlink" href="#classical-limit-of-qm" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="ehrenfest-s-theorem">
-<h3>Ehrenfest&#8217;s Theorem<a class="headerlink" href="#ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h3>
+<h3>Ehrenfest’s Theorem<a class="headerlink" href="#ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h3>
 <p>Schrödinger equation and its adjoint</p>
 <div class="math">
 \[ \begin{align}\begin{aligned}i\hbar \frac{\d }{\d t} \ket{\psi(t)} = \hat H \ket{\psi(t)}\\-i\hbar \frac{\d }{\d t} \bra{\psi(t)} = \bra{\psi(t)} \hat H\end{aligned}\end{align} \]</div>
@@ -846,9 +842,9 @@ a. Apply to position operator,</p>
 \[\begin{split}\frac{\d }{\d t}\left&lt;\hat \Omega \right &gt; &amp; =  \left( \frac{\d}{\d t}\bra{\psi(t)}\right)  \hat \Omega \ket{\psi(t)} + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} + \bra{\psi(t)} \hat \Omega \left( \frac{\d}{\d t}\ket{\psi(t)}\right)  \\
 &amp; =  \frac{1}{i\hbar} \left ( - \bra{\psi(t)} \hat H \hat\Omega \ket{\psi(t)} +\bra{\psi(t)} \hat\Omega \hat H \ket{\psi(t)} \right) + \bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)} \\
 &amp; =  \frac{1}{i\hbar} \bra{\psi(t)}\left[\hat\Omega,\hat H\right] \ket{\psi(t)}+\bra{\psi(t)} \dot{\hat \Omega} \ket{\psi(t)}\end{split}\]</div>
-<p>This is called Ehrenfest&#8217;s Theorem.</p>
+<p>This is called Ehrenfest’s Theorem.</p>
 <div class="section" id="simple-example-of-ehrenfest-s-theorem">
-<h4>Simple Example of Ehrenfest&#8217;s Theorem<a class="headerlink" href="#simple-example-of-ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h4>
+<h4>Simple Example of Ehrenfest’s Theorem<a class="headerlink" href="#simple-example-of-ehrenfest-s-theorem" title="Permalink to this headline">¶</a></h4>
 <p>Suppose we have a system with Hamiltonian</p>
 <div class="math">
 \[\hat H = \frac{\hat p^2}{2m} + V(\hat x)\]</div>
@@ -869,7 +865,7 @@ a. Apply to position operator,</p>
 \[\begin{split}\frac{\d}{\d t} \left&lt;\hat p\right&gt; &amp; =  \frac{1}{i\hbar} \bra{\psi(t)} \left[\hat p, \hat H\right] \ket{\psi(t)} \\
 &amp; =  \frac{1}{i\hbar} \bra{\psi(t)}  (-i\hbar V'(\hat x))  \ket{\psi(t)}  \\
 &amp; =  -\left&lt; V'(\hat x) \right&gt;\end{split}\]</div>
-<p>In classical mechanics, the derivative of potential is force. And the result is just like Newton&#8217;s 2n Law except the right hand side is not exactly like a force which should be <span class="math">\(-\frac{\d}{\d x} \left&lt; V(\hat x) \right&gt;\)</span>.</p>
+<p>In classical mechanics, the derivative of potential is force. And the result is just like Newton’s 2n Law except the right hand side is not exactly like a force which should be <span class="math">\(-\frac{\d}{\d x} \left&lt; V(\hat x) \right&gt;\)</span>.</p>
 </li>
 </ol>
 </div>
@@ -886,7 +882,7 @@ a. Apply to position operator,</p>
 </div>
 <div class="section" id="picture">
 <h3>Picture<a class="headerlink" href="#picture" title="Permalink to this headline">¶</a></h3>
-<p>We can see deeper into Ehrenfest&#8217;s Theorem through Heisenberg Picture of quantum mechanics.</p>
+<p>We can see deeper into Ehrenfest’s Theorem through Heisenberg Picture of quantum mechanics.</p>
 <div class="section" id="schrodinger-heisenberg-pictures">
 <h4>Schrödinger &amp; Heisenberg Pictures<a class="headerlink" href="#schrodinger-heisenberg-pictures" title="Permalink to this headline">¶</a></h4>
 <p>Pictures are the ways we look at the evolution of systems.</p>
@@ -916,7 +912,7 @@ a. Apply to position operator,</p>
 </div>
 </div>
 <div class="section" id="ehrenfest-s-theorem-in-heisenberg-picture">
-<h4>Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h4>
+<h4>Ehrenfest’s Theorem in Heisenberg Picture<a class="headerlink" href="#ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h4>
 <div class="math">
 \[\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\]</div>
 <p>This can be easily proved by throwing every definition need in to it. We also need the following equations.</p>
@@ -925,7 +921,7 @@ a. Apply to position operator,</p>
 <p>And REMEMBER that propagator commute with time independent Hamiltonian, so</p>
 <div class="math">
 \[\hat H = \hat U^\dagger \hat U \hat H = \hat U^ \dagger \hat U \hat U \equiv \hat H _ H\]</div>
-<p>So this Ehrenfest&#8217;s Theorem can also be written as</p>
+<p>So this Ehrenfest’s Theorem can also be written as</p>
 <div class="math">
 \[\frac{\d }{\d t} \hat \Omega _ H = \frac{1}{i\hbar } \left[ \hat \Omega _ H, \hat H _ H \right] + \hat U ^ \dagger \frac{\partial }{\partial t} \Omega _ H \hat U\]</div>
 <p>We can <strong>define</strong></p>
@@ -934,8 +930,8 @@ a. Apply to position operator,</p>
 <p>which is the time derivative of operator in Heisenberg Picture.</p>
 <p><strong>Reminder: The time derivative of an observable (average) depends not only the time derivative of itself, but also the commutator of the observable and Hamiltonian.</strong></p>
 <div class="section" id="example-of-ehrenfest-s-theorem-in-heisenberg-picture">
-<h5>Example of Ehrenfest&#8217;s Theorem in Heisenberg Picture<a class="headerlink" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h5>
-<p>We will show why it is better to work in Heisenberg Picture to show the meanings of Ehrenfest&#8217;s Theorem.</p>
+<h5>Example of Ehrenfest’s Theorem in Heisenberg Picture<a class="headerlink" href="#example-of-ehrenfest-s-theorem-in-heisenberg-picture" title="Permalink to this headline">¶</a></h5>
+<p>We will show why it is better to work in Heisenberg Picture to show the meanings of Ehrenfest’s Theorem.</p>
 <p>Suppose we have a Hamiltonian in Heisenberg Picture,</p>
 <div class="math">
 \[\hat H_H = \frac{\hat p _ H^2 }{2m} + V(\hat x _ H) .\]</div>
@@ -945,7 +941,7 @@ a. Apply to position operator,</p>
 <p>Time derivative of momentum operator</p>
 <div class="math">
 \[\frac{\d}{\d t} \hat p_H = \frac{1}{i\hbar } \left[ \hat p _ H, \hat H \right] = - V'(\hat x_H)\]</div>
-<p>So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That&#8217;s why we like it.</p>
+<p>So the operator in Heisenberg Picture just have a sense of the physical quantities in classical mechanics. That’s why we like it.</p>
 </div>
 </div>
 <div class="section" id="comparison-of-picutres">
@@ -1054,7 +1050,7 @@ Hamiltonian always commutes with itself.</p>
 </div>
 <div class="section" id="terminate-the-series">
 <h4>Terminate The Series<a class="headerlink" href="#terminate-the-series" title="Permalink to this headline">¶</a></h4>
-<p>The series blow up if it doesn&#8217;t terminate. So we need to terminate the series using the following relation,</p>
+<p>The series blow up if it doesn’t terminate. So we need to terminate the series using the following relation,</p>
 <div class="math">
 \[2e - 1 = 2n .\]</div>
 <p>Then we have the energy levels, which is <span class="math">\(e=n+1/2\)</span>.</p>
@@ -1115,7 +1111,7 @@ Hamiltonian always commutes with itself.</p>
 <p>Final step is to constrain on <span class="math">\(n\)</span>, which should be integrals. This is true because we need a cut off for the eigen equation of <span class="math">\(\hat N\)</span>, whose avarage is n and it should be non negative.</p>
 <div class="math">
 \[\bra{n}\hat N \ket{n} \ge 0\]</div>
-<p>leads to <span class="math">\(n\ge 0\)</span>. To get this proper cut off, <span class="math">\(n\)</span> should be integer because if it&#8217;s not, according to</p>
+<p>leads to <span class="math">\(n\ge 0\)</span>. To get this proper cut off, <span class="math">\(n\)</span> should be integer because if it’s not, according to</p>
 <div class="math">
 \[\hat a \ket{n} = \sqrt n \ket{n-1}\]</div>
 <p>n can go to negative numbers. If n is positive integer,</p>
@@ -1203,7 +1199,7 @@ Hamiltonian always commutes with itself.</p>
 <li>Coherent state expanded using energy eigenstates</li>
 </ul>
 <p>(This result)</p>
-<p>(To Be Finished...)</p>
+<p>(To Be Finished…)</p>
 </div>
 </div>
 </div>

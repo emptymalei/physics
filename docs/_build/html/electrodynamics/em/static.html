@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Electrostatics and Magnetostatics &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -371,7 +367,7 @@
 <p>Alright, move on to the concept of force in E&amp;M. Coloumb force is</p>
 <div class="math">
 \[F_i = \int \rho(\vec x') E_i(\vec x') d^3x'.\]</div>
-<p>Maxwell&#8217;s equations tells that</p>
+<p>Maxwell’s equations tells that</p>
 <div class="math">
 \[\rho(\vec x') = \frac{1}{4\pi} \nabla' \cdot \vec E(\vec x').\]</div>
 <p>So force can be rewritten as</p>
@@ -518,7 +514,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 <div class="math">
 \[\int \rho_P(\vec x') d^3x' + \oint \sigma_P \hat n \cdot \vec{dS} = 0,\]</div>
 <p>where <span class="math">\(\rho_P\)</span> is the charge volume density distribution inside the object while <span class="math">\(\sigma_P\)</span> is the surface charge density. We need the surface charge because charge will be induced on the surface.</p>
-<p>Maxwell&#8217;s equations are very beautiful, so we definitely want to preserve Gauss&#8217; law. Thus we define</p>
+<p>Maxwell’s equations are very beautiful, so we definitely want to preserve Gauss’ law. Thus we define</p>
 <div class="math">
 \[\begin{split}\rho_P(\vec x) &amp;= - \nabla \cdot \vec P_P(\vec x) \\
 \sigma_P(\vec x) &amp;= \vec P(\vec x) \cdot \hat n(\vec x).\end{split}\]</div>
@@ -535,7 +531,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 <p>For <strong>isotropic</strong> material, we would have no direction dependence of the spatial distribution</p>
 <div class="math">
 \[P_i = \chi E_i .\]</div>
-<p><strong>This is because no shear stress is possible thus :math:`P_i` doesn&#8217;t depend on E field on other directions.</strong></p>
+<p><strong>This is because no shear stress is possible thus :math:`P_i` doesn’t depend on E field on other directions.</strong></p>
 <p><span class="math">\(\chi\)</span> can still be a function of <span class="math">\(E_i\)</span> though. Now we require that this material is <strong>linear</strong>, which means <span class="math">\(\chi\)</span> is independent of <span class="math">\(E_i\)</span>.</p>
 <p>With the requirement of <strong>isotropic and linear</strong>, we have a simple relation,</p>
 <div class="math">
@@ -569,7 +565,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 </div>
 <div class="section" id="total-field">
 <h3>Total Field<a class="headerlink" href="#total-field" title="Permalink to this headline">¶</a></h3>
-<p>Gauss&#8217; law tells us the field about the total charge, both the original and the induced, and the total field, whatever generated it.</p>
+<p>Gauss’ law tells us the field about the total charge, both the original and the induced, and the total field, whatever generated it.</p>
 <div class="math">
 \[\nabla\cdot \vec E = 4\pi (\rho + \rho_P),\]</div>
 <p>where <span class="math">\(\rho\)</span> means the free charge.</p>
@@ -581,10 +577,10 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 <p>Combine terms</p>
 <div class="math">
 \[\nabla \cdot (\vec E + 4\pi \vec P) = 4\pi \rho.\]</div>
-<p>The point is we don&#8217;t want to mess with <span class="math">\(\vec P\)</span>, so we define a <strong>displancement vector</strong></p>
+<p>The point is we don’t want to mess with <span class="math">\(\vec P\)</span>, so we define a <strong>displancement vector</strong></p>
 <div class="math">
 \[\vec D = \vec E + 4\pi \vec P,\]</div>
-<p>so that the Gauss&#8217; law only involve with free charge <span class="math">\(\rho\)</span> and the displacement vector,</p>
+<p>so that the Gauss’ law only involve with free charge <span class="math">\(\rho\)</span> and the displacement vector,</p>
 <div class="math">
 \[\nabla\cdot \vec D = 4\pi \rho.\]</div>
 <p>For <strong>isotropic and linear</strong> material, we already know <span class="math">\(\vec P = \chi_e \vec E\)</span>,</p>
@@ -645,7 +641,7 @@ E_z/c &amp; -B_y &amp; B_x &amp; 0
 \[\vec F = \frac{1}{c}\int d^3x' \vec j(\vec x) \times \vec B (\vec x).\]</div>
 <div class="note admonition">
 <p class="first admonition-title">Force of Charge Distribution in Electric Field</p>
-<p class="last">vec F = int d^3x&#8217; frac{rho(vec x&#8217;)} vec E(vec x&#8217;) .</p>
+<p class="last">vec F = int d^3x’ frac{rho(vec x’)} vec E(vec x’) .</p>
 </div>
 </div>
 <div class="section" id="divergence-and-curl-of-magnetic-field">

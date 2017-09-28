@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Response of Matter &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -313,7 +309,7 @@
   <div class="section" id="response-of-matter">
 <h1>Response of Matter<a class="headerlink" href="#response-of-matter" title="Permalink to this headline">¶</a></h1>
 <div class="note admonition">
-<p class="first admonition-title">Maxwell&#8217;s Equations and Transfer of Momentum and Energy</p>
+<p class="first admonition-title">Maxwell’s Equations and Transfer of Momentum and Energy</p>
 <div class="last math">
 \[\begin{split}\nabla \cdot \vec D &amp; = 4\pi \rho \\
 \nabla \cdot \vec B &amp; = 0 \\
@@ -324,7 +320,7 @@
 <h2>Energy and Momentum<a class="headerlink" href="#energy-and-momentum" title="Permalink to this headline">¶</a></h2>
 <p>Energy transfer can be described through Poynting vector which in the simplist plane wave case is basically <span class="math">\(\langle \vec S \rangle = u_{EM}\vec v\)</span> where <span class="math">\(u_{EM}\)</span> is the energy density. Obviously Poynting vector is the energy transfer rate.</p>
 <p>Momentum density is <span class="math">\(\vec g = \frac{u_{EM}}{c}\)</span> in the same plane wave.</p>
-<p>Let&#8217;s start from conservation of charge. Taking the divergence of the following equation,</p>
+<p>Let’s start from conservation of charge. Taking the divergence of the following equation,</p>
 <p>I get the conservation law,</p>
 <div class="math">
 \[\partial_t \rho + \nabla \cdot \vec j = 0.\]</div>
@@ -384,7 +380,7 @@
 \hat n \cdot (\vec B_1 + \vec B_1' - \vec B_2) &amp;= 0, \\
 \hat n\times (\vec E_1 + \vec E_1' - \vec E_2) &amp;= 0, \\
 \hat n \times (\vec H_1 +\vec H_1' - \vec H_2) &amp;=0.\end{split}\]</div>
-<p>In order to satisfy these matching conditions, the phase of all fields should be the same. Thus leading to the Snell&#8217;s law</p>
+<p>In order to satisfy these matching conditions, the phase of all fields should be the same. Thus leading to the Snell’s law</p>
 <div class="math">
 \[\begin{split}\theta_1 &amp;= \theta_1' \\
 n_1 \sin\theta_1 &amp;= n_2 \sin\theta_2 \qquad \text{perpendicular part}.\end{split}\]</div>
@@ -434,7 +430,7 @@ T&amp; =  \frac{\langle \vec S_2 \rangle \cdot \hat n}{\langle \vec S_1 \rangle 
 \[\begin{split}R &amp;= \frac{( n_1-n_2)^2 }{ (n_1+n_2)^2 } \\
 T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }.\end{split}\]</div>
 <p>Evanescent wave is the case when the wave vector becomes imaginary and the wave tenuates to 0 quickly. In the situation of total reflection, the transmitted wave can be calculated. To find out the evanescent wave one need to calculate the condition for total reflection then plug in the condition for a assumed wave in medium 2.</p>
-<p>Evanescent wave doesn&#8217;t mean energy lose in reflection, it only proves that wave can not go deep into the material and all waves are reflected. The material does NOT nessarily obsorbe all the energy of the wave. One can show that in total reflection, energy flowing in all flows out, i.e.,</p>
+<p>Evanescent wave doesn’t mean energy lose in reflection, it only proves that wave can not go deep into the material and all waves are reflected. The material does NOT nessarily obsorbe all the energy of the wave. One can show that in total reflection, energy flowing in all flows out, i.e.,</p>
 <div class="math">
 \[R=1.\]</div>
 <p>The question is, what is dissipative material? They are those with complex wave vectors such that wave dissipates as they passing through the bulk material.</p>
@@ -445,10 +441,10 @@ T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }.\end{split}\]</div>
 <div class="math">
 \[\frac{4\pi}{c}\vec j\]</div>
 <p>is added to the equations so that it describes matter which supports current.</p>
-<p>Ohm&#8217;s law shows the relations between current and field,</p>
+<p>Ohm’s law shows the relations between current and field,</p>
 <div class="math">
 \[\vec j = \sigma \vec E.\]</div>
-<p>By plug in this to the Maxwell&#8217;s equations, we can have a new permitivity. For monochromatic wave,</p>
+<p>By plug in this to the Maxwell’s equations, we can have a new permitivity. For monochromatic wave,</p>
 <div class="math">
 \[\epsilon = \epsilon_R + i\frac{4\pi\sigma}{\omega}.\]</div>
 <p>Using dispersion relation derived, we can define the complex refractive index.</p>
@@ -478,7 +474,7 @@ T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }.\end{split}\]</div>
 <p>Using dispersion relation, and suppose we have wave vector in z direction. We can write down the incident wave</p>
 <div class="math">
 \[\vec E_1 = \vec E_0 e^{i \omega (n z/c - t)} .\]</div>
-<p>Fresnel&#8217;s relation tells us the refracted wave, which is</p>
+<p>Fresnel’s relation tells us the refracted wave, which is</p>
 <div class="math">
 \[\begin{split}\vec E_2 &amp;= \frac{2\vec E_1}{n+1} \\
 &amp;\approx \frac{2\vec E_1}{n} \\
@@ -498,7 +494,7 @@ T &amp;= \frac{ 4n_1 n_2 }{  (n_1+n_2)^2 }.\end{split}\]</div>
 <div class="math">
 \[v_g = \frac{d \omega}{dk}\vert_{k=k_0},\]</div>
 <p>while phase velocity is always <span class="math">\(v_{phase} = nc\)</span> where n can be larger than 1.</p>
-<p>Read <a class="reference external" href="http://www.cambridge.org/us/academic/subjects/physics/mathematical-methods/physical-mathematics">chapte 5 of Kevin Cahill&#8217;s book</a> for knowledge of complex dispersion relation and more. Notice that both group velocity and phase velocity can be larger than the vacuum speed of light.</p>
+<p>Read <a class="reference external" href="http://www.cambridge.org/us/academic/subjects/physics/mathematical-methods/physical-mathematics">chapte 5 of Kevin Cahill’s book</a> for knowledge of complex dispersion relation and more. Notice that both group velocity and phase velocity can be larger than the vacuum speed of light.</p>
 </div>
 </div>
 </div>

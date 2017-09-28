@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Radiation &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -262,7 +258,7 @@
 <li><a class="reference internal" href="#approximations">Approximations</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lamor-s-formula">Lamor&#8217;s Formula</a><ul>
+<li><a class="reference internal" href="#lamor-s-formula">Lamor’s Formula</a><ul>
 <li><a class="reference internal" href="#charge-moving-in-gravity-feilds">Charge Moving in Gravity Feilds</a></li>
 </ul>
 </li>
@@ -311,15 +307,15 @@
       
   <div class="section" id="radiation">
 <h1>Radiation<a class="headerlink" href="#radiation" title="Permalink to this headline">¶</a></h1>
-<p>Usually, radiation is something that can be propagated to infinity, which means, those wave that drops according to <span class="math">\(\frac{1}{r^3}\)</span> or even faster won&#8217;t get propagated to very far away. But we still might be interested in those near fields.</p>
+<p>Usually, radiation is something that can be propagated to infinity, which means, those wave that drops according to <span class="math">\(\frac{1}{r^3}\)</span> or even faster won’t get propagated to very far away. But we still might be interested in those near fields.</p>
 <p>Understand retarded time is something always good for radiation study.</p>
 <div class="math">
 \[t_{ret} = t - \frac{\lvert  \vec x - \vec x' \rvert}{c},\]</div>
 <p>which means retarded time is the current time minus the travel time of the radiation.</p>
-<p>The mathematical reason for this retardation is that the Green&#8217;s function for electromagnetic wave,</p>
+<p>The mathematical reason for this retardation is that the Green’s function for electromagnetic wave,</p>
 <div class="math">
 \[\left( \nabla ^2 - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}  \right)  A = 0 .\]</div>
-<p>This is for the fields in vacuum. For radiation with source, the wave equations gains a source term. To solve the equation, I need to write down the Green&#8217;s function, which, in this case, has a retarded term in it. In fact all such waves have a retarded time in it even just by looking at the math. Retarded time has a great impact on the solution since it delays the effect of source.</p>
+<p>This is for the fields in vacuum. For radiation with source, the wave equations gains a source term. To solve the equation, I need to write down the Green’s function, which, in this case, has a retarded term in it. In fact all such waves have a retarded time in it even just by looking at the math. Retarded time has a great impact on the solution since it delays the effect of source.</p>
 <p>This is also causality.</p>
 <div class="section" id="radiation-in-general">
 <h2>Radiation In General<a class="headerlink" href="#radiation-in-general" title="Permalink to this headline">¶</a></h2>
@@ -361,8 +357,8 @@
 <li>Find radiation power <span class="math">\(\frac{dP}{d\Omega} = r^2 \langle \vec S \rangle \cdot \hat r\)</span>, which is angle dependent in general.</li>
 </ol>
 <div class="note admonition">
-<p class="first admonition-title">Zangwill&#8217;s Method</p>
-<p class="last">There is a radiation vector method in Zangwill&#8217;s <em>Modern Electrodynamics</em> book.</p>
+<p class="first admonition-title">Zangwill’s Method</p>
+<p class="last">There is a radiation vector method in Zangwill’s <em>Modern Electrodynamics</em> book.</p>
 </div>
 <div class="section" id="dipole-radiation">
 <h3>Dipole Radiation<a class="headerlink" href="#dipole-radiation" title="Permalink to this headline">¶</a></h3>
@@ -421,7 +417,7 @@
 </div>
 </div>
 <div class="section" id="lamor-s-formula">
-<h2>Lamor&#8217;s Formula<a class="headerlink" href="#lamor-s-formula" title="Permalink to this headline">¶</a></h2>
+<h2>Lamor’s Formula<a class="headerlink" href="#lamor-s-formula" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="charge-moving-in-gravity-feilds">
 <h3>Charge Moving in Gravity Feilds<a class="headerlink" href="#charge-moving-in-gravity-feilds" title="Permalink to this headline">¶</a></h3>
 <p>A charge q is moving in a constant gravity field.</p>

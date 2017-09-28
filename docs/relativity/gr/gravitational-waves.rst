@@ -83,3 +83,4 @@ The last gauge condition is traceless condition :math:`A^\alpha_\alpha = 0` whic
    The four acceleration is 0 for the test particle. No motion would be detected within the coordinate system.
 
    The same is true for a particle moving in :math:`z` direction. However, the conclusion doesn't hold for other motions.
+   p

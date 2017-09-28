@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Oscillators &#8212; Physics Notes</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -27,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -144,7 +140,7 @@
 
    
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-inverse navbar-default ">
     <div class="container">
@@ -314,7 +310,7 @@
 <p>Then equation of motion is</p>
 <div class="math">
 \[m_{jk} \ddot q_{k} + \frac{\partial m_{jk}}{\partial q_l} \dot q_k \dot q_l - \frac{1}{2} \frac{\partial m_{kl}}{\partial q_j} \dot q_k \dot q_l = - \frac{\partial V}{\partial q_j}\]</div>
-<p>Generally, we can&#8217;t solve this system. But there is an interesting limit. The system may have equilibrium points. We can study systems oscillating around equilibrium points.</p>
+<p>Generally, we can’t solve this system. But there is an interesting limit. The system may have equilibrium points. We can study systems oscillating around equilibrium points.</p>
 <p>At equilibrium, the system can stay steady, i.e., <span class="math">\(\dot q_j^0 = 0\)</span>. This gives us</p>
 <div class="math">
 \[\frac{\partial V}{\partial q_j} = 0 ,\]</div>
@@ -330,7 +326,7 @@
 <p>So we have the Lagrangian for small oscillations,</p>
 <div class="math">
 \[L = \frac{1}{2} T _ {jk} \dot \eta_j \dot \eta_k - \frac{1}{2} V_{jk}\eta_j \eta_k\]</div>
-<p>Typing indices using LaTeX is so annoying. So we&#8217;ll use matrix notations and Lagragian becomes</p>
+<p>Typing indices using LaTeX is so annoying. So we’ll use matrix notations and Lagragian becomes</p>
 <div class="math">
 \[L = \frac{1}{2} \dot {\tilde \eta} T \dot \eta - \frac{1}{2} \tilde \eta V \eta ,\]</div>
 <p>in which <span class="math">\(T\)</span> and <span class="math">\(V\)</span> matrices are n by n real and symmetric.</p>
@@ -349,7 +345,7 @@
 <div class="math">
 \[L = \frac{1}{2} \dot{\tilde \xi} \dot \xi - \frac{1}{2} \tilde \xi T^{-1/2} V T^{-1/2} \xi\]</div>
 <p>Define <span class="math">\(T^{-1/2} V T^{-1/2} \equiv V'\)</span>.</p>
-<p>Next we need to diagonalize V&#8217; by using its eigen vectors.</p>
+<p>Next we need to diagonalize V’ by using its eigen vectors.</p>
 <div class="math">
 \[V' b = \lambda b\]</div>
 <p>is equivalent to</p>
