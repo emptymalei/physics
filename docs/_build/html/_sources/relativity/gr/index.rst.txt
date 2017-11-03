@@ -13,6 +13,7 @@ General relativity is a theory of gravity. The idea is to find a set of "proper"
    energy-momentum-tensor.rst
    gravitational-waves.rst
    general-relativity-revisted.rst
+   spherical-solutions.rst
 
 
 
