@@ -32,6 +32,7 @@ sys.path.append(os.path.abspath('exts'))
 # extensions = ['sphinx.ext.pngmath', "math_dollar"]
 
 extensions = ['sphinx.ext.mathjax', "math_dollar"]
+# extensions = ["math_dollar"]
 
 latex_preamble = r"""
 \usepackage{dsfont}
