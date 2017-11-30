@@ -7,6 +7,7 @@ General relativity is a theory of gravity. The idea is to find a set of "proper"
 .. toctree::
    :maxdepth: 2
 
+   geometrized-unit.rst
    gr-principles.rst
    gr-math.rst
    curved-spacetime.rst

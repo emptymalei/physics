@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>General Relativity &#8212; Physics Notes</title>
+    <title>Geometrized Unit &#8212; Physics Notes</title>
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
@@ -30,8 +30,8 @@
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Geometrized Unit" href="geometrized-unit.html" />
-    <link rel="prev" title="Relativistic Aberration of Light" href="../sr/relativistic-effects-misc.html" />
+    <link rel="next" title="Basic Principles of General Relativity" href="gr-principles.html" />
+    <link rel="prev" title="General Relativity" href="index.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -225,7 +225,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Relativity</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../math/index.html">Math in Relativity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sr/index.html">Special Relativity</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">General Relativity</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">General Relativity</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../astrophysics/index.html">Astrophysics</a><ul>
@@ -252,24 +252,8 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">General Relativity</a><ul>
-<li><a class="reference internal" href="#fields-and-particles">Fields and Particles</a><ul>
-<li><a class="reference internal" href="#energy-momentum-tensor-for-particles">Energy-Momentum Tensor for Particles</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#theorems">Theorems</a><ul>
-<li><a class="reference internal" href="#killing-vector-related">Killing Vector Related</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#specific-topics">Specific Topics</a><ul>
-<li><a class="reference internal" href="#redshift">Redshift</a></li>
-<li><a class="reference internal" href="#stationary-vs-static">Stationary vs Static</a><ul>
-<li><a class="reference internal" href="#stationay">Stationay</a></li>
-<li><a class="reference internal" href="#static">Static</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Geometrized Unit</a><ul>
+<li><a class="reference internal" href="#references-and-notes">References and Notes</a></li>
 </ul>
 </li>
 </ul>
@@ -281,11 +265,11 @@
               
                 
   <li>
-    <a href="../sr/relativistic-effects-misc.html" title="Previous Chapter: Relativistic Aberration of Light"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Relativistic ...</span>
+    <a href="index.html" title="Previous Chapter: General Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; General Relativity</span>
     </a>
   </li>
   <li>
-    <a href="geometrized-unit.html" title="Next Chapter: Geometrized Unit"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Geometrized Unit &raquo;</span>
+    <a href="gr-principles.html" title="Next Chapter: Basic Principles of General Relativity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Basic Princip... &raquo;</span>
     </a>
   </li>
               
@@ -313,105 +297,21 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="general-relativity">
-<h1>General Relativity<a class="headerlink" href="#general-relativity" title="Permalink to this headline">¶</a></h1>
-<p>General relativity is a theory of gravity. The idea is to find a set of “proper” coordinate system to describe physics on a curved space and make connection between these “proper” coordinate systems.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="geometrized-unit.html">Geometrized Unit</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="geometrized-unit.html#references-and-notes">References and Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="gr-principles.html">Basic Principles of General Relativity</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gr-principles.html#tidal-force-and-equivalence-principle">Tidal Force and Equivalence Principle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gr-principles.html#examples-of-equivalence-principle">Examples of Equivalence Principle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gr-principles.html#references-and-notes">References and Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="gr-math.html">Mathematics in General Relativity</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gr-math.html#vectors-and-tensors">Vectors and Tensors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gr-math.html#description-of-space-time-manifold">Description of Space-time Manifold</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="curved-spacetime.html">Curved Spacetime</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="curved-spacetime.html#christoffel-symbol">Christoffel Symbol</a></li>
-<li class="toctree-l2"><a class="reference internal" href="curved-spacetime.html#curvature">Curvature</a></li>
-<li class="toctree-l2"><a class="reference internal" href="curved-spacetime.html#parallel-transport">Parallel Transport</a></li>
-<li class="toctree-l2"><a class="reference internal" href="curved-spacetime.html#geodesics">Geodesics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="curved-spacetime.html#references-and-notes">References and Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="energy-momentum-tensor.html">Energy Momentum Tensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gravitational-waves.html">Gravitational Waves</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gravitational-waves.html#gauge">Gauge</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="general-relativity-revisted.html">General Relativity Revisited</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#hyperthesis">Hyperthesis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#derivation-of-field-equation">Derivation of Field Equation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#vacuum-solutions">Vacuum Solutions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#perturbation-theory-of-general-relativity">Perturbation Theory of General Relativity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#what-frame-are-we-in">What Frame Are We In</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#experiments">Experiments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#summary-table">Summary Table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="general-relativity-revisted.html#footnote">Footnote</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="spherical-solutions.html">Spherical Solutions to Stars</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="spherical-solutions.html#static">Static</a></li>
-<li class="toctree-l2"><a class="reference internal" href="spherical-solutions.html#equation-of-motion">Equation of Motion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="spherical-solutions.html#exterior-solutions">Exterior Solutions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="spherical-solutions.html#interior-solutions">Interior Solutions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="spherical-solutions.html#references-and-notes">References and Notes</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="fields-and-particles">
-<h2>Fields and Particles<a class="headerlink" href="#fields-and-particles" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="energy-momentum-tensor-for-particles">
-<h3>Energy-Momentum Tensor for Particles<a class="headerlink" href="#energy-momentum-tensor-for-particles" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="geometrized-unit">
+<h1>Geometrized Unit<a class="headerlink" href="#geometrized-unit" title="Permalink to this headline">¶</a></h1>
+<p>In general relativity, it’s quite useful to use geometrized unit, where everything has unit of kilometers. <a class="reference internal" href="#schutz" id="id1">[Schutz]</a></p>
+<p>The principle of geometrized unit is to convert everything to length using <span class="math">\(c=G=1\)</span>. A precalculated value is</p>
 <div class="math">
-\[S_p \equiv -m c \int \int \mathrm d s\mathrm d\tau \sqrt{-\dot x ^\mu g_{\mu\nu} \dot x^\nu} \delta^4(x^\mu - x^\mu (s))    ,\]</div>
-<p>in which <span class="math">\(x^\mu(s)\)</span> is the trajectory of the particle. Then the energy density <span class="math">\(\rho\)</span> corresponds to <span class="math">\(m\delta^4(x^\mu- x^\mu(s))\)</span>.</p>
-<p>The Largrange density</p>
-<div class="math">
-\[\mathcal L = -\int\mathrm ds mc \sqrt{-\dot x^\mu g_{\mu\nu}\dot x^\nu}\delta^4(x^\mu - x^\mu(s))\]</div>
-<p>Energy-momentum density is <span class="math">\(\mathcal T^{\mu\nu} = \sqrt{-g}T^{\mu\nu}\)</span> is</p>
-<div class="math">
-\[\mathcal T^{\mu\nu} = -2 \frac{\partial \mathcal L}{\partial g_{\mu\nu}}\]</div>
-<p>Finally,</p>
-<div class="math">
-\[\begin{split}\mathcal T^{\mu\nu} &amp;= \int \mathrm ds \frac{mc\dot x^\mu \dot x^\nu}{\sqrt{-\dot x^\mu g_{\mu\nu} \dot x^\nu}} \delta(t-t(s))\delta^3(\vec x - \vec x(t)) \\
-&amp;= m\dot x^\mu \dot x^\nu \frac{\mathrm d s}{\mathrm d t} \delta^3(\vec x - \vec x(s(t)))\end{split}\]</div>
-</div>
-</div>
-<div class="section" id="theorems">
-<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="killing-vector-related">
-<h3>Killing Vector Related<a class="headerlink" href="#killing-vector-related" title="Permalink to this headline">¶</a></h3>
-<p><span class="math">\(\xi^a\)</span> is Killing vector field, <span class="math">\(T^a\)</span> is the tangent vector of geodesic line. Then <span class="math">\(T^a\nabla_a(T^b\xi_b)=0\)</span>, that is <span class="math">\(T^b\xi_b\)</span> is a constant on geodesics.</p>
-</div>
-</div>
-<div class="section" id="specific-topics">
-<h2>Specific Topics<a class="headerlink" href="#specific-topics" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="redshift">
-<h3>Redshift<a class="headerlink" href="#redshift" title="Permalink to this headline">¶</a></h3>
-<p>In geometrical optics limit, the angular frequency <span class="math">\(\omega\)</span> of a photon with a 4-vector <span class="math">\(K^a\)</span>, measured by a observer with a 4-velocity <span class="math">\(Z^a\)</span>, is <span class="math">\(\omega=-K_aZ^a\)</span>.</p>
-</div>
-<div class="section" id="stationary-vs-static">
-<h3>Stationary vs Static<a class="headerlink" href="#stationary-vs-static" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="stationay">
-<h4>Stationay<a class="headerlink" href="#stationay" title="Permalink to this headline">¶</a></h4>
-<p>“A stationary spacetime admits a timelike Killing vector field. That a stationary spacetime is one in which you can find a family of observers who observe no changes in the gravitational field (or sources such as matter or electromagnetic fields) over time.”</p>
-<p>When we say a field is stationary, we only mean the field is time-independent.</p>
-</div>
-<div class="section" id="static">
-<h4>Static<a class="headerlink" href="#static" title="Permalink to this headline">¶</a></h4>
-<p>“A static spacetime is a stationary spacetime in which the timelike Killing vector field has vanishing vorticity, or equivalently (by the Frobenius theorem) is hypersurface orthogonal. A static spacetime is one which admits a slicing into spacelike hypersurfaces which are everywhere orthogonal to the world lines of our ‘bored observers’”</p>
-<p>When we say a field is static, the field is both time-independent and symmetric in a time reversal process.</p>
-</div>
-</div>
+\[1 = G/c^2 = 7.425\times 10^{-28}\mathrm{m} \mathrm{kg}^{-1}.\]</div>
+<p>In the spirit of this conversion, we have the mass of the Sun <span class="math">\(M_\odot=2.0\times 10^{30}\mathrm{kg} = 1.5\times 10^{3} \mathrm{m}\)</span> and mass of earth <span class="math">\(M_\oplus = 6.0\times 10^{24}\mathrm{kg} = 4.4 \times 10^{-3} \mathrm{m}\)</span>.</p>
+<div class="section" id="references-and-notes">
+<h2>References and Notes<a class="headerlink" href="#references-and-notes" title="Permalink to this headline">¶</a></h2>
+<table class="docutils citation" frame="void" id="schutz" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Schutz]</a></td><td>A First Course in General Relativity (Second Edition)</td></tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -470,7 +370,7 @@
         <a href="/genindex.html">Index</a>
      </span> |
        <span><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-       <a href="../../_sources/relativity/gr/index.rst.txt"
+       <a href="../../_sources/relativity/gr/geometrized-unit.rst.txt"
       rel="nofollow">Page Source</a>
       </span>
 
