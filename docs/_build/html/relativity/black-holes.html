@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Astrophysics Basics &#8212; Physics Notes</title>
+    <title>Black Holes &#8212; Physics Notes</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
@@ -30,8 +30,6 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Stars" href="stars.html" />
-    <link rel="prev" title="Astrophysics" href="index.html" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-44466929-1']);
@@ -168,7 +166,7 @@
      href="../index.html">Chapters <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul class="current">
+      aria-labelledby="dLabelGlobalToc"><ul>
 <li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../fun/math.html">Math4Fun</a></li>
@@ -222,16 +220,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../electrodynamics/scattering.html">Scattering</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../relativity/math/index.html">Math in Relativity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../relativity/sr/index.html">Special Relativity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../relativity/gr/index.html">General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="math/index.html">Math in Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sr/index.html">Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gr/index.html">General Relativity</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Astrophysics</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Astrophysics Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stars.html">Stars</a></li>
-<li class="toctree-l2"><a class="reference internal" href="supernova.html">Supernova</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/index.html">Astrophysics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a><ul>
@@ -252,33 +250,8 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Astrophysics Basics</a><ul>
-<li><a class="reference internal" href="#numbers">Numbers</a><ul>
-<li><a class="reference internal" href="#physical-facts">Physical Facts</a></li>
-<li><a class="reference internal" href="#solar-system">Solar System</a><ul>
-<li><a class="reference internal" href="#sun">Sun</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#orbital-dynamics">Orbital Dynamics</a></li>
-<li><a class="reference internal" href="#wave-bands">Wave Bands</a></li>
-<li><a class="reference internal" href="#doppler-shift">Doppler Shift</a></li>
-<li><a class="reference internal" href="#photon-production">Photon Production</a><ul>
-<li><a class="reference internal" href="#bremsstrahlung-radiation">Bremsstrahlung Radiation</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#compton-scattering">Compton Scattering</a><ul>
-<li><a class="reference internal" href="#thomson-scattering">Thomson Scattering</a></li>
-<li><a class="reference internal" href="#id1">Compton Scattering</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#asteroseismology">Asteroseismology</a><ul>
-<li><a class="reference internal" href="#papers-researches-and-more">Papers, Researches and More</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#relativistic-beaming-effect">Relativistic Beaming Effect</a></li>
-<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
+<li><a class="reference internal" href="#">Black Holes</a><ul>
+<li><a class="reference internal" href="#kerr-metric">Kerr Metric</a></li>
 </ul>
 </li>
 </ul>
@@ -289,14 +262,6 @@
             
               
                 
-  <li>
-    <a href="index.html" title="Previous Chapter: Astrophysics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Astrophysics</span>
-    </a>
-  </li>
-  <li>
-    <a href="stars.html" title="Next Chapter: Stars"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Stars &raquo;</span>
-    </a>
-  </li>
               
             
             
@@ -322,124 +287,22 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="astrophysics-basics">
-<h1>Astrophysics Basics<a class="headerlink" href="#astrophysics-basics" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="numbers">
-<h2>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h2>
-<p>One of the most useful concepts in astrophysics is that things should be scaled using a scale that we can understand.</p>
-<div class="section" id="physical-facts">
-<h3>Physical Facts<a class="headerlink" href="#physical-facts" title="Permalink to this headline">¶</a></h3>
-<p>Ionization energy for atoms</p>
-<ol class="arabic simple">
-<li>H: 13.6eV</li>
-<li>He: 24.7eV</li>
-<li><span class="math">\(He^{++}\)</span>: 54.4eV</li>
-</ol>
-</div>
-<div class="section" id="solar-system">
-<h3>Solar System<a class="headerlink" href="#solar-system" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="sun">
-<h4>Sun<a class="headerlink" href="#sun" title="Permalink to this headline">¶</a></h4>
-<p>Some numbers:</p>
-<ol class="arabic simple">
-<li>Mass of Sun: <span class="math">\(M_\odot = 1.99 \times 10^{30}\mathrm{kg}\)</span>;</li>
-<li>Radius of Sun: <span class="math">\(6.9 \times 10^{5}\mathrm{km}\)</span>;</li>
-<li>Average Density: <span class="math">\(1.4\mathrm{g/cm^3}\)</span>;</li>
-<li>Surface Gravity: <span class="math">\(27 g_E\)</span>;</li>
-<li>Core Density: <span class="math">\(150\mathrm{g/cm^3}\)</span>;</li>
-<li>Core Temperature: <span class="math">\(1.5\times 10^7\mathrm{K}\)</span> which corresponds to energy of <span class="math">\(1\mathrm{keV}\)</span>.</li>
-</ol>
-<p>The sun is composed of</p>
-<p>1. X = H mass fraction of <span class="math">\(0.70\)</span>;
-1. Y = He mass fraction of <span class="math">\(0.26\)</span>;
-1. X = Li mass fraction of <span class="math">\(0.04\)</span>.</p>
-</div>
-</div>
-</div>
-<div class="section" id="orbital-dynamics">
-<h2>Orbital Dynamics<a class="headerlink" href="#orbital-dynamics" title="Permalink to this headline">¶</a></h2>
-<p>Kepler’s law can be easily derived from Newton’s dynamics.</p>
-<p>The first law is about the</p>
-</div>
-<div class="section" id="wave-bands">
-<h2>Wave Bands<a class="headerlink" href="#wave-bands" title="Permalink to this headline">¶</a></h2>
-<p>A table of wavebands in astronomy is something like this.</p>
-</div>
-<div class="section" id="doppler-shift">
-<h2>Doppler Shift<a class="headerlink" href="#doppler-shift" title="Permalink to this headline">¶</a></h2>
-<p>Refer to <span class="xref std std-ref">doppler-shift</span>.</p>
-</div>
-<div class="section" id="photon-production">
-<h2>Photon Production<a class="headerlink" href="#photon-production" title="Permalink to this headline">¶</a></h2>
-<p>There are two important processes that produces photons in astrophysical environment, namely thermal Bremsstrahlung and synchrotron radiation.</p>
-<div class="section" id="bremsstrahlung-radiation">
-<h3>Bremsstrahlung Radiation<a class="headerlink" href="#bremsstrahlung-radiation" title="Permalink to this headline">¶</a></h3>
-<div class="figure align-center" id="id2">
-<img alt="../_images/thermalBremsstrahlungSpectrum.png" src="../_images/thermalBremsstrahlungSpectrum.png" />
-<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">This is the spectrum of frequency-dependent emissivity of the process which happens when a flux of non-relativistic regime with thermal distributon of temperature T is shot into a plasma of ions or protons.</span></p>
-</div>
-</div>
-</div>
-<div class="section" id="compton-scattering">
-<h2>Compton Scattering<a class="headerlink" href="#compton-scattering" title="Permalink to this headline">¶</a></h2>
-<p>The quantities we are interested in are cross section and radiated power, both of which are Lorentz invariant.</p>
-<div class="section" id="thomson-scattering">
-<h3>Thomson Scattering<a class="headerlink" href="#thomson-scattering" title="Permalink to this headline">¶</a></h3>
-<p>Total cross section of Thomson scattering can be obtained using only classical electrodynamics. The physics behind it is that the electric field excerts force on an electron then the electron emits photons to all possible direction as it oscillates.</p>
-<p>The incoming power per unit area is</p>
+  <div class="section" id="black-holes">
+<h1>Black Holes<a class="headerlink" href="#black-holes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="kerr-metric">
+<h2>Kerr Metric<a class="headerlink" href="#kerr-metric" title="Permalink to this headline">¶</a></h2>
+<p>To begin with, Kerr spacetime is described as the line element</p>
 <div class="math">
-\[P_{inc}= c u_{rad},\]</div>
-<p>as <span class="math">\(u_{rad} = \frac{E^2}{4\pi}\)</span> is the energy density of EM field.</p>
-<p>The outgoing or scattered wave power (total) is</p>
+\[ds^2 = - \frac{\Delta- a^2\sin^2\theta}{\rho^2} dt^2 - 2 a \frac{2Mr \sin^2 \theta}{ \rho^2} dt d\phi + \frac{ (r^2 + a^2)^2 - a^2 \Delta \sin^2 \theta }{\rho^2} \sin^2\theta d\phi^2 + \frac{\rho^2}{\Delta^2}dr^2 + \rho^2 d\theta^2,\]</div>
+<p>where</p>
 <div class="math">
-\[P_{scatt} = \frac{2}{3}\frac{e^4}{m_e^2 c^3} E^2.\]</div>
-<p>The total cross section is ratio of the two quantity, i.e.,</p>
-<div class="math">
-\[\sigma_T \equiv \frac{P_{scatt}}{P_{inc}} =\frac{8\pi e^4}{3 m_e ^2 c^4} = \frac{8\pi (\alpha \hbar c)^2}{3 m_e ^2 c^4},\]</div>
-<p>in which the fine structure constant is defined as <span class="math">\(\alpha = \frac{e^2}{\hbar c}\)</span>.</p>
+\[\begin{split}a &amp;= J/M \\
+\Delta &amp;= r^2 - 2M r + a^2 \\
+\rho^2 &amp;= r^2 + a^2 \cos^2\theta.\end{split}\]</div>
+<div class="figure align-center" id="id1">
+<img alt="relativity/assets/black-holes/kerr-metric-frame-dragging-angular-velocity.jpg" src="relativity/assets/black-holes/kerr-metric-frame-dragging-angular-velocity.jpg" />
+<p class="caption"><span class="caption-text">Angular velocity of the frame dragging for a Kerr black hole. Everything is scaled by the mass of black hole. It drops as <span class="math">\(1/r^3\)</span> for large <span class="math">\(r\)</span>.</span></p>
 </div>
-<div class="section" id="id1">
-<h3>Compton Scattering<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>The full quantum electrodynamics result is called Klein-Nishima formula, which describes the total cross section of coliding photon and electron,</p>
-<div class="math">
-\[\sigma_{K-N} = \frac{\pi e^4}{m_e^2 c^4} \frac{1}{\epsilon} \left[ \left(1 - \frac{2(\epsilon+1)}{\epsilon^2}\right) \ln (2\epsilon + 1) + \frac{1}{2} + \frac{4}{\epsilon} - \frac{1}{2(2\epsilon + 1)^2} \right],\]</div>
-<p>where <span class="math">\(\epsilon = \frac{E}{m_e c^2}\)</span>.</p>
-<p>In the limit that energy of electron is much larger than photons, we have <span class="math">\(\epsilon\)</span> is much smaller than 1, we would come back to the Thomson limit, which is true for our equation,</p>
-<div class="math">
-\[\begin{split}\sigma_{K-N} &amp;= \sigma_T \frac{3 \left(\left(1-\frac{2 (x+1)}{x^2}\right) \log (2 x+1)+\frac{4}{x}-\frac{1}{2 (2 x+1)^2}+\frac{1}{2}\right)}{8 x} \\
-&amp; = \sigma_T (1 - 2\epsilon + O(x^2)).\end{split}\]</div>
-<p>To have more understanding on this formula, I ploted <span class="math">\(\sigma_{K-N}\)</span> in terms of <span class="math">\(\sigma_T\)</span> as the energy scale <span class="math">\(\epsilon\)</span> changes.</p>
-<img alt="../_images/comptonScattering.png" class="align-center" src="../_images/comptonScattering.png" />
-</div>
-</div>
-<div class="section" id="asteroseismology">
-<h2>Asteroseismology<a class="headerlink" href="#asteroseismology" title="Permalink to this headline">¶</a></h2>
-<p>The stars do shake, from inside out.</p>
-<p>Long period variable such as Cepheids pulsate in the luminosity. This is because of the radial oscillation mode with a approximate period of</p>
-<div class="math">
-\[P_{dynamical} \approx \left( \frac{R^3}{GM} \right)^{1/2} \approx (G\bar \rho)^{-1/2},\]</div>
-<p>in which we have the radius of the star as <span class="math">\(R\)</span>, mass of the star as <span class="math">\(M\)</span> and mean density <span class="math">\(\bar \rho\)</span>. <strong>The good thing of this oscillation immediately shows us the mean density of the star, even without any furthure inspectation.</strong></p>
-<p>There are double mode Cepheids, whose modes provides information about mass and radius.</p>
-<p>Our sun, up to now we have identified thousands of individual modes. And more modes as many as <span class="math">\(10^{6}\)</span> modes can be determined accurately.[helioosc]_</p>
-<table class="docutils citation" frame="void" id="helioosc" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[helioosc]</td><td><a class="reference external" href="http://users-phys.au.dk/jcd/oscilnotes/chap-1.pdf">Jørgen Christensen-Dalsgaard’s Lecture Notes</a></td></tr>
-</tbody>
-</table>
-<div class="section" id="papers-researches-and-more">
-<h3>Papers, Researches and More<a class="headerlink" href="#papers-researches-and-more" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li>Double mode Cepheids, J. Otzen Petersen, 1973, 1974, 1978.</li>
-<li>An introduction of seismology applied to stars. <a class="reference external" href="http://ap.smu.ca/~guenther/seismology/seismology.html">http://ap.smu.ca/~guenther/seismology/seismology.html</a></li>
-</ol>
-</div>
-</div>
-<div class="section" id="relativistic-beaming-effect">
-<h2>Relativistic Beaming Effect<a class="headerlink" href="#relativistic-beaming-effect" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="refs-notes">
-<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -498,7 +361,7 @@
         <a href="/genindex.html">Index</a>
      </span> |
        <span><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-       <a href="../_sources/astrophysics/basics.rst.txt"
+       <a href="../_sources/relativity/black-holes.rst.txt"
       rel="nofollow">Page Source</a>
       </span>
 
