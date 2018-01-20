@@ -255,7 +255,11 @@
 <li><a class="reference internal" href="#">Black Holes</a><ul>
 <li><a class="reference internal" href="#observations-of-black-holes">Observations of Black Holes</a></li>
 <li><a class="reference internal" href="#schwarzschild-metric">Schwarzschild Metric</a></li>
-<li><a class="reference internal" href="#kerr-metric">Kerr Metric</a></li>
+<li><a class="reference internal" href="#kerr-metric">Kerr Metric</a><ul>
+<li><a class="reference internal" href="#frame-dragging">Frame Dragging</a></li>
+<li><a class="reference internal" href="#ergospheres-horizons">Ergospheres, Horizons</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#photons-travelling-on-equatorial-plane">Photons Travelling on Equatorial Plane</a></li>
 <li><a class="reference internal" href="#penrose-process">Penrose Process</a></li>
 </ul>
@@ -344,9 +348,20 @@
 \[\begin{split}a &amp;= J/M \\
 \Delta &amp;= r^2 - 2M r + a^2 \\
 \rho^2 &amp;= r^2 + a^2 \cos^2\theta.\end{split}\]</div>
+<p>The Kerr metric has very nice symmetries.</p>
+<ol class="arabic simple">
+<li>Reflection symmetry with respect to <span class="math">\(\theta=\pi/2\)</span>;</li>
+<li>Axial symmetry around the <span class="math">\(z\)</span> axis so that the angular momentum <span class="math">\(L_\phi=p_\phi\)</span> is conserved;</li>
+<li>Stationary metric so that energy of test particles is conserved, <span class="math">\(E = -p_0\)</span> is conserved.</li>
+</ol>
+<div class="section" id="frame-dragging">
+<h3>Frame Dragging<a class="headerlink" href="#frame-dragging" title="Permalink to this headline">¶</a></h3>
+<p>We would be very interested in how the rotation of black holes drag the spacetime. Due to the symmetries, the equatorial plane is easier to think about. So we set <span class="math">\(\theta=\pi/2\)</span>. For frame dragging, we have a guy riding a rocket so that <span class="math">\(p_r=0\)</span>. The frame dragging is best described by a observor that is staying stationary with frame, that is a zero angular momentum observor (ZAMO), that <span class="math">\(p_\phi=0\)</span>. Frame dragging angular velocity is</p>
+<div class="math">
+\[\omega = \frac{d\phi}{dt} = \frac{ d\phi/d\tau }{ dt/d\tau }.\]</div>
 <p>It can be derived that the frame dragging angular velocity at radius <span class="math">\(r\)</span> is</p>
 <div class="math">
-\[\omega = - \frac{ g_{t\phi} }{g_{\phi\phi} }.\]</div>
+\[\omega = - \frac{ g_{t\phi} }{g_{\phi\phi} } = \frac{ 2M r a }{ (r^2+a^2)^2 - a^2 \Delta \sin^2\theta }.\]</div>
 <div class="figure align-center" id="id1">
 <img alt="../../_images/kerr-metric-frame-dragging-angular-velocity.jpg" src="../../_images/kerr-metric-frame-dragging-angular-velocity.jpg" />
 <p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Angular velocity of the frame dragging for a Kerr black hole. Everything is scaled by the mass of black hole. It drops as <span class="math">\(1/r^3\)</span> for large <span class="math">\(r\)</span>.</span></p>
@@ -390,6 +405,73 @@ PlotLabel-&gt;&quot;Angular Velocity of Frame Dragging \[Omega] (with a=&quot;&l
 </td></tr></table></div>
 </div>
 </div>
+<div class="section" id="ergospheres-horizons">
+<h3>Ergospheres, Horizons<a class="headerlink" href="#ergospheres-horizons" title="Permalink to this headline">¶</a></h3>
+<p>In Schwarzschild black holes, the surface that <span class="math">\(g_{tt}=0\)</span> and <span class="math">\(g_{rr}\to\infty\)</span> are the same surface that is defined as the horizon. However, <span class="math">\(g_{tt}=0\)</span> gives us the ergospheres and <span class="math">\(g_{rr}\to\infty\)</span> gives us the horizons.</p>
+<div class="note admonition">
+<p class="first admonition-title">Why?</p>
+<p>The ergospheres are the regions that even light can not travel in the counter-rotation direction. That being said, <span class="math">\(p^\phi\)</span> can only be positive for light. To prove this, we set <span class="math">\(ds^2=0\)</span> and neglect <span class="math">\(p_r\)</span>,</p>
+<div class="math">
+\[g_{tt} dt^2 + g_{\phi\phi} d\phi^2 + 2 g_{t\phi} dt d\phi = 0,\]</div>
+<p>which shows that,</p>
+<div class="math">
+\[p^\phi = \frac{ -g_{t\phi} \pm \sqrt{ g_{t\phi} - g_{tt}g_{\phi\phi} } }{ g_{\phi\phi} }.\]</div>
+<p>We can show that <span class="math">\(p^\phi\)</span> can only be negative if <span class="math">\(g_{tt}&gt;0\)</span>, while it can be negative or positive if <span class="math">\(g_{tt}&lt;0\)</span>. What we found is that for <span class="math">\(g_{tt}&gt;0\)</span>, we are entering a region where even light can not travel against the direction of the rotation. This is why we define the condition <span class="math">\(g_{tt}=0\)</span> to be the surface of the ergospheres.</p>
+<p class="last">As for <span class="math">\(g_{rr}\to\infty\)</span>, it is the condition for <span class="math">\(p^r\)</span> being always negative, which means we are always travelling inward. It proven by similar techniques.</p>
+</div>
+<p><strong>We have two ergospheres and horizons!</strong> Solving <span class="math">\(g_{tt}=0\)</span> gives us</p>
+<div class="math">
+\[r_{e,\pm} = M \pm \sqrt{M^2-a^2\cos^2\theta},\]</div>
+<p>which defines the two surfaces of ergospheres.</p>
+<p>Meanwhile, <span class="math">\(g_{rr}\to\infty\)</span> indicates that <span class="math">\(\Delta=0\)</span>, which proves to be</p>
+<div class="math">
+\[r_{h,\pm} = M\pm\sqrt{ M^2 - a^2 },\]</div>
+<p>which shows us the two horizons.</p>
+<div class="figure align-center" id="id2">
+<img alt="../../_images/gtt-grr-as-function-of-r-kerr-bh.jpg" src="../../_images/gtt-grr-as-function-of-r-kerr-bh.jpg" />
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text"><span class="math">\(g_{tt}\)</span> and <span class="math">\(g_{rr}\)</span> as function of coordinate <span class="math">\(r\)</span>.</span></p>
+</div>
+<div class="toggle admonition">
+<p class="first admonition-title">Mathematica (11) Code</p>
+<div class="last highlight-mma"><div class="highlight"><pre><span></span>gtt[r_,a_,mass_:1,theta_:Pi/2]:=Module[{deltaM,rhosquareM},
+deltaM=r^2-2mass r+a^2;
+rhosquareM=r^2+a^2Cos[theta]^2;
+-(deltaM-a^2Sin[theta]^2)/rhosquareM
+]
+grr[r_,a_,mass_:1,theta_:Pi/2]:=Module[{deltaM,rhosquareM},
+deltaM=r^2-2mass r+a^2;
+rhosquareM=r^2+a^2Cos[theta]^2;
+rhosquareM/deltaM
+]
+Manipulate[
+Plot[{gtt[r,a,mass,theta],grr[r,a,mass,theta]},{r,0,5},Frame-&gt;True,FrameLabel-&gt;{&quot;r&quot;,&quot;Subscript[g, tt] or Subscript[g, rr]&quot;},ImageSize-&gt;Large,PlotRange-&gt;Automatic,PlotStyle-&gt;{Black,Red},GridLines-&gt;{{ {mass+Sqrt[mass^2-a^2],Directive[Red,Thick]},{mass+Sqrt[mass^2-a^2Cos[theta]^2],Directive[Gray,Thick]},{mass-Sqrt[mass^2-a^2],Directive[Red,Thick]},{mass-Sqrt[mass^2-a^2Cos[theta]^2],Directive[Gray,Thick]}},None},PlotLabel-&gt;&quot;Angular Velocity of Frame Dragging \[Omega] (with a=&quot;&lt;&gt;ToString@a&lt;&gt;&quot;, M=&quot;&lt;&gt;ToString@mass&lt;&gt;&quot;, \[Theta]=&quot;&lt;&gt;ToString@TraditionalForm@theta&lt;&gt;&quot;)&quot;,PlotLegends-&gt;Placed[{&quot;Subscript[g, tt]&quot;,&quot;Subscript[g, rr]&quot;},{Right,Top}]],
+{{a,0.7,&quot;Spin Angular Momentum of Black Hole&quot;},0,1},{{mass,1,&quot;Mass of Black Hole&quot;},0.1,10},{{theta,Pi/3,&quot;\[Theta]&quot;},0,Pi}
+]
+</pre></div>
+</div>
+</div>
+<p>In fact we can prove that</p>
+<ol class="arabic simple">
+<li>Within region <span class="math">\(r&gt;r_{e,+}\)</span>, <span class="math">\(g_{tt}&lt;0\)</span>, <span class="math">\(g_{rr}&gt;0\)</span>;</li>
+<li>Within region <span class="math">\(r_{h,+}&lt;r&lt;r_{e,+}\)</span>, <span class="math">\(g_{tt}&gt;0\)</span>, <span class="math">\(g_{rr}&gt;0\)</span>;</li>
+<li>Within region <span class="math">\(r_{h,-}&lt;r&lt;r_{h,+}\)</span>, <span class="math">\(g_{tt}&lt;0\)</span>, <span class="math">\(g_{rr}&lt;0\)</span>;</li>
+<li>Within region <span class="math">\(r_{e,-}&lt;r&lt;r_{h,-}\)</span>, <span class="math">\(g_{tt}&lt;0\)</span>, <span class="math">\(g_{rr}&gt;0\)</span>;</li>
+<li>Within region <span class="math">\(r&lt;r_{e,-}\)</span>, <span class="math">\(g_{tt}&lt;0\)</span>, <span class="math">\(g_{rr}&gt;0\)</span>.</li>
+</ol>
+<div class="figure align-center" id="id3">
+<img alt="../../_images/gtt-grr-regions-kerr-bh.png" src="../../_images/gtt-grr-regions-kerr-bh.png" />
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Regions of Kerr black holes. <span class="math">\(r_{e,\pm}\)</span> are the two surfaces of ergospheres, <span class="math">\(r_{h,\pm}\)</span> are the two horizons, as calculated previously.</span></p>
+</div>
+<div class="figure align-center" id="id4">
+<img alt="../../_images/kerr-surfaces.png" src="../../_images/kerr-surfaces.png" />
+<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">A Kerr black hole is nicely visualized by <a class="reference external" href="http://kerr.newman.yukterez.net/">Simon Tyran</a>, whose work is licensed with CC BY-SA.</span></p>
+</div>
+<div class="warning admonition">
+<p class="first admonition-title">What are the significances of the surfaces?</p>
+<p class="last">For the outer horizon and outer ergosphere, their properties are discussed. What are the properties of the inner surfaces?</p>
+</div>
+</div>
+</div>
 <div class="section" id="photons-travelling-on-equatorial-plane">
 <h2>Photons Travelling on Equatorial Plane<a class="headerlink" href="#photons-travelling-on-equatorial-plane" title="Permalink to this headline">¶</a></h2>
 <p>The elements of the metric <span class="math">\(g_{\alpha\beta}\)</span> as well as <span class="math">\(g^{\alpha\beta}\)</span> are frequently used. It is essential to find them, which involves some matrix inversion.</p>
@@ -427,7 +509,7 @@ B_{22} &amp; - B_{21}\\
 </div>
 <div class="section" id="penrose-process">
 <h2>Penrose Process<a class="headerlink" href="#penrose-process" title="Permalink to this headline">¶</a></h2>
-<p>Suppose we have a particle falling inside a black hole, starting with 0 energy at infinity. It falls through the ergosphere, and decays into two particles, A and B. Particle A obtains a negative energy, meanwhile having negative angular momentum, so that it stays in ergosphere or falls through the horizon. The other particle obtains positive energy, and managed to escape. Energy conservation tells us that the escaped particle will have energy at infinity that is larger than the initial energy 0.</p>
+<p>Suppose we have a particle falling inside a black hole, starting with 0 energy at infty. It falls through the ergosphere, and decays into two particles, A and B. Particle A obtains a negative energy, meanwhile having negative angular momentum, so that it stays in ergosphere or falls through the horizon. The other particle obtains positive energy, and managed to escape. Energy conservation tells us that the escaped particle will have energy at infty that is larger than the initial energy 0.</p>
 <p>This though experiment relies on the effective potential <span class="math">\(V(r)\)</span> of the ergosphere. For positive angular momentum, we always fall through the</p>
 </div>
 </div>
