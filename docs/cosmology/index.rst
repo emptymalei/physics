@@ -12,3 +12,4 @@ Cosmology
 
    two-parameters.rst
    thermal-history.rst
+   flrw-universe.rst
