@@ -2,23 +2,21 @@ version: 2
 
 jobs:
   build-site:
-    working_directory: ~/docs
     docker:
       - image: python:3.7
     steps:
-      - checkout:
-          path: ~/docs
+      - checkout
       - run:
           name: Install dependencies
           command: pip install sphinx sphinx-sitemap
       - run:
           name: Build docs
-          command: make html
+          command: make html -C docs
       - run:
           name: copy sitemap
-          command: cp _build/html/sitemap.xml _build/html/_downloads/sitemap.xml
+          command: cp docs/_build/html/sitemap.xml docs/_build/html/_downloads/sitemap.xml
       - persist_to_workspace:
-          root: _build
+          root: docs/_build
           paths: html
   deploy-site:
     docker:
@@ -26,7 +24,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: _build
+          at: docs/_build
       - run:
           name: Install and configure dependencies
           command: |
@@ -38,7 +36,7 @@ jobs:
             - "46:43:8b:22:b3:57:1f:09:9c:c7:e8:49:b9:e0:8a:c3"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist _build/html
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist docs/_build/html
 
 
 workflows:
