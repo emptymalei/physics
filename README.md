@@ -1,6 +1,14 @@
 # My Physics Notebook
 
-I have been writing physics notes on my computer for many years. Ideally, I would merge all the notes in one place. However, the different formatting, tech stack, and styles make it hard to unify all my notes. Nevertheless, I maintain most of my physics notes here.
+I have been taking notes on physics for many years. I wanted to build a knowledge base for myself to make sure that I can recreate as many physics as possible. However, things turned out to be much harder than I expected. This becamse a legacy project. I am only maintaining a few special topics, such as statistical physics, at this moment.
+
+
+## Related notebooks
+
+1. `Statistical Physics <http://statisticalphysics.openmetric.org/>`_
+2. `Intelligence <http://intelligence.readthedocs.io/>`_
+4. `Neutrino Physics <http://docs.neutrino.xyz/>`_
+
 
 ## Structure of the project
 
@@ -11,7 +19,6 @@ I have been writing physics notes on my computer for many years. Ideally, I woul
 ├── README.rst
 └── docs
     ├── Makefile
-    ├── _build
     ├── _static
     ├── _templates
     ├── _themes
@@ -40,7 +47,7 @@ All the notes are in the folder `docs`. Files or folders that starts with `_` ar
 
 `sphinx-doc` is required to build the notes.
 
-This notebook itself is hosted on readthedocs.org. 
+This notebook itself is hosted on readthedocs.org.
 
 In any event of development or reuse, clone the repo:
 
@@ -62,15 +69,8 @@ make html
 
 
 
-## Related notebooks
-
-1. `Statistical Physics <http://statisticalphysics.openmetric.org/>`_
-2. `Intelligence <http://intelligence.readthedocs.io/>`_
-3. `Computational Methods <http://computational.neutrino.xyz/>`_
-4. `Neutrino Physics <http://docs.neutrino.xyz/>`_
 
 ## DOI
 
 
-.. image:: https://zenodo.org/badge/7726/CosmologyTaskForce/PhysicsResearchSurvivalManual.svg
-   :target: http://dx.doi.org/10.5281/zenodo.13216
+[![](https://zenodo.org/badge/7726/CosmologyTaskForce/PhysicsResearchSurvivalManual.svg)](http://dx.doi.org/10.5281/zenodo.13216)
