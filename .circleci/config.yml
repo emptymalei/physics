@@ -6,7 +6,8 @@ jobs:
     docker:
       - image: python:3.7
     steps:
-      - checkout
+      - checkout:
+          path: ~/docs
       - run:
           name: Install dependencies
           command: pip install sphinx sphinx-sitemap
