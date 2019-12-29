@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Useful Math Tricks &#8212; Physics Notes</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="canonical" href="https://physics.openmetric.org/vocabulary/math.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Useful Physics Concepts and Tools" href="physics.html" />
+    <link rel="prev" title="Vocabulary" href="index.html" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44466929-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+     </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+       MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+         cancel: ["Extension","cancel"]
+         });
+      });
+      </script>
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+         }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+       MathJax.Hub.Queue(function() {
+           var all = MathJax.Hub.getAllJax(), i;
+           for(i=0; i < all.length; i += 1) {
+               all[i].SourceElement().parentNode.className += ' has-jax';
+           }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         processEscapes: true
+       }
+     });
+   </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       TeX: {
+         Macros: {
+           overlr: ['\\overset\\leftrightarrow{\#1}',1],
+           overl: ['\\overset\leftarrow{\#1}',1],
+           overr: ['\\overset\rightarrow{\#1}',1],
+           bra: ['\\left\\langle \#1\\right|',1],
+           ket: ['\\left| \#1\\right\\rangle',1],
+           braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+           avg: ['\\left< \#1 \\right>',1],
+           slashed: ['\\cancel{\#1}',1],
+           bold: ['\\boldsymbol{\#1}',1],
+           d: ['\\mathrm d',0],
+           sech: ['\\operatorname{sech}',0],
+           csch: ['\\operatorname{csch}',0]
+         }
+       }
+     });
+     </script>
+     <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
+
+
+   
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+   
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default ">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Notes</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Chapters <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../fun/math.html">Math4Fun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fun/quantum.html">Quantum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fun/relativity.html">Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fun/electrodynamics.html">Electrodynamics</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Vocabulary</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Useful Math Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physics.html">Useful Physics Concepts and Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../qualitative-methods/index.html">Qualitative Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../qualitative-methods/dimensional-analysis.html">Dimensional Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../math/index.html">Mathematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../math/basics.html">Kindergarten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/special-functions.html">Special Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/complex.html">Complex Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/calculus.html">Calculus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/linear-algebra.html">Linear Algebra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/differential-geometry.html">Differential Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/statistics/statistics.html">Statistics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cm/lagrangian.html">Lagrangian and Equation of Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/rigid-body.html">Regid Body</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/central-force.html">Central Force Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/oscillators.html">Oscillators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/oscillators.html#refs-notes">Refs &amp; Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/hamiltonian-dynamics.html">Hamiltonian Dynamics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/index.html">Quantum Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/preliminary/index.html">Preliminary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-beginners.html">Quantum Mechanics Beginners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-intermediates.html">Quantum Mechanics Intermediates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-advanced.html">Quantum Mechanics Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/vocabulary/index.html">Electrodynamics Vocabulary and Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/em/index.html">Electricity and Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/matter.html">Response of Matter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/radiation.html">Radiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/scattering.html">Scattering</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/math/index.html">Math in Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/sr/index.html">Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/gr/index.html">General Relativity</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../astrophysics/index.html">Astrophysics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/two-parameters.html">Two Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/thermal-history.html">Thermal History of The Universe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/flrw-universe.html">FLRW Universe</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Useful Math Tricks</a><ul>
+<li><a class="reference internal" href="#functional-derivative">Functional Derivative</a></li>
+<li><a class="reference internal" href="#legendre-transformation">Legendre Transformation</a></li>
+<li><a class="reference internal" href="#vector-analysis">Vector Analysis</a></li>
+<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="index.html" title="Previous Chapter: Vocabulary"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Vocabulary</span>
+    </a>
+  </li>
+  <li>
+    <a href="physics.html" title="Next Chapter: Useful Physics Concepts and Tools"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Useful Physic... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Useful Math Tricks</a><ul>
+<li><a class="reference internal" href="#functional-derivative">Functional Derivative</a></li>
+<li><a class="reference internal" href="#legendre-transformation">Legendre Transformation</a></li>
+<li><a class="reference internal" href="#vector-analysis">Vector Analysis</a></li>
+<li><a class="reference internal" href="#refs-notes">Refs &amp; Notes</a></li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="index.html" title="Previous Chapter: Vocabulary"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Vocabulary</span>
+    </a>
+  </li>
+  <li>
+    <a href="physics.html" title="Next Chapter: Useful Physics Concepts and Tools"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Useful Physic... &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../_sources/vocabulary/math.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="useful-math-tricks">
+<h1>Useful Math Tricks<a class="headerlink" href="#useful-math-tricks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="functional-derivative">
+<h2>Functional Derivative<a class="headerlink" href="#functional-derivative" title="Permalink to this headline">¶</a></h2>
+<p>By definition, <a class="footnote-reference brackets" href="#physmath" id="id1">1</a> functional derivative of a functional <span class="math notranslate nohighlight">\(G[f]\)</span> with respect to <span class="math notranslate nohighlight">\(f\)</span> along the ‘direction’ of <span class="math notranslate nohighlight">\(h\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\delta G[f][h] = \frac{d}{d\epsilon} G[f+\epsilon h]\vert_{\epsilon=0}.\]</div>
+<p>As an example, the functional derivative of <span class="math notranslate nohighlight">\(G[f]=\int dx f^n(x)\)</span> <span class="math notranslate nohighlight">\(\delta G[f][h]\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\delta G[f][h] &amp;= \frac{d}{d\epsilon} G[f+\epsilon h] \vert_{\epsilon=0} \\
+&amp; = \int nf^{n-1}(x) h(x) dx.\end{split}\]</div>
+<p>Now the problem appears. We have an unknown function <span class="math notranslate nohighlight">\(h\)</span> which makes sense because we haven’t specify a direction of the derivative yet.</p>
+<p>For a physicist, the savior of integral is Dirac delta. So we use delta distribution as the direction in the functional derivative of action which is an integral,</p>
+<div class="math notranslate nohighlight">
+\[\frac{\delta G[f]}{\delta f(y)} = \delta G[f][\delta_y].\]</div>
+<p>It can be ambiguous to just write down <span class="math notranslate nohighlight">\(\delta_y\)</span> without an example. Here is the previous example continued,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{\delta G[f(y)]}{\delta f(y)} &amp;= \int nf^{n-1}(x) h(x) dx \vert_{h(x)= \delta(x-y)} \\
+&amp; = \int nf^{n-1}(x) \delta(x-y) dx \\
+&amp; = n f^{n-1}(y) .\end{split}\]</div>
+<p>It seems that we can just think of <span class="math notranslate nohighlight">\(f\)</span> as a variable then take the ordinary derivative with respect to it. It is NOT true.</p>
+<p>Consider such a functional <span class="math notranslate nohighlight">\(G[f]=\int (f'(x))^2 dx\)</span> where ‘ means the derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{\delta G[f]}{\delta f} &amp; = -\int dx 2 f''(x) h(x) \vert_{h(x)=\delta(x-y)}  \\
+&amp; = -2 f''(y) ,\end{split}\]</div>
+<p>which is not that straightforward to understand from function derivatives.</p>
+<dl class="footnote brackets">
+<dt class="label" id="physmath"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Chapter 15 of <a class="reference external" href="http://www.amazon.com/Physical-Mathematics-Kevin-Cahill/dp/1107005213">Physical Mathematics</a></p>
+</dd>
+</dl>
+</div>
+<div class="section" id="legendre-transformation">
+<h2>Legendre Transformation<a class="headerlink" href="#legendre-transformation" title="Permalink to this headline">¶</a></h2>
+<p>Legendre transformation is NOT just some algebra. Given <span class="math notranslate nohighlight">\(f(x)\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>, which is shown in blue, we could find the distance between a line <span class="math notranslate nohighlight">\(y=px_i\)</span> and the function value <span class="math notranslate nohighlight">\(f(x_i)\)</span>.</p>
+<div class="figure align-center" id="id2">
+<img alt="../_images/legendreTransformation.png" src="../_images/legendreTransformation.png" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Meaning of Legendre transformation</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>However, as we didn’t fix <span class="math notranslate nohighlight">\(x\)</span>, this means that the distance</p>
+<div class="math notranslate nohighlight">
+\[F(p,x) = p x - f(x)\]</div>
+<p>varies according to <span class="math notranslate nohighlight">\(x\)</span>. This is a transformation that maps a function <span class="math notranslate nohighlight">\(f(x)\)</span> to some other function <span class="math notranslate nohighlight">\(F(p,x)\)</span> which depends on the parameter <span class="math notranslate nohighlight">\(p\)</span>. A more pedagogical way of writing this is</p>
+<div class="math notranslate nohighlight">
+\[px = F(x,p) + f(x).\]</div>
+<p>To have a Legendre transformation, let’s choose a relation between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span>. One choice is to make sure we have a maximum distance given <span class="math notranslate nohighlight">\(p\)</span>, which means the <span class="math notranslate nohighlight">\(x\)</span> we choose is the point that makes the slope of <span class="math notranslate nohighlight">\(f(x)\)</span> the same as the line <span class="math notranslate nohighlight">\(y=px\)</span>. In the language of math, the condition we require is</p>
+<div class="math notranslate nohighlight">
+\[0 = \frac{\partial F(p,x)}{\partial x} \equiv f'(x) - p,\]</div>
+<p>which indeed shows that the slope of function and slope of the straight line match eath other at the specified point. Thus we have a relation between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Substitute <span class="math notranslate nohighlight">\(x(p)\)</span> back into <span class="math notranslate nohighlight">\(F(p,x)\)</span>, we will get the Legendre transformation <span class="math notranslate nohighlight">\(F(p,x(p))\)</span> of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Back to the math we learned in undergrad study. A Legendre transformation transforms a function of <span class="math notranslate nohighlight">\(x\)</span> to another function with variable <span class="math notranslate nohighlight">\(\frac{f(x)}{x}\)</span>. Using <span class="math notranslate nohighlight">\(f(x)\)</span> and its Legendre transformation <span class="math notranslate nohighlight">\(F(p = p x - f(x(p))\)</span> as an example, we can show that the slope of <span class="math notranslate nohighlight">\(F(p)\)</span> is <span class="math notranslate nohighlight">\(x\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\frac{d F(p)}{d p} = x,\]</div>
+<p>which is intriging because the slope of <span class="math notranslate nohighlight">\(f(x)\)</span> is <span class="math notranslate nohighlight">\(p\)</span> in our requirement. We removed the dependence of <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(F(p)\)</span> because we have this extra constrain.</p>
+<div class="note admonition">
+<p class="admonition-title">Let’s Move to Another Level</p>
+<p>We require the function <span class="math notranslate nohighlight">\(f(x)\)</span> is convex (second order derivative is not negative ). This is required because otherwise we would NOT have a one on one mapping of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<div class="figure align-center" id="id3">
+<img alt="../_images/legendreTransformation2.png" src="../_images/legendreTransformation2.png" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">This graph shows the Legendre transformation and triangles in which G is actually the F we used before and F in the graph corresponds to f.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<p>One imediately notices the symmety of Legendre transformation on interchanging of F and f.</p>
+<p>This graph is taken from this paper <a class="reference external" href="http://arxiv.org/abs/0806.1147">Making Sense of the Legendre Transform</a> .</p>
+</div>
+</div>
+<p>This is the triangle that represents the Legendre transformation.</p>
+<p>If we have a slope that vanishes, which means <span class="math notranslate nohighlight">\(f(x)\)</span> is at minimium, then we have the relation</p>
+</div>
+</div>
+<div class="section" id="vector-analysis">
+<h2>Vector Analysis<a class="headerlink" href="#vector-analysis" title="Permalink to this headline">¶</a></h2>
+<p>The ultimate trick is to use component form.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}&amp;\vec a \times (\vec b \times \vec c) \\
+= &amp; \hat e_i \epsilon_{ijk} a_j (\epsilon_{kmn} b_m c_n ) \\
+= &amp; \hat e_i \epsilon_{kij}\epsilon_{kmn} a_j b_m c_n \\
+= &amp; \hat e_i ( \delta_{im}\delta_{jn} - \delta_{in}\delta_{jm} )a_j b_m c_n \\
+= &amp; \hat e_i \delta_{im}\delta_{jn} a_j b_m c_n -  \hat e_i \delta_{in}\delta_{jm} a_j b_m c_n \\
+= &amp; \hat e_i a_j b_i c_j - \hat e_i a_j b_j c_i \\
+= &amp; \vec b (\vec a\cdot \vec c) - \vec c (\vec a \cdot \vec b) .\end{split}\]</div>
+<p>One should be able to find the component forms of gradient <span class="math notranslate nohighlight">\(\vec \nabla \cdot\)</span>, divergence <span class="math notranslate nohighlight">\(\vec \nabla \times\)</span>, Laplace operator, in <strong>spherical coordinates, cylindrical coordinates and cartisian coordinates</strong>.</p>
+</div>
+<div class="section" id="refs-notes">
+<h2>Refs &amp; Notes<a class="headerlink" href="#refs-notes" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+
+<hr>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+    <p class="pull-right">
+
+
+        <a href="#"><span class="label label-info">Back to top</span></a>
+
+    </p>
+    <p>
+        <span>© 2017, Lei Ma. </span>|
+        <span>Created with
+            <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
+        </span>|
+        <span><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+        <a href="https://github.com/emptymalei/physics">On GitHub</a>
+        </span>|
+        <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <a href="http://docs.neutrino.xyz">Neutrino Notebook</a>
+        </span>
+        <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <a href="http://statisticalphysics.openmetric.org">Statistical Mechanics Notebook</a>
+        </span> |
+        <span><span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+        <a href="/genindex.html">Index</a>
+     </span> |
+       <span><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+       <a href="../_sources/vocabulary/math.rst.txt"
+      rel="nofollow">Page Source</a>
+      </span>
+
+        <span><script data-gittip-username="emptymalei"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script></span>
+    </p>
+
+    <hr>
+
+    <script>
+        window.jQuery || document.write('<script src="_static/js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+
+</div>
+
+ 
+  </body>
+</html>
