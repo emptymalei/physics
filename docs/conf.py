@@ -34,6 +34,8 @@ sys.path.append(os.path.abspath('exts'))
 extensions = ['sphinx.ext.mathjax', "math_dollar", "sphinx_sitemap"]
 # extensions = ["math_dollar"]
 
+html_baseurl = 'https://physics.openmetric.org/'
+
 latex_preamble = r"""
 \usepackage{dsfont}
 \usepackage{slashed}
@@ -93,14 +95,14 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Physics Notes'
-copyright = u'2017, Lei Ma.'
+copyright = u'2020, Lei Ma.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.1.2'
+# version = '0.1.2'
 # The full version, including alpha/beta/rc tags.
 release = '0.1.2'
 
