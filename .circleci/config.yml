@@ -12,9 +12,6 @@ jobs:
       - run:
           name: Build docs
           command: make html -C docs
-      - run:
-          name: copy sitemap
-          command: cp docs/_build/html/sitemap.xml docs/_build/html/_downloads/sitemap.xml
       - persist_to_workspace:
           root: docs/_build
           paths: html
