@@ -1,20 +1,10 @@
 {% extends "!layout.html" %} {% block extrahead %}
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-44466929-1']);
-      _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-
+{{ super() }}
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
      <script type="text/x-mathjax-config">
-       MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+       MathJax.Hub.Config({ TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] }});
      </script>
      <script type="text/x-mathjax-config">
      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
@@ -82,12 +72,14 @@
 <!-- Toggle Environment End -->
 
 
-   {{ super() }}
+
 
    {% endblock %}
 
 {% set bootswatch_css_custom = ['_static/modify.css'] %}
-{% set css_files = css_files + ["_static/modify.css"] %} {% block footer %}
+{% set css_files = css_files + ["_static/modify.css"] %}
+
+{% block footer %}
 
 
 <div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
@@ -121,7 +113,7 @@
 
     </p>
     <p>
-        <span>© {{ copyright }} </span>|
+        <span>© <a href="https://leima.is">{{ copyright }}  <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>  </span> |
         <span>Created with
             <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
         </span>|
@@ -144,10 +136,6 @@
       rel="nofollow">{{ _('Page Source') }}</a>
       </span>
        {%- endif %}
-
-        <span><script data-gittip-username="emptymalei"
-        data-gittip-widget="button"
-        src="//gttp.co/v1.js"></script></span>
     </p>
 
     <hr>
@@ -157,5 +145,17 @@
     </script>
 
 </div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
  {% endblock %}
