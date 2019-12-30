@@ -28,6 +28,7 @@ Use the source. Keep the source open.
    relativity/index.rst
    astrophysics/index.rst
    cosmology/index.rst
+   neutrino/index.rst
 
 
 
