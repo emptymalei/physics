@@ -4,11 +4,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Equation Solving &#8212; Physics Notes</title>
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -16,31 +13,26 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="canonical" href="https://physics.openmetric.org/math/equation-solving.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Complex Analysis" href="complex.html" />
     <link rel="prev" title="Special Functions" href="special-functions.html" />
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-44466929-1']);
-      _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
 
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
      <script type="text/x-mathjax-config">
-       MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+       MathJax.Hub.Config({ TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] }});
      </script>
      <script type="text/x-mathjax-config">
      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
@@ -106,27 +98,6 @@
     });
     </script>
 <!-- Toggle Environment End -->
-
-
-   
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-44466929-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-
 
 
 
@@ -307,55 +278,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Equation Solving</a><ul>
-<li><a class="reference internal" href="#ordinary-differential-equations">Ordinary Differential Equations</a><ul>
-<li><a class="reference internal" href="#green-s-function">Green’s Function</a><ul>
-<li><a class="reference internal" href="#definition-of-green-s-function">Definition of Green’s Function</a></li>
-<li><a class="reference internal" href="#how-to-find-green-s-function">How to Find Green’s Function</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#series-solution">Series Solution</a><ul>
-<li><a class="reference internal" href="#solution-at-ordinary-points">Solution at Ordinary Points</a></li>
-<li><a class="reference internal" href="#solution-at-regular-singular-points">Solution at Regular Singular Points</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#comparing-with-a-general-form">Comparing With A General Form</a></li>
-<li><a class="reference internal" href="#second-order-differential-equations-and-gauss-equation">Second Order Differential Equations and Gauss’ Equation</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#integral-equations">Integral Equations</a><ul>
-<li><a class="reference internal" href="#neumann-series-aka-wkb">Neumann Series AKA WKB</a></li>
-<li><a class="reference internal" href="#using-dyads-in-vector-space">Using Dyads in Vector Space</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <li>
-    <a href="special-functions.html" title="Previous Chapter: Special Functions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Special Functions</span>
-    </a>
-  </li>
-  <li>
-    <a href="complex.html" title="Next Chapter: Complex Analysis"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Complex Analysis &raquo;</span>
-    </a>
-  </li>
-<div id="sourcelink">
-  <a href="../_sources/math/equation-solving.rst.txt"
-     rel="nofollow">Source</a>
-</div>
-<form action="../search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-        </div>
-      </div>
-    <div class="col-md-9 content">
+    <div class="body col-md-12 content" role="main">
       
   <div class="section" id="equation-solving">
 <h1>Equation Solving<a class="headerlink" href="#equation-solving" title="Permalink to this headline">¶</a></h1>
@@ -692,7 +615,7 @@ u_0(x) &amp; = f(x).\end{split}\]</div>
 
     </p>
     <p>
-        <span>© 2020, Lei Ma. </span>|
+        <span>© <a href="https://leima.is">2020, Lei Ma.  <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>  </span> |
         <span>Created with
             <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
         </span>|
@@ -712,10 +635,6 @@ u_0(x) &amp; = f(x).\end{split}\]</div>
        <a href="../_sources/math/equation-solving.rst.txt"
       rel="nofollow">Page Source</a>
       </span>
-
-        <span><script data-gittip-username="emptymalei"
-        data-gittip-widget="button"
-        src="//gttp.co/v1.js"></script></span>
     </p>
 
     <hr>
@@ -725,6 +644,18 @@ u_0(x) &amp; = f(x).\end{split}\]</div>
     </script>
 
 </div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
  
   </body>

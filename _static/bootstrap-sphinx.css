@@ -5,6 +5,27 @@
  * Sphinx stylesheet -- Bootstrap theme.
  */
 
+/*
+ * Imports to aggregate everything together.
+ */
+
+@import url("./basic.css");
+
+
+  
+
+
+
+  
+  
+    @import url("./bootswatch-3.4.1/readable/bootstrap.min.css");
+  
+
+
+/*
+ * Styles
+ */
+
 .navbar-inverse .brand {
   color: #FFF;
 }
@@ -53,6 +74,10 @@ div.highlight {
   background: none;
 }
 
+a.headerlink {
+  margin-left: 0.25em;
+}
+
 a.footnote-reference {
   vertical-align: super;
   font-size: 75%;
@@ -67,25 +92,6 @@ table.footnote td.label {
 }
 
 table.footnote {
-  width: auto;
-  margin-bottom: 0px;
-}
-
-
-/* Fix for Citation Display */
-
-
-
-
-table.citation td.label {
-  color: inherit;
-  font-size: 100%;
-  display: block;
-  line-height: normal;
-  background: inherit;
-}
-
-table.citation {
   width: auto;
   margin-bottom: 0px;
 }

@@ -4,11 +4,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Mathematics in General Relativity &#8212; Physics Notes</title>
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootswatch-3.3.4/readable/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/modify.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
@@ -16,31 +13,26 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/language_data.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="canonical" href="https://physics.openmetric.org/relativity/gr/gr-math.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Curved Spacetime" href="curved-spacetime.html" />
     <link rel="prev" title="Basic Principles of General Relativity" href="gr-principles.html" />
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-44466929-1']);
-      _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
 
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
      <script type="text/x-mathjax-config">
-       MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+       MathJax.Hub.Config({ TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] }});
      </script>
      <script type="text/x-mathjax-config">
      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
@@ -106,27 +98,6 @@
     });
     </script>
 <!-- Toggle Environment End -->
-
-
-   
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-44466929-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-
 
 
 
@@ -310,58 +281,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Mathematics in General Relativity</a><ul>
-<li><a class="reference internal" href="#vectors-and-tensors">Vectors and Tensors</a><ul>
-<li><a class="reference internal" href="#metric">Metric</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#description-of-space-time-manifold">Description of Space-time Manifold</a><ul>
-<li><a class="reference internal" href="#description-of-space-time-manifold-coordinates">Description of Space-time Manifold - Coordinates</a></li>
-<li><a class="reference internal" href="#description-of-space-time-manifold-tetrads">Description of Space-time Manifold - Tetrads</a></li>
-<li><a class="reference internal" href="#description-of-space-time-manifold-1-3-covariant-description">Description of Space-time Manifold - 1+3 Covariant Description</a><ul>
-<li><a class="reference internal" href="#definations">Definations</a><ul>
-<li><a class="reference internal" href="#volume">Volume</a></li>
-<li><a class="reference internal" href="#velocity">4-velocity</a></li>
-<li><a class="reference internal" href="#projection-tensors">Projection Tensors</a></li>
-<li><a class="reference internal" href="#covariant-time-derivative-dot-quad">Covariant time derivative (<span class="math notranslate nohighlight">\(\dot \quad\)</span>)</a></li>
-<li><a class="reference internal" href="#fully-orthogonally-projected-covariant-derivative-tilde-nabla">Fully orthogonally projected covariant derivative (<span class="math notranslate nohighlight">\(\tilde \nabla\)</span>)</a></li>
-<li><a class="reference internal" href="#orthogonal-projections-of-vectors">Orthogonal projections of vectors</a></li>
-<li><a class="reference internal" href="#othogonal-projected-covariant-time-derivatives-along-u-a">Othogonal projected covariant time derivatives along <span class="math notranslate nohighlight">\(u^a\)</span></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#properties">Properties</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <li>
-    <a href="gr-principles.html" title="Previous Chapter: Basic Principles of General Relativity"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Basic Princip...</span>
-    </a>
-  </li>
-  <li>
-    <a href="curved-spacetime.html" title="Next Chapter: Curved Spacetime"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Curved Spacetime &raquo;</span>
-    </a>
-  </li>
-<div id="sourcelink">
-  <a href="../../_sources/relativity/gr/gr-math.rst.txt"
-     rel="nofollow">Source</a>
-</div>
-<form action="../../search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-        </div>
-      </div>
-    <div class="col-md-9 content">
+    <div class="body col-md-12 content" role="main">
       
   <div class="section" id="mathematics-in-general-relativity">
 <h1>Mathematics in General Relativity<a class="headerlink" href="#mathematics-in-general-relativity" title="Permalink to this headline">¶</a></h1>
@@ -559,7 +479,7 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}\end{s
 
     </p>
     <p>
-        <span>© 2020, Lei Ma. </span>|
+        <span>© <a href="https://leima.is">2020, Lei Ma.  <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>  </span> |
         <span>Created with
             <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
         </span>|
@@ -579,10 +499,6 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}\end{s
        <a href="../../_sources/relativity/gr/gr-math.rst.txt"
       rel="nofollow">Page Source</a>
       </span>
-
-        <span><script data-gittip-username="emptymalei"
-        data-gittip-widget="button"
-        src="//gttp.co/v1.js"></script></span>
     </p>
 
     <hr>
@@ -592,6 +508,18 @@ h_{ab} &amp;= g_{ab} + u_a u_b, \qquad \text{induced metric from } g _{ab}\end{s
     </script>
 
 </div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
  
   </body>
