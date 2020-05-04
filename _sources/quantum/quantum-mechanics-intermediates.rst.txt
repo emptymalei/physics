@@ -34,6 +34,15 @@ Using the basis :math:`\ket{\phi_n}`, the density matrix is represented as :math
    \hat\rho(t) &= \sum_m \sum_n C_m C_n^* \ket{\phi_m} \bra{\phi_n} \\
    &= \sum_m \sum_n \rho_{mn} \ket{\phi_m} \bra{\phi_n}
 
+For pure states, density matrix and kets carries the same information.
+
+Density matrix can be used to denote mixed states easily. For mixed states, we write down the density matrix using a mixture of pure states :math:`\ket{\psi_i(t)}`
+
+.. math::
+   \hat \rho(t) = \sum_k p_k \ket{\psi_k(t)}\bra{\psi_k(t)}.
+
+Mixed states are like mixture models in statistics.
+
 
 
 Angular Momentum
