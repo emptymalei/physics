@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>Quantum Mechanics Intermediates &#8212; Physics Notes</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="canonical" href="https://physics.openmetric.org/quantum/quantum-mechanics-intermediates.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -195,6 +195,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics Basics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../astrophysics/stellar-energy-losses.html">Stellar Energy Losses</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a><ul>
@@ -279,6 +280,16 @@
 </div>
 <div class="section" id="density-matrix">
 <h2>Density Matrix<a class="headerlink" href="#density-matrix" title="Permalink to this headline">¶</a></h2>
+<p>The density matrix operator is</p>
+<div class="math notranslate nohighlight">
+\[\hat\rho(t) = \ket{\psi(t)}\bra{\psi(t)}.\]</div>
+<p>The state <span class="math notranslate nohighlight">\(\ket{\psi(t)}\)</span> can be projected onto a set of basis <span class="math notranslate nohighlight">\(\ket{\phi_n}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\ket{\psi(t)} = \sum_{n} C_m(t) \ket{\phi_n}.\]</div>
+<p>Using the basis <span class="math notranslate nohighlight">\(\ket{\phi_n}\)</span>, the density matrix is represented as <span class="math notranslate nohighlight">\(\rho_{mn}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\hat\rho(t) &amp;= \sum_m \sum_n C_m C_n^* \ket{\phi_m} \bra{\phi_n} \\
+&amp;= \sum_m \sum_n \rho_{mn} \ket{\phi_m} \bra{\phi_n}\end{split}\]</div>
 </div>
 <div class="section" id="angular-momentum">
 <h2>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>

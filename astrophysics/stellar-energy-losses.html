@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Quantum Approximation Methods &#8212; Physics Notes</title>
+    <title>Stellar Energy Losses &#8212; Physics Notes</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
@@ -13,11 +13,11 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/language_data.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="canonical" href="https://physics.openmetric.org/quantum/approximations.html" />
+    <link rel="canonical" href="https://physics.openmetric.org/astrophysics/stellar-energy-losses.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Super-Symmetric Quantum Mechanics" href="susy-quantum.html" />
-    <link rel="prev" title="Symmetries in QM" href="symmetries.html" />
+    <link rel="next" title="Cosmology" href="../cosmology/index.html" />
+    <link rel="prev" title="Supernova" href="supernova.html" />
 
 
 <meta charset='utf-8'>
@@ -169,11 +169,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../cm/hamiltonian-dynamics.html">Hamiltonian Dynamics</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quantum Mechanics</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="preliminary/index.html">Preliminary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quantum-mechanics-beginners.html">Quantum Mechanics Beginners</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quantum-mechanics-intermediates.html">Quantum Mechanics Intermediates</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="quantum-mechanics-advanced.html">Quantum Mechanics Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/index.html">Quantum Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/preliminary/index.html">Preliminary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-beginners.html">Quantum Mechanics Beginners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-intermediates.html">Quantum Mechanics Intermediates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-advanced.html">Quantum Mechanics Advanced</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
@@ -191,11 +191,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../relativity/gr/index.html">General Relativity</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../astrophysics/index.html">Astrophysics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../astrophysics/basics.html">Astrophysics Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../astrophysics/stars.html">Stars</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../astrophysics/supernova.html">Supernova</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../astrophysics/stellar-energy-losses.html">Stellar Energy Losses</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Astrophysics</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="basics.html">Astrophysics Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stars.html">Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supernova.html">Supernova</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Stellar Energy Losses</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a><ul>
@@ -218,18 +218,13 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Quantum Approximation Methods</a><ul>
-<li><a class="reference internal" href="#variational-method">Variational Method</a><ul>
-<li><a class="reference internal" href="#trial-functions">Trial functions</a></li>
-<li><a class="reference internal" href="#procedure">Procedure</a></li>
-<li><a class="reference internal" href="#why-not-general-viriational-method">Why Not General Viriational Method</a></li>
+<li><a class="reference internal" href="#">Stellar Energy Losses</a><ul>
+<li><a class="reference internal" href="#evolution-of-stars">Evolution of Stars</a><ul>
+<li><a class="reference internal" href="#main-sequence">Main Sequence</a></li>
+<li><a class="reference internal" href="#red-giant">Red Giant</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#variational-method-and-virial-theorem">Variational Method and Virial Theorem</a></li>
-<li><a class="reference internal" href="#wkb">WKB</a><ul>
-<li><a class="reference internal" href="#how-does-it-work">How does it work</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#references-and-notes">References and Notes</a></li>
 </ul>
 </li>
 </ul>
@@ -241,11 +236,11 @@
               
                 
   <li>
-    <a href="symmetries.html" title="Previous Chapter: Symmetries in QM"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Symmetries in QM</span>
+    <a href="supernova.html" title="Previous Chapter: Supernova"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Supernova</span>
     </a>
   </li>
   <li>
-    <a href="susy-quantum.html" title="Next Chapter: Super-Symmetric Quantum Mechanics"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Super-Symmetr... &raquo;</span>
+    <a href="../cosmology/index.html" title="Next Chapter: Cosmology"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Cosmology &raquo;</span>
     </a>
   </li>
               
@@ -273,98 +268,130 @@
   <div class="row">
     <div class="body col-md-12 content" role="main">
       
-  <div class="section" id="quantum-approximation-methods">
-<h1>Quantum Approximation Methods<a class="headerlink" href="#quantum-approximation-methods" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="variational-method">
-<h2>Variational Method<a class="headerlink" href="#variational-method" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="trial-functions">
-<h3>Trial functions<a class="headerlink" href="#trial-functions" title="Permalink to this headline">¶</a></h3>
-<p>Some of the calculable trial functions:</p>
+  <div class="section" id="stellar-energy-losses">
+<h1>Stellar Energy Losses<a class="headerlink" href="#stellar-energy-losses" title="Permalink to this headline">¶</a></h1>
+<p>Key:</p>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\psi(x) = \cos\alpha x\)</span>, for <span class="math notranslate nohighlight">\(|\alpha x|&lt;\pi/2\)</span>, otherwise 0.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\psi(x) = \alpha^2 - x^2\)</span>, for <span class="math notranslate nohighlight">\(|x|&lt;\alpha\)</span>, otherwise 0.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\psi(x) = C \exp(-\alpha x^2/2)\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\psi(x) = C(\alpha - |x|)\)</span>, for <span class="math notranslate nohighlight">\(|x|&lt;\alpha\)</span>, otherwise 0.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\psi(x) = C\sin\alpha x\)</span>, for <span class="math notranslate nohighlight">\(|\alpha x|&lt;\pi\)</span>, otherwise 0.</p></li>
+<li><p>Cooling speed of white dwarfs, and neutron stars</p></li>
+<li><p>“Delay of helium ignition in low mass red giants”<a class="reference internal" href="#raffelt" id="id1"><span>[Raffelt]</span></a></p></li>
+<li><p>Helium burning lifetime</p></li>
 </ol>
+<div class="section" id="evolution-of-stars">
+<h2>Evolution of Stars<a class="headerlink" href="#evolution-of-stars" title="Permalink to this headline">¶</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Videos</p>
+<p>Here is website that provides nice videos of evoution on HR digram,
+<a class="reference external" href="http://rainman.astro.illinois.edu/ddr/stellar/beginner.html">http://rainman.astro.illinois.edu/ddr/stellar/beginner.html</a></p>
 </div>
-<div class="section" id="procedure">
-<h3>Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="main-sequence">
+<h3>Main Sequence<a class="headerlink" href="#main-sequence" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p>Pick a trial function.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>How to pick a trial function? For ground state energy, we should pick a function that has the same property as the real ground state. This requires some understanding of the problem we are dealing with.</p>
-<p>Things to consider:</p>
-<ol class="loweralpha simple">
-<li><p>The new problem is just a modification of a known solved problem. Then we can easily find out what really is different and interprete the new problem in terms of the old one.</p></li>
-<li><p>If the Hamiltonian have definite parity, the ground state wave function should pick up some parity which is usually even to make it the lowest energy.</p></li>
-<li><p>Continious function? A <span class="math notranslate nohighlight">\(C^\infty\)</span> Hamiltonian can only have continious functions as solutions for a finite system.</p></li>
-<li><p>Nodes deteremines the kinetic energy so check the nodes for ground state wave function.</p></li>
-<li><p>Check the behivior of the wave function at different limits. In most cases, the Shrödinger equation can be reduced to something solvable at some limits.</p></li>
-<li><p><strong>One more thing, the trial function should make the problem calculable.</strong></p></li>
+<li><p>Formation: gas clound condense due to EM radiation.</p>
+<div class="note admonition">
+<p class="admonition-title">Negative Specific Heat</p>
+<p>Gravitation dominated systems usually have negative specific heat. As the volume contracts, the star would be heated up, since specific heat is defined as</p>
+<div class="math notranslate nohighlight">
+\[C = \frac{\delta Q}{dT}.\]</div>
+</div>
+</li>
+<li><p>Pressure, angular momentum, magnetic fields</p></li>
+<li><p>IMF: [0.08, 100] <span class="math notranslate nohighlight">\(\mathscr M_\odot\)</span></p>
+<div class="note admonition">
+<p class="admonition-title">Salpeter’s IMF</p>
+<div class="math notranslate nohighlight">
+\[\frac{dN}{d\mathscr M} \propto ( \mathscr M/\mathscr M_{\odot} )^{-1.35}\]</div>
+<div class="figure align-center" id="id3">
+<img alt="../_images/salpeter-imf.png" src="../_images/salpeter-imf.png" />
+<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">Salpeter’s IMF</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Notice that <span class="math notranslate nohighlight">\(\int x^{-n} dx = C + \frac{ x^{1-n} }{1-n}\)</span>.</p>
+</div>
+</li>
+<li><p>First stars:</p>
+<ol class="arabic simple">
+<li><p>mass fraction of hydrogen <span class="math notranslate nohighlight">\(X\sim 0.75\)</span></p></li>
+<li><p>mass fraction of helium <span class="math notranslate nohighlight">\(Y\sim 0.25\)</span></p></li>
+</ol>
+<p>Sun:</p>
+<p>metallicity: <span class="math notranslate nohighlight">\(Z\sim 0.02\)</span></p>
+</li>
+<li><p>Mass loss:</p>
+<ol class="arabic simple">
+<li><p>stellar wind</p></li>
+<li><p>supernova explosions</p></li>
+</ol>
+</li>
+<li><p>Limit of white dwarfs: 1.4 solar masses</p></li>
+<li><p>Disk of spiral galaxies: active death and birth of stars</p>
+<ol class="arabic">
+<li><p>Spiral galaxies have old halo stars, globular clusters.</p></li>
+<li><p>Milky Way: 150 of them, each with <span class="math notranslate nohighlight">\(10^{6}\)</span> stars.</p></li>
+<li><p>Gravitational escape velocity of them: <span class="math notranslate nohighlight">\(10\mathrm{km s^{-1}}\)</span></p>
+<div class="warning admonition">
+<p class="admonition-title">Escape velocity</p>
+<p>From where?</p>
+</div>
+</li>
+<li><p>Supernova explosion ejects at <span class="math notranslate nohighlight">\(10^{3}\mathrm{km s^{-1}}\)</span>.</p></li>
+<li><p>Supernova sweep whole globular cluster clean of gas.</p>
+<div class="warning admonition">
+<p class="admonition-title">Ah?</p>
+<p>How?</p>
+</div>
+</li>
+<li><p>No star formation</p></li>
+<li><p>Good for stellar evolution research.</p></li>
+</ol>
+</li>
+<li><p>Viral theorem, negative specific heat -&gt; contraction -&gt; nuclear burning</p>
+<ol class="arabic simple">
+<li><p>determined by mass</p></li>
+<li><p>HR diagram: <span class="math notranslate nohighlight">\(\log ( L/L_\odot )\)</span> ~ <span class="math notranslate nohighlight">\(\log ( T_{\mathrm{eff}}/K )\)</span>, or luminosity ~ surface temperature, scaled with solar quantities</p></li>
+<li><p>Most of the time the stars stay on the diagram</p></li>
+<li><p>Sun: 1Gyr life, half gone</p></li>
+<li><p><span class="math notranslate nohighlight">\(L\sim \mathscr M^3\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathscr M/\mathscr M_\odot \leq 0.7 - 0.8\)</span> stars are still alive</p></li>
+<li><p>Globular cluster has turnoff: compare Fig. 2.2 and Fig. 2.3</p></li>
+</ol>
+</li>
+<li><p>MS mass-radius relation: <span class="math notranslate nohighlight">\(R \sim \mathscr M^\xi\)</span>, for <span class="math notranslate nohighlight">\(\mathscr M &lt; \mathscr M_\odot\)</span>, <span class="math notranslate nohighlight">\(\xi \sim 0.8\)</span>, for <span class="math notranslate nohighlight">\(\mathscr M &gt; \mathscr M_\odot\)</span>, <span class="math notranslate nohighlight">\(\xi \sim 0.57\)</span>; The difference comes from the convective envolope. <a class="reference internal" href="#rbc3" id="id2"><span>[rbc3]</span></a></p></li>
 </ol>
 </div>
+<div class="section" id="red-giant">
+<h3>Red Giant<a class="headerlink" href="#red-giant" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Hydrogen consumed in center</p></li>
+<li><p>Next step depends on the mass of the stars</p></li>
+<li><p>For <span class="math notranslate nohighlight">\(\mathscr M \leq 2 \mathscr M_\odot\)</span></p>
+<ol class="arabic">
+<li><p>New configuration forms from helium ashes in the center</p></li>
+<li><p>Outer region expand -&gt; Surface temperature drops -&gt; Redder: red giant</p>
+<div class="warning admonition">
+<p class="admonition-title">Why</p>
+<p>According to Stefan-Boltzman law?</p>
+<div class="math notranslate nohighlight">
+\[j = \sigma T^4\]</div>
+</div>
+</li>
+<li><p>There exists a hydrogen burning shell -&gt; Dumps He into core</p></li>
+<li><p>He core is dense -&gt; electrons degenerate -&gt; mass-radius relation: <span class="math notranslate nohighlight">\(R\sim \mathscr M^{-1/3}\)</span> -&gt; Mass of core increas leads to decrease in radius</p></li>
+<li><p>Core gravitation: <span class="math notranslate nohighlight">\(\Phi_c \sim - G \mathscr M_c / R_c \sim \mathscr M^{4/3}\)</span></p></li>
+<li><p>Larger core mass -&gt; Hotter hydrogen -&gt; faster burning of hydrogen</p></li>
+</ol>
 </li>
 </ol>
 </div>
-<div class="section" id="why-not-general-viriational-method">
-<h3>Why Not General Viriational Method<a class="headerlink" href="#why-not-general-viriational-method" title="Permalink to this headline">¶</a></h3>
-<p>Why don’t we just use a most general variational method to find out the ground state? Because we will eventually come back to the time-independent Shrödinger equation.</p>
-<p>Suppose we have a functional form</p>
-<div class="math notranslate nohighlight">
-\[E(\psi^*, \psi, \lambda) = \int dx \psi^* H \psi - \lambda \left( \int dx \psi^* \psi - 1 \right)\]</div>
-<p>The reason we have this Lagrange multiplier method is that the wave function should be normalized and this multiplier provides the degree of freedom. We would only get a wrong result if we don’t include this DoF.</p>
-<p>Variation of <span class="math notranslate nohighlight">\(\psi^*\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\delta E = \int dx \delta \psi^* H \psi - \int dx \delta \psi^* \psi = 0\]</div>
-<p>Now what?</p>
-<div class="math notranslate nohighlight">
-\[H \psi - \lambda \psi = 0\]</div>
-<p>Not helpful.</p>
 </div>
-</div>
-<div class="section" id="variational-method-and-virial-theorem">
-<h2>Variational Method and Virial Theorem<a class="headerlink" href="#variational-method-and-virial-theorem" title="Permalink to this headline">¶</a></h2>
-<p>For a potential <span class="math notranslate nohighlight">\(V(x)=b x^n\)</span>, we can prove that virial theorem is valid for ground state if we use Gaussian trial function <span class="math notranslate nohighlight">\(e^{- \alpha x^2/2}\)</span>.</p>
-<p>A MMA proof is <a class="reference external" href="assets/mma/variational.nb">here</a>.</p>
-<p>Virial theorem is pretty interesting. It shares the same math with equipartition theorem.</p>
-</div>
-<div class="section" id="wkb">
-<h2>WKB<a class="headerlink" href="#wkb" title="Permalink to this headline">¶</a></h2>
-<p>This is a semi-classical method. It is semi classical because we will use the classical momentum</p>
-<div class="math notranslate nohighlight">
-\[\hbar k(x) = \sqrt{2m (E - V(x))}\]</div>
-<p>The following points are important for this method.</p>
-<ol class="arabic" start="0">
-<li><p>WKB start from a classical estimation of wave number at a certain energy <span class="math notranslate nohighlight">\(E\)</span> which is later quantified by the Bohr-Sommerfeld quantization rule.</p></li>
-<li><p>Conservation law:</p>
-<div class="math notranslate nohighlight">
-\[\frac{\partial}{\partial t}\rho + \nabla \cdot \vec j = 0\]</div>
-<p>where <span class="math notranslate nohighlight">\(\rho = \psi^* \psi\)</span>, <span class="math notranslate nohighlight">\(\vec j = -\frac{\hbar}{2 m i} \left( \psi \nabla \psi^* - \psi^* \nabla \psi \right)\)</span>. This can be derived from Shrödinger equation easily.</p>
-</li>
-<li><p>Phase:
-Wave function is generally <span class="math notranslate nohighlight">\(A(x)\exp(\phi(x))\)</span>. However, <span class="math notranslate nohighlight">\(\phi(x)\)</span> should be the area of the phase function starting from some initial point. For example in WKB, <span class="math notranslate nohighlight">\(k(x) = \phi'(x)\)</span> and <span class="math notranslate nohighlight">\(\phi(x) = \int \phi'(x')d x' = \int k(x') d x'\)</span>.</p>
-<p>Using this general wave function and conservation law we find out that <span class="math notranslate nohighlight">\(A(x) ~ \frac{1}{\sqrt{k(x)}}\)</span>. Then we can apply the two boundary conditions. However we will find two different wave functions given by two boundary conditions. Now we should connect them because <span class="math notranslate nohighlight">\(\psi(a) = \psi(b)\)</span> exactly. By comparing the two wave functions we can find something like Bohr-Sommerfeld quantization rule.</p>
-</li>
-<li><p>Correction at bouldary:
-However, this method requires that the potential varies slowly or equivalently the wave number varies slowly. Basicly we are just using the following approximation:</p>
-<div class="math notranslate nohighlight">
-\[A'(x) = 0, k'(x) = 0\]</div>
-<p>For example when taking the derivative of wave function,</p>
-<div class="math notranslate nohighlight">
-\[\psi'(x) = A'(x) e^{i\int \cdots} + A(x) k(x) e^{i\int \cdots} \approx A(x) k(x) e^{i\int \cdots}\]</div>
-<p>where we drop the term with <span class="math notranslate nohighlight">\(A'(x)\)</span>. That is to say</p>
-<div class="math notranslate nohighlight">
-\[|A'|\ll |A k| \Rightarrow |k'| \ll k^2\]</div>
-<p>But at boundary where <span class="math notranslate nohighlight">\(E = V\)</span>, this is obviously not valid because <span class="math notranslate nohighlight">\(k=0\)</span>. So we need to fix this problem.</p>
-<p>The solution is to use first order of the potential in a Taylor expansion. Then solve the problem exactly. Finally we connect regions that is far out from the boundary, need the boundary and between the boundary.</p>
-</li>
-</ol>
-<p>If we can have a good boundary condition, then the energy spectrum given by WKB can be very good. Even we don’t have a good boundary condtion, the excited states given by this method are always close to the exact ones.</p>
-<div class="section" id="how-does-it-work">
-<h3>How does it work<a class="headerlink" href="#how-does-it-work" title="Permalink to this headline">¶</a></h3>
-</div>
+<div class="section" id="references-and-notes">
+<h2>References and Notes<a class="headerlink" href="#references-and-notes" title="Permalink to this headline">¶</a></h2>
+<dl class="citation">
+<dt class="label" id="raffelt"><span class="brackets"><a class="fn-backref" href="#id1">Raffelt</a></span></dt>
+<dd><p>Stars as Laboratories for Fundamental Physics</p>
+</dd>
+<dt class="label" id="rbc3"><span class="brackets"><a class="fn-backref" href="#id2">rbc3</a></span></dt>
+<dd><p><a class="reference external" href="http://personal.psu.edu/rbc3/A534/lec18.pdf">http://personal.psu.edu/rbc3/A534/lec18.pdf</a></p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -423,7 +450,7 @@ However, this method requires that the potential varies slowly or equivalently t
         <a href="/genindex.html">Index</a>
      </span> |
        <span><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-       <a href="../_sources/quantum/approximations.rst.txt"
+       <a href="../_sources/astrophysics/stellar-energy-losses.rst.txt"
       rel="nofollow">Page Source</a>
       </span>
     </p>

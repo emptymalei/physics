@@ -8,3 +8,4 @@ Astrophysics
    basics.rst
    stars.rst
    supernova.rst
+   stellar-energy-losses.rst

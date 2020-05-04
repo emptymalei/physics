@@ -18,8 +18,21 @@ This part has been moved to :ref:`TensorProductSpace`
 Density Matrix
 ==============================
 
+The density matrix operator is
 
+.. math::
+   \hat\rho(t) = \ket{\psi(t)}\bra{\psi(t)}.
 
+The state :math:`\ket{\psi(t)}` can be projected onto a set of basis :math:`\ket{\phi_n}`,
+
+.. math::
+   \ket{\psi(t)} = \sum_{n} C_m(t) \ket{\phi_n}.
+
+Using the basis :math:`\ket{\phi_n}`, the density matrix is represented as :math:`\rho_{mn}`
+
+.. math::
+   \hat\rho(t) &= \sum_m \sum_n C_m C_n^* \ket{\phi_m} \bra{\phi_n} \\
+   &= \sum_m \sum_n \rho_{mn} \ket{\phi_m} \bra{\phi_n}
 
 
 
