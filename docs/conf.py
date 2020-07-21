@@ -34,7 +34,7 @@ sys.path.append(os.path.abspath('exts'))
 extensions = ['sphinx.ext.mathjax', "math_dollar", "sphinx_sitemap"]
 # extensions = ["math_dollar"]
 
-html_baseurl = 'https://physics.openmetric.org/'
+html_baseurl = 'https://physics.leima.is/'
 
 latex_preamble = r"""
 \usepackage{dsfont}
