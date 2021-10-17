@@ -18,7 +18,7 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Generate documentation
-        run: make html
+        run: cd & make html
 
       - name: Upload to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
