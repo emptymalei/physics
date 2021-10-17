@@ -1,0 +1,54 @@
+Basic Principles of General Relativity
+==========================================
+
+
+
+
+.. index:: Equivalence Principle
+
+Tidal Force and Equivalence Principle
+---------------------------------------
+
+
+We can imagine from the Einstein's elavator thought experiment that we could not tell whether we are in a inertial frame or free falling frame by measuring forces. This is generalized to the weak equilvalence principle.
+
+.. admonition:: Weak Equivalence Principle
+   :class: note
+
+   Uniform gravitational field are equivalent to frames that are accelerating uniformly.
+
+
+On the other hand, we know that tidal force in the frame work of Newtonian gravity can be derived by finding the second order derivative of the displacement difference between two nearby objects. A free falling in non-uniform gravitation is distinguishable from inertial frame because we can measure the tidal force.
+
+However, the free falling frame is no different than inertial frame **if the two object are close enough** since the comoving equipment we are using to measure the tidal effect could not tell the tidal effect.
+
+The weak equivalence principle seems to work in limited circumstances. A stronger version is called the Einstein's equivalence principle which states that all physics are the same in a local spacetime. The word "same" means the equations have the same form thus requires tensor equations.
+
+
+Examples of Equivalence Principle
+------------------------------------
+
+
+The first example that can be easily worked out is the redshift of photons in gravitational field, or the Pound-Rebka-Snider experiment.
+
+Using the equivalence principle, we expect that the photon doesn't change when we measure everything in a freely falling frame.
+
+
+Suppose the source emits a photon when our free-fall starts. It takes the photon :math:`\Delta t= h` to climb up to a height :math:`h`. When we measure the photon at the top, our frame (measurement) is done with a relative velocity :math:`gh` compared to the beginning of the experiment. Thus we experience Doppler shift (first order) of the photon,
+
+.. math::
+   \frac{ \nu'_{h} }{\nu_{h}} = 1+gh,
+
+to the first order, where :math:`\nu'_h` is the frequency measured in free-falling frame and :math:`\nu_{h}` is the frequency of photon in the lab frame.
+
+By arguing using equivalence principle we know that :math:`\nu'_{h}` is the same as the emission frequency :math:`\nu'_{e}=\nu_{e}`.
+
+Effectively, :math:`gh` is the potential energy the photon loses during the climbing if we measure in lab frame.
+
+
+
+References and Notes
+---------------------
+
+
+.. [Schutz] A First Course in General Relativity (Second Edition)

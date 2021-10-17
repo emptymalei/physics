@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Stars &#8212; Physics Notes</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modify.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Supernova" href="supernova.html" />
+    <link rel="prev" title="Astrophysics Basics" href="basics.html" />
+
+
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({ TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] }});
+     </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+       MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+         cancel: ["Extension","cancel"]
+         });
+      });
+      </script>
+     <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+         }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+       MathJax.Hub.Queue(function() {
+           var all = MathJax.Hub.getAllJax(), i;
+           for(i=0; i < all.length; i += 1) {
+               all[i].SourceElement().parentNode.className += ' has-jax';
+           }
+       });
+   </script>
+   <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         processEscapes: true
+       }
+     });
+   </script>
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       TeX: {
+         Macros: {
+           overlr: ['\\overset\\leftrightarrow{\#1}',1],
+           overl: ['\\overset\leftarrow{\#1}',1],
+           overr: ['\\overset\rightarrow{\#1}',1],
+           bra: ['\\left\\langle \#1\\right|',1],
+           ket: ['\\left| \#1\\right\\rangle',1],
+           braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+           avg: ['\\left< \#1 \\right>',1],
+           slashed: ['\\cancel{\#1}',1],
+           bold: ['\\boldsymbol{\#1}',1],
+           d: ['\\mathrm d',0],
+           sech: ['\\operatorname{sech}',0],
+           csch: ['\\operatorname{csch}',0]
+         }
+       }
+     });
+     </script>
+     <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+     <!-- Toggle Environment Begin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .admonition-title").show();
+        $(".toggle .admonition-title").click(function() {
+            $(this).parent().children().not(".admonition-title").toggle(400);
+            $(this).parent().children(".admonition-title").toggleClass("open");
+        })
+    });
+    </script>
+<!-- Toggle Environment End -->
+
+
+
+
+   
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default ">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Physics Notes</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Chapters <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Whatever</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fun/index.html">Fun</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../fun/math.html">Math4Fun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fun/quantum.html">Quantum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fun/relativity.html">Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fun/electrodynamics.html">Electrodynamics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../vocabulary/index.html">Vocabulary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vocabulary/math.html">Useful Math Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vocabulary/physics.html">Useful Physics Concepts and Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../qualitative-methods/index.html">Qualitative Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../qualitative-methods/dimensional-analysis.html">Dimensional Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../math/index.html">Mathematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../math/basics.html">Kindergarten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/special-functions.html">Special Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/equation-solving.html">Equation Solving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/complex.html">Complex Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/calculus.html">Calculus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/linear-algebra.html">Linear Algebra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/differential-geometry.html">Differential Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/statistics/statistics.html">Statistics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cm/index.html">Classical Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cm/lagrangian.html">Lagrangian and Equation of Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/rigid-body.html">Regid Body</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/central-force.html">Central Force Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/oscillators.html">Oscillators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/oscillators.html#refs-notes">Refs &amp; Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cm/hamiltonian-dynamics.html">Hamiltonian Dynamics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../quantum/index.html">Quantum Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/preliminary/index.html">Preliminary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-beginners.html">Quantum Mechanics Beginners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-intermediates.html">Quantum Mechanics Intermediates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quantum/quantum-mechanics-advanced.html">Quantum Mechanics Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../statmech/index.html">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrodynamics/index.html">Electrodynamics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/vocabulary/index.html">Electrodynamics Vocabulary and Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/em/index.html">Electricity and Magnetism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/matter.html">Response of Matter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/radiation.html">Radiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrodynamics/scattering.html">Scattering</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../relativity/index.html">Relativity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/math/index.html">Math in Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/sr/index.html">Special Relativity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../relativity/gr/index.html">General Relativity</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Astrophysics</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="basics.html">Astrophysics Basics</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supernova.html">Supernova</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stellar-energy-losses.html">Stellar Energy Losses</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cosmology/index.html">Cosmology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/two-parameters.html">Two Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/thermal-history.html">Thermal History of The Universe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cosmology/flrw-universe.html">FLRW Universe</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../neutrino/index.html">Neutrino Physics</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Stars</a><ul>
+<li><a class="reference internal" href="#refs-and-notes">Refs and Notes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="basics.html" title="Previous Chapter: Astrophysics Basics"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Astrophysics Basics</span>
+    </a>
+  </li>
+  <li>
+    <a href="supernova.html" title="Next Chapter: Supernova"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Supernova &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="stars">
+<h1>Stars<a class="headerlink" href="#stars" title="Permalink to this headline">¶</a></h1>
+<div class="warning admonition">
+<p class="first admonition-title">Question</p>
+<p class="last">What Are The Typical Masses of Stars?</p>
+</div>
+<p>A star is typically formed from a cloud of gas which is contracted and reaches a stable state. Suppose we can find the relation between the temperature and mass of the star, we could use our knowledge of nuclear physics to determine the temperature scale thus the mass of the star could be calculated.</p>
+<div class="note admonition">
+<p class="first admonition-title">Typical Pressure</p>
+<p>A star starts from a gas cloud which is divided into inner part and outer shell in order to estimate the typical pressure caused by gravitational force,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}P_G &amp;\sim \frac{F_G}{A} \\
+&amp;\sim  \frac{G \frac{M}{2}  \frac{M}{2}}{ R^2 4\pi r^2} \\
+&amp;\sim \frac{2^{2/3}GM^2}{16\pi R^4} ,\end{split}\]</div>
+<p class="last">where <span class="math notranslate nohighlight">\(r\)</span> is the radius of the inner radius which has a mass of <span class="math notranslate nohighlight">\(\frac{M}{2}\)</span>, <span class="math notranslate nohighlight">\(R\)</span> is the radius of the whole gas cloud which has total mass <span class="math notranslate nohighlight">\(M\)</span>, and the outer shell of the gas also has mass <span class="math notranslate nohighlight">\(M- \frac{M}{2} =  \frac{M}{2}\)</span>, <span class="math notranslate nohighlight">\(A\)</span> is the area on the contact of the inner shpere and the outer shell.</p>
+</div>
+<p>The cloud collapses with these gravitational potential energy goes into Fermi energy and kinetic energy of the molecules. It is convinient to calculate the gravitatioinal potential energy per proton (from Hydrogen),</p>
+<div class="math notranslate nohighlight">
+\[\epsilon_G = \frac{G m_p^2 N^2}{R N},\]</div>
+<p>in which <span class="math notranslate nohighlight">\(m_p\)</span> is the mass of a proton while <span class="math notranslate nohighlight">\(N\)</span> is the number of protons. Define number density</p>
+<div class="math notranslate nohighlight">
+\[n = \frac{N}{\frac{4}{3} \pi R^3},\]</div>
+<p>which helps rewrite the radius</p>
+<div class="math notranslate nohighlight">
+\[R \sim \left(\frac{N}{n}\right)^{1/3}\]</div>
+<p>so that the gravitational potential energy becomes</p>
+<div class="math notranslate nohighlight">
+\[\epsilon_G \sim n^{1/3}.\]</div>
+<p>Switching to a microscopic view of the particle we could identify the total potential energy of the particle, which is composed of thermal energy <span class="math notranslate nohighlight">\(kT\)</span> and Fermi energy <span class="math notranslate nohighlight">\(\frac{h^2}{2m_e}( 3\pi^2 n )^{2/3}\)</span>. The conservation of energy is, roughly,</p>
+<div class="math notranslate nohighlight">
+\[kT + \frac{h^2}{m_e} n^{2/3} \sim G m_p^2 N^{2/3} n^{1/3}.\]</div>
+<p>Solve the thermal energy</p>
+<div class="math notranslate nohighlight">
+\[kT \sim G m_p^2 N^{2/3} n^{1/3} -  \frac{\hbar^2}{m_e} n^{2/3},\]</div>
+<p>which has a maximum value located at <span class="math notranslate nohighlight">\(n_\ast\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\frac{\hbar^2}{m_e} n_\ast^{-1/3} - G m_p^2 N^{2/3} n_\ast^{-2/3} \sim 0.\]</div>
+<p>We find the critical value of number density <span class="math notranslate nohighlight">\(n_\ast\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}n_\ast &amp;\sim  \left( \frac{G m_p^2 N^{2/3} m_e }{\hbar^2} \right)^3 \\
+&amp;\sim \frac{\alpha_G}{\lambda_e} N^{2/3},\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha_G\)</span> is a dimension quantity related to the gravity between two protons while <span class="math notranslate nohighlight">\(\lambda_e\)</span> is the Compton wavelength of electron,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\alpha_G &amp;= \frac{G m_p^2}{\hbar c} \\
+\lambda_e &amp; = \frac{\hbar}{m_e c}.\end{split}\]</div>
+<p>Thus the maximum temperatur is</p>
+<div class="math notranslate nohighlight">
+\[k T_m \sim \alpha_G N^{4/3} m_e c^2.\]</div>
+<p>As long as we could find a constraint on temperature, the mass of the star could possibily be determined with this relateion. The constraint on temperature comes from the nuclear reaction since the temperature should be able to sustain some kind of nuclear fusion.</p>
+<p>The simplest nuclear fusion is Hydrogen to Deuterium which requires the wave packet of two proton to overlap. This overlap distance is related to a Couloumb potential energy.</p>
+<p>The overlap distance is de Broglie wavelength of the protons,</p>
+<div class="math notranslate nohighlight">
+\[\lambda_b \sim \frac{\hbar}{m_p c},\]</div>
+<p>in relativistic limit if the temprature is comparable or higher than the mass of a proton.</p>
+<p>The coresponding Coulomb potential using Gaussian unit is</p>
+<div class="math notranslate nohighlight">
+\[\epsilon_n \sim \frac{e^2}{\lambda_b} \sim \alpha^2 m_p c^2,\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is fine structure constant. In Gaussian unit</p>
+<div class="math notranslate nohighlight">
+\[\alpha = \frac{e^2}{\hbar c}.\]</div>
+<div class="note admonition">
+<p class="first admonition-title">More Accuracy</p>
+<p>In fact we could put in a factor <span class="math notranslate nohighlight">\(\eta \sim 0.1\)</span> for the estimation of energy</p>
+<div class="math notranslate nohighlight">
+\[\epsilon_n = \eta \alpha^2 m_p c^2.\]</div>
+<p class="last">This step is not require for an estimation.</p>
+</div>
+<p><strong>For a star to exist, we require the temperature is higher than this nuclear ignition energy</strong>.</p>
+<div class="math notranslate nohighlight">
+\[k T &gt; \epsilon_n.\]</div>
+<p>To estimate the mass of the star we find the critical number of protons in this problem by using the condition that <span class="math notranslate nohighlight">\(kT_m \sim \epsilon_n\)</span>, which results in</p>
+<div class="math notranslate nohighlight">
+\[N_\ast \sim \left( \frac{m_p}{m_e} \right) \left( \frac{\alpha}{\alpha_G}  \right)^{3/2}.\]</div>
+<p>This is about the value <span class="math notranslate nohighlight">\(10^{56}\)</span> and the corresponding mass is about <span class="math notranslate nohighlight">\(10^{29}\mathrm{kg}\)</span> or <span class="math notranslate nohighlight">\(0.1 M_\odot\)</span>. <strong>We have obtained the lower limit of a star.</strong></p>
+<div class="warning admonition">
+<p class="first admonition-title">Question</p>
+<p class="last">How bright is the Sun?</p>
+</div>
+<p>The Sun has layers callled</p>
+<ol class="arabic simple">
+<li>Corona which goes into the interplanetary medium;</li>
+<li>Chromosphere;</li>
+<li>Photosphere which we see in visible light and contains absorption line (Fraunhof lines).</li>
+</ol>
+<p>Brightness in a sense can be represented using power. Here we are going to calculate the power of the Sun using the knowledge we know at Earth.</p>
+<p>In the Earth atmosphere, the light is partially obsorbed, which requires knowledge of obsorption which is described by</p>
+<div class="math notranslate nohighlight">
+\[I(\theta,z) = I_0 e^{-kz/cos\theta},\]</div>
+<p>according to which observation on the surface is enough to find out the actually energy arrived at Earth per unit area assuming perpendicular incident.</p>
+<p>The result is <span class="math notranslate nohighlight">\(S\equiv I(0,0) = I_0 = 1360 \mathrm{W/m^2}\)</span>. The fact is only 40 percent of the light reaches the surface and due to the O zone almost no light with wavelength under <span class="math notranslate nohighlight">\(1\AA\)</span> is coming through.</p>
+<p>The total power of the Sun is</p>
+<div class="math notranslate nohighlight">
+\[L_\odot = 4\pi R_\odot^2 S = 3.8\times 10^{26}\mathrm{W}.\]</div>
+<p>Assuming the Sun emmits black body radiation, the corresponding temperature is <span class="math notranslate nohighlight">\(T_\odot = 5760\mathrm{K}\)</span>.</p>
+<div class="note admonition">
+<p class="first admonition-title">Stefan-Boltzmann Law</p>
+<p>Energy radiated per unit area per unit time of black body radiation is</p>
+<div class="math notranslate nohighlight">
+\[j = \sigma_{SB} T^4,\]</div>
+<p>where <span class="math notranslate nohighlight">\(\sigma_{SB} = \frac{2\pi^5 k^4}{15 c^2 h^3} = 5.67\times 10^{-8}\mathrm{W m^{-2} K^{-4}}\)</span>.</p>
+<p class="last">As a reference, 100K black body radiation has an energy flux of <span class="math notranslate nohighlight">\(5.67\mathrm{W/m^2}\)</span>.</p>
+</div>
+<div class="warning admonition">
+<p class="first admonition-title">Question</p>
+<p class="last">What is the composition of the Sun?</p>
+</div>
+<p>Absorption line from photosphere is the tool to identify the elements and abundance in the sun.</p>
+<ol class="arabic simple">
+<li>Identify the absorption lines;</li>
+<li>Physical conditions related to the source of these lines, such as electron and ion temperature, pressure and density;</li>
+<li>Atomic physics that is responsible for the strenght of the lines.</li>
+</ol>
+<p>We can find out the density for a state of the element which is called “column” density, <em>N h</em> where <em>N</em> is the number density of the state and <em>h</em> is the depth the light is going through.</p>
+<div class="warning admonition">
+<p class="first admonition-title">Question</p>
+<p class="last">What is the age of the solar system?</p>
+</div>
+<p><strong>Before humanbeings actually realized the radioactivity, people did estimations of the Sun by assuming the energy source is GRAVITY which is so wrong.</strong> The way they did it is to calculate the total potential energy contained in a process that a cloud collapses to the size of the Sun. These energy goes to light so we know the upper limit of the age of our Sun since we know the power of it.</p>
+<p>A spherical ball has potential energy</p>
+<div class="math notranslate nohighlight">
+\[V = \frac{k G M^2}{R},\]</div>
+<p>where <span class="math notranslate nohighlight">\(k=\frac{3}{5}\)</span> for a uniform ball and <span class="math notranslate nohighlight">\(k=1.74\)</span> for our sun.</p>
+<p>Assuming that the Sun is emmitting light constantly, which is <span class="math notranslate nohighlight">\(S= 1360\mathrm{W/m^2}\)</span> per unit area at surface, we have</p>
+<div class="math notranslate nohighlight">
+\[4\pi R_\odot^2 S = -\frac{dV}{dt}\]</div>
+<p>we find <span class="math notranslate nohighlight">\(t &lt; 55 \mathrm{Myr}\)</span>.</p>
+<p>Nowadays we find out the age of the solar system by looking into the isotop abundance.</p>
+<p>We have a lot of decays that can be used for dating.</p>
+<p>The idea behind this method is that since some of the isotopes decay the abundance will decrease and the abundance of the daughter will increase.</p>
+<p>Decays is</p>
+<div class="math notranslate nohighlight">
+\[\frac{dN(t)}{dt} = -\lambda N(t),\]</div>
+<p>which has a solution</p>
+<div class="math notranslate nohighlight">
+\[N(t) = N(0) e^{-\lambda t}.\]</div>
+<p>We know the half life <span class="math notranslate nohighlight">\(\tau\)</span> which determines <span class="math notranslate nohighlight">\(\lambda\)</span> through <span class="math notranslate nohighlight">\(\tau = \ln 2/\lambda\)</span>.</p>
+<p>We don’t know <span class="math notranslate nohighlight">\(N(0)\)</span> so we need to use the abunddance of daughter,</p>
+<div class="math notranslate nohighlight">
+\[D^*(t) = N(0) - N(t) = N_0(1-e^{-\lambda t}),\]</div>
+<p>then we have</p>
+<div class="math notranslate nohighlight">
+\[\frac{D^*(t)}{N(t)} = e^{\lambda t} - 1.\]</div>
+<p>As long as we know the initial daughter abundance we can find out the age.</p>
+<div class="section" id="refs-and-notes">
+<h2>Refs and Notes<a class="headerlink" href="#refs-and-notes" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'researchsurvivalmanual'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+
+<hr>
+
+
+<div class="container" style="border-top:solid 1px black;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+    <p class="pull-right">
+
+
+        <a href="#"><span class="label label-info">Back to top</span></a>
+
+    </p>
+    <p>
+        <span>© <a href="https://leima.is">2020, Lei Ma.  <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>  </span> |
+        <span>Created with
+            <a href="http://sphinx.pocoo.org/">Sphinx</a> and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.
+        </span>|
+        <span><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+        <a href="https://github.com/emptymalei/physics">On GitHub</a>
+        </span>|
+        <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <a href="http://docs.neutrino.xyz">Neutrino Notebook</a>
+        </span>
+        <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <a href="http://statisticalphysics.openmetric.org">Statistical Mechanics Notebook</a>
+        </span> |
+        <span><span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+        <a href="/genindex.html">Index</a>
+     </span> |
+       <span><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+       <a href="../_sources/astrophysics/stars.rst.txt"
+      rel="nofollow">Page Source</a>
+      </span>
+    </p>
+
+    <hr>
+
+    <script>
+        window.jQuery || document.write('<script src="_static/js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44466929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+ 
+  </body>
+</html>
