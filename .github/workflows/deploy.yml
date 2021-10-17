@@ -18,10 +18,12 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Generate documentation
-        run: cd & make html
+        run: |
+          cd docs
+          make html
 
       - name: Upload to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html/
+          publish_dir: .docs/_build/html/
