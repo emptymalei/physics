@@ -3,14 +3,14 @@ Whatever
 ========
 
 
-I alway believe that making things open to everyone is one of the most powerful things that drive the world forward. So I DO think open source and open data, even open education are reforming the world.
+Making things open to everyone is one of the most powerful things that drives the world forward. Based on this idea, I started to practice in open source, open data, even open education.
 
-This was a notebook for myself when I was studying at Fudan University. At that time, I learned how to use LaTeX and I was so excited. So I thought I should start writing something using LaTeX since it's so beautiful. Well, the bad thing is, I just randomly wrote down my notes on some specific topics.
+This was a notebook for myself when I was studying at Fudan University. At that time, I learned how to use LaTeX and I was excited. LaTeX is so beautiful. So I thought I should start writing something using LaTeX. Well, the problem was, I just randomly wrote down my notes on some random topics.
 
-I was so greedy back then. Then I tried to build up my own framework of physics by writing notes here. It never did the work by the way. Then I realized a framework should be somethng organized much better than this one. (I should draw a map of physics.)
+I was greedy back then. I had this idea that each physicist has her/his own version of physics. So I tried to build up my own understanding of physics by performing some derivations and writing down notes. It never did the work by the way. I quickly realized that building up a framework requires something more organized.
 
-Though these notes didn't help me building up my framework of phyiscs, I learned an important lesson. A physicist should build up his/her own style: the way to think, the way to solve problems, the way to check answers, the way to write, etc.
+Though these notes didn't help me building up my own perspective of phyiscs, I was able to confirm this idea: A physicist should build up his/her own style, i.e., the way to think, the way to solve problems, the way to check answers, even the way to write.
 
-Anyway, I got frastrated and gave up the effort to utilize it as a framework-building thing. However I won't just dump these notes. As I have more and more to add, I think I'll just let it be my notebook, which, of course, is open source and accessible to everyone.
+It was not a successful story but I decided to put all the contents here and make them accessible to everyone.
 
 Yes. Use the source. Keep the source open.
